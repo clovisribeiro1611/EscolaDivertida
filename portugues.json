@@ -74,6 +74,41 @@
           "body": "ME, NI, NA, NO são sílabas de CONSOANTE+VOGAL. M+E=ME, N+I=NI, N+A=NA, N+O=NO",
           "example": "ME: consoante M + vogal E<br>NI: consoante N + vogal I",
           "trick": "Consoante sozinha não soa. Precisa de uma vogal! M+E = ME (soa!)"
+        },
+        {
+          "icon": "🎵",
+          "title": "As 5 Vogais",
+          "body": "As vogais são: A, E, I, O, U. São as letras que fazem o som mais aberto, como quando cantamos!",
+          "example": "A de Avó · E de Escola · I de Ilha\nO de Olha · U de Uva",
+          "trick": "Canta: A-E-I-O-U! São só 5. Todas as outras letras são consoantes!"
+        },
+        {
+          "icon": "🔗",
+          "title": "Ditongos — Duas Vogais Juntas",
+          "body": "Um ditongo acontece quando duas vogais estão juntas na mesma sílaba e fazem um único som.",
+          "example": "MÃE → mã+e (ãe é ditongo)\nPAI → pa+i (ai é ditongo)\nCÉU → cé+u (eu é ditongo)",
+          "trick": "Ditongo = DUO de vogais! Duas vogais que se abraçam e fazem um som só."
+        },
+        {
+          "icon": "🅼",
+          "title": "Sílabas com M — MA ME MI MO MU",
+          "body": "A consoante M junto das vogais forma as sílabas: MA, ME, MI, MO, MU.",
+          "example": "MA → mão, mamã, mapa\nME → mesa, mel, menina\nMI → mico, missa, mimo\nMO → mota, mole, moco\nMU → mudo, mula, música",
+          "trick": "M de Mão! Junta M a cada vogal: Ma-Me-Mi-Mo-Mu. Fácil como a canção do alfabeto!"
+        },
+        {
+          "icon": "🅽",
+          "title": "Sílabas com N — NA NE NI NO NU",
+          "body": "A consoante N junto das vogais forma as sílabas: NA, NE, NI, NO, NU.",
+          "example": "NA → nariz, nabo, natal\nNE → neto, neve, nesta\nNI → ninho, ninja\nNO → nota, noite, nome\nNU → nuvem, nu",
+          "trick": "N de Nariz! Junta N a cada vogal: Na-Ne-Ni-No-Nu. M e N são irmãos no alfabeto!"
+        },
+        {
+          "icon": "🌟",
+          "title": "Palavras com M e N",
+          "body": "Muitas palavras do dia a dia têm M e N juntos. Aprende as mais importantes!",
+          "example": "ME+NI+NA → MENINA\nME+NI+NO → MENINO\nMA+NI+LA → MANILA\nNO+ME → NOME",
+          "trick": "MENINO e MENINA têm M e N! Repara: Me-ni-na e Me-ni-no. O I é diferente no final!"
         }
       ],
       "praticar": [
@@ -274,6 +309,61 @@
           ],
           "answer": "Masculino",
           "why": "MENINO é masculino (o menino). Termina em -o!"
+        },
+        {
+          "question": "Qual destas letras é uma VOGAL?",
+          "options": [
+            "A",
+            "M",
+            "S",
+            "T"
+          ],
+          "answer": "A",
+          "why": "As vogais são A, E, I, O, U. O A é a primeira e mais importante vogal!"
+        },
+        {
+          "question": "Quantas vogais tem a palavra MENINO?",
+          "options": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "answer": "3",
+          "why": "ME-NI-NO tem as vogais: E, I, O = 3 vogais! M, N são consoantes."
+        },
+        {
+          "question": "Qual destas sílabas começa com M?",
+          "options": [
+            "ME",
+            "NA",
+            "FI",
+            "CA"
+          ],
+          "answer": "ME",
+          "why": "ME começa com M! NA começa com N, FI com F e CA com C."
+        },
+        {
+          "question": "A palavra MÃE tem ditongo?",
+          "options": [
+            "Sim, ÃE é ditongo",
+            "Não tem ditongo",
+            "Não sei",
+            "MÃE não existe"
+          ],
+          "answer": "Sim, ÃE é ditongo",
+          "why": "MÃE tem o ditongo ÃE — duas vogais juntas na mesma sílaba que fazem um único som!"
+        },
+        {
+          "question": "Qual destas palavras tem sílaba com N?",
+          "options": [
+            "NABO",
+            "BOLA",
+            "FACA",
+            "CASA"
+          ],
+          "answer": "NABO",
+          "why": "NABO começa com NA — sílaba com N! As outras palavras não têm N."
         }
       ],
       "desafios": [
@@ -364,6 +454,61 @@
           ],
           "answer": "CASA",
           "why": "CASA = CA-SA = 2 sílabas. Menina=3, Barco=2 (na verdade também!). Mas CASA é a mais simples!"
+        },
+        {
+          "question": "Quantas sílabas tem ME-NI-NA?",
+          "options": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "answer": "3",
+          "why": "ME-NI-NA tem 3 sílabas: ME, NI e NA. Bate palmas enquanto dizes: ME (bate), NI (bate), NA (bate)!"
+        },
+        {
+          "question": "Qual palavra tem TANTO M como N?",
+          "options": [
+            "MENINO",
+            "MOTA",
+            "NARIZ",
+            "BOLA"
+          ],
+          "answer": "MENINO",
+          "why": "MENINO tem M (no início) e N (no meio): ME-NI-NO. As outras têm só M ou só N!"
+        },
+        {
+          "question": "O ditongo em PAI é...",
+          "options": [
+            "AI",
+            "PA",
+            "PI",
+            "IP"
+          ],
+          "answer": "AI",
+          "why": "Em PAI, as vogais A e I estão juntas na mesma sílaba: PA+I → o ditongo é AI!"
+        },
+        {
+          "question": "Separa em sílabas: MAMÃ",
+          "options": [
+            "MA-MÃ",
+            "MAM-Ã",
+            "M-AMÃ",
+            "MAMÃ"
+          ],
+          "answer": "MA-MÃ",
+          "why": "MAMÃ tem 2 sílabas: MA e MÃ. Bate palmas: MA (bate), MÃ (bate) = 2 palmas!"
+        },
+        {
+          "question": "Qual palavra começa com sílaba NA?",
+          "options": [
+            "NARIZ",
+            "MOTA",
+            "BOLA",
+            "FADA"
+          ],
+          "answer": "NARIZ",
+          "why": "NARIZ começa com NA (N+A). NA-RIZ tem 2 sílabas!"
         }
       ]
     },
@@ -451,6 +596,41 @@
           "body": "Os ossos dão forma ao corpo. Os músculos permitem movimentos. Juntos fazem o esqueleto!",
           "example": "Ossos: crânio 🧠, vértebras, costelas, fémur<br>Músculos: bícep (braço), quadrícep (coxa)",
           "trick": "Ossos = estrutura (forma). Músculos = movimento (força). Sem ossos cairias, sem músculos não movias!"
+        },
+        {
+          "icon": "⏰",
+          "title": "Períodos do Dia",
+          "body": "O dia divide-se em três partes: manhã, tarde e noite. Cada parte tem as suas actividades!",
+          "example": "MANHÃ: acordar, tomar banho, pequeno-almoço, ir para escola\nTARDE: almoço, aulas, lanche\nNOITE: jantar, estudar, dormir",
+          "trick": "Sol a nascer = manhã. Sol alto = tarde. Escuro = noite. Simples!"
+        },
+        {
+          "icon": "🗓️",
+          "title": "A Rotina Diária",
+          "body": "A rotina é o conjunto de actividades que fazemos todos os dias, sempre na mesma ordem.",
+          "example": "Acordar → Lavar a cara → Tomar o pequeno-almoço\n→ Ir para escola → Almoçar → Estudar → Jantar → Dormir",
+          "trick": "A rotina nos ajuda a não esquecer nada importante! Como um horário do dia todo."
+        },
+        {
+          "icon": "📅",
+          "title": "Dias da Semana",
+          "body": "A semana tem 7 dias. Segunda a Sexta são dias de escola. Sábado e Domingo são fins de semana!",
+          "example": "2ª Segunda-feira · 3ª Terça-feira · 4ª Quarta-feira\n5ª Quinta-feira · 6ª Sexta-feira\nSábado · Domingo (descanso)",
+          "trick": "De 2ª a 6ª = escola (5 dias). Sáb+Dom = fim de semana (2 dias). 5+2=7 dias!"
+        },
+        {
+          "icon": "🏃",
+          "title": "Verbos de Rotina",
+          "body": "Usamos verbos de acção para descrever o que fazemos na nossa rotina.",
+          "example": "acordar · lavar · comer · estudar · brincar\nler · escrever · dormir · ajudar · caminhar",
+          "trick": "Os verbos de rotina terminam em -AR (acordar, jantar) ou -ER (comer, beber). São acções!"
+        },
+        {
+          "icon": "🏖️",
+          "title": "As Férias",
+          "body": "Nas férias grandes, não temos escola. Podemos descansar, brincar e fazer coisas diferentes!",
+          "example": "Ler livros · Visitar família · Ir à praia\nJogar · Ajudar em casa · Passear",
+          "trick": "Férias = liberdade! Mas continua a ler e a aprender um pouco todos os dias."
         }
       ],
       "praticar": [
@@ -651,6 +831,61 @@
           ],
           "answer": "Paladar (saborear)",
           "why": "A língua permite saborear a comida — é o órgão do paladar!"
+        },
+        {
+          "question": "Quando é que geralmente vamos para a escola?",
+          "options": [
+            "De manhã",
+            "De noite",
+            "Ao meio-dia",
+            "Ao fim do dia"
+          ],
+          "answer": "De manhã",
+          "why": "As aulas começam de manhã cedo. Por isso acordamos cedo e tomamos o pequeno-almoço antes de ir!"
+        },
+        {
+          "question": "O jantar é um período de...",
+          "options": [
+            "Noite",
+            "Manhã",
+            "Tarde",
+            "Madrugada"
+          ],
+          "answer": "Noite",
+          "why": "O jantar é a refeição da noite, depois das aulas e do lanche da tarde!"
+        },
+        {
+          "question": "Quantos dias tem uma semana?",
+          "options": [
+            "7",
+            "5",
+            "6",
+            "10"
+          ],
+          "answer": "7",
+          "why": "A semana tem 7 dias: segunda, terça, quarta, quinta, sexta, sábado e domingo!"
+        },
+        {
+          "question": "Nos fins de semana, normalmente...",
+          "options": [
+            "Descansamos e não temos escola",
+            "Temos mais aulas",
+            "Trabalhamos mais",
+            "Acordamos mais cedo"
+          ],
+          "answer": "Descansamos e não temos escola",
+          "why": "Sábado e Domingo são o fim de semana — dias de descanso, família e brincadeira!"
+        },
+        {
+          "question": "Qual destas actividades faz parte da rotina da manhã?",
+          "options": [
+            "Tomar o pequeno-almoço",
+            "Jantar",
+            "Dormir",
+            "Ver as estrelas"
+          ],
+          "answer": "Tomar o pequeno-almoço",
+          "why": "De manhã acordamos, lavamos a cara, tomamos o PEQUENO-ALMOÇO e vamos para a escola!"
         }
       ],
       "desafios": [
@@ -741,6 +976,61 @@
           ],
           "answer": "2 vezes (manhã e noite)",
           "why": "Escovar dentes 2x por dia protege contra cáries e doença dos dentes!"
+        },
+        {
+          "question": "Que dia vem a seguir à quarta-feira?",
+          "options": [
+            "Quinta-feira",
+            "Terça-feira",
+            "Sexta-feira",
+            "Sábado"
+          ],
+          "answer": "Quinta-feira",
+          "why": "A ordem da semana é: segunda, terça, QUARTA, QUINTA, sexta, sábado, domingo!"
+        },
+        {
+          "question": "Ordena as refeições do dia: jantar / pequeno-almoço / almoço",
+          "options": [
+            "Pequeno-almoço, almoço, jantar",
+            "Almoço, jantar, pequeno-almoço",
+            "Jantar, almoço, pequeno-almoço",
+            "Almoço, pequeno-almoço, jantar"
+          ],
+          "answer": "Pequeno-almoço, almoço, jantar",
+          "why": "Comemos pela ordem do dia: PEQUENO-ALMOÇO (manhã), ALMOÇO (tarde), JANTAR (noite)!"
+        },
+        {
+          "question": "Quantos dias de escola tem uma semana normal?",
+          "options": [
+            "5",
+            "7",
+            "6",
+            "4"
+          ],
+          "answer": "5",
+          "why": "Vamos à escola de segunda a sexta-feira = 5 dias. Sábado e domingo são dias de descanso!"
+        },
+        {
+          "question": "O lanche é uma refeição de...",
+          "options": [
+            "Tarde",
+            "Manhã",
+            "Noite",
+            "Madrugada"
+          ],
+          "answer": "Tarde",
+          "why": "O lanche é comido ao meio da tarde, entre o almoço e o jantar. É uma pausa deliciosa!"
+        },
+        {
+          "question": "Nas férias grandes, não temos escola. Podemos...",
+          "options": [
+            "Brincar, ler e visitar família",
+            "Ir às aulas normais",
+            "Ter mais testes",
+            "Estudar como na escola"
+          ],
+          "answer": "Brincar, ler e visitar família",
+          "why": "Nas férias temos liberdade para brincar, descansar, ler e conviver com a família!"
         }
       ]
     },
@@ -823,6 +1113,41 @@
           "body": "Revisão dos padrões ortográficos mais comuns: ge/gi, ss, c/ç, s/z.",
           "example": "Padrão GE/GI: gelo, ginja<br>Padrão SS: massa, assa<br>Padrão C/Ç: cama/cabeça<br>Padrão S/Z: sapo/zebra",
           "trick": "Aprende os padrões! Cada som tem regras. Estuda exemplos para memorizar!"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Nome Comum e Nome Próprio",
+          "body": "Nome comum: designa qualquer ser da mesma espécie (não tem maiúscula). Nome próprio: designa um ser específico (tem maiúscula).",
+          "example": "menino (comum) → João (próprio)\nilha (comum) → Santiago (próprio)\ncidade (comum) → Praia (próprio)",
+          "trick": "Nome próprio tem maiúscula porque é especial — é o nome de UMA pessoa ou lugar em particular!"
+        },
+        {
+          "icon": "👥",
+          "title": "Nome Colectivo",
+          "body": "Um nome colectivo no singular designa um conjunto ou grupo de seres da mesma espécie.",
+          "example": "cardume = grupo de peixes\nrebanho = grupo de ovelhas ou cabras\nalcateia = grupo de lobos\nflores+ta = conjunto de árvores",
+          "trick": "Cardume, rebanho, alcateia, floresta — aprende os pares: animal + nome colectivo!"
+        },
+        {
+          "icon": "✂️",
+          "title": "Sujeito e Predicado",
+          "body": "O SUJEITO é quem pratica a acção (responde a QUEM?). O PREDICADO é o que o sujeito faz (o verbo e o resto).",
+          "example": "O peixe nada.\n↑Sujeito  ↑Predicado\n\nA Ana canta bem.\n↑Sujeito  ↑Predicado",
+          "trick": "Pergunta QUEM? = sujeito. O que faz? = predicado. Toda frase tem os dois!"
+        },
+        {
+          "icon": "❌",
+          "title": "Forma Afirmativa e Negativa",
+          "body": "A forma AFIRMATIVA diz que algo acontece. A forma NEGATIVA usa NÃO (ou nunca, nada) para dizer que não acontece.",
+          "example": "Afirmativa: Ela estuda.\nNegativa: Ela NÃO estuda.\n\nAfirmativa: Eles comem peixe.\nNegativa: Eles NÃO comem peixe.",
+          "trick": "Para fazer a negativa, basta colocar NÃO antes do verbo. Simples assim!"
+        },
+        {
+          "icon": "📌",
+          "title": "Pontuação Avançada",
+          "body": "Além do ponto, vírgula e interrogação, há outros sinais importantes.",
+          "example": "Dois pontos (:) → introduzem uma lista ou fala\nTravessão (—) → indica fala de uma personagem\nReticências (...) → ideia incompleta ou suspense",
+          "trick": "Dois pontos = vai aí uma lista ou alguém fala! Travessão = personagem a falar. Reticências = continua..."
         }
       ],
       "praticar": [
@@ -1012,6 +1337,61 @@
           ],
           "answer": "Som 'S'",
           "why": "C antes de E/I = som 'S': cena, cidade, cenoura!"
+        },
+        {
+          "question": "A palavra Santiago é um nome...",
+          "options": [
+            "próprio",
+            "comum",
+            "colectivo",
+            "feminino"
+          ],
+          "answer": "próprio",
+          "why": "Santiago é o nome de uma ilha específica de Cabo Verde — por isso é nome PRÓPRIO e tem maiúscula!"
+        },
+        {
+          "question": "Qual é o sujeito da frase: O peixe nada?",
+          "options": [
+            "O peixe",
+            "nada",
+            "O",
+            "peixe nada"
+          ],
+          "answer": "O peixe",
+          "why": "Perguntamos QUEM nada? R: O peixe. Esse é o sujeito! O predicado é nada."
+        },
+        {
+          "question": "Forma NEGATIVA de ela canta:",
+          "options": [
+            "Ela não canta.",
+            "Ela nunca.",
+            "Não ela canta.",
+            "Ela canta não."
+          ],
+          "answer": "Ela não canta.",
+          "why": "Para fazer a negativa colocamos NÃO antes do verbo: ela NÃO canta. O NÃO vem antes do verbo!"
+        },
+        {
+          "question": "Cardume é o nome colectivo de...",
+          "options": [
+            "peixes",
+            "pássaros",
+            "lobos",
+            "ovelhas"
+          ],
+          "answer": "peixes",
+          "why": "Um CARDUME é um grupo de peixes a nadar juntos. Em Cabo Verde vemos muitos cardumes no mar!"
+        },
+        {
+          "question": "Que sinal de pontuação indica a fala de uma personagem num texto?",
+          "options": [
+            "Travessão —",
+            "Ponto final .",
+            "Vírgula ,",
+            "Dois pontos :"
+          ],
+          "answer": "Travessão —",
+          "why": "O TRAVESSÃO (—) é usado antes da fala de uma personagem nos textos narrativos e diálogos!"
         }
       ],
       "desafios": [
@@ -1102,6 +1482,61 @@
           ],
           "answer": "Usam",
           "why": "Verbo usar: eu uso, tu usas, ele usa, nós usamos, vós usais, eles USAM!"
+        },
+        {
+          "question": "Classifica: ilha é nome ___ e Santiago é nome ___.",
+          "options": [
+            "comum / próprio",
+            "próprio / comum",
+            "colectivo / comum",
+            "próprio / colectivo"
+          ],
+          "answer": "comum / próprio",
+          "why": "Ilha = nome COMUM (qualquer ilha). Santiago = nome PRÓPRIO (uma ilha específica, com maiúscula)!"
+        },
+        {
+          "question": "Transforma em negativa: O João estuda todos os dias.",
+          "options": [
+            "O João não estuda todos os dias.",
+            "Não o João estuda.",
+            "O João estuda não.",
+            "O João nunca não estuda."
+          ],
+          "answer": "O João não estuda todos os dias.",
+          "why": "Colocamos NÃO antes do verbo (estuda): O João NÃO estuda todos os dias!"
+        },
+        {
+          "question": "Qual é o sujeito: Os alunos da 3ª classe cantaram muito bem.",
+          "options": [
+            "Os alunos da 3ª classe",
+            "cantaram muito bem",
+            "muito bem",
+            "Os alunos"
+          ],
+          "answer": "Os alunos da 3ª classe",
+          "why": "Quem cantou? OS ALUNOS DA 3ª CLASSE. Esse é o sujeito completo da frase!"
+        },
+        {
+          "question": "Nome colectivo de lobos:",
+          "options": [
+            "alcateia",
+            "cardume",
+            "rebanho",
+            "floresta"
+          ],
+          "answer": "alcateia",
+          "why": "Um grupo de lobos chama-se ALCATEIA. Lembra: alca-LOBA! Cardume=peixes, rebanho=ovelhas."
+        },
+        {
+          "question": "Que sinal usa-se antes de uma lista?",
+          "options": [
+            "Dois pontos :",
+            "Ponto final .",
+            "Travessão —",
+            "Reticências ..."
+          ],
+          "answer": "Dois pontos :",
+          "why": "Os DOIS PONTOS (:) introduzem listas e enumerações. Exemplo: Trouxe: livro, lápis e borracha."
         }
       ]
     },
@@ -1204,6 +1639,41 @@
           "body": "Afirmativa = confirma algo. Negativa = nega algo. A forma pode ser afirmativa ou negativa.",
           "example": "Afirmativa: 'Eu gosto de peixe.' ✓<br>Negativa: 'Eu NÃO gosto de peixe.' ✗<br>Afirmativa: 'A foca é um animal.' ✓<br>Negativa: 'A foca NÃO é um pássaro.' ✗",
           "trick": "Nega-se com 'não' ou outras palavras: não, nunca, jamais, ninguém, nada!"
+        },
+        {
+          "icon": "↔️",
+          "title": "Sinónimos",
+          "body": "Sinónimos são palavras com significados parecidos ou iguais. Usamos para enriquecer o texto!",
+          "example": "bonito = belo = lindo = formoso\nalegre = feliz = contente\nfalar = dizer = narrar = contar",
+          "trick": "Sinónimos caminham no mesmo sentido. Quando não quiseres repetir uma palavra, usa um sinónimo!"
+        },
+        {
+          "icon": "⚡",
+          "title": "Antónimos",
+          "body": "Antónimos são palavras com significados contrários. Muitas vezes formam-se com prefixos!",
+          "example": "alegre ↔ triste · bonito ↔ feio\npaciente ↔ impaciente (prefixo im-)\namável ↔ desagradável (prefixo des-)",
+          "trick": "Anti = contra! ANTónimo = palavra CONTRÁRIA. Prefixos des-, in-, im- criam antónimos!"
+        },
+        {
+          "icon": "📊",
+          "title": "Grau Comparativo",
+          "body": "O comparativo compara uma qualidade entre dois seres.",
+          "example": "Superioridade: João é MAIS alto DO QUE Pedro.\nIgualdade: João é TÃO alto COMO Pedro.\nInferioridade: João é MENOS alto DO QUE Pedro.",
+          "trick": "Mais...do que = superioridade. Tão...como = igualdade. Menos...do que = inferioridade!"
+        },
+        {
+          "icon": "🏆",
+          "title": "Superlativo Absoluto",
+          "body": "O superlativo absoluto exprime uma qualidade no grau máximo, sem comparar com outros.",
+          "example": "Analítico: muito + adjetivo → muito alto\nSintético: adjetivo + -íssimo → altíssimo\nOutros: rico → riquíssimo · feliz → felicíssimo",
+          "trick": "Muito + adjetivo = fácil! Adjetivo + íssimo = mais elegante. Ambos significam o máximo!"
+        },
+        {
+          "icon": "🥇",
+          "title": "Superlativo Relativo",
+          "body": "O superlativo relativo compara um ser com um grupo, mostrando que tem mais ou menos de uma qualidade.",
+          "example": "Superioridade: É o mais alto da turma.\nInferioridade: É o menos alto da turma.",
+          "trick": "O mais... de = superlativo relativo de superioridade. O menos... de = de inferioridade!"
         }
       ],
       "praticar": [
@@ -1426,6 +1896,61 @@
           ],
           "answer": "Uma é exclamativa, outra é interrogativa",
           "why": "'!' = exclamação (admira). '?' = interrogação (pergunta). O sinal faz toda a diferença!"
+        },
+        {
+          "question": "Antónimo de alegre:",
+          "options": [
+            "triste",
+            "feliz",
+            "animado",
+            "contente"
+          ],
+          "answer": "triste",
+          "why": "ALEGRE e TRISTE são antónimos — palavras com sentido contrário. Quando não estamos alegres, estamos tristes!"
+        },
+        {
+          "question": "Sinónimo de bonito:",
+          "options": [
+            "belo",
+            "feio",
+            "grande",
+            "pequeno"
+          ],
+          "answer": "belo",
+          "why": "BONITO e BELO significam a mesma coisa — são sinónimos! Lindo e formoso também são sinónimos."
+        },
+        {
+          "question": "João é mais alto do que Pedro. Qual é o grau?",
+          "options": [
+            "Comparativo de superioridade",
+            "Comparativo de igualdade",
+            "Superlativo absoluto",
+            "Comparativo de inferioridade"
+          ],
+          "answer": "Comparativo de superioridade",
+          "why": "Mais... do que = comparativo de SUPERIORIDADE. João tem MAIS altura do que Pedro!"
+        },
+        {
+          "question": "Superlativo absoluto sintético de rico:",
+          "options": [
+            "riquíssimo",
+            "muito rico",
+            "o mais rico",
+            "ricão"
+          ],
+          "answer": "riquíssimo",
+          "why": "Rico → riquíssimo (sufixo -íssimo). Atenção: rico perde o co e ganha qu antes do -íssimo!"
+        },
+        {
+          "question": "Antónimo de moderno:",
+          "options": [
+            "antigo",
+            "novo",
+            "actual",
+            "recente"
+          ],
+          "answer": "antigo",
+          "why": "MODERNO significa novo/actual. O contrário (antónimo) é ANTIGO!"
         }
       ],
       "desafios": [
@@ -1516,6 +2041,61 @@
           ],
           "answer": "Não faças barulho!",
           "why": "'Não faças' = imperativo (ordem) em forma negativa (nega/proíbe fazer barulho)!"
+        },
+        {
+          "question": "A ilha de São Vicente é tão bela como a ilha de Santiago. Qual é o grau?",
+          "options": [
+            "Comparativo de igualdade",
+            "Comparativo de superioridade",
+            "Superlativo relativo",
+            "Comparativo de inferioridade"
+          ],
+          "answer": "Comparativo de igualdade",
+          "why": "TÃO... COMO = comparativo de IGUALDADE. As duas ilhas têm a mesma beleza!"
+        },
+        {
+          "question": "Forma o superlativo absoluto sintético de feliz:",
+          "options": [
+            "felicíssimo",
+            "felizíssimo",
+            "muito feliz",
+            "o mais feliz"
+          ],
+          "answer": "felicíssimo",
+          "why": "Feliz → felicíssimo. O Z transforma-se em C antes do -íssimo!"
+        },
+        {
+          "question": "É o barco mais rápido da frota. Qual é o grau do adjetivo rápido?",
+          "options": [
+            "Superlativo relativo de superioridade",
+            "Comparativo de superioridade",
+            "Superlativo absoluto",
+            "Comparativo de igualdade"
+          ],
+          "answer": "Superlativo relativo de superioridade",
+          "why": "O mais... de = superlativo RELATIVO de superioridade. Compara com um grupo (a frota)!"
+        },
+        {
+          "question": "Qual é o antónimo de generoso?",
+          "options": [
+            "avarento",
+            "bondoso",
+            "amável",
+            "simpático"
+          ],
+          "answer": "avarento",
+          "why": "Generoso = dá muito. Avarento = não dá nada, guarda tudo para si. São opostos — antónimos!"
+        },
+        {
+          "question": "Sinónimo de trabalhar nesta lista:",
+          "options": [
+            "laborar",
+            "repousar",
+            "brincar",
+            "descansar"
+          ],
+          "answer": "laborar",
+          "why": "LABORAR é um sinónimo culto de trabalhar. Repousar, brincar e descansar são antónimos!"
         }
       ]
     }

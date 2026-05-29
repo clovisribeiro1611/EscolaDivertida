@@ -56,6 +56,41 @@
             "🐦 Falcão-da-rainha — ave nacional de Cabo Verde"
           ],
           "trick": "Doméstico = criado pelo homem (galinha, cabra). Selvagem = vive livre (tartaruga-marinha, falcão-da-rainha)!"
+        },
+        {
+          "icon": "🏫",
+          "title": "A Escola",
+          "body": "A escola é o lugar onde vamos aprender, crescer e fazer amigos. É o nosso segundo lar!",
+          "example": "Na escola há: salas de aula, recreio, biblioteca, cantina\nA escola serve para: aprender, crescer, socializar",
+          "trick": "Escola vem de uma palavra grega que significa tempo livre para aprender. Aproveita bem!"
+        },
+        {
+          "icon": "👩‍🏫",
+          "title": "As Pessoas da Escola",
+          "body": "Na escola trabalham várias pessoas, cada uma com uma função importante.",
+          "example": "Professor(a) → ensina e orienta\nDirector(a) → dirige a escola\nAuxiliar → limpa e ajuda\nColega → aprende ao teu lado",
+          "trick": "Cada pessoa na escola tem uma função. Respeita todos — todos são importantes!"
+        },
+        {
+          "icon": "📚",
+          "title": "Actividades na Escola",
+          "body": "Na escola fazemos muitas actividades diferentes ao longo do dia.",
+          "example": "Na sala: ler, escrever, calcular, desenhar\nNo recreio: brincar, correr, conviver\nNa biblioteca: ler livros, pesquisar",
+          "trick": "Escola = trabalho + brincadeira. Os dois são importantes para aprender bem!"
+        },
+        {
+          "icon": "🏛️",
+          "title": "Espaços da Escola",
+          "body": "A escola tem vários espaços, cada um com a sua função.",
+          "example": "Sala de aula → aprender\nRecreiro → brincar e descansar\nBiblioteca → ler e pesquisar\nCantina → comer e conviver",
+          "trick": "Cada espaço tem as suas regras. Na biblioteca faz-se silêncio. No recreio podes correr!"
+        },
+        {
+          "icon": "👨‍👩‍👧",
+          "title": "Família e Escola",
+          "body": "A família e a escola trabalham juntas para nos ajudar a aprender e crescer.",
+          "example": "Os pais visitam a escola\nAjudam com os trabalhos de casa\nParticipam nas reuniões\nEncoranjam os filhos a estudar",
+          "trick": "Família + Escola = equipa! Quando os pais se envolvem, os filhos aprendem melhor!"
         }
       ],
       "praticar": [
@@ -201,6 +236,61 @@
           ],
           "answer": "Da chuva e de nascentes",
           "why": "Em Cabo Verde a água doce vem principalmente da chuva (guardada em cisternas e barragens) e de nascentes no interior das ilhas!"
+        },
+        {
+          "question": "Quem ensina na escola?",
+          "options": [
+            "O professor",
+            "O director",
+            "O auxiliar",
+            "O colega"
+          ],
+          "answer": "O professor",
+          "why": "O PROFESSOR é quem ensina e orienta os alunos. O director dirige a escola toda!"
+        },
+        {
+          "question": "O recreio serve para...",
+          "options": [
+            "brincar e descansar",
+            "estudar e escrever",
+            "comer o almoço",
+            "guardar livros"
+          ],
+          "answer": "brincar e descansar",
+          "why": "O recreio é o espaço de descanso e brincadeira entre as aulas. Muito importante para recarregar energias!"
+        },
+        {
+          "question": "Quem dirige e é responsável pela escola?",
+          "options": [
+            "O director",
+            "O professor",
+            "O auxiliar",
+            "O aluno mais velho"
+          ],
+          "answer": "O director",
+          "why": "O DIRECTOR é o responsável por toda a escola. Trata dos assuntos importantes e representa a escola!"
+        },
+        {
+          "question": "O que fazemos na sala de aula?",
+          "options": [
+            "Aprender e estudar",
+            "Brincar e correr",
+            "Comer e descansar",
+            "Dormir e descansar"
+          ],
+          "answer": "Aprender e estudar",
+          "why": "A sala de aula é o espaço principal de aprendizagem — lemos, escrevemos, calculamos e aprendemos!"
+        },
+        {
+          "question": "Na biblioteca devemos...",
+          "options": [
+            "Fazer silêncio e ler",
+            "Correr e gritar",
+            "Comer e beber",
+            "Jogar à bola"
+          ],
+          "answer": "Fazer silêncio e ler",
+          "why": "A biblioteca é um espaço de leitura e estudo. O silêncio ajuda toda a gente a concentrar-se!"
         }
       ],
       "desafios": [
@@ -291,6 +381,61 @@
           ],
           "answer": "A água vai para cisternas e barragens para ser usada depois",
           "why": "Como chove pouco, os cabo-verdianos recolhem a água da chuva em cisternas e barragens para usar durante o ano!"
+        },
+        {
+          "question": "Porque é importante ir à escola todos os dias?",
+          "options": [
+            "Para aprender e crescer",
+            "Para brincar apenas",
+            "Para ver os amigos só",
+            "Porque é obrigatório"
+          ],
+          "answer": "Para aprender e crescer",
+          "why": "A escola dá-nos conhecimento, amigos e habilidades para a vida. É o lugar onde crescemos!"
+        },
+        {
+          "question": "O que podemos encontrar na biblioteca?",
+          "options": [
+            "Livros e enciclopédias",
+            "Bolas e brinquedos",
+            "Comida e bebida",
+            "Computadores só"
+          ],
+          "answer": "Livros e enciclopédias",
+          "why": "A biblioteca tem livros de todos os tipos: histórias, enciclopédias, dicionários e muito mais!"
+        },
+        {
+          "question": "Como podem os pais ajudar na escola?",
+          "options": [
+            "Participar e ajudar em casa",
+            "Fazer o trabalho pelos filhos",
+            "Não ir às reuniões",
+            "Ignorar as notas"
+          ],
+          "answer": "Participar e ajudar em casa",
+          "why": "Os pais ajudam participando nas reuniões, acompanhando os trabalhos de casa e encorajando os filhos!"
+        },
+        {
+          "question": "Qual é a função do auxiliar na escola?",
+          "options": [
+            "Limpar e ajudar a manter a escola",
+            "Ensinar os alunos",
+            "Dirigir a escola",
+            "Fazer os testes"
+          ],
+          "answer": "Limpar e ajudar a manter a escola",
+          "why": "O auxiliar mantém a escola limpa e organizada e ajuda em diversas tarefas. É essencial para a escola funcionar!"
+        },
+        {
+          "question": "Qual a diferença entre o recreio e a sala de aula?",
+          "options": [
+            "Recreio=brincar, sala=aprender",
+            "São iguais",
+            "Sala=brincar, recreio=aprender",
+            "Não há diferença"
+          ],
+          "answer": "Recreio=brincar, sala=aprender",
+          "why": "Na SALA aprendemos com o professor. No RECREIO brincamos e descansamos. Cada espaço tem a sua função!"
         }
       ]
     },
@@ -383,6 +528,41 @@
             "🚓 Polícia — para manter a segurança"
           ],
           "trick": "Escola = aprender. Centro de saúde = curar. Câmara = gerir a cidade. Cada instituição tem a sua função!"
+        },
+        {
+          "icon": "👁️",
+          "title": "Os 5 Sentidos",
+          "body": "Temos 5 sentidos que nos permitem conhecer o mundo à nossa volta.",
+          "example": "Visão (olhos) → ver\nAudição (ouvidos) → ouvir\nTacto (pele) → sentir\nOlfacto (nariz) → cheirar\nPaladar (língua) → provar",
+          "trick": "VATOS: Visão, Audição, Tacto, Olfacto, Paladar. 5 sentidos, 5 órgãos!"
+        },
+        {
+          "icon": "👃",
+          "title": "Cuidar dos Sentidos",
+          "body": "Devemos cuidar bem dos nossos órgãos dos sentidos para que funcionem bem.",
+          "example": "Olhos: não esfregar, ler com boa luz\nOuvidos: não meter objectos, evitar ruído alto\nNariz: assoar com lenço\nDentes/língua: escovar bem",
+          "trick": "Cuida dos sentidos como cuidas de um tesouro — sem eles, o mundo fica mais difícil de descobrir!"
+        },
+        {
+          "icon": "🚿",
+          "title": "Higiene Corporal",
+          "body": "A higiene corporal é o conjunto de cuidados que temos com o nosso corpo para nos mantermos limpos e saudáveis.",
+          "example": "Banho diário com água e sabão\nLavar as mãos antes das refeições\nEscovar os dentes após as refeições\nCortar as unhas regularmente",
+          "trick": "Higiene diária = saúde garantida! Micróbios não gostam de sabão e água!"
+        },
+        {
+          "icon": "🦷",
+          "title": "Higiene Oral",
+          "body": "Cuidar dos dentes é muito importante para a nossa saúde e para termos um sorriso bonito.",
+          "example": "Escovar os dentes 2-3 vezes por dia\nUsar fio dentário\nVisitar o dentista regularmente\nEvitar comer muito açúcar",
+          "trick": "Escova os dentes depois de cada refeição. Cáries são bactérias que adoram açúcar e dentes sujos!"
+        },
+        {
+          "icon": "🧼",
+          "title": "Porque é Importante a Higiene",
+          "body": "A higiene previne doenças e nos faz sentir bem. As bactérias e vírus não conseguem sobreviver quando nos mantemos limpos!",
+          "example": "Lavar as mãos mata 99% dos micróbios\nBanho diário previne infecções\nDentes limpos evitam cáries\nUnhas curtas evitam sujidade",
+          "trick": "Sabão + água + fricção = micróbios derrotados! Lava as mãos por pelo menos 20 segundos!"
         }
       ],
       "praticar": [
@@ -528,6 +708,61 @@
           ],
           "answer": "Quente e semiárido (pouca chuva)",
           "why": "Cabo Verde tem clima tropical seco (semiárido) — muito sol, temperaturas altas e pouca chuva!"
+        },
+        {
+          "question": "Com que órgão cheiramos as flores?",
+          "options": [
+            "Nariz",
+            "Olhos",
+            "Ouvidos",
+            "Língua"
+          ],
+          "answer": "Nariz",
+          "why": "O NARIZ é o órgão do olfacto — é com ele que cheiramos flores, comida e tudo à nossa volta!"
+        },
+        {
+          "question": "Com que sentido ouvimos a música?",
+          "options": [
+            "Audição",
+            "Visão",
+            "Tacto",
+            "Paladar"
+          ],
+          "answer": "Audição",
+          "why": "A AUDIÇÃO é o sentido que nos permite ouvir sons — música, conversas, pássaros cantando!"
+        },
+        {
+          "question": "Com que sentido provamos a cachupa?",
+          "options": [
+            "Paladar",
+            "Olfacto",
+            "Tacto",
+            "Visão"
+          ],
+          "answer": "Paladar",
+          "why": "O PALADAR, com a ajuda da língua, permite-nos sentir os sabores: doce, salgado, ácido e amargo!"
+        },
+        {
+          "question": "Quantas vezes por dia devemos escovar os dentes?",
+          "options": [
+            "2 a 3 vezes",
+            "1 vez",
+            "5 vezes",
+            "Só de manhã"
+          ],
+          "answer": "2 a 3 vezes",
+          "why": "Devemos escovar os dentes pelo menos 2-3 vezes por dia: de manhã, após o almoço e antes de dormir!"
+        },
+        {
+          "question": "Com que lavamos as mãos correctamente?",
+          "options": [
+            "Água e sabão",
+            "Só água",
+            "Só sabão",
+            "Areia"
+          ],
+          "answer": "Água e sabão",
+          "why": "Água MAIS sabão é a combinação perfeita para eliminar os micróbios das mãos. Só água não chega!"
         }
       ],
       "desafios": [
@@ -618,6 +853,61 @@
           ],
           "answer": "Santiago (Praia)",
           "why": "A Praia, capital de Cabo Verde, fica em Santiago — a maior ilha do grupo de Sotavento!"
+        },
+        {
+          "question": "Se perdesses a visão, que sentido usarias para reconhecer uma pessoa pela voz?",
+          "options": [
+            "Audição",
+            "Tacto",
+            "Paladar",
+            "Olfacto"
+          ],
+          "answer": "Audição",
+          "why": "Reconhecemos as pessoas pela voz graças à AUDIÇÃO. Os ouvidos são muito importantes!"
+        },
+        {
+          "question": "Por que devemos lavar as mãos antes de comer?",
+          "options": [
+            "Para eliminar micróbios e evitar doenças",
+            "Para as mãos ficarem bonitas",
+            "Para sentir melhor o sabor",
+            "Porque a professora manda"
+          ],
+          "answer": "Para eliminar micróbios e evitar doenças",
+          "why": "As mãos tocam em muitas superfícies e acumulam micróbios. Lavar elimina os germes antes de tocarmos na comida!"
+        },
+        {
+          "question": "Que sentido fica prejudicado quando temos constipação?",
+          "options": [
+            "Olfacto",
+            "Visão",
+            "Audição",
+            "Paladar"
+          ],
+          "answer": "Olfacto",
+          "why": "Quando estamos constipados, o nariz fica entupido e perdemos (ou reduzimos) o olfacto — não cheiramos bem!"
+        },
+        {
+          "question": "O que acontece se não escovamos os dentes regularmente?",
+          "options": [
+            "Aparecem cáries e dor de dentes",
+            "Os dentes ficam mais brancos",
+            "Não acontece nada",
+            "Os dentes ficam mais fortes"
+          ],
+          "answer": "Aparecem cáries e dor de dentes",
+          "why": "Sem escovagem, as bactérias acumulam-se e produzem ácidos que destroem o esmalte dos dentes — formam-se cáries!"
+        },
+        {
+          "question": "Liga correctamente: nariz → ___ · olhos → ___ · língua → ___",
+          "options": [
+            "olfacto / visão / paladar",
+            "visão / olfacto / audição",
+            "paladar / tacto / visão",
+            "audição / paladar / olfacto"
+          ],
+          "answer": "olfacto / visão / paladar",
+          "why": "Nariz=olfacto, olhos=visão, língua=paladar. Cada órgão tem o seu sentido específico!"
         }
       ]
     },
@@ -699,6 +989,41 @@
             "♻️ Reciclar e poupar água e energia"
           ],
           "trick": "3Rs por ordem: REDUZIR (usar menos) → REUTILIZAR (usar de novo) → RECICLAR (transformar). Por esta ordem!"
+        },
+        {
+          "icon": "🏛️",
+          "title": "O que é Cidadania",
+          "body": "Cidadania é o conjunto de direitos e deveres de uma pessoa que pertence a um país ou comunidade.",
+          "example": "Direitos: votar, ter educação, ter saúde, ser respeitado\nDeveres: cumprir as leis, pagar impostos, respeitar os outros, cuidar do ambiente",
+          "trick": "Cidadão = membro activo da sociedade. Tem direitos MAS também tem deveres!"
+        },
+        {
+          "icon": "🏢",
+          "title": "A Câmara Municipal",
+          "body": "A Câmara Municipal é o órgão que gere e administra o município (a nossa zona). O Presidente da Câmara dirige-a.",
+          "example": "Câmara Municipal da Praia\nCâmara Municipal de São Vicente\nFunções: ruas, jardins, escolas locais, licenças",
+          "trick": "Câmara Municipal = governo local. Cuida do que é de todos no nosso município!"
+        },
+        {
+          "icon": "📜",
+          "title": "A Assembleia Municipal",
+          "body": "A Assembleia Municipal é o órgão que toma as decisões do município. É eleita pelo povo.",
+          "example": "Delibera sobre as decisões do município\nFiscaliza a Câmara Municipal\nRepresenta os cidadãos da zona",
+          "trick": "Câmara = executa. Assembleia = delibera (decide). Trabalham juntas pelo município!"
+        },
+        {
+          "icon": "🗳️",
+          "title": "Participação Cidadã",
+          "body": "Em democracia, os cidadãos participam escolhendo os seus representantes através do voto.",
+          "example": "Eleições autárquicas: elegemos o Presidente da Câmara\nMandato de 4 anos\nCada cidadão tem 1 voto (a partir dos 18 anos)",
+          "trick": "Votar = participar! É o direito mais importante do cidadão em democracia."
+        },
+        {
+          "icon": "⚖️",
+          "title": "Direitos e Deveres",
+          "body": "Todo o cidadão tem direitos (o que pode exigir) e deveres (o que deve cumprir).",
+          "example": "Direitos: educação, saúde, trabalho, segurança\nDeveres: respeitar as leis, pagar impostos, respeitar os outros, não poluir",
+          "trick": "Para ter direitos, temos de cumprir deveres. É uma troca justa na sociedade!"
         }
       ],
       "praticar": [
@@ -844,6 +1169,61 @@
           ],
           "answer": "Consumidor primário",
           "why": "O gafanhoto come a planta (produtor) — é o CONSUMIDOR PRIMÁRIO, o 1º consumidor da cadeia!"
+        },
+        {
+          "question": "Quem gere o nosso município?",
+          "options": [
+            "A Câmara Municipal",
+            "O Presidente da República",
+            "A Assembleia Nacional",
+            "O Professor"
+          ],
+          "answer": "A Câmara Municipal",
+          "why": "A CÂMARA MUNICIPAL administra o município — cuida das ruas, jardins, licenças e serviços locais!"
+        },
+        {
+          "question": "O Presidente da Câmara é eleito por...",
+          "options": [
+            "Os cidadãos do município",
+            "O Presidente da República",
+            "Os deputados",
+            "O Primeiro-Ministro"
+          ],
+          "answer": "Os cidadãos do município",
+          "why": "Em democracia, o povo elege os seus representantes. Os cidadãos do município votam no Presidente da Câmara!"
+        },
+        {
+          "question": "Qual é um DEVER do cidadão?",
+          "options": [
+            "Respeitar as leis",
+            "Não pagar impostos",
+            "Deitar lixo na rua",
+            "Não votar"
+          ],
+          "answer": "Respeitar as leis",
+          "why": "Respeitar as leis é um dever fundamental do cidadão. As leis existem para proteger toda a gente!"
+        },
+        {
+          "question": "Quanto tempo dura o mandato autárquico em Cabo Verde?",
+          "options": [
+            "4 anos",
+            "5 anos",
+            "2 anos",
+            "10 anos"
+          ],
+          "answer": "4 anos",
+          "why": "Em Cabo Verde, o mandato autárquico (Câmara e Assembleia Municipal) dura 4 anos!"
+        },
+        {
+          "question": "A Assembleia Municipal tem como função...",
+          "options": [
+            "Deliberar e fiscalizar a Câmara",
+            "Gerir as ruas e jardins",
+            "Ensinar nas escolas",
+            "Julgar os crimes"
+          ],
+          "answer": "Deliberar e fiscalizar a Câmara",
+          "why": "A Assembleia Municipal toma decisões (delibera) e fiscaliza o trabalho da Câmara Municipal!"
         }
       ],
       "desafios": [
@@ -934,6 +1314,61 @@
           ],
           "answer": "Alga marinha → Peixe pequeno → Atum → Tubarão",
           "why": "A cadeia começa no produtor (alga marinha), depois o peixe pequeno come a alga, o atum come o peixe pequeno, e o tubarão come o atum!"
+        },
+        {
+          "question": "Qual a diferença entre Câmara Municipal e Assembleia Municipal?",
+          "options": [
+            "Câmara executa, Assembleia delibera",
+            "São a mesma coisa",
+            "Assembleia executa, Câmara delibera",
+            "Câmara é nacional, Assembleia é local"
+          ],
+          "answer": "Câmara executa, Assembleia delibera",
+          "why": "A CÂMARA executa (faz) as decisões. A ASSEMBLEIA delibera (decide) e fiscaliza. Trabalham juntas!"
+        },
+        {
+          "question": "Porque é importante votar nas eleições?",
+          "options": [
+            "Para escolher quem nos governa",
+            "Por obrigação",
+            "Porque toda a gente faz",
+            "Para ganhar prémios"
+          ],
+          "answer": "Para escolher quem nos governa",
+          "why": "Votar é como escolher o nosso representante. Se não votarmos, outros decidem por nós!"
+        },
+        {
+          "question": "Dá um exemplo de DIREITO de um cidadão:",
+          "options": [
+            "Direito à educação",
+            "Dever de pagar impostos",
+            "Dever de votar",
+            "Obrigação de trabalhar"
+          ],
+          "answer": "Direito à educação",
+          "why": "O direito à educação significa que todo o cidadão pode e deve ter acesso à escola. Os outros são deveres!"
+        },
+        {
+          "question": "Ser bom cidadão inclui:",
+          "options": [
+            "Respeitar os outros e cumprir as leis",
+            "Deitar lixo onde se quiser",
+            "Não participar nas eleições",
+            "Fazer só o que nos interessa"
+          ],
+          "answer": "Respeitar os outros e cumprir as leis",
+          "why": "Um bom cidadão respeita as regras e os outros, protege o ambiente e participa na vida da comunidade!"
+        },
+        {
+          "question": "Quem resolve os problemas do nosso município (estradas, jardins, limpeza)?",
+          "options": [
+            "A Câmara Municipal",
+            "O Presidente da República",
+            "A Assembleia Nacional",
+            "O Governo Central"
+          ],
+          "answer": "A Câmara Municipal",
+          "why": "A CÂMARA MUNICIPAL trata dos assuntos locais: ruas, jardins, limpeza, licenças. É o governo da nossa zona!"
         }
       ]
     },
@@ -1067,6 +1502,41 @@
             "♻️ Como ajudar: poupar energia, reciclar, plantar árvores"
           ],
           "trick": "CO₂ retém calor → Terra aquece → gelo derrete → nível do mar sobe. CV como ilha está em risco!"
+        },
+        {
+          "icon": "✈️",
+          "title": "Migração: Emigração e Imigração",
+          "body": "Migração é o movimento de pessoas de um lugar para outro. Pode ser dentro do país ou para outro país.",
+          "example": "Emigração: SAIR do país de origem\nImigração: ENTRAR num novo país\nEx: Cabo-verdiano que vai para Portugal = emigrante (em CV) = imigrante (em Portugal)",
+          "trick": "Emigração = saída (E de Exit). Imigração = entrada (I de Into). Lembra pelo E e pelo I!"
+        },
+        {
+          "icon": "🌍",
+          "title": "A Diáspora Cabo-Verdiana",
+          "body": "A diáspora é a comunidade de cabo-verdianos que vive fora do país. Há mais cabo-verdianos fora do que dentro!",
+          "example": "Principais destinos: Portugal, EUA, França, Países Baixos\nCausas históricas: seca, fome, desemprego\nHoje: cerca de 500.000 em Cabo Verde e 700.000+ na diáspora",
+          "trick": "Diáspora = espalhados pelo mundo mas unidos pela cultura, língua e amor a Cabo Verde!"
+        },
+        {
+          "icon": "🎉",
+          "title": "Feriados Nacionais de Cabo Verde",
+          "body": "Os feriados nacionais são dias de celebração de momentos importantes da história de Cabo Verde.",
+          "example": "1 Janeiro: Ano Novo\n13 Janeiro: Liberdade e Democracia\n20 Janeiro: Heróis Nacionais\n1 Maio: Dia do Trabalhador\n5 Julho: Independência Nacional (1975)",
+          "trick": "5 de Julho é o mais importante — o Dia da Independência, quando Cabo Verde se tornou livre em 1975!"
+        },
+        {
+          "icon": "🚩",
+          "title": "A Bandeira de Cabo Verde",
+          "body": "A bandeira nacional representa a identidade e os valores do povo cabo-verdiano.",
+          "example": "Azul: o oceano e o céu\nBranco: a paz\nVermelho: o esforço do povo\n10 estrelas amarelas: as 10 ilhas",
+          "trick": "Conta as estrelas da bandeira: são 10 — uma por cada ilha de Cabo Verde!"
+        },
+        {
+          "icon": "🎵",
+          "title": "Hino e Brasão Nacional",
+          "body": "O hino e o brasão são símbolos nacionais que representam Cabo Verde.",
+          "example": "Hino: Cântico da Liberdade\nBrasão: prumo (verticalidade), triângulo (unidade), archote (liberdade), estrelas (10 ilhas)",
+          "trick": "Hino = Cântico da LIBERDADE. Liberdade também é o que o 5 de Julho representa!"
         }
       ],
       "praticar": [
@@ -1289,6 +1759,61 @@
           ],
           "answer": "União Africana (UA)",
           "why": "A UNIÃO AFRICANA (UA) é a organização que agrupa os 55 países africanos, incluindo Cabo Verde!"
+        },
+        {
+          "question": "Emigração significa...",
+          "options": [
+            "Sair do país de origem",
+            "Entrar num novo país",
+            "Viajar em férias",
+            "Mudar de cidade"
+          ],
+          "answer": "Sair do país de origem",
+          "why": "EMIGRAÇÃO = sair do país. Um cabo-verdiano que vai para Portugal é um emigrante em Cabo Verde!"
+        },
+        {
+          "question": "Quando é o Dia da Independência de Cabo Verde?",
+          "options": [
+            "5 de Julho",
+            "1 de Janeiro",
+            "20 de Janeiro",
+            "1 de Maio"
+          ],
+          "answer": "5 de Julho",
+          "why": "5 de Julho de 1975 é o Dia da Independência Nacional — quando Cabo Verde se tornou independente de Portugal!"
+        },
+        {
+          "question": "Quantas estrelas tem a bandeira de Cabo Verde?",
+          "options": [
+            "10",
+            "9",
+            "8",
+            "12"
+          ],
+          "answer": "10",
+          "why": "A bandeira tem 10 estrelas amarelas — uma por cada ilha de Cabo Verde!"
+        },
+        {
+          "question": "O hino nacional de Cabo Verde chama-se...",
+          "options": [
+            "Cântico da Liberdade",
+            "Hino ao Mar",
+            "Morabeza",
+            "Canção das Ilhas"
+          ],
+          "answer": "Cântico da Liberdade",
+          "why": "O hino nacional de Cabo Verde é o CÂNTICO DA LIBERDADE — celebra a independência e a liberdade do povo!"
+        },
+        {
+          "question": "A maioria dos cabo-verdianos emigrou historicamente por causa de...",
+          "options": [
+            "Seca e desemprego",
+            "Turismo e aventura",
+            "Guerra",
+            "Melhores praias"
+          ],
+          "answer": "Seca e desemprego",
+          "why": "A seca frequente e a falta de emprego foram as principais causas da emigração cabo-verdiana ao longo dos séculos!"
         }
       ],
       "desafios": [
@@ -1379,6 +1904,61 @@
           ],
           "answer": "Promover a cooperação económica entre países da África Ocidental",
           "why": "A CEDEAO promove a integração económica, o comércio livre e a cooperação entre os 15 países da África Ocidental, incluindo Cabo Verde!"
+        },
+        {
+          "question": "Qual a diferença entre emigração e imigração?",
+          "options": [
+            "Emigração=sair do país, imigração=entrar",
+            "São a mesma coisa",
+            "Imigração=sair, emigração=entrar",
+            "Só acontece em guerras"
+          ],
+          "answer": "Emigração=sair do país, imigração=entrar",
+          "why": "EMIGRAÇÃO = sair (E de Exit). IMIGRAÇÃO = entrar (I de Into). Um cabo-verdiano em Portugal é emigrante de CV e imigrante em Portugal!"
+        },
+        {
+          "question": "O que representa cada estrela na bandeira de Cabo Verde?",
+          "options": [
+            "Cada uma das 10 ilhas",
+            "Cada um dos municípios",
+            "Cada ano de independência",
+            "Os 10 presidentes"
+          ],
+          "answer": "Cada uma das 10 ilhas",
+          "why": "As 10 estrelas da bandeira representam as 10 ilhas de Cabo Verde: 6 de Barlavento e 4 de Sotavento!"
+        },
+        {
+          "question": "O feriado de 5 de Julho comemora...",
+          "options": [
+            "A independência de Cabo Verde em 1975",
+            "O descobrimento das ilhas",
+            "O Dia do Trabalhador",
+            "A liberdade de imprensa"
+          ],
+          "answer": "A independência de Cabo Verde em 1975",
+          "why": "5 de Julho de 1975 é quando Cabo Verde declarou a sua independência de Portugal. É o feriado mais importante!"
+        },
+        {
+          "question": "Feriado de 20 de Janeiro comemora os...",
+          "options": [
+            "Heróis Nacionais",
+            "Trabalhadores",
+            "Independência",
+            "Descobrimento"
+          ],
+          "answer": "Heróis Nacionais",
+          "why": "20 de Janeiro é o Dia dos Heróis Nacionais — homenageia aqueles que lutaram pela independência e pelo bem de Cabo Verde!"
+        },
+        {
+          "question": "O que é a diáspora cabo-verdiana?",
+          "options": [
+            "Comunidade de cabo-verdianos a viver fora de CV",
+            "Os turistas em Cabo Verde",
+            "Os habitantes de Santiago",
+            "O governo de Cabo Verde"
+          ],
+          "answer": "Comunidade de cabo-verdianos a viver fora de CV",
+          "why": "A diáspora são os cabo-verdianos espalhados pelo mundo — em Portugal, EUA, França... São mais do que os que vivem em Cabo Verde!"
         }
       ]
     }
