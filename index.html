@@ -556,7 +556,7 @@ let totalPoints = 0, aiLevel = 'base';
 let challengeInterval = null;
 let wrongAnswers = [];
 let currentLearnPage = 1, currentGramPage = 1;
-const LEARN_PAGE_SIZE = 6, GRAM_PAGE_SIZE = 4;
+const LEARN_PAGE_SIZE = 6, GRAM_PAGE_SIZE = 6;
 let jsonDB = {}, _jsonPromise = null;
 function ensureJSON(){
   if(_jsonPromise) return _jsonPromise;
@@ -1417,7 +1417,23 @@ const GRAM_DATA={
     {icon:'💬',title:'A Frase',
      regra:'Uma frase é um grupo de palavras com sentido completo. Tem sujeito (QUEM) e predicado (O QUÊ faz).',
      ex:'O peixe nada.\n↑sujeito  ↑predicado',
-     trick:'Pergunta QUEM faz? = sujeito. O que faz? = predicado.'}
+     trick:'Pergunta QUEM faz? = sujeito. O que faz? = predicado.'},
+    {icon:'🏷️',title:'O Nome',
+     regra:'O nome é uma palavra que designa seres, objetos, lugares, sentimentos ou ideias.',
+     ex:'Pessoas: menino, menina\nAnimais: gato, cão, tartaruga\nLugares: escola, Santiago\nObjetos: livro, lápis, bola',
+     trick:'Se podes colocar o/a ou um/uma antes da palavra, é um nome!'},
+    {icon:'🏃',title:'O Verbo',
+     regra:'O verbo exprime uma ação ou estado. É a palavra mais importante da frase — sem verbo não há frase!',
+     ex:'Ações: correr, comer, saltar, brincar\nEstados: ser, estar, parecer, ficar',
+     trick:'O verbo muda quando mudas o tempo: como (agora) / comi (ontem) / comerei (amanhã)!'},
+    {icon:'✅',title:'Frase Afirmativa e Negativa',
+     regra:'Forma afirmativa: diz que algo acontece. Forma negativa: usa NÃO antes do verbo.',
+     ex:'Afirmativa: O menino come peixe.\nNegativa: O menino NÃO come peixe.\n\nAfirmativa: Ela estuda.\nNegativa: Ela NÃO estuda.',
+     trick:'Para fazer a negativa, coloca NÃO antes do verbo. É sempre assim!'},
+    {icon:'📌',title:'Pontuação Básica',
+     regra:'Os sinais de pontuação organizam as frases e indicam quando parar, questionar ou expressar emoção.',
+     ex:'. Ponto final — fim de frase\n? Interrogação — pergunta\n! Exclamação — surpresa ou emoção\n, Vírgula — pausa curta',
+     trick:'. = STOP · ? = pergunta · ! = emoção · , = pausa curta. São os 4 sinais mais usados!'}
   ],
   2:[
     {icon:'❓',title:'Tipos de Frase',
@@ -1443,7 +1459,23 @@ const GRAM_DATA={
     {icon:'📌',title:'Artigo',
      regra:'Artigos definidos (sabemos qual): o, a, os, as.\nArtigos indefinidos (qualquer): um, uma, uns, umas.',
      ex:'"o livro" = aquele livro específico\n"um livro" = qualquer livro\n"a ilha" → "uma ilha"',
-     trick:'O/A/OS/AS = conhecemos. UM/UMA = não especificamos. Definido vs Indefinido!'}
+     trick:'O/A/OS/AS = conhecemos. UM/UMA = não especificamos. Definido vs Indefinido!'},
+    {icon:'🏷️',title:'Nome Comum e Nome Próprio',
+     regra:'Nome comum: designa qualquer ser da mesma espécie (sem maiúscula). Nome próprio: designa um ser específico e único (com maiúscula).',
+     ex:'menino (comum) → João (próprio)\nilha (comum) → Santiago (próprio)\ncidade (comum) → Praia (próprio)',
+     trick:'Nome próprio = especial, único, com maiúscula! Nome comum = qualquer um da mesma espécie.'},
+    {icon:'🔄',title:'O Advérbio',
+     regra:'O advérbio modifica o verbo, o adjetivo ou outro advérbio. Diz COMO, ONDE, QUANDO ou QUANTO algo acontece.',
+     ex:'Modo: rapidamente, devagar, bem, mal\nLugar: aqui, ali, lá, perto\nTempo: hoje, ontem, amanhã, sempre\nQuantidade: muito, pouco, bastante',
+     trick:'Palavra terminada em -MENTE = quase sempre advérbio de modo! Rapidamente, lentamente, felizmente.'},
+    {icon:'👤',title:'Pronomes Pessoais',
+     regra:'O pronome pessoal substitui o nome para evitar repetições. Muda conforme a pessoa e o número.',
+     ex:'1ª: eu (sg) · nós (pl)\n2ª: tu (sg) · vós (pl)\n3ª: ele/ela (sg) · eles/elas (pl)\n\nEx: A Ana foi à escola. Ela chegou cedo.',
+     trick:'Eu falo de mim. Tu falas de ti. Ele/Ela fala de outra pessoa. Simples!'},
+    {icon:'❌',title:'Frase Afirmativa e Negativa',
+     regra:'A forma da frase indica se algo acontece (afirmativa) ou não acontece (negativa). O NÃO vai antes do verbo.',
+     ex:'Afirmativa: O gato come peixe.\nNegativa: O gato NÃO come peixe.\n\nAfirmativa: Eles jogam.\nNegativa: Eles NÃO jogam.',
+     trick:'NÃO antes do verbo = frase negativa. NUNCA e NADA também tornam a frase negativa!'}
   ],
   3:[
     {icon:'🌳',title:'Família de Palavras',
@@ -1465,7 +1497,27 @@ const GRAM_DATA={
     {icon:'📚',title:'Classes de Palavras',
      regra:'As palavras classificam-se em categorias conforme a sua função na frase.',
      ex:'Nome: ilha, peixe, escola\nVerbo: comer, correr, ser\nAdjetivo: bonito, azul, grande\nAdvérbio: rapidamente, muito, aqui\nPronome: eu, meu, este\nArtigo: o, a, um\nPreposição: de, em, para, com\nConjunção: e, mas, porque, que',
-     trick:'Nome=coisa · Verbo=ação · Adjetivo=característica · Advérbio=modifica verbo!'}
+     trick:'Nome=coisa · Verbo=ação · Adjetivo=característica · Advérbio=modifica verbo!'},
+    {icon:'🏷️',title:'Classificação do Nome',
+     regra:'Os nomes classificam-se em: comum/próprio, colectivo/individual, concreto/abstracto.',
+     ex:'Comum: ilha, criança · Próprio: Santiago, João\nColectivo: cardume (peixes), rebanho (ovelhas)\nConcreto: mesa, cão · Abstracto: amor, alegria, liberdade',
+     trick:'Concreto = podes tocar. Abstracto = não podes tocar, só sentir. Amor, paz, tristeza = abstractos!'},
+    {icon:'👤',title:'Pronome Pessoal e Possessivo',
+     regra:'Pronome pessoal: substitui o nome dizendo QUEM é. Pronome possessivo: indica DE QUEM é algo.',
+     ex:'Pessoais: eu, tu, ele, ela, nós, eles\nPossessivos: meu/minha · teu/tua · seu/sua · nosso/nossa\n\nEx: Este livro é meu.',
+     trick:'Pessoal = QUEM é. Possessivo = DE QUEM é. Meu, teu, seu = possessivos!'},
+    {icon:'📊',title:'Grau do Adjetivo',
+     regra:'O grau indica a intensidade de uma qualidade. Comparativo compara dois seres; superlativo exprime o máximo.',
+     ex:'Normal: alto\nComparativo: mais alto do que · tão alto como · menos alto do que\nSuperlativo absoluto: altíssimo / muito alto\nSuperlativo relativo: o mais alto da turma',
+     trick:'Mais...do que = comparativo! Muito ou -íssimo = superlativo! Sempre ligado a uma qualidade.'},
+    {icon:'🔄',title:'O Advérbio — Tipos',
+     regra:'O advérbio modifica o verbo, o adjetivo ou outro advérbio. Classifica-se pelo que exprime.',
+     ex:'Modo: bem, mal, rapidamente, devagar\nLugar: aqui, ali, lá, perto, longe\nTempo: hoje, ontem, amanhã, já, sempre\nQuantidade: muito, pouco, bastante, nada',
+     trick:'A maioria dos advérbios de modo termina em -MENTE. São os mais fáceis de reconhecer!'},
+    {icon:'🔀',title:'Frase Simples e Complexa',
+     regra:'Frase simples = 1 oração (1 verbo). Frase complexa = 2 ou mais orações ligadas por conjunção.',
+     ex:'Simples: O João estuda. (1 verbo)\nComplexa: O João estuda porque quer aprender. (2 verbos)\n\nLigadores: que, porque, quando, se, mas, e, ou',
+     trick:'Conta os verbos! 1 verbo = simples. 2+ verbos = complexa. A conjunção é a ponte entre elas!'}
   ],
   4:[
     {icon:'📖',title:'Texto Narrativo',
@@ -1519,7 +1571,19 @@ const GRAM_DATA={
     {icon:'↔️',title:'Sinónimos e Antónimos',
      regra:'Sinónimos = palavras de sentido parecido. Antónimos = palavras de sentido contrário.',
      ex:'Sinónimos frequentes:\nbonito = belo = lindo = formoso\nalegre = feliz = contente\nfalar = dizer = narrar = contar\n\nAntónimos frequentes:\nbonito ≠ feio · alegre ≠ triste\nantigo ≠ moderno · rápido ≠ lento',
-     trick:'Sinónimos caminham juntos no mesmo sentido. Antónimos caminham em sentidos opostos!'}
+     trick:'Sinónimos caminham juntos no mesmo sentido. Antónimos caminham em sentidos opostos!'},
+    {icon:'💬',title:'Discurso Direto e Indireto',
+     regra:'Discurso direto: reproduz as palavras exactas de alguém (com aspas ou travessão). Discurso indireto: conta o que alguém disse sem citar as palavras exactas.',
+     ex:'Direto: A professora disse: "Estudem para o teste!"\nIndireto: A professora disse que estudassem para o teste.\n\nDireto usa aspas « » ou travessão —',
+     trick:'Direto = copiar as palavras exactas. Indireto = contar por outras palavras. Direto tem aspas ou travessão!'},
+    {icon:'📎',title:'Complemento Direto e Indireto',
+     regra:'Complemento direto (CD): completa o verbo sem preposição. Complemento indireto (CI): completa o verbo com preposição (a, de, para, com).',
+     ex:'O João comeu o peixe. → peixe = CD (sem preposição)\nO professor deu o livro ao aluno. → ao aluno = CI (preposição a)\n\nCD: O QUÊ? · CI: A QUEM? PARA QUEM?',
+     trick:'CD = sem preposição, responde a O QUÊ? CI = com preposição (a, de, para), responde a A QUEM?'},
+    {icon:'🎨',title:'Recursos Expressivos',
+     regra:'Os recursos expressivos enriquecem os textos com imagens e efeitos de linguagem especiais.',
+     ex:'Comparação: Os olhos dela brilham COMO estrelas.\nMetáfora: Os olhos dela SÃO estrelas.\nPersonificação: O vento abraçou as palmeiras.\nRepetição: Cabo Verde, Cabo Verde, terra de luz!',
+     trick:'Comparação usa COMO. Metáfora diz directamente que é. Personificação dá vida a coisas inanimadas!'}
   ]
 };
 
