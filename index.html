@@ -1589,37 +1589,19 @@ const GRAM_DATA={
 
 function renderGramatica(area){
   currentGramPage=1;
+  gramYear=currentYear;
+  const m=YEAR_META[currentYear];
   area.innerHTML=`
     <div style="background:linear-gradient(135deg,#7B2FBE,#a855f7);border-radius:22px;padding:18px;margin-bottom:14px;color:white;text-align:center">
       <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;margin-bottom:4px">📝 Gramática Portuguesa</div>
-      <div style="font-size:0.82rem;opacity:0.9">1ª à 4ª Classe — guia completo</div>
-    </div>
-    <div style="display:flex;gap:8px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px">
-      ${[1,2,3,4].map(y=>`
-        <button id="gram-y${y}" onclick="setGramYear(${y})"
-          style="flex-shrink:0;padding:9px 16px;border-radius:50px;border:2.5px solid ${y===gramYear?'transparent':'#e5e7eb'};background:${y===gramYear?'#7B2FBE':'white'};color:${y===gramYear?'white':'var(--muted)'};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer;transition:all 0.15s">
-          ${y}ª Classe
-        </button>`).join('')}
+      <div style="font-size:0.82rem;opacity:0.9">${m.title} — ${m.sub}</div>
     </div>
     <div id="gram-cards"></div>`;
   renderGramCards();
 }
 
-function setGramYear(y){
-  gramYear=y;
-  currentGramPage=1;
-  [1,2,3,4].forEach(x=>{
-    const b=document.getElementById('gram-y'+x);
-    if(!b) return;
-    b.style.background=x===y?'#7B2FBE':'white';
-    b.style.color=x===y?'white':'var(--muted)';
-    b.style.borderColor=x===y?'transparent':'#e5e7eb';
-  });
-  renderGramCards();
-}
-
 function renderGramCards(){
-  const cards=GRAM_DATA[gramYear]||[];
+  const cards=GRAM_DATA[currentYear]||[];
   const el=document.getElementById('gram-cards');
   if(!el) return;
   const totalPages=Math.ceil(cards.length/GRAM_PAGE_SIZE)||1;
