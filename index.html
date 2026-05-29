@@ -981,7 +981,7 @@ function buildQuiz(questions, color, retryFn){
   document.getElementById('content-area').innerHTML=render();
 }
 
-function escQ(s){ return (s||'').replace(/'/g,"\\'"); }
+function escQ(s){ return (s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
 
 async function renderPractice(area){
   area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
@@ -1049,7 +1049,7 @@ function getQuestions(year,subj){
         {question:'Qual é um tipo de FRASE INTERROGATIVA?',options:['"Como te chamas?"','"O céu é azul."','"Que dia bonito!"','"Vai estudar!"'],answer:'"Como te chamas?"',why:'A frase interrogativa faz uma PERGUNTA e termina com "?". "Como te chamas?" é uma pergunta!'},
         {question:'Qual é o plural de "flor"?',options:['flores','flors','floris','flor'],answer:'flores',why:'Palavras terminadas em "-or" fazem o plural com "-ores": flor → **flores**!'},
         {question:'O adjectivo descreve...',options:['Como são as coisas','Uma acção','Um lugar','Uma pessoa só'],answer:'Como são as coisas',why:'O adjectivo descreve ou qualifica o nome: o mar <strong>azul</strong>, a casa <strong>grande</strong>, o menino **simpático**.'},
-        {question:'"A menina é alta." A palavra sublinhada é...',options:['Adjectivo','Nome','Verbo','Artigo'],answer:'Adjectivo',why:'"Alta" descreve como é a menina — é um **adjectivo**! Os adjectivos qualificam os nomes.'},
+        {question:'"A menina é <u>alta</u>." A palavra sublinhada é...',options:['Adjectivo','Nome','Verbo','Artigo'],answer:'Adjectivo',why:'Alta descreve como é a menina — é um adjectivo! Os adjectivos qualificam os nomes.'},
         {question:'Qual é o feminino de "professor"?',options:['professora','professore','professori','professores'],answer:'professora',why:'A maioria das palavras masculinas em "-or" fazem o feminino em "-ora": professor → **professora**!'},
         {question:'Qual frase está correcta com maiúsculas?',options:['A Ana vive em Santiago.','a ana vive em santiago.','A ana vive em Santiago.','a Ana vive em santiago.'],answer:'A Ana vive em Santiago.',why:'Usamos maiúscula no início da frase ("A") e nos nomes próprios de pessoas ("Ana") e lugares ("Santiago")!'},
       ],
@@ -1076,7 +1076,7 @@ function getQuestions(year,subj){
       ],
       por:[
         {question:'Qual é a raiz da palavra "marinheiro"?',options:['Mar','Marinha','Eiro','Inho'],answer:'Mar',why:'"Marinheiro" vem de **MAR**. Todas as palavras da família do mar partilham essa raiz: marítimo, maresia, amarar...'},
-        {question:'"Ele correu rapidamente." A palavra sublinhada é...',options:['Advérbio de modo','Adjectivo','Nome','Verbo'],answer:'Advérbio de modo',why:'Palavras terminadas em "-mente" que dizem COMO se faz a acção são advérbios de modo. Rapidamente = de modo rápido.'},
+        {question:'"Ele correu <u>rapidamente</u>." A palavra sublinhada é...',options:['Advérbio de modo','Adjectivo','Nome','Verbo'],answer:'Advérbio de modo',why:'Palavras terminadas em -mente que dizem COMO se faz a acção são advérbios de modo. Rapidamente = de modo rápido.'},
         {question:'"O Pedro estuda." → Substituir "O Pedro" por pronome:',options:['Ele estuda.','A ele estuda.','Eles estuda.','Tu estudas.'],answer:'Ele estuda.',why:'O Pedro = 1 pessoa, masculino, 3ª pessoa → pronome pessoal **"ele"**!'},
         {question:'Qual é o antónimo de "quente"?',options:['Frio','Morno','Quente','Húmido'],answer:'Frio',why:'Antónimo = contrário! Quente ↔ **frio**. São palavras de sentido oposto!'},
         {question:'Que sinal de pontuação termina uma PERGUNTA?',options:['?','!','.',','],answer:'?',why:'O ponto de interrogação (?) termina sempre as perguntas. Por exemplo: "Como te chamas**?**"'},
