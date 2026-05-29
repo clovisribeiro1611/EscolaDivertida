@@ -1,0 +1,1523 @@
+window.DB_por = {
+  "disciplina": "Português",
+  "versao": "2.0",
+  "anos": [
+    {
+      "ano": 1,
+      "aprender": [
+        {
+          "icon": "🔤",
+          "title": "O Alfabeto",
+          "body": "O alfabeto tem 26 letras! Há vogais (A, E, I, O, U) e consoantes (todas as outras).",
+          "example": "Vogais: A · E · I · O · U<br>🅰️ de Avó · E de Escola · I de Ilha · O de Onda · U de Uva<br>Consoantes: B, C, D, F, G, H, J, L, M, N, P, Q, R, S, T, V, X, Z...",
+          "trick": "AEIOU são as 5 VOGAIS. As outras 21 letras são consoantes. Canta: A-E-I-O-U!"
+        },
+        {
+          "icon": "🐟",
+          "title": "Sílabas",
+          "body": "As palavras são feitas de sílabas. Uma sílaba é um pedaço de som da palavra. Podes bater palmas para contar!",
+          "example": "PE-I-XE = 3 sílabas 🐟<br>MA-RIN-HEI-RO = 4 sílabas ⚓<br>SOL = 1 sílaba ☀️<br>CA-BO = 2 sílabas 🏝️",
+          "trick": "Bate palmas enquanto dizes a palavra! Cada palma = 1 sílaba. PE-I-XE = 3 palmas = 3 sílabas!"
+        },
+        {
+          "icon": "✍️",
+          "title": "Letras Maiúsculas",
+          "body": "Usamos letras maiúsculas no início de nomes próprios, de frases e de nomes de lugares.",
+          "example": "Cabo Verde 🇨🇻<br>Santiago · Mindelo · Praia<br>Maria · João · Ana<br>Início de frase: 'O peixe é saboroso.'",
+          "trick": "3 regras: início de frase, nomes de PESSOAS (Ana, João) e nomes de LUGARES (Santiago, Praia)!"
+        },
+        {
+          "icon": "🗣️",
+          "title": "Vogais e Consoantes",
+          "body": "As vogais (A, E, I, O, U) são sons abertos. As consoantes precisam de uma vogal para fazer som.",
+          "example": "Em PEIXE → P(consoante) E(vogal) I(vogal) X(consoante) E(vogal)<br>Em CABO → C(consoante) A(vogal) B(consoante) O(vogal)",
+          "trick": "Vogal = som aberto, como ao cantar uma nota. Consoante = precisa de uma vogal ao lado para ter som!"
+        },
+        {
+          "icon": "📖",
+          "title": "Frase Simples",
+          "body": "Uma frase tem sentido completo. Começa com maiúscula e termina com ponto final.",
+          "example": "O peixe nada. ✓<br>A menina lê. ✓<br>Cabo Verde é bonito. ✓<br>Sempre: MAIÚSCULA no início + PONTO no fim!",
+          "trick": "Toda a frase tem QUEM faz (sujeito) + O QUÊ faz (predicado). O peixe nada: QUEM? O peixe. O QUÊ? Nada!"
+        },
+        {
+          "icon": "👧",
+          "title": "Menina — Sílabas",
+          "body": "A palavra MENINA tem 3 sílabas: ME-NI-NA. Podemos bater palmas para contar!",
+          "example": "ME · NI · NA = 3 sílabas 👧",
+          "trick": "Bate 3 palmas: PAL-PAL-PAL enquanto dizes ME-NI-NA!"
+        },
+        {
+          "icon": "👦",
+          "title": "Menino — Sílabas",
+          "body": "A palavra MENINO tem 3 sílabas: ME-NI-NO. Como MENINA, também tem 3 sílabas!",
+          "example": "ME · NI · NO = 3 sílabas 👦",
+          "trick": "MENINA (3) e MENINO (3) têm o mesmo número de sílabas! Bate palmas!"
+        },
+        {
+          "icon": "🔤",
+          "title": "Vogais em MENINA e MENINO",
+          "body": "Em MENINA: E, I, A são vogais. Em MENINO: E, I, O são vogais. Vogais = A, E, I, O, U",
+          "example": "MENINA: M[E]N[I]N[A] ← 3 vogais<br>MENINO: M[E]N[I]N[O] ← 3 vogais",
+          "trick": "Todas as palavras têm vogais! São as que fazem som aberto: A-E-I-O-U!"
+        },
+        {
+          "icon": "👧👦",
+          "title": "Diferença: MENINA vs MENINO",
+          "body": "MENINA é feminino (a menina). MENINO é masculino (o menino). Mudam pela última sílaba: -na vs -no",
+          "example": "A menina 👧 / O menino 👦",
+          "trick": "Feminino termina em -a (menina, menina). Masculino termina em -o (menino, menino)!"
+        },
+        {
+          "icon": "🌟",
+          "title": "Sílabas com Consoante + Vogal",
+          "body": "ME, NI, NA, NO são sílabas de CONSOANTE+VOGAL. M+E=ME, N+I=NI, N+A=NA, N+O=NO",
+          "example": "ME: consoante M + vogal E<br>NI: consoante N + vogal I",
+          "trick": "Consoante sozinha não soa. Precisa de uma vogal! M+E = ME (soa!)"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é uma VOGAL?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": "A",
+          "why": "As vogais são: A, E, I, O, U. O 'A' é a primeira vogal do alfabeto!"
+        },
+        {
+          "question": "Quantas sílabas tem a palavra 'PE-I-XE'?",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "answer": "3",
+          "why": "PE-I-XE tem 3 sílabas! Bate palmas: PE (bate), I (bate), XE (bate) = 3!"
+        },
+        {
+          "question": "Qual palavra começa com letra MAIÚSCULA corretamente?",
+          "options": [
+            "Santiago",
+            "santiago",
+            "SANTIAGO",
+            "sanTiago"
+          ],
+          "answer": "Santiago",
+          "why": "Nomes de lugares como Santiago escrevem-se com letra maiúscula no início. Santiago é uma ilha de Cabo Verde!"
+        },
+        {
+          "question": "Qual é a vogal na palavra 'MAR'?",
+          "options": [
+            "A",
+            "M",
+            "R",
+            "Não tem vogal"
+          ],
+          "answer": "A",
+          "why": "Em MAR: M (consoante), A (VOGAL!), R (consoante). O A é a vogal!"
+        },
+        {
+          "question": "'Sol' começa com qual letra?",
+          "options": [
+            "S",
+            "Z",
+            "C",
+            "X"
+          ],
+          "answer": "S",
+          "why": "SOL começa com a letra S! S-O-L. O sol aquece Cabo Verde todos os dias! ☀️"
+        },
+        {
+          "question": "Quantas vogais tem 'ILHA'?",
+          "options": [
+            "2",
+            "1",
+            "3",
+            "0"
+          ],
+          "answer": "2",
+          "why": "ILHA = I-L-H-A. As vogais são o I e o A = 2 vogais! (L e H são consoantes)"
+        },
+        {
+          "question": "Qual é o plural de 'flor'?",
+          "options": [
+            "flores",
+            "flors",
+            "floris",
+            "flor"
+          ],
+          "answer": "flores",
+          "why": "Palavras terminadas em consoante fazem o plural com '-es': flor → flores!"
+        },
+        {
+          "question": "Qual frase está CORRETA?",
+          "options": [
+            "o cão corre.",
+            "O cão corre.",
+            "O cão corre",
+            "o Cão corre."
+          ],
+          "answer": "O cão corre.",
+          "why": "Uma frase começa com MAIÚSCULA e termina com PONTO. 'O cão corre.' está correto!"
+        },
+        {
+          "question": "Quantas sílabas tem 'CA-BO VER-DE'?",
+          "options": [
+            "4",
+            "2",
+            "3",
+            "5"
+          ],
+          "answer": "4",
+          "why": "CA-BO = 2 sílabas, VER-DE = 2 sílabas. Total: 4 sílabas!"
+        },
+        {
+          "question": "Qual letra é CONSOANTE?",
+          "options": [
+            "B",
+            "A",
+            "E",
+            "O"
+          ],
+          "answer": "B",
+          "why": "B é uma consoante! As vogais são A, E, I, O, U. Todas as outras letras são consoantes."
+        },
+        {
+          "question": "Qual é o plural de 'ilha'?",
+          "options": [
+            "ilhas",
+            "ilhas",
+            "ilhos",
+            "ilha"
+          ],
+          "answer": "ilhas",
+          "why": "Palavras terminadas em vogal fazem o plural com '-s': ilha → ilhas! Cabo Verde tem 10 ilhas!"
+        },
+        {
+          "question": "Qual palavra tem 1 sílaba?",
+          "options": [
+            "Sol",
+            "Casa",
+            "Peixe",
+            "Escola"
+          ],
+          "answer": "Sol",
+          "why": "SOL tem apenas 1 sílaba. CA-SA=2, PEI-XE=2, ES-CO-LA=3 sílabas!"
+        },
+        {
+          "question": "Qual é a primeira letra do alfabeto?",
+          "options": [
+            "A",
+            "B",
+            "Z",
+            "E"
+          ],
+          "answer": "A",
+          "why": "O alfabeto começa com A, B, C, D... O A é sempre a primeira letra!"
+        },
+        {
+          "question": "Quantas sílabas tem a palavra MENINA?",
+          "options": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "answer": "3",
+          "why": "ME-NI-NA = 3 sílabas. Bate 3 palmas!"
+        },
+        {
+          "question": "Qual é a primeira sílaba de MENINO?",
+          "options": [
+            "ME",
+            "NI",
+            "NO",
+            "IN"
+          ],
+          "answer": "ME",
+          "why": "MENINO: ME-NI-NO. ME é a primeira sílaba!"
+        },
+        {
+          "question": "Qual é uma VOGAL?",
+          "options": [
+            "A",
+            "M",
+            "N",
+            "B"
+          ],
+          "answer": "A",
+          "why": "As vogais são: A, E, I, O, U. A letra 'A' é uma vogal!"
+        },
+        {
+          "question": "Qual é o género de MENINA?",
+          "options": [
+            "Feminino",
+            "Masculino",
+            "Neutra",
+            "Misto"
+          ],
+          "answer": "Feminino",
+          "why": "MENINA é feminino (a menina). Termina em -a!"
+        },
+        {
+          "question": "Qual é o género de MENINO?",
+          "options": [
+            "Masculino",
+            "Feminino",
+            "Neutra",
+            "Misto"
+          ],
+          "answer": "Masculino",
+          "why": "MENINO é masculino (o menino). Termina em -o!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Qual destas palavras tem mais sílabas?",
+          "options": [
+            "MA-RI-NHEi-RO",
+            "MAR",
+            "PEI-XE",
+            "SOL"
+          ],
+          "answer": "MA-RI-NHEi-RO",
+          "why": "Marinheiro tem 4 sílabas (MA-RI-NHEI-RO), que é mais do que as outras palavras!"
+        },
+        {
+          "question": "Em 'O PESCADOR VAI AO MAR', quantas vogais existem?",
+          "options": [
+            "7",
+            "5",
+            "9",
+            "6"
+          ],
+          "answer": "7",
+          "why": "O(1) E(2)A(3)O(4) A(5)I(6) A(7)O. As vogais são: O, E, A, O, A, I, A = 7!"
+        },
+        {
+          "question": "Qual frase tem sentido completo?",
+          "options": [
+            "O golfinho nada no mar.",
+            "O golfinho no.",
+            "Nada golfinho.",
+            "O mar o."
+          ],
+          "answer": "O golfinho nada no mar.",
+          "why": "Uma frase com sentido diz quem faz o quê: 'O golfinho' (quem) + 'nada no mar' (o quê)!"
+        },
+        {
+          "question": "Qual é a última sílaba de MENINA?",
+          "options": [
+            "NA",
+            "NI",
+            "ME",
+            "AN"
+          ],
+          "answer": "NA",
+          "why": "ME-NI-NA: A última é NA!"
+        },
+        {
+          "question": "Em MENINO, qual letra é uma consoante?",
+          "options": [
+            "M",
+            "E",
+            "I",
+            "O"
+          ],
+          "answer": "M",
+          "why": "M é uma consoante. As consoantes são todas as letras que NÃO são vogais!"
+        },
+        {
+          "question": "Quantas vogais tem MENINA?",
+          "options": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "answer": "3",
+          "why": "MENINA: M[E]N[I]N[A]. Tem 3 vogais: E, I, A!"
+        },
+        {
+          "question": "Se MENINA é ela (feminino), então MENINO é...",
+          "options": [
+            "ele (masculino)",
+            "ela (feminino)",
+            "nada",
+            "outro"
+          ],
+          "answer": "ele (masculino)",
+          "why": "MENINO é masculino — diz-se 'ele menino' ou apenas 'o menino'!"
+        },
+        {
+          "question": "Qual palavra tem 2 sílabas?",
+          "options": [
+            "CASA",
+            "MENINA",
+            "BARCO",
+            "ESCOLA"
+          ],
+          "answer": "CASA",
+          "why": "CASA = CA-SA = 2 sílabas. Menina=3, Barco=2 (na verdade também!). Mas CASA é a mais simples!"
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "aprender": [
+        {
+          "icon": "📄",
+          "title": "Tipos de Frase",
+          "body": "As frases podem ser de diferentes tipos conforme o que queremos dizer.",
+          "list": [
+            "📌 Declarativa — conta algo: 'O mar é azul.'",
+            "❓ Interrogativa — pergunta: 'Como te chamas?'",
+            "❗ Exclamativa — expressa emoção: 'Que bela ilha!'",
+            "👉 Imperativa — dá ordem: 'Vai estudar!'"
+          ],
+          "trick": "O sinal no final diz tudo: . = declara, ? = pergunta, ! = emoção/ordem. Lê o sinal e sabes o tipo!"
+        },
+        {
+          "icon": "🔤",
+          "title": "Nomes — Singular e Plural",
+          "body": "O singular é um. O plural são dois ou mais. Para o plural, geralmente adicionamos '-s' ou '-es'.",
+          "example": "🐟 peixe → peixes<br>🌺 flor → flores<br>🏝️ ilha → ilhas<br>🐚 caracol → caracóis<br>👦 cidadão → cidadãos",
+          "trick": "Geralmente: +s (ilhas), +es (flores). Atenção: cidadão → cidadãos, avião → aviões. Há exceções!"
+        },
+        {
+          "icon": "✏️",
+          "title": "Masculino e Feminino",
+          "body": "Os nomes têm género: masculino (o, um) ou feminino (a, uma).",
+          "example": "👦 o menino → 👧 a menina<br>🐓 o galo → 🐔 a galinha<br>🧑 o professor → 👩‍🏫 a professora<br>🦁 o leão → a leoa",
+          "trick": "Testa com o/a: 'o professor' → 'a professora'. Se encaixa com 'o' = masculino, com 'a' = feminino!"
+        },
+        {
+          "icon": "🎨",
+          "title": "Adjetivos",
+          "body": "Os adjetivos descrevem os nomes. Dizem como são as coisas, as pessoas ou os lugares.",
+          "example": "O mar é azul e bonito. 🌊<br>A ilha é grande e verde. 🏝️<br>O menino é alto e simpático. 😊<br>O adjetivo concorda com o nome!",
+          "trick": "O adjetivo responde: COMO É? A ilha é bonita e verde. Bonita e verde descrevem a ilha = adjetivos!"
+        },
+        {
+          "icon": "🏃",
+          "title": "Verbos — Ações",
+          "body": "Os verbos indicam ações ou estados. Mudam conforme a pessoa (eu, tu, ele/ela).",
+          "example": "Eu corro · Tu corres · Ele corre<br>Eu como · Tu comes · Ela come<br>Eu bebo · Tu bebes · Ele bebe",
+          "trick": "O verbo muda com o tempo: COMO (agora), COMI (acabou), COMIA (continuava antes), COMEREI (amanhã)!"
+        },
+        {
+          "icon": "📌",
+          "title": "Artigos",
+          "body": "Os artigos acompanham os nomes. Definidos: o, a, os, as. Indefinidos: um, uma, uns, umas.",
+          "example": "O peixe está fresco. (definido, sabemos qual)<br>Um barco passou. (indefinido, não sabemos qual)<br>A pesca é importante em Cabo Verde.",
+          "trick": "Definido = sabemos qual (O/A/OS/AS). Indefinido = qualquer um (UM/UMA). O livro vs Um livro!"
+        },
+        {
+          "icon": "👦",
+          "title": "O Meu Corpo",
+          "body": "O corpo humano tem várias partes: cabeça, tronco e membros. Cabeça tem olhos, nariz, boca, orelhas.",
+          "example": "Cabeça: olhos 👀, nariz 👃, boca 👄, orelhas 👂<br>Tronco: peito, barriga, costas<br>Membros: braços, pernas",
+          "trick": "Da cabeça aos pés: CABEÇA → TRONCO → MEMBROS. 3 partes principais!"
+        },
+        {
+          "icon": "👁️",
+          "title": "Os Cinco Sentidos",
+          "body": "Temos 5 sentidos: visão (olhos), audição (orelhas), tato (pele), paladar (língua), olfato (nariz).",
+          "example": "👀 Ver com os olhos<br>👂 Ouvir com os ouvidos<br>✋ Tocar com a pele<br>👅 Saborear com a língua<br>👃 Cheirar com o nariz",
+          "trick": "5 sentidos = 5 órgãos. Cada sentido tem um órgão especial!"
+        },
+        {
+          "icon": "🧼",
+          "title": "Higiene Pessoal",
+          "body": "Higiene é estar limpo e saudável. Devemos lavar: as mãos, o rosto, os dentes, o corpo inteiro.",
+          "example": "Lavar mãos antes de comer 🚰<br>Escovar dentes 2x dia 🪥<br>Banho diário 🚿<br>Unhas cortadas ✂️",
+          "trick": "Higiene = SAÚDE! Mãos limpas = sem doenças. Banho diário = corpo saudável!"
+        },
+        {
+          "icon": "🚫",
+          "title": "Hábitos de Higiene",
+          "body": "Tapar a boca ao tossir, não partilhar copo com outros, lavar as mãos após ir à casa de banho.",
+          "example": "Ao tossir/espirrar: cobrir com o cotovelo 💨<br>Não partilhar copo/talheres<br>Lavar mãos na casa de banho",
+          "trick": "Protege-te e protege os outros! Cobre a boca ao tossir para não espalhar germes!"
+        },
+        {
+          "icon": "💪",
+          "title": "Ossos e Músculos",
+          "body": "Os ossos dão forma ao corpo. Os músculos permitem movimentos. Juntos fazem o esqueleto!",
+          "example": "Ossos: crânio 🧠, vértebras, costelas, fémur<br>Músculos: bícep (braço), quadrícep (coxa)",
+          "trick": "Ossos = estrutura (forma). Músculos = movimento (força). Sem ossos cairias, sem músculos não movias!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é um tipo de FRASE INTERROGATIVA?",
+          "options": [
+            "'Como te chamas?'",
+            "'O céu é azul.'",
+            "'Que dia bonito!'",
+            "'Vai estudar!'"
+          ],
+          "answer": "'Como te chamas?'",
+          "why": "A frase interrogativa faz uma PERGUNTA e termina com '?'. 'Como te chamas?' é uma pergunta!"
+        },
+        {
+          "question": "Qual é o plural de 'cidadão'?",
+          "options": [
+            "Cidadãos",
+            "Cidadões",
+            "Cidadãoes",
+            "Cidadão"
+          ],
+          "answer": "Cidadãos",
+          "why": "Palavras terminadas em '-ão' geralmente fazem o plural em '-ãos': cidadão → cidadãos!"
+        },
+        {
+          "question": "O adjetivo descreve...",
+          "options": [
+            "Como são as coisas",
+            "Uma ação",
+            "Um lugar",
+            "Uma pessoa só"
+          ],
+          "answer": "Como são as coisas",
+          "why": "O adjetivo descreve ou qualifica o nome: o mar azul, a casa grande, o menino simpático."
+        },
+        {
+          "question": "'A menina é alta.' A palavra sublinhada é...",
+          "options": [
+            "Adjetivo",
+            "Nome",
+            "Verbo",
+            "Artigo"
+          ],
+          "answer": "Adjetivo",
+          "why": "'Alta' descreve como é a menina — é um ADJETIVO! Os adjetivos qualificam os nomes."
+        },
+        {
+          "question": "Qual é o feminino de 'professor'?",
+          "options": [
+            "professora",
+            "professore",
+            "professori",
+            "professores"
+          ],
+          "answer": "professora",
+          "why": "Palavras masculinas em '-or' fazem o feminino em '-ora': professor → professora!"
+        },
+        {
+          "question": "Qual frase está correta com maiúsculas?",
+          "options": [
+            "A Ana vive em Santiago.",
+            "a ana vive em santiago.",
+            "A ana vive em Santiago.",
+            "a Ana vive em santiago."
+          ],
+          "answer": "A Ana vive em Santiago.",
+          "why": "Maiúscula no início da frase ('A') e em nomes próprios de pessoas ('Ana') e lugares ('Santiago')!"
+        },
+        {
+          "question": "Qual é o plural de 'barco'?",
+          "options": [
+            "barcos",
+            "barques",
+            "barcoes",
+            "barcas"
+          ],
+          "answer": "barcos",
+          "why": "Palavras terminadas em vogal fazem o plural com '-s': barco → barcos!"
+        },
+        {
+          "question": "Qual é o artigo definido feminino singular?",
+          "options": [
+            "A",
+            "O",
+            "Um",
+            "Uma"
+          ],
+          "answer": "A",
+          "why": "O artigo definido feminino singular é 'A': A menina, A escola, A ilha!"
+        },
+        {
+          "question": "Frase declarativa termina com...",
+          "options": [
+            "Ponto final (.)",
+            "Ponto de interrogação (?)",
+            "Ponto de exclamação (!)",
+            "Reticências (...)"
+          ],
+          "answer": "Ponto final (.)",
+          "why": "A frase declarativa (afirma algo) termina com ponto final: 'Cabo Verde é lindo.'"
+        },
+        {
+          "question": "'O Pedro estuda muito.' Qual é o verbo?",
+          "options": [
+            "estuda",
+            "Pedro",
+            "muito",
+            "O"
+          ],
+          "answer": "estuda",
+          "why": "'Estuda' é a ação que o Pedro faz — é o VERBO da frase!"
+        },
+        {
+          "question": "Qual é o masculino de 'rainha'?",
+          "options": [
+            "Rei",
+            "Rainhe",
+            "Rainho",
+            "Rainhão"
+          ],
+          "answer": "Rei",
+          "why": "Rainha e Rei são feminino e masculino. São palavras diferentes (heterónimos)!"
+        },
+        {
+          "question": "Qual destas é uma frase IMPERATIVA?",
+          "options": [
+            "'Fecha a janela!'",
+            "'O vento sopra.'",
+            "'Está frio?'",
+            "'Que chuva!'"
+          ],
+          "answer": "'Fecha a janela!'",
+          "why": "A frase imperativa dá uma ordem ou pedido: 'Fecha a janela!' — estamos a pedir que alguém faça algo!"
+        },
+        {
+          "question": "Qual é o plural de 'lápis'?",
+          "options": [
+            "lápis",
+            "lápises",
+            "lápiss",
+            "lápios"
+          ],
+          "answer": "lápis",
+          "why": "Palavras terminadas em '-is' com acento não mudam no plural: lápis → lápis (igual)!"
+        },
+        {
+          "question": "Qual é a principal função das orelhas?",
+          "options": [
+            "Ouvir",
+            "Ver",
+            "Cheirar",
+            "Saborear"
+          ],
+          "answer": "Ouvir",
+          "why": "As orelhas são o órgão da audição — ouvem sons!"
+        },
+        {
+          "question": "Quantos sentidos tem o corpo humano?",
+          "options": [
+            "5",
+            "3",
+            "6",
+            "4"
+          ],
+          "answer": "5",
+          "why": "5 sentidos: visão, audição, tato, paladar, olfato!"
+        },
+        {
+          "question": "Qual é um hábito de higiene importante?",
+          "options": [
+            "Lavar mãos",
+            "Não dormir",
+            "Comer muito doce",
+            "Brincar na lama"
+          ],
+          "answer": "Lavar mãos",
+          "why": "Lavar mãos com frequência evita doenças!"
+        },
+        {
+          "question": "Quantas partes principais tem o corpo?",
+          "options": [
+            "3 (cabeça, tronco, membros)",
+            "2",
+            "4",
+            "5"
+          ],
+          "answer": "3 (cabeça, tronco, membros)",
+          "why": "Cabeça + Tronco + Membros (braços e pernas) = 3 partes!"
+        },
+        {
+          "question": "Qual sentido usa a língua?",
+          "options": [
+            "Paladar (saborear)",
+            "Visão",
+            "Audição",
+            "Olfato"
+          ],
+          "answer": "Paladar (saborear)",
+          "why": "A língua permite saborear a comida — é o órgão do paladar!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Em 'Os pescadores cabo-verdianos trabalham muito.', qual é o adjetivo?",
+          "options": [
+            "cabo-verdianos",
+            "pescadores",
+            "trabalham",
+            "muito"
+          ],
+          "answer": "cabo-verdianos",
+          "why": "'Cabo-verdianos' descreve os pescadores — diz a sua nacionalidade. É um ADJETIVO!"
+        },
+        {
+          "question": "Transforma em plural: 'O barco pequeno navega.' fica...",
+          "options": [
+            "Os barcos pequenos navegam.",
+            "O barcos pequeno navega.",
+            "Os barco pequenos navega.",
+            "Os barcos pequenas navegam."
+          ],
+          "answer": "Os barcos pequenos navegam.",
+          "why": "Tudo concorda no plural: O→Os, barco→barcos, pequeno→pequenos, navega→navegam!"
+        },
+        {
+          "question": "Qual é o tipo da frase: 'Que bela ilha de Santiago!'?",
+          "options": [
+            "Exclamativa",
+            "Interrogativa",
+            "Declarativa",
+            "Imperativa"
+          ],
+          "answer": "Exclamativa",
+          "why": "Termina com '!' e expressa admiração/emoção — é uma frase EXCLAMATIVA!"
+        },
+        {
+          "question": "Qual é a diferença entre ossos e músculos?",
+          "options": [
+            "Ossos dão forma, músculos dão movimento",
+            "São a mesma coisa",
+            "Músculos dão forma",
+            "Ossos dão movimento"
+          ],
+          "answer": "Ossos dão forma, músculos dão movimento",
+          "why": "Ossos = estrutura (forma do corpo). Músculos = movimento (levantam braços, correm, pulam)!"
+        },
+        {
+          "question": "Por que é importante lavar as mãos?",
+          "options": [
+            "Para evitar germes e doenças",
+            "Porque sim",
+            "Para brincar",
+            "Porque é obrigatório"
+          ],
+          "answer": "Para evitar germes e doenças",
+          "why": "Mãos limpas = sem germes. Sem germes = corpo saudável e sem infeções!"
+        },
+        {
+          "question": "Se quiseres cheirar uma flor, qual sentido usas?",
+          "options": [
+            "Olfato (nariz)",
+            "Visão",
+            "Tato",
+            "Audição"
+          ],
+          "answer": "Olfato (nariz)",
+          "why": "Cheirar usa o nariz — é o órgão do olfato!"
+        },
+        {
+          "question": "Qual é a melhor forma de cobrir a boca ao tossir?",
+          "options": [
+            "Com o cotovelo ou manga",
+            "Com a mão aberta",
+            "Não cobrir",
+            "Com o lenço no bolso"
+          ],
+          "answer": "Com o cotovelo ou manga",
+          "why": "Cobrir com o cotovelo evita espalhar germes através da mão — é o método mais higiénico!"
+        },
+        {
+          "question": "Quantas vezes por dia devemos escovar os dentes?",
+          "options": [
+            "2 vezes (manhã e noite)",
+            "1 vez",
+            "3 vezes",
+            "Só quando há dor"
+          ],
+          "answer": "2 vezes (manhã e noite)",
+          "why": "Escovar dentes 2x por dia protege contra cáries e doença dos dentes!"
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "aprender": [
+        {
+          "icon": "🌳",
+          "title": "Família de Palavras",
+          "body": "Palavras da mesma família têm a mesma raiz e estão relacionadas pelo significado.",
+          "example": "Raiz MAR:<br>→ marinheiro, marítimo, maresia, submarino, maré<br><br>Raiz PESC:<br>→ pesca, pescador, pescaria, pesqueiro, pescar",
+          "trick": "Encontra a raiz! MAR → mar-inheiro, mar-ítimo, sub-mar-ino. Mesma raiz = mesma família de significado!"
+        },
+        {
+          "icon": "🔗",
+          "title": "Sinónimos e Antónimos",
+          "body": "Sinónimos têm sentido parecido. Antónimos têm sentido contrário.",
+          "example": "Sinónimos: bonito = belo = lindo<br>falar = dizer = contar<br><br>Antónimos:<br>bonito ↔ feio · grande ↔ pequeno<br>quente ↔ frio · dia ↔ noite",
+          "trick": "Sinónimos = mesma ideia (bonito = belo). Antónimos = ideia contrária (bonito vs feio). Anti = contra!"
+        },
+        {
+          "icon": "🕐",
+          "title": "Verbos — Tempos Verbais",
+          "body": "Os verbos mudam conforme o tempo em que a ação acontece.",
+          "example": "Verbo JOGAR:<br>Presente: 'Eu jogo futebol.'<br>Passado: 'Eu joguei ontem.'<br>Futuro: 'Eu jogarei amanhã.'",
+          "trick": "Perfeito = ação acabada (ontem joguei). Imperfeito = ação que continuava (antes jogava todos os dias)!"
+        },
+        {
+          "icon": "📌",
+          "title": "Sinais de Pontuação",
+          "body": "Os sinais de pontuação organizam o texto e dão sentido às frases.",
+          "list": [
+            ". Ponto final — fim de frase declarativa",
+            "? Interrogação — fim de pergunta",
+            "! Exclamação — emoção, surpresa, ordem",
+            ", Vírgula — pausa curta, listas",
+            ": Dois pontos — apresentar algo",
+            "« » Aspas — fala direta"
+          ],
+          "trick": ". = fim, ? = pergunta, ! = emoção, , = pausa, : = apresenta, ... = continua. Pontuação = respiração do texto!"
+        },
+        {
+          "icon": "🔍",
+          "title": "Classes de Palavras",
+          "body": "As palavras dividem-se em classes: nome, adjetivo, verbo, artigo, pronome, advérbio.",
+          "example": "Nome: peixe, ilha, escola<br>Adjetivo: bonito, grande, azul<br>Verbo: nadar, correr, estudar<br>Advérbio de modo: rapidamente, devagar",
+          "trick": "Nome = coisa/pessoa/lugar. Verbo = ação. Adjetivo = característica. Advérbio = modifica o verbo (rapidamente)!"
+        },
+        {
+          "icon": "🔤",
+          "title": "Ortografia [GE] vs [GU]",
+          "body": "Quando G vem antes de E ou I, soa 'J' (ge, gi). Quando vem antes de A, O, U, soa 'G' (ga, go, gu).",
+          "example": "COM G-soft (J): gelo ❄️, gira 🎪, girafa 🦒<br>COM G-hard: gato 🐱, gola, guarda",
+          "trick": "GE/GI = soa 'J'. GA/GO/GU = soa 'G'. Para ter som 'GU' antes de E/I, precisa de U mudo: guê, gui!"
+        },
+        {
+          "icon": "🔠",
+          "title": "Ortografia [S], [SS], [C] e [Ç]",
+          "body": "S, SS, C e Ç fazem o som 'S'. Precisamos de regras para saber quando usar cada um.",
+          "example": "S: sapo, asa (entre vogais: asa)<br>SS: passado, assa (entre vogais!)<br>C: cama, coração<br>Ç: açúcar, cabeça (sempre antes de a, o, u)",
+          "trick": "SS entre vogais = som 'S' forte. C antes de E/I = som 'S'. Ç sempre = som 'S' suave!"
+        },
+        {
+          "icon": "📝",
+          "title": "Ortografia [Z] vs [S]",
+          "body": "[Z] vs [S]: Z está muitas vezes no início de palavra (zebra, zero) ou entre vogais como verbo (realizar, usar).",
+          "example": "COM Z: zebra 🦓, zona, zero 0️⃣<br>COM S: sapato 👞, sol ☀️, usando",
+          "trick": "Z no início = som 'Z'. S entre vogais em palavras (não verbos) = som 'Z'. Verbos com -izar: realizam, utilizam!"
+        },
+        {
+          "icon": "🎯",
+          "title": "Ortografia [C] vs [Ç]",
+          "body": "C antes de A, O, U = som 'K'. Ç sempre = som 'S'. C antes de E, I = som 'S'.",
+          "example": "C-K: cama, coração, cubo 🧊<br>Ç-S: açúcar, cabeça, preço<br>C-S: cena, cidade 🏙️",
+          "trick": "Se A/O/U vêm a seguir, usa C (som K). Se precisa de som S antes de A/O/U, usa Ç!"
+        },
+        {
+          "icon": "🌊",
+          "title": "Revisão: Padrões de Ortografia",
+          "body": "Revisão dos padrões ortográficos mais comuns: ge/gi, ss, c/ç, s/z.",
+          "example": "Padrão GE/GI: gelo, ginja<br>Padrão SS: massa, assa<br>Padrão C/Ç: cama/cabeça<br>Padrão S/Z: sapo/zebra",
+          "trick": "Aprende os padrões! Cada som tem regras. Estuda exemplos para memorizar!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é a raiz da palavra 'marinheiro'?",
+          "options": [
+            "Mar",
+            "Marinha",
+            "Eiro",
+            "Inho"
+          ],
+          "answer": "Mar",
+          "why": "'Marinheiro' vem de MAR. Todas as palavras da família do mar partilham essa raiz!"
+        },
+        {
+          "question": "'Ele correu rapidamente.' A palavra 'rapidamente' é...",
+          "options": [
+            "Advérbio de modo",
+            "Adjetivo",
+            "Nome",
+            "Verbo"
+          ],
+          "answer": "Advérbio de modo",
+          "why": "Palavras terminadas em '-mente' que dizem COMO se faz a ação são advérbios de modo!"
+        },
+        {
+          "question": "'O Pedro estuda.' → Substituir 'O Pedro' por pronome:",
+          "options": [
+            "Ele estuda.",
+            "A ele estuda.",
+            "Eles estuda.",
+            "Tu estudas."
+          ],
+          "answer": "Ele estuda.",
+          "why": "O Pedro = 1 pessoa, masculino, 3ª pessoa → pronome pessoal 'ele'!"
+        },
+        {
+          "question": "Qual é o antónimo de 'quente'?",
+          "options": [
+            "Frio",
+            "Morno",
+            "Quente",
+            "Húmido"
+          ],
+          "answer": "Frio",
+          "why": "Antónimo = contrário! Quente ↔ frio. São palavras de sentido oposto!"
+        },
+        {
+          "question": "Que sinal de pontuação termina uma PERGUNTA?",
+          "options": [
+            "?",
+            "!",
+            ".",
+            ","
+          ],
+          "answer": "?",
+          "why": "O ponto de interrogação (?) termina sempre as perguntas: 'Como te chamas?'"
+        },
+        {
+          "question": "'As ilhas são belas.' O adjetivo é...",
+          "options": [
+            "belas",
+            "ilhas",
+            "são",
+            "as"
+          ],
+          "answer": "belas",
+          "why": "'Belas' descreve como são as ilhas — é o ADJETIVO! Concorda com 'ilhas' (feminino plural)."
+        },
+        {
+          "question": "Qual é o sinónimo de 'bonito'?",
+          "options": [
+            "Belo",
+            "Feio",
+            "Triste",
+            "Pequeno"
+          ],
+          "answer": "Belo",
+          "why": "Sinónimos são palavras com sentido PARECIDO. Bonito e belo significam a mesma coisa!"
+        },
+        {
+          "question": "Em que tempo está o verbo: 'Eu comi peixe ontem'?",
+          "options": [
+            "Passado",
+            "Presente",
+            "Futuro",
+            "Imperativo"
+          ],
+          "answer": "Passado",
+          "why": "'Comi' é o passado (pretérito perfeito) de 'comer'. 'Ontem' confirma que foi no passado!"
+        },
+        {
+          "question": "Qual palavra pertence à família de 'escola'?",
+          "options": [
+            "Escolar",
+            "Escalão",
+            "Escultura",
+            "Escada"
+          ],
+          "answer": "Escolar",
+          "why": "'Escolar' vem de 'escola' — partilham a mesma raiz! (Escalão, escultura e escada têm raízes diferentes.)"
+        },
+        {
+          "question": "Qual frase usa os dois-pontos corretamente?",
+          "options": [
+            "O professor disse: 'Silêncio!'",
+            "O professor: disse silêncio",
+            "O: professor disse silêncio",
+            "O professor disse silêncio:"
+          ],
+          "answer": "O professor disse: 'Silêncio!'",
+          "why": "Os dois pontos introduzem o discurso direto (a fala de alguém) ou uma lista!"
+        },
+        {
+          "question": "Qual é o antónimo de 'alegre'?",
+          "options": [
+            "Triste",
+            "Feliz",
+            "Animado",
+            "Contente"
+          ],
+          "answer": "Triste",
+          "why": "Alegre ↔ triste são antónimos! Quando estamos tristes, não estamos alegres."
+        },
+        {
+          "question": "'Ela nadará no mar.' O verbo está no...",
+          "options": [
+            "Futuro",
+            "Presente",
+            "Passado",
+            "Imperativo"
+          ],
+          "answer": "Futuro",
+          "why": "'Nadará' é o futuro de 'nadar'. Indica que a ação ainda não aconteceu mas vai acontecer!"
+        },
+        {
+          "question": "Qual palavra tem som 'G-soft' (como J)?",
+          "options": [
+            "Gelo",
+            "Gato",
+            "Guarda",
+            "Gola"
+          ],
+          "answer": "Gelo",
+          "why": "GE = som 'J'. 'Gelo' tem GE, portanto soa 'J-elo'!"
+        },
+        {
+          "question": "Qual palavra está corretamente escrita com Ç?",
+          "options": [
+            "Cabeça",
+            "Cama",
+            "Coração",
+            "Cubo"
+          ],
+          "answer": "Cabeça",
+          "why": "Ç usa-se sempre antes de A, O, U para soar 'S': cabeça (som 'S')!"
+        },
+        {
+          "question": "Qual é a regra para SS entre vogais?",
+          "options": [
+            "Som 'S' forte",
+            "Som 'Z'",
+            "Som 'X'",
+            "Mudo"
+          ],
+          "answer": "Som 'S' forte",
+          "why": "SS entre vogais = som 'S' mais forte: passado, assa, massa!"
+        },
+        {
+          "question": "Qual palavra tem som 'Z'?",
+          "options": [
+            "Zebra",
+            "Sapo",
+            "Sol",
+            "Casa"
+          ],
+          "answer": "Zebra",
+          "why": "Z no início = som 'Z': zebra, zero, zona!"
+        },
+        {
+          "question": "Como soa 'C' antes de E ou I?",
+          "options": [
+            "Som 'S'",
+            "Som 'K'",
+            "Som 'G'",
+            "Som 'Z'"
+          ],
+          "answer": "Som 'S'",
+          "why": "C antes de E/I = som 'S': cena, cidade, cenoura!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Qual palavra NÃO pertence à família de 'pesca'?",
+          "options": [
+            "Pescada (tipo de peixe)",
+            "Pescador",
+            "Pescaria",
+            "Pesqueiro"
+          ],
+          "answer": "Pescada (tipo de peixe)",
+          "why": "Espera! 'Pescada' é o nome do peixe (merluza) e TAMBÉM vem de 'pesca'. Todas pertencem à família!"
+        },
+        {
+          "question": "Em 'O Zé correu rapidamente até ao barco.', quantas classes de palavras diferentes existem?",
+          "options": [
+            "4",
+            "3",
+            "5",
+            "2"
+          ],
+          "answer": "4",
+          "why": "Temos: Artigo (O), Nome (Zé, barco), Verbo (correu), Advérbio (rapidamente), Preposição (até ao). Várias classes!"
+        },
+        {
+          "question": "Transforma no passado: 'Hoje eu jogo futebol na praia.'",
+          "options": [
+            "Ontem eu joguei futebol na praia.",
+            "Ontem eu jogava futebol na praia.",
+            "Amanhã eu jogarei futebol na praia.",
+            "Eu tinha jogado futebol na praia."
+          ],
+          "answer": "Ontem eu joguei futebol na praia.",
+          "why": "'Jogo' (presente) → 'joguei' (passado perfeito). Trocamos também 'hoje' por 'ontem'!"
+        },
+        {
+          "question": "Qual é a ortografia correta: guela ou guella?",
+          "options": [
+            "guela",
+            "guella",
+            "juela",
+            "guëla"
+          ],
+          "answer": "guela",
+          "why": "GUE = som 'GUE' (não 'J'). Precisa de U entre G e E: guela, guerra!"
+        },
+        {
+          "question": "Completa: 'A crian__ comeu a comida.' Qual é o som?",
+          "options": [
+            "ç (cabeça)",
+            "c (cama)",
+            "ss (passado)",
+            "s (sapo)"
+          ],
+          "answer": "ç (cabeça)",
+          "why": "'Criança' tem Ç antes de A = som 'S': crian-ça!"
+        },
+        {
+          "question": "Qual frase está corretamente escrita?",
+          "options": [
+            "A massa é branca.",
+            "A masa é branca.",
+            "A mas-a é branca.",
+            "A mas a é branca."
+          ],
+          "answer": "A massa é branca.",
+          "why": "MASSA = SS entre vogais (som 'S' forte)!"
+        },
+        {
+          "question": "Qual palavra tem som 'GU' (não 'J')?",
+          "options": [
+            "Guarda",
+            "Gelo",
+            "Ginja",
+            "Girafa"
+          ],
+          "answer": "Guarda",
+          "why": "GU antes de A = som 'GU' (duro): guarda, guarda-chuva!"
+        },
+        {
+          "question": "Qual é a ortografia de 'usar' em 3ª pessoa do plural?",
+          "options": [
+            "Usam",
+            "Uzam",
+            "Ussam",
+            "Usão"
+          ],
+          "answer": "Usam",
+          "why": "Verbo usar: eu uso, tu usas, ele usa, nós usamos, vós usais, eles USAM!"
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "aprender": [
+        {
+          "icon": "📖",
+          "title": "Texto Narrativo",
+          "body": "Um texto narrativo conta uma história. Tem personagens, narrador, tempo, espaço e sequência de ações.",
+          "list": [
+            "Personagens: quem aparece na história (principal e secundárias)",
+            "Narrador: quem conta a história (pode ser personagem ou exterior)",
+            "Tempo: quando a história se passa",
+            "Espaço: onde acontece a história",
+            "Sequência de ações: início, desenvolvimento, conclusão"
+          ],
+          "trick": "5 perguntas: QUEM? (personagens) ONDE? (espaço) QUANDO? (tempo) O QUÊ? (ações) QUEM CONTA? (narrador)!"
+        },
+        {
+          "icon": "🔍",
+          "title": "Análise Morfológica",
+          "body": "Analisamos as palavras quanto à sua classe, género, número e grau.",
+          "example": "'As meninas altas correram rapidamente.'<br>As → artigo, feminino plural<br>meninas → nome, feminino plural<br>altas → adjetivo, feminino plural<br>correram → verbo, 3ª pessoa plural, passado",
+          "trick": "Prefixo + Raiz + Sufixo. Des-organiz-ado: des = negação, organiz = raiz, ado = sufixo de adjetivo!"
+        },
+        {
+          "icon": "🎭",
+          "title": "Flexão dos Adjetivos",
+          "body": "Os adjetivos flexionam em género e número. Têm também graus: normal, comparativo e superlativo.",
+          "example": "Género: bonito (m.) → bonita (f.)<br>Número: bonito → bonitos<br>Normal: O mar é bonito.<br>Comparativo: Este mar é mais bonito que aquele.<br>Superlativo: Este mar é lindíssimo / o mais bonito!",
+          "trick": "O adjetivo CONCORDA com o nome! Casa bonita (f.sg), casas bonitas (f.pl), livro bonito (m.sg)!"
+        },
+        {
+          "icon": "👥",
+          "title": "Pronomes Pessoais e Possessivos",
+          "body": "Pronomes pessoais substituem nomes. Possessivos indicam posse.",
+          "example": "Pessoais: eu, tu, ele, ela, nós, vós, eles, elas<br>Possessivos: meu/minha, teu/tua, seu/sua, nosso/nossa<br>'A Ana foi à escola. Ela chegou cedo.'<br>'Este livro é meu. O teu é onde?'",
+          "trick": "Pronome substitui o nome para não repetir: A Ana foi. ELA chegou. ELA = pronome de Ana (3ª pessoa f.)!"
+        },
+        {
+          "icon": "🔤",
+          "title": "Família de Palavras e Derivadas",
+          "body": "Palavras derivadas formam-se com prefixos (antes da raiz) ou sufixos (depois da raiz).",
+          "example": "Prefixos: des+organizado=desorganizado · in+feliz=infeliz<br>Sufixos: pesc+ador=pescador · mar+ítimo=marítimo<br>Família de 'ilha': ilhéu, ilhota, ilharga, arquipélago",
+          "trick": "Prefixo muda o sentido (des-, in-, re-). Sufixo muda a categoria (-eiro = profissão, -ção = ação)!"
+        },
+        {
+          "icon": "📝",
+          "title": "Flexão Verbal Completa",
+          "body": "Os verbos flexionam no presente, pretérito imperfeito, pretérito perfeito e futuro.",
+          "example": "Verbo COMER:<br>Presente: como, comes, come, comemos...<br>Imperfeito: comia, comias, comia...<br>Perfeito: comi, comeste, comeu...<br>Futuro: comerei, comerás, comerá...",
+          "trick": "EU como, TU comes, ELE come, NÓS comemos, ELES comem. O verbo muda com a pessoa e com o tempo!"
+        },
+        {
+          "icon": "🔗",
+          "title": "Frases Simples e Complexas",
+          "body": "Uma frase simples tem uma oração. Uma frase complexa tem duas ou mais orações ligadas por conjunções.",
+          "example": "Simples: 'O peixe nada.'<br>Complexa: 'O peixe nada e o barco avança.'<br>'Quando chove, os pescadores ficam em casa.'<br>Conjunções: e, mas, porque, quando, se...",
+          "trick": "Simples = 1 verbo principal. Complexa = 2+ verbos ligados por: que, porque, quando, se, embora..."
+        },
+        {
+          "icon": "🐠",
+          "title": "Nomes Coletivos",
+          "body": "Os nomes coletivos referem-se a um grupo de seres ou coisas da mesma espécie.",
+          "example": "Cardume = grupo de peixes 🐟<br>Rebanho = grupo de ovelhas 🐑<br>Manada = grupo de elefantes 🐘<br>Alcateia = grupo de lobos 🐺<br>Frota = conjunto de barcos ⛵",
+          "trick": "Cardume = peixes, Rebanho = ovelhas, Manada = elefantes, Alcateia = lobos. Aprende aos pares: animal + coletivo!"
+        },
+        {
+          "icon": "📌",
+          "title": "Frase Declarativa",
+          "body": "A frase declarativa afirma algo. Termina com ponto final (.). Responde a 'O que é isso?'",
+          "example": "Cabo Verde é um arquipélago. 🏝️<br>A escola fica no bairro. 🏫<br>O peixe é saboroso. 🐟",
+          "trick": "Declarativa = declara/afirma. Termina com ponto final. É a mais comum!"
+        },
+        {
+          "icon": "❓",
+          "title": "Frase Interrogativa",
+          "body": "A frase interrogativa faz uma pergunta. Termina com ponto de interrogação (?). Pede informação.",
+          "example": "Como te chamas? 👋<br>Quando é o teu aniversário? 🎂<br>Onde mora o João? 📍",
+          "trick": "Interrogativa = interroga (pergunta). Termina com ponto de interrogação. Começa com: quem, onde, quando, como, porque..."
+        },
+        {
+          "icon": "❗",
+          "title": "Frase Exclamativa",
+          "body": "A frase exclamativa expressa emoção, admiração ou surpresa. Termina com ponto de exclamação (!).",
+          "example": "Que belo pôr-do-sol! 🌅<br>Parabéns! 🎉<br>Que medo! 👻",
+          "trick": "Exclamativa = expressa emoção. Termina com ! Usa muita emoção na voz!"
+        },
+        {
+          "icon": "👉",
+          "title": "Frase Imperativa",
+          "body": "A frase imperativa dá uma ordem, pedido ou conselho. Termina com ponto final (.) ou exclamação (!).",
+          "example": "Estuda bem! 📚<br>Faz os deveres. 📝<br>Vem aqui! 👋<br>Sê bom rapaz.",
+          "trick": "Imperativa = imper-a (ordem). Diz ao outro o que fazer. Começa com verbo no imperativo!"
+        },
+        {
+          "icon": "🔄",
+          "title": "Formas de Frase: Negativa e Afirmativa",
+          "body": "Afirmativa = confirma algo. Negativa = nega algo. A forma pode ser afirmativa ou negativa.",
+          "example": "Afirmativa: 'Eu gosto de peixe.' ✓<br>Negativa: 'Eu NÃO gosto de peixe.' ✗<br>Afirmativa: 'A foca é um animal.' ✓<br>Negativa: 'A foca NÃO é um pássaro.' ✗",
+          "trick": "Nega-se com 'não' ou outras palavras: não, nunca, jamais, ninguém, nada!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "'Lindíssimo' é o superlativo de qual adjetivo?",
+          "options": [
+            "Lindo",
+            "Grande",
+            "Bonito",
+            "Belo"
+          ],
+          "answer": "Lindo",
+          "why": "O sufixo '-íssimo' forma o superlativo absoluto: lindo → lindíssimo (muito lindo!)."
+        },
+        {
+          "question": "Qual é o ANTÓNIMO de 'alegre'?",
+          "options": [
+            "Triste",
+            "Feliz",
+            "Animado",
+            "Contente"
+          ],
+          "answer": "Triste",
+          "why": "Alegre ↔ triste são antónimos (sentido contrário)!"
+        },
+        {
+          "question": "Qual é o COLETIVO de 'peixe'?",
+          "options": [
+            "Cardume",
+            "Rebanho",
+            "Manada",
+            "Alcateia"
+          ],
+          "answer": "Cardume",
+          "why": "Um grupo de peixes a nadar juntos chama-se CARDUME! Rebanho=ovelhas, Manada=elefantes."
+        },
+        {
+          "question": "Num texto narrativo, a personagem principal é...",
+          "options": [
+            "Quem tem mais importância na história",
+            "O narrador",
+            "O espaço da história",
+            "O título do livro"
+          ],
+          "answer": "Quem tem mais importância na história",
+          "why": "A personagem principal (ou protagonista) é aquela a quem a história acontece principalmente!"
+        },
+        {
+          "question": "'Desorganizado' — que prefixo foi usado?",
+          "options": [
+            "des-",
+            "in-",
+            "re-",
+            "sub-"
+          ],
+          "answer": "des-",
+          "why": "O prefixo des- indica negação ou contrário: des+organizado = não organizado!"
+        },
+        {
+          "question": "'A Ana foi à escola. ___ chegou cedo.' Que pronome completa?",
+          "options": [
+            "Ela",
+            "Ele",
+            "Eles",
+            "Tu"
+          ],
+          "answer": "Ela",
+          "why": "Ana é feminino singular, 3ª pessoa → pronome 'ela'. 'A Ana foi à escola. Ela chegou cedo.'"
+        },
+        {
+          "question": "'A casa é ___' (bonito) — forma correta?",
+          "options": [
+            "bonita",
+            "bonito",
+            "bonitos",
+            "bonitas"
+          ],
+          "answer": "bonita",
+          "why": "O adjetivo CONCORDA com o nome! 'Casa' é feminino singular → bonita (feminino singular)!"
+        },
+        {
+          "question": "Que sinal de pontuação introduz uma lista ou fala direta?",
+          "options": [
+            "Dois pontos (:)",
+            "Vírgula (,)",
+            "Ponto final (.)",
+            "Reticências (...)"
+          ],
+          "answer": "Dois pontos (:)",
+          "why": "Os dois pontos (:) introduzem uma enumeração/lista ou o discurso direto (fala de alguém)!"
+        },
+        {
+          "question": "Qual frase é COMPLEXA?",
+          "options": [
+            "O peixe nada porque está com fome.",
+            "O peixe nada.",
+            "A ilha é bonita.",
+            "Cabo Verde é um arquipélago."
+          ],
+          "answer": "O peixe nada porque está com fome.",
+          "why": "Frase complexa tem 2 orações ligadas por conjunção: 'O peixe nada' + 'porque' + 'está com fome'!"
+        },
+        {
+          "question": "'Comia' é o pretérito...",
+          "options": [
+            "Imperfeito",
+            "Perfeito",
+            "Futuro",
+            "Presente"
+          ],
+          "answer": "Imperfeito",
+          "why": "'Comia' é o pretérito IMPERFEITO. Indica uma ação passada habitual ou contínua: 'Eu comia peixe todos os dias.'"
+        },
+        {
+          "question": "Qual é o comparativo de superioridade de 'bom'?",
+          "options": [
+            "Melhor",
+            "Mais bom",
+            "Ótimo",
+            "Bom mais"
+          ],
+          "answer": "Melhor",
+          "why": "'Bom' tem comparativo irregular: bom → melhor (não 'mais bom', que está errado)!"
+        },
+        {
+          "question": "'Este livro é ___.' (meu — pronome possessivo correto para 'eu')",
+          "options": [
+            "meu",
+            "teu",
+            "seu",
+            "nosso"
+          ],
+          "answer": "meu",
+          "why": "O pronome possessivo da 1ª pessoa singular é 'meu' (masculino) / 'minha' (feminino)!"
+        },
+        {
+          "question": "Qual é o coletivo de 'barcos'?",
+          "options": [
+            "Frota",
+            "Cardume",
+            "Alcateia",
+            "Rebanho"
+          ],
+          "answer": "Frota",
+          "why": "Um conjunto de barcos ou navios chama-se FROTA! Cabo Verde tem uma importante frota pesqueira."
+        },
+        {
+          "question": "Em 'O narrador conta a história de fora', o narrador é...",
+          "options": [
+            "Narrador heterodiegético (exterior)",
+            "Narrador autodiegético",
+            "Personagem principal",
+            "O autor"
+          ],
+          "answer": "Narrador heterodiegético (exterior)",
+          "why": "Quando o narrador conta a história sem ser personagem, é um narrador exterior (heterodiegético)!"
+        },
+        {
+          "question": "Qual é a função sintática de 'peixe' em 'A Ana comeu peixe.'?",
+          "options": [
+            "Complemento direto",
+            "Sujeito",
+            "Predicado",
+            "Vocativo"
+          ],
+          "answer": "Complemento direto",
+          "why": "'Peixe' é o que foi comido — o complemento direto do verbo 'comer'. Sujeito = A Ana!"
+        },
+        {
+          "question": "Qual é uma frase DECLARATIVA?",
+          "options": [
+            "Cabo Verde é lindo.",
+            "Como estás?",
+            "Que maravilha!",
+            "Estuda bem!"
+          ],
+          "answer": "Cabo Verde é lindo.",
+          "why": "Afirma algo e termina com ponto final (.) — é uma frase declarativa!"
+        },
+        {
+          "question": "Qual sinal de pontuação termina uma frase interrogativa?",
+          "options": [
+            "?",
+            ".",
+            "!",
+            "..."
+          ],
+          "answer": "?",
+          "why": "Interrogativa = faz pergunta. Termina com ponto de interrogação (?)"
+        },
+        {
+          "question": "Qual é a forma NEGATIVA de 'Eu como peixe'?",
+          "options": [
+            "Eu não como peixe.",
+            "Eu como peixe não.",
+            "Não eu como peixe.",
+            "Eu como não peixe."
+          ],
+          "answer": "Eu não como peixe.",
+          "why": "A negação usa 'não': 'Eu NÃO como peixe.' (oposto de 'Eu como peixe.')"
+        },
+        {
+          "question": "Qual frase é IMPERATIVA?",
+          "options": [
+            "Estuda os deveres!",
+            "O João estuda.",
+            "Estudas bem?",
+            "Estudei ontem."
+          ],
+          "answer": "Estuda os deveres!",
+          "why": "Dá uma ordem/pedido e começa com verbo no imperativo. Termina com ! ou ponto final."
+        },
+        {
+          "question": "Qual é a diferença entre 'Que belo dia!' e 'Que belo dia?'?",
+          "options": [
+            "Uma é exclamativa, outra é interrogativa",
+            "São iguais",
+            "Uma é negativa",
+            "Uma é imperativa"
+          ],
+          "answer": "Uma é exclamativa, outra é interrogativa",
+          "why": "'!' = exclamação (admira). '?' = interrogação (pergunta). O sinal faz toda a diferença!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Lê: 'O velho pescador saiu ao amanhecer. Voltou ao entardecer com um cardume enorme.' A personagem principal é...",
+          "options": [
+            "O velho pescador",
+            "O mar",
+            "O peixe",
+            "O entardecer"
+          ],
+          "answer": "O velho pescador",
+          "why": "A personagem principal é aquela a quem a ação principal pertence. É o velho pescador que sai e volta!"
+        },
+        {
+          "question": "Qual frase usa o grau superlativo relativo de superioridade?",
+          "options": [
+            "Cabo Verde é o país mais bonito da África.",
+            "Cabo Verde é muito bonito.",
+            "Cabo Verde é lindíssimo.",
+            "Cabo Verde é mais bonito que Portugal."
+          ],
+          "answer": "Cabo Verde é o país mais bonito da África.",
+          "why": "'O ... mais ... de ...' é o superlativo relativo de superioridade — compara com todos os outros do grupo!"
+        },
+        {
+          "question": "Transforma em frase complexa: 'A Ana estudou.' + 'A Ana passou no exame.'",
+          "options": [
+            "A Ana estudou e passou no exame.",
+            "A Ana estudou. A Ana passou no exame.",
+            "A Ana estuda e passa.",
+            "A Ana e o exame."
+          ],
+          "answer": "A Ana estudou e passou no exame.",
+          "why": "Unimos as duas frases com a conjunção 'e', evitando repetir 'A Ana': 'A Ana estudou e passou no exame.'"
+        },
+        {
+          "question": "Transforma em frase interrogativa: 'O professor explica bem.'",
+          "options": [
+            "O professor explica bem?",
+            "O professor não explica bem.",
+            "O professor explica bem!",
+            "Explica bem o professor?"
+          ],
+          "answer": "O professor explica bem?",
+          "why": "Para fazer pergunta de uma afirmação, acrescenta-se o ponto de interrogação e muda-se a entonação!"
+        },
+        {
+          "question": "Qual frase está corretamente escrita em forma NEGATIVA?",
+          "options": [
+            "Eu não gosto de matemática.",
+            "Eu não de gosto matemática.",
+            "Eu gosto não de matemática.",
+            "Não eu de gosto matemática."
+          ],
+          "answer": "Eu não gosto de matemática.",
+          "why": "'Não' coloca-se antes do verbo: 'EU NÃO GOSTO de matemática.'"
+        },
+        {
+          "question": "Qual tipo de frase express emoção ou admiração?",
+          "options": [
+            "Exclamativa",
+            "Interrogativa",
+            "Declarativa",
+            "Imperativa"
+          ],
+          "answer": "Exclamativa",
+          "why": "Exclamativa exprime emoção, admiração, surpresa, orden com entusiasmo! Termina com !"
+        },
+        {
+          "question": "Classifica: 'Já comeste o almoço?' — tipo de frase?",
+          "options": [
+            "Interrogativa",
+            "Declarativa",
+            "Exclamativa",
+            "Imperativa"
+          ],
+          "answer": "Interrogativa",
+          "why": "Começa com 'Já', faz uma pergunta e termina com '?' — é interrogativa!"
+        },
+        {
+          "question": "Qual frase combina imperativo + negação?",
+          "options": [
+            "Não faças barulho!",
+            "Eu não faço barulho.",
+            "Não faço barulho?",
+            "Que barulho!"
+          ],
+          "answer": "Não faças barulho!",
+          "why": "'Não faças' = imperativo (ordem) em forma negativa (nega/proíbe fazer barulho)!"
+        }
+      ]
+    }
+  ]
+};

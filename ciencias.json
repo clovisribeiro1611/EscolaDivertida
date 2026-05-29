@@ -1,0 +1,1386 @@
+{
+  "disciplina": "Ciências Integradas",
+  "versao": "2.0",
+  "anos": [
+    {
+      "ano": 1,
+      "aprender": [
+        {
+          "icon": "☀️",
+          "title": "O Dia e a Noite",
+          "body": "A Terra gira e por isso temos dia (quando o nosso lado está virado para o Sol) e noite (quando está virado para longe).",
+          "example": "☀️ De dia: vemos o sol, está claro, vamos à escola.<br>🌙 De noite: vemos a lua e as estrelas, dormimos.<br>Em Cabo Verde, o sol nasce a este e poente a oeste!",
+          "trick": "A Terra roda! Virada para o Sol = DIA. Virada para longe = NOITE. Roda 1 vez completa por dia!"
+        },
+        {
+          "icon": "🌊",
+          "title": "A Água",
+          "body": "A água é essencial para a vida. Em Cabo Verde, o mar está em todo o lado e a água doce é preciosa!",
+          "list": [
+            "💧 Bebemos água para viver",
+            "🐟 Os peixes vivem na água salgada do mar",
+            "🌧️ A chuva traz água doce do céu",
+            "🏝️ As ilhas de Cabo Verde são rodeadas de água salgada",
+            "🚰 A água doce é guardada em cisternas e barragens"
+          ],
+          "trick": "3 estados: SÓLIDA (gelo), LÍQUIDA (água), GASOSA (vapor). O sol transforma líquida em gasosa = evaporação!"
+        },
+        {
+          "icon": "🌱",
+          "title": "As Plantas",
+          "body": "As plantas são seres vivos! Precisam de água, luz e terra para crescer.",
+          "example": "🌱 Semente → 🌿 Planta pequena → 🌳 Árvore grande<br>Plantas de Cabo Verde: tamareira, coqueiro, dragoeiro, purgueira<br>As plantas dão-nos fruta, sombra e ar limpo!",
+          "trick": "RAIZ bebe. CAULE transporta. FOLHA faz comida (fotossíntese: luz+água+CO₂ = açúcar+O₂). FLOR reproduz!"
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "A Família e a Comunidade",
+          "body": "A família são as pessoas que vivem connosco e nos amam. A comunidade é o conjunto de famílias que vivem num lugar.",
+          "list": [
+            "👴👵 Avós — geração dos pais dos pais",
+            "👨👩 Pais — cuidam de nós",
+            "👦👧 Irmãos — crescemos juntos",
+            "🏘️ Vizinhos — vivem perto de nós"
+          ],
+          "trick": "Família nuclear = pais + filhos. Família alargada = + avós, tios, primos. Toda a gente importa!"
+        },
+        {
+          "icon": "🐟",
+          "title": "Animais de Cabo Verde",
+          "body": "Cabo Verde tem animais únicos! No mar, em terra e no ar.",
+          "list": [
+            "🐢 Tartaruga-marinha — põe ovos nas praias (protegida!)",
+            "🦈 Tubarão-baleia — o maior peixe do mundo visita as nossas águas",
+            "🐟 Atum, garoupa, espadarte — peixes importantes para a pesca",
+            "🦎 Lagarto-gigante de S. Antão",
+            "🐦 Falcão-da-rainha — ave nacional de Cabo Verde"
+          ],
+          "trick": "Doméstico = criado pelo homem (galinha, cabra). Selvagem = vive livre (tartaruga-marinha, falcão-da-rainha)!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é o membro mais velho da família típica?",
+          "options": [
+            "Avó ou Avô",
+            "Pai ou Mãe",
+            "Irmão",
+            "Tio"
+          ],
+          "answer": "Avó ou Avô",
+          "why": "Os avós são os pais dos pais — são geralmente os mais velhos da família!"
+        },
+        {
+          "question": "Quantas pessoas estão numa família nuclear?",
+          "options": [
+            "Pai + Mãe + Filhos",
+            "Só pai",
+            "Só mãe e filhos",
+            "Tios e primos"
+          ],
+          "answer": "Pai + Mãe + Filhos",
+          "why": "Família nuclear = pais + filhos. É a unidade familiar básica!"
+        },
+        {
+          "question": "Qual é uma responsabilidade tua na família?",
+          "options": [
+            "Fazer os deveres e ajudar em casa",
+            "Dar dinheiro aos pais",
+            "Sair sozinho à noite",
+            "Comprar comida"
+          ],
+          "answer": "Fazer os deveres e ajudar em casa",
+          "why": "Crianças ajudam nos deveres e em pequenas tarefas em casa. É a tua parte na família!"
+        },
+        {
+          "question": "Quem cuida de nós na infância?",
+          "options": [
+            "Os pais",
+            "Os professores",
+            "Os vizinhos",
+            "A polícia"
+          ],
+          "answer": "Os pais",
+          "why": "Os pais são responsáveis por cuidar, alimentar, educar e amar os filhos!"
+        },
+        {
+          "question": "O que é mais importante na família?",
+          "options": [
+            "Amor, respeito e cuidado",
+            "Ter muito dinheiro",
+            "Ser famoso",
+            "Viver em casa grande"
+          ],
+          "answer": "Amor, respeito e cuidado",
+          "why": "O mais importante é sentir-se amado, respeitado e cuidado pela família!"
+        },
+        {
+          "question": "O que vemos no céu durante o DIA?",
+          "options": [
+            "O Sol",
+            "A Lua",
+            "As Estrelas",
+            "A Chuva"
+          ],
+          "answer": "O Sol",
+          "why": "Durante o dia, o nosso lado da Terra está voltado para o Sol, por isso vemos a sua luz e calor!"
+        },
+        {
+          "question": "Para que serve a água?",
+          "options": [
+            "Para beber e viver",
+            "Só para nadar",
+            "Só para cozinhar",
+            "Para decoração"
+          ],
+          "answer": "Para beber e viver",
+          "why": "A água é essencial para todos os seres vivos! Bebemos, cozinhamos, lavamo-nos e os animais e plantas também precisam."
+        },
+        {
+          "question": "O que as plantas precisam para crescer?",
+          "options": [
+            "Água, luz e terra",
+            "Só água",
+            "Só sol",
+            "Chuva e vento"
+          ],
+          "answer": "Água, luz e terra",
+          "why": "As plantas precisam de 3 coisas: água para se alimentar, luz solar para fazer fotossíntese e terra para as raízes!"
+        },
+        {
+          "question": "Qual destes é um animal doméstico?",
+          "options": [
+            "Cão",
+            "Leão",
+            "Tubarão",
+            "Tartaruga-marinha"
+          ],
+          "answer": "Cão",
+          "why": "O cão é um animal doméstico porque vive com as pessoas. Os outros são animais selvagens ou marinhos!"
+        },
+        {
+          "question": "A tartaruga-marinha de Cabo Verde é...",
+          "options": [
+            "Um animal protegido",
+            "Um animal de estimação comum",
+            "Um peixe",
+            "Uma ave"
+          ],
+          "answer": "Um animal protegido",
+          "why": "A tartaruga-marinha é um animal selvagem e PROTEGIDO de Cabo Verde! Vive no mar e põe ovos nas praias."
+        },
+        {
+          "question": "O que vemos no céu à NOITE?",
+          "options": [
+            "A Lua e as Estrelas",
+            "O Sol",
+            "O Arco-íris",
+            "As Nuvens grandes"
+          ],
+          "answer": "A Lua e as Estrelas",
+          "why": "À noite, o nosso lado da Terra está virado para longe do Sol. Vemos a Lua e as estrelas brilhar!"
+        },
+        {
+          "question": "Qual é a ave nacional de Cabo Verde?",
+          "options": [
+            "Falcão-da-rainha",
+            "Cegonha",
+            "Pomba",
+            "Gaivota"
+          ],
+          "answer": "Falcão-da-rainha",
+          "why": "O falcão-da-rainha (Falco eleonorae) é a ave nacional de Cabo Verde e é uma espécie especial que nidifica nas nossas ilhas!"
+        },
+        {
+          "question": "De onde vem a água doce em Cabo Verde?",
+          "options": [
+            "Da chuva e de nascentes",
+            "Só do mar",
+            "Dos peixeiros",
+            "Dos supermercados"
+          ],
+          "answer": "Da chuva e de nascentes",
+          "why": "Em Cabo Verde a água doce vem principalmente da chuva (guardada em cisternas e barragens) e de nascentes no interior das ilhas!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Se teu avô precisa de ajuda a levantar-se, o que deves fazer?",
+          "options": [
+            "Ajudar com cuidado e respeito",
+            "Rir",
+            "Fingir que não vistes",
+            "Chamar outros"
+          ],
+          "answer": "Ajudar com cuidado e respeito",
+          "why": "Cuidar dos idosos com respeito é um dever familiar importante!"
+        },
+        {
+          "question": "Qual é o motivo de termos uma família?",
+          "options": [
+            "Estar junto de quem nos ama e nos cuida",
+            "Ter a mesma cara",
+            "Viver no mesmo prédio",
+            "Ter a mesma escola"
+          ],
+          "answer": "Estar junto de quem nos ama e nos cuida",
+          "why": "A família é o grupo de pessoas que nos ama, cuida e apoia na vida!"
+        },
+        {
+          "question": "O que deves fazer se discordares de algo na família?",
+          "options": [
+            "Falar respeitosamente com um adulto",
+            "Gritar",
+            "Sair de casa",
+            "Ignorar"
+          ],
+          "answer": "Falar respeitosamente com um adulto",
+          "why": "Discussões saudáveis com respeito fortalecem a família!"
+        },
+        {
+          "question": "Quantas gerações há numa família com avós, pais e filhos?",
+          "options": [
+            "3 gerações",
+            "1 geração",
+            "2 gerações",
+            "4 gerações"
+          ],
+          "answer": "3 gerações",
+          "why": "Geração 1: Avós. Geração 2: Pais. Geração 3: Filhos. Total = 3!"
+        },
+        {
+          "question": "Por que é importante colaborar nas tarefas familiares?",
+          "options": [
+            "Porque a família é uma equipa que se ajuda",
+            "Porque pais mandam",
+            "Porque não há escolha",
+            "Para ganhar dinheiro"
+          ],
+          "answer": "Porque a família é uma equipa que se ajuda",
+          "why": "A colaboração torna a família mais unida e harmoniosa!"
+        },
+        {
+          "question": "Por que é que em Cabo Verde a água doce é tão valiosa?",
+          "options": [
+            "Porque chove pouco e as ilhas são rodeadas de água salgada",
+            "Porque não há mar",
+            "Porque os rios são muito grandes",
+            "Porque a água doce é salgada"
+          ],
+          "answer": "Porque chove pouco e as ilhas são rodeadas de água salgada",
+          "why": "Cabo Verde tem clima semiárido com pouca chuva, e toda a água à volta é salgada (mar). Por isso a água doce é muito preciosa!"
+        },
+        {
+          "question": "Cadeia alimentar simples: Lagarta come folha. Pássaro come lagarta. Qual a ordem correta?",
+          "options": [
+            "Folha → Lagarta → Pássaro",
+            "Pássaro → Lagarta → Folha",
+            "Lagarta → Folha → Pássaro",
+            "Pássaro → Folha → Lagarta"
+          ],
+          "answer": "Folha → Lagarta → Pássaro",
+          "why": "A cadeia alimentar segue a ordem de quem come quem: a folha é comida pela lagarta, que é comida pelo pássaro!"
+        },
+        {
+          "question": "O que acontece quando chove em Cabo Verde?",
+          "options": [
+            "A água vai para cisternas e barragens para ser usada depois",
+            "A água perde-se toda no mar",
+            "Nunca chove em Cabo Verde",
+            "A água sobe para o céu imediatamente"
+          ],
+          "answer": "A água vai para cisternas e barragens para ser usada depois",
+          "why": "Como chove pouco, os cabo-verdianos recolhem a água da chuva em cisternas e barragens para usar durante o ano!"
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "aprender": [
+        {
+          "icon": "👨‍👩‍👧",
+          "title": "Família e Comunidade",
+          "body": "A comunidade é um grupo de famílias que vivem num mesmo lugar. Todos trabalham juntos para melhorar a vida.",
+          "example": "👨‍👩‍👧 Famílias na rua<br>🏫 Escola para crianças<br>🏥 Hospital para doentes<br>🛒 Mercearia onde compramos<br>🏘️ Vizinhos que se ajudam",
+          "trick": "Comunidade = família × família × família... todos vivendo juntos na mesma localidade!"
+        },
+        {
+          "icon": "👁️",
+          "title": "Órgãos dos Sentidos",
+          "body": "Temos 5 sentidos com órgãos especiais: olhos (visão), orelhas (audição), pele (tato), língua (paladar), nariz (olfato).",
+          "example": "👀 Ver cores e formas<br>👂 Ouvir sons<br>✋ Sentir texturas<br>👅 Saborear doce/salgado<br>👃 Cheirar perfume",
+          "trick": "5 sentidos = 5 proteções! Cuidado com os olhos (sol), orelhas (barulho), pele (queimaduras)!"
+        },
+        {
+          "icon": "🧼",
+          "title": "Higiene Pessoal",
+          "body": "Higiene é estar limpo. Devemos lavar corpo, mãos, dentes, roupa para estar saudável.",
+          "example": "🚿 Banho diário com água<br>🧼 Lavar mãos antes de comer<br>🪥 Escovar dentes 2× dia<br>👕 Roupa limpa e trocada<br>✂️ Cortar unhas curtas",
+          "trick": "Higiene = saúde! Mãos limpas = sem doença. Banho = corpo feliz!"
+        },
+        {
+          "icon": "👕",
+          "title": "Vestuário Adequado",
+          "body": "O vestuário protege de sol, frio, chuva. Escolhemos roupas conforme o clima e a ocasião.",
+          "example": "☀️ Roupa leve e clara em Cabo Verde (quente)<br>🎩 Chapéu para proteger do sol<br>👟 Sapatos confortáveis<br>🧣 Casaco se viajar para lugares frios",
+          "trick": "Roupa = proteção + conforto! Leve em Cabo Verde, cálida noutros lugares!"
+        },
+        {
+          "icon": "🏠",
+          "title": "Habitação e Segurança",
+          "body": "A casa nos protege do tempo. Deve ser limpa, segura e confortável para toda a família.",
+          "example": "🏠 Teto que não deixa água<br>🚪 Porta fechada à noite<br>💡 Boa iluminação<br>🔧 Sem objetos perigosos<br>🧹 Limpa e organizada",
+          "trick": "Casa segura = família segura! Mantém limpa e arrumada!"
+        },
+        {
+          "icon": "🏝️",
+          "title": "Cabo Verde — O Nosso País",
+          "body": "Cabo Verde é um arquipélago (conjunto de ilhas) no Oceano Atlântico, perto de África. A nossa capital é a Praia!",
+          "example": "🗺️ Barlavento (norte): Santo Antão, São Vicente, Santa Luzia, São Nicolau, Sal, Boa Vista<br>🗺️ Sotavento (sul): Maio, Santiago, Fogo, Brava<br>🏙️ Capital: Praia (ilha de Santiago)",
+          "trick": "BAR-la-VENTO = norte (vento de frente). SO-ta-VENTO = sul (mais abrigado). Capital PRAIA fica em SANTIAGO!"
+        },
+        {
+          "icon": "🌦️",
+          "title": "O Clima de Cabo Verde",
+          "body": "Em Cabo Verde temos duas estações: a época seca e a época das chuvas. O clima é quente e semiárido.",
+          "example": "☀️ Época seca (Nov-Jul): muito sol, pouca chuva<br>🌧️ Época das chuvas (Ago-Out): alguma chuva, mais fresco<br>Em Santiago chama-se 'tempo das águas'<br>Temperatura: 20-30°C durante o ano",
+          "trick": "2 estações: SECA (nov-jul, sol forte) e das CHUVAS (ago-out, mais fresca). Em Santiago chama-se tempo das águas!"
+        },
+        {
+          "icon": "🦋",
+          "title": "Animais Domésticos e Selvagens",
+          "body": "Os animais podem ser domésticos (vivem com o homem) ou selvagens (vivem na natureza).",
+          "list": [
+            "🐶 Domésticos: cão, gato, galinha, burro, cabra, vaca",
+            "🐊 Selvagens de Cabo Verde: tartaruga-marinha, morcego, lagarto",
+            "🐟 Marinhos: atum, garoupa, espadarte, manta-raia",
+            "🦅 Aves: falcão-da-rainha, andorinha-do-mar, albatroz"
+          ],
+          "trick": "Doméstico = criado em casa, ajuda o homem. Selvagem = vive livre. A tartaruga-marinha de CV é protegida por lei!"
+        },
+        {
+          "icon": "🧼",
+          "title": "Higiene e Saúde",
+          "body": "Para ficar saudável precisamos de bons hábitos de higiene todos os dias!",
+          "list": [
+            "🪥 Lavar os dentes 2x por dia (manhã e noite)",
+            "🚿 Tomar banho todos os dias",
+            "🧼 Lavar as mãos antes de comer e depois da casa de banho",
+            "🥗 Comer fruta, legumes e peixe",
+            "💤 Dormir 8-10 horas por noite"
+          ],
+          "trick": "3 momentos de lavar as mãos: ANTES de comer, DEPOIS da casa de banho, DEPOIS de brincar fora!"
+        },
+        {
+          "icon": "🏫",
+          "title": "A Comunidade",
+          "body": "A nossa comunidade tem diferentes pessoas e instituições que trabalham juntas.",
+          "list": [
+            "🏫 Escola — para aprender",
+            "🏥 Centro de saúde — para cuidar da saúde",
+            "⛪ Igreja / Mesquita — para rezar",
+            "🏛️ Câmara Municipal — para gerir a cidade",
+            "🚓 Polícia — para manter a segurança"
+          ],
+          "trick": "Escola = aprender. Centro de saúde = curar. Câmara = gerir a cidade. Cada instituição tem a sua função!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é a função das orelhas?",
+          "options": [
+            "Ouvir sons",
+            "Ver",
+            "Tocar",
+            "Cheirar"
+          ],
+          "answer": "Ouvir sons",
+          "why": "Orelhas = audição. Permitem ouvir música, vozes, sons da natureza!"
+        },
+        {
+          "question": "Quantas vezes por dia deves escovar os dentes?",
+          "options": [
+            "2 vezes (manhã e noite)",
+            "1 vez",
+            "3 vezes",
+            "Só quando há dor"
+          ],
+          "answer": "2 vezes (manhã e noite)",
+          "why": "2× por dia protege contra cáries e doença dos dentes!"
+        },
+        {
+          "question": "Qual é um órgão do sentido do tato?",
+          "options": [
+            "Pele",
+            "Olho",
+            "Orelha",
+            "Nariz"
+          ],
+          "answer": "Pele",
+          "why": "A pele tem terminações nervosas que sentem toque, temperatura, dor!"
+        },
+        {
+          "question": "O que significa comunidade?",
+          "options": [
+            "Grupo de famílias vivendo no mesmo lugar",
+            "Uma só família",
+            "Um prédio",
+            "Uma cidade grande"
+          ],
+          "answer": "Grupo de famílias vivendo no mesmo lugar",
+          "why": "Comunidade = vizinhos + famílias + instituições num mesmo bairro/localidade!"
+        },
+        {
+          "question": "Por que a roupa é importante em Cabo Verde?",
+          "options": [
+            "Protege do sol forte",
+            "Só para ficar bonito",
+            "Não é importante",
+            "Para não ter frio"
+          ],
+          "answer": "Protege do sol forte",
+          "why": "Cabo Verde tem sol forte! Roupa clara e ligeira protege a pele de queimaduras!"
+        },
+        {
+          "question": "Qual é a capital de Cabo Verde?",
+          "options": [
+            "Praia",
+            "Mindelo",
+            "Sal",
+            "Assomada"
+          ],
+          "answer": "Praia",
+          "why": "A Praia fica na ilha de Santiago e é a capital — a cidade mais importante — de Cabo Verde!"
+        },
+        {
+          "question": "Quantas ilhas tem Cabo Verde?",
+          "options": [
+            "10",
+            "8",
+            "12",
+            "9"
+          ],
+          "answer": "10",
+          "why": "Cabo Verde tem exatamente 10 ilhas, divididas em dois grupos: Barlavento (norte) e Sotavento (sul)!"
+        },
+        {
+          "question": "Em Cabo Verde, quando é a época das chuvas?",
+          "options": [
+            "Agosto a Outubro",
+            "Janeiro a Março",
+            "Maio a Julho",
+            "Novembro a Janeiro"
+          ],
+          "answer": "Agosto a Outubro",
+          "why": "Em Cabo Verde a época das chuvas é de Agosto a Outubro. Em Santiago chama-se 'tempo das águas'!"
+        },
+        {
+          "question": "Qual destes é um animal SELVAGEM de Cabo Verde?",
+          "options": [
+            "Tartaruga-marinha",
+            "Cão",
+            "Galinha",
+            "Burro"
+          ],
+          "answer": "Tartaruga-marinha",
+          "why": "A tartaruga-marinha é um animal selvagem e protegido de Cabo Verde! Vive no mar e põe ovos nas praias."
+        },
+        {
+          "question": "O que fazemos para ter boa higiene?",
+          "options": [
+            "Lavar os dentes e as mãos",
+            "Não tomar banho",
+            "Comer sem lavar as mãos",
+            "Dormir muito tarde"
+          ],
+          "answer": "Lavar os dentes e as mãos",
+          "why": "Boa higiene: lavar os dentes 2x/dia, lavar as mãos antes de comer, tomar banho todos os dias!"
+        },
+        {
+          "question": "A ilha de São Vicente pertence ao grupo de...",
+          "options": [
+            "Barlavento",
+            "Sotavento",
+            "Barlasul",
+            "Vento"
+          ],
+          "answer": "Barlavento",
+          "why": "Barlavento é o grupo norte: Santo Antão, São Vicente, Santa Luzia, São Nicolau, Sal e Boa Vista!"
+        },
+        {
+          "question": "Que instituição cuida da saúde das pessoas na comunidade?",
+          "options": [
+            "Centro de saúde / Hospital",
+            "Escola",
+            "Câmara Municipal",
+            "Polícia"
+          ],
+          "answer": "Centro de saúde / Hospital",
+          "why": "O centro de saúde e o hospital são as instituições que tratam das doenças e cuidam da saúde das pessoas!"
+        },
+        {
+          "question": "Qual é a principal característica do clima de Cabo Verde?",
+          "options": [
+            "Quente e semiárido (pouca chuva)",
+            "Muito frio e com neve",
+            "Muito chuvoso o ano todo",
+            "Clima temperado como Portugal"
+          ],
+          "answer": "Quente e semiárido (pouca chuva)",
+          "why": "Cabo Verde tem clima tropical seco (semiárido) — muito sol, temperaturas altas e pouca chuva!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Se vias alguém com olho ferido, o que farias?",
+          "options": [
+            "Chamar um adulto/ir ao médico",
+            "Não fazer nada",
+            "Tentar ajudar sozinho",
+            "Ignorar"
+          ],
+          "answer": "Chamar um adulto/ir ao médico",
+          "why": "Olhos feridos precisam de médico! Sem tratar, pode perder-se a visão!"
+        },
+        {
+          "question": "Qual é a diferença entre pele saudável e pele doente?",
+          "options": [
+            "Limpa e sem feridas vs pele suja, com bactérias",
+            "Nenhuma diferença",
+            "Cor diferente",
+            "Tamanho diferente"
+          ],
+          "answer": "Limpa e sem feridas vs pele suja, com bactérias",
+          "why": "Pele limpa e saudável = menos doenças. Pele suja = germes e infeções!"
+        },
+        {
+          "question": "Porque é que a higiene é importante na comunidade?",
+          "options": [
+            "Evita espalhar doenças entre pessoas",
+            "Não é importante",
+            "Só para ficar bonito",
+            "Obrigação só"
+          ],
+          "answer": "Evita espalhar doenças entre pessoas",
+          "why": "Higiene pessoal protege a comunidade inteira de epidemias!"
+        },
+        {
+          "question": "Qual material é melhor para construir uma casa em Cabo Verde?",
+          "options": [
+            "Cimento e blocos que resistem ao calor",
+            "Apenas madeira",
+            "Papelão",
+            "Lona"
+          ],
+          "answer": "Cimento e blocos que resistem ao calor",
+          "why": "Cimento e blocos resistem ao sol, calor e umidade do mar em Cabo Verde!"
+        },
+        {
+          "question": "Se uma criança está suja e quer brincar contigo, o que fazes?",
+          "options": [
+            "Sugeres que tome banho primeiro",
+            "Brinças normalmente",
+            "Dizes que não és amigo",
+            "Avisa os pais"
+          ],
+          "answer": "Sugeres que tome banho primeiro",
+          "why": "Ensinar bons hábitos de higiene aos amigos é ajudá-los a ficar saudáveis!"
+        },
+        {
+          "question": "Qual ilha de Cabo Verde é conhecida por ter um vulcão ativo?",
+          "options": [
+            "Fogo",
+            "Santiago",
+            "Sal",
+            "Boa Vista"
+          ],
+          "answer": "Fogo",
+          "why": "A ilha do Fogo tem o Pico do Fogo, um vulcão ativo! A última grande erupção foi em 2014!"
+        },
+        {
+          "question": "Por que razão a pesca é tão importante em Cabo Verde?",
+          "options": [
+            "Porque é um país de ilhas rodeado de mar rico em peixe",
+            "Porque não há terra para agricultura",
+            "Porque os cabo-verdianos não gostam de carne",
+            "Porque é mais barato que a agricultura"
+          ],
+          "answer": "Porque é um país de ilhas rodeado de mar rico em peixe",
+          "why": "Cabo Verde é um arquipélago com 10 ilhas. O mar que nos rodeia é riquíssimo em peixe. A pesca é fundamental para a alimentação e economia!"
+        },
+        {
+          "question": "Qual ilha do grupo de Sotavento é a sede do governo?",
+          "options": [
+            "Santiago (Praia)",
+            "Fogo (São Filipe)",
+            "Brava (Nova Sintra)",
+            "Maio (Vila do Maio)"
+          ],
+          "answer": "Santiago (Praia)",
+          "why": "A Praia, capital de Cabo Verde, fica em Santiago — a maior ilha do grupo de Sotavento!"
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "aprender": [
+        {
+          "icon": "👥",
+          "title": "Sociedade e Instituições",
+          "body": "Uma sociedade é um grupo de pessoas com regras e instituições. As instituições (escola, hospital, câmara) servem a comunidade.",
+          "example": "🏫 Escola = educação<br>🏥 Hospital = saúde<br>🚔 Polícia = segurança<br>📚 Biblioteca = conhecimento<br>⚖️ Tribunal = justiça",
+          "trick": "Instituições = estruturas que ajudam a sociedade! Sem elas, seria caos!"
+        },
+        {
+          "icon": "🦴",
+          "title": "Ossos e Músculos",
+          "body": "Ossos dão forma ao corpo. Músculos fazem movimentos. Juntos formam o sistema locomotor!",
+          "example": "🦴 Crânio protege cérebro<br>🦴 Vértebras protegem espinal medula<br>💪 Bícep levanta braço<br>🦵 Quadrícep estica perna",
+          "trick": "Ossos = estrutura. Músculos = movimento. Juntos = máquina perfeita!"
+        },
+        {
+          "icon": "🫀",
+          "title": "Funções Vitais: Digestão, Respiração, Circulação",
+          "body": "O corpo realiza 3 funções vitais: digerir comida, respirar ar, circular sangue.",
+          "example": "🥗 Digestão: boca → estômago → intestino<br>💨 Respiração: ar dentro → oxigénio → cérebro<br>❤️ Circulação: coração bombeia sangue",
+          "trick": "Sem estas 3 funções: morte! Cuida da tua saúde!"
+        },
+        {
+          "icon": "🌍",
+          "title": "Estrutura da Sociedade Cabo-verdiana",
+          "body": "Cabo Verde tem governantes (Presidente, Primeiro-ministro), câmaras municipais e assembleias para decidir em comum.",
+          "example": "🏛️ Presidente = chefe do país<br>📜 Parlamento = faz leis<br>🏢 Câmara municipal = ajuda a ilha<br>👮 Polícia = segurança",
+          "trick": "Democracia = todos têm voz! Eleições = decidir juntos!"
+        },
+        {
+          "icon": "🐟",
+          "title": "Cadeias Alimentares e Seres Vivos",
+          "body": "Seres vivos formam cadeias: planta → animal herbívoro → animal carnívoro. Todos dependem uns dos outros!",
+          "example": "🌱 Planta come sol<br>🦗 Gafanhoto come planta<br>🐔 Galinha come gafanhoto<br>🦅 Águia come galinha",
+          "trick": "Cadeia alimentar = 'quem come quem'. Respeita a natureza!"
+        },
+        {
+          "icon": "🧬",
+          "title": "Seres Vivos — Características",
+          "body": "Os seres vivos nascem, crescem, reproduzem-se, alimentam-se, respiram e morrem. Os não vivos não fazem isto.",
+          "example": "Seres vivos: animais, plantas, fungos, bactérias<br>Não vivos: pedras, água, ar, cadeira, carro<br>Todos os seres vivos são feitos de células!",
+          "trick": "Todos os seres vivos: NASCEM, CRESCEM, RESPIRAM, REPRODUZEM-SE e MORREM. 5 funções vitais!"
+        },
+        {
+          "icon": "🌊",
+          "title": "Ciclo da Água",
+          "body": "A água está sempre em movimento entre a terra e o céu. Este ciclo tem 3 fases.",
+          "example": "☀️ Evaporação: calor faz a água subir como vapor<br>☁️ Condensação: vapor arrefece e forma nuvens<br>🌧️ Precipitação: cai como chuva, granizo ou neve<br>Em Cabo Verde a precipitação é muito escassa!",
+          "trick": "EVA-CON-PRECI: EVAporação (sol aquece) → CONdensação (arrefece, forma nuvens) → PRECIpitação (chuva)!"
+        },
+        {
+          "icon": "🌿",
+          "title": "Cadeia Alimentar",
+          "body": "Mostra quem come quem na natureza. Sempre começa nas plantas (produtores).",
+          "example": "🌾 Planta → 🦗 Gafanhoto → 🦎 Lagarto → 🦅 Falcão<br><br>Produtor → Consumidor 1º → Consumidor 2º → Consumidor 3º<br>Os decompositores (bactérias, fungos) reciclam a matéria!",
+          "trick": "A seta = é comido por! PLANTA → LAGARTA → PÁSSARO. A planta é SEMPRE o produtor (início da cadeia)!"
+        },
+        {
+          "icon": "🏖️",
+          "title": "Cabo Verde no Mundo",
+          "body": "Cabo Verde fica no Oceano Atlântico, a cerca de 500 km da costa da África Ocidental.",
+          "example": "📍 Coordenadas: cerca de 16°N, 24°W<br>🌍 Continente mais próximo: África<br>🌊 Oceano: Atlântico<br>📏 Distância a África: ~500 km<br>🇵🇹 Distância a Portugal: ~1.500 km",
+          "trick": "CV está no Atlântico, perto de África. Barlavento = 6 ilhas a norte. Sotavento = 4 ilhas a sul!"
+        },
+        {
+          "icon": "💧",
+          "title": "Conservação da Natureza",
+          "body": "Devemos proteger a natureza! Cabo Verde tem áreas protegidas importantes.",
+          "list": [
+            "🐢 Não apanhar tartarugas nem os seus ovos",
+            "🐟 Respeitar as vedações de pesca (tamanho mínimo)",
+            "🌳 Não cortar árvores sem autorização",
+            "🏖️ Não deixar lixo na praia",
+            "♻️ Reciclar e poupar água e energia"
+          ],
+          "trick": "3Rs por ordem: REDUZIR (usar menos) → REUTILIZAR (usar de novo) → RECICLAR (transformar). Por esta ordem!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é a função do Hospital?",
+          "options": [
+            "Cuidar da saúde",
+            "Educar crianças",
+            "Vender comida",
+            "Fazer leis"
+          ],
+          "answer": "Cuidar da saúde",
+          "why": "Hospitals tratam doentes e feridos. É uma instituição de saúde!"
+        },
+        {
+          "question": "Qual osso protege o cérebro?",
+          "options": [
+            "Crânio",
+            "Vértebras",
+            "Costelas",
+            "Fémur"
+          ],
+          "answer": "Crânio",
+          "why": "O crânio é uma caixa óssea que protege o cérebro de pancadas!"
+        },
+        {
+          "question": "Qual é a primeira etapa da digestão?",
+          "options": [
+            "Mastigar na boca",
+            "Ir para o estômago",
+            "Ir para o intestino",
+            "Sair do corpo"
+          ],
+          "answer": "Mastigar na boca",
+          "why": "A boca começa a digestão: dentes mastigam, saliva começa a quebrar comida!"
+        },
+        {
+          "question": "Quem é o presidente de Cabo Verde?",
+          "options": [
+            "O chefe do país, eleito pelo povo",
+            "O prefeito",
+            "O rei",
+            "O juiz"
+          ],
+          "answer": "O chefe do país, eleito pelo povo",
+          "why": "Em democracia, o povo elege o Presidente para 5 anos!"
+        },
+        {
+          "question": "Numa cadeia alimentar, quem come a galinha?",
+          "options": [
+            "A águia (raptor)",
+            "O milho",
+            "A pedra",
+            "O ar"
+          ],
+          "answer": "A águia (raptor)",
+          "why": "Galinha → Águia. A águia é predadora, come galinhas!"
+        },
+        {
+          "question": "Qual destes NÃO é um ser vivo?",
+          "options": [
+            "Pedra",
+            "Planta",
+            "Fungo",
+            "Bactéria"
+          ],
+          "answer": "Pedra",
+          "why": "A pedra não nasce, não cresce, não se reproduz nem respira — não é um ser vivo! Os outros são todos seres vivos."
+        },
+        {
+          "question": "Como é que a água vai do mar para o céu?",
+          "options": [
+            "Evaporação",
+            "Precipitação",
+            "Condensação",
+            "Infiltração"
+          ],
+          "answer": "Evaporação",
+          "why": "O Sol aquece a água do mar e ela transforma-se em vapor de água que sobe para o céu — isso é a EVAPORAÇÃO!"
+        },
+        {
+          "question": "A cadeia alimentar começa sempre com...?",
+          "options": [
+            "Uma planta (produtor)",
+            "Um animal feroz",
+            "O sol sozinho",
+            "A água"
+          ],
+          "answer": "Uma planta (produtor)",
+          "why": "As plantas são os PRODUTORES — fazem fotossíntese e produzem o seu próprio alimento usando a luz do sol!"
+        },
+        {
+          "question": "Qual é a fase do ciclo da água em que o vapor forma nuvens?",
+          "options": [
+            "Condensação",
+            "Evaporação",
+            "Precipitação",
+            "Absorção"
+          ],
+          "answer": "Condensação",
+          "why": "CONDENSAÇÃO: o vapor de água arrefece ao subir, transforma-se em gotículas de água e forma as nuvens!"
+        },
+        {
+          "question": "Num ecossistema, quem decompõe a matéria morta?",
+          "options": [
+            "Decompositores (fungos e bactérias)",
+            "Predadores",
+            "Produtores (plantas)",
+            "Herbívoros"
+          ],
+          "answer": "Decompositores (fungos e bactérias)",
+          "why": "Os DECOMPOSITORES (fungos, bactérias) decompõem animais e plantas mortas, devolvendo os nutrientes à terra!"
+        },
+        {
+          "question": "A que distância fica Cabo Verde da costa de África?",
+          "options": [
+            "Cerca de 500 km",
+            "Cerca de 50 km",
+            "Cerca de 5.000 km",
+            "Está ligado a África"
+          ],
+          "answer": "Cerca de 500 km",
+          "why": "Cabo Verde fica a aproximadamente 500 km a oeste da costa da África Ocidental (Senegal e Mauritânia)!"
+        },
+        {
+          "question": "Qual é uma ação de conservação da natureza em Cabo Verde?",
+          "options": [
+            "Proteger as tartarugas-marinhas e as suas ninhas",
+            "Apanhar todos os peixes que se encontram",
+            "Deitar lixo no mar",
+            "Cortar todas as árvores para lenha"
+          ],
+          "answer": "Proteger as tartarugas-marinhas e as suas ninhas",
+          "why": "Proteger as tartarugas-marinhas é fundamental para conservar esta espécie ameaçada que nidifica em Cabo Verde!"
+        },
+        {
+          "question": "Em qual elo da cadeia alimentar está o gafanhoto: 'Planta → Gafanhoto → Lagarto → Falcão'?",
+          "options": [
+            "Consumidor primário",
+            "Produtor",
+            "Consumidor secundário",
+            "Decompositor"
+          ],
+          "answer": "Consumidor primário",
+          "why": "O gafanhoto come a planta (produtor) — é o CONSUMIDOR PRIMÁRIO, o 1º consumidor da cadeia!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Se não houvesse instituições, o que acontecia?",
+          "options": [
+            "Caos, sem educação, saúde nem segurança",
+            "Nada mudava",
+            "Melhorava",
+            "Mesmo assim"
+          ],
+          "answer": "Caos, sem educação, saúde nem segurança",
+          "why": "Instituições organizam a sociedade. Sem elas = ninguém se cuida!"
+        },
+        {
+          "question": "Qual é a função dos músculos esqueléticos?",
+          "options": [
+            "Permitir movimento consciente",
+            "Bombar sangue",
+            "Digerir comida",
+            "Respirar"
+          ],
+          "answer": "Permitir movimento consciente",
+          "why": "Músculos esqueléticos puxam ossos → movimento voluntário!"
+        },
+        {
+          "question": "Se não respirássemos durante 5 minutos, o que acontecia?",
+          "options": [
+            "O cérebro morre por falta de oxigénio",
+            "Nada acontecia",
+            "Dormíamos",
+            "Crecíamos"
+          ],
+          "answer": "O cérebro morre por falta de oxigénio",
+          "why": "Oxigénio é essencial! Sem ele, células cerebrais morrem!"
+        },
+        {
+          "question": "Como se elege o Presidente de Cabo Verde?",
+          "options": [
+            "Votação do povo",
+            "Nomeação do Parlamento",
+            "Herança de família",
+            "Sorteio"
+          ],
+          "answer": "Votação do povo",
+          "why": "Democracia = povo escolhe! Eleições a cada 5 anos!"
+        },
+        {
+          "question": "Se desaparecessem as plantas, o que acontecia?",
+          "options": [
+            "Toda a cadeia alimentar desapareceria; fome e morte",
+            "Nada acontecia",
+            "Haveria mais comida",
+            "Peixe era suficiente"
+          ],
+          "answer": "Toda a cadeia alimentar desapareceria; fome e morte",
+          "why": "Plantas = base da cadeia. Sem elas, herbívoros morrem, carnívoros morrem, gente morre!"
+        },
+        {
+          "question": "Se os decompositores desaparecessem, o que aconteceria?",
+          "options": [
+            "A matéria morta acumulava-se e os nutrientes não voltavam ao solo",
+            "As plantas cresciam mais depressa",
+            "Os animais ficavam mais saudáveis",
+            "Não acontecia nada de especial"
+          ],
+          "answer": "A matéria morta acumulava-se e os nutrientes não voltavam ao solo",
+          "why": "Sem decompositores, animais e plantas mortos acumular-se-iam. Os nutrientes não voltariam ao solo para alimentar novas plantas — o ciclo da vida parava!"
+        },
+        {
+          "question": "O ciclo da água em Cabo Verde é diferente do de países chuvosos. Porquê?",
+          "options": [
+            "Porque chove muito pouco, a evaporação é intensa e a precipitação é escassa",
+            "Porque não há evaporação nas ilhas",
+            "Porque o sol não existe em Cabo Verde",
+            "Porque o mar não se evapora"
+          ],
+          "answer": "Porque chove muito pouco, a evaporação é intensa e a precipitação é escassa",
+          "why": "Com muito sol e calor, a evaporação é alta. Mas as nuvens formadas nem sempre trazem chuva suficiente às ilhas! Por isso Cabo Verde tem falta de água."
+        },
+        {
+          "question": "Qual destas cadeias alimentares faz sentido no ecossistema de Cabo Verde?",
+          "options": [
+            "Alga marinha → Peixe pequeno → Atum → Tubarão",
+            "Tubarão → Atum → Peixe → Alga",
+            "Atum → Alga → Tubarão → Peixe",
+            "Peixe → Tubarão → Alga → Atum"
+          ],
+          "answer": "Alga marinha → Peixe pequeno → Atum → Tubarão",
+          "why": "A cadeia começa no produtor (alga marinha), depois o peixe pequeno come a alga, o atum come o peixe pequeno, e o tubarão come o atum!"
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "aprender": [
+        {
+          "icon": "🌍",
+          "title": "Viver em Sociedade",
+          "body": "Uma sociedade é um grupo organizado de pessoas com leis, instituições e valores comuns. Todos dependem uns dos outros.",
+          "example": "🏛️ Parlamento faz leis<br>👮 Polícia garante segurança<br>🏫 Escola ensina<br>💼 Trabalho alimenta<br>👨‍👩‍👧‍👦 Família educa",
+          "trick": "Sociedade = organização + respeito + responsabilidade mútua!"
+        },
+        {
+          "icon": "🗺️",
+          "title": "Cabo Verde no Mundo",
+          "body": "Cabo Verde é um país no Oceano Atlântico, perto de África. Faz parte de organizações internacionais (CPLP, PALOP, CEDEAO).",
+          "example": "🇨🇻 Capital: Praia (Santiago)<br>📍 10 ilhas no Atlântico<br>🌍 Membro da CPLP com Portugal, Brasil...<br>🤝 Membro da CEDEAO com outros países africanos",
+          "trick": "Cabo Verde = ponte entre continentes! Pequeno, mas importante!"
+        },
+        {
+          "icon": "🏛️",
+          "title": "Organização Política: Direitos e Deveres",
+          "body": "Todos temos direitos (educação, saúde, segurança) e deveres (respeitar leis, trabalhar, ser honesto).",
+          "example": "Direito a educação = Dever de ir à escola 📚<br>Direito a saúde = Dever de cuidar do corpo 💪<br>Direito a segurança = Dever de respeitar outros 🤝",
+          "trick": "Direito + dever = equilíbrio! Exiges direitos? Cumpre deveres!"
+        },
+        {
+          "icon": "👤",
+          "title": "Migrações: Emigração e Imigração",
+          "body": "Emigrar = sair do país. Imigrar = entrar num país. Muitas pessoas emigram de Cabo Verde por oportunidades.",
+          "example": "Emigrado: cabo-verdiano que vai para Portugal/EUA 🛫<br>Imigrante: estrangeiro que vem para Cabo Verde 🛬<br>Razão: procurar trabalho, estudar, reunir família",
+          "trick": "Migrante = pessoa que muda de país. Leva saudade, mas busca futuro melhor!"
+        },
+        {
+          "icon": "🎉",
+          "title": "Feriados e Símbolos Nacionais",
+          "body": "Cabo Verde tem feriados nacionais (Independência em 5 de julho) e símbolos (bandeira, hino) que unem o povo.",
+          "example": "🇨🇻 Bandeira: azul, branco, vermelho com estrelas<br>🎵 Hino Nacional = Cântico da Liberdade<br>⭐ Brasão: símbolo de soberania<br>🎂 5 de julho = Independência!",
+          "trick": "Símbolos = identidade nacional! Respeita-os com orgulho!"
+        },
+        {
+          "icon": "🌍",
+          "title": "Cabo Verde no Mundo — Continentes e Oceanos",
+          "body": "Existem 5 oceanos e 5 continentes principais. Cabo Verde situa-se no Oceano Atlântico.",
+          "list": [
+            "Continentes: África, Europa, Ásia, América, Oceânia",
+            "Oceanos: Atlântico, Pacífico, Índico, Ártico, Antártico",
+            "Cabo Verde: Oceano Atlântico, próximo da África",
+            "Organizações internacionais: ONU, UA (União Africana), CEDEAO"
+          ],
+          "trick": "5 oceanos: PACÍfico, ATLÂNtico, ÍNdico, ÁRtico, ANTÁRtico. CV está no ATLÂNTICO entre África e América!"
+        },
+        {
+          "icon": "🇨🇻",
+          "title": "Símbolos e Feriados Nacionais",
+          "body": "Cabo Verde tem símbolos que representam a sua identidade e feriados que celebram momentos importantes.",
+          "list": [
+            "🚩 Bandeira: azul, branco, vermelho com 10 estrelas (uma por ilha)",
+            "🎵 Hino Nacional: 'Cântico da Liberdade'",
+            "🗓️ Independência: 5 de Julho de 1975",
+            "🗓️ Feriados: 1 Jan (Ano Novo), 20 Jan (Héros Nacionais), 1 Mai (Trabalhadores), 5 Jul (Independência)"
+          ],
+          "trick": "10 ESTRELAS na bandeira = 10 ilhas! Azul = céu e mar. Branco = paz. Vermelho = esforço do povo!"
+        },
+        {
+          "icon": "📜",
+          "title": "História de Cabo Verde",
+          "body": "Cabo Verde foi descoberto pelos portugueses e habitado a partir de 1462. Tornou-se independente em 1975.",
+          "example": "1460-62: Descoberta das ilhas pelos portugueses<br>1462: Início do povoamento em Santiago<br>1975: Independência — 5 de Julho<br>O país foi colonizado por Portugal durante ~500 anos<br>O povo cabo-verdiano mistura culturas africanas e europeias",
+          "trick": "1460-62 = descoberta. 5 Jul 1975 = Independência. 1992 = democracia multipartidária. Datas para saber!"
+        },
+        {
+          "icon": "🏛️",
+          "title": "Organização Política de Cabo Verde",
+          "body": "Cabo Verde é uma república democrática. O poder é dividido em 3 órgãos principais.",
+          "list": [
+            "Presidente da República — Chefe de Estado (eleito de 5 em 5 anos)",
+            "Assembleia Nacional — 72 deputados (poder legislativo)",
+            "Governo — Primeiro-Ministro + Ministros (poder executivo)",
+            "Câmaras Municipais — governam cada município"
+          ],
+          "trick": "3 poderes: LEGISLATIVO (Assembleia faz leis), EXECUTIVO (Governo aplica), JUDICIAL (Tribunais julgam)!"
+        },
+        {
+          "icon": "💼",
+          "title": "Atividades Económicas de Cabo Verde",
+          "body": "A economia divide-se em 3 setores. Em Cabo Verde, o turismo e a pesca são muito importantes!",
+          "list": [
+            "🌱 Setor Primário: pesca, agricultura (milho, feijão), pecuária",
+            "🏭 Setor Secundário: indústria, construção civil",
+            "🛍️ Setor Terciário: turismo, comércio, serviços, transportes",
+            "💻 Economia digital — setor em crescimento"
+          ],
+          "trick": "1° = da natureza (pesca, agri). 2° = transforma (indústria). 3° = serviços (turismo). CV é forte no 3°!"
+        },
+        {
+          "icon": "🧬",
+          "title": "A Célula — Unidade da Vida",
+          "body": "A célula é a unidade básica de todos os seres vivos. Cada célula tem partes com funções específicas.",
+          "list": [
+            "🔵 Membrana celular — envolve e protege a célula",
+            "🟡 Citoplasma — substância interior onde ocorrem reações",
+            "🔴 Núcleo — centro de controlo, contém o DNA",
+            "🟢 Parede celular — só nas células vegetais (plantas)"
+          ],
+          "trick": "Membrana = muro (protege). Citoplasma = interior. Núcleo = chefe (DNA). Planta tem a mais: Parede + Cloroplasto!"
+        },
+        {
+          "icon": "🌿",
+          "title": "Plantas — Diversidade e Utilidade",
+          "body": "As plantas classificam-se em grupos. Em Cabo Verde, adaptaram-se ao clima seco.",
+          "list": [
+            "🌲 Árvores: tamareira, dragoeiro, coqueiro, acácia",
+            "🌵 Plantas xerófitas: adaptadas à seca (acumula água)",
+            "🌺 Flores: hibisco, buganvília",
+            "🌾 Culturas: milho, feijão, banana, café (em S. Antão e Fogo)",
+            "💊 Plantas medicinais: erva-cidreira, losna, pitanga"
+          ],
+          "trick": "Fotossíntese: LUZ + ÁGUA + CO₂ → AÇÚCAR (alimento) + OXIGÉNIO (ar que respiramos). As plantas produzem o nosso ar!"
+        },
+        {
+          "icon": "🌡️",
+          "title": "Alterações Climáticas e Ambiente",
+          "body": "O clima da Terra está a mudar! As alterações climáticas afetam especialmente países insulares como Cabo Verde.",
+          "list": [
+            "🌡️ Aumento da temperatura global",
+            "🌊 Subida do nível do mar — ameaça as costas e ilhas baixas",
+            "🌧️ Mudança nos padrões de chuva — mais secas em Cabo Verde",
+            "💨 Ventos mais fortes e mais tempestades",
+            "♻️ Como ajudar: poupar energia, reciclar, plantar árvores"
+          ],
+          "trick": "CO₂ retém calor → Terra aquece → gelo derrete → nível do mar sobe. CV como ilha está em risco!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é a capital de Cabo Verde?",
+          "options": [
+            "Praia",
+            "Mindelo",
+            "Porto Novo",
+            "Tarrafal"
+          ],
+          "answer": "Praia",
+          "why": "Praia é a capital (está em Santiago), sede do Governo!"
+        },
+        {
+          "question": "Qual é a diferença entre emigração e imigração?",
+          "options": [
+            "Emigrar = sair; Imigrar = entrar",
+            "É a mesma coisa",
+            "Emigrar = entrar",
+            "Imigrar = sair"
+          ],
+          "answer": "Emigrar = sair; Imigrar = entrar",
+          "why": "E-migrar = E-xit (sair). Im-migrar = entrAR (Im-inside)!"
+        },
+        {
+          "question": "Qual é a data da independência de Cabo Verde?",
+          "options": [
+            "5 de julho",
+            "1 de janeiro",
+            "25 de dezembro",
+            "30 de junho"
+          ],
+          "answer": "5 de julho",
+          "why": "5 de julho de 1975 = Independência de Cabo Verde! Feriado nacional!"
+        },
+        {
+          "question": "A que organizações internacionais Cabo Verde pertence?",
+          "options": [
+            "CPLP, PALOP, CEDEAO",
+            "Só CPLP",
+            "Só ONU",
+            "Nenhuma"
+          ],
+          "answer": "CPLP, PALOP, CEDEAO",
+          "why": "CPLP = Comunidade Portuguesa de Língua Portuguesa<br>PALOP = Países Africanos de Língua Oficial Portuguesa<br>CEDEAO = Comunidade Económica de Estados da África Ocidental!"
+        },
+        {
+          "question": "Qual é um dever nosso numa sociedade?",
+          "options": [
+            "Respeitar leis e outras pessoas",
+            "Fazer o que queremos",
+            "Não trabalhar",
+            "Ignorar polícia"
+          ],
+          "answer": "Respeitar leis e outras pessoas",
+          "why": "Deveres = responsabilidades! Cada cidadão contribui ao respeitar regras!"
+        },
+        {
+          "question": "Quantas ilhas tem Cabo Verde?",
+          "options": [
+            "10",
+            "9",
+            "12",
+            "8"
+          ],
+          "answer": "10",
+          "why": "Cabo Verde tem exatamente 10 ilhas: 6 de Barlavento (norte) e 4 de Sotavento (sul)!"
+        },
+        {
+          "question": "Qual é a CAPITAL de Cabo Verde?",
+          "options": [
+            "Praia",
+            "Mindelo",
+            "Santa Maria",
+            "São Filipe"
+          ],
+          "answer": "Praia",
+          "why": "A Praia fica na ilha de Santiago e é a capital e maior cidade de Cabo Verde desde a independência em 1975!"
+        },
+        {
+          "question": "A célula é a...",
+          "options": [
+            "Unidade básica da vida",
+            "Parte do esqueleto",
+            "Tipo de planta",
+            "Órgão do corpo"
+          ],
+          "answer": "Unidade básica da vida",
+          "why": "A célula é a UNIDADE BÁSICA de todos os seres vivos! Todos os animais, plantas e outros seres são feitos de células."
+        },
+        {
+          "question": "Na cadeia alimentar, as plantas são...",
+          "options": [
+            "Produtores",
+            "Consumidores",
+            "Decompositores",
+            "Predadores"
+          ],
+          "answer": "Produtores",
+          "why": "As plantas são os PRODUTORES porque fazem fotossíntese — produzem o seu próprio alimento usando a luz do sol!"
+        },
+        {
+          "question": "A pesca pertence a que SETOR económico?",
+          "options": [
+            "Primário",
+            "Secundário",
+            "Terciário",
+            "Quaternário"
+          ],
+          "answer": "Primário",
+          "why": "O setor PRIMÁRIO extrai recursos diretamente da natureza: agricultura, pesca, pecuária, mineração!"
+        },
+        {
+          "question": "Qual ilha pertence ao grupo de BARLAVENTO?",
+          "options": [
+            "São Vicente",
+            "Santiago",
+            "Fogo",
+            "Brava"
+          ],
+          "answer": "São Vicente",
+          "why": "São Vicente (onde fica Mindelo) pertence ao grupo de Barlavento! Santiago, Fogo e Brava são de Sotavento."
+        },
+        {
+          "question": "O que é um 'habitat'?",
+          "options": [
+            "O lugar onde um ser vivo vive",
+            "O alimento do animal",
+            "A família do animal",
+            "O ciclo de vida"
+          ],
+          "answer": "O lugar onde um ser vivo vive",
+          "why": "O HABITAT é o ambiente natural onde um ser vivo vive e encontra tudo que precisa: comida, água e abrigo!"
+        },
+        {
+          "question": "Quem é o Chefe de Estado de Cabo Verde?",
+          "options": [
+            "O Presidente da República",
+            "O Primeiro-Ministro",
+            "O Presidente da Assembleia",
+            "O Governador"
+          ],
+          "answer": "O Presidente da República",
+          "why": "Em Cabo Verde, o PRESIDENTE DA REPÚBLICA é o Chefe de Estado. O Primeiro-Ministro chefia o Governo!"
+        },
+        {
+          "question": "Qual é uma consequência das alterações climáticas em Cabo Verde?",
+          "options": [
+            "Subida do nível do mar",
+            "Mais chuva em todo o arquipélago",
+            "Mais animais selvagens",
+            "Temperaturas iguais ao ano todo"
+          ],
+          "answer": "Subida do nível do mar",
+          "why": "O aquecimento global derrete o gelo dos polos, fazendo subir o nível do mar. Para Cabo Verde, um país de ilhas, isso é muito preocupante!"
+        },
+        {
+          "question": "'Morabeza' é...",
+          "options": [
+            "A hospitalidade cabo-verdiana",
+            "Um prato típico",
+            "Uma dança",
+            "Um festival"
+          ],
+          "answer": "A hospitalidade cabo-verdiana",
+          "why": "MORABEZA é uma palavra crioula que descreve a gentileza, carinho e hospitalidade do povo cabo-verdiano!"
+        },
+        {
+          "question": "Em que ano Cabo Verde se tornou independente?",
+          "options": [
+            "1975",
+            "1960",
+            "1980",
+            "1962"
+          ],
+          "answer": "1975",
+          "why": "Cabo Verde declarou a sua independência de Portugal a 5 de Julho de 1975. Esta data é feriado nacional!"
+        },
+        {
+          "question": "Quantas estrelas tem a bandeira de Cabo Verde e o que representam?",
+          "options": [
+            "10 estrelas — uma por ilha",
+            "5 estrelas — os continentes",
+            "7 estrelas — os dias da semana",
+            "12 estrelas — os meses"
+          ],
+          "answer": "10 estrelas — uma por ilha",
+          "why": "A bandeira de Cabo Verde tem 10 estrelas douradas num círculo azul, cada uma representando uma das 10 ilhas!"
+        },
+        {
+          "question": "Qual parte da célula contém o DNA e controla as suas funções?",
+          "options": [
+            "Núcleo",
+            "Membrana",
+            "Citoplasma",
+            "Parede celular"
+          ],
+          "answer": "Núcleo",
+          "why": "O NÚCLEO é o centro de controlo da célula! Contém o DNA com a informação genética do ser vivo."
+        },
+        {
+          "question": "O turismo pertence a que setor económico?",
+          "options": [
+            "Terciário",
+            "Primário",
+            "Secundário",
+            "Quaternário"
+          ],
+          "answer": "Terciário",
+          "why": "O setor TERCIÁRIO inclui os serviços: turismo, comércio, transportes, saúde, educação. Em Cabo Verde, o turismo é a principal fonte de rendimento!"
+        },
+        {
+          "question": "Qual organização internacional agrupa os países africanos?",
+          "options": [
+            "União Africana (UA)",
+            "União Europeia (UE)",
+            "ONU",
+            "OTAN"
+          ],
+          "answer": "União Africana (UA)",
+          "why": "A UNIÃO AFRICANA (UA) é a organização que agrupa os 55 países africanos, incluindo Cabo Verde!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Se emigrasses de Cabo Verde, qual seria a razão mais comum?",
+          "options": [
+            "Procurar emprego/estudos melhorados",
+            "Fugir da polícia",
+            "Não gostar de clima",
+            "Acaso"
+          ],
+          "answer": "Procurar emprego/estudos melhorados",
+          "why": "Muitos cabo-verdianos emigram para Portugal, EUA, Brasil buscando oportunidades!"
+        },
+        {
+          "question": "Por que é importante respeitar os símbolos nacionais?",
+          "options": [
+            "Porque representam a unidade e soberania do país",
+            "Não é importante",
+            "Porque são bonitos",
+            "Obrigação só"
+          ],
+          "answer": "Porque representam a unidade e soberania do país",
+          "why": "Bandeira, hino, brasão = identidade nacional! Mostra respeito pelo país!"
+        },
+        {
+          "question": "Como se equilibra direitos e deveres numa sociedade justa?",
+          "options": [
+            "Todos têm direitos, todos cumprem deveres",
+            "Só direitos",
+            "Só deveres",
+            "Nenhum dos dois"
+          ],
+          "answer": "Todos têm direitos, todos cumprem deveres",
+          "why": "Justiça = equilíbrio! Se pedes direito, deves cumprir teu dever!"
+        },
+        {
+          "question": "Por que Cabo Verde é membro de organizações internacionais?",
+          "options": [
+            "Para cooperar com outros países em economia, segurança e cultura",
+            "Não tem importância",
+            "Obrigação só",
+            "Para ganhar dinheiro fácil"
+          ],
+          "answer": "Para cooperar com outros países em economia, segurança e cultura",
+          "why": "Organizações internacionais = ajuda mútua! Cabo Verde cresce cooperando!"
+        },
+        {
+          "question": "Se houvesse um conflito entre dois vizinhos, qual instituição resolveria?",
+          "options": [
+            "Tribunal (justiça)",
+            "Polícia",
+            "Parlamento",
+            "Câmara municipal"
+          ],
+          "answer": "Tribunal (justiça)",
+          "why": "Tribunais julgam conflitos e asseguram justiça para todos!"
+        },
+        {
+          "question": "Se o nível do mar subir 1 metro, qual ilha de Cabo Verde seria mais afetada?",
+          "options": [
+            "Sal (ilha plana e baixa)",
+            "Fogo (vulcânica e alta)",
+            "Santo Antão (montanhosa)",
+            "Brava (íngreme)"
+          ],
+          "answer": "Sal (ilha plana e baixa)",
+          "why": "A ilha do Sal é muito plana e baixa. Uma subida do nível do mar inundaria grande parte da ilha! Fogo, Santo Antão e Brava são muito mais altas."
+        },
+        {
+          "question": "Por que razão o turismo é a principal atividade económica de Cabo Verde?",
+          "options": [
+            "Praias bonitas, clima quente, segurança e boa localização no Atlântico",
+            "Porque tem muita indústria",
+            "Porque tem grandes florestas",
+            "Porque está perto do polo norte"
+          ],
+          "answer": "Praias bonitas, clima quente, segurança e boa localização no Atlântico",
+          "why": "Cabo Verde tem praias fantásticas, sol quase todo o ano, é um país seguro e está bem localizado entre Europa, África e América. Perfeito para o turismo!"
+        },
+        {
+          "question": "A CEDEAO é a Comunidade Económica dos Estados da África Ocidental. Qual é o objetivo desta organização?",
+          "options": [
+            "Promover a cooperação económica entre países da África Ocidental",
+            "Fazer guerra aos países vizinhos",
+            "Controlar os mares do Atlântico",
+            "Gerir os recursos naturais de África"
+          ],
+          "answer": "Promover a cooperação económica entre países da África Ocidental",
+          "why": "A CEDEAO promove a integração económica, o comércio livre e a cooperação entre os 15 países da África Ocidental, incluindo Cabo Verde!"
+        }
+      ]
+    }
+  ]
+}

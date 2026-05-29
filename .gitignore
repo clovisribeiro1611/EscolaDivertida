@@ -1,0 +1,16 @@
+# Manuais MEC — fontes de conteúdo, não fazem parte do app
+1º/
+2º/
+3º/
+4º/
+
+# Ficheiros de trabalho/sessão
+ciencias_old.js
+.progresso_sessao.md
+
+# Imagens de referência MEC (não usadas no app)
+preview*.webp
+
+# Sistema
+.DS_Store
+Thumbs.db

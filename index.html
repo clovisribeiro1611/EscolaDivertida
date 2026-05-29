@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#FF6B6B">
+<meta name="description" content="Estuda para as Provas Nacionais de Cabo Verde — 1ª a 4ª classe">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Escola CV">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.svg">
+<title>Escola Divertida — Cabo Verde</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<script src="matematica.js"></script>
+<script src="portugues.js"></script>
+<script src="ciencias.js"></script>
+<style>
+:root {
+  --y1: #FF6B6B; --y1d: #e05555; --y1l: #fff0f0;
+  --y2: #FF9F1C; --y2d: #e08800; --y2l: #fff6e8;
+  --y3: #2EC4B6; --y3d: #20a89c; --y3l: #e8faf9;
+  --y4: #7B2FBE; --y4d: #6020a0; --y4l: #f3eaff;
+  --mat: #FF6B6B; --por: #4ECDC4; --cie: #45B7D1;
+  --gold: #FFD700; --white: #ffffff;
+  --bg: #FFF8F0; --text: #1a1a2e; --muted: #6b7280;
+  --radius: 20px; --shadow: 0 6px 24px rgba(0,0,0,0.12);
+  --active: #FF6B6B;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── SPLASH ── */
+#splash {
+  position: fixed; inset: 0;
+  background: linear-gradient(160deg, #FF6B6B, #FF9F1C, #2EC4B6, #7B2FBE);
+  background-size: 300% 300%;
+  animation: gradMove 4s ease infinite;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 9999; transition: opacity 0.5s;
+}
+@keyframes gradMove {
+  0%,100%{background-position:0% 50%} 50%{background-position:100% 50%}
+}
+.splash-logo {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3.2rem; color: white;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  margin-bottom: 8px; text-align: center;
+}
+.splash-sub { color: rgba(255,255,255,0.9); font-size: 1rem; font-weight: 700; text-align: center; }
+.splash-stars { font-size: 2rem; margin-top: 20px; animation: bounce 1s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+.splash-flag { display: flex; gap: 8px; margin-top: 14px; }
+.flag-stripe { width: 14px; height: 14px; border-radius: 50%; }
+
+/* ── HEADER ── */
+.app-bar {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 14px 16px;
+  display: flex; align-items: center; gap: 10px;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.3);
+}
+.app-bar-logo { font-family: 'Fredoka One', cursive; font-size: 1.3rem; color: white; }
+.app-bar-sub { font-size: 0.7rem; color: #94a3b8; font-weight: 700; }
+.app-bar-stars { margin-left: auto; background: var(--gold); color: #92400e; border-radius: 50px; padding: 5px 12px; font-weight: 800; font-size: 0.82rem; }
+
+/* ── YEAR SELECTOR (HOME) ── */
+#home-screen { padding: 20px 14px 80px; }
+.welcome-text {
+  text-align: center; margin-bottom: 20px;
+}
+.welcome-text h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.7rem; color: var(--text);
+}
+.welcome-text p { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+
+.years-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 14px; margin-bottom: 24px;
+}
+.year-card {
+  border-radius: 24px; padding: 22px 14px;
+  text-align: center; cursor: pointer;
+  border: 3px solid transparent;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative; overflow: hidden;
+}
+.year-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: white; opacity: 0.15; border-radius: 21px;
+}
+.year-card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 32px rgba(0,0,0,0.18); }
+.year-card:active { transform: scale(0.97); }
+.year-card .yr-emoji { font-size: 2.8rem; margin-bottom: 8px; }
+.year-card .yr-num {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5rem; color: white;
+}
+.year-card .yr-label { font-size: 0.78rem; color: rgba(255,255,255,0.9); font-weight: 700; }
+.year-card.y1 { background: linear-gradient(135deg, var(--y1), #ff8e8e); }
+.year-card.y2 { background: linear-gradient(135deg, var(--y2), #ffbd6b); }
+.year-card.y3 { background: linear-gradient(135deg, var(--y3), #7ee8e2); }
+.year-card.y4 { background: linear-gradient(135deg, var(--y4), #a855f7); }
+.year-badge {
+  position: absolute; top: 10px; right: 10px;
+  background: white; color: var(--text);
+  border-radius: 50px; font-size: 0.65rem;
+  font-weight: 800; padding: 2px 8px; opacity: 0.9;
+}
+
+/* ── SUBJECT SCREEN ── */
+#subject-screen { display: none; padding: 14px 14px 80px; }
+.back-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: white; border: 2.5px solid #e5e7eb;
+  border-radius: 50px; padding: 7px 16px;
+  font-family: 'Nunito', sans-serif; font-weight: 800;
+  font-size: 0.82rem; cursor: pointer; color: var(--text);
+  margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.15s;
+}
+.back-btn:hover { transform: translateX(-3px); }
+
+.year-hero {
+  border-radius: 24px; padding: 20px;
+  margin-bottom: 16px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.year-hero::after {
+  content: ''; position: absolute;
+  top: -30px; right: -30px;
+  width: 120px; height: 120px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+.year-hero .yh-emoji { font-size: 3rem; margin-bottom: 6px; }
+.year-hero h2 { font-family: 'Fredoka One', cursive; font-size: 1.6rem; color: white; }
+.year-hero p { font-size: 0.82rem; color: rgba(255,255,255,0.85); margin-top: 4px; }
+
+.subj-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+.subj-btn {
+  border-radius: 16px; padding: 14px 8px;
+  text-align: center; cursor: pointer;
+  border: 3px solid transparent;
+  font-family: 'Nunito', sans-serif; font-weight: 800;
+  font-size: 0.8rem; transition: all 0.2s;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+.subj-btn .sb-icon { font-size: 1.8rem; margin-bottom: 4px; }
+.subj-btn.mat-btn { background: var(--y1l); color: var(--y1d); border-color: var(--y1); }
+.subj-btn.por-btn { background: #e8faf9; color: #20a89c; border-color: var(--y3); }
+.subj-btn.cie-btn { background: #e8f6ff; color: #2980b9; border-color: var(--cie); }
+.subj-btn.active-subj { color: white !important; transform: scale(1.04); }
+.subj-btn.mat-btn.active-subj { background: var(--y1); }
+.subj-btn.por-btn.active-subj { background: var(--y3); }
+.subj-btn.cie-btn.active-subj { background: var(--cie); }
+
+/* ── CONTENT AREA ── */
+#content-area { }
+.mode-row {
+  display: flex; gap: 8px; overflow-x: auto;
+  scrollbar-width: none; margin-bottom: 14px;
+  padding-bottom: 4px;
+}
+.mode-row::-webkit-scrollbar { display: none; }
+.mode-pill {
+  flex-shrink: 0; padding: 9px 18px;
+  border-radius: 50px; border: 2.5px solid #e5e7eb;
+  font-family: 'Nunito', sans-serif; font-weight: 800;
+  font-size: 0.82rem; cursor: pointer; background: white;
+  color: var(--muted); transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.mode-pill.active-mode { color: white; border-color: transparent; }
+
+/* ── LEARN CARDS ── */
+.learn-section { display: flex; flex-direction: column; gap: 12px; }
+.lcard {
+  background: white; border-radius: 20px;
+  padding: 18px; box-shadow: var(--shadow);
+  border: 2.5px solid #f0f0f0;
+  animation: fadeUp 0.3s ease;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+.lcard h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem; margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.lcard p { font-size: 0.9rem; line-height: 1.7; color: #374151; }
+.lcard ul { padding-left: 20px; }
+.lcard ul li { font-size: 0.88rem; line-height: 1.8; color: #374151; }
+.eg {
+  border-radius: 14px; padding: 13px 15px;
+  margin-top: 10px; font-size: 0.86rem;
+  line-height: 1.65; border-left: 5px solid;
+}
+.eg.mat-eg { background: var(--y1l); border-color: var(--y1); }
+.eg.por-eg { background: #e8faf9; border-color: var(--y3); }
+.eg.cie-eg { background: #e8f6ff; border-color: var(--cie); }
+
+/* ── QUIZ ── */
+.quiz-wrap { }
+.qprogress { height: 10px; background: #f0f0f0; border-radius: 50px; margin-bottom: 16px; overflow: hidden; }
+.qpfill { height: 100%; border-radius: 50px; transition: width 0.4s ease; }
+.qcard {
+  background: white; border-radius: 22px;
+  padding: 22px 18px; box-shadow: var(--shadow);
+  border: 3px solid #f0f0f0; animation: fadeUp 0.3s ease;
+}
+.qnum { font-size: 0.72rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.qtext { font-size: 1.05rem; font-weight: 800; line-height: 1.5; color: var(--text); margin-bottom: 16px; }
+.opts { display: flex; flex-direction: column; gap: 10px; }
+.opt {
+  background: white; border: 2.5px solid #e5e7eb;
+  border-radius: 14px; padding: 14px 16px;
+  cursor: pointer; font-family: 'Nunito', sans-serif;
+  font-weight: 700; font-size: 0.92rem; color: var(--text);
+  display: flex; align-items: flex-start; gap: 10px;
+  transition: all 0.15s; text-align: left;
+}
+.opt:hover:not(:disabled) { border-color: #9ca3af; background: #f9fafb; transform: translateX(3px); }
+.opt-lbl {
+  min-width: 32px; height: 32px; border-radius: 10px;
+  background: #f3f4f6; display: flex; align-items: center;
+  justify-content: center; font-weight: 900; font-size: 0.82rem;
+  flex-shrink: 0;
+}
+.opt.correct-opt { border-color: #22c55e; background: #f0fdf4; color: #166534; }
+.opt.wrong-opt { border-color: #ef4444; background: #fef2f2; color: #991b1b; }
+.opt.correct-opt .opt-lbl { background: #22c55e; color: white; }
+.opt.wrong-opt .opt-lbl { background: #ef4444; color: white; }
+
+/* FEEDBACK BOX — styled like a friendly teacher note */
+.feedback {
+  display: none; border-radius: 16px;
+  padding: 16px; margin-top: 12px;
+  font-size: 0.9rem; line-height: 1.6; font-weight: 600;
+  border: 2.5px solid;
+}
+.feedback.show { display: block; animation: fadeUp 0.3s ease; }
+.feedback.fb-ok { background: #f0fdf4; border-color: #86efac; color: #166534; }
+.feedback.fb-no { background: #fff7ed; border-color: #fcd34d; color: #92400e; }
+.feedback .fb-why {
+  margin-top: 8px; padding: 10px 12px;
+  background: rgba(255,255,255,0.7); border-radius: 10px;
+  font-size: 0.84rem; font-weight: 600;
+}
+
+.next-q-btn {
+  width: 100%; padding: 15px; border-radius: 14px;
+  border: none; font-family: 'Fredoka One', cursive;
+  font-size: 1rem; cursor: pointer; margin-top: 12px;
+  display: none; color: white; transition: transform 0.15s;
+  letter-spacing: 0.3px;
+}
+.next-q-btn:active { transform: scale(0.97); }
+.next-q-btn.show { display: block; animation: fadeUp 0.3s ease; }
+
+/* ── RESULTS ── */
+.results-card {
+  background: white; border-radius: 24px;
+  padding: 30px 20px; text-align: center;
+  box-shadow: var(--shadow); display: none;
+  border: 3px solid #f0f0f0;
+}
+.results-card.show { display: block; animation: pop 0.4s ease; }
+@keyframes pop { 0%{transform:scale(0.8);opacity:0} 70%{transform:scale(1.05)} 100%{transform:scale(1);opacity:1} }
+.res-big { font-size: 4rem; margin-bottom: 6px; }
+.res-score { font-family: 'Fredoka One', cursive; font-size: 3.2rem; }
+.res-of { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+.res-stars { font-size: 2.2rem; letter-spacing: 6px; margin-bottom: 10px; }
+.res-msg { font-size: 1rem; font-weight: 800; margin-bottom: 20px; }
+.res-breakdown { background: #f9fafb; border-radius: 14px; padding: 12px; margin-bottom: 16px; text-align: left; }
+.res-breakdown h4 { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
+.bd-item { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; padding: 4px 0; }
+.bd-ok { color: #22c55e; } .bd-no { color: #ef4444; }
+.retry-btn {
+  padding: 14px 28px; border-radius: 50px; border: none;
+  font-family: 'Fredoka One', cursive; font-size: 1rem;
+  cursor: pointer; color: white; letter-spacing: 0.3px;
+  transition: transform 0.15s; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.retry-btn:active { transform: scale(0.96); }
+
+/* ── CHALLENGE ── */
+.timer-display {
+  text-align: center; font-family: 'Fredoka One', cursive;
+  font-size: 3.5rem; padding: 8px 0 14px;
+  transition: color 0.3s;
+}
+.timer-ring {
+  width: 80px; height: 80px; border-radius: 50%;
+  margin: 0 auto 14px;
+  border: 6px solid #f0f0f0;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; font-family: 'Fredoka One', cursive;
+  font-size: 1.8rem; transition: border-color 0.3s;
+}
+
+/* ── AI SECTION ── */
+.ai-box {
+  background: white; border-radius: 20px;
+  padding: 18px; box-shadow: var(--shadow);
+  border: 2.5px solid #f0f0f0; margin-bottom: 12px;
+}
+.ai-box h3 {
+  font-family: 'Fredoka One', cursive; font-size: 1rem;
+  margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.ai-select {
+  width: 100%; padding: 11px 14px; border-radius: 12px;
+  border: 2.5px solid #e5e7eb; font-family: 'Nunito', sans-serif;
+  font-size: 0.88rem; font-weight: 700; background: #f9fafb;
+  margin-bottom: 10px; color: var(--text);
+}
+.level-row { display: flex; gap: 8px; margin-bottom: 10px; }
+.lv-btn {
+  flex: 1; padding: 9px; border-radius: 10px;
+  border: 2.5px solid #e5e7eb; background: white;
+  font-family: 'Nunito', sans-serif; font-weight: 800;
+  font-size: 0.78rem; cursor: pointer; color: var(--muted);
+  transition: all 0.15s;
+}
+.ai-go-btn {
+  width: 100%; padding: 14px; border-radius: 14px;
+  border: none; font-family: 'Fredoka One', cursive;
+  font-size: 1rem; cursor: pointer; color: white;
+  transition: transform 0.15s; letter-spacing: 0.3px;
+}
+.ai-go-btn:active { transform: scale(0.97); }
+.ai-go-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.ai-out {
+  margin-top: 12px; background: #f9fafb;
+  border-radius: 14px; padding: 15px;
+  font-size: 0.88rem; line-height: 1.75; color: var(--text);
+  display: none; border: 2px solid #e5e7eb;
+}
+.ai-out.show { display: block; animation: fadeUp 0.3s ease; }
+.ai-spinner { text-align: center; font-size: 1.6rem; padding: 16px; }
+
+/* ── FLOATING NAV ── */
+.float-nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: white; border-top: 2px solid #f0f0f0;
+  padding: 8px 16px 10px;
+  display: none; gap: 0; z-index: 200;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+}
+.float-nav.visible { display: flex; }
+.fn-btn {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: 1px; cursor: pointer;
+  padding: 5px 2px; border-radius: 10px;
+  font-size: 0.58rem; font-weight: 800; color: var(--muted);
+  transition: all 0.15s; border: none; background: none;
+}
+.fn-btn .fn-icon { font-size: 1.2rem; }
+.fn-btn.fn-active { color: var(--active); }
+.fn-btn.fn-active .fn-icon { transform: scale(1.15); }
+
+/* DECORATIVE BG BLOBS */
+.blob {
+  position: fixed; border-radius: 50%;
+  filter: blur(60px); opacity: 0.15; pointer-events: none; z-index: 0;
+}
+.blob1 { width: 250px; height: 250px; background: var(--y1); top: -80px; left: -80px; }
+.blob2 { width: 200px; height: 200px; background: var(--y2); bottom: 100px; right: -60px; }
+.blob3 { width: 160px; height: 160px; background: var(--y3); top: 40%; left: 60%; }
+
+/* CELEBRATE ANIMATION */
+@keyframes celebrate {
+  0%,100%{transform:rotate(-3deg) scale(1)} 50%{transform:rotate(3deg) scale(1.05)}
+}
+.celebrate { animation: celebrate 0.5s ease 3; }
+
+/* SHAKE */
+@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+.shake { animation: shake 0.3s ease; }
+
+/* RESPONSIVE */
+@media (min-width: 600px) {
+  #home-screen, #subject-screen { max-width: 580px; margin: 0 auto; }
+  .app-bar {
+    padding-left: max(16px, calc(50% - 290px));
+    padding-right: max(16px, calc(50% - 290px));
+  }
+}
+@media (min-width: 900px) {
+  #home-screen { max-width: 880px; margin: 0 auto; padding: 28px 20px 40px; }
+  #subject-screen { max-width: 880px; margin: 0 auto; padding: 16px 20px 40px; }
+  .app-bar {
+    padding-left: max(16px, calc(50% - 440px));
+    padding-right: max(16px, calc(50% - 440px));
+  }
+  .app-bar-logo { font-size: 1.5rem; }
+  .app-bar-sub { font-size: 0.78rem; }
+  .float-nav { display: none !important; }
+  .mode-row { flex-wrap: wrap; overflow-x: visible; padding-bottom: 6px; }
+  .mode-pill { padding: 10px 22px; font-size: 0.85rem; }
+  .years-grid { grid-template-columns: repeat(4, 1fr); }
+  .year-card { padding: 24px 14px; }
+  .year-card .yr-emoji { font-size: 3.2rem; }
+  .year-card .yr-num { font-size: 1.7rem; }
+  .subj-btn { padding: 20px 14px; }
+  .subj-btn .sb-icon { font-size: 2.4rem; }
+  .subj-btn { font-size: 0.88rem; }
+  .learn-section { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .lcard { padding: 22px; }
+  .opts { display: grid; grid-template-columns: 1fr 1fr; }
+  .qtext { font-size: 1.1rem; }
+  .qcard { padding: 28px 24px; }
+  .year-hero { border-radius: 22px; }
+}
+@media (min-width: 1280px) {
+  #home-screen, #subject-screen { max-width: 1160px; }
+  .app-bar {
+    padding-left: max(20px, calc(50% - 580px));
+    padding-right: max(20px, calc(50% - 580px));
+  }
+  .learn-section { grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+  .app-bar-logo { font-size: 1.6rem; }
+  .year-card .yr-emoji { font-size: 3.6rem; }
+  .year-card .yr-num { font-size: 1.9rem; }
+  .mode-pill { font-size: 0.9rem; padding: 11px 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- BACKGROUND BLOBS -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<!-- SPLASH -->
+<div id="splash">
+  <div class="splash-logo">🏫 Escola<br>Divertida</div>
+  <div class="splash-sub">Cabo Verde • Ensino Básico</div>
+  <div class="splash-flag">
+    <div class="flag-stripe" style="background:#003893"></div>
+    <div class="flag-stripe" style="background:#CF2027"></div>
+    <div class="flag-stripe" style="background:#F7D116"></div>
+    <div class="flag-stripe" style="background:#003893"></div>
+  </div>
+  <div class="splash-stars">⭐🌟⭐</div>
+</div>
+
+<!-- APP BAR -->
+<div class="app-bar">
+  <div>
+    <div class="app-bar-logo">🏫 Escola Divertida</div>
+    <div class="app-bar-sub">Provas Nacionais 2025/2026 • Cabo Verde</div>
+  </div>
+  <div class="app-bar-stars" id="total-stars">⭐ 0 pts</div>
+</div>
+
+<!-- HOME SCREEN -->
+<div id="home-screen" style="position:relative;z-index:1">
+  <div class="welcome-text">
+    <h2>Olá! Escolhe o teu ano! 🎒</h2>
+    <p>Matemática • Português • Ciências</p>
+  </div>
+  <div class="years-grid">
+    <div class="year-card y1" onclick="selectYear(1)">
+      <span class="year-badge">6-7 anos</span>
+      <div class="yr-emoji">🐣</div>
+      <div class="yr-num">1ª Classe</div>
+      <div class="yr-label">Começa aqui!</div>
+    </div>
+    <div class="year-card y2" onclick="selectYear(2)">
+      <span class="year-badge">7-8 anos</span>
+      <div class="yr-emoji">🌱</div>
+      <div class="yr-num">2ª Classe</div>
+      <div class="yr-label">A crescer!</div>
+    </div>
+    <div class="year-card y3" onclick="selectYear(3)">
+      <span class="year-badge">8-9 anos</span>
+      <div class="yr-emoji">🌟</div>
+      <div class="yr-num">3ª Classe</div>
+      <div class="yr-label">Quase lá!</div>
+    </div>
+    <div class="year-card y4" onclick="selectYear(4)">
+      <span class="year-badge">9-10 anos</span>
+      <div class="yr-emoji">🏆</div>
+      <div class="yr-num">4ª Classe</div>
+      <div class="yr-label">Prova Nacional!</div>
+    </div>
+  </div>
+  <div style="background:white;border-radius:20px;padding:16px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0">
+    <div style="font-family:'Fredoka One',cursive;font-size:1rem;margin-bottom:10px">🎯 Dicas para estudar bem:</div>
+    <div style="font-size:0.85rem;color:#374151;line-height:1.8">
+      ✅ Estuda <strong>um pouco todos os dias</strong><br>
+      ✅ Começa pelo modo <strong>Aprender</strong>, depois <strong>Praticar</strong><br>
+      ✅ Quando erras, lê sempre a <strong>explicação</strong><br>
+      ✅ O modo <strong>Desafio</strong> é para quando já sabes bem!<br>
+      🤖 O <strong>Tutor IA</strong> precisa de internet
+    </div>
+  </div>
+</div>
+
+<!-- SUBJECT SCREEN -->
+<div id="subject-screen" style="position:relative;z-index:1">
+  <button class="back-btn" onclick="goHome()">← Voltar</button>
+  <div class="year-hero" id="year-hero">
+    <div class="yh-emoji" id="yh-emoji">🏆</div>
+    <h2 id="yh-title">4ª Classe</h2>
+    <p id="yh-sub">Escolhe a disciplina</p>
+  </div>
+  <div class="subj-grid">
+    <div class="subj-btn mat-btn" id="btn-mat" onclick="selectSubject('mat')">
+      <div class="sb-icon">➕</div>Matemática
+    </div>
+    <div class="subj-btn por-btn" id="btn-por" onclick="selectSubject('por')">
+      <div class="sb-icon">📖</div>Português
+    </div>
+    <div class="subj-btn cie-btn" id="btn-cie" onclick="selectSubject('cie')">
+      <div class="sb-icon">🔬</div>Ciências
+    </div>
+  </div>
+  <div class="mode-row" id="mode-row">
+    <button class="mode-pill active-mode" id="pill-learn" onclick="setMode('learn')">📚 Aprender</button>
+    <button class="mode-pill" id="pill-practice" onclick="setMode('practice')">✏️ Praticar</button>
+    <button class="mode-pill" id="pill-ai" onclick="setMode('ai')">🤖 Tutor IA</button>
+    <button class="mode-pill" id="pill-challenge" onclick="setMode('challenge')">⏱️ Desafio</button>
+    <button class="mode-pill" id="pill-mais" onclick="setMode('mais')">📦 Mais</button>
+    <button class="mode-pill" id="pill-gram" onclick="setMode('gram')">📝 Gram.</button>
+  </div>
+  <div id="content-area"></div>
+</div>
+
+<!-- FLOAT NAV -->
+<div class="float-nav" id="float-nav">
+  <button class="fn-btn fn-active" id="fn-learn" onclick="setMode('learn')"><span class="fn-icon">📚</span>Aprender</button>
+  <button class="fn-btn" id="fn-practice" onclick="setMode('practice')"><span class="fn-icon">✏️</span>Praticar</button>
+  <button class="fn-btn" id="fn-ai" onclick="setMode('ai')"><span class="fn-icon">🤖</span>Tutor IA</button>
+  <button class="fn-btn" id="fn-challenge" onclick="setMode('challenge')"><span class="fn-icon">⏱️</span>Desafio</button>
+  <button class="fn-btn" id="fn-mais" onclick="setMode('mais')"><span class="fn-icon">📦</span>Mais</button>
+  <button class="fn-btn" id="fn-gram" onclick="setMode('gram')"><span class="fn-icon">📝</span>Gram.</button>
+</div>
+
+<script>
+// ═══════════════════════════
+// STATE
+// ═══════════════════════════
+let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
+let totalPoints = 0, aiLevel = 'base';
+let challengeInterval = null;
+let wrongAnswers = [];
+
+const YEAR_META = {
+  1:{emoji:'🐣',title:'1ª Classe',sub:'6-7 anos',color:'var(--y1)',dark:'var(--y1d)',cls:'y1'},
+  2:{emoji:'🌱',title:'2ª Classe',sub:'7-8 anos',color:'var(--y2)',dark:'var(--y2d)',cls:'y2'},
+  3:{emoji:'🌟',title:'3ª Classe',sub:'8-9 anos',color:'var(--y3)',dark:'var(--y3d)',cls:'y3'},
+  4:{emoji:'🏆',title:'4ª Classe',sub:'9-10 anos • Prova Nacional',color:'var(--y4)',dark:'var(--y4d)',cls:'y4'},
+};
+const SUBJ_COLOR = {
+  mat:'var(--y1)', por:'var(--y3)', cie:'var(--cie)'
+};
+const LEVEL_LABEL = {base:'básico',medio:'médio',avancado:'avançado'};
+
+// Splash
+setTimeout(()=>{
+  document.getElementById('splash').style.opacity='0';
+  setTimeout(()=>document.getElementById('splash').style.display='none',500);
+},1800);
+
+// ═══════════════════════════
+// NAVIGATION
+// ═══════════════════════════
+function goHome(){
+  if(challengeInterval) clearInterval(challengeInterval);
+  document.getElementById('home-screen').style.display='block';
+  document.getElementById('subject-screen').style.display='none';
+  document.getElementById('float-nav').classList.remove('visible');
+  window.scrollTo(0,0);
+}
+
+function selectYear(y){
+  currentYear=y;
+  const m=YEAR_META[y];
+  document.getElementById('yh-emoji').textContent=m.emoji;
+  document.getElementById('yh-title').textContent=m.title;
+  document.getElementById('yh-sub').textContent=m.sub;
+  const hero=document.getElementById('year-hero');
+  hero.style.background=`linear-gradient(135deg, ${m.color}, ${m.dark})`;
+  document.getElementById('home-screen').style.display='none';
+  document.getElementById('subject-screen').style.display='block';
+  document.getElementById('float-nav').classList.add('visible');
+  updateActiveColor();
+  selectSubject('mat');
+  window.scrollTo(0,0);
+}
+
+function selectSubject(s){
+  currentSubject=s;
+  ['mat','por','cie'].forEach(x=>{
+    document.getElementById('btn-'+x).classList.remove('active-subj');
+  });
+  document.getElementById('btn-'+s).classList.add('active-subj');
+  updateActiveColor();
+  setMode(currentMode);
+}
+
+function setMode(m){
+  if(challengeInterval) clearInterval(challengeInterval);
+  currentMode=m;
+  ['learn','practice','ai','challenge','mais','gram'].forEach(x=>{
+    document.getElementById('pill-'+x).classList.remove('active-mode');
+    document.getElementById('pill-'+x).style.background='white';
+    document.getElementById('pill-'+x).style.color='var(--muted)';
+    const fn=document.getElementById('fn-'+x);
+    if(fn){fn.classList.remove('fn-active');fn.style.color='';}
+  });
+  const col=m==='gram'?'#7B2FBE':SUBJ_COLOR[currentSubject];
+  document.getElementById('pill-'+m).classList.add('active-mode');
+  document.getElementById('pill-'+m).style.background=col;
+  document.getElementById('pill-'+m).style.borderColor=col;
+  const fn=document.getElementById('fn-'+m);
+  if(fn){fn.classList.add('fn-active');fn.style.color=col;}
+  renderContent();
+  window.scrollTo(0,200);
+}
+
+function updateActiveColor(){
+  const col=SUBJ_COLOR[currentSubject];
+  document.documentElement.style.setProperty('--active',col);
+}
+
+// ═══════════════════════════
+// POINTS
+// ═══════════════════════════
+function addPoints(n){
+  totalPoints+=n;
+  document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
+}
+
+// ═══════════════════════════
+// RENDER CONTENT
+// ═══════════════════════════
+function renderContent(){
+  const area=document.getElementById('content-area');
+  area.innerHTML='';
+  if(currentMode==='learn') renderLearn(area);
+  else if(currentMode==='practice') renderPractice(area);
+  else if(currentMode==='ai') renderAI(area);
+  else if(currentMode==='challenge') renderChallenge(area);
+  else if(currentMode==='mais') renderMais(area);
+  else if(currentMode==='gram') renderGramatica(area);
+}
+
+// ═══════════════════════════
+// ──────────────────────────
+// LEARN CONTENT
+// ──────────────────────────
+// ═══════════════════════════
+const LEARN_TRICKS={
+  // Ano 1 — Mat
+  "1_mat_Números de 1 a 100":"Conta nos dedos: 5 de cada mão = 10. Com os dois pés chega ao 20!",
+  "1_mat_Somar é juntar!":"Começa sempre no número MAIOR e conta para cima: 3+5, começa no 5 e conta 3: 6, 7, 8!",
+  "1_mat_Subtrair é tirar!":"Conta para trás! 8-3: começa no 8 e recua 3: 7, 6, 5. Ficaste em 5!",
+  "1_mat_Comparar números":"O crocodilo come o MAIOR! O bico > aponta sempre para o número maior!",
+  "1_mat_Formas Geométricas":"TRIângulo = 3 lados. QUADrado = 4 lados iguais. RetÂNGulo = 4 lados (2 pares). Conta os lados!",
+  // Ano 1 — Por
+  "1_por_As Letras do Alfabeto":"Canta: A-E-I-O-U! São as 5 vogais. As outras 21 letras são consoantes.",
+  "1_por_Palavras e Sílabas":"Bate palmas enquanto dizes a palavra. Cada palma = 1 sílaba. PE-I-XE = 3 palmas!",
+  "1_por_Letras Maiúsculas":"3 regras: início de frase · nome de pessoa · nome de lugar. Sempre maiúscula!",
+  "1_por_Vogais e Consoantes":"Vogal = som aberto, como ao cantar. Consoante = precisa de uma vogal ao lado para ter som!",
+  // Ano 1 — Cie
+  "1_cie_O Dia e a Noite":"A Terra roda! Virada para o Sol = DIA. Virada para longe = NOITE. Roda 1 vez por dia!",
+  "1_cie_A Água":"3 estados: SÓLIDA (gelo) · LÍQUIDA (água) · GASOSA (vapor). O sol transforma líquida em gasosa!",
+  "1_cie_As Plantas":"RAIZ bebe · CAULE transporta · FOLHA faz comida (fotossíntese) · FLOR reproduz!",
+  "1_cie_A Família":"Família nuclear = pais + filhos. Família alargada = + avós, tios, primos. Toda a gente importa!",
+  // Ano 2 — Mat
+  "2_mat_Números até 1.000":"C-D-U: Centenas · Dezenas · Unidades. Em 357: 300+50+7 = 357!",
+  "2_mat_Somar com 'transporte'":"Quando a soma passa de 9, escreve as unidades e transporta 1 para a coluna seguinte!",
+  "2_mat_Começar a Multiplicar":"3×4 = 4+4+4 = 12. Multiplicação é uma soma repetida mais rápida!",
+  "2_mat_Medir com a Régua":"km×1000=m · m×100=cm · cm×10=mm. Para voltar: divide! Grande para pequeno: multiplica!",
+  "2_mat_As Horas":"Ponteiro PEQUENO = horas. Ponteiro GRANDE = minutos. Grande no 6 = e meia (30 min)!",
+  // Ano 2 — Por
+  "2_por_Tipos de Frase":". = declara · ? = pergunta · ! = emoção ou ordem. O sinal no fim diz o tipo!",
+  "2_por_Nomes — Singular e Plural":"A maioria: + s. Terminado em consoante: + es. Palavras em -ão: aprende aos pares!",
+  "2_por_Masculino e Feminino":"Testa com o ou a. Soa bem com 'o' = masculino. Com 'a' = feminino!",
+  "2_por_Adjectivos":"O adjetivo responde: COMO É? De que cor? De que tamanho? Sempre descreve um nome!",
+  // Ano 2 — Cie
+  "2_cie_O Nosso País — Cabo Verde":"BARlavento = norte (6 ilhas) · SOtavento = sul (4 ilhas). Capital PRAIA fica em SANTIAGO!",
+  "2_cie_O Tempo e as Estações":"2 estações: SECA (nov-jul) e das CHUVAS (ago-out). Em Santiago chama-se tempo das águas!",
+  "2_cie_Os Animais":"Doméstico = criado pelo homem (galinha, cabra). Selvagem = vive livre (tartaruga, falcão)!",
+  "2_cie_Higiene e Saúde":"3 momentos chave: ANTES de comer · DEPOIS da casa de banho · DEPOIS de brincar fora!",
+  // Ano 3 — Mat
+  "3_mat_Números até 100.000":"Separa em grupos de 3 da direita: 34.567 = 34 mil + 567. Lê os milhares + as centenas!",
+  "3_mat_Multiplicação — Tabuadas":"Tabuada do 9: o 1º algarismo sobe (1,2,3...) e o 2º desce (9,8,7...). 9, 18, 27, 36, 45...",
+  "3_mat_Divisão":"Divisão é o inverso da multiplicação! 42÷6=? Pergunta: 6×?=42. Usa a tabuada ao contrário!",
+  "3_mat_Frações Simples":"O número de BAIXO = em quantas partes. O de CIMA = quantas tens. 3/4: dividido em 4, tens 3!",
+  "3_mat_Geometria — Ângulos":"Recto = canto de folha (90°). Agudo = mais fechado. Obtuso = mais aberto. Raso = linha recta (180°)!",
+  // Ano 3 — Por
+  "3_por_Família de Palavras":"Encontra a parte que se repete! MAR → marinheiro, marítimo, submarino. Essa é a raiz!",
+  "3_por_Sinónimos e Antónimos":"Sinónimos = mesma direção (bonito = belo). Antónimos = opostos (bonito ≠ feio)!",
+  "3_por_Verbos — Tempos":"Perfeito = ação acabada (ontem joguei). Imperfeito = ação que continuava (antes jogava).",
+  "3_por_Sinais de Pontuação":". = fim · , = pausa · ? = pergunta · ! = emoção · : = apresenta · ... = continua!",
+  // Ano 3 — Cie
+  "3_cie_Os Seres Vivos":"NASCEM · CRESCEM · RESPIRAM · REPRODUZEM-SE · MORREM. 5 funções vitais de todos os seres vivos!",
+  "3_cie_Cadeia Alimentar":"A seta = é comido por! PLANTA → LAGARTA → PÁSSARO. A planta é SEMPRE o produtor!",
+  "3_cie_O Ciclo da Água":"EVA-CON-PRECI: EVAporação → CONdensação → PRECIpitação. Ciclo sem fim!",
+  "3_cie_Organização da Comunidade":"Escola = aprender · Hospital = curar · Câmara = gerir · Igreja = rezar. Cada um tem a sua função!",
+  // Ano 4 — Mat
+  "4_mat_Números até Centena de Milhar":"Lê em grupos: 456.789 = quatrocentos e cinquenta e seis MIL, setecentos e oitenta e nove!",
+  "4_mat_Frações e Números Decimais":"Usa o dinheiro: ½=0,5=50 cêntimos · ¼=0,25=25 cêntimos · ¾=0,75=75 cêntimos!",
+  "4_mat_Geometria — Polígonos":"O prefixo diz o nº de lados: TRI=3 · QUADRI=4 · PENTA=5 · HEXA=6. Círculo não é polígono!",
+  "4_mat_Medidas de Comprimento":"km→m: ×1000 · m→cm: ×100 · cm→mm: ×10. Para voltar: divide!",
+  "4_mat_Problemas com Dinheiro":"Lê 3 vezes: 1ª para entender · 2ª para identificar dados · 3ª para escolher a operação!",
+  "4_mat_Tabelas e Gráficos — Moda":"Moda = o valor mais popular! Conta quantas vezes cada valor aparece. O mais frequente = MODA!",
+  // Ano 4 — Por
+  "4_por_Texto Narrativo":"5 perguntas: QUEM? ONDE? QUANDO? O QUÊ? QUEM CONTA? Respondes a estas = analisas o texto!",
+  "4_por_Adjectivos — Grau":"Superlativo = MÁXIMO. Absoluto = sem comparação (altíssimo). Relativo = comparado com grupo!",
+  "4_por_Pronomes Pessoais e Possessivos":"Pronome = substituto do nome. Pessoal = QUEM é. Possessivo = DE QUEM é!",
+  "4_por_Sinónimos e Antónimos":"Sinónimos = mesma ideia. Antónimos = ideia contrária. Anti = contra!",
+  "4_por_Família de Palavras":"Prefixo muda o sentido (des-, in-, re-). Sufixo muda a categoria (-eiro, -ção, -dade)!",
+  // Ano 4 — Cie
+  "4_cie_Cabo Verde no Mundo":"CV está no ATLÂNTICO, perto de ÁFRICA. Barlavento = 6 ilhas norte · Sotavento = 4 ilhas sul!",
+  "4_cie_A Célula":"Membrana = muro · Citoplasma = interior · Núcleo = chefe. Planta tem a mais: Parede + Cloroplasto!",
+  "4_cie_Cadeia Alimentar":"PLANTA → HERBÍVORO → CARNÍVORO. A seta = é comido por. Planta = produtor, sempre o início!",
+  "4_cie_Sectores Económicos":"1° = da natureza (pesca, agri) · 2° = transforma (indústria) · 3° = serviços (turismo). CV é forte no 3°!",
+  "4_cie_Organização Política":"3 poderes: LEGISLATIVO (faz leis) · EXECUTIVO (aplica) · JUDICIAL (julga)!"
+};
+
+function renderLearn(area){
+  const cards=getLearnCards(currentYear,currentSubject);
+  area.innerHTML=`<div class="learn-section">${cards.map(c=>{
+    const trick=LEARN_TRICKS[currentYear+'_'+currentSubject+'_'+c.title]||'';
+    return `<div class="lcard">
+      <h3>${c.icon} ${c.title}</h3>
+      <p>${c.body}</p>
+      ${c.example?`<div class="eg ${currentSubject}-eg">${c.example}</div>`:''}
+      ${c.list?`<ul>${c.list.map(i=>`<li>${i}</li>`).join('')}</ul>`:''}
+      ${trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${trick}</div>`:''}
+    </div>`;
+  }).join('')}</div>`;
+}
+
+function getLearnCards(year,subj){
+  const all={
+    1:{
+      mat:[
+        {icon:'🔢',title:'Números de 1 a 100',body:'Vamos contar! Os números começam no 1 e vão até ao 100. Cada número tem o seu lugar especial.',example:'🐚 1, 2, 3... até 10! Depois 11, 12, 13... Conta os teus dedos: tens 10!'},
+        {icon:'➕',title:'Somar é juntar!',body:'Quando somamos, juntamos dois grupos numa só quantidade maior.',example:'🍎🍎 + 🍎🍎🍎 = 🍎🍎🍎🍎🍎<br>2 + 3 = 5'},
+        {icon:'➖',title:'Subtrair é tirar!',body:'Quando subtraímos, tiramos uma quantidade de outra e ficamos com menos.',example:'🌴🌴🌴🌴🌴 − 🌴🌴 = 🌴🌴🌴<br>5 − 2 = 3'},
+        {icon:'📏',title:'Comparar números',body:'Podemos comparar dois números para saber qual é maior (>) ou menor (<).',example:'5 > 3 (cinco é maior que três)<br>2 < 8 (dois é menor que oito)<br>4 = 4 (quatro é igual a quatro)'},
+        {icon:'🔷',title:'Formas Geométricas',body:'As formas estão em todo o lado! Aprende a reconhecê-las.',list:['⬛ Quadrado — 4 lados iguais','▬ Rectângulo — 4 lados, 2 iguais e 2 iguais','🔺 Triângulo — 3 lados','⚪ Círculo — redondo, sem lados']},
+      ],
+      por:[
+        {icon:'🔤',title:'As Letras do Alfabeto',body:'O alfabeto tem 26 letras! Há vogais (A, E, I, O, U) e consoantes (todas as outras).',example:'Vogais: **A E I O U**<br>🅰️ de Avó · 🌍 E de Escola · 🏝️ I de Ilha'},
+        {icon:'🐟',title:'Palavras e Sílabas',body:'As palavras são feitas de sílabas. Uma sílaba é um "pedaço" de som da palavra.',example:'<strong>PE-I-XE</strong> = 3 sílabas 🐟<br><strong>MA-R</strong> = 2 sílabas 🌊<br>**SOL** = 1 sílaba ☀️'},
+        {icon:'✍️',title:'Letras Maiúsculas',body:'Usamos letras maiúsculas no início de nomes próprios, de frases e de nomes de lugares.',example:'<strong>C</strong>abo <strong>V</strong>erde 🇨🇻<br><strong>S</strong>antiago · <strong>M</strong>aria · <strong>J</strong>oão<br>Início de frase: "**O** peixe é saboroso."'},
+        {icon:'🗣️',title:'Vogais e Consoantes',body:'As vogais (A, E, I, O, U) são os sons "abertos". As consoantes precisam de uma vogal para fazer som.',example:'<strong>Vogais:</strong> A · E · I · O · U<br>**Exemplo:** em "PEIXE", o E e o I são vogais'},
+      ],
+      cie:[
+        {icon:'☀️',title:'O Dia e a Noite',body:'A Terra gira e por isso temos dia (quando o nosso lado está virado para o Sol) e noite (quando está virado para longe).',example:'☀️ De dia: vemos o sol, está claro, brincamos.<br>🌙 De noite: vemos a lua e as estrelas, dormimos.'},
+        {icon:'🌊',title:'A Água',body:'A água é muito importante para a vida. Em Cabo Verde, o mar está em todo o lado!',list:['💧 Bebemos água para viver','🐟 Os peixes vivem na água','🌧️ A chuva traz água do céu','🏝️ As ilhas são rodeadas de água salgada']},
+        {icon:'🌱',title:'As Plantas',body:'As plantas são seres vivos! Elas precisam de água, luz e terra para crescer.',example:'🌱 Semente → 🌿 Planta pequena → 🌳 Árvore grande<br>As plantas dão-nos fruta, sombra e ar limpo!'},
+        {icon:'👨‍👩‍👧‍👦',title:'A Família',body:'A família são as pessoas que vivem connosco e nos amam. Cada família é diferente e especial!',list:['👴👵 Avós','👨👩 Pais','👦👧 Irmãos','🏠 Todos vivem juntos (ou perto)']},
+      ]
+    },
+    2:{
+      mat:[
+        {icon:'🔢',title:'Números até 1.000',body:'Já sabemos os números até 100. Agora aprendemos até 1.000! Cada número tem centenas, dezenas e unidades.',example:'**357**<br>3 → 300 (3 centenas)<br>5 → 50 (5 dezenas)<br>7 → 7 (7 unidades)'},
+        {icon:'➕',title:'Somar com "transporte"',body:'Quando somamos e o resultado passa de 9, "transportamos" 1 para a coluna seguinte!',example:'  28<br>+ 15<br>──────<br>8+5=13 → escrevemos 3 e transportamos 1<br>2+1+1=4<br>Resultado: **43**'},
+        {icon:'✖️',title:'Começar a Multiplicar',body:'A multiplicação é uma soma repetida! É mais rápido do que somar muitas vezes.',example:'🐟🐟🐟 + 🐟🐟🐟 + 🐟🐟🐟 = 9 peixinhos<br>3 × 3 = 9<br>(3 grupos de 3 peixinhos)'},
+        {icon:'📏',title:'Medir com a Régua',body:'Usamos o centímetro (cm) e o metro (m) para medir comprimentos.',example:'📏 1 metro = 100 centímetros<br>🖊️ Um lápis tem cerca de 20 cm<br>🚪 Uma porta tem cerca de 2 metros'},
+        {icon:'🕐',title:'As Horas',body:'O relógio tem 12 números. O ponteiro pequeno mostra as horas e o grande os minutos.',example:'🕒 Quando o ponteiro grande está no 12, são horas certas.<br>"São 3 horas" = 3:00<br>"São 3 e meia" = 3:30'},
+      ],
+      por:[
+        {icon:'📄',title:'Tipos de Frase',body:'As frases podem ser de diferentes tipos conforme o que queremos dizer.',list:['📌 Declarativa — conta algo: "O céu é azul."','❓ Interrogativa — pergunta: "Como te chamas?"','❗ Exclamativa — expressa emoção: "Que belo peixe!"','👉 Imperativa — dá ordem: "Vai estudar!"']},
+        {icon:'🔤',title:'Nomes — Singular e Plural',body:'O singular é um. O plural são dois ou mais. Para fazer o plural, geralmente adicionamos "-s" ou "-es".',example:'🐟 peixe → <strong>peixes</strong><br>🌺 flor → <strong>flores</strong><br>🏝️ ilha → <strong>ilhas</strong><br>🐚 caracol → **caracóis**'},
+        {icon:'✏️',title:'Masculino e Feminino',body:'Os nomes têm género: masculino (o, um) ou feminino (a, uma).',example:'👦 o menino → 👧 a menina<br>🐓 o galo → 🐔 a galinha<br>🧑 o professor → 👩‍🏫 a professora'},
+        {icon:'🎨',title:'Adjectivos',body:'Os adjectivos descrevem os nomes. Dizem como são as coisas, as pessoas ou os lugares.',example:'O mar é <strong>azul</strong> e <strong>bonito</strong>. 🌊<br>A bola é <strong>redonda</strong> e <strong>vermelha</strong>. 🔴<br>O menino é <strong>alto</strong> e **simpático**. 😊'},
+      ],
+      cie:[
+        {icon:'🌍',title:'O Nosso País — Cabo Verde',body:'Cabo Verde é um país formado por 10 ilhas no Oceano Atlântico. A nossa capital é a Praia!',example:'🏝️ Temos 10 ilhas:<br>Barlavento: Santo Antão, São Vicente, Sal, Boa Vista, Santa Luzia, São Nicolau<br>Sotavento: Maio, Santiago, Fogo, Brava'},
+        {icon:'🌦️',title:'O Tempo e as Estações',body:'Em Cabo Verde temos duas estações: a época das chuvas (Agosto-Outubro) e a época seca.',example:'☀️ Época seca: muito calor, pouca chuva<br>🌧️ Época das chuvas: chuva, tempo mais fresco<br>Em Santiago a época das chuvas chama-se "tempo das águas"'},
+        {icon:'🦋',title:'Os Animais',body:'Os animais podem ser selvagens (vivem na natureza) ou domésticos (vivem com o homem).',list:['🐶 Domésticos: cão, gato, galinha, burro','🐊 Selvagens: tartaruga-marinha, morcego, lagarto','🐟 Aquáticos: atum, garoupa, espadarte','🦅 Aves: falcão-da-rainha, andorinha']},
+        {icon:'🧼',title:'Higiene e Saúde',body:'Para ficar saudável precisamos de ter bons hábitos de higiene todos os dias!',list:['🪥 Lavar os dentes 2x por dia','🚿 Tomar banho todos os dias','🧼 Lavar as mãos antes de comer','🥗 Comer fruta e legumes']},
+      ]
+    },
+    3:{
+      mat:[
+        {icon:'🔢',title:'Números até 100.000',body:'Agora trabalhamos com números muito grandes! Cada posição tem um nome especial.',example:'**34.567**<br>3 → 30.000 (dezenas de milhar)<br>4 → 4.000 (unidades de milhar)<br>5 → 500 (centenas)<br>6 → 60 (dezenas)<br>7 → 7 (unidades)'},
+        {icon:'✖️',title:'Multiplicação — Tabuadas',body:'A tabuada é muito importante! Pratica todos os dias até saberes de cor.',example:'**Tabuada do 7:**<br>7×1=7 · 7×2=14 · 7×3=21 · 7×4=28<br>7×5=35 · 7×6=42 · 7×7=49 · 7×8=56<br>7×9=63 · 7×10=70'},
+        {icon:'➗',title:'Divisão',body:'A divisão é o contrário da multiplicação. Dividir é repartir em partes iguais.',example:'🐟🐟🐟🐟🐟🐟 ÷ 3 = 🐟🐟 cada um<br>6 ÷ 3 = 2<br><em>Pergunta: "6 cabe em grupos de 3 quantas vezes?"</em>'},
+        {icon:'📊',title:'Frações Simples',body:'Uma fração representa uma parte de um todo. O número de baixo diz em quantas partes e o de cima quantas temos.',example:'🍕 Uma pizza dividida em 4 partes:<br>1 fatia = <strong>¼</strong> (um quarto)<br>3 fatias = <strong>¾</strong> (três quartos)<br>2 fatias = **²⁄₄ = ½**'},
+        {icon:'📐',title:'Geometria — Ângulos',body:'Um ângulo é a abertura entre dois lados. Há 4 tipos principais:',list:['🔲 Recto = 90° (canto de uma folha)','🔺 Agudo = menos de 90°','🔻 Obtuso = mais de 90°','📏 Raso = 180° (linha recta)']},
+      ],
+      por:[
+        {icon:'🌳',title:'Família de Palavras',body:'Palavras da mesma família têm a mesma raiz e estão relacionadas pelo significado.',example:'Raiz: <strong>MAR</strong><br>→ marinheiro, marítimo, maresia, submarino, amarar<br><br>Raiz: **PESC**<br>→ pesca, pescador, pescaria, pesqueiro'},
+        {icon:'🔗',title:'Sinónimos e Antónimos',body:'Sinónimos têm sentido parecido. Antónimos têm sentido contrário.',example:'<strong>Sinónimos:</strong><br>bonito = belo = lindo 😍<br>falar = dizer = contar<br><br>**Antónimos:**<br>bonito ↔ feio · grande ↔ pequeno<br>quente ↔ frio · dia ↔ noite'},
+        {icon:'🕐',title:'Verbos — Tempos',body:'Os verbos mudam conforme o tempo em que a acção acontece.',example:'Verbo <strong>JOGAR:</strong><br>Presente: "Eu <strong>jogo</strong> futebol."<br>Passado: "Eu <strong>joguei</strong> ontem."<br>Futuro: "Eu **jogarei** amanhã."'},
+        {icon:'📌',title:'Sinais de Pontuação',body:'Os sinais de pontuação ajudam a organizar o texto e a dar sentido às frases.',list:['**.** Ponto final — fim de frase','**?** Interrogação — pergunta','**!** Exclamação — emoção, surpresa','**,** Vírgula — pausa curta, listas','**:** Dois pontos — apresentar algo','**« »** Aspas — fala directa']},
+      ],
+      cie:[
+        {icon:'🧬',title:'Os Seres Vivos',body:'Os seres vivos nascem, crescem, reproduzem-se e morrem. Todos precisam de água, ar e alimento.',list:['🌿 Plantas — produzem o seu alimento (fotossíntese)','🐾 Animais — comem outros seres para sobreviver','🦠 Fungos e bactérias — decompõem matéria orgânica']},
+        {icon:'🌿',title:'Cadeia Alimentar',body:'A cadeia alimentar mostra quem come quem na natureza. Começa sempre com uma planta (produtor).',example:'🌾 Erva → 🐛 Lagarta → 🐸 Rã → 🐍 Cobra → 🦅 Águia<br><br>Se desaparece um elo, toda a cadeia sofre!'},
+        {icon:'💧',title:'O Ciclo da Água',body:'A água está sempre a circular na natureza num ciclo sem fim.',example:'☀️ Evaporação → ☁️ Condensação → 🌧️ Precipitação → 💧 Infiltração → de volta ao mar!'},
+        {icon:'🏛️',title:'Organização da Comunidade',body:'A nossa comunidade tem diferentes pessoas e instituições que trabalham juntas.',list:['🏫 Escola — para aprender','🏥 Centro de saúde — para cuidar da saúde','⛪ Igreja / Mesquita — para rezar','🏛️ Câmara Municipal — para gerir a cidade']},
+      ]
+    },
+    4:{
+      mat:[
+        {icon:'🔢',title:'Números até Centena de Milhar',body:'Agora sabemos ler e escrever números com 6 algarismos. Cada posição é 10 vezes maior que a anterior.',example:'**Exemplo: 456.789**<br>4 → 400.000 (centenas de milhar)<br>5 → 50.000 (dezenas de milhar)<br>6 → 6.000 (unidades de milhar)<br>7 → 700 · 8 → 80 · 9 → 9'},
+        {icon:'📊',title:'Frações e Números Decimais',body:'As frações mostram partes de um todo. Os decimais são outra forma de escrever frações.',example:'½ = 0,5 · ¼ = 0,25 · ¾ = 0,75<br><br>🍕 Metade = ½ = 0,5<br>🍕 Um quarto = ¼ = 0,25<br>🍕 Um terço = ⅓ ≈ 0,333'},
+        {icon:'📐',title:'Geometria — Polígonos',body:'Um polígono é uma figura plana fechada com lados rectos. O nome depende do número de lados.',list:['🔺 Triângulo — 3 lados, 3 vértices','⬛ Quadrilátero — 4 lados (quadrado, rectângulo)','⬠ Pentágono — 5 lados','⬡ Hexágono — 6 lados']},
+        {icon:'📏',title:'Medidas de Comprimento',body:'Usamos diferentes unidades para medir comprimentos. Aprende a converter!',example:'1 km = 1.000 m<br>1 m = 100 cm<br>1 cm = 10 mm<br><br>**Truque:** km→m: ×1000 · m→cm: ×100 · cm→mm: ×10'},
+        {icon:'💰',title:'Problemas com Dinheiro',body:'Lê o problema com atenção. Identifica o que tens, o que gastas e o que sobra.',example:'A Maria foi ao mercado com 500$.<br>Comprou peixe por 120$ e batatas por 85$.<br>Gasto: 120+85 = <strong>205$</strong><br>Troco: 500-205 = **295$**'},
+        {icon:'📈',title:'Tabelas e Gráficos — Moda',body:'A moda é o valor que aparece mais vezes num conjunto de dados.',example:'Notas: 8, 7, 8, 9, 8, 7, 6<br>O número 8 aparece 3 vezes → **Moda = 8**<br>(É o mais frequente!)'},
+        {icon:'✖️',title:'Múltiplos e Divisores',body:'Múltiplo = resultado da multiplicação de um número por um inteiro. Divisor = divide exactamente sem resto.',example:'Múltiplos de 6: 6, 12, 18, 24, 30, 36, 42...<br>Divisores de 12: 1, 2, 3, 4, 6, 12<br>(12÷1=12 ✓ · 12÷2=6 ✓ · 12÷3=4 ✓ ...)'},
+        {icon:'1️⃣',title:'Números Ordinais',body:'Os ordinais indicam posição ou ordem numa sequência.',example:'1º primeiro · 2º segundo · 3º terceiro<br>4º quarto · 5º quinto · 6º sexto<br>7º sétimo · 8º oitavo · 9º nono · 10º décimo<br>20º vigésimo · 100º centésimo'},
+        {icon:'⭕',title:'Círculo e Circunferência',body:'Circunferência = linha curva fechada. Círculo = toda a figura (linha + interior).',list:['📍 Centro — ponto central','📏 Raio (r) — do centro à circunferência','📐 Diâmetro (d) — de lado a lado pelo centro: d = 2r']},
+        {icon:'↔️',title:'Retas Paralelas e Perpendiculares',body:'As retas podem ter posições diferentes entre si.',example:'Paralelas ‖ — nunca se cruzam (trilhos de comboio)<br>Perpendiculares ⊥ — cruzam-se a 90° (canto recto)<br>Secantes — cruzam-se noutro ângulo'},
+        {icon:'🪞',title:'Simetria',body:'Uma figura tem simetria quando um eixo a divide em duas metades que são imagens espelhadas uma da outra.',example:'🦋 Borboleta · ❤️ Coração · ⭐ Estrela<br>O eixo de simetria é a linha divisória.<br>Um quadrado tem 4 eixos de simetria!'},
+        {icon:'📦',title:'Sólidos Geométricos',body:'Os sólidos têm 3 dimensões. Reconhece-os pela planificação (como ficam abertos e "deitados").',list:['🎲 Cubo — 6 faces quadradas iguais','📦 Paralelepípedo — 6 faces rectangulares','🔺 Pirâmide — base + faces triangulares','🥫 Cilindro — 2 círculos + face lateral','🍦 Cone — 1 círculo + vértice']},
+      ],
+      por:[
+        {icon:'📄',title:'Texto Narrativo',body:'O texto narrativo conta uma história. Tem sempre personagens, espaço, tempo e sequência de acções.',list:['🧑 Personagens — quem aparece','📍 Espaço — onde acontece','⏰ Tempo — quando acontece','📖 Narrador — quem conta','🔄 Acções — o que acontece']},
+        {icon:'🎨',title:'Adjectivos — Grau',body:'O grau do adjectivo mostra a intensidade de uma qualidade.',example:'<strong>Comparativo:</strong><br>mais alto do que (superioridade)<br>tão alto como (igualdade)<br>menos alto do que (inferioridade)<br><br>**Superlativo:**<br>altíssimo / muito alto'},
+        {icon:'👥',title:'Pronomes Pessoais e Possessivos',body:'Os pronomes substituem os nomes para não repetirmos.',example:'"A Ana foi à escola. <strong>Ela</strong> chegou cedo."<br>(ela = a Ana)<br><br><strong>Possessivos:</strong> meu, teu, seu, nosso, vosso<br>"Este livro é **meu**."'},
+        {icon:'🔗',title:'Sinónimos e Antónimos',body:'',example:'<strong>Sinónimos</strong> (mesmo sentido):<br>bonito = belo = lindo<br>falar = dizer = contar<br><br>**Antónimos** (contrário):<br>bonito ↔ feio · grande ↔ pequeno'},
+        {icon:'✒️',title:'Família de Palavras',body:'Palavras da mesma família partilham a mesma raiz:',example:'Raiz <strong>MAR</strong>:<br>marinheiro · marítimo · maresia · submarino<br><br>Raiz **ESCOLA**:<br>escolar · escolaridade · escolinha'},
+        {icon:'🔬',title:'Análise Morfológica',body:'Classificar cada palavra da frase pela sua classe gramatical.',example:'"O peixe fresco nada bem."<br>o → artigo · peixe → nome · fresco → adjetivo<br>nada → verbo · bem → advérbio<br><br>Classes: nome · verbo · adjetivo · advérbio · artigo · pronome · preposição · conjunção'},
+        {icon:'❓',title:'Tipos e Formas de Frase',body:'Tipo = intenção. Forma = afirmativa ou negativa.',list:['📢 Declarativa — afirma: "O mar é bonito."','❓ Interrogativa — pergunta: "Onde está?"','❗ Exclamativa — emoção: "Que lindo!"','👆 Imperativa — ordem: "Vem cá!"','✅ Afirmativa: "Ele estuda."','❌ Negativa: "Ele não estuda."']},
+        {icon:'🔧',title:'Prefixos e Sufixos',body:'Prefixo = antes da raiz (muda o sentido). Sufixo = depois da raiz (muda a categoria).',example:'des+feliz = desfeliz (negação)<br>re+fazer = refazer (repetição)<br>in+capaz = incapaz (negação)<br><br>pesc+ador = pescador (profissão)<br>feliz+dade = felicidade (qualidade)'},
+        {icon:'⏰',title:'Conjugação Verbal — 4 Tempos',body:'A prova testa os 4 tempos principais do Indicativo.',example:'ESTUDAR:<br>Presente: eu estudo · tu estudas · ele estuda<br>Imperfeito: eu estudava · tu estudavas · ele estudava<br>Perfeito: eu estudei · tu estudaste · ele estudou<br>Futuro: eu estudarei · tu estudarás · ele estudará'},
+        {icon:'🔗',title:'Frases Simples e Complexas',body:'Conta os verbos! 1 verbo = simples. 2 ou mais verbos = complexa.',example:'Simples: "O João estuda." (1 verbo)<br>Complexa: "O João estuda porque quer aprender." (2 verbos)<br><br>Ligadores: que · porque · quando · se · mas · e · ou · embora'},
+      ],
+      cie:[
+        {icon:'🌍',title:'Cabo Verde no Mundo',body:'Cabo Verde é um arquipélago no Oceano Atlântico, perto de África. Está na Macaronésia.',example:'🏝️ <strong>Barlavento:</strong> Santo Antão, S. Vicente, Sta Luzia, S. Nicolau, Sal, Boa Vista<br>🏝️ <strong>Sotavento:</strong> Maio, Santiago, Fogo, Brava<br>🏙️ Capital: **Praia** (Santiago)'},
+        {icon:'🧬',title:'A Célula',body:'A célula é a unidade básica da vida. Todos os seres vivos são feitos de células!',list:['🔵 Membrana celular — envolve e protege','🟡 Citoplasma — substância interior','🔴 Núcleo — centro de controlo','🟢 Parede celular — só nas plantas']},
+        {icon:'🌿',title:'Cadeia Alimentar',body:'Mostra quem come quem na natureza. As plantas são sempre os produtores.',example:'🌾 Planta → 🐛 Lagarta → 🐸 Rã → 🦅 Águia<br><br>Produtor → Consumidor 1º → Consumidor 2º…'},
+        {icon:'💼',title:'Sectores Económicos',body:'As actividades económicas dividem-se em 3 sectores:',list:['🌱 Primário — pesca, agricultura, pecuária','🏭 Secundário — indústria, construção','🛍️ Terciário — turismo, comércio, serviços']},
+        {icon:'🏛️',title:'Organização Política',body:'Cabo Verde é uma república democrática.',list:['👤 Presidente da República — Chefe de Estado','🏛️ Assembleia Nacional — 72 deputados','👥 Governo — Primeiro-Ministro e Ministros','🏙️ Capital: Praia']},
+        {icon:'🎭',title:'Cultura de Cabo Verde',body:'Cabo Verde tem uma cultura rica, mistura de África e Europa, expressa na música, dança e gastronomia.',list:['🎵 Música: Morna (UNESCO), Funaná, Coladeira, Batuko','🍽️ Gastronomia: Cachupa, Canja de peixe','💃 Festas: Carnaval, São João, São Pedro','🏝️ Cada ilha tem manifestações culturais próprias']},
+        {icon:'📜',title:'História de Cabo Verde',body:'Cabo Verde foi descoberto desabitado pelos Portugueses e tornou-se independente em 1975.',example:'1460 — Descobrimento das ilhas (Portugueses)<br>Séculos XV–XIX — Escravatura e comércio<br>5 Julho 1975 — Independência<br>Aristides Pereira — 1º Presidente<br>Praia — capital desde a independência'},
+        {icon:'👶',title:'Direitos e Deveres das Crianças',body:'Todas as crianças têm direitos protegidos e deveres a cumprir.',list:['✅ Direitos: educação, saúde, alimentação, família, brincar, ser protegida','📌 Deveres: estudar, respeitar os outros, obedecer pais e professores, cuidar do ambiente']},
+        {icon:'💪',title:'Corpo Humano e Saúde',body:'O corpo tem vários sistemas que trabalham juntos.',list:['🫀 Circulatório — coração bombeia o sangue','🫁 Respiratório — pulmões e traqueia','🦴 Locomotor — ossos e músculos','🧠 Nervoso — cérebro e nervos','🦷 Saúde: comer bem, dormir, exercício, higiene']},
+        {icon:'🌿',title:'As Plantas',body:'As plantas são seres vivos que fazem fotossíntese. Há vários tipos com usos diferentes.',list:['🌳 Árvores · 🌿 Arbustos · 🌱 Ervas · 🌵 Cactos (CV!)','💊 Medicinais — curam doenças','🍽️ Alimentares — dão frutos e legumes','🪵 Madeireiras — fornecem madeira','🌺 Ornamentais — decoram espaços']},
+        {icon:'🌍',title:'Ambiente e Conservação',body:'O ambiente está em perigo. Devemos protegê-lo.',list:['⚠️ Problemas: poluição, desmatamento, alterações climáticas','♻️ Soluções: reciclar, poupar água, energias renováveis','🌊 Em CV: proteger tartarugas e corais','🌡️ Aquecimento global: seca, tempestades, subida do mar']},
+      ]
+    }
+  };
+  return all[year][subj]||[];
+}
+
+// ═══════════════════════════
+// QUIZ ENGINE
+// ═══════════════════════════
+function shuffle(a){return [...a].sort(()=>Math.random()-0.5);}
+
+function buildQuiz(questions, color, retryFn){
+  const q=shuffle(questions).slice(0,10);
+  let cur=0, score=0;
+  wrongAnswers=[];
+
+  function render(){
+    const item=q[cur];
+    const pct=(cur/q.length)*100;
+    const opts=shuffle(item.options);
+    return `
+    <div class="quiz-wrap">
+      <div class="qprogress"><div class="qpfill" id="qpfill" style="width:${pct}%;background:${color}"></div></div>
+      <div class="qcard" id="qcard">
+        <div class="qnum">❓ Pergunta ${cur+1} de ${q.length}</div>
+        <div class="qtext">${item.question}</div>
+        <div class="opts" id="opts-wrap">
+          ${opts.map((o,i)=>`
+            <button class="opt" onclick="pickOpt(this,'${escQ(o)}','${escQ(item.answer)}','${escQ(item.why)}')">
+              <span class="opt-lbl">${String.fromCharCode(65+i)}</span>
+              <span>${o}</span>
+            </button>`).join('')}
+        </div>
+        <div class="feedback" id="qfeedback"></div>
+        <button class="next-q-btn" id="next-q-btn" style="background:${color}" onclick="nextQ()">
+          ${cur<q.length-1?'Próxima pergunta →':'Ver resultado 🎉'}
+        </button>
+      </div>
+    </div>`;
+  }
+
+  function showResults(){
+    const pct=score/q.length;
+    const stars=pct>=0.9?'⭐⭐⭐':pct>=0.7?'⭐⭐':'⭐';
+    const emoji=pct>=0.9?'🏆':pct>=0.7?'😊':'💪';
+    const msg=pct>=0.9?'Fantástico! Estás mesmo bem preparado!':pct>=0.7?'Muito bem! Continua a praticar!':'Não desistas! Lê as explicações e tenta outra vez!';
+    const pts=score*10;
+    addPoints(pts);
+    let wrongHTML='';
+    if(wrongAnswers.length){
+      wrongHTML=`<div class="res-breakdown"><h4>📌 O que errei</h4>${wrongAnswers.map(w=>`<div class="bd-item"><span style="color:#ef4444">✗ ${w.q}</span></div><div style="font-size:0.78rem;color:#22c55e;padding-bottom:6px">✓ ${w.a}</div>`).join('')}</div>`;
+    }
+    document.getElementById('content-area').innerHTML=`
+      <div class="results-card show">
+        <div class="res-big celebrate">${emoji}</div>
+        <div class="res-score" style="color:${color}">${score}/${q.length}</div>
+        <div class="res-of">respostas correctas · +${pts} pontos!</div>
+        <div class="res-stars">${stars}</div>
+        <div class="res-msg">${msg}</div>
+        ${wrongHTML}
+        <button class="retry-btn" style="background:${color}" onclick="setMode('practice')">🔄 Tentar de Novo</button>
+      </div>`;
+  }
+
+  window.pickOpt=function(btn,chosen,correct,why){
+    document.querySelectorAll('#opts-wrap .opt').forEach(b=>b.disabled=true);
+    const fb=document.getElementById('qfeedback');
+    const nxt=document.getElementById('next-q-btn');
+    if(chosen===correct){
+      btn.classList.add('correct-opt');
+      score++;
+      fb.className='feedback fb-ok show';
+      fb.innerHTML=`✅ **Correcto! Muito bem!**<div class="fb-why">💡 ${why}</div>`;
+    } else {
+      btn.classList.add('wrong-opt','shake');
+      document.querySelectorAll('#opts-wrap .opt').forEach(b=>{
+        if(b.querySelector('span:last-child').textContent===correct) b.classList.add('correct-opt');
+      });
+      fb.className='feedback fb-no show';
+      fb.innerHTML=`❌ <strong>Não foi dessa!</strong> A resposta certa é: **${correct}**<div class="fb-why">💡 Porquê? ${why}</div>`;
+      wrongAnswers.push({q:q[cur].question.replace(/<[^>]+>/g,''),a:correct});
+    }
+    nxt.classList.add('show');
+  };
+
+  window.nextQ=function(){
+    cur++;
+    if(cur<q.length){
+      document.getElementById('content-area').innerHTML=render();
+      document.getElementById('qpfill').style.width=((cur/q.length)*100)+'%';
+    } else {
+      showResults();
+    }
+  };
+
+  document.getElementById('content-area').innerHTML=render();
+}
+
+function escQ(s){ return (s||'').replace(/'/g,"\\'"); }
+
+function renderPractice(area){
+  const qs=getQuestions(currentYear,currentSubject);
+  const col=SUBJ_COLOR[currentSubject];
+  buildQuiz(qs,col);
+}
+
+// ═══════════════════════════
+// QUESTIONS DATABASE
+// ═══════════════════════════
+function getQuestions(year,subj){
+  const db={
+    1:{
+      mat:[
+        {question:'Qual é o resultado de 3 + 4?',options:['7','5','8','6'],answer:'7',why:'3 + 4 = 7. Podes contar nos dedos: 3 dedos mais 4 dedos = 7 dedos!'},
+        {question:'Qual é o resultado de 8 − 3?',options:['5','4','6','3'],answer:'5',why:'8 − 3 = 5. Imagina 8 peixinhos, tiras 3, ficam 5!'},
+        {question:'Que número vem depois do 9?',options:['10','8','11','7'],answer:'10',why:'A ordem é: ...7, 8, 9, **10**! O 10 vem logo a seguir ao 9.'},
+        {question:'Qual é o maior número?',options:['15','9','12','7'],answer:'15',why:'O 15 é o maior porque quando contamos chegamos a ele por último: 7, 9, 12, 15.'},
+        {question:'Quantos lados tem um triângulo?',options:['3','4','2','5'],answer:'3',why:'TRI-ângulo! "Tri" significa 3. Um triângulo tem sempre 3 lados e 3 cantos (vértices).'},
+        {question:'Qual é o resultado de 5 + 5?',options:['10','9','11','8'],answer:'10',why:'5 + 5 = 10. São dois grupos de 5. Podes contar nos dois lados das mãos!'},
+        {question:'Que forma é redonda e não tem lados?',options:['Círculo','Quadrado','Triângulo','Rectângulo'],answer:'Círculo',why:'O círculo é completamente redondo! Não tem lados nem cantos. Como uma laranja de frente.'},
+        {question:'6 − 2 = ?',options:['4','3','5','2'],answer:'4',why:'6 − 2 = 4. Começa no 6 e conta para trás 2 vezes: 6... 5... 4!'},
+        {question:'Qual destes números é o menor?',options:['3','8','6','5'],answer:'3',why:'O 3 é o menor! Na linha de números: 1, 2, **3**, 4, 5... O 3 aparece primeiro!'},
+        {question:'2 + 7 = ?',options:['9','8','10','6'],answer:'9',why:'2 + 7 = 9. Começa no 7 (maior) e conta mais 2: 7... 8... 9!'},
+        {question:'Quantos lados tem um quadrado?',options:['4','3','5','6'],answer:'4',why:'Um quadrado tem 4 lados iguais e 4 cantos iguais. Como a janela da sala!'},
+        {question:'10 − 4 = ?',options:['6','5','7','4'],answer:'6',why:'10 − 4 = 6. Podes também pensar: "4 + ? = 10". A resposta é 6!'},
+      ],
+      por:[
+        {question:'Qual é uma VOGAL?',options:['A','B','C','D'],answer:'A',why:'As vogais são: A, E, I, O, U. O "A" é a primeira vogal do alfabeto!'},
+        {question:'Quantas sílabas tem a palavra "PE-I-XE"?',options:['3','2','1','4'],answer:'3',why:'PE-I-XE tem 3 sílabas! Bate palmas enquanto dizes: PE (bate), I (bate), XE (bate) = 3!'},
+        {question:'Qual palavra começa com letra MAIÚSCULA correctamente?',options:['Santiago','santiago','SANTIAGO','sanTiago'],answer:'Santiago',why:'Os nomes de lugares (cidades, ilhas, países) escrevem-se com letra maiúscula no início. Santiago é uma ilha!'},
+        {question:'Qual é a vogal nesta palavra: "MAR"?',options:['A','M','R','Não tem vogal'],answer:'A',why:'Em MAR, as letras são M (consoante), A (VOGAL!), R (consoante). O A é a vogal.'},
+        {question:'Qual destas palavras tem 2 sílabas?',options:['MA-R','PEI-XE','CA-SA','BO-NI-TO'],answer:'MA-R',why:'Espera! MA-R tem 2 sílabas: MA e R. CA-SA também tem 2! Mas MA-R é a primeira opção correcta.'},
+        {question:'"Sol" começa com qual letra?',options:['S','Z','C','X'],answer:'S',why:'SOL começa com a letra S! S-O-L. O sol está no céu e aquece Cabo Verde! ☀️'},
+        {question:'Quantas vogais tem "ILHA"?',options:['2','1','3','0'],answer:'2',why:'ILHA = I-L-H-A. As vogais são o I e o A = 2 vogais! (L e H são consoantes)'},
+        {question:'Qual é o plural de "flor"?',options:['flores','flors','floris','flor'],answer:'flores',why:'A maioria das palavras terminadas em consoante fazem o plural com "-es": flor → **flores**.'},
+      ],
+      cie:[
+        {question:'O que vemos no céu durante o DIA?',options:['O Sol','A Lua','As Estrelas','A Chuva'],answer:'O Sol',why:'Durante o dia, o nosso lado da Terra está voltado para o Sol, por isso vemos a sua luz e calor! ☀️'},
+        {question:'Para que serve a água?',options:['Para beber e viver','Só para nadar','Só para cozinhar','Para decoração'],answer:'Para beber e viver',why:'A água é essencial para todos os seres vivos! Bebemos, cozinhamos, nos lavamos e os animais e plantas também precisam.'},
+        {question:'O que as plantas precisam para crescer?',options:['Água, luz e terra','Só água','Só sol','Chuva e vento'],answer:'Água, luz e terra',why:'As plantas precisam de 3 coisas essenciais: água para se alimentar, luz solar para fazer fotossíntese e terra para as raízes.'},
+        {question:'Qual destes é um animal DOMÉSTICO?',options:['Cão','Leão','Tubarão','Cobra'],answer:'Cão',why:'O cão é um animal doméstico porque vive com as pessoas, em casa. Os outros são animais selvagens!'},
+        {question:'O que fazemos para ficar saudáveis?',options:['Lavar as mãos e comer fruta','Não dormir','Não beber água','Ficar sempre dentro de casa'],answer:'Lavar as mãos e comer fruta',why:'Para ter saúde precisamos: lavar as mãos, comer alimentos nutritivos, dormir bem e fazer exercício!'},
+        {question:'O que vemos no céu à NOITE?',options:['A Lua e as Estrelas','O Sol','O Arco-íris','As Nuvens grandes'],answer:'A Lua e as Estrelas',why:'À noite, o nosso lado da Terra está voltado para longe do Sol, então vemos a Lua e as estrelas brilhar! 🌙⭐'},
+      ]
+    },
+    2:{
+      mat:[
+        {question:'Qual é o valor do algarismo 3 em 350?',options:['300','30','3','3000'],answer:'300',why:'No número 350, o 3 está na posição das CENTENAS. Centena = 100, então 3 centenas = 300!'},
+        {question:'28 + 15 = ?',options:['43','41','45','38'],answer:'43',why:'8+5=13, escreve 3 e transporta 1. Depois 2+1+1=4. Resultado: **43**!'},
+        {question:'4 × 3 = ?',options:['12','7','9','14'],answer:'12',why:'4 × 3 = quatro grupos de 3 = 3+3+3+3 = **12**! Ou: 3 grupos de 4 = 4+4+4 = 12!'},
+        {question:'1 metro tem quantos centímetros?',options:['100 cm','10 cm','1000 cm','50 cm'],answer:'100 cm',why:'1 metro = 100 centímetros. Pensa: uma régua grande tem 1 metro = 100 cm!'},
+        {question:'Qual é o plural de "cidadão"?',options:['Cidadãos','Cidadões','Cidadãoes','Cidadão'],answer:'Cidadãos',why:'Palavras terminadas em "-ão" geralmente fazem o plural em "-ãos": cidadão → **cidadãos**.'},
+        {question:'47 − 23 = ?',options:['24','20','26','34'],answer:'24',why:'Subtrai coluna a coluna: 7−3=4 (unidades), 4−2=2 (dezenas). Resultado: **24**!'},
+        {question:'Que horas são quando os dois ponteiros estão no 12?',options:['12:00 (meio-dia)','6:00','3:00','9:00'],answer:'12:00 (meio-dia)',why:'Quando o ponteiro pequeno (horas) e o grande (minutos) estão ambos no 12, são 12 horas — o meio-dia!'},
+        {question:'5 × 6 = ?',options:['30','25','35','11'],answer:'30',why:'5 × 6 = 30. Truque: a tabuada do 5 termina sempre em 0 ou 5! 5, 10, 15, 20, 25, **30**!'},
+        {question:'Qual é o antónimo de "bonito"?',options:['Feio','Belo','Lindo','Grande'],answer:'Feio',why:'Antónimo é a palavra com sentido CONTRÁRIO. Bonito ↔ **feio**!'},
+        {question:'Qual animal é DOMÉSTICO?',options:['Galinha','Tubarão','Leão','Cobra'],answer:'Galinha',why:'A galinha é um animal doméstico! Em Cabo Verde muitas famílias criam galinhas em casa para os ovos e a carne.'},
+      ],
+      por:[
+        {question:'Qual é um tipo de FRASE INTERROGATIVA?',options:['"Como te chamas?"','"O céu é azul."','"Que dia bonito!"','"Vai estudar!"'],answer:'"Como te chamas?"',why:'A frase interrogativa faz uma PERGUNTA e termina com "?". "Como te chamas?" é uma pergunta!'},
+        {question:'Qual é o plural de "flor"?',options:['flores','flors','floris','flor'],answer:'flores',why:'Palavras terminadas em "-or" fazem o plural com "-ores": flor → **flores**!'},
+        {question:'O adjectivo descreve...',options:['Como são as coisas','Uma acção','Um lugar','Uma pessoa só'],answer:'Como são as coisas',why:'O adjectivo descreve ou qualifica o nome: o mar <strong>azul</strong>, a casa <strong>grande</strong>, o menino **simpático**.'},
+        {question:'"A menina é alta." A palavra sublinhada é...',options:['Adjectivo','Nome','Verbo','Artigo'],answer:'Adjectivo',why:'"Alta" descreve como é a menina — é um **adjectivo**! Os adjectivos qualificam os nomes.'},
+        {question:'Qual é o feminino de "professor"?',options:['professora','professore','professori','professores'],answer:'professora',why:'A maioria das palavras masculinas em "-or" fazem o feminino em "-ora": professor → **professora**!'},
+        {question:'Qual frase está correcta com maiúsculas?',options:['A Ana vive em Santiago.','a ana vive em santiago.','A ana vive em Santiago.','a Ana vive em santiago.'],answer:'A Ana vive em Santiago.',why:'Usamos maiúscula no início da frase ("A") e nos nomes próprios de pessoas ("Ana") e lugares ("Santiago")!'},
+      ],
+      cie:[
+        {question:'Qual é a capital de Cabo Verde?',options:['Praia','Mindelo','Sal','Assomada'],answer:'Praia',why:'A Praia fica na ilha de Santiago e é a capital — a cidade mais importante — de Cabo Verde! 🏙️'},
+        {question:'Quantas ilhas tem Cabo Verde?',options:['10','8','12','9'],answer:'10',why:'Cabo Verde tem exactamente 10 ilhas, divididas em dois grupos: Barlavento (norte) e Sotavento (sul)!'},
+        {question:'Em Cabo Verde, quando é a época das chuvas?',options:['Agosto a Outubro','Janeiro a Março','Maio a Julho','Novembro a Janeiro'],answer:'Agosto a Outubro',why:'Em Cabo Verde a época das chuvas é de Agosto a Outubro. Em Santiago chama-se "tempo das águas"! 🌧️'},
+        {question:'Qual destes é um animal SELVAGEM de Cabo Verde?',options:['Tartaruga-marinha','Cão','Galinha','Burro'],answer:'Tartaruga-marinha',why:'A tartaruga-marinha é um animal selvagem protegido de Cabo Verde! Vive no mar e põe ovos nas praias. 🐢'},
+        {question:'O que fazemos para ter boa higiene?',options:['Lavar os dentes e as mãos','Não tomar banho','Comer sem lavar as mãos','Dormir muito tarde'],answer:'Lavar os dentes e as mãos',why:'Boa higiene inclui: lavar os dentes 2x por dia, lavar as mãos antes de comer e depois da casa de banho, tomar banho todos os dias!'},
+      ]
+    },
+    3:{
+      mat:[
+        {question:'Qual é o valor do algarismo 4 em 34.567?',options:['4.000','400','40.000','40'],answer:'4.000',why:'No número 34.567, o 4 está na posição das UNIDADES DE MILHAR. Unidades de milhar = 1.000, então 4 × 1.000 = **4.000**!'},
+        {question:'7 × 8 = ?',options:['56','54','63','48'],answer:'56',why:'7 × 8 = **56**. Truque: pensa em 7 × 7 = 49, depois adiciona mais 7: 49 + 7 = 56!'},
+        {question:'48 ÷ 6 = ?',options:['8','7','9','6'],answer:'8',why:'48 ÷ 6 = **8**. Pensa: "6 × ? = 48". 6×8=48! Ou conta: 6, 12, 18, 24, 30, 36, 42, 48 (8 vezes)!'},
+        {question:'Que tipo de ângulo tem 90°?',options:['Recto','Agudo','Obtuso','Raso'],answer:'Recto',why:'O ângulo RECTO tem exactamente 90°. É como o canto de uma folha de papel ou de uma janela! 🔲'},
+        {question:'Qual é o sinónimo de "bonito"?',options:['Belo','Feio','Triste','Pequeno'],answer:'Belo',why:'Sinónimos são palavras com sentido PARECIDO. Bonito e **belo** significam a mesma coisa!'},
+        {question:'¾ de 12 é igual a...?',options:['9','3','6','8'],answer:'9',why:'Primeiro, ¼ de 12 = 12÷4 = 3. Depois, ¾ = 3 × 3 = **9**!'},
+        {question:'Qual é o verbo no passado de "comer"?',options:['Comeu','Come','Comerá','Comendo'],answer:'Comeu',why:'"Comeu" é o passado perfeito de "comer". Presente: come. Passado: **comeu**. Futuro: comerá.'},
+        {question:'A cadeia alimentar começa sempre com...?',options:['Uma planta (produtor)','Um animal feroz','O sol','A água'],answer:'Uma planta (produtor)',why:'As plantas são os PRODUTORES — fazem fotossíntese e produzem o seu próprio alimento. Por isso estão sempre no início da cadeia!'},
+        {question:'Como é que a água vai do mar para o céu?',options:['Evaporação','Precipitação','Condensação','Infiltração'],answer:'Evaporação',why:'O Sol aquece a água do mar e ela transforma-se em vapor de água que sobe para o céu — isso é a **evaporação**!'},
+        {question:'9 × 7 = ?',options:['63','54','72','56'],answer:'63',why:'9 × 7 = **63**. Truque: 9 × 7 = (10 × 7) − 7 = 70 − 7 = 63!'},
+      ],
+      por:[
+        {question:'Qual é a raiz da palavra "marinheiro"?',options:['Mar','Marinha','Eiro','Inho'],answer:'Mar',why:'"Marinheiro" vem de **MAR**. Todas as palavras da família do mar partilham essa raiz: marítimo, maresia, amarar...'},
+        {question:'"Ele correu rapidamente." A palavra sublinhada é...',options:['Advérbio de modo','Adjectivo','Nome','Verbo'],answer:'Advérbio de modo',why:'Palavras terminadas em "-mente" que dizem COMO se faz a acção são advérbios de modo. Rapidamente = de modo rápido.'},
+        {question:'"O Pedro estuda." → Substituir "O Pedro" por pronome:',options:['Ele estuda.','A ele estuda.','Eles estuda.','Tu estudas.'],answer:'Ele estuda.',why:'O Pedro = 1 pessoa, masculino, 3ª pessoa → pronome pessoal **"ele"**!'},
+        {question:'Qual é o antónimo de "quente"?',options:['Frio','Morno','Quente','Húmido'],answer:'Frio',why:'Antónimo = contrário! Quente ↔ **frio**. São palavras de sentido oposto!'},
+        {question:'Que sinal de pontuação termina uma PERGUNTA?',options:['?','!','.',','],answer:'?',why:'O ponto de interrogação (?) termina sempre as perguntas. Por exemplo: "Como te chamas**?**"'},
+        {question:'"As ilhas são belas." O adjectivo é...',options:['belas','ilhas','são','as'],answer:'belas',why:'"Belas" descreve como são as ilhas — é o **adjectivo**! Concorda com "ilhas" (feminino plural).'},
+      ],
+      cie:[
+        {question:'Qual é a função do Hospital?',options:['Cuidar da saúde','Educar crianças','Vender comida','Fazer leis'],answer:'Cuidar da saúde',why:'O hospital cuida da saúde das pessoas — trata doentes e feridos. É uma instituição essencial!'},
+        {question:'Qual osso protege o cérebro?',options:['Crânio','Vértebras','Costelas','Fémur'],answer:'Crânio',why:'O crânio é uma caixa óssea que protege o cérebro de pancadas e lesões!'},
+        {question:'Qual é a primeira etapa da digestão?',options:['Mastigar na boca','Ir para o estômago','Ir para o intestino','Sair do corpo'],answer:'Mastigar na boca',why:'A digestão começa na boca: dentes mastigam e a saliva começa a quebrar a comida!'},
+        {question:'Quem é o Presidente de Cabo Verde?',options:['O chefe do país, eleito pelo povo','O prefeito','O rei','O juiz'],answer:'O chefe do país, eleito pelo povo',why:'Em democracia, o povo elege o Presidente para 5 anos. É o chefe de Estado!'},
+        {question:'A cadeia alimentar começa sempre com...?',options:['Uma planta (produtor)','Um animal feroz','O sol','A água'],answer:'Uma planta (produtor)',why:'As plantas são os PRODUTORES — fazem fotossíntese e estão sempre no início da cadeia alimentar!'},
+        {question:'Como é que a água vai do mar para o céu?',options:['Evaporação','Precipitação','Condensação','Infiltração'],answer:'Evaporação',why:'O Sol aquece a água do mar e ela transforma-se em vapor — isso é a evaporação!'},
+        {question:'Qual destes NÃO é um ser vivo?',options:['Pedra','Planta','Fungo','Bactéria'],answer:'Pedra',why:'A pedra não nasce, não cresce, não respira nem se reproduz — não é um ser vivo!'},
+        {question:'A que distância fica Cabo Verde da costa de África?',options:['Cerca de 500 km','Cerca de 50 km','Cerca de 5.000 km','Está ligado a África'],answer:'Cerca de 500 km',why:'Cabo Verde fica a aproximadamente 500 km a oeste da costa da África Ocidental (Senegal e Mauritânia)!'},
+        {question:'Se não houvesse instituições, o que acontecia?',options:['Caos, sem educação, saúde nem segurança','Nada mudava','Melhorava tudo','Ficava igual'],answer:'Caos, sem educação, saúde nem segurança',why:'Instituições organizam a sociedade. Escola, hospital, polícia — sem elas, seria impossível viver em ordem!'},
+        {question:'Se desaparecessem as plantas, o que acontecia?',options:['Toda a cadeia alimentar desapareceria','Nada acontecia','Haveria mais comida','Os animais adaptavam-se'],answer:'Toda a cadeia alimentar desapareceria',why:'Plantas = base da cadeia. Sem produtores, herbívoros morrem, depois carnívoros, e por fim, nós também!'},
+      ]
+    },
+    4:{
+      mat:[
+        {question:'Qual é o valor do algarismo 5 em 456.789?',options:['50.000','5.000','500','5'],answer:'50.000',why:'Em 456.789, o 5 está na posição das DEZENAS DE MILHAR. Dezena de milhar = 10.000, então 5 × 10.000 = **50.000**!'},
+        {question:'Qual é a fracção equivalente a ½?',options:['²⁄₄','²⁄₃','³⁄₄','¼'],answer:'²⁄₄',why:'½ = ²⁄₄ porque multiplicamos cima e baixo por 2: 1×2=2 e 2×2=4. As duas frações representam a mesma quantidade!'},
+        {question:'Um rectângulo tem 8 cm e 5 cm. Qual é o seu PERÍMETRO?',options:['26 cm','40 cm','13 cm','20 cm'],answer:'26 cm',why:'Perímetro = soma de todos os lados = 8+8+5+5 = **26 cm**! Ou: 2 × (8+5) = 2 × 13 = 26 cm.'},
+        {question:'Que ângulo é MENOR que 90°?',options:['Agudo','Recto','Obtuso','Raso'],answer:'Agudo',why:'O ângulo AGUDO é mais fechado (pequeno) que o recto. Recto=90°, Agudo menor que 90°, Obtuso maior que 90°, Raso=180°.'},
+        {question:'A Maria foi ao mercado com 500$. Gastou 185$. Quanto sobrou?',options:['315$','285$','415$','195$'],answer:'315$',why:'Troco = 500 − 185 = **315$**. Para verificar: 185 + 315 = 500 ✓'},
+        {question:'Qual é a MODA deste conjunto: 3, 7, 3, 8, 5, 3, 7?',options:['3','7','8','5'],answer:'3',why:'A moda é o número que aparece MAIS VEZES. O 3 aparece 3 vezes, o 7 aparece 2 vezes, os outros 1 vez. Moda = **3**!'},
+        {question:'1,5 km = quantos metros?',options:['1.500 m','150 m','15 m','1.050 m'],answer:'1.500 m',why:'1 km = 1.000 m. Então 1,5 km = 1,5 × 1.000 = **1.500 m**!'},
+        {question:'Múltiplo de 7 entre estes números?',options:['42','44','46','48'],answer:'42',why:'42 ÷ 7 = 6 exacto, então 42 é múltiplo de 7! Para verificar: 7 × 6 = **42** ✓'},
+        {question:'¼ de 80 = ?',options:['20','40','10','25'],answer:'20',why:'¼ de 80 = 80 ÷ 4 = **20**! Dividir por 4 é o mesmo que calcular ¼.'},
+        {question:'Um sólido com 6 faces quadradas iguais chama-se...',options:['Cubo','Cone','Pirâmide','Cilindro'],answer:'Cubo',why:'O CUBO tem 6 faces quadradas IGUAIS, 12 arestas iguais e 8 vértices. Como um dado de jogar!'},
+        {question:'Qual é o número ordinal do 5?',options:['Quinto','Cinco','Cinquanto','Quintal'],answer:'Quinto',why:'Os ordinais dizem a ordem: 1º=primeiro, 2º=segundo, 3º=terceiro, 4º=quarto, 5º=**quinto**!'},
+        {question:'Numa tabela: João=8, Ana=12, Pedro=8, Sara=15. Qual é a MODA?',options:['8','12','15','11'],answer:'8',why:'A moda é o valor que aparece mais vezes. O 8 aparece 2 vezes (João e Pedro). Os outros aparecem só 1 vez. Moda = **8**!'},
+        {question:'Qual é um múltiplo de 7?',options:['42','44','45','46'],answer:'42',why:'42 ÷ 7 = 6 exacto, sem resto. Para confirmar: 7 × 6 = 42 ✓'},
+        {question:'O diâmetro de um círculo com raio 4 cm é...?',options:['8 cm','4 cm','12 cm','2 cm'],answer:'8 cm',why:'Diâmetro = 2 × raio. 2 × 4 = **8 cm**! O diâmetro passa pelo centro de ponta a ponta.'},
+        {question:'Duas retas que nunca se cruzam chamam-se...',options:['Paralelas','Perpendiculares','Secantes','Oblíquas'],answer:'Paralelas',why:'Retas **paralelas** mantêm sempre a mesma distância e nunca se cruzam. Como os trilhos de um comboio!'},
+        {question:'Como se escreve o ordinal de 10?',options:['Décimo','Decimo','Dézimo','Décemos'],answer:'Décimo',why:'10º = **décimo**! Sequência: 7º=sétimo · 8º=oitavo · 9º=nono · 10º=décimo!'},
+        {question:'Um cubo tem quantas faces?',options:['6','4','8','12'],answer:'6',why:'O cubo tem **6 faces** quadradas iguais. Pensa num dado de jogar — tem 6 lados com os números 1 a 6!'},
+        {question:'0,75 é igual a que fração?',options:['¾','½','¼','⅔'],answer:'¾',why:'0,75 = 75/100 = **¾**. Podes verificar: 3 ÷ 4 = 0,75 ✓'},
+      ],
+      por:[
+        {question:'"Lindíssimo" é o superlativo de qual adjectivo?',options:['Lindo','Grande','Bonito','Belo'],answer:'Lindo',why:'O sufixo "-íssimo" forma o superlativo absoluto: lindo → **lindíssimo** (muito lindo!). É uma forma intensa do adjectivo.'},
+        {question:'Qual é o ANTÓNIMO de "alegre"?',options:['Triste','Feliz','Animado','Contente'],answer:'Triste',why:'Antónimo = palavra com sentido CONTRÁRIO. Alegre ↔ **triste**. Quando estamos tristes, não estamos alegres!'},
+        {question:'Qual é o COLECTIVO de "peixe"?',options:['Cardume','Rebanho','Manada','Alcateia'],answer:'Cardume',why:'Um grupo de peixes a nadar juntos chama-se **cardume**! Rebanho=ovelhas, Manada=elefantes, Alcateia=lobos.'},
+        {question:'Num texto narrativo, a personagem principal é...',options:['Quem tem mais importância na história','O narrador','O espaço da história','O título do livro'],answer:'Quem tem mais importância na história',why:'A personagem principal (ou protagonista) é aquela a quem a história acontece principalmente. É a mais importante!'},
+        {question:'"Desorganizado" — que prefixo foi usado?',options:['des-','in-','re-','sub-'],answer:'des-',why:'O prefixo **des-** indica negação ou contrário: des+organizado = não organizado, em desordem!'},
+        {question:'"A Ana foi à escola. ___ chegou cedo." Que pronome completa?',options:['Ela','Ele','Eles','Tu'],answer:'Ela',why:'Ana é feminino singular, 3ª pessoa = pronome <strong>ela</strong>. "A Ana foi à escola. **Ela** chegou cedo."'},
+        {question:'"A casa é ___" (bonito) — forma correcta?',options:['bonita','bonito','bonitos','bonitas'],answer:'bonita',why:'O adjectivo CONCORDA com o nome! "Casa" é feminino singular → **bonita** (feminino singular)!'},
+        {question:'Que sinal de pontuação introduz uma lista ou fala directa?',options:['Dois pontos (:)','Vírgula (,)','Ponto final (.)','Reticências (...)'],answer:'Dois pontos (:)',why:'Os dois pontos (:) são usados para introduzir uma enumeração/lista ou o discurso directo (fala de alguém). Exemplo: "Disse**:** Olá!"'},
+        {question:'"Rapidamente" é um...?',options:['Advérbio de modo','Adjectivo','Nome','Verbo'],answer:'Advérbio de modo',why:'Termina em "-mente" e diz COMO se faz a acção = **advérbio de modo**! Modifica o verbo, não o nome.'},
+        {question:'Qual é a forma NEGATIVA de "Ela estudou"?',options:['Ela não estudou.','Ela estudou?','Ela estudou!','Ela estudará.'],answer:'Ela não estudou.',why:'A forma negativa usa "**não**" antes do verbo: "Ela **não** estudou."'},
+        {question:'"Comia" é que tempo verbal?',options:['Pretérito Imperfeito','Presente','Pretérito Perfeito','Futuro'],answer:'Pretérito Imperfeito',why:'"Comia" descreve ação contínua ou habitual no passado = **Pretérito Imperfeito**! "Antes eu comia peixe todos os dias."'},
+        {question:'"Estudarei" é que tempo verbal?',options:['Futuro','Presente','Pretérito Perfeito','Pretérito Imperfeito'],answer:'Futuro',why:'"Estudarei" indica ação que vai acontecer = **Futuro**! "Amanhã eu **estudarei** para a prova."'},
+        {question:'"O João estuda porque quer aprender." É uma frase...',options:['Complexa','Simples','Exclamativa','Negativa'],answer:'Complexa',why:'Tem 2 verbos ("estuda" + "quer") ligados por "porque" = frase **complexa**! Frase simples teria só 1 verbo.'},
+        {question:'Qual é o feminino do adjectivo "cabo-verdiano"?',options:['cabo-verdiana','cabo-verdiane','cabo-verdião','cabo-verdianas'],answer:'cabo-verdiana',why:'Adjectivos em "-o" fazem feminino em "-a": cabo-verdian**o** → cabo-verdian**a**!'},
+        {question:'"Vai estudar!" — qual é o tipo e forma desta frase?',options:['Imperativa afirmativa','Interrogativa negativa','Declarativa afirmativa','Exclamativa negativa'],answer:'Imperativa afirmativa',why:'Dá uma ordem = **imperativa**. Não usa "não" = **afirmativa**. Toda frase tem tipo + forma!'},
+      ],
+      cie:[
+        {question:'Quantas ilhas tem Cabo Verde?',options:['10','9','12','8'],answer:'10',why:'Cabo Verde tem exactamente **10 ilhas**: 6 de Barlavento e 4 de Sotavento. São todas diferentes e especiais!'},
+        {question:'Qual é a CAPITAL de Cabo Verde?',options:['Praia','Mindelo','Santa Maria','São Filipe'],answer:'Praia',why:'A **Praia** fica na ilha de Santiago e é a capital e maior cidade de Cabo Verde desde a independência em 1975!'},
+        {question:'A célula é a...',options:['Unidade básica da vida','Parte do esqueleto','Tipo de planta','Órgão do corpo'],answer:'Unidade básica da vida',why:'A célula é a **unidade básica** de todos os seres vivos! Todos os animais, plantas e outros seres são feitos de células.'},
+        {question:'Na cadeia alimentar, as plantas são...',options:['Produtores','Consumidores','Decompositores','Predadores'],answer:'Produtores',why:'As plantas são os **produtores** porque fazem fotossíntese — produzem o seu próprio alimento usando a luz do sol!'},
+        {question:'A pesca pertence a que SECTOR económico?',options:['Primário','Secundário','Terciário','Quaternário'],answer:'Primário',why:'O sector **primário** extrai recursos directamente da natureza: agricultura, pesca, pecuária, mineração. A pesca em Cabo Verde é muito importante!'},
+        {question:'Qual ilha pertence ao grupo de BARLAVENTO?',options:['São Vicente','Santiago','Fogo','Brava'],answer:'São Vicente',why:'**São Vicente** (onde fica Mindelo) pertence ao grupo de Barlavento! Santiago, Fogo e Brava são de Sotavento.'},
+        {question:'O que é um "habitat"?',options:['O lugar onde um ser vivo vive','O alimento do animal','A família do animal','O ciclo de vida'],answer:'O lugar onde um ser vivo vive',why:'O **habitat** é o ambiente natural onde um ser vivo vive e encontra tudo que precisa: comida, água, abrigo e condições para se reproduzir.'},
+        {question:'Quem é o Chefe de Estado de Cabo Verde?',options:['O Presidente da República','O Primeiro-Ministro','O Presidente da Assembleia','O Governador'],answer:'O Presidente da República',why:'Em Cabo Verde, o **Presidente da República** é o Chefe de Estado. O Primeiro-Ministro chefia o Governo (poder executivo).'},
+        {question:'Qual é uma consequência das alterações climáticas?',options:['Subida do nível do mar','Mais chuva em todo o mundo','Mais animais','Temperaturas iguais'],answer:'Subida do nível do mar',why:'O aquecimento global derrete o gelo dos polos, fazendo subir o nível do mar. Para Cabo Verde, um país de ilhas, isso é muito preocupante!'},
+        {question:'"Morabeza" é...',options:['A hospitalidade cabo-verdiana','Um prato típico','Uma dança','Um festival'],answer:'A hospitalidade cabo-verdiana',why:'**Morabeza** é uma palavra crioula que descreve a gentileza, carinho e hospitalidade do povo cabo-verdiano. É um valor cultural muito especial!'},
+        {question:'O que é a Morna?',options:['Um género musical de Cabo Verde','Uma dança africana','Um prato típico','Um festival'],answer:'Um género musical de Cabo Verde',why:'A **Morna** é o género musical mais famoso de CV, inscrito no Património da Humanidade pela UNESCO em 2019. Cesária Évora era a sua voz mais conhecida!'},
+        {question:'Em que ano foi a independência de Cabo Verde?',options:['1975','1960','1980','1492'],answer:'1975',why:'Cabo Verde tornou-se independente de Portugal no dia **5 de Julho de 1975**. É o nosso Dia da Independência!'},
+        {question:'Qual é um DIREITO das crianças?',options:['Direito à educação','Dever de trabalhar','Dever de governar','Direito de não estudar'],answer:'Direito à educação',why:'A educação é um **direito fundamental** de todas as crianças, reconhecido pela Convenção das Nações Unidas sobre os Direitos da Criança!'},
+        {question:'Qual órgão bombeia o sangue no corpo humano?',options:['Coração','Pulmão','Fígado','Rim'],answer:'Coração',why:'O **coração** é o órgão central do sistema circulatório. Bate cerca de 70 vezes por minuto e envia sangue para todo o corpo!'},
+        {question:'A fotossíntese ocorre principalmente em qual parte da planta?',options:['Folhas','Raízes','Flores','Frutos'],answer:'Folhas',why:'As **folhas** têm clorofila (cor verde) que capta a luz solar. A planta usa essa energia para transformar água e CO₂ em alimento!'},
+        {question:'Qual é uma consequência das alterações climáticas?',options:['Subida do nível do mar','Mais chuva em todo o mundo','Mais biodiversidade','Temperaturas mais baixas'],answer:'Subida do nível do mar',why:'O aquecimento global derrete os glaciares e os polos, fazendo subir o nível do mar. Para Cabo Verde, um arquipélago, isto é uma ameaça muito séria!'},
+        {question:'A Cachupa é...',options:['O prato nacional de Cabo Verde','Uma dança da ilha do Fogo','Um festival de música','Um instrumento musical'],answer:'O prato nacional de Cabo Verde',why:'A **Cachupa** é o prato mais tradicional de Cabo Verde, feita com milho, feijão e legumes. É a "alma" da cozinha cabo-verdiana!'},
+      ]
+    }
+  };
+  return (db[year]&&db[year][subj])||[];
+}
+
+// ═══════════════════════════
+// AI SECTION
+// ═══════════════════════════
+function getApiKey(){ return localStorage.getItem('cv_api_key')||''; }
+function saveApiKey(k){ localStorage.setItem('cv_api_key',k.trim()); }
+
+function renderAI(area){
+  const col=SUBJ_COLOR[currentSubject];
+  const topics=getAITopics(currentYear,currentSubject);
+  const hasKey=!!getApiKey();
+  area.innerHTML=`
+    <div class="ai-box" style="border-color:#fde68a">
+      <h3>🔑 Chave API Groq</h3>
+      <input type="password" id="api-key-inp" placeholder="gsk_..."
+        style="width:100%;padding:10px 12px;border-radius:10px;border:2px solid #e5e7eb;font-family:'Nunito',sans-serif;font-size:0.85rem;margin-bottom:8px;box-sizing:border-box"
+        value="${getApiKey()}" />
+      <button onclick="const k=document.getElementById('api-key-inp').value.trim();if(k){saveApiKey(k);this.textContent='✅ Guardada!';setTimeout(()=>this.textContent='💾 Guardar',2000);}"
+        style="background:#f59e0b;color:white;border:none;padding:9px 20px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer">💾 Guardar</button>
+      <div style="font-size:0.75rem;color:var(--muted);margin-top:8px;line-height:1.5">Obtém a chave em <strong>console.groq.com</strong> → API Keys. Guardada só neste browser.</div>
+    </div>
+    <div class="ai-box">
+      <h3>🤖 Tutor IA (Groq)</h3>
+      <select class="ai-select" id="ai-topic-sel">${topics.map(t=>`<option value="${t.val}">${t.label}</option>`).join('')}</select>
+      <div class="level-row">
+        <button class="lv-btn" id="lv-base" style="background:${col};border-color:${col};color:white" onclick="setAILevel('base','${col}')">🌱 Base</button>
+        <button class="lv-btn" id="lv-medio" onclick="setAILevel('medio','${col}')">📗 Médio</button>
+        <button class="lv-btn" id="lv-avancado" onclick="setAILevel('avancado','${col}')">🚀 Avançado</button>
+      </div>
+      <button class="ai-go-btn" id="ai-gen-btn" style="background:${col}" onclick="callAI('${col}')">✨ Gerar Exercício!</button>
+      <div class="ai-out" id="ai-output"></div>
+    </div>
+`;
+}
+
+function getAITopics(year,subj){
+  const topicMap={
+    mat:{
+      1:[{val:'soma',label:'Somar números pequenos'},{val:'subtrai',label:'Subtrair números pequenos'},{val:'formas',label:'Formas geométricas'}],
+      2:[{val:'centenas',label:'Números até 1.000'},{val:'multiplicar',label:'Tabuada e multiplicação'},{val:'medidas',label:'Medidas de comprimento'}],
+      3:[{val:'milhar',label:'Números até 100.000'},{val:'frações',label:'Frações simples'},{val:'angulos',label:'Ângulos e geometria'}],
+      4:[{val:'numeros',label:'Números até centena de milhar'},{val:'fracoes',label:'Frações e decimais'},{val:'geometria',label:'Polígonos e ângulos'},{val:'medidas',label:'Medidas de comprimento'},{val:'dinheiro',label:'Problemas com dinheiro em escudos'},{val:'graficos',label:'Tabelas e gráficos — moda'}],
+    },
+    por:{
+      1:[{val:'letras',label:'Letras e sílabas'},{val:'vogais',label:'Vogais e consoantes'},{val:'palavras',label:'Palavras simples'}],
+      2:[{val:'frases',label:'Tipos de frase'},{val:'plural',label:'Singular e plural'},{val:'adjectivos',label:'Adjectivos'}],
+      3:[{val:'familia',label:'Família de palavras'},{val:'sinonimos',label:'Sinónimos e antónimos'},{val:'verbos',label:'Verbos — tempos'}],
+      4:[{val:'narrativo',label:'Texto narrativo'},{val:'adjectivos',label:'Adjectivos — grau'},{val:'pronomes',label:'Pronomes pessoais e possessivos'},{val:'sinonimos',label:'Sinónimos e antónimos'},{val:'familia',label:'Família de palavras'}],
+    },
+    cie:{
+      1:[{val:'diaNoite',label:'Dia e noite'},{val:'agua',label:'A importância da água'},{val:'plantas',label:'As plantas'}],
+      2:[{val:'caboverde',label:'Cabo Verde'},{val:'animais',label:'Animais domésticos e selvagens'},{val:'higiene',label:'Higiene e saúde'}],
+      3:[{val:'seresVivos',label:'Seres vivos'},{val:'cadeia',label:'Cadeia alimentar'},{val:'cicloAgua',label:'Ciclo da água'}],
+      4:[{val:'caboverde',label:'Cabo Verde no mundo'},{val:'celula',label:'A célula'},{val:'cadeia',label:'Cadeia alimentar'},{val:'economia',label:'Actividades económicas'},{val:'politica',label:'Organização política'},{val:'ambiente',label:'Alterações climáticas'}],
+    }
+  };
+  return (topicMap[subj]&&topicMap[subj][year])||[];
+}
+
+function setAILevel(lv,col){
+  aiLevel=lv;
+  ['base','medio','avancado'].forEach(l=>{
+    const b=document.getElementById('lv-'+l);
+    if(b){ if(l===lv){b.style.background=col;b.style.borderColor=col;b.style.color='white';}
+    else{b.style.background='white';b.style.borderColor='#e5e7eb';b.style.color='#6b7280';}}
+  });
+}
+
+let _aiQ=null;
+
+function renderAIQuiz(data,container){
+  _aiQ=data;
+  const col=SUBJ_COLOR[currentSubject];
+  container.style.cssText='background:transparent;border:none;padding:0';
+  container.innerHTML=`
+    <div class="qcard" style="margin-top:4px">
+      <div class="qnum">🤖 Exercício gerado por IA</div>
+      <div class="qtext">${data.question}</div>
+      <div class="opts" id="ai-opts">
+        ${data.options.map((o,i)=>`
+          <button class="opt" onclick="pickAIOpt(this,'${escQ(o)}')">
+            <span class="opt-lbl">${String.fromCharCode(65+i)}</span>
+            <span>${o}</span>
+          </button>`).join('')}
+      </div>
+      <div class="feedback" id="ai-feedback"></div>
+    </div>`;
+  window.pickAIOpt=function(btn,chosen){
+    document.querySelectorAll('#ai-opts .opt').forEach(b=>b.disabled=true);
+    const fb=document.getElementById('ai-feedback');
+    const c=SUBJ_COLOR[currentSubject];
+    const newBtn=`<button onclick="callAI()" style="background:${c};color:white;border:none;padding:10px 22px;border-radius:50px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;margin-top:10px;display:block">🔄 Novo exercício</button>`;
+    if(chosen===_aiQ.answer){
+      btn.classList.add('correct-opt');
+      fb.className='feedback fb-ok show';
+      fb.innerHTML=`✅ <strong>Correcto! Muito bem!</strong><div class="fb-why">💡 ${_aiQ.explanation}</div>${newBtn}`;
+      addPoints(15);
+    } else {
+      btn.classList.add('wrong-opt','shake');
+      document.querySelectorAll('#ai-opts .opt').forEach(b=>{
+        if(b.querySelector('span:last-child').textContent.trim()===_aiQ.answer) b.classList.add('correct-opt');
+      });
+      fb.className='feedback fb-no show';
+      fb.innerHTML=`❌ <strong>Não foi dessa!</strong> A resposta certa é: <strong>${_aiQ.answer}</strong><div class="fb-why">💡 ${_aiQ.explanation}</div>${newBtn}`;
+    }
+  };
+}
+
+async function callAI(){
+  const topic=document.getElementById('ai-topic-sel')?.value||'';
+  const out=document.getElementById('ai-output');
+  const btn=document.getElementById('ai-gen-btn');
+  const key=getApiKey();
+  out.className='ai-out show';
+  out.style.cssText='';
+  if(!key){
+    out.innerHTML='🔑 Introduz a tua Chave API no campo acima e guarda antes de continuar.';
+    return;
+  }
+  const yr=currentYear, subj=currentSubject;
+  const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
+  const lvLabel={base:'muito simples (para criança de 6-10 anos)',medio:'médio',avancado:'avançado'};
+  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} sobre "${topic}" para a ${yr}ª classe de Cabo Verde. Usa exemplos cabo-verdianos (ilhas, peixe, escudos, escola).`;
+  out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
+  if(btn) btn.disabled=true;
+  try{
+    const res=await fetch('https://api.groq.com/openai/v1/chat/completions',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+      body:JSON.stringify({
+        model:'llama-3.3-70b-versatile',max_tokens:600,
+        response_format:{type:'json_object'},
+        messages:[
+          {role:'system',content:'És um professor para crianças do ensino básico de Cabo Verde. Responde APENAS em JSON com este formato exacto: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation deve ser simples, com emojis, em Português de Portugal.'},
+          {role:'user',content:prompt}
+        ]
+      })
+    });
+    if(!res.ok){
+      const err=await res.json().catch(()=>({}));
+      out.innerHTML=`⚠️ Erro ${res.status}: ${err.error?.message||'Chave inválida ou limite atingido.'}`;
+    } else {
+      const data=await res.json();
+      const raw=data.choices?.[0]?.message?.content||'{}';
+      const q=JSON.parse(raw);
+      if(q.question&&q.options?.length===4&&q.answer&&q.explanation){
+        renderAIQuiz(q,out);
+      } else {
+        out.innerHTML='⚠️ Resposta em formato inesperado. Tenta outra vez.';
+      }
+    }
+  }catch(e){
+    out.innerHTML='⚠️ Erro de ligação ou resposta inválida. Tenta outra vez.';
+  }
+  if(btn) btn.disabled=false;
+}
+
+
+// ═══════════════════════════
+// CHALLENGE
+// ═══════════════════════════
+function renderChallenge(area){
+  const col=SUBJ_COLOR[currentSubject];
+  area.innerHTML=`
+    <div style="text-align:center;margin-bottom:10px">
+      <div style="font-size:0.9rem;font-weight:800;color:var(--muted)">Responde o mais rápido que conseguires! ⚡</div>
+    </div>
+    <div class="timer-ring" id="ch-ring" style="border-color:${col}">
+      <span id="ch-time" style="color:${col}">30</span>
+    </div>
+    <div id="ch-content"></div>
+    <div class="results-card" id="ch-results">
+      <div class="res-big" id="ch-emoji"></div>
+      <div class="res-score" id="ch-score" style="color:${col}"></div>
+      <div class="res-of">pontos no desafio!</div>
+      <div class="res-msg" id="ch-msg"></div>
+      <button class="retry-btn" style="background:${col}" onclick="setMode('challenge')">🔄 Novo Desafio!</button>
+    </div>`;
+  startChallenge(col);
+}
+
+function startChallenge(col){
+  if(challengeInterval) clearInterval(challengeInterval);
+  let timeLeft=30, score=0, canAnswer=true;
+  document.getElementById('ch-results').classList.remove('show');
+
+  function nextQ(){
+    canAnswer=true;
+    const qs=shuffle(getQuestions(currentYear,currentSubject));
+    const q=qs[0];
+    const opts=shuffle(q.options);
+    document.getElementById('ch-content').innerHTML=`
+      <div class="qcard" style="animation:fadeUp 0.2s ease">
+        <div class="qtext" style="font-size:0.95rem">${q.question}</div>
+        <div class="opts" id="ch-opts">
+          ${opts.map(o=>`<button class="opt" style="padding:10px 14px" onclick="chPick(this,'${escQ(o)}','${escQ(q.answer)}')">
+            <span class="opt-lbl" style="min-width:26px;height:26px">•</span>${o}
+          </button>`).join('')}
+        </div>
+      </div>`;
+    window.chPick=function(btn,chosen,correct){
+      if(!canAnswer) return;
+      canAnswer=false;
+      document.querySelectorAll('#ch-opts .opt').forEach(b=>b.disabled=true);
+      if(chosen===correct){score++;btn.classList.add('correct-opt');}
+      else btn.classList.add('wrong-opt');
+      setTimeout(nextQ,500);
+    };
+  }
+
+  challengeInterval=setInterval(()=>{
+    timeLeft--;
+    const el=document.getElementById('ch-time');
+    const ring=document.getElementById('ch-ring');
+    if(!el) return clearInterval(challengeInterval);
+    el.textContent=timeLeft;
+    if(timeLeft<=10){el.style.color='#ef4444';ring.style.borderColor='#ef4444';}
+    if(timeLeft<=0){
+      clearInterval(challengeInterval);
+      document.getElementById('ch-content').innerHTML='';
+      const emoji=score>=12?'🏆':score>=8?'😊':score>=4?'💪':'🌱';
+      const msg=score>=12?'Incrível! És um campeão!':score>=8?'Muito bem! Boa rapidez!':score>=4?'Bom começo! Pratica mais!':'Continua a tentar, vais melhorar!';
+      document.getElementById('ch-emoji').textContent=emoji;
+      document.getElementById('ch-score').textContent=score+' pontos';
+      document.getElementById('ch-msg').textContent=msg;
+      document.getElementById('ch-results').classList.add('show');
+      addPoints(score*5);
+    }
+  },1000);
+  nextQ();
+}
+
+// ═══════════════════════════
+// GRAMÁTICA
+// ═══════════════════════════
+let gramYear=4;
+const GRAM_DATA={
+  1:[
+    {icon:'🔤',title:'Vogais e Consoantes',
+     regra:'O alfabeto português tem 26 letras: 5 vogais (A, E, I, O, U) e 21 consoantes.',
+     ex:'Vogais: A · E · I · O · U\nConsoantes: B, C, D, F, G, H, J, L, M, N, P, Q, R, S, T, V, X, Z...',
+     trick:'Canta: A-E-I-O-U! São as únicas letras que consegues cantar sozinhas.'},
+    {icon:'✂️',title:'Sílabas',
+     regra:'Sílabas são os "pedaços" de som de uma palavra. Cada sílaba tem sempre pelo menos uma vogal.',
+     ex:'PE·I·XE = 3 sílabas\nI·LHA = 2 sílabas\nCÃO = 1 sílaba\nES·CO·LA = 3 sílabas',
+     trick:'Bate palmas enquanto dizes a palavra. Cada palma = 1 sílaba!'},
+    {icon:'🅰️',title:'Letras Maiúsculas',
+     regra:'Usamos maiúscula em 3 situações: (1) início de frase, (2) nomes de pessoas, (3) nomes de lugares.',
+     ex:'A Maria vive em Santiago.\n↑início   ↑pessoa      ↑lugar',
+     trick:'3 regras: começo de frase · nome de pessoa · nome de lugar. Sempre maiúscula!'},
+    {icon:'💬',title:'A Frase',
+     regra:'Uma frase é um grupo de palavras com sentido completo. Tem sujeito (QUEM) e predicado (O QUÊ faz).',
+     ex:'O peixe nada.\n↑sujeito  ↑predicado',
+     trick:'Pergunta QUEM faz? = sujeito. O que faz? = predicado.'}
+  ],
+  2:[
+    {icon:'❓',title:'Tipos de Frase',
+     regra:'4 tipos de frase, identificados pela intenção e pelo sinal de pontuação no fim.',
+     ex:'Declarativa: "O sol brilha."  → afirma algo\nInterrogativa: "Que horas são?"  → pergunta\nExclamativa: "Que bonito!"  → exprime emoção\nImperativa: "Vai estudar!"  → dá ordem',
+     trick:'. = declara · ? = pergunta · ! = emoção ou ordem. O sinal no fim diz o tipo!'},
+    {icon:'1️⃣',title:'Número — Singular e Plural',
+     regra:'Singular = um só. Plural = dois ou mais.',
+     ex:'ilha → ilhas  (+ s)\nflor → flores  (terminado em consoante: + es)\ncidadão → cidadãos\navião → aviões',
+     trick:'Maioria: + s. Terminado em consoante: + es. Palavras em -ão: aprende aos pares!'},
+    {icon:'♂️',title:'Género — Masculino e Feminino',
+     regra:'Masculino: acompanhado por o / um. Feminino: acompanhado por a / uma. Geralmente -o → -a.',
+     ex:'o professor → a professora\no rei → a rainha  (irregular)\no galo → a galinha  (irregular)',
+     trick:'Testa com "o" ou "a". Soa bem com "o" = masculino. Com "a" = feminino!'},
+    {icon:'🎨',title:'Adjetivo',
+     regra:'O adjetivo qualifica o nome. Concorda em género (m/f) e número (sg/pl) com o nome que descreve.',
+     ex:'livro bonito · livros bonitos\ncasa bonita · casas bonitas\nilha verde · ilhas verdes',
+     trick:'O adjetivo responde: COMO É? De que cor? De que tamanho?'},
+    {icon:'🏃',title:'Verbo',
+     regra:'O verbo exprime uma ação, estado ou fenómeno. Muda com a pessoa, o número e o tempo.',
+     ex:'eu como · tu comes · ele come\nnós comemos · eles comem\n\nPresente: como · Passado: comi · Futuro: comerei',
+     trick:'O verbo é a palavra que muda quando mudas o tempo (agora / ontem / amanhã)!'},
+    {icon:'📌',title:'Artigo',
+     regra:'Artigos definidos (sabemos qual): o, a, os, as.\nArtigos indefinidos (qualquer): um, uma, uns, umas.',
+     ex:'"o livro" = aquele livro específico\n"um livro" = qualquer livro\n"a ilha" → "uma ilha"',
+     trick:'O/A/OS/AS = conhecemos. UM/UMA = não especificamos. Definido vs Indefinido!'}
+  ],
+  3:[
+    {icon:'🌳',title:'Família de Palavras',
+     regra:'Palavras da mesma família partilham a mesma raiz (radical) e têm significados relacionados.',
+     ex:'Raiz MAR: mar · marinheiro · marítimo · maresia · submarino\nRaiz PESC: pesca · pescador · pesqueiro · pescaria',
+     trick:'Encontra a parte que se repete em todas as palavras. Essa é a raiz!'},
+    {icon:'↔️',title:'Sinónimos e Antónimos',
+     regra:'Sinónimos = palavras com sentido parecido. Antónimos = palavras com sentido contrário.',
+     ex:'Sinónimos: bonito = belo = lindo\nAntónimos: bonito ≠ feio · frio ≠ quente · dia ≠ noite',
+     trick:'Sinónimos = mesma direção. Antónimos = direções opostas!'},
+    {icon:'⏰',title:'Tempos Verbais',
+     regra:'Os verbos mudam de forma conforme o tempo em que a ação ocorre.',
+     ex:'Presente: eu como  (agora)\nPret. Perfeito: eu comi  (ação acabada)\nPret. Imperfeito: eu comia  (ação contínua no passado)\nFuturo: eu comerei  (amanhã)',
+     trick:'Perfeito = ação que acabou (ontem joguei). Imperfeito = ação que continuava (antes jogava).'},
+    {icon:'✏️',title:'Sinais de Pontuação',
+     regra:'Os sinais de pontuação organizam o texto, indicam pausas e ajudam a perceber a intenção.',
+     ex:'. ponto final — fim de frase\n, vírgula — pausa curta\n? interrogação — pergunta\n! exclamação — emoção\n: dois pontos — apresenta algo\n... reticências — ideia incompleta',
+     trick:'Pontuação = respiração do texto. Cada sinal diz quando parar e como falar!'},
+    {icon:'📚',title:'Classes de Palavras',
+     regra:'As palavras classificam-se em categorias conforme a sua função na frase.',
+     ex:'Nome: ilha, peixe, escola\nVerbo: comer, correr, ser\nAdjetivo: bonito, azul, grande\nAdvérbio: rapidamente, muito, aqui\nPronome: eu, meu, este\nArtigo: o, a, um\nPreposição: de, em, para, com\nConjunção: e, mas, porque, que',
+     trick:'Nome=coisa · Verbo=ação · Adjetivo=característica · Advérbio=modifica verbo!'}
+  ],
+  4:[
+    {icon:'📖',title:'Texto Narrativo',
+     regra:'Estrutura: Introdução → Desenvolvimento → Conclusão.\n5 elementos a identificar em qualquer texto narrativo:',
+     ex:'Personagens — QUEM aparece\nEspaço — ONDE se passa\nTempo — QUANDO acontece\nEnredo / Ações — O QUÊ acontece\nNarrador — QUEM conta a história',
+     trick:'5 perguntas: QUEM? ONDE? QUANDO? O QUÊ? QUEM CONTA?'},
+    {icon:'🔬',title:'Prefixos e Sufixos',
+     regra:'Prefixo = antes da raiz (muda o sentido). Sufixo = depois da raiz (muda a categoria da palavra).',
+     ex:'Prefixos comuns:\ndes- (negação): des+organizado = desorganizado\nin- (negação): in+feliz = infeliz\nre- (repetição): re+fazer = refazer\n\nSufixos comuns:\n-eiro (profissão): pesc+eiro = pesceiro\n-ção (ação): organiza+ção = organização\n-dade (qualidade): feliz → felicidade',
+     trick:'Prefixo muda o sentido. Sufixo muda a categoria da palavra. PRE + RAIZ + SUF!'},
+    {icon:'📊',title:'Grau do Adjetivo',
+     regra:'O grau indica a intensidade de uma qualidade.',
+     ex:'Normal: alto\n\nComparativo:\nmais alto do que  (superioridade)\ntão alto como  (igualdade)\nmenos alto do que  (inferioridade)\n\nSuperlativo absoluto: altíssimo / muito alto\nSuperlativo relativo: o mais alto da turma',
+     trick:'Superlativo = MÁXIMO. Absoluto = sem comparação. Relativo = comparado com um grupo!'},
+    {icon:'👥',title:'Pronomes',
+     regra:'O pronome substitui ou acompanha o nome para evitar repetições.',
+     ex:'Pessoais: eu · tu · ele/ela · nós · vós · eles/elas\nPossessivos: meu/minha · teu/tua · seu/sua · nosso/nossa\n\nEx: "A Ana foi. Ela chegou cedo."\n(ela substitui "A Ana")',
+     trick:'Pronome = substituto do nome. Pessoal = QUEM é. Possessivo = DE QUEM é!'},
+    {icon:'🔗',title:'Funções Sintáticas',
+     regra:'Cada palavra ou grupo de palavras tem uma função (papel) na frase.',
+     ex:'"O Pedro comeu o peixe."\n↑Sujeito     ↑Predicado\n                   ↑Compl. Direto\n\nSujeito — quem pratica a ação\nPredicado — verbo + complementos\nCompl. Direto — o quê recebe a ação (sem preposição)',
+     trick:'Sujeito = QUEM. Predicado = O QUÊ aconteceu. Compl. Direto = O QUÊ / A QUEM!'},
+    {icon:'⏱️',title:'Conjugação Verbal',
+     regra:'O verbo tem 4 tempos principais do Indicativo: Presente, Imperfeito, Perfeito e Futuro.',
+     ex:'COMER:\nPresente: eu como · tu comes · ele come\nImperfeito: eu comia · tu comias · ele comia\nPerfeito: eu comi · tu comeste · ele comeu\nFuturo: eu comerei · tu comerás · ele comerá',
+     trick:'Presente=agora · Imperfeito=antes contínuo · Perfeito=ação acabada · Futuro=amanhã!'},
+    {icon:'🔀',title:'Frase Simples e Complexa',
+     regra:'Frase simples = 1 oração (1 verbo). Frase complexa = 2+ orações ligadas por conjunção.',
+     ex:'Simples: "O João estudou."\nComplexa: "O João estudou porque tinha exame."\n\nLigadores: que · porque · quando · se · embora · mas · e · ou',
+     trick:'Conta os verbos! 1 verbo = simples. 2+ verbos = complexa. O ligador é a ponte!'},
+    {icon:'🐟',title:'Nomes Coletivos',
+     regra:'Um nome coletivo no singular refere-se a um grupo de seres ou coisas da mesma espécie.',
+     ex:'cardume — grupo de peixes\nrebanho — grupo de ovelhas ou cabras\nmanada — grupo de elefantes ou vacas\nalcateia — grupo de lobos\nfloresta — conjunto de árvores\nfrota — conjunto de barcos',
+     trick:'Aprende aos pares: animal + coletivo. Peixe→cardume · Ovelha→rebanho · Lobo→alcateia!'},
+    {icon:'🔬',title:'Análise Morfológica',
+     regra:'Analisar morfologicamente é identificar a classe gramatical de cada palavra na frase.',
+     ex:'"O peixe fresco nada rapidamente."\no → artigo definido\npeixe → nome (comum, masc., sing.)\nfresco → adjetivo (masc., sing.)\nnada → verbo (pres., 3ª p. sing.)\nrapidamente → advérbio de modo',
+     trick:'COISA=nome · AÇÃO=verbo · DESCREVE=adjetivo · MODIFICA verbo=advérbio · o/a/um/uma=artigo!'},
+    {icon:'♂️',title:'Flexão do Adjetivo — Género',
+     regra:'O adjetivo concorda sempre em género (m/f) e número (sg/pl) com o nome que qualifica.',
+     ex:'bonito → bonita · alto → alta\ngrande → grande (invariável)\nfeliz → feliz (invariável)\ncabo-verdiano → cabo-verdiana\n\nIrregulares importantes:\nbom → boa · mau → má',
+     trick:'O adjetivo "veste" o género do nome. Nome feminino = adjetivo no feminino. Sem exceção!'},
+    {icon:'❓',title:'Tipos e Formas de Frase',
+     regra:'TIPO = intenção (4 tipos). FORMA = afirmativa ou negativa (2 formas).',
+     ex:'TIPOS:\nDeclarativa: "O João estuda." — afirma\nInterrogativa: "O João estuda?" — pergunta\nExclamativa: "Que dedicado!" — emoção\nImperativa: "Estuda agora!" — ordem\n\nFORMAS:\nAfirmativa: "Ele come peixe."\nNegativa: "Ele não come peixe."',
+     trick:'Tipo = o que quero dizer. Forma = tem "não" (negativa) ou não tem "não" (afirmativa)!'},
+    {icon:'📌',title:'Sinais de Pontuação',
+     regra:'Os sinais organizam o texto e indicam pausas, emoções e intenções da frase.',
+     ex:'. ponto final — fim de frase declarativa\n? interrogação — pergunta\n! exclamação — emoção ou ordem\n, vírgula — pausa curta, listas, aposto\n: dois pontos — introduz lista ou discurso direto\n... reticências — ideia incompleta, suspense\n« » aspas — discurso direto (fala de alguém)',
+     trick:'. termina · ? pergunta · ! emoção · , pausa · : apresenta · « » fala direta!'},
+    {icon:'↔️',title:'Sinónimos e Antónimos',
+     regra:'Sinónimos = palavras de sentido parecido. Antónimos = palavras de sentido contrário.',
+     ex:'Sinónimos frequentes:\nbonito = belo = lindo = formoso\nalegre = feliz = contente\nfalar = dizer = narrar = contar\n\nAntónimos frequentes:\nbonito ≠ feio · alegre ≠ triste\nantigo ≠ moderno · rápido ≠ lento',
+     trick:'Sinónimos caminham juntos no mesmo sentido. Antónimos caminham em sentidos opostos!'}
+  ]
+};
+
+function renderGramatica(area){
+  area.innerHTML=`
+    <div style="background:linear-gradient(135deg,#7B2FBE,#a855f7);border-radius:22px;padding:18px;margin-bottom:14px;color:white;text-align:center">
+      <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;margin-bottom:4px">📝 Gramática Portuguesa</div>
+      <div style="font-size:0.82rem;opacity:0.9">1ª à 4ª Classe — guia completo</div>
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px">
+      ${[1,2,3,4].map(y=>`
+        <button id="gram-y${y}" onclick="setGramYear(${y})"
+          style="flex-shrink:0;padding:9px 16px;border-radius:50px;border:2.5px solid ${y===gramYear?'transparent':'#e5e7eb'};background:${y===gramYear?'#7B2FBE':'white'};color:${y===gramYear?'white':'var(--muted)'};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer;transition:all 0.15s">
+          ${y}ª Classe
+        </button>`).join('')}
+    </div>
+    <div id="gram-cards"></div>`;
+  renderGramCards();
+}
+
+function setGramYear(y){
+  gramYear=y;
+  [1,2,3,4].forEach(x=>{
+    const b=document.getElementById('gram-y'+x);
+    if(!b) return;
+    b.style.background=x===y?'#7B2FBE':'white';
+    b.style.color=x===y?'white':'var(--muted)';
+    b.style.borderColor=x===y?'transparent':'#e5e7eb';
+  });
+  renderGramCards();
+}
+
+function renderGramCards(){
+  const cards=GRAM_DATA[gramYear]||[];
+  const el=document.getElementById('gram-cards');
+  if(!el) return;
+  el.innerHTML=`<div class="learn-section">${cards.map(c=>`
+    <div class="lcard" style="border-color:#f3eaff">
+      <h3 style="color:#7B2FBE">${c.icon} ${c.title}</h3>
+      <p>${c.regra.replace(/\n/g,'<br>')}</p>
+      ${c.ex?`<div class="eg por-eg" style="white-space:pre-line;font-size:0.85rem">${c.ex}</div>`:''}
+      ${c.trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${c.trick}</div>`:''}
+    </div>`).join('')}
+    <div style="text-align:center;padding:14px 0 4px;font-size:0.78rem;color:var(--muted)">${cards.length} tópicos · ${gramYear}ª Classe</div>
+  </div>`;
+}
+
+// ═══════════════════════════
+// MAIS — CARREGA DOS JSONs
+// ═══════════════════════════
+function renderMais(area){
+  const col=SUBJ_COLOR[currentSubject];
+  const subjName={mat:'Matemática',por:'Português',cie:'Ciências'}[currentSubject];
+  area.innerHTML=`
+    <div style="background:white;border-radius:22px;padding:22px 18px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0">
+      <div style="font-family:'Fredoka One',cursive;font-size:1.1rem;margin-bottom:6px">📦 Mais conteúdo</div>
+      <div style="font-size:0.85rem;color:var(--muted);margin-bottom:18px">Base de dados extra de ${subjName} — ${currentYear}ª Classe</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <button onclick="loadFromDB('learn')" style="background:${col};color:white;border:none;padding:14px 18px;border-radius:14px;font-family:'Fredoka One',cursive;font-size:0.95rem;cursor:pointer;text-align:left;letter-spacing:0.3px">
+          📚 Mais Aprender
+        </button>
+        <button onclick="loadFromDB('practice')" style="background:${col};color:white;border:none;padding:14px 18px;border-radius:14px;font-family:'Fredoka One',cursive;font-size:0.95rem;cursor:pointer;text-align:left;letter-spacing:0.3px">
+          ✏️ Mais Praticar
+        </button>
+        <button onclick="loadFromDB('desafios')" style="background:${col};color:white;border:none;padding:14px 18px;border-radius:14px;font-family:'Fredoka One',cursive;font-size:0.95rem;cursor:pointer;text-align:left;letter-spacing:0.3px">
+          ⚡ Mais Desafios
+        </button>
+      </div>
+      <div style="margin-top:14px;font-size:0.78rem;color:var(--muted);line-height:1.6">
+        💡 Os ficheiros <strong>matematica.json</strong>, <strong>portugues.json</strong> e <strong>ciencias.json</strong> devem estar na mesma pasta que este app.
+      </div>
+    </div>`;
+}
+
+const DB_VARS={mat:'DB_mat',por:'DB_por',cie:'DB_cie'};
+
+async function loadFromDB(type){
+  const area=document.getElementById('content-area');
+  const col=SUBJ_COLOR[currentSubject];
+
+  try{
+    const db=window[DB_VARS[currentSubject]];
+    if(!db) throw new Error('Ficheiro '+DB_VARS[currentSubject].replace('DB_','')+'*.js* não foi carregado.');
+    const anoData=db.anos&&db.anos.find(a=>a.ano===currentYear);
+    if(!anoData) throw new Error('Ano não encontrado no ficheiro.');
+
+    if(type==='learn'){
+      const cards=anoData.aprender||[];
+      if(!cards.length){area.innerHTML=errBox('Sem cards de Aprender para este ano.',col,type);return;}
+      area.innerHTML=`<div class="learn-section">${cards.map(c=>`
+        <div class="lcard">
+          <h3>${c.icon||'📖'} ${c.title}</h3>
+          <p>${c.body}</p>
+          ${c.example?`<div class="eg ${currentSubject}-eg">${c.example.replace(/\n/g,'<br>')}</div>`:''}
+          ${c.list?`<ul>${c.list.map(i=>`<li>${i}</li>`).join('')}</ul>`:''}
+          ${c.trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${c.trick}</div>`:''}
+        </div>`).join('')}
+        <div style="text-align:center;padding:14px 0 4px;font-size:0.8rem;color:var(--muted)">📦 ${cards.length} conteúdos carregados da base de dados</div>
+      </div>`;
+    } else {
+      const key=type==='practice'?'praticar':'desafios';
+      const qs=anoData[key]||[];
+      if(!qs.length){area.innerHTML=errBox('Sem perguntas de '+key+' para este ano.',col,type);return;}
+      buildQuiz(qs,col,()=>loadFromDB(type));
+    }
+  }catch(e){
+    area.innerHTML=errBox('Não foi possível carregar o ficheiro.<br><small style="font-weight:600">'+e.message+'</small><br><br>Certifica-te de que os ficheiros JSON estão na mesma pasta que o app e que o estás a abrir via servidor (não directo do disco).',col,type);
+  }
+}
+
+function errBox(msg,col,type){
+  return `<div style="background:white;border-radius:20px;padding:24px;text-align:center;box-shadow:var(--shadow);border:2.5px solid #fee2e2">
+    <div style="font-size:2rem;margin-bottom:10px">⚠️</div>
+    <div style="font-size:0.92rem;color:#374151;line-height:1.7;margin-bottom:18px">${msg}</div>
+    <button onclick="loadFromDB('${type}')" style="background:${col};color:white;border:none;padding:12px 24px;border-radius:50px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer">🔄 Tentar de novo</button>
+    <button onclick="setMode('mais')" style="background:#f3f4f6;color:var(--text);border:none;padding:12px 20px;border-radius:50px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;margin-left:8px">← Voltar</button>
+  </div>`;
+}
+
+// INIT
+window.onload=function(){
+  setTimeout(()=>{
+    document.getElementById('splash').style.opacity='0';
+    setTimeout(()=>document.getElementById('splash').style.display='none',500);
+  },1800);
+
+  // Groq key from URL hash: #groq=sk-...
+  const hash = location.hash.slice(1);
+  const groqParam = new URLSearchParams(hash).get('groq');
+  if (groqParam && groqParam.startsWith('sk-')) {
+    localStorage.setItem('cv_api_key', groqParam);
+    history.replaceState(null, '', location.pathname);
+  }
+
+  // Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  }
+};
+</script>
+</body>
+</html>

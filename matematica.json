@@ -1,0 +1,1077 @@
+﻿{
+  "disciplina": "Matemática",
+  "versao": "2.0",
+  "anos": [
+    {
+      "ano": 1,
+      "aprender": [
+        {
+          "icon": "🔢",
+          "title": "Números de 0 a 20",
+          "body": "Aprendemos a contar do 0 ao 20. Cada número tem o seu lugar na reta numérica.",
+          "example": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12... até 20!<br>🐟 Conta os peixes: 1, 2, 3, 4, 5 peixes!",
+          "trick": "Conta nos dedos: 5 dedos de cada mão = 10. Com os dois pés chega ao 20!"
+        },
+        {
+          "icon": "➕",
+          "title": "Somar é juntar!",
+          "body": "Quando somamos, juntamos dois grupos e ficamos com mais.",
+          "example": "🥭🥭 + 🥭🥭🥭 = 🥭🥭🥭🥭🥭<br>2 + 3 = 5<br>🐟🐟🐟 + 🐟🐟 = 5 peixinhos!",
+          "trick": "Começa sempre no número MAIOR e conta para cima: 3+5, começa no 5 e conta 3: 6, 7, 8!"
+        },
+        {
+          "icon": "➖",
+          "title": "Subtrair é tirar!",
+          "body": "Quando subtraímos, tiramos uma quantidade e ficamos com menos.",
+          "example": "🌴🌴🌴🌴🌴 − 🌴🌴 = 🌴🌴🌴<br>5 − 2 = 3<br>Tinhas 7 mangas, comeste 3. Ficaram 4!",
+          "trick": "Conta para trás! 8-3: começa no 8 e recua 3: 7, 6, 5. Ficaste em 5!"
+        },
+        {
+          "icon": "📏",
+          "title": "Comparar números",
+          "body": "Usamos > (maior que), < (menor que) e = (igual a) para comparar números.",
+          "example": "8 > 5 → oito é MAIOR que cinco<br>3 < 9 → três é MENOR que nove<br>6 = 6 → seis é IGUAL a seis",
+          "trick": "O crocodilo come o MAIOR! O bico > aponta sempre para o número maior!"
+        },
+        {
+          "icon": "🔷",
+          "title": "Formas Geométricas",
+          "body": "As formas estão em todo o lado! Aprende a reconhecê-las nos objetos do dia a dia.",
+          "list": [
+            "⬛ Quadrado — 4 lados iguais (como os azulejos)",
+            "▬ Retângulo — 4 lados, 2 pares iguais (como a porta)",
+            "🔺 Triângulo — 3 lados (como o telhado)",
+            "⚪ Círculo — redondo, sem lados (como o sol)"
+          ],
+          "trick": "TRIângulo = 3 lados. QUADrado = 4 lados iguais. RetÂNGulo = 4 lados (2 pares). Conta os lados!"
+        },
+        {
+          "icon": "📦",
+          "title": "Dezenas e Unidades",
+          "body": "Os números com 2 algarismos têm dezenas (grupos de 10) e unidades (as que sobram).",
+          "example": "15 = 1 dezena + 5 unidades<br>🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 = 1 dezena = 10<br>23 = 2 dezenas + 3 unidades",
+          "trick": "1 dezena = 10 unidades. 3 dezenas = 30 = três grupos de 10!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é o resultado de 3 + 4?",
+          "options": ["7", "5", "8", "6"],
+          "answer": "7",
+          "why": "3 + 4 = 7. Conta nos dedos: 3 dedos mais 4 dedos = 7 dedos!"
+        },
+        {
+          "question": "Qual é o resultado de 8 − 3?",
+          "options": ["5", "4", "6", "3"],
+          "answer": "5",
+          "why": "8 − 3 = 5. Imagina 8 peixinhos, tiras 3, ficam 5!"
+        },
+        {
+          "question": "Que número vem depois do 9?",
+          "options": ["10", "8", "11", "7"],
+          "answer": "10",
+          "why": "A ordem é: ...7, 8, 9, 10! O 10 vem logo a seguir ao 9."
+        },
+        {
+          "question": "Qual é o maior número?",
+          "options": ["15", "9", "12", "7"],
+          "answer": "15",
+          "why": "O 15 é o maior! Na reta dos números, chegamos ao 15 por último: 7, 9, 12, 15."
+        },
+        {
+          "question": "Quantos lados tem um triângulo?",
+          "options": ["3", "4", "2", "5"],
+          "answer": "3",
+          "why": "TRI-ângulo! TRI significa 3. Um triângulo tem sempre 3 lados e 3 cantos."
+        },
+        {
+          "question": "Qual é o resultado de 5 + 5?",
+          "options": ["10", "9", "11", "8"],
+          "answer": "10",
+          "why": "5 + 5 = 10. Conta nos dois lados das mãos: 5 dedos + 5 dedos = 10!"
+        },
+        {
+          "question": "Que forma é completamente redonda e não tem lados?",
+          "options": ["Círculo", "Quadrado", "Triângulo", "Retângulo"],
+          "answer": "Círculo",
+          "why": "O círculo é completamente redondo, sem lados nem cantos. Como o sol ou uma laranja vista de frente!"
+        },
+        {
+          "question": "6 − 2 = ?",
+          "options": ["4", "3", "5", "2"],
+          "answer": "4",
+          "why": "6 − 2 = 4. Começa no 6 e conta para trás 2 vezes: 6... 5... 4!"
+        },
+        {
+          "question": "Qual destes números é o menor?",
+          "options": ["3", "8", "6", "5"],
+          "answer": "3",
+          "why": "O 3 é o menor! Na reta dos números: 1, 2, 3, 4, 5... O 3 aparece primeiro!"
+        },
+        {
+          "question": "2 + 7 = ?",
+          "options": ["9", "8", "10", "6"],
+          "answer": "9",
+          "why": "2 + 7 = 9. Começa no 7 (o maior) e conta mais 2: 7... 8... 9!"
+        },
+        {
+          "question": "Quantos lados tem um quadrado?",
+          "options": ["4", "3", "5", "6"],
+          "answer": "4",
+          "why": "Um quadrado tem 4 lados IGUAIS e 4 cantos iguais. Como os azulejos da casa de banho!"
+        },
+        {
+          "question": "10 − 4 = ?",
+          "options": ["6", "5", "7", "4"],
+          "answer": "6",
+          "why": "10 − 4 = 6. Podes pensar: 4 + ? = 10. A resposta é 6!"
+        },
+        {
+          "question": "Qual é o número que fica entre 7 e 9?",
+          "options": ["8", "6", "10", "5"],
+          "answer": "8",
+          "why": "Na sequência 7, 8, 9 — o número do meio é o 8!"
+        },
+        {
+          "question": "5 + 0 = ?",
+          "options": ["5", "0", "10", "1"],
+          "answer": "5",
+          "why": "Qualquer número somado com 0 fica igual! 5 + 0 = 5."
+        },
+        {
+          "question": "Um retângulo tem quantos lados?",
+          "options": ["4", "3", "5", "2"],
+          "answer": "4",
+          "why": "O retângulo tem 4 lados: 2 lados compridos e 2 lados curtos. Como a porta da tua escola!"
+        },
+        {
+          "question": "A bola está dentro da caixa. Onde está a bola?",
+          "options": ["Dentro da caixa", "Em cima da caixa", "Fora da caixa", "Atrás da caixa"],
+          "answer": "Dentro da caixa",
+          "why": "Dentro significa que a bola está no interior da caixa — está lá dentro!"
+        },
+        {
+          "question": "O livro está em cima da mesa. Onde está o livro?",
+          "options": ["Em cima da mesa", "Debaixo da mesa", "Dentro da mesa", "À frente da mesa"],
+          "answer": "Em cima da mesa",
+          "why": "Em cima significa que o livro está numa posição mais alta do que a mesa — está pousado sobre ela!"
+        },
+        {
+          "question": "A Ana está à direita do João. Qual é a posição da Ana?",
+          "options": ["À direita do João", "À esquerda do João", "À frente do João", "Atrás do João"],
+          "answer": "À direita do João",
+          "why": "À direita é o lado onde escrevemos! A Ana está do lado direito do João."
+        },
+        {
+          "question": "O gato está atrás do sofá. Onde está o gato?",
+          "options": ["Atrás do sofá", "À frente do sofá", "Em cima do sofá", "Dentro do sofá"],
+          "answer": "Atrás do sofá",
+          "why": "Atrás significa que o gato está na parte de trás do sofá — do lado das costas!"
+        },
+        {
+          "question": "A Rosa está entre o Paulo e a Marta. O que significa 'entre'?",
+          "options": ["Está no meio dos dois", "Está à frente dos dois", "Está atrás dos dois", "Está longe dos dois"],
+          "answer": "Está no meio dos dois",
+          "why": "Entre significa que a Rosa está no meio — tem o Paulo de um lado e a Marta do outro!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Joana tem 4 mangas e o pai deu-lhe mais 5. Quantas mangas tem agora?",
+          "options": ["9", "8", "7", "10"],
+          "answer": "9",
+          "why": "4 + 5 = 9 mangas. Juntamos as que já tinha com as que o pai deu!"
+        },
+        {
+          "question": "Havia 10 peixinhos numa poça. Fugiram 3. Quantos ficaram?",
+          "options": ["7", "6", "8", "5"],
+          "answer": "7",
+          "why": "10 − 3 = 7 peixinhos ficaram na poça."
+        },
+        {
+          "question": "Qual sequência está em ordem crescente (do menor para o maior)?",
+          "options": ["2, 5, 8, 11", "8, 5, 2, 11", "5, 2, 11, 8", "11, 8, 5, 2"],
+          "answer": "2, 5, 8, 11",
+          "why": "Crescente = vai aumentando! 2, 5, 8, 11 vai sempre subindo."
+        },
+        {
+          "question": "Uma classe tem 8 meninas e 6 meninos. Quantas crianças há no total?",
+          "options": ["14", "12", "16", "13"],
+          "answer": "14",
+          "why": "8 + 6 = 14 crianças. Somamos meninas e meninos!"
+        },
+        {
+          "question": "Que número está representado por 1 dezena e 4 unidades?",
+          "options": ["14", "41", "4", "10"],
+          "answer": "14",
+          "why": "1 dezena = 10, mais 4 unidades = 14. Uma dezena é um grupo de dez!"
+        },
+        {
+          "question": "O lápis está entre o caderno e a borracha. O que está à esquerda do lápis?",
+          "options": ["O caderno ou a borracha", "Nada, está vazio", "O lápis mesmo", "O livro"],
+          "answer": "O caderno ou a borracha",
+          "why": "Entre significa que o lápis tem um objeto de cada lado. À esquerda pode estar o caderno ou a borracha!"
+        },
+        {
+          "question": "Na fila da escola: João, Maria, Pedro, Ana. Quem está entre Maria e Ana?",
+          "options": ["Pedro", "João", "Maria", "Ninguém"],
+          "answer": "Pedro",
+          "why": "A ordem é: João, Maria, PEDRO, Ana. O Pedro está entre a Maria e a Ana!"
+        },
+        {
+          "question": "O rato está dentro da caixa. A caixa está em cima da mesa. Onde está o rato?",
+          "options": ["Dentro da caixa que está em cima da mesa", "Em cima da mesa diretamente", "Debaixo da mesa", "Fora da caixa"],
+          "answer": "Dentro da caixa que está em cima da mesa",
+          "why": "O rato está dentro da caixa, e a caixa está em cima da mesa. O rato está em cima da mesa mas dentro da caixa!"
+        },
+        {
+          "question": "Ana está à esquerda de Pedro. Pedro está à esquerda de Zé. Onde está Ana em relação a Zé?",
+          "options": ["À esquerda de Zé", "À direita de Zé", "Entre Pedro e Zé", "À frente de Zé"],
+          "answer": "À esquerda de Zé",
+          "why": "Ordem: Ana — Pedro — Zé. A Ana está à esquerda do Pedro, que está à esquerda do Zé. Logo Ana está à esquerda de Zé!"
+        },
+        {
+          "question": "A escola está à frente da minha casa e o mercado está atrás. O que está mais longe da minha porta da frente?",
+          "options": ["O mercado", "A escola", "Estão à mesma distância", "Não é possível saber"],
+          "answer": "O mercado",
+          "why": "À frente = mais próximo da porta da frente. Atrás = do lado das costas da casa. O mercado está atrás = mais longe da porta da frente!"
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "aprender": [
+        {
+          "icon": "🔢",
+          "title": "Números até 1.000",
+          "body": "Agora trabalhamos com centenas, dezenas e unidades. Cada posição tem um valor diferente.",
+          "example": "357:<br>3 → 300 (3 centenas)<br>5 → 50 (5 dezenas)<br>7 → 7 (7 unidades)<br>357 = 300 + 50 + 7",
+          "trick": "C-D-U: Centenas, Dezenas, Unidades. Em 357: 3 centenas (300) + 5 dezenas (50) + 7 unidades = 357!"
+        },
+        {
+          "icon": "➕",
+          "title": "Adição com transporte",
+          "body": "Quando a soma de uma coluna passa de 9, transportamos 1 para a coluna seguinte!",
+          "example": "   28<br>+ 15<br>──────<br>8+5=13 → escrevemos 3, transportamos 1<br>2+1+1=4<br>Resultado: 43",
+          "trick": "Quando a soma passa de 9, escreve as unidades e transporta 1 para a coluna seguinte!"
+        },
+        {
+          "icon": "✖️",
+          "title": "Multiplicação — somar vezes",
+          "body": "Multiplicar é uma soma repetida, muito mais rápida! Aprendemos as tabuadas do 2, 3, 4 e 5.",
+          "example": "🐟🐟🐟 + 🐟🐟🐟 + 🐟🐟🐟 = 9 peixinhos<br>3 × 3 = 9<br>Tabuada do 2: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20",
+          "trick": "3×4 = 4+4+4 = 12. A multiplicação é uma soma repetida mais rápida!"
+        },
+        {
+          "icon": "📏",
+          "title": "Medidas de comprimento",
+          "body": "Usamos centímetro (cm) e metro (m) para medir comprimentos.",
+          "example": "📏 1 metro = 100 centímetros<br>🖊️ Um lápis tem cerca de 20 cm<br>🚪 Uma porta tem cerca de 2 metros<br>🏫 A largura de uma rua pode ter 6 metros",
+          "trick": "km×1000=m, m×100=cm, cm×10=mm. Para voltar: divide! Grande para pequeno: multiplica!"
+        },
+        {
+          "icon": "🔢",
+          "title": "Números até 200",
+          "body": "Depois do 100 vêm os números com centenas. Cada centena é um grupo de 100 unidades.",
+          "example": "100 = cem<br>110 = cento e dez<br>150 = cento e cinquenta<br>200 = duzentos<br>🍭 10 caixas de 10 rebuçados = 100 rebuçados = 1 centena!",
+          "trick": "100 = 1 centena. 200 = 2 centenas. 300 = 3 centenas. Conta as centenas como unidades só que multiplicadas por 100!"
+        },
+        {
+          "icon": "📊",
+          "title": "Decomposição C-D-U até 400",
+          "body": "Qualquer número até 400 pode ser decomposto em centenas, dezenas e unidades.",
+          "example": "245 = 2 centenas + 4 dezenas + 5 unidades<br>= 200 + 40 + 5<br>302 = 3 centenas + 0 dezenas + 2 unidades<br>= 300 + 0 + 2 = 302",
+          "trick": "C-D-U! Centenas-Dezenas-Unidades. Em 345: o 3 = 300, o 4 = 40, o 5 = 5. Soma tudo: 300+40+5=345!"
+        },
+        {
+          "icon": "🏅",
+          "title": "Números de 400 a 500",
+          "body": "Quatrocentos até quinhentos. O 500 é cinco centenas!",
+          "example": "400 = quatrocentos (4 centenas)<br>450 = quatrocentos e cinquenta<br>499 = quatrocentos e noventa e nove<br>500 = quinhentos (5 centenas)",
+          "trick": "Depois do 499 vem o 500! 5 centenas = quinhentos. Conta: 100, 200, 300, 400, 500 — são 5 centenas!"
+        },
+        {
+          "icon": "📏",
+          "title": "Números Pares e Ímpares",
+          "body": "Números pares acabam em 0, 2, 4, 6, 8. Números ímpares acabam em 1, 3, 5, 7, 9.",
+          "example": "Pares: 100, 102, 150, 200, 348<br>Ímpares: 101, 153, 249, 301, 499<br>🟢 Par = pode ser dividido em 2 partes iguais!",
+          "trick": "Olha só para o ÚLTIMO algarismo! Se termina em 0,2,4,6,8 = PAR. Se termina em 1,3,5,7,9 = ÍMPAR!"
+        },
+        {
+          "icon": "⚖️",
+          "title": "Comparar Números até 500",
+          "body": "Para comparar, olhamos primeiro para as centenas. Se iguais, comparamos dezenas. Se iguais, comparamos unidades.",
+          "example": "348 vs 352:<br>3 centenas = 3 centenas (iguais!)<br>4 dezenas vs 5 dezenas → 4 < 5<br>Portanto: 348 < 352",
+          "trick": "Compara da esquerda para a direita! Centenas primeiro, depois dezenas, depois unidades. O primeiro diferente decide!"
+        },
+        {
+          "icon": "🕐",
+          "title": "As Horas",
+          "body": "O relógio tem ponteiros: o pequeno mostra as horas, o grande os minutos.",
+          "example": "🕒 Ponteiro grande no 12 = horas certas<br>São 3 horas = 3:00<br>São 3 e meia = 3:30<br>São 6 e um quarto = 6:15",
+          "trick": "Ponteiro PEQUENO = horas. Ponteiro GRANDE = minutos. Grande no 6 = e meia (30 min)!"
+        },
+        {
+          "icon": "💰",
+          "title": "Dinheiro — Escudos de Cabo Verde",
+          "body": "A moeda de Cabo Verde é o Escudo (CVE). Usamos $1, $5, $10, $20, $50, $100, $200, $500, $1.000.",
+          "example": "Uma laranja pode custar 10$<br>Um pão custa cerca de 20$<br>$100 + $50 + $20 = $170",
+          "trick": "Para o troco pensa: quanto falta para chegar ao valor pago? Ex: 500$-320$ = quanto falta do 320$ ao 500True"
+        },
+        {
+          "icon": "📊",
+          "title": "Subtração com números maiores",
+          "body": "Subtraímos coluna a coluna. Quando o de cima é menor, pedimos emprestado à coluna seguinte.",
+          "example": "  53<br>- 27<br>──────<br>3 < 7, pedimos: 13 - 7 = 6<br>4 - 2 = 2<br>Resultado: 26",
+          "trick": "Se a unidade de cima é menor, pede emprestado à dezena: a dezena vira 10 unidades extra!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é o valor do algarismo 3 em 350?",
+          "options": ["300", "30", "3", "3.000"],
+          "answer": "300",
+          "why": "No número 350, o 3 está na posição das CENTENAS. 3 centenas = 300!"
+        },
+        {
+          "question": "28 + 15 = ?",
+          "options": ["43", "41", "45", "38"],
+          "answer": "43",
+          "why": "8+5=13, escreve 3 e transporta 1. Depois 2+1+1=4. Resultado: 43!"
+        },
+        {
+          "question": "4 × 3 = ?",
+          "options": ["12", "7", "9", "14"],
+          "answer": "12",
+          "why": "4 × 3 = quatro grupos de 3 = 3+3+3+3 = 12! Ou: 4, 8, 12 na tabuada do 4."
+        },
+        {
+          "question": "1 metro tem quantos centímetros?",
+          "options": ["100 cm", "10 cm", "1.000 cm", "50 cm"],
+          "answer": "100 cm",
+          "why": "1 metro = 100 centímetros. Uma régua grande tem 1 metro!"
+        },
+        {
+          "question": "47 − 23 = ?",
+          "options": ["24", "20", "26", "34"],
+          "answer": "24",
+          "why": "7−3=4 (unidades), 4−2=2 (dezenas). Resultado: 24!"
+        },
+        {
+          "question": "Que horas são quando os dois ponteiros estão no 12?",
+          "options": ["12:00 (meio-dia)", "6:00", "3:00", "9:00"],
+          "answer": "12:00 (meio-dia)",
+          "why": "Quando ambos os ponteiros apontam para o 12, são 12 horas — o meio-dia!"
+        },
+        {
+          "question": "5 × 6 = ?",
+          "options": ["30", "25", "35", "11"],
+          "answer": "30",
+          "why": "5 × 6 = 30. Truque: a tabuada do 5 termina sempre em 0 ou 5! 5, 10, 15, 20, 25, 30."
+        },
+        {
+          "question": "Qual é o número 200 + 40 + 7?",
+          "options": ["247", "274", "427", "472"],
+          "answer": "247",
+          "why": "200 + 40 + 7 = 247. Juntamos: 2 centenas, 4 dezenas e 7 unidades!"
+        },
+        {
+          "question": "3 × 4 = ?",
+          "options": ["12", "7", "10", "15"],
+          "answer": "12",
+          "why": "3 × 4 = 12. Podes pensar: 3 grupos de 4 mangas = 4+4+4 = 12 mangas!"
+        },
+        {
+          "question": "65 − 38 = ?",
+          "options": ["27", "23", "37", "33"],
+          "answer": "27",
+          "why": "5 < 8, pedimos: 15−8=7. 5−1−3=1... espera: 6−1=5, 5−3=2. Resultado: 27!"
+        },
+        {
+          "question": "Mariana tem 150$ e gasta 80$. Quanto sobra?",
+          "options": ["70$", "80$", "60$", "90$"],
+          "answer": "70$",
+          "why": "150 − 80 = 70 escudos. Para verificar: 80 + 70 = 150 ✓"
+        },
+        {
+          "question": "São 4:30. O ponteiro grande dos minutos aponta para o...?",
+          "options": ["6", "12", "3", "9"],
+          "answer": "6",
+          "why": "Quando são e meia (30 minutos), o ponteiro grande aponta para o 6. O ponteiro pequeno fica entre 4 e 5!"
+        },
+        {
+          "question": "2 × 9 = ?",
+          "options": ["18", "16", "20", "14"],
+          "answer": "18",
+          "why": "2 × 9 = 18. Tabuada do 2: 2, 4, 6, 8, 10, 12, 14, 16, 18. A nona é 18!"
+        },
+        {
+          "question": "Qual é o maior número: 543, 435, 354 ou 534?",
+          "options": ["543", "435", "354", "534"],
+          "answer": "543",
+          "why": "Comparamos centenas primeiro: todos têm 5 ou 4 ou 3. O 543 tem mais centenas e dezenas. É o maior!"
+        },
+        {
+          "question": "Uma caixa com 5 mangas. Há 4 caixas. Quantas mangas ao total?",
+          "options": ["20", "15", "25", "9"],
+          "answer": "20",
+          "why": "4 × 5 = 20 mangas. Quatro caixas com 5 em cada = 5+5+5+5 = 20!"
+        },
+        {
+          "question": "Qual é o número 'cento e cinquenta'?",
+          "options": ["150", "105", "510", "501"],
+          "answer": "150",
+          "why": "Cento (100) e cinquenta (50) = 150. Um número com 1 centena, 5 dezenas e 0 unidades!"
+        },
+        {
+          "question": "270 = 2 centenas + ___ dezenas + 0 unidades",
+          "options": ["7", "2", "0", "70"],
+          "answer": "7",
+          "why": "270: o 2 = 2 centenas (200), o 7 = 7 dezenas (70), o 0 = 0 unidades. Tem 7 dezenas!"
+        },
+        {
+          "question": "Qual é o maior número?",
+          "options": ["453", "350", "325", "305"],
+          "answer": "453",
+          "why": "Comparamos centenas: 453 tem 4 centenas, os outros têm 3. 4 > 3, portanto 453 é o maior!"
+        },
+        {
+          "question": "400 + 30 + 5 = ?",
+          "options": ["435", "453", "345", "534"],
+          "answer": "435",
+          "why": "400 (4 centenas) + 30 (3 dezenas) + 5 (5 unidades) = 435. C-D-U: 4-3-5!"
+        },
+        {
+          "question": "O número 308 é par ou ímpar?",
+          "options": ["Par", "Ímpar", "Nem par nem ímpar", "Não sei"],
+          "answer": "Par",
+          "why": "O 308 termina em 8, e o 8 é um número par (0,2,4,6,8 = pares). Por isso 308 é PAR!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "A Carla foi ao mercado com 500$. Gastou 285$. Quanto ficou?",
+          "options": ["215$", "225$", "315$", "185$"],
+          "answer": "215$",
+          "why": "500 − 285 = 215$. Para verificar: 285 + 215 = 500 ✓"
+        },
+        {
+          "question": "A mãe foi ao mercado com 500$. Gastou 235$. Quanto sobrou?",
+          "options": ["265$", "255$", "275$", "250$"],
+          "answer": "265$",
+          "why": "500 − 235 = 265$. Para verificar: 235 + 265 = 500 ✓"
+        },
+        {
+          "question": "Qual sequência está em ordem crescente?",
+          "options": ["120, 210, 300, 412", "300, 210, 120, 412", "412, 300, 210, 120", "120, 300, 210, 412"],
+          "answer": "120, 210, 300, 412",
+          "why": "Crescente = do menor para o maior. 120 < 210 < 300 < 412 — cada número é maior que o anterior!"
+        },
+        {
+          "question": "Num torneio: equipa A marcou 125 pontos, B marcou 251 e C marcou 215. Qual ficou em 2º lugar?",
+          "options": ["Equipa C (215)", "Equipa A (125)", "Equipa B (251)", "Empate"],
+          "answer": "Equipa C (215)",
+          "why": "Ordem: B(251) > C(215) > A(125). O 1º é o B, o 2º é o C (215), o 3º é o A!"
+        },
+        {
+          "question": "Um número tem 3 centenas, 0 dezenas e 7 unidades. Que número é?",
+          "options": ["307", "370", "703", "730"],
+          "answer": "307",
+          "why": "3 centenas = 300, 0 dezenas = 00, 7 unidades = 7. Total: 300 + 0 + 7 = 307!"
+        },
+        {
+          "question": "Há 460 alunos numa escola. Se chegarem mais 35, quantos ficam ao total?",
+          "options": ["495", "485", "465", "500"],
+          "answer": "495",
+          "why": "460 + 35 = 495 alunos. Dezenas: 60+30=90, unidades: 0+5=5. 400+90+5=495!"
+        },
+        {
+          "question": "Há 3 turmas com 28 alunos cada. Quantos alunos há no total?",
+          "options": ["84", "78", "90", "82"],
+          "answer": "84",
+          "why": "3 × 28 = 84. Podemos calcular: 3×20=60 e 3×8=24. Depois 60+24=84!"
+        },
+        {
+          "question": "O Pedro chegou à escola às 7:30. As aulas começam às 8:00. Quantos minutos faltam?",
+          "options": ["30 minutos", "15 minutos", "45 minutos", "1 hora"],
+          "answer": "30 minutos",
+          "why": "De 7:30 para 8:00 são 30 minutos. O Pedro chegou meia hora antes!"
+        },
+        {
+          "question": "Um peixe-espada custa 350$ o quilo. Qual é o custo de 2 quilos?",
+          "options": ["700$", "600$", "750$", "650$"],
+          "answer": "700$",
+          "why": "350 × 2 = 700$. Dois quilos custam o dobro de um quilo!"
+        },
+        {
+          "question": "Qual é o número com 4 centenas, 0 dezenas e 8 unidades?",
+          "options": ["408", "480", "804", "840"],
+          "answer": "408",
+          "why": "4 centenas = 400, 0 dezenas = 0, 8 unidades = 8. Juntos: 408!"
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "aprender": [
+        {
+          "icon": "🔢",
+          "title": "Números até 100.000",
+          "body": "Agora trabalhamos com números muito grandes! Cada posição tem nome especial.",
+          "example": "34.567:<br>3 → 30.000 (dezenas de milhar)<br>4 → 4.000 (unidades de milhar)<br>5 → 500 (centenas)<br>6 → 60 (dezenas)<br>7 → 7 (unidades)",
+          "trick": "Separa em grupos de 3 da direita: 34.567 = 34 mil + 567. Lê os milhares + as centenas!"
+        },
+        {
+          "icon": "✖️",
+          "title": "Tabuadas — do 6 ao 10",
+          "body": "As tabuadas são fundamentais! Pratica todos os dias até saberes de cor.",
+          "example": "Tabuada do 7:<br>7×1=7 · 7×2=14 · 7×3=21 · 7×4=28<br>7×5=35 · 7×6=42 · 7×7=49 · 7×8=56<br>7×9=63 · 7×10=70",
+          "trick": "Tabuada do 9: o 1º algarismo sobe (1,2,3...) e o 2º desce (9,8,7...). 9, 18, 27, 36, 45, 54..."
+        },
+        {
+          "icon": "➗",
+          "title": "Divisão — repartir em partes iguais",
+          "body": "A divisão é o contrário da multiplicação. Dividimos para repartir em partes iguais.",
+          "example": "🐟🐟🐟🐟🐟🐟 ÷ 3 = 🐟🐟 para cada um<br>6 ÷ 3 = 2<br>48 ÷ 6 = 8 (porque 6 × 8 = 48)",
+          "trick": "Divisão é o inverso da multiplicação! 42÷6=? Pergunta: 6×?=42. Usa a tabuada ao contrário!"
+        },
+        {
+          "icon": "📊",
+          "title": "Frações Simples",
+          "body": "Uma fração representa uma parte de um todo. O número de baixo diz em quantas partes; o de cima, quantas temos.",
+          "example": "🍕 Uma pizza dividida em 4 partes:<br>1 fatia = ¼ (um quarto)<br>2 fatias = ²⁄₄ = ½ (metade)<br>3 fatias = ¾ (três quartos)",
+          "trick": "O número de BAIXO = em quantas partes está dividido. O de CIMA = quantas partes tens. 3/4: dividido em 4, tens 3!"
+        },
+        {
+          "icon": "📐",
+          "title": "Ângulos",
+          "body": "Um ângulo é a abertura entre dois lados que se encontram num ponto.",
+          "list": [
+            "🔲 Ângulo reto = 90° (canto de uma folha)",
+            "🔺 Ângulo agudo = menos de 90° (mais fechado)",
+            "🔻 Ângulo obtuso = mais de 90° (mais aberto)",
+            "📏 Ângulo raso = 180° (linha reta)"
+          ],
+          "trick": "Recto = canto de folha (90°). Agudo = mais fechado. Obtuso = mais aberto. Raso = linha recta (180°)!"
+        },
+        {
+          "icon": "💧",
+          "title": "Ciclo da Água — Números na Natureza",
+          "body": "Os números ajudam-nos a compreender a natureza! Temperaturas, quantidades de chuva, distâncias.",
+          "example": "Cabo Verde tem pouca chuva: cerca de 300 mm por ano.<br>A ilha do Fogo tem o pico a 2.829 metros de altitude.<br>Distância Praia — Mindelo: aprox. 220 km.",
+          "trick": "EVA-CON-PRECI: EVAporação (sol) → CONdensação (nuvens) → PRECIpitação (chuva). Ciclo sem fim!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é o valor do algarismo 4 em 34.567?",
+          "options": ["4.000", "400", "40.000", "40"],
+          "answer": "4.000",
+          "why": "Em 34.567, o 4 está na posição das UNIDADES DE MILHAR. 4 × 1.000 = 4.000!"
+        },
+        {
+          "question": "7 × 8 = ?",
+          "options": ["56", "54", "63", "48"],
+          "answer": "56",
+          "why": "7 × 8 = 56. Truque: 7×7=49, depois adiciona mais 7: 49+7=56!"
+        },
+        {
+          "question": "48 ÷ 6 = ?",
+          "options": ["8", "7", "9", "6"],
+          "answer": "8",
+          "why": "48 ÷ 6 = 8. Pensa: 6 × ? = 48. 6×8=48! Ou conta: 6, 12, 18, 24, 30, 36, 42, 48 (8 vezes)!"
+        },
+        {
+          "question": "Que tipo de ângulo tem 90°?",
+          "options": ["Ângulo reto", "Ângulo agudo", "Ângulo obtuso", "Ângulo raso"],
+          "answer": "Ângulo reto",
+          "why": "O ângulo RETO tem exatamente 90°. É como o canto de uma folha de papel ou de uma janela!"
+        },
+        {
+          "question": "¾ de 12 é igual a...?",
+          "options": ["9", "3", "6", "8"],
+          "answer": "9",
+          "why": "Primeiro, ¼ de 12 = 12÷4 = 3. Depois, ¾ = 3 × 3 = 9!"
+        },
+        {
+          "question": "9 × 7 = ?",
+          "options": ["63", "54", "72", "56"],
+          "answer": "63",
+          "why": "9 × 7 = 63. Truque: 9 × 7 = (10 × 7) − 7 = 70 − 7 = 63!"
+        },
+        {
+          "question": "Qual é a metade de 84?",
+          "options": ["42", "40", "44", "48"],
+          "answer": "42",
+          "why": "Metade de 84 = 84 ÷ 2 = 42. Para verificar: 42 + 42 = 84 ✓"
+        },
+        {
+          "question": "Qual ângulo é MENOR que 90°?",
+          "options": ["Agudo", "Reto", "Obtuso", "Raso"],
+          "answer": "Agudo",
+          "why": "O ângulo AGUDO é mais fechado (pequeno) que o reto. Reto=90°, Agudo<90°!"
+        },
+        {
+          "question": "56.000 + 3.000 + 400 + 20 + 7 = ?",
+          "options": ["59.427", "56.427", "59.247", "56.047"],
+          "answer": "59.427",
+          "why": "56.000 + 3.000 = 59.000. Depois 59.000 + 400 + 20 + 7 = 59.427!"
+        },
+        {
+          "question": "72 ÷ 8 = ?",
+          "options": ["9", "8", "7", "10"],
+          "answer": "9",
+          "why": "72 ÷ 8 = 9. Verifica: 8 × 9 = 72 ✓"
+        },
+        {
+          "question": "Qual fração representa a metade?",
+          "options": ["½", "¼", "⅓", "¾"],
+          "answer": "½",
+          "why": "A metade é representada pela fração ½. Metade = dividir em 2 partes iguais e tomar 1!"
+        },
+        {
+          "question": "6 × 9 = ?",
+          "options": ["54", "48", "63", "56"],
+          "answer": "54",
+          "why": "6 × 9 = 54. Truque: 6×10=60, depois tira 6: 60−6=54!"
+        },
+        {
+          "question": "Qual é o número anterior a 10.000?",
+          "options": ["9.999", "9.990", "9.900", "10.001"],
+          "answer": "9.999",
+          "why": "O número anterior a 10.000 é 9.999. 9.999 + 1 = 10.000!"
+        },
+        {
+          "question": "¼ de 20 é igual a...?",
+          "options": ["5", "4", "10", "8"],
+          "answer": "5",
+          "why": "¼ de 20 = 20 ÷ 4 = 5. Dividimos em 4 partes iguais e tomamos 1!"
+        },
+        {
+          "question": "Num triângulo retângulo, um dos ângulos é reto. Os outros dois são...?",
+          "options": ["Agudos", "Obtusos", "Rasos", "Retos"],
+          "answer": "Agudos",
+          "why": "Num triângulo retângulo, um ângulo é reto (90°). Os outros dois são agudos, pois a soma dos 3 ângulos dá 180°!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "Um pescador apanhou 144 peixes em 8 dias, sempre o mesmo número por dia. Quantos peixes apanhou por dia?",
+          "options": ["18", "16", "20", "14"],
+          "answer": "18",
+          "why": "144 ÷ 8 = 18 peixes por dia. Para verificar: 8 × 18 = 144 ✓"
+        },
+        {
+          "question": "Uma turma tem 32 alunos. ¼ são rapazes. Quantas raparigas há?",
+          "options": ["24", "8", "16", "20"],
+          "answer": "24",
+          "why": "¼ de 32 = 8 rapazes. Raparigas = 32 − 8 = 24!"
+        },
+        {
+          "question": "O Pico do Fogo tem 2.829 m. A Serra Malagueta tem 1.394 m. Qual é a diferença de altitude?",
+          "options": ["1.435 m", "1.435 m", "1.535 m", "1.335 m"],
+          "answer": "1.435 m",
+          "why": "2.829 − 1.394 = 1.435 metros de diferença!"
+        },
+        {
+          "question": "Uma caixa tem 9 linhas de 6 ovos cada. Quantos ovos há na caixa?",
+          "options": ["54", "48", "63", "45"],
+          "answer": "54",
+          "why": "9 × 6 = 54 ovos. Ou: 6 linhas de 9 = também 54!"
+        },
+        {
+          "question": "Numa figura, um ângulo tem 45°. Que tipo de ângulo é?",
+          "options": ["Agudo", "Reto", "Obtuso", "Raso"],
+          "answer": "Agudo",
+          "why": "45° é menor que 90°, portanto é um ângulo AGUDO!"
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "aprender": [
+        {
+          "icon": "🔢",
+          "title": "Números até à Centena de Milhar",
+          "body": "Lemos e escrevemos números até 100.000 (cem mil). Cada posição tem valor 10 vezes maior.",
+          "example": "456.789:<br>4 → 400.000 (centenas de milhar)<br>5 → 50.000 (dezenas de milhar)<br>6 → 6.000 (unidades de milhar)<br>7 → 700 · 8 → 80 · 9 → 9",
+          "trick": "Lê em grupos: 456.789 = quatrocentos e cinquenta e seis MIL, setecentos e oitenta e nove!"
+        },
+        {
+          "icon": "🔀",
+          "title": "Números Racionais — Frações e Decimais",
+          "body": "Os números racionais incluem frações e decimais. São partes de um inteiro.",
+          "example": "½ = 0,5 · ¼ = 0,25 · ¾ = 0,75<br>Metade de 100 = 50<br>Um terço de 90 = 30<br>Um quinto de 50 = 10",
+          "trick": "Usa o dinheiro: ½=0,5=50 cêntimos. ¼=0,25=25 cêntimos. ¾=0,75=75 cêntimos!"
+        },
+        {
+          "icon": "🔍",
+          "title": "Múltiplos e Divisores",
+          "body": "Múltiplos são os resultados de uma tabuada. Divisores são os números que dividem exatamente outro.",
+          "example": "Múltiplos de 4: 4, 8, 12, 16, 20, 24...<br>Divisores de 12: 1, 2, 3, 4, 6, 12<br>(todos dividem 12 sem resto)",
+          "trick": "Múltiplos: conta na tabuada (4, 8, 12...). Divisores: quais cabem sem resto? Testa do 1 até à metade!"
+        },
+        {
+          "icon": "📊",
+          "title": "Tabelas e Gráficos — A Moda",
+          "body": "Organizamos dados em tabelas e gráficos. A MODA é o valor que aparece mais vezes.",
+          "example": "Notas: 3, 7, 3, 8, 5, 3, 7<br>O 3 aparece 3 vezes (mais vezes!)<br>MODA = 3<br>Lemos gráficos de barras e pictogramas.",
+          "trick": "Moda = o valor mais popular! Conta quantas vezes cada valor aparece. O que aparecer mais = MODA!"
+        },
+        {
+          "icon": "📐",
+          "title": "Geometria — Polígonos e Círculo",
+          "body": "Polígonos são figuras com lados retos. O círculo tem raio, diâmetro e circunferência.",
+          "list": [
+            "Triângulo: 3 lados e 3 vértices",
+            "Quadrilátero: 4 lados (quadrado, retângulo, losango)",
+            "Pentágono: 5 lados · Hexágono: 6 lados",
+            "Círculo: raio (r) = metade do diâmetro (d)"
+          ],
+          "trick": "O prefixo diz o nº de lados: TRI=3, QUADRI=4, PENTA=5, HEXA=6. Círculo não é polígono (sem lados retos)!"
+        },
+        {
+          "icon": "📦",
+          "title": "Sólidos Geométricos",
+          "body": "Os sólidos têm faces, arestas e vértices. Identificamo-los pela sua planificação.",
+          "list": [
+            "Cubo: 6 faces quadradas, 12 arestas, 8 vértices",
+            "Paralelepípedo: 6 faces retangulares",
+            "Pirâmide: base + faces triangulares",
+            "Cone: base circular + superfície lateral",
+            "Cilindro: 2 bases circulares"
+          ],
+          "trick": "Euler: Faces + Vértices - Arestas = 2. Cubo: 6+8-12=2. Serve para qualquer sólido convexo!"
+        },
+        {
+          "icon": "📏",
+          "title": "Perímetro e Medidas",
+          "body": "Perímetro = soma de todos os lados. Unidades: mm, cm, dm, m, km.",
+          "example": "Retângulo 8 cm × 5 cm:<br>Perímetro = 8+8+5+5 = 26 cm<br>1 km = 1.000 m · 1 m = 100 cm<br>1 cm = 10 mm",
+          "trick": "Perímetro = volta completa! Retângulo: P = 2×(comprimento + largura). Quadrado: P = 4×lado!"
+        },
+        {
+          "icon": "💵",
+          "title": "Dinheiro — Problemas com Escudos",
+          "body": "Resolvemos problemas com a moeda cabo-verdiana. O Escudo (CVE) é dividido em centavos (1$ = 100 centavos).",
+          "example": "Compras: 350$ + 185$ = 535$<br>Troco: 1.000$ − 535$ = 465$<br>Desconto de ½: artigo a 800$ fica a 400$",
+          "trick": "Lê o problema 3 vezes: 1ª entende, 2ª identifica os dados, 3ª escolhe a operação (+ - × ÷)!"
+        }
+      ],
+      "praticar": [
+        {
+          "question": "Qual é o valor do algarismo 5 em 456.789?",
+          "options": ["50.000", "5.000", "500", "5"],
+          "answer": "50.000",
+          "why": "Em 456.789, o 5 está nas DEZENAS DE MILHAR. 5 × 10.000 = 50.000!"
+        },
+        {
+          "question": "Qual é a fração equivalente a ½?",
+          "options": ["²⁄₄", "²⁄₃", "³⁄₄", "¼"],
+          "answer": "²⁄₄",
+          "why": "½ = ²⁄₄ porque multiplicamos numerador e denominador por 2: 1×2=2 e 2×2=4. São iguais!"
+        },
+        {
+          "question": "Um retângulo tem 8 cm e 5 cm. Qual é o seu perímetro?",
+          "options": ["26 cm", "40 cm", "13 cm", "20 cm"],
+          "answer": "26 cm",
+          "why": "Perímetro = 8+8+5+5 = 26 cm! Ou: 2 × (8+5) = 2 × 13 = 26 cm."
+        },
+        {
+          "question": "Qual é a MODA neste conjunto: 3, 7, 3, 8, 5, 3, 7?",
+          "options": ["3", "7", "8", "5"],
+          "answer": "3",
+          "why": "A moda é o valor que aparece MAIS VEZES. O 3 aparece 3 vezes, o 7 aparece 2 vezes. Moda = 3!"
+        },
+        {
+          "question": "1,5 km = quantos metros?",
+          "options": ["1.500 m", "150 m", "15 m", "1.050 m"],
+          "answer": "1.500 m",
+          "why": "1 km = 1.000 m. Então 1,5 km = 1,5 × 1.000 = 1.500 m!"
+        },
+        {
+          "question": "Qual múltiplo de 7 está entre 40 e 50?",
+          "options": ["42", "44", "46", "48"],
+          "answer": "42",
+          "why": "42 ÷ 7 = 6 exato! Para verificar: 7 × 6 = 42 ✓"
+        },
+        {
+          "question": "¼ de 80 = ?",
+          "options": ["20", "40", "10", "25"],
+          "answer": "20",
+          "why": "¼ de 80 = 80 ÷ 4 = 20! Dividir por 4 é calcular um quarto."
+        },
+        {
+          "question": "Um cubo tem quantas faces?",
+          "options": ["6", "4", "8", "12"],
+          "answer": "6",
+          "why": "O cubo tem 6 faces QUADRADAS iguais. Pensa num dado de jogar — tem 6 faces!"
+        },
+        {
+          "question": "Qual é o número ordinal do 5?",
+          "options": ["Quinto", "Cinco", "Quinze", "Quintal"],
+          "answer": "Quinto",
+          "why": "Ordinais dizem a posição: 1º=primeiro, 2º=segundo, 3º=terceiro, 4º=quarto, 5º=quinto!"
+        },
+        {
+          "question": "Os divisores de 12 são?",
+          "options": ["1, 2, 3, 4, 6, 12", "2, 3, 4, 6", "1, 2, 4, 8, 12", "1, 3, 6, 12"],
+          "answer": "1, 2, 3, 4, 6, 12",
+          "why": "Divisores de 12: 12÷1=12✓ 12÷2=6✓ 12÷3=4✓ 12÷4=3✓ 12÷6=2✓ 12÷12=1✓"
+        },
+        {
+          "question": "Retas que nunca se cruzam chamam-se...?",
+          "options": ["Paralelas", "Perpendiculares", "Secantes", "Oblíquas"],
+          "answer": "Paralelas",
+          "why": "Retas PARALELAS nunca se encontram, mantêm sempre a mesma distância. Como os trilhos de um caminho de ferro!"
+        },
+        {
+          "question": "Numa tabela: João=8, Ana=12, Pedro=8, Sara=15. Qual é a MODA?",
+          "options": ["8", "12", "15", "11"],
+          "answer": "8",
+          "why": "A moda é o valor que aparece mais vezes. O 8 aparece 2 vezes (João e Pedro). Moda = 8!"
+        },
+        {
+          "question": "0,25 é igual a que fração?",
+          "options": ["¼", "½", "⅕", "¾"],
+          "answer": "¼",
+          "why": "0,25 = 25/100 = ¼. A quarta parte de 1 é 0,25 ou ¼!"
+        },
+        {
+          "question": "Qual sólido tem apenas superfícies curvas?",
+          "options": ["Esfera", "Cubo", "Pirâmide", "Cone"],
+          "answer": "Esfera",
+          "why": "A ESFERA tem apenas superfície curva, sem faces planas, arestas ou vértices. Como uma bola!"
+        },
+        {
+          "question": "Um hexágono tem quantos lados?",
+          "options": ["6", "5", "7", "8"],
+          "answer": "6",
+          "why": "HEXA = 6 em grego. Um hexágono tem 6 lados e 6 vértices. As colmeias das abelhas têm forma hexagonal!"
+        }
+      ],
+      "desafios": [
+        {
+          "question": "A Maria foi ao mercado com 1.000$. Comprou peixe por 350$ e legumes por 185$. Quanto sobrou?",
+          "options": ["465$", "535$", "475$", "565$"],
+          "answer": "465$",
+          "why": "350$ + 185$ = 535$ gastos. Troco: 1.000$ − 535$ = 465$!"
+        },
+        {
+          "question": "Um retângulo tem área de 48 cm². Se um lado mede 8 cm, qual é o outro lado?",
+          "options": ["6 cm", "5 cm", "7 cm", "4 cm"],
+          "answer": "6 cm",
+          "why": "Área = comprimento × largura. 48 = 8 × ?. 48 ÷ 8 = 6 cm!"
+        },
+        {
+          "question": "Num gráfico de barras: Sal=45, Santiago=30, Fogo=20, Boa Vista=30. Qual é a moda?",
+          "options": ["30", "45", "20", "35"],
+          "answer": "30",
+          "why": "O 30 aparece 2 vezes (Santiago e Boa Vista), os outros aparecem só 1 vez. Moda = 30!"
+        },
+        {
+          "icon": "🔢",
+          "title": "O Milhar",
+          "body": "Depois de 999 vem 1000 — um milhar! A unidade de milhar (UM) é 10 centenas juntas.",
+          "example": "1 milhar = 1000 unidades",
+          "trick": "Mil = 10 × 100. Pensa: 10 pilhas de 100 moedas!"
+        },
+        {
+          "icon": "📍",
+          "title": "Números 1000 até 2000",
+          "body": "Na casa do milhar escrevemos quantos milhares temos. 1000, 1500, 2000...",
+          "example": "1.500 tem 1 milhar e 5 centenas",
+          "trick": "Lê-se esquerda para direita: MILHAR, CENTENA, DEZENA, UNIDADE"
+        },
+        {
+          "icon": "🎯",
+          "title": "Números 2000 até 5000",
+          "body": "Podemos contar até milhares maiores: 2000, 3000, 4000, 5000...",
+          "example": "4.800 = 4 milhares + 8 centenas",
+          "trick": "Cada salto de 1000 é um milhar inteiro!"
+        },
+        {
+          "icon": "🧩",
+          "title": "Decomposição M-C-D-U",
+          "body": "Todo o número grande pode ser dividido em Milhar, Centena, Dezena, Unidade.",
+          "example": "3.742 = 3M + 7C + 4D + 2U",
+          "trick": "Usa 4 casas: _ _ _ _ (milhar, centena, dezena, unidade)"
+        },
+        {
+          "icon": "⚔️",
+          "title": "Comparar Números até 5000",
+          "body": "Para comparar: primeiro vê os milhares, depois centenas, depois dezenas, depois unidades.",
+          "example": "2.500 > 1.999 porque 2 milhares > 1 milhar",
+          "trick": "EVA-CON-PRECI: EVAporação (sol) → CONdensação (arrefece, forma nuvens) → PRECIpitação (chuva). Ciclo sem fim!"
+        },
+        {
+          "question": "Qual é o número logo após 999?",
+          "options": ["1000", "900", "1001", "899"],
+          "answer": "1000",
+          "why": "1000 é um milhar! Vem logo depois de 999."
+        },
+        {
+          "question": "Quantas centenas tem 1 milhar?",
+          "options": ["10", "5", "100", "20"],
+          "answer": "10",
+          "why": "1 milhar = 1000 unidades = 10 centenas (10 × 100 = 1000)"
+        },
+        {
+          "question": "3.500 tem quantos milhares?",
+          "options": ["3", "5", "35", "30"],
+          "answer": "3",
+          "why": "O dígito no lugar do milhar é 3. Logo: 3 milhares!"
+        },
+        {
+          "question": "Qual é a decomposição de 2.346?",
+          "options": ["2M + 3C + 4D + 6U", "2M + 3D + 4C + 6U", "3M + 2C + 4D + 6U", "2M + 4C + 3D + 6U"],
+          "answer": "2M + 3C + 4D + 6U",
+          "why": "2.346: 2 milhares, 3 centenas, 4 dezenas, 6 unidades!"
+        },
+        {
+          "question": "Qual número é maior: 4.200 ou 2.999?",
+          "options": ["4.200", "2.999", "São iguais", "Não dá para saber"],
+          "answer": "4.200",
+          "why": "4.200 tem 4 milhares e 2.999 tem 2 milhares. 4 > 2, logo 4.200 é maior!"
+        },
+        {
+          "question": "O João tem 3.500 moedas. O irmão tem 2.800. Quantas moedas a mais o João tem?",
+          "options": ["700", "600", "800", "500"],
+          "answer": "700",
+          "why": "3.500 − 2.800 = 700 moedas a mais para o João!"
+        },
+        {
+          "question": "Uma escola tem 2.345 alunos em 2024 e 2.567 em 2025. Quantos alunos novos vieram?",
+          "options": ["222", "232", "212", "322"],
+          "answer": "222",
+          "why": "2.567 − 2.345 = 222 alunos novos!"
+        },
+        {
+          "question": "O pai comprou 3 camisolas por 1.250$ cada uma. Quanto gastou no total?",
+          "options": ["3.750$", "3.250$", "3.000$", "3.500$"],
+          "answer": "3.750$",
+          "why": "3 × 1.250$ = 3.750$"
+        },
+        {
+          "question": "Ordena do MENOR para o MAIOR: 2.100 | 1.900 | 2.090 | 1.999",
+          "options": ["1.900 < 1.999 < 2.090 < 2.100", "1.900 < 2.090 < 1.999 < 2.100", "1.999 < 1.900 < 2.100 < 2.090", "2.100 < 2.090 < 1.999 < 1.900"],
+          "answer": "1.900 < 1.999 < 2.090 < 2.100",
+          "why": "Compara milhar primeiro: 1.___ < 2.___. Depois centena: 1.9__ < 1.9__. Depois dezena: 2.0__ < 2.1__"
+        },
+        {
+          "question": "A padaria vendeu 4.567 pães em Março e 3.890 em Abril. No total vendeu quantos?",
+          "options": ["8.457", "8.567", "8.457", "7.457"],
+          "answer": "8.457",
+          "why": "4.567 + 3.890 = 8.457 pães vendidos no total!"
+        },
+        {
+          "icon": "📊",
+          "title": "Números até Dezena de Milhar",
+          "body": "Agora aprendemos números até 10.000! Dezena de Milhar (DM) é 10 × milhar.",
+          "example": "10.000 = 1 dezena de milhar",
+          "trick": "5 casas: DM | M | C | D | U (dezena de milhar, milhar, centena, dezena, unidade)"
+        },
+        {
+          "icon": "🎲",
+          "title": "Leitura de Números Grandes",
+          "body": "Lê-se aos pares: 10.345 = dez mil trezentos e quarenta e cinco.",
+          "example": "5.678 = cinco mil seiscentos e setenta e oito",
+          "trick": "Separa: 10 . 345 (dez mil, trezentos e quarenta e cinco)"
+        },
+        {
+          "icon": "➕",
+          "title": "Adição com Números Grandes",
+          "body": "Soma coluna por coluna, da direita para a esquerda, transportando quando ultrapassar 9.",
+          "example": "4.567 + 3.298 = 7.865",
+          "trick": "Sempre respeita as casas: U+U, D+D, C+C, M+M, DM+DM"
+        },
+        {
+          "icon": "➖",
+          "title": "Subtração com Números Grandes",
+          "body": "Se não conseguir subtrair numa casa, 'empresta' 10 da casa à esquerda.",
+          "example": "5.000 − 1.234 = 3.766",
+          "trick": "Quando não dá: 5000 = 4 milhares + 10 centenas + ..."
+        },
+        {
+          "icon": "🔤",
+          "title": "Numeração Romana até 100",
+          "body": "I=1, V=5, X=10, L=50, C=100. Combina-se! IV=4, IX=9, XL=40, XC=90.",
+          "example": "MCMXC = 1000 + 900 + 90 = 1990",
+          "trick": "Quando um menor vem ANTES dum maior, SUBTRAI: IV = 5−1 = 4"
+        },
+        {
+          "question": "Qual é a leitura correta de 7.234?",
+          "options": ["Sete mil duzentos e trinta e quatro", "Setenta mil duzentos e trinta e quatro", "Sete milhões", "Sete centenas"],
+          "answer": "Sete mil duzentos e trinta e quatro",
+          "why": "7.234 = 7 milhares + 2 centenas + 3 dezenas + 4 unidades"
+        },
+        {
+          "question": "Quanto é 6.789 + 2.345?",
+          "options": ["9.134", "9.234", "8.134", "9.334"],
+          "answer": "9.134",
+          "why": "6.789 + 2.345 = 9.134. Coluna a coluna: 9+5=14, 8+4=12, 7+3=10, 6+2=8"
+        },
+        {
+          "question": "Quanto é 8.500 − 3.250?",
+          "options": ["5.250", "5.350", "5.150", "5.500"],
+          "answer": "5.250",
+          "why": "8.500 − 3.250 = 5.250"
+        },
+        {
+          "question": "Qual número é maior: 9.999 ou 10.000?",
+          "options": ["10.000", "9.999", "São iguais", "Não dá saber"],
+          "answer": "10.000",
+          "why": "10.000 tem uma dezena de milhar (1DM) e 9.999 tem só 9 milhares. 1DM > 9M!"
+        },
+        {
+          "question": "Como se escreve 35 em algarismos romanos?",
+          "options": ["XXXV", "XXVV", "VVV", "XXXVV"],
+          "answer": "XXXV",
+          "why": "XXX = 30, V = 5. 30 + 5 = 35 = XXXV"
+        },
+        {
+          "question": "A loja tinha 5.600 camisetas. Vendeu 2.345. Quantas ficaram?",
+          "options": ["3.255", "3.355", "3.155", "3.455"],
+          "answer": "3.255",
+          "why": "5.600 − 2.345 = 3.255 camisetas ficaram na loja"
+        },
+        {
+          "question": "O João junta 4.567 + 3.456 + 1.234. Qual é o total?",
+          "options": ["9.257", "9.357", "9.157", "9.457"],
+          "answer": "9.257",
+          "why": "4.567 + 3.456 = 8.023; 8.023 + 1.234 = 9.257"
+        },
+        {
+          "question": "Um caminhão transporta 8.500 maçãs. Já entregou 3.250. Quantas faltam?",
+          "options": ["5.250", "5.350", "5.150", "5.450"],
+          "answer": "5.250",
+          "why": "8.500 − 3.250 = 5.250 maçãs ainda para entregar"
+        },
+        {
+          "question": "Qual é a ordem dos números? 8.234 | 8.342 | 8.423 | 8.324",
+          "options": ["8.234 < 8.324 < 8.342 < 8.423", "8.234 < 8.342 < 8.324 < 8.423", "8.423 < 8.342 < 8.324 < 8.234", "8.234 < 8.423 < 8.342 < 8.324"],
+          "answer": "8.234 < 8.324 < 8.342 < 8.423",
+          "why": "Compara casa a casa: 2<3 (centenas), 3<4 (dezenas dentro de 3C), 2<4 (dezenas). Ordem: 234 < 324 < 342 < 423"
+        },
+        {
+          "question": "Escreve o ano 2024 em algarismos romanos.",
+          "options": ["MMXXIV", "MMCDXXIV", "MMXXVI", "MMMXXIV"],
+          "answer": "MMXXIV",
+          "why": "2024 = 2000 + 20 + 4 = MM (2000) + XX (20) + IV (4) = MMXXIV"
+        },
+        {
+          "question": "Uma corda de 3,5 m é cortada em pedaços de 0,5 m cada. Quantos pedaços ficam?",
+          "options": ["7", "6", "8", "5"],
+          "answer": "7",
+          "why": "3,5 ÷ 0,5 = 7 pedaços. Ou: 3,5 m = 350 cm, 0,5 m = 50 cm; 350 ÷ 50 = 7!"
+        },
+        {
+          "question": "O terreno de uma escola tem 45 m de comprimento e 30 m de largura. Qual é o perímetro?",
+          "options": ["150 m", "1.350 m", "75 m", "175 m"],
+          "answer": "150 m",
+          "why": "Perímetro = 2 × (45 + 30) = 2 × 75 = 150 m!"
+        }
+      ]
+    }
+  ]
+}
