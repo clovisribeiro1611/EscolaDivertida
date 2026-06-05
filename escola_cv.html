@@ -1141,6 +1141,7 @@ function setAILevel(lv,col){
 }
 
 let _aiQ=null;
+let _aiHistory=[];
 
 function renderAIQuiz(data,container){
   _aiQ=data;
@@ -1218,6 +1219,8 @@ async function callAI(){
       const raw=data.choices?.[0]?.message?.content||'{}';
       const q=JSON.parse(raw);
       if(q.question&&q.options?.length===4&&q.answer&&q.explanation){
+        _aiHistory.push(q.question);
+        if(_aiHistory.length>8) _aiHistory.shift();
         renderAIQuiz(q,out);
       } else {
         out.innerHTML='⚠️ Resposta em formato inesperado. Tenta outra vez.';

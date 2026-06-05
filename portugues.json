@@ -792,61 +792,6 @@
           "why": "Palavras terminadas em '-is' com acento não mudam no plural: lápis → lápis (igual)!"
         },
         {
-          "question": "Qual é a principal função das orelhas?",
-          "options": [
-            "Ouvir",
-            "Ver",
-            "Cheirar",
-            "Saborear"
-          ],
-          "answer": "Ouvir",
-          "why": "As orelhas são o órgão da audição — ouvem sons!"
-        },
-        {
-          "question": "Quantos sentidos tem o corpo humano?",
-          "options": [
-            "5",
-            "3",
-            "6",
-            "4"
-          ],
-          "answer": "5",
-          "why": "5 sentidos: visão, audição, tato, paladar, olfato!"
-        },
-        {
-          "question": "Qual é um hábito de higiene importante?",
-          "options": [
-            "Lavar mãos",
-            "Não dormir",
-            "Comer muito doce",
-            "Brincar na lama"
-          ],
-          "answer": "Lavar mãos",
-          "why": "Lavar mãos com frequência evita doenças!"
-        },
-        {
-          "question": "Quantas partes principais tem o corpo?",
-          "options": [
-            "3 (cabeça, tronco, membros)",
-            "2",
-            "4",
-            "5"
-          ],
-          "answer": "3 (cabeça, tronco, membros)",
-          "why": "Cabeça + Tronco + Membros (braços e pernas) = 3 partes!"
-        },
-        {
-          "question": "Qual sentido usa a língua?",
-          "options": [
-            "Paladar (saborear)",
-            "Visão",
-            "Audição",
-            "Olfato"
-          ],
-          "answer": "Paladar (saborear)",
-          "why": "A língua permite saborear a comida — é o órgão do paladar!"
-        },
-        {
           "question": "Quando é que geralmente vamos para a escola?",
           "options": [
             "De manhã",
@@ -935,61 +880,6 @@
           ],
           "answer": "Exclamativa",
           "why": "Termina com '!' e expressa admiração/emoção — é uma frase EXCLAMATIVA!"
-        },
-        {
-          "question": "Qual é a diferença entre ossos e músculos?",
-          "options": [
-            "Ossos dão forma, músculos dão movimento",
-            "São a mesma coisa",
-            "Músculos dão forma",
-            "Ossos dão movimento"
-          ],
-          "answer": "Ossos dão forma, músculos dão movimento",
-          "why": "Ossos = estrutura (forma do corpo). Músculos = movimento (levantam braços, correm, pulam)!"
-        },
-        {
-          "question": "Por que é importante lavar as mãos?",
-          "options": [
-            "Para evitar germes e doenças",
-            "Porque sim",
-            "Para brincar",
-            "Porque é obrigatório"
-          ],
-          "answer": "Para evitar germes e doenças",
-          "why": "Mãos limpas = sem germes. Sem germes = corpo saudável e sem infeções!"
-        },
-        {
-          "question": "Se quiseres cheirar uma flor, qual sentido usas?",
-          "options": [
-            "Olfato (nariz)",
-            "Visão",
-            "Tato",
-            "Audição"
-          ],
-          "answer": "Olfato (nariz)",
-          "why": "Cheirar usa o nariz — é o órgão do olfato!"
-        },
-        {
-          "question": "Qual é a melhor forma de cobrir a boca ao tossir?",
-          "options": [
-            "Com o cotovelo ou manga",
-            "Com a mão aberta",
-            "Não cobrir",
-            "Com o lenço no bolso"
-          ],
-          "answer": "Com o cotovelo ou manga",
-          "why": "Cobrir com o cotovelo evita espalhar germes através da mão — é o método mais higiénico!"
-        },
-        {
-          "question": "Quantas vezes por dia devemos escovar os dentes?",
-          "options": [
-            "2 vezes (manhã e noite)",
-            "1 vez",
-            "3 vezes",
-            "Só quando há dor"
-          ],
-          "answer": "2 vezes (manhã e noite)",
-          "why": "Escovar dentes 2x por dia protege contra cáries e doença dos dentes!"
         },
         {
           "question": "Que dia vem a seguir à quarta-feira?",

@@ -715,17 +715,6 @@
           "why": "O PALADAR, com a ajuda da língua, permite-nos sentir os sabores: doce, salgado, ácido e amargo!"
         },
         {
-          "question": "Quantas vezes por dia devemos escovar os dentes?",
-          "options": [
-            "2 a 3 vezes",
-            "1 vez",
-            "5 vezes",
-            "Só de manhã"
-          ],
-          "answer": "2 a 3 vezes",
-          "why": "Devemos escovar os dentes pelo menos 2-3 vezes por dia: de manhã, após o almoço e antes de dormir!"
-        },
-        {
           "question": "Com que lavamos as mãos correctamente?",
           "options": [
             "Água e sabão",
