@@ -1557,6 +1557,19 @@
           "trick": "5 perguntas: QUEM? (personagens) ONDE? (espaço) QUANDO? (tempo) O QUÊ? (ações) QUEM CONTA? (narrador)!"
         },
         {
+          "icon": "🎭",
+          "title": "Texto Poético",
+          "body": "O texto poético expressa sentimentos e emoções através de versos e estrofes. Usa linguagem especial: rima, ritmo e figuras de estilo.",
+          "list": [
+            "Verso — cada linha do poema",
+            "Estrofe — grupo de versos (quadra = 4 versos; dístico = 2 versos)",
+            "Rima — sons iguais no final dos versos (ex: mar / amar)",
+            "Ritmo — musicalidade do poema ao ser lido em voz alta",
+            "Recursos expressivos: comparação, personificação, metáfora"
+          ],
+          "trick": "Poema = VERsos em ESTROfes com RIMA. Lê em voz alta e sentes o ritmo! Em CV: mornas e coladeiras são poesia cantada!"
+        },
+        {
           "icon": "🔍",
           "title": "Análise Morfológica",
           "body": "Analisamos as palavras quanto à sua classe, género, número e grau.",

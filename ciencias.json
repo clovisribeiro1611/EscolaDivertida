@@ -528,41 +528,6 @@
             "🚓 Polícia — para manter a segurança"
           ],
           "trick": "Escola = aprender. Centro de saúde = curar. Câmara = gerir a cidade. Cada instituição tem a sua função!"
-        },
-        {
-          "icon": "👁️",
-          "title": "Os 5 Sentidos",
-          "body": "Temos 5 sentidos que nos permitem conhecer o mundo à nossa volta.",
-          "example": "Visão (olhos) → ver\nAudição (ouvidos) → ouvir\nTacto (pele) → sentir\nOlfacto (nariz) → cheirar\nPaladar (língua) → provar",
-          "trick": "VATOS: Visão, Audição, Tacto, Olfacto, Paladar. 5 sentidos, 5 órgãos!"
-        },
-        {
-          "icon": "👃",
-          "title": "Cuidar dos Sentidos",
-          "body": "Devemos cuidar bem dos nossos órgãos dos sentidos para que funcionem bem.",
-          "example": "Olhos: não esfregar, ler com boa luz\nOuvidos: não meter objectos, evitar ruído alto\nNariz: assoar com lenço\nDentes/língua: escovar bem",
-          "trick": "Cuida dos sentidos como cuidas de um tesouro — sem eles, o mundo fica mais difícil de descobrir!"
-        },
-        {
-          "icon": "🚿",
-          "title": "Higiene Corporal",
-          "body": "A higiene corporal é o conjunto de cuidados que temos com o nosso corpo para nos mantermos limpos e saudáveis.",
-          "example": "Banho diário com água e sabão\nLavar as mãos antes das refeições\nEscovar os dentes após as refeições\nCortar as unhas regularmente",
-          "trick": "Higiene diária = saúde garantida! Micróbios não gostam de sabão e água!"
-        },
-        {
-          "icon": "🦷",
-          "title": "Higiene Oral",
-          "body": "Cuidar dos dentes é muito importante para a nossa saúde e para termos um sorriso bonito.",
-          "example": "Escovar os dentes 2-3 vezes por dia\nUsar fio dentário\nVisitar o dentista regularmente\nEvitar comer muito açúcar",
-          "trick": "Escova os dentes depois de cada refeição. Cáries são bactérias que adoram açúcar e dentes sujos!"
-        },
-        {
-          "icon": "🧼",
-          "title": "Porque é Importante a Higiene",
-          "body": "A higiene previne doenças e nos faz sentir bem. As bactérias e vírus não conseguem sobreviver quando nos mantemos limpos!",
-          "example": "Lavar as mãos mata 99% dos micróbios\nBanho diário previne infecções\nDentes limpos evitam cáries\nUnhas curtas evitam sujidade",
-          "trick": "Sabão + água + fricção = micróbios derrotados! Lava as mãos por pelo menos 20 segundos!"
         }
       ],
       "praticar": [
@@ -941,13 +906,6 @@
           "body": "Cabo Verde tem governantes (Presidente, Primeiro-ministro), câmaras municipais e assembleias para decidir em comum.",
           "example": "🏛️ Presidente = chefe do país<br>📜 Parlamento = faz leis<br>🏢 Câmara municipal = ajuda a ilha<br>👮 Polícia = segurança",
           "trick": "Democracia = todos têm voz! Eleições = decidir juntos!"
-        },
-        {
-          "icon": "🐟",
-          "title": "Cadeias Alimentares e Seres Vivos",
-          "body": "Seres vivos formam cadeias: planta → animal herbívoro → animal carnívoro. Todos dependem uns dos outros!",
-          "example": "🌱 Planta come sol<br>🦗 Gafanhoto come planta<br>🐔 Galinha come gafanhoto<br>🦅 Águia come galinha",
-          "trick": "Cadeia alimentar = 'quem come quem'. Respeita a natureza!"
         },
         {
           "icon": "🧬",
@@ -1411,30 +1369,6 @@
           "trick": "Símbolos = identidade nacional! Respeita-os com orgulho!"
         },
         {
-          "icon": "🌍",
-          "title": "Cabo Verde no Mundo — Continentes e Oceanos",
-          "body": "Existem 5 oceanos e 5 continentes principais. Cabo Verde situa-se no Oceano Atlântico.",
-          "list": [
-            "Continentes: África, Europa, Ásia, América, Oceânia",
-            "Oceanos: Atlântico, Pacífico, Índico, Ártico, Antártico",
-            "Cabo Verde: Oceano Atlântico, próximo da África",
-            "Organizações internacionais: ONU, UA (União Africana), CEDEAO"
-          ],
-          "trick": "5 oceanos: PACÍfico, ATLÂNtico, ÍNdico, ÁRtico, ANTÁRtico. CV está no ATLÂNTICO entre África e América!"
-        },
-        {
-          "icon": "🇨🇻",
-          "title": "Símbolos e Feriados Nacionais",
-          "body": "Cabo Verde tem símbolos que representam a sua identidade e feriados que celebram momentos importantes.",
-          "list": [
-            "🚩 Bandeira: azul, branco, vermelho com 10 estrelas (uma por ilha)",
-            "🎵 Hino Nacional: 'Cântico da Liberdade'",
-            "🗓️ Independência: 5 de Julho de 1975",
-            "🗓️ Feriados: 1 Jan (Ano Novo), 20 Jan (Héros Nacionais), 1 Mai (Trabalhadores), 5 Jul (Independência)"
-          ],
-          "trick": "10 ESTRELAS na bandeira = 10 ilhas! Azul = céu e mar. Branco = paz. Vermelho = esforço do povo!"
-        },
-        {
           "icon": "📜",
           "title": "História de Cabo Verde",
           "body": "Cabo Verde foi descoberto pelos portugueses e habitado a partir de 1462. Tornou-se independente em 1975.",
@@ -1504,39 +1438,11 @@
           "trick": "CO₂ retém calor → Terra aquece → gelo derrete → nível do mar sobe. CV como ilha está em risco!"
         },
         {
-          "icon": "✈️",
-          "title": "Migração: Emigração e Imigração",
-          "body": "Migração é o movimento de pessoas de um lugar para outro. Pode ser dentro do país ou para outro país.",
-          "example": "Emigração: SAIR do país de origem\nImigração: ENTRAR num novo país\nEx: Cabo-verdiano que vai para Portugal = emigrante (em CV) = imigrante (em Portugal)",
-          "trick": "Emigração = saída (E de Exit). Imigração = entrada (I de Into). Lembra pelo E e pelo I!"
-        },
-        {
           "icon": "🌍",
           "title": "A Diáspora Cabo-Verdiana",
           "body": "A diáspora é a comunidade de cabo-verdianos que vive fora do país. Há mais cabo-verdianos fora do que dentro!",
           "example": "Principais destinos: Portugal, EUA, França, Países Baixos\nCausas históricas: seca, fome, desemprego\nHoje: cerca de 500.000 em Cabo Verde e 700.000+ na diáspora",
           "trick": "Diáspora = espalhados pelo mundo mas unidos pela cultura, língua e amor a Cabo Verde!"
-        },
-        {
-          "icon": "🎉",
-          "title": "Feriados Nacionais de Cabo Verde",
-          "body": "Os feriados nacionais são dias de celebração de momentos importantes da história de Cabo Verde.",
-          "example": "1 Janeiro: Ano Novo\n13 Janeiro: Liberdade e Democracia\n20 Janeiro: Heróis Nacionais\n1 Maio: Dia do Trabalhador\n5 Julho: Independência Nacional (1975)",
-          "trick": "5 de Julho é o mais importante — o Dia da Independência, quando Cabo Verde se tornou livre em 1975!"
-        },
-        {
-          "icon": "🚩",
-          "title": "A Bandeira de Cabo Verde",
-          "body": "A bandeira nacional representa a identidade e os valores do povo cabo-verdiano.",
-          "example": "Azul: o oceano e o céu\nBranco: a paz\nVermelho: o esforço do povo\n10 estrelas amarelas: as 10 ilhas",
-          "trick": "Conta as estrelas da bandeira: são 10 — uma por cada ilha de Cabo Verde!"
-        },
-        {
-          "icon": "🎵",
-          "title": "Hino e Brasão Nacional",
-          "body": "O hino e o brasão são símbolos nacionais que representam Cabo Verde.",
-          "example": "Hino: Cântico da Liberdade\nBrasão: prumo (verticalidade), triângulo (unidade), archote (liberdade), estrelas (10 ilhas)",
-          "trick": "Hino = Cântico da LIBERDADE. Liberdade também é o que o 5 de Julho representa!"
         }
       ],
       "praticar": [
