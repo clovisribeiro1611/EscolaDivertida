@@ -1033,9 +1033,15 @@ async function callAI(){
   }
   const yr=currentYear, subj=currentSubject;
   const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
-  const lvLabel={base:'muito simples (para criança de 6-10 anos)',medio:'médio',avancado:'avançado'};
-  const histNote=_aiHistory.length?` Exercícios recentes (NÃO repitas estas perguntas nem estes valores): ${_aiHistory.slice(-5).join(' | ')}`:'';
-  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} sobre "${topic}" para a ${yr}ª classe de Cabo Verde. Usa exemplos cabo-verdianos (ilhas, peixe, escudos, escola).${histNote}`;
+  const lvLabel={base:'base',medio:'médio',avancado:'avançado'};
+  const yearCtx={
+    1:'Aluno de 1ª classe (6-7 anos): usa frases muito curtas, palavras simples de 1-2 sílabas, números até 20, 4 opções com respostas óbvias. Nada de decimais, frações ou conceitos abstratos.',
+    2:'Aluno de 2ª classe (7-8 anos): frases curtas, números até 1000, vocabulário do quotidiano, operações básicas de adição/subtração/multiplicação simples.',
+    3:'Aluno de 3ª classe (8-9 anos): pode incluir multiplicação e divisão, frações simples, sinónimos/antónimos, conceitos de ciências básicos.',
+    4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática básica, conceitos de ciências e história de Cabo Verde.'
+  }[yr];
+  const histNote=_aiHistory.length?` Exercícios recentes (NÃO repitas): ${_aiHistory.slice(-5).join(' | ')}`:'';
+  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} para a ${yr}ª classe de Cabo Verde sobre "${topic}". Contexto: ${yearCtx} Usa exemplos cabo-verdianos (ilhas, peixe, escudos, escola).${histNote}`;
   out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
   if(btn) btn.disabled=true;
   try{

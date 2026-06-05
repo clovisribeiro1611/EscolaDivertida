@@ -1,10 +1,10 @@
-const CACHE = 'escola-cv-v1';
+const CACHE = 'escola-cv-v2';
 const ASSETS = [
   './',
   './index.html',
-  './matematica.js',
-  './portugues.js',
-  './ciencias.js',
+  './matematica.json',
+  './portugues.json',
+  './ciencias.json',
   './manifest.json',
   './icons/icon-192.svg',
   './icons/icon-512.svg',
