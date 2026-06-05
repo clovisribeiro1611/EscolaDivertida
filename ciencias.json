@@ -298,6 +298,17 @@
           ],
           "answer": "Fazer silêncio e ler",
           "why": "A biblioteca é um espaço de leitura e estudo. O silêncio ajuda toda a gente a concentrar-se!"
+        },
+        {
+          "question": "O que fazemos para ficar saudáveis?",
+          "options": [
+            "Lavar as mãos e comer fruta",
+            "Não dormir",
+            "Não beber água",
+            "Ficar sempre dentro de casa"
+          ],
+          "answer": "Lavar as mãos e comer fruta",
+          "why": "Para ter saúde precisamos: lavar as mãos, comer alimentos nutritivos, dormir bem e fazer exercício!"
         }
       ],
       "desafios": [
@@ -1178,6 +1189,28 @@
           ],
           "answer": "Deliberar e fiscalizar a Câmara",
           "why": "A Assembleia Municipal toma decisões (delibera) e fiscaliza o trabalho da Câmara Municipal!"
+        },
+        {
+          "question": "Se não houvesse instituições, o que acontecia?",
+          "options": [
+            "Caos, sem educação, saúde nem segurança",
+            "Nada mudava",
+            "Melhorava tudo",
+            "Ficava igual"
+          ],
+          "answer": "Caos, sem educação, saúde nem segurança",
+          "why": "Instituições organizam a sociedade. Escola, hospital, polícia — sem elas, seria impossível viver em ordem!"
+        },
+        {
+          "question": "Se desaparecessem as plantas, o que acontecia?",
+          "options": [
+            "Toda a cadeia alimentar desapareceria",
+            "Nada acontecia",
+            "Haveria mais comida",
+            "Os animais adaptavam-se"
+          ],
+          "answer": "Toda a cadeia alimentar desapareceria",
+          "why": "Plantas = base da cadeia. Sem produtores, herbívoros morrem, depois carnívoros, e por fim, nós também!"
         }
       ],
       "desafios": [
@@ -1744,6 +1777,116 @@
           ],
           "answer": "Seca e desemprego",
           "why": "A seca frequente e a falta de emprego foram as principais causas da emigração cabo-verdiana ao longo dos séculos!"
+        },
+        {
+          "question": "A pesca pertence a que SECTOR económico?",
+          "options": [
+            "Primário",
+            "Secundário",
+            "Terciário",
+            "Quaternário"
+          ],
+          "answer": "Primário",
+          "why": "O sector **primário** extrai recursos directamente da natureza: agricultura, pesca, pecuária, mineração. A pesca em Cabo Verde é muito importante!"
+        },
+        {
+          "question": "O que é um \"habitat\"?",
+          "options": [
+            "O lugar onde um ser vivo vive",
+            "O alimento do animal",
+            "A família do animal",
+            "O ciclo de vida"
+          ],
+          "answer": "O lugar onde um ser vivo vive",
+          "why": "O **habitat** é o ambiente natural onde um ser vivo vive e encontra tudo que precisa: comida, água, abrigo e condições para se reproduzir."
+        },
+        {
+          "question": "Qual é uma consequência das alterações climáticas?",
+          "options": [
+            "Subida do nível do mar",
+            "Mais chuva em todo o mundo",
+            "Mais animais",
+            "Temperaturas iguais"
+          ],
+          "answer": "Subida do nível do mar",
+          "why": "O aquecimento global derrete o gelo dos polos, fazendo subir o nível do mar. Para Cabo Verde, um país de ilhas, isso é muito preocupante!"
+        },
+        {
+          "question": "\"Morabeza\" é...",
+          "options": [
+            "A hospitalidade cabo-verdiana",
+            "Um prato típico",
+            "Uma dança",
+            "Um festival"
+          ],
+          "answer": "A hospitalidade cabo-verdiana",
+          "why": "**Morabeza** é uma palavra crioula que descreve a gentileza, carinho e hospitalidade do povo cabo-verdiano. É um valor cultural muito especial!"
+        },
+        {
+          "question": "O que é a Morna?",
+          "options": [
+            "Um género musical de Cabo Verde",
+            "Uma dança africana",
+            "Um prato típico",
+            "Um festival"
+          ],
+          "answer": "Um género musical de Cabo Verde",
+          "why": "A **Morna** é o género musical mais famoso de CV, inscrito no Património da Humanidade pela UNESCO em 2019. Cesária Évora era a sua voz mais conhecida!"
+        },
+        {
+          "question": "Em que ano foi a independência de Cabo Verde?",
+          "options": [
+            "1975",
+            "1960",
+            "1980",
+            "1492"
+          ],
+          "answer": "1975",
+          "why": "Cabo Verde tornou-se independente de Portugal no dia **5 de Julho de 1975**. É o nosso Dia da Independência!"
+        },
+        {
+          "question": "Qual é um DIREITO das crianças?",
+          "options": [
+            "Direito à educação",
+            "Dever de trabalhar",
+            "Dever de governar",
+            "Direito de não estudar"
+          ],
+          "answer": "Direito à educação",
+          "why": "A educação é um **direito fundamental** de todas as crianças, reconhecido pela Convenção das Nações Unidas sobre os Direitos da Criança!"
+        },
+        {
+          "question": "Qual órgão bombeia o sangue no corpo humano?",
+          "options": [
+            "Coração",
+            "Pulmão",
+            "Fígado",
+            "Rim"
+          ],
+          "answer": "Coração",
+          "why": "O **coração** é o órgão central do sistema circulatório. Bate cerca de 70 vezes por minuto e envia sangue para todo o corpo!"
+        },
+        {
+          "question": "A fotossíntese ocorre principalmente em qual parte da planta?",
+          "options": [
+            "Folhas",
+            "Raízes",
+            "Flores",
+            "Frutos"
+          ],
+          "answer": "Folhas",
+          "why": "As **folhas** têm clorofila (cor verde) que capta a luz solar. A planta usa essa energia para transformar água e CO₂ em alimento!"
+        },
+        {
+          "question": "A Cachupa é...",
+          "options": [
+            "O prato nacional de Cabo Verde",
+            "Uma dança da ilha do Fogo",
+            "Um festival de música",
+            "Um instrumento musical"
+          ],
+          "answer": "O prato nacional de Cabo Verde",
+          "why": "A **Cachupa** é o prato mais tradicional de Cabo Verde, feita com milho, feijão e legumes. É a \"alma\" da cozinha cabo-verdiana!"
         }
       ],
       "desafios": [

@@ -370,6 +370,17 @@
           ],
           "answer": "debaixo",
           "why": "Se o livro está por baixo da mesa, dizemos que está DEBAIXO da mesa!"
+        },
+        {
+          "question": "Que forma é redonda e não tem lados?",
+          "options": [
+            "Círculo",
+            "Quadrado",
+            "Triângulo",
+            "Rectângulo"
+          ],
+          "answer": "Círculo",
+          "why": "O círculo é completamente redondo! Não tem lados nem cantos. Como uma laranja de frente."
         }
       ],
       "desafios": [
@@ -917,6 +928,39 @@
           ],
           "answer": "quinto",
           "why": "4º=quarto, 5º=QUINTO, 6º=sexto. Quinto vem de cinco!"
+        },
+        {
+          "question": "Qual é o plural de \"cidadão\"?",
+          "options": [
+            "Cidadãos",
+            "Cidadões",
+            "Cidadãoes",
+            "Cidadão"
+          ],
+          "answer": "Cidadãos",
+          "why": "Palavras terminadas em \"-ão\" geralmente fazem o plural em \"-ãos\": cidadão → **cidadãos**."
+        },
+        {
+          "question": "Qual é o antónimo de \"bonito\"?",
+          "options": [
+            "Feio",
+            "Belo",
+            "Lindo",
+            "Grande"
+          ],
+          "answer": "Feio",
+          "why": "Antónimo é a palavra com sentido CONTRÁRIO. Bonito ↔ **feio**!"
+        },
+        {
+          "question": "Qual animal é DOMÉSTICO?",
+          "options": [
+            "Galinha",
+            "Tubarão",
+            "Leão",
+            "Cobra"
+          ],
+          "answer": "Galinha",
+          "why": "A galinha é um animal doméstico! Em Cabo Verde muitas famílias criam galinhas em casa para os ovos e a carne."
         }
       ],
       "desafios": [
@@ -1393,6 +1437,50 @@
           ],
           "answer": "54",
           "why": "6×9=54. A multiplicação é comutativa: 6×9 = 9×6 = 54. Verifica: 5+4=9!"
+        },
+        {
+          "question": "Qual é o sinónimo de \"bonito\"?",
+          "options": [
+            "Belo",
+            "Feio",
+            "Triste",
+            "Pequeno"
+          ],
+          "answer": "Belo",
+          "why": "Sinónimos são palavras com sentido PARECIDO. Bonito e **belo** significam a mesma coisa!"
+        },
+        {
+          "question": "Qual é o verbo no passado de \"comer\"?",
+          "options": [
+            "Comeu",
+            "Come",
+            "Comerá",
+            "Comendo"
+          ],
+          "answer": "Comeu",
+          "why": "\"Comeu\" é o passado perfeito de \"comer\". Presente: come. Passado: **comeu**. Futuro: comerá."
+        },
+        {
+          "question": "A cadeia alimentar começa sempre com...?",
+          "options": [
+            "Uma planta (produtor)",
+            "Um animal feroz",
+            "O sol",
+            "A água"
+          ],
+          "answer": "Uma planta (produtor)",
+          "why": "As plantas são os PRODUTORES — fazem fotossíntese e produzem o seu próprio alimento. Por isso estão sempre no início da cadeia!"
+        },
+        {
+          "question": "Como é que a água vai do mar para o céu?",
+          "options": [
+            "Evaporação",
+            "Precipitação",
+            "Condensação",
+            "Infiltração"
+          ],
+          "answer": "Evaporação",
+          "why": "O Sol aquece a água do mar e ela transforma-se em vapor de água que sobe para o céu — isso é a **evaporação**!"
         }
       ],
       "desafios": [
@@ -1869,6 +1957,138 @@
           ],
           "answer": "2 milhões",
           "why": "Em 2.345.678, o 2 está na classe dos milhões. 2 × 1.000.000 = 2.000.000!"
+        },
+        {
+          "question": "Qual é a fracção equivalente a ½?",
+          "options": [
+            "²⁄₄",
+            "²⁄₃",
+            "³⁄₄",
+            "¼"
+          ],
+          "answer": "²⁄₄",
+          "why": "½ = ²⁄₄ porque multiplicamos cima e baixo por 2: 1×2=2 e 2×2=4. As duas frações representam a mesma quantidade!"
+        },
+        {
+          "question": "Um rectângulo tem 8 cm e 5 cm. Qual é o seu PERÍMETRO?",
+          "options": [
+            "26 cm",
+            "40 cm",
+            "13 cm",
+            "20 cm"
+          ],
+          "answer": "26 cm",
+          "why": "Perímetro = soma de todos os lados = 8+8+5+5 = **26 cm**! Ou: 2 × (8+5) = 2 × 13 = 26 cm."
+        },
+        {
+          "question": "Que ângulo é MENOR que 90°?",
+          "options": [
+            "Agudo",
+            "Recto",
+            "Obtuso",
+            "Raso"
+          ],
+          "answer": "Agudo",
+          "why": "O ângulo AGUDO é mais fechado (pequeno) que o recto. Recto=90°, Agudo menor que 90°, Obtuso maior que 90°, Raso=180°."
+        },
+        {
+          "question": "A Maria foi ao mercado com 500$. Gastou 185$. Quanto sobrou?",
+          "options": [
+            "315$",
+            "285$",
+            "415$",
+            "195$"
+          ],
+          "answer": "315$",
+          "why": "Troco = 500 − 185 = **315$**. Para verificar: 185 + 315 = 500 ✓"
+        },
+        {
+          "question": "Qual é a MODA deste conjunto: 3, 7, 3, 8, 5, 3, 7?",
+          "options": [
+            "3",
+            "7",
+            "8",
+            "5"
+          ],
+          "answer": "3",
+          "why": "A moda é o número que aparece MAIS VEZES. O 3 aparece 3 vezes, o 7 aparece 2 vezes, os outros 1 vez. Moda = **3**!"
+        },
+        {
+          "question": "Múltiplo de 7 entre estes números?",
+          "options": [
+            "42",
+            "44",
+            "46",
+            "48"
+          ],
+          "answer": "42",
+          "why": "42 ÷ 7 = 6 exacto, então 42 é múltiplo de 7! Para verificar: 7 × 6 = **42** ✓"
+        },
+        {
+          "question": "Um sólido com 6 faces quadradas iguais chama-se...",
+          "options": [
+            "Cubo",
+            "Cone",
+            "Pirâmide",
+            "Cilindro"
+          ],
+          "answer": "Cubo",
+          "why": "O CUBO tem 6 faces quadradas IGUAIS, 12 arestas iguais e 8 vértices. Como um dado de jogar!"
+        },
+        {
+          "question": "Qual é um múltiplo de 7?",
+          "options": [
+            "42",
+            "44",
+            "45",
+            "46"
+          ],
+          "answer": "42",
+          "why": "42 ÷ 7 = 6 exacto, sem resto. Para confirmar: 7 × 6 = 42 ✓"
+        },
+        {
+          "question": "O diâmetro de um círculo com raio 4 cm é...?",
+          "options": [
+            "8 cm",
+            "4 cm",
+            "12 cm",
+            "2 cm"
+          ],
+          "answer": "8 cm",
+          "why": "Diâmetro = 2 × raio. 2 × 4 = **8 cm**! O diâmetro passa pelo centro de ponta a ponta."
+        },
+        {
+          "question": "Duas retas que nunca se cruzam chamam-se...",
+          "options": [
+            "Paralelas",
+            "Perpendiculares",
+            "Secantes",
+            "Oblíquas"
+          ],
+          "answer": "Paralelas",
+          "why": "Retas **paralelas** mantêm sempre a mesma distância e nunca se cruzam. Como os trilhos de um comboio!"
+        },
+        {
+          "question": "Como se escreve o ordinal de 10?",
+          "options": [
+            "Décimo",
+            "Decimo",
+            "Dézimo",
+            "Décemos"
+          ],
+          "answer": "Décimo",
+          "why": "10º = **décimo**! Sequência: 7º=sétimo · 8º=oitavo · 9º=nono · 10º=décimo!"
+        },
+        {
+          "question": "0,75 é igual a que fração?",
+          "options": [
+            "¾",
+            "½",
+            "¼",
+            "⅔"
+          ],
+          "answer": "¾",
+          "why": "0,75 = 75/100 = **¾**. Podes verificar: 3 ÷ 4 = 0,75 ✓"
         }
       ],
       "desafios": [

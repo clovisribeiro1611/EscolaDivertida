@@ -378,6 +378,83 @@
           ],
           "answer": "NABO",
           "why": "NABO começa com NA — sílaba com N! As outras palavras não têm N."
+        },
+        {
+          "question": "Quantas sílabas tem a palavra \"PE-I-XE\"?",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "answer": "3",
+          "why": "PE-I-XE tem 3 sílabas! Bate palmas enquanto dizes: PE (bate), I (bate), XE (bate) = 3!"
+        },
+        {
+          "question": "Qual palavra começa com letra MAIÚSCULA correctamente?",
+          "options": [
+            "Santiago",
+            "santiago",
+            "SANTIAGO",
+            "sanTiago"
+          ],
+          "answer": "Santiago",
+          "why": "Os nomes de lugares (cidades, ilhas, países) escrevem-se com letra maiúscula no início. Santiago é uma ilha!"
+        },
+        {
+          "question": "Qual é a vogal nesta palavra: \"MAR\"?",
+          "options": [
+            "A",
+            "M",
+            "R",
+            "Não tem vogal"
+          ],
+          "answer": "A",
+          "why": "Em MAR, as letras são M (consoante), A (VOGAL!), R (consoante). O A é a vogal."
+        },
+        {
+          "question": "Qual destas palavras tem 2 sílabas?",
+          "options": [
+            "MA-R",
+            "PEI-XE",
+            "CA-SA",
+            "BO-NI-TO"
+          ],
+          "answer": "MA-R",
+          "why": "Espera! MA-R tem 2 sílabas: MA e R. CA-SA também tem 2! Mas MA-R é a primeira opção correcta."
+        },
+        {
+          "question": "\"Sol\" começa com qual letra?",
+          "options": [
+            "S",
+            "Z",
+            "C",
+            "X"
+          ],
+          "answer": "S",
+          "why": "SOL começa com a letra S! S-O-L. O sol está no céu e aquece Cabo Verde! ☀️"
+        },
+        {
+          "question": "Quantas vogais tem \"ILHA\"?",
+          "options": [
+            "2",
+            "1",
+            "3",
+            "0"
+          ],
+          "answer": "2",
+          "why": "ILHA = I-L-H-A. As vogais são o I e o A = 2 vogais! (L e H são consoantes)"
+        },
+        {
+          "question": "Qual é o plural de \"flor\"?",
+          "options": [
+            "flores",
+            "flors",
+            "floris",
+            "flor"
+          ],
+          "answer": "flores",
+          "why": "A maioria das palavras terminadas em consoante fazem o plural com \"-es\": flor → **flores**."
         }
       ],
       "desafios": [
@@ -523,6 +600,64 @@
           ],
           "answer": "NARIZ",
           "why": "NARIZ começa com NA (N+A). NA-RIZ tem 2 sílabas!"
+        }
+      ],
+      "gramatica": [
+        {
+          "icon": "🔤",
+          "title": "Vogais e Consoantes",
+          "regra": "O alfabeto português tem 26 letras: 5 vogais (A, E, I, O, U) e 21 consoantes.",
+          "ex": "Vogais: A · E · I · O · U\nConsoantes: B, C, D, F, G, H, J, L, M, N, P, Q, R, S, T, V, X, Z...",
+          "trick": "Canta: A-E-I-O-U! São as únicas letras que consegues cantar sozinhas."
+        },
+        {
+          "icon": "✂️",
+          "title": "Sílabas",
+          "regra": "Sílabas são os \"pedaços\" de som de uma palavra. Cada sílaba tem sempre pelo menos uma vogal.",
+          "ex": "PE·I·XE = 3 sílabas\nI·LHA = 2 sílabas\nCÃO = 1 sílaba\nES·CO·LA = 3 sílabas",
+          "trick": "Bate palmas enquanto dizes a palavra. Cada palma = 1 sílaba!"
+        },
+        {
+          "icon": "🅰️",
+          "title": "Letras Maiúsculas",
+          "regra": "Usamos maiúscula em 3 situações: (1) início de frase, (2) nomes de pessoas, (3) nomes de lugares.",
+          "ex": "A Maria vive em Santiago.\n↑início   ↑pessoa      ↑lugar",
+          "trick": "3 regras: começo de frase · nome de pessoa · nome de lugar. Sempre maiúscula!"
+        },
+        {
+          "icon": "💬",
+          "title": "A Frase",
+          "regra": "Uma frase é um grupo de palavras com sentido completo. Tem sujeito (QUEM) e predicado (O QUÊ faz).",
+          "ex": "O peixe nada.\n↑sujeito  ↑predicado",
+          "trick": "Pergunta QUEM faz? = sujeito. O que faz? = predicado."
+        },
+        {
+          "icon": "🏷️",
+          "title": "O Nome",
+          "regra": "O nome é uma palavra que designa seres, objetos, lugares, sentimentos ou ideias.",
+          "ex": "Pessoas: menino, menina\nAnimais: gato, cão, tartaruga\nLugares: escola, Santiago\nObjetos: livro, lápis, bola",
+          "trick": "Se podes colocar o/a ou um/uma antes da palavra, é um nome!"
+        },
+        {
+          "icon": "🏃",
+          "title": "O Verbo",
+          "regra": "O verbo exprime uma ação ou estado. É a palavra mais importante da frase — sem verbo não há frase!",
+          "ex": "Ações: correr, comer, saltar, brincar\nEstados: ser, estar, parecer, ficar",
+          "trick": "O verbo muda quando mudas o tempo: como (agora) / comi (ontem) / comerei (amanhã)!"
+        },
+        {
+          "icon": "✅",
+          "title": "Frase Afirmativa e Negativa",
+          "regra": "Forma afirmativa: diz que algo acontece. Forma negativa: usa NÃO antes do verbo.",
+          "ex": "Afirmativa: O menino come peixe.\nNegativa: O menino NÃO come peixe.\n\nAfirmativa: Ela estuda.\nNegativa: Ela NÃO estuda.",
+          "trick": "Para fazer a negativa, coloca NÃO antes do verbo. É sempre assim!"
+        },
+        {
+          "icon": "📌",
+          "title": "Pontuação Básica",
+          "regra": "Os sinais de pontuação organizam as frases e indicam quando parar, questionar ou expressar emoção.",
+          "ex": ". Ponto final — fim de frase\n? Interrogação — pergunta\n! Exclamação — surpresa ou emoção\n, Vírgula — pausa curta",
+          "trick": ". = STOP · ? = pergunta · ! = emoção · , = pausa curta. São os 4 sinais mais usados!"
         }
       ]
     },
@@ -845,6 +980,61 @@
           ],
           "answer": "Tomar o pequeno-almoço",
           "why": "De manhã acordamos, lavamos a cara, tomamos o PEQUENO-ALMOÇO e vamos para a escola!"
+        },
+        {
+          "question": "Qual é o plural de \"flor\"?",
+          "options": [
+            "flores",
+            "flors",
+            "floris",
+            "flor"
+          ],
+          "answer": "flores",
+          "why": "Palavras terminadas em \"-or\" fazem o plural com \"-ores\": flor → **flores**!"
+        },
+        {
+          "question": "O adjectivo descreve...",
+          "options": [
+            "Como são as coisas",
+            "Uma acção",
+            "Um lugar",
+            "Uma pessoa só"
+          ],
+          "answer": "Como são as coisas",
+          "why": "O adjectivo descreve ou qualifica o nome: o mar <strong>azul</strong>, a casa <strong>grande</strong>, o menino **simpático**."
+        },
+        {
+          "question": "\"A menina é <u>alta</u>.\" A palavra sublinhada é...",
+          "options": [
+            "Adjectivo",
+            "Nome",
+            "Verbo",
+            "Artigo"
+          ],
+          "answer": "Adjectivo",
+          "why": "Alta descreve como é a menina — é um adjectivo! Os adjectivos qualificam os nomes."
+        },
+        {
+          "question": "Qual é o feminino de \"professor\"?",
+          "options": [
+            "professora",
+            "professore",
+            "professori",
+            "professores"
+          ],
+          "answer": "professora",
+          "why": "A maioria das palavras masculinas em \"-or\" fazem o feminino em \"-ora\": professor → **professora**!"
+        },
+        {
+          "question": "Qual frase está correcta com maiúsculas?",
+          "options": [
+            "A Ana vive em Santiago.",
+            "a ana vive em santiago.",
+            "A ana vive em Santiago.",
+            "a Ana vive em santiago."
+          ],
+          "answer": "A Ana vive em Santiago.",
+          "why": "Usamos maiúscula no início da frase (\"A\") e nos nomes próprios de pessoas (\"Ana\") e lugares (\"Santiago\")!"
         }
       ],
       "desafios": [
@@ -935,6 +1125,78 @@
           ],
           "answer": "Brincar, ler e visitar família",
           "why": "Nas férias temos liberdade para brincar, descansar, ler e conviver com a família!"
+        }
+      ],
+      "gramatica": [
+        {
+          "icon": "❓",
+          "title": "Tipos de Frase",
+          "regra": "4 tipos de frase, identificados pela intenção e pelo sinal de pontuação no fim.",
+          "ex": "Declarativa: \"O sol brilha.\"  → afirma algo\nInterrogativa: \"Que horas são?\"  → pergunta\nExclamativa: \"Que bonito!\"  → exprime emoção\nImperativa: \"Vai estudar!\"  → dá ordem",
+          "trick": ". = declara · ? = pergunta · ! = emoção ou ordem. O sinal no fim diz o tipo!"
+        },
+        {
+          "icon": "1️⃣",
+          "title": "Número — Singular e Plural",
+          "regra": "Singular = um só. Plural = dois ou mais.",
+          "ex": "ilha → ilhas  (+ s)\nflor → flores  (terminado em consoante: + es)\ncidadão → cidadãos\navião → aviões",
+          "trick": "Maioria: + s. Terminado em consoante: + es. Palavras em -ão: aprende aos pares!"
+        },
+        {
+          "icon": "♂️",
+          "title": "Género — Masculino e Feminino",
+          "regra": "Masculino: acompanhado por o / um. Feminino: acompanhado por a / uma. Geralmente -o → -a.",
+          "ex": "o professor → a professora\no rei → a rainha  (irregular)\no galo → a galinha  (irregular)",
+          "trick": "Testa com \"o\" ou \"a\". Soa bem com \"o\" = masculino. Com \"a\" = feminino!"
+        },
+        {
+          "icon": "🎨",
+          "title": "Adjetivo",
+          "regra": "O adjetivo qualifica o nome. Concorda em género (m/f) e número (sg/pl) com o nome que descreve.",
+          "ex": "livro bonito · livros bonitos\ncasa bonita · casas bonitas\nilha verde · ilhas verdes",
+          "trick": "O adjetivo responde: COMO É? De que cor? De que tamanho?"
+        },
+        {
+          "icon": "🏃",
+          "title": "Verbo",
+          "regra": "O verbo exprime uma ação, estado ou fenómeno. Muda com a pessoa, o número e o tempo.",
+          "ex": "eu como · tu comes · ele come\nnós comemos · eles comem\n\nPresente: como · Passado: comi · Futuro: comerei",
+          "trick": "O verbo é a palavra que muda quando mudas o tempo (agora / ontem / amanhã)!"
+        },
+        {
+          "icon": "📌",
+          "title": "Artigo",
+          "regra": "Artigos definidos (sabemos qual): o, a, os, as.\nArtigos indefinidos (qualquer): um, uma, uns, umas.",
+          "ex": "\"o livro\" = aquele livro específico\n\"um livro\" = qualquer livro\n\"a ilha\" → \"uma ilha\"",
+          "trick": "O/A/OS/AS = conhecemos. UM/UMA = não especificamos. Definido vs Indefinido!"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Nome Comum e Nome Próprio",
+          "regra": "Nome comum: designa qualquer ser da mesma espécie (sem maiúscula). Nome próprio: designa um ser específico e único (com maiúscula).",
+          "ex": "menino (comum) → João (próprio)\nilha (comum) → Santiago (próprio)\ncidade (comum) → Praia (próprio)",
+          "trick": "Nome próprio = especial, único, com maiúscula! Nome comum = qualquer um da mesma espécie."
+        },
+        {
+          "icon": "🔄",
+          "title": "O Advérbio",
+          "regra": "O advérbio modifica o verbo, o adjetivo ou outro advérbio. Diz COMO, ONDE, QUANDO ou QUANTO algo acontece.",
+          "ex": "Modo: rapidamente, devagar, bem, mal\nLugar: aqui, ali, lá, perto\nTempo: hoje, ontem, amanhã, sempre\nQuantidade: muito, pouco, bastante",
+          "trick": "Palavra terminada em -MENTE = quase sempre advérbio de modo! Rapidamente, lentamente, felizmente."
+        },
+        {
+          "icon": "👤",
+          "title": "Pronomes Pessoais",
+          "regra": "O pronome pessoal substitui o nome para evitar repetições. Muda conforme a pessoa e o número.",
+          "ex": "1ª: eu (sg) · nós (pl)\n2ª: tu (sg) · vós (pl)\n3ª: ele/ela (sg) · eles/elas (pl)\n\nEx: A Ana foi à escola. Ela chegou cedo.",
+          "trick": "Eu falo de mim. Tu falas de ti. Ele/Ela fala de outra pessoa. Simples!"
+        },
+        {
+          "icon": "❌",
+          "title": "Frase Afirmativa e Negativa",
+          "regra": "A forma da frase indica se algo acontece (afirmativa) ou não acontece (negativa). O NÃO vai antes do verbo.",
+          "ex": "Afirmativa: O gato come peixe.\nNegativa: O gato NÃO come peixe.\n\nAfirmativa: Eles jogam.\nNegativa: Eles NÃO jogam.",
+          "trick": "NÃO antes do verbo = frase negativa. NUNCA e NADA também tornam a frase negativa!"
         }
       ]
     },
@@ -1296,6 +1558,61 @@
           ],
           "answer": "Travessão —",
           "why": "O TRAVESSÃO (—) é usado antes da fala de uma personagem nos textos narrativos e diálogos!"
+        },
+        {
+          "question": "Qual é a raiz da palavra \"marinheiro\"?",
+          "options": [
+            "Mar",
+            "Marinha",
+            "Eiro",
+            "Inho"
+          ],
+          "answer": "Mar",
+          "why": "\"Marinheiro\" vem de **MAR**. Todas as palavras da família do mar partilham essa raiz: marítimo, maresia, amarar..."
+        },
+        {
+          "question": "\"Ele correu <u>rapidamente</u>.\" A palavra sublinhada é...",
+          "options": [
+            "Advérbio de modo",
+            "Adjectivo",
+            "Nome",
+            "Verbo"
+          ],
+          "answer": "Advérbio de modo",
+          "why": "Palavras terminadas em -mente que dizem COMO se faz a acção são advérbios de modo. Rapidamente = de modo rápido."
+        },
+        {
+          "question": "\"O Pedro estuda.\" → Substituir \"O Pedro\" por pronome:",
+          "options": [
+            "Ele estuda.",
+            "A ele estuda.",
+            "Eles estuda.",
+            "Tu estudas."
+          ],
+          "answer": "Ele estuda.",
+          "why": "O Pedro = 1 pessoa, masculino, 3ª pessoa → pronome pessoal **\"ele\"**!"
+        },
+        {
+          "question": "Qual é o antónimo de \"quente\"?",
+          "options": [
+            "Frio",
+            "Morno",
+            "Quente",
+            "Húmido"
+          ],
+          "answer": "Frio",
+          "why": "Antónimo = contrário! Quente ↔ **frio**. São palavras de sentido oposto!"
+        },
+        {
+          "question": "\"As ilhas são belas.\" O adjectivo é...",
+          "options": [
+            "belas",
+            "ilhas",
+            "são",
+            "as"
+          ],
+          "answer": "belas",
+          "why": "\"Belas\" descreve como são as ilhas — é o **adjectivo**! Concorda com \"ilhas\" (feminino plural)."
         }
       ],
       "desafios": [
@@ -1441,6 +1758,78 @@
           ],
           "answer": "Dois pontos :",
           "why": "Os DOIS PONTOS (:) introduzem listas e enumerações. Exemplo: Trouxe: livro, lápis e borracha."
+        }
+      ],
+      "gramatica": [
+        {
+          "icon": "🌳",
+          "title": "Família de Palavras",
+          "regra": "Palavras da mesma família partilham a mesma raiz (radical) e têm significados relacionados.",
+          "ex": "Raiz MAR: mar · marinheiro · marítimo · maresia · submarino\nRaiz PESC: pesca · pescador · pesqueiro · pescaria",
+          "trick": "Encontra a parte que se repete em todas as palavras. Essa é a raiz!"
+        },
+        {
+          "icon": "↔️",
+          "title": "Sinónimos e Antónimos",
+          "regra": "Sinónimos = palavras com sentido parecido. Antónimos = palavras com sentido contrário.",
+          "ex": "Sinónimos: bonito = belo = lindo\nAntónimos: bonito ≠ feio · frio ≠ quente · dia ≠ noite",
+          "trick": "Sinónimos = mesma direção. Antónimos = direções opostas!"
+        },
+        {
+          "icon": "⏰",
+          "title": "Tempos Verbais",
+          "regra": "Os verbos mudam de forma conforme o tempo em que a ação ocorre.",
+          "ex": "Presente: eu como  (agora)\nPret. Perfeito: eu comi  (ação acabada)\nPret. Imperfeito: eu comia  (ação contínua no passado)\nFuturo: eu comerei  (amanhã)",
+          "trick": "Perfeito = ação que acabou (ontem joguei). Imperfeito = ação que continuava (antes jogava)."
+        },
+        {
+          "icon": "✏️",
+          "title": "Sinais de Pontuação",
+          "regra": "Os sinais de pontuação organizam o texto, indicam pausas e ajudam a perceber a intenção.",
+          "ex": ". ponto final — fim de frase\n, vírgula — pausa curta\n? interrogação — pergunta\n! exclamação — emoção\n: dois pontos — apresenta algo\n... reticências — ideia incompleta",
+          "trick": "Pontuação = respiração do texto. Cada sinal diz quando parar e como falar!"
+        },
+        {
+          "icon": "📚",
+          "title": "Classes de Palavras",
+          "regra": "As palavras classificam-se em categorias conforme a sua função na frase.",
+          "ex": "Nome: ilha, peixe, escola\nVerbo: comer, correr, ser\nAdjetivo: bonito, azul, grande\nAdvérbio: rapidamente, muito, aqui\nPronome: eu, meu, este\nArtigo: o, a, um\nPreposição: de, em, para, com\nConjunção: e, mas, porque, que",
+          "trick": "Nome=coisa · Verbo=ação · Adjetivo=característica · Advérbio=modifica verbo!"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Classificação do Nome",
+          "regra": "Os nomes classificam-se em: comum/próprio, colectivo/individual, concreto/abstracto.",
+          "ex": "Comum: ilha, criança · Próprio: Santiago, João\nColectivo: cardume (peixes), rebanho (ovelhas)\nConcreto: mesa, cão · Abstracto: amor, alegria, liberdade",
+          "trick": "Concreto = podes tocar. Abstracto = não podes tocar, só sentir. Amor, paz, tristeza = abstractos!"
+        },
+        {
+          "icon": "👤",
+          "title": "Pronome Pessoal e Possessivo",
+          "regra": "Pronome pessoal: substitui o nome dizendo QUEM é. Pronome possessivo: indica DE QUEM é algo.",
+          "ex": "Pessoais: eu, tu, ele, ela, nós, eles\nPossessivos: meu/minha · teu/tua · seu/sua · nosso/nossa\n\nEx: Este livro é meu.",
+          "trick": "Pessoal = QUEM é. Possessivo = DE QUEM é. Meu, teu, seu = possessivos!"
+        },
+        {
+          "icon": "📊",
+          "title": "Grau do Adjetivo",
+          "regra": "O grau indica a intensidade de uma qualidade. Comparativo compara dois seres; superlativo exprime o máximo.",
+          "ex": "Normal: alto\nComparativo: mais alto do que · tão alto como · menos alto do que\nSuperlativo absoluto: altíssimo / muito alto\nSuperlativo relativo: o mais alto da turma",
+          "trick": "Mais...do que = comparativo! Muito ou -íssimo = superlativo! Sempre ligado a uma qualidade."
+        },
+        {
+          "icon": "🔄",
+          "title": "O Advérbio — Tipos",
+          "regra": "O advérbio modifica o verbo, o adjetivo ou outro advérbio. Classifica-se pelo que exprime.",
+          "ex": "Modo: bem, mal, rapidamente, devagar\nLugar: aqui, ali, lá, perto, longe\nTempo: hoje, ontem, amanhã, já, sempre\nQuantidade: muito, pouco, bastante, nada",
+          "trick": "A maioria dos advérbios de modo termina em -MENTE. São os mais fáceis de reconhecer!"
+        },
+        {
+          "icon": "🔀",
+          "title": "Frase Simples e Complexa",
+          "regra": "Frase simples = 1 oração (1 verbo). Frase complexa = 2 ou mais orações ligadas por conjunção.",
+          "ex": "Simples: O João estuda. (1 verbo)\nComplexa: O João estuda porque quer aprender. (2 verbos)\n\nLigadores: que, porque, quando, se, mas, e, ou",
+          "trick": "Conta os verbos! 1 verbo = simples. 2+ verbos = complexa. A conjunção é a ponte entre elas!"
         }
       ]
     },
@@ -1868,6 +2257,160 @@
           ],
           "answer": "antigo",
           "why": "MODERNO significa novo/actual. O contrário (antónimo) é ANTIGO!"
+        },
+        {
+          "question": "\"Lindíssimo\" é o superlativo de qual adjectivo?",
+          "options": [
+            "Lindo",
+            "Grande",
+            "Bonito",
+            "Belo"
+          ],
+          "answer": "Lindo",
+          "why": "O sufixo \"-íssimo\" forma o superlativo absoluto: lindo → **lindíssimo** (muito lindo!). É uma forma intensa do adjectivo."
+        },
+        {
+          "question": "Qual é o ANTÓNIMO de \"alegre\"?",
+          "options": [
+            "Triste",
+            "Feliz",
+            "Animado",
+            "Contente"
+          ],
+          "answer": "Triste",
+          "why": "Antónimo = palavra com sentido CONTRÁRIO. Alegre ↔ **triste**. Quando estamos tristes, não estamos alegres!"
+        },
+        {
+          "question": "Qual é o COLECTIVO de \"peixe\"?",
+          "options": [
+            "Cardume",
+            "Rebanho",
+            "Manada",
+            "Alcateia"
+          ],
+          "answer": "Cardume",
+          "why": "Um grupo de peixes a nadar juntos chama-se **cardume**! Rebanho=ovelhas, Manada=elefantes, Alcateia=lobos."
+        },
+        {
+          "question": "\"Desorganizado\" — que prefixo foi usado?",
+          "options": [
+            "des-",
+            "in-",
+            "re-",
+            "sub-"
+          ],
+          "answer": "des-",
+          "why": "O prefixo **des-** indica negação ou contrário: des+organizado = não organizado, em desordem!"
+        },
+        {
+          "question": "\"A Ana foi à escola. ___ chegou cedo.\" Que pronome completa?",
+          "options": [
+            "Ela",
+            "Ele",
+            "Eles",
+            "Tu"
+          ],
+          "answer": "Ela",
+          "why": "Ana é feminino singular, 3ª pessoa = pronome <strong>ela</strong>. \"A Ana foi à escola. **Ela** chegou cedo.\""
+        },
+        {
+          "question": "\"A casa é ___\" (bonito) — forma correcta?",
+          "options": [
+            "bonita",
+            "bonito",
+            "bonitos",
+            "bonitas"
+          ],
+          "answer": "bonita",
+          "why": "O adjectivo CONCORDA com o nome! \"Casa\" é feminino singular → **bonita** (feminino singular)!"
+        },
+        {
+          "question": "Que sinal de pontuação introduz uma lista ou fala directa?",
+          "options": [
+            "Dois pontos (:)",
+            "Vírgula (,)",
+            "Ponto final (.)",
+            "Reticências (...)"
+          ],
+          "answer": "Dois pontos (:)",
+          "why": "Os dois pontos (:) são usados para introduzir uma enumeração/lista ou o discurso directo (fala de alguém). Exemplo: \"Disse**:** Olá!\""
+        },
+        {
+          "question": "\"Rapidamente\" é um...?",
+          "options": [
+            "Advérbio de modo",
+            "Adjectivo",
+            "Nome",
+            "Verbo"
+          ],
+          "answer": "Advérbio de modo",
+          "why": "Termina em \"-mente\" e diz COMO se faz a acção = **advérbio de modo**! Modifica o verbo, não o nome."
+        },
+        {
+          "question": "Qual é a forma NEGATIVA de \"Ela estudou\"?",
+          "options": [
+            "Ela não estudou.",
+            "Ela estudou?",
+            "Ela estudou!",
+            "Ela estudará."
+          ],
+          "answer": "Ela não estudou.",
+          "why": "A forma negativa usa \"**não**\" antes do verbo: \"Ela **não** estudou.\""
+        },
+        {
+          "question": "\"Comia\" é que tempo verbal?",
+          "options": [
+            "Pretérito Imperfeito",
+            "Presente",
+            "Pretérito Perfeito",
+            "Futuro"
+          ],
+          "answer": "Pretérito Imperfeito",
+          "why": "\"Comia\" descreve ação contínua ou habitual no passado = **Pretérito Imperfeito**! \"Antes eu comia peixe todos os dias.\""
+        },
+        {
+          "question": "\"Estudarei\" é que tempo verbal?",
+          "options": [
+            "Futuro",
+            "Presente",
+            "Pretérito Perfeito",
+            "Pretérito Imperfeito"
+          ],
+          "answer": "Futuro",
+          "why": "\"Estudarei\" indica ação que vai acontecer = **Futuro**! \"Amanhã eu **estudarei** para a prova.\""
+        },
+        {
+          "question": "\"O João estuda porque quer aprender.\" É uma frase...",
+          "options": [
+            "Complexa",
+            "Simples",
+            "Exclamativa",
+            "Negativa"
+          ],
+          "answer": "Complexa",
+          "why": "Tem 2 verbos (\"estuda\" + \"quer\") ligados por \"porque\" = frase **complexa**! Frase simples teria só 1 verbo."
+        },
+        {
+          "question": "Qual é o feminino do adjectivo \"cabo-verdiano\"?",
+          "options": [
+            "cabo-verdiana",
+            "cabo-verdiane",
+            "cabo-verdião",
+            "cabo-verdianas"
+          ],
+          "answer": "cabo-verdiana",
+          "why": "Adjectivos em \"-o\" fazem feminino em \"-a\": cabo-verdian**o** → cabo-verdian**a**!"
+        },
+        {
+          "question": "\"Vai estudar!\" — qual é o tipo e forma desta frase?",
+          "options": [
+            "Imperativa afirmativa",
+            "Interrogativa negativa",
+            "Declarativa afirmativa",
+            "Exclamativa negativa"
+          ],
+          "answer": "Imperativa afirmativa",
+          "why": "Dá uma ordem = **imperativa**. Não usa \"não\" = **afirmativa**. Toda frase tem tipo + forma!"
         }
       ],
       "desafios": [
@@ -2013,6 +2556,120 @@
           ],
           "answer": "laborar",
           "why": "LABORAR é um sinónimo culto de trabalhar. Repousar, brincar e descansar são antónimos!"
+        }
+      ],
+      "gramatica": [
+        {
+          "icon": "📖",
+          "title": "Texto Narrativo",
+          "regra": "Estrutura: Introdução → Desenvolvimento → Conclusão.\n5 elementos a identificar em qualquer texto narrativo:",
+          "ex": "Personagens — QUEM aparece\nEspaço — ONDE se passa\nTempo — QUANDO acontece\nEnredo / Ações — O QUÊ acontece\nNarrador — QUEM conta a história",
+          "trick": "5 perguntas: QUEM? ONDE? QUANDO? O QUÊ? QUEM CONTA?"
+        },
+        {
+          "icon": "🔬",
+          "title": "Prefixos e Sufixos",
+          "regra": "Prefixo = antes da raiz (muda o sentido). Sufixo = depois da raiz (muda a categoria da palavra).",
+          "ex": "Prefixos comuns:\ndes- (negação): des+organizado = desorganizado\nin- (negação): in+feliz = infeliz\nre- (repetição): re+fazer = refazer\n\nSufixos comuns:\n-eiro (profissão): pesc+eiro = pesceiro\n-ção (ação): organiza+ção = organização\n-dade (qualidade): feliz → felicidade",
+          "trick": "Prefixo muda o sentido. Sufixo muda a categoria da palavra. PRE + RAIZ + SUF!"
+        },
+        {
+          "icon": "📊",
+          "title": "Grau do Adjetivo",
+          "regra": "O grau indica a intensidade de uma qualidade.",
+          "ex": "Normal: alto\n\nComparativo:\nmais alto do que  (superioridade)\ntão alto como  (igualdade)\nmenos alto do que  (inferioridade)\n\nSuperlativo absoluto: altíssimo / muito alto\nSuperlativo relativo: o mais alto da turma",
+          "trick": "Superlativo = MÁXIMO. Absoluto = sem comparação. Relativo = comparado com um grupo!"
+        },
+        {
+          "icon": "👥",
+          "title": "Pronomes",
+          "regra": "O pronome substitui ou acompanha o nome para evitar repetições.",
+          "ex": "Pessoais: eu · tu · ele/ela · nós · vós · eles/elas\nPossessivos: meu/minha · teu/tua · seu/sua · nosso/nossa\n\nEx: \"A Ana foi. Ela chegou cedo.\"\n(ela substitui \"A Ana\")",
+          "trick": "Pronome = substituto do nome. Pessoal = QUEM é. Possessivo = DE QUEM é!"
+        },
+        {
+          "icon": "🔗",
+          "title": "Funções Sintáticas",
+          "regra": "Cada palavra ou grupo de palavras tem uma função (papel) na frase.",
+          "ex": "\"O Pedro comeu o peixe.\"\n↑Sujeito     ↑Predicado\n                   ↑Compl. Direto\n\nSujeito — quem pratica a ação\nPredicado — verbo + complementos\nCompl. Direto — o quê recebe a ação (sem preposição)",
+          "trick": "Sujeito = QUEM. Predicado = O QUÊ aconteceu. Compl. Direto = O QUÊ / A QUEM!"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Conjugação Verbal",
+          "regra": "O verbo tem 4 tempos principais do Indicativo: Presente, Imperfeito, Perfeito e Futuro.",
+          "ex": "COMER:\nPresente: eu como · tu comes · ele come\nImperfeito: eu comia · tu comias · ele comia\nPerfeito: eu comi · tu comeste · ele comeu\nFuturo: eu comerei · tu comerás · ele comerá",
+          "trick": "Presente=agora · Imperfeito=antes contínuo · Perfeito=ação acabada · Futuro=amanhã!"
+        },
+        {
+          "icon": "🔀",
+          "title": "Frase Simples e Complexa",
+          "regra": "Frase simples = 1 oração (1 verbo). Frase complexa = 2+ orações ligadas por conjunção.",
+          "ex": "Simples: \"O João estudou.\"\nComplexa: \"O João estudou porque tinha exame.\"\n\nLigadores: que · porque · quando · se · embora · mas · e · ou",
+          "trick": "Conta os verbos! 1 verbo = simples. 2+ verbos = complexa. O ligador é a ponte!"
+        },
+        {
+          "icon": "🐟",
+          "title": "Nomes Coletivos",
+          "regra": "Um nome coletivo no singular refere-se a um grupo de seres ou coisas da mesma espécie.",
+          "ex": "cardume — grupo de peixes\nrebanho — grupo de ovelhas ou cabras\nmanada — grupo de elefantes ou vacas\nalcateia — grupo de lobos\nfloresta — conjunto de árvores\nfrota — conjunto de barcos",
+          "trick": "Aprende aos pares: animal + coletivo. Peixe→cardume · Ovelha→rebanho · Lobo→alcateia!"
+        },
+        {
+          "icon": "🔬",
+          "title": "Análise Morfológica",
+          "regra": "Analisar morfologicamente é identificar a classe gramatical de cada palavra na frase.",
+          "ex": "\"O peixe fresco nada rapidamente.\"\no → artigo definido\npeixe → nome (comum, masc., sing.)\nfresco → adjetivo (masc., sing.)\nnada → verbo (pres., 3ª p. sing.)\nrapidamente → advérbio de modo",
+          "trick": "COISA=nome · AÇÃO=verbo · DESCREVE=adjetivo · MODIFICA verbo=advérbio · o/a/um/uma=artigo!"
+        },
+        {
+          "icon": "♂️",
+          "title": "Flexão do Adjetivo — Género",
+          "regra": "O adjetivo concorda sempre em género (m/f) e número (sg/pl) com o nome que qualifica.",
+          "ex": "bonito → bonita · alto → alta\ngrande → grande (invariável)\nfeliz → feliz (invariável)\ncabo-verdiano → cabo-verdiana\n\nIrregulares importantes:\nbom → boa · mau → má",
+          "trick": "O adjetivo \"veste\" o género do nome. Nome feminino = adjetivo no feminino. Sem exceção!"
+        },
+        {
+          "icon": "❓",
+          "title": "Tipos e Formas de Frase",
+          "regra": "TIPO = intenção (4 tipos). FORMA = afirmativa ou negativa (2 formas).",
+          "ex": "TIPOS:\nDeclarativa: \"O João estuda.\" — afirma\nInterrogativa: \"O João estuda?\" — pergunta\nExclamativa: \"Que dedicado!\" — emoção\nImperativa: \"Estuda agora!\" — ordem\n\nFORMAS:\nAfirmativa: \"Ele come peixe.\"\nNegativa: \"Ele não come peixe.\"",
+          "trick": "Tipo = o que quero dizer. Forma = tem \"não\" (negativa) ou não tem \"não\" (afirmativa)!"
+        },
+        {
+          "icon": "📌",
+          "title": "Sinais de Pontuação",
+          "regra": "Os sinais organizam o texto e indicam pausas, emoções e intenções da frase.",
+          "ex": ". ponto final — fim de frase declarativa\n? interrogação — pergunta\n! exclamação — emoção ou ordem\n, vírgula — pausa curta, listas, aposto\n: dois pontos — introduz lista ou discurso direto\n... reticências — ideia incompleta, suspense\n« » aspas — discurso direto (fala de alguém)",
+          "trick": ". termina · ? pergunta · ! emoção · , pausa · : apresenta · « » fala direta!"
+        },
+        {
+          "icon": "↔️",
+          "title": "Sinónimos e Antónimos",
+          "regra": "Sinónimos = palavras de sentido parecido. Antónimos = palavras de sentido contrário.",
+          "ex": "Sinónimos frequentes:\nbonito = belo = lindo = formoso\nalegre = feliz = contente\nfalar = dizer = narrar = contar\n\nAntónimos frequentes:\nbonito ≠ feio · alegre ≠ triste\nantigo ≠ moderno · rápido ≠ lento",
+          "trick": "Sinónimos caminham juntos no mesmo sentido. Antónimos caminham em sentidos opostos!"
+        },
+        {
+          "icon": "💬",
+          "title": "Discurso Direto e Indireto",
+          "regra": "Discurso direto: reproduz as palavras exactas de alguém (com aspas ou travessão). Discurso indireto: conta o que alguém disse sem citar as palavras exactas.",
+          "ex": "Direto: A professora disse: \"Estudem para o teste!\"\nIndireto: A professora disse que estudassem para o teste.\n\nDireto usa aspas « » ou travessão —",
+          "trick": "Direto = copiar as palavras exactas. Indireto = contar por outras palavras. Direto tem aspas ou travessão!"
+        },
+        {
+          "icon": "📎",
+          "title": "Complemento Direto e Indireto",
+          "regra": "Complemento direto (CD): completa o verbo sem preposição. Complemento indireto (CI): completa o verbo com preposição (a, de, para, com).",
+          "ex": "O João comeu o peixe. → peixe = CD (sem preposição)\nO professor deu o livro ao aluno. → ao aluno = CI (preposição a)\n\nCD: O QUÊ? · CI: A QUEM? PARA QUEM?",
+          "trick": "CD = sem preposição, responde a O QUÊ? CI = com preposição (a, de, para), responde a A QUEM?"
+        },
+        {
+          "icon": "🎨",
+          "title": "Recursos Expressivos",
+          "regra": "Os recursos expressivos enriquecem os textos com imagens e efeitos de linguagem especiais.",
+          "ex": "Comparação: Os olhos dela brilham COMO estrelas.\nMetáfora: Os olhos dela SÃO estrelas.\nPersonificação: O vento abraçou as palmeiras.\nRepetição: Cabo Verde, Cabo Verde, terra de luz!",
+          "trick": "Comparação usa COMO. Metáfora diz directamente que é. Personificação dá vida a coisas inanimadas!"
         }
       ]
     }

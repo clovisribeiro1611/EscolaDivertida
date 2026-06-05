@@ -902,176 +902,15 @@ function escQ(s){ return (s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
 async function renderPractice(area){
   area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
   await ensureJSON();
-  const htmlQs=getQuestions(currentYear,currentSubject);
   const anoData=getJSONAno(currentSubject,currentYear);
-  const jsonQs=anoData?.praticar||[];
   const col=SUBJ_COLOR[currentSubject];
-  buildQuiz([...htmlQs,...jsonQs],col);
+  buildQuiz(anoData?.praticar||[],col);
 }
 
 // ═══════════════════════════
 // QUESTIONS DATABASE
 // ═══════════════════════════
-function getQuestions(year,subj){
-  const db={
-    1:{
-      mat:[
-        {question:'Qual é o resultado de 3 + 4?',options:['7','5','8','6'],answer:'7',why:'3 + 4 = 7. Podes contar nos dedos: 3 dedos mais 4 dedos = 7 dedos!'},
-        {question:'Qual é o resultado de 8 − 3?',options:['5','4','6','3'],answer:'5',why:'8 − 3 = 5. Imagina 8 peixinhos, tiras 3, ficam 5!'},
-        {question:'Que número vem depois do 9?',options:['10','8','11','7'],answer:'10',why:'A ordem é: ...7, 8, 9, **10**! O 10 vem logo a seguir ao 9.'},
-        {question:'Qual é o maior número?',options:['15','9','12','7'],answer:'15',why:'O 15 é o maior porque quando contamos chegamos a ele por último: 7, 9, 12, 15.'},
-        {question:'Quantos lados tem um triângulo?',options:['3','4','2','5'],answer:'3',why:'TRI-ângulo! "Tri" significa 3. Um triângulo tem sempre 3 lados e 3 cantos (vértices).'},
-        {question:'Qual é o resultado de 5 + 5?',options:['10','9','11','8'],answer:'10',why:'5 + 5 = 10. São dois grupos de 5. Podes contar nos dois lados das mãos!'},
-        {question:'Que forma é redonda e não tem lados?',options:['Círculo','Quadrado','Triângulo','Rectângulo'],answer:'Círculo',why:'O círculo é completamente redondo! Não tem lados nem cantos. Como uma laranja de frente.'},
-        {question:'6 − 2 = ?',options:['4','3','5','2'],answer:'4',why:'6 − 2 = 4. Começa no 6 e conta para trás 2 vezes: 6... 5... 4!'},
-        {question:'Qual destes números é o menor?',options:['3','8','6','5'],answer:'3',why:'O 3 é o menor! Na linha de números: 1, 2, **3**, 4, 5... O 3 aparece primeiro!'},
-        {question:'2 + 7 = ?',options:['9','8','10','6'],answer:'9',why:'2 + 7 = 9. Começa no 7 (maior) e conta mais 2: 7... 8... 9!'},
-        {question:'Quantos lados tem um quadrado?',options:['4','3','5','6'],answer:'4',why:'Um quadrado tem 4 lados iguais e 4 cantos iguais. Como a janela da sala!'},
-        {question:'10 − 4 = ?',options:['6','5','7','4'],answer:'6',why:'10 − 4 = 6. Podes também pensar: "4 + ? = 10". A resposta é 6!'},
-      ],
-      por:[
-        {question:'Qual é uma VOGAL?',options:['A','B','C','D'],answer:'A',why:'As vogais são: A, E, I, O, U. O "A" é a primeira vogal do alfabeto!'},
-        {question:'Quantas sílabas tem a palavra "PE-I-XE"?',options:['3','2','1','4'],answer:'3',why:'PE-I-XE tem 3 sílabas! Bate palmas enquanto dizes: PE (bate), I (bate), XE (bate) = 3!'},
-        {question:'Qual palavra começa com letra MAIÚSCULA correctamente?',options:['Santiago','santiago','SANTIAGO','sanTiago'],answer:'Santiago',why:'Os nomes de lugares (cidades, ilhas, países) escrevem-se com letra maiúscula no início. Santiago é uma ilha!'},
-        {question:'Qual é a vogal nesta palavra: "MAR"?',options:['A','M','R','Não tem vogal'],answer:'A',why:'Em MAR, as letras são M (consoante), A (VOGAL!), R (consoante). O A é a vogal.'},
-        {question:'Qual destas palavras tem 2 sílabas?',options:['MA-R','PEI-XE','CA-SA','BO-NI-TO'],answer:'MA-R',why:'Espera! MA-R tem 2 sílabas: MA e R. CA-SA também tem 2! Mas MA-R é a primeira opção correcta.'},
-        {question:'"Sol" começa com qual letra?',options:['S','Z','C','X'],answer:'S',why:'SOL começa com a letra S! S-O-L. O sol está no céu e aquece Cabo Verde! ☀️'},
-        {question:'Quantas vogais tem "ILHA"?',options:['2','1','3','0'],answer:'2',why:'ILHA = I-L-H-A. As vogais são o I e o A = 2 vogais! (L e H são consoantes)'},
-        {question:'Qual é o plural de "flor"?',options:['flores','flors','floris','flor'],answer:'flores',why:'A maioria das palavras terminadas em consoante fazem o plural com "-es": flor → **flores**.'},
-      ],
-      cie:[
-        {question:'O que vemos no céu durante o DIA?',options:['O Sol','A Lua','As Estrelas','A Chuva'],answer:'O Sol',why:'Durante o dia, o nosso lado da Terra está voltado para o Sol, por isso vemos a sua luz e calor! ☀️'},
-        {question:'Para que serve a água?',options:['Para beber e viver','Só para nadar','Só para cozinhar','Para decoração'],answer:'Para beber e viver',why:'A água é essencial para todos os seres vivos! Bebemos, cozinhamos, nos lavamos e os animais e plantas também precisam.'},
-        {question:'O que as plantas precisam para crescer?',options:['Água, luz e terra','Só água','Só sol','Chuva e vento'],answer:'Água, luz e terra',why:'As plantas precisam de 3 coisas essenciais: água para se alimentar, luz solar para fazer fotossíntese e terra para as raízes.'},
-        {question:'Qual destes é um animal DOMÉSTICO?',options:['Cão','Leão','Tubarão','Cobra'],answer:'Cão',why:'O cão é um animal doméstico porque vive com as pessoas, em casa. Os outros são animais selvagens!'},
-        {question:'O que fazemos para ficar saudáveis?',options:['Lavar as mãos e comer fruta','Não dormir','Não beber água','Ficar sempre dentro de casa'],answer:'Lavar as mãos e comer fruta',why:'Para ter saúde precisamos: lavar as mãos, comer alimentos nutritivos, dormir bem e fazer exercício!'},
-        {question:'O que vemos no céu à NOITE?',options:['A Lua e as Estrelas','O Sol','O Arco-íris','As Nuvens grandes'],answer:'A Lua e as Estrelas',why:'À noite, o nosso lado da Terra está voltado para longe do Sol, então vemos a Lua e as estrelas brilhar! 🌙⭐'},
-      ]
-    },
-    2:{
-      mat:[
-        {question:'Qual é o valor do algarismo 3 em 350?',options:['300','30','3','3000'],answer:'300',why:'No número 350, o 3 está na posição das CENTENAS. Centena = 100, então 3 centenas = 300!'},
-        {question:'28 + 15 = ?',options:['43','41','45','38'],answer:'43',why:'8+5=13, escreve 3 e transporta 1. Depois 2+1+1=4. Resultado: **43**!'},
-        {question:'4 × 3 = ?',options:['12','7','9','14'],answer:'12',why:'4 × 3 = quatro grupos de 3 = 3+3+3+3 = **12**! Ou: 3 grupos de 4 = 4+4+4 = 12!'},
-        {question:'1 metro tem quantos centímetros?',options:['100 cm','10 cm','1000 cm','50 cm'],answer:'100 cm',why:'1 metro = 100 centímetros. Pensa: uma régua grande tem 1 metro = 100 cm!'},
-        {question:'Qual é o plural de "cidadão"?',options:['Cidadãos','Cidadões','Cidadãoes','Cidadão'],answer:'Cidadãos',why:'Palavras terminadas em "-ão" geralmente fazem o plural em "-ãos": cidadão → **cidadãos**.'},
-        {question:'47 − 23 = ?',options:['24','20','26','34'],answer:'24',why:'Subtrai coluna a coluna: 7−3=4 (unidades), 4−2=2 (dezenas). Resultado: **24**!'},
-        {question:'Que horas são quando os dois ponteiros estão no 12?',options:['12:00 (meio-dia)','6:00','3:00','9:00'],answer:'12:00 (meio-dia)',why:'Quando o ponteiro pequeno (horas) e o grande (minutos) estão ambos no 12, são 12 horas — o meio-dia!'},
-        {question:'5 × 6 = ?',options:['30','25','35','11'],answer:'30',why:'5 × 6 = 30. Truque: a tabuada do 5 termina sempre em 0 ou 5! 5, 10, 15, 20, 25, **30**!'},
-        {question:'Qual é o antónimo de "bonito"?',options:['Feio','Belo','Lindo','Grande'],answer:'Feio',why:'Antónimo é a palavra com sentido CONTRÁRIO. Bonito ↔ **feio**!'},
-        {question:'Qual animal é DOMÉSTICO?',options:['Galinha','Tubarão','Leão','Cobra'],answer:'Galinha',why:'A galinha é um animal doméstico! Em Cabo Verde muitas famílias criam galinhas em casa para os ovos e a carne.'},
-      ],
-      por:[
-        {question:'Qual é um tipo de FRASE INTERROGATIVA?',options:['"Como te chamas?"','"O céu é azul."','"Que dia bonito!"','"Vai estudar!"'],answer:'"Como te chamas?"',why:'A frase interrogativa faz uma PERGUNTA e termina com "?". "Como te chamas?" é uma pergunta!'},
-        {question:'Qual é o plural de "flor"?',options:['flores','flors','floris','flor'],answer:'flores',why:'Palavras terminadas em "-or" fazem o plural com "-ores": flor → **flores**!'},
-        {question:'O adjectivo descreve...',options:['Como são as coisas','Uma acção','Um lugar','Uma pessoa só'],answer:'Como são as coisas',why:'O adjectivo descreve ou qualifica o nome: o mar <strong>azul</strong>, a casa <strong>grande</strong>, o menino **simpático**.'},
-        {question:'"A menina é <u>alta</u>." A palavra sublinhada é...',options:['Adjectivo','Nome','Verbo','Artigo'],answer:'Adjectivo',why:'Alta descreve como é a menina — é um adjectivo! Os adjectivos qualificam os nomes.'},
-        {question:'Qual é o feminino de "professor"?',options:['professora','professore','professori','professores'],answer:'professora',why:'A maioria das palavras masculinas em "-or" fazem o feminino em "-ora": professor → **professora**!'},
-        {question:'Qual frase está correcta com maiúsculas?',options:['A Ana vive em Santiago.','a ana vive em santiago.','A ana vive em Santiago.','a Ana vive em santiago.'],answer:'A Ana vive em Santiago.',why:'Usamos maiúscula no início da frase ("A") e nos nomes próprios de pessoas ("Ana") e lugares ("Santiago")!'},
-      ],
-      cie:[
-        {question:'Qual é a capital de Cabo Verde?',options:['Praia','Mindelo','Sal','Assomada'],answer:'Praia',why:'A Praia fica na ilha de Santiago e é a capital — a cidade mais importante — de Cabo Verde! 🏙️'},
-        {question:'Quantas ilhas tem Cabo Verde?',options:['10','8','12','9'],answer:'10',why:'Cabo Verde tem exactamente 10 ilhas, divididas em dois grupos: Barlavento (norte) e Sotavento (sul)!'},
-        {question:'Em Cabo Verde, quando é a época das chuvas?',options:['Agosto a Outubro','Janeiro a Março','Maio a Julho','Novembro a Janeiro'],answer:'Agosto a Outubro',why:'Em Cabo Verde a época das chuvas é de Agosto a Outubro. Em Santiago chama-se "tempo das águas"! 🌧️'},
-        {question:'Qual destes é um animal SELVAGEM de Cabo Verde?',options:['Tartaruga-marinha','Cão','Galinha','Burro'],answer:'Tartaruga-marinha',why:'A tartaruga-marinha é um animal selvagem protegido de Cabo Verde! Vive no mar e põe ovos nas praias. 🐢'},
-        {question:'O que fazemos para ter boa higiene?',options:['Lavar os dentes e as mãos','Não tomar banho','Comer sem lavar as mãos','Dormir muito tarde'],answer:'Lavar os dentes e as mãos',why:'Boa higiene inclui: lavar os dentes 2x por dia, lavar as mãos antes de comer e depois da casa de banho, tomar banho todos os dias!'},
-      ]
-    },
-    3:{
-      mat:[
-        {question:'Qual é o valor do algarismo 4 em 34.567?',options:['4.000','400','40.000','40'],answer:'4.000',why:'No número 34.567, o 4 está na posição das UNIDADES DE MILHAR. Unidades de milhar = 1.000, então 4 × 1.000 = **4.000**!'},
-        {question:'7 × 8 = ?',options:['56','54','63','48'],answer:'56',why:'7 × 8 = **56**. Truque: pensa em 7 × 7 = 49, depois adiciona mais 7: 49 + 7 = 56!'},
-        {question:'48 ÷ 6 = ?',options:['8','7','9','6'],answer:'8',why:'48 ÷ 6 = **8**. Pensa: "6 × ? = 48". 6×8=48! Ou conta: 6, 12, 18, 24, 30, 36, 42, 48 (8 vezes)!'},
-        {question:'Que tipo de ângulo tem 90°?',options:['Recto','Agudo','Obtuso','Raso'],answer:'Recto',why:'O ângulo RECTO tem exactamente 90°. É como o canto de uma folha de papel ou de uma janela! 🔲'},
-        {question:'Qual é o sinónimo de "bonito"?',options:['Belo','Feio','Triste','Pequeno'],answer:'Belo',why:'Sinónimos são palavras com sentido PARECIDO. Bonito e **belo** significam a mesma coisa!'},
-        {question:'¾ de 12 é igual a...?',options:['9','3','6','8'],answer:'9',why:'Primeiro, ¼ de 12 = 12÷4 = 3. Depois, ¾ = 3 × 3 = **9**!'},
-        {question:'Qual é o verbo no passado de "comer"?',options:['Comeu','Come','Comerá','Comendo'],answer:'Comeu',why:'"Comeu" é o passado perfeito de "comer". Presente: come. Passado: **comeu**. Futuro: comerá.'},
-        {question:'A cadeia alimentar começa sempre com...?',options:['Uma planta (produtor)','Um animal feroz','O sol','A água'],answer:'Uma planta (produtor)',why:'As plantas são os PRODUTORES — fazem fotossíntese e produzem o seu próprio alimento. Por isso estão sempre no início da cadeia!'},
-        {question:'Como é que a água vai do mar para o céu?',options:['Evaporação','Precipitação','Condensação','Infiltração'],answer:'Evaporação',why:'O Sol aquece a água do mar e ela transforma-se em vapor de água que sobe para o céu — isso é a **evaporação**!'},
-        {question:'9 × 7 = ?',options:['63','54','72','56'],answer:'63',why:'9 × 7 = **63**. Truque: 9 × 7 = (10 × 7) − 7 = 70 − 7 = 63!'},
-      ],
-      por:[
-        {question:'Qual é a raiz da palavra "marinheiro"?',options:['Mar','Marinha','Eiro','Inho'],answer:'Mar',why:'"Marinheiro" vem de **MAR**. Todas as palavras da família do mar partilham essa raiz: marítimo, maresia, amarar...'},
-        {question:'"Ele correu <u>rapidamente</u>." A palavra sublinhada é...',options:['Advérbio de modo','Adjectivo','Nome','Verbo'],answer:'Advérbio de modo',why:'Palavras terminadas em -mente que dizem COMO se faz a acção são advérbios de modo. Rapidamente = de modo rápido.'},
-        {question:'"O Pedro estuda." → Substituir "O Pedro" por pronome:',options:['Ele estuda.','A ele estuda.','Eles estuda.','Tu estudas.'],answer:'Ele estuda.',why:'O Pedro = 1 pessoa, masculino, 3ª pessoa → pronome pessoal **"ele"**!'},
-        {question:'Qual é o antónimo de "quente"?',options:['Frio','Morno','Quente','Húmido'],answer:'Frio',why:'Antónimo = contrário! Quente ↔ **frio**. São palavras de sentido oposto!'},
-        {question:'Que sinal de pontuação termina uma PERGUNTA?',options:['?','!','.',','],answer:'?',why:'O ponto de interrogação (?) termina sempre as perguntas. Por exemplo: "Como te chamas**?**"'},
-        {question:'"As ilhas são belas." O adjectivo é...',options:['belas','ilhas','são','as'],answer:'belas',why:'"Belas" descreve como são as ilhas — é o **adjectivo**! Concorda com "ilhas" (feminino plural).'},
-      ],
-      cie:[
-        {question:'Qual é a função do Hospital?',options:['Cuidar da saúde','Educar crianças','Vender comida','Fazer leis'],answer:'Cuidar da saúde',why:'O hospital cuida da saúde das pessoas — trata doentes e feridos. É uma instituição essencial!'},
-        {question:'Qual osso protege o cérebro?',options:['Crânio','Vértebras','Costelas','Fémur'],answer:'Crânio',why:'O crânio é uma caixa óssea que protege o cérebro de pancadas e lesões!'},
-        {question:'Qual é a primeira etapa da digestão?',options:['Mastigar na boca','Ir para o estômago','Ir para o intestino','Sair do corpo'],answer:'Mastigar na boca',why:'A digestão começa na boca: dentes mastigam e a saliva começa a quebrar a comida!'},
-        {question:'Quem é o Presidente de Cabo Verde?',options:['O chefe do país, eleito pelo povo','O prefeito','O rei','O juiz'],answer:'O chefe do país, eleito pelo povo',why:'Em democracia, o povo elege o Presidente para 5 anos. É o chefe de Estado!'},
-        {question:'A cadeia alimentar começa sempre com...?',options:['Uma planta (produtor)','Um animal feroz','O sol','A água'],answer:'Uma planta (produtor)',why:'As plantas são os PRODUTORES — fazem fotossíntese e estão sempre no início da cadeia alimentar!'},
-        {question:'Como é que a água vai do mar para o céu?',options:['Evaporação','Precipitação','Condensação','Infiltração'],answer:'Evaporação',why:'O Sol aquece a água do mar e ela transforma-se em vapor — isso é a evaporação!'},
-        {question:'Qual destes NÃO é um ser vivo?',options:['Pedra','Planta','Fungo','Bactéria'],answer:'Pedra',why:'A pedra não nasce, não cresce, não respira nem se reproduz — não é um ser vivo!'},
-        {question:'A que distância fica Cabo Verde da costa de África?',options:['Cerca de 500 km','Cerca de 50 km','Cerca de 5.000 km','Está ligado a África'],answer:'Cerca de 500 km',why:'Cabo Verde fica a aproximadamente 500 km a oeste da costa da África Ocidental (Senegal e Mauritânia)!'},
-        {question:'Se não houvesse instituições, o que acontecia?',options:['Caos, sem educação, saúde nem segurança','Nada mudava','Melhorava tudo','Ficava igual'],answer:'Caos, sem educação, saúde nem segurança',why:'Instituições organizam a sociedade. Escola, hospital, polícia — sem elas, seria impossível viver em ordem!'},
-        {question:'Se desaparecessem as plantas, o que acontecia?',options:['Toda a cadeia alimentar desapareceria','Nada acontecia','Haveria mais comida','Os animais adaptavam-se'],answer:'Toda a cadeia alimentar desapareceria',why:'Plantas = base da cadeia. Sem produtores, herbívoros morrem, depois carnívoros, e por fim, nós também!'},
-      ]
-    },
-    4:{
-      mat:[
-        {question:'Qual é o valor do algarismo 5 em 456.789?',options:['50.000','5.000','500','5'],answer:'50.000',why:'Em 456.789, o 5 está na posição das DEZENAS DE MILHAR. Dezena de milhar = 10.000, então 5 × 10.000 = **50.000**!'},
-        {question:'Qual é a fracção equivalente a ½?',options:['²⁄₄','²⁄₃','³⁄₄','¼'],answer:'²⁄₄',why:'½ = ²⁄₄ porque multiplicamos cima e baixo por 2: 1×2=2 e 2×2=4. As duas frações representam a mesma quantidade!'},
-        {question:'Um rectângulo tem 8 cm e 5 cm. Qual é o seu PERÍMETRO?',options:['26 cm','40 cm','13 cm','20 cm'],answer:'26 cm',why:'Perímetro = soma de todos os lados = 8+8+5+5 = **26 cm**! Ou: 2 × (8+5) = 2 × 13 = 26 cm.'},
-        {question:'Que ângulo é MENOR que 90°?',options:['Agudo','Recto','Obtuso','Raso'],answer:'Agudo',why:'O ângulo AGUDO é mais fechado (pequeno) que o recto. Recto=90°, Agudo menor que 90°, Obtuso maior que 90°, Raso=180°.'},
-        {question:'A Maria foi ao mercado com 500$. Gastou 185$. Quanto sobrou?',options:['315$','285$','415$','195$'],answer:'315$',why:'Troco = 500 − 185 = **315$**. Para verificar: 185 + 315 = 500 ✓'},
-        {question:'Qual é a MODA deste conjunto: 3, 7, 3, 8, 5, 3, 7?',options:['3','7','8','5'],answer:'3',why:'A moda é o número que aparece MAIS VEZES. O 3 aparece 3 vezes, o 7 aparece 2 vezes, os outros 1 vez. Moda = **3**!'},
-        {question:'1,5 km = quantos metros?',options:['1.500 m','150 m','15 m','1.050 m'],answer:'1.500 m',why:'1 km = 1.000 m. Então 1,5 km = 1,5 × 1.000 = **1.500 m**!'},
-        {question:'Múltiplo de 7 entre estes números?',options:['42','44','46','48'],answer:'42',why:'42 ÷ 7 = 6 exacto, então 42 é múltiplo de 7! Para verificar: 7 × 6 = **42** ✓'},
-        {question:'¼ de 80 = ?',options:['20','40','10','25'],answer:'20',why:'¼ de 80 = 80 ÷ 4 = **20**! Dividir por 4 é o mesmo que calcular ¼.'},
-        {question:'Um sólido com 6 faces quadradas iguais chama-se...',options:['Cubo','Cone','Pirâmide','Cilindro'],answer:'Cubo',why:'O CUBO tem 6 faces quadradas IGUAIS, 12 arestas iguais e 8 vértices. Como um dado de jogar!'},
-        {question:'Qual é o número ordinal do 5?',options:['Quinto','Cinco','Cinquanto','Quintal'],answer:'Quinto',why:'Os ordinais dizem a ordem: 1º=primeiro, 2º=segundo, 3º=terceiro, 4º=quarto, 5º=**quinto**!'},
-        {question:'Numa tabela: João=8, Ana=12, Pedro=8, Sara=15. Qual é a MODA?',options:['8','12','15','11'],answer:'8',why:'A moda é o valor que aparece mais vezes. O 8 aparece 2 vezes (João e Pedro). Os outros aparecem só 1 vez. Moda = **8**!'},
-        {question:'Qual é um múltiplo de 7?',options:['42','44','45','46'],answer:'42',why:'42 ÷ 7 = 6 exacto, sem resto. Para confirmar: 7 × 6 = 42 ✓'},
-        {question:'O diâmetro de um círculo com raio 4 cm é...?',options:['8 cm','4 cm','12 cm','2 cm'],answer:'8 cm',why:'Diâmetro = 2 × raio. 2 × 4 = **8 cm**! O diâmetro passa pelo centro de ponta a ponta.'},
-        {question:'Duas retas que nunca se cruzam chamam-se...',options:['Paralelas','Perpendiculares','Secantes','Oblíquas'],answer:'Paralelas',why:'Retas **paralelas** mantêm sempre a mesma distância e nunca se cruzam. Como os trilhos de um comboio!'},
-        {question:'Como se escreve o ordinal de 10?',options:['Décimo','Decimo','Dézimo','Décemos'],answer:'Décimo',why:'10º = **décimo**! Sequência: 7º=sétimo · 8º=oitavo · 9º=nono · 10º=décimo!'},
-        {question:'Um cubo tem quantas faces?',options:['6','4','8','12'],answer:'6',why:'O cubo tem **6 faces** quadradas iguais. Pensa num dado de jogar — tem 6 lados com os números 1 a 6!'},
-        {question:'0,75 é igual a que fração?',options:['¾','½','¼','⅔'],answer:'¾',why:'0,75 = 75/100 = **¾**. Podes verificar: 3 ÷ 4 = 0,75 ✓'},
-      ],
-      por:[
-        {question:'"Lindíssimo" é o superlativo de qual adjectivo?',options:['Lindo','Grande','Bonito','Belo'],answer:'Lindo',why:'O sufixo "-íssimo" forma o superlativo absoluto: lindo → **lindíssimo** (muito lindo!). É uma forma intensa do adjectivo.'},
-        {question:'Qual é o ANTÓNIMO de "alegre"?',options:['Triste','Feliz','Animado','Contente'],answer:'Triste',why:'Antónimo = palavra com sentido CONTRÁRIO. Alegre ↔ **triste**. Quando estamos tristes, não estamos alegres!'},
-        {question:'Qual é o COLECTIVO de "peixe"?',options:['Cardume','Rebanho','Manada','Alcateia'],answer:'Cardume',why:'Um grupo de peixes a nadar juntos chama-se **cardume**! Rebanho=ovelhas, Manada=elefantes, Alcateia=lobos.'},
-        {question:'Num texto narrativo, a personagem principal é...',options:['Quem tem mais importância na história','O narrador','O espaço da história','O título do livro'],answer:'Quem tem mais importância na história',why:'A personagem principal (ou protagonista) é aquela a quem a história acontece principalmente. É a mais importante!'},
-        {question:'"Desorganizado" — que prefixo foi usado?',options:['des-','in-','re-','sub-'],answer:'des-',why:'O prefixo **des-** indica negação ou contrário: des+organizado = não organizado, em desordem!'},
-        {question:'"A Ana foi à escola. ___ chegou cedo." Que pronome completa?',options:['Ela','Ele','Eles','Tu'],answer:'Ela',why:'Ana é feminino singular, 3ª pessoa = pronome <strong>ela</strong>. "A Ana foi à escola. **Ela** chegou cedo."'},
-        {question:'"A casa é ___" (bonito) — forma correcta?',options:['bonita','bonito','bonitos','bonitas'],answer:'bonita',why:'O adjectivo CONCORDA com o nome! "Casa" é feminino singular → **bonita** (feminino singular)!'},
-        {question:'Que sinal de pontuação introduz uma lista ou fala directa?',options:['Dois pontos (:)','Vírgula (,)','Ponto final (.)','Reticências (...)'],answer:'Dois pontos (:)',why:'Os dois pontos (:) são usados para introduzir uma enumeração/lista ou o discurso directo (fala de alguém). Exemplo: "Disse**:** Olá!"'},
-        {question:'"Rapidamente" é um...?',options:['Advérbio de modo','Adjectivo','Nome','Verbo'],answer:'Advérbio de modo',why:'Termina em "-mente" e diz COMO se faz a acção = **advérbio de modo**! Modifica o verbo, não o nome.'},
-        {question:'Qual é a forma NEGATIVA de "Ela estudou"?',options:['Ela não estudou.','Ela estudou?','Ela estudou!','Ela estudará.'],answer:'Ela não estudou.',why:'A forma negativa usa "**não**" antes do verbo: "Ela **não** estudou."'},
-        {question:'"Comia" é que tempo verbal?',options:['Pretérito Imperfeito','Presente','Pretérito Perfeito','Futuro'],answer:'Pretérito Imperfeito',why:'"Comia" descreve ação contínua ou habitual no passado = **Pretérito Imperfeito**! "Antes eu comia peixe todos os dias."'},
-        {question:'"Estudarei" é que tempo verbal?',options:['Futuro','Presente','Pretérito Perfeito','Pretérito Imperfeito'],answer:'Futuro',why:'"Estudarei" indica ação que vai acontecer = **Futuro**! "Amanhã eu **estudarei** para a prova."'},
-        {question:'"O João estuda porque quer aprender." É uma frase...',options:['Complexa','Simples','Exclamativa','Negativa'],answer:'Complexa',why:'Tem 2 verbos ("estuda" + "quer") ligados por "porque" = frase **complexa**! Frase simples teria só 1 verbo.'},
-        {question:'Qual é o feminino do adjectivo "cabo-verdiano"?',options:['cabo-verdiana','cabo-verdiane','cabo-verdião','cabo-verdianas'],answer:'cabo-verdiana',why:'Adjectivos em "-o" fazem feminino em "-a": cabo-verdian**o** → cabo-verdian**a**!'},
-        {question:'"Vai estudar!" — qual é o tipo e forma desta frase?',options:['Imperativa afirmativa','Interrogativa negativa','Declarativa afirmativa','Exclamativa negativa'],answer:'Imperativa afirmativa',why:'Dá uma ordem = **imperativa**. Não usa "não" = **afirmativa**. Toda frase tem tipo + forma!'},
-      ],
-      cie:[
-        {question:'Quantas ilhas tem Cabo Verde?',options:['10','9','12','8'],answer:'10',why:'Cabo Verde tem exactamente **10 ilhas**: 6 de Barlavento e 4 de Sotavento. São todas diferentes e especiais!'},
-        {question:'Qual é a CAPITAL de Cabo Verde?',options:['Praia','Mindelo','Santa Maria','São Filipe'],answer:'Praia',why:'A **Praia** fica na ilha de Santiago e é a capital e maior cidade de Cabo Verde desde a independência em 1975!'},
-        {question:'A célula é a...',options:['Unidade básica da vida','Parte do esqueleto','Tipo de planta','Órgão do corpo'],answer:'Unidade básica da vida',why:'A célula é a **unidade básica** de todos os seres vivos! Todos os animais, plantas e outros seres são feitos de células.'},
-        {question:'Na cadeia alimentar, as plantas são...',options:['Produtores','Consumidores','Decompositores','Predadores'],answer:'Produtores',why:'As plantas são os **produtores** porque fazem fotossíntese — produzem o seu próprio alimento usando a luz do sol!'},
-        {question:'A pesca pertence a que SECTOR económico?',options:['Primário','Secundário','Terciário','Quaternário'],answer:'Primário',why:'O sector **primário** extrai recursos directamente da natureza: agricultura, pesca, pecuária, mineração. A pesca em Cabo Verde é muito importante!'},
-        {question:'Qual ilha pertence ao grupo de BARLAVENTO?',options:['São Vicente','Santiago','Fogo','Brava'],answer:'São Vicente',why:'**São Vicente** (onde fica Mindelo) pertence ao grupo de Barlavento! Santiago, Fogo e Brava são de Sotavento.'},
-        {question:'O que é um "habitat"?',options:['O lugar onde um ser vivo vive','O alimento do animal','A família do animal','O ciclo de vida'],answer:'O lugar onde um ser vivo vive',why:'O **habitat** é o ambiente natural onde um ser vivo vive e encontra tudo que precisa: comida, água, abrigo e condições para se reproduzir.'},
-        {question:'Quem é o Chefe de Estado de Cabo Verde?',options:['O Presidente da República','O Primeiro-Ministro','O Presidente da Assembleia','O Governador'],answer:'O Presidente da República',why:'Em Cabo Verde, o **Presidente da República** é o Chefe de Estado. O Primeiro-Ministro chefia o Governo (poder executivo).'},
-        {question:'Qual é uma consequência das alterações climáticas?',options:['Subida do nível do mar','Mais chuva em todo o mundo','Mais animais','Temperaturas iguais'],answer:'Subida do nível do mar',why:'O aquecimento global derrete o gelo dos polos, fazendo subir o nível do mar. Para Cabo Verde, um país de ilhas, isso é muito preocupante!'},
-        {question:'"Morabeza" é...',options:['A hospitalidade cabo-verdiana','Um prato típico','Uma dança','Um festival'],answer:'A hospitalidade cabo-verdiana',why:'**Morabeza** é uma palavra crioula que descreve a gentileza, carinho e hospitalidade do povo cabo-verdiano. É um valor cultural muito especial!'},
-        {question:'O que é a Morna?',options:['Um género musical de Cabo Verde','Uma dança africana','Um prato típico','Um festival'],answer:'Um género musical de Cabo Verde',why:'A **Morna** é o género musical mais famoso de CV, inscrito no Património da Humanidade pela UNESCO em 2019. Cesária Évora era a sua voz mais conhecida!'},
-        {question:'Em que ano foi a independência de Cabo Verde?',options:['1975','1960','1980','1492'],answer:'1975',why:'Cabo Verde tornou-se independente de Portugal no dia **5 de Julho de 1975**. É o nosso Dia da Independência!'},
-        {question:'Qual é um DIREITO das crianças?',options:['Direito à educação','Dever de trabalhar','Dever de governar','Direito de não estudar'],answer:'Direito à educação',why:'A educação é um **direito fundamental** de todas as crianças, reconhecido pela Convenção das Nações Unidas sobre os Direitos da Criança!'},
-        {question:'Qual órgão bombeia o sangue no corpo humano?',options:['Coração','Pulmão','Fígado','Rim'],answer:'Coração',why:'O **coração** é o órgão central do sistema circulatório. Bate cerca de 70 vezes por minuto e envia sangue para todo o corpo!'},
-        {question:'A fotossíntese ocorre principalmente em qual parte da planta?',options:['Folhas','Raízes','Flores','Frutos'],answer:'Folhas',why:'As **folhas** têm clorofila (cor verde) que capta a luz solar. A planta usa essa energia para transformar água e CO₂ em alimento!'},
-        {question:'Qual é uma consequência das alterações climáticas?',options:['Subida do nível do mar','Mais chuva em todo o mundo','Mais biodiversidade','Temperaturas mais baixas'],answer:'Subida do nível do mar',why:'O aquecimento global derrete os glaciares e os polos, fazendo subir o nível do mar. Para Cabo Verde, um arquipélago, isto é uma ameaça muito séria!'},
-        {question:'A Cachupa é...',options:['O prato nacional de Cabo Verde','Uma dança da ilha do Fogo','Um festival de música','Um instrumento musical'],answer:'O prato nacional de Cabo Verde',why:'A **Cachupa** é o prato mais tradicional de Cabo Verde, feita com milho, feijão e legumes. É a "alma" da cozinha cabo-verdiana!'},
-      ]
-    }
-  };
-  return (db[year]&&db[year][subj])||[];
-}
+function getQuestions(year,subj){ return []; }
 
 // ═══════════════════════════
 // AI SECTION
@@ -1263,10 +1102,8 @@ async function startChallenge(col){
   document.getElementById('ch-results').classList.remove('show');
 
   await ensureJSON();
-  const htmlQs=getQuestions(currentYear,currentSubject);
   const anoData=getJSONAno(currentSubject,currentYear);
-  const jsonQs=anoData?.desafios||[];
-  const pool=shuffle([...htmlQs,...jsonQs]);
+  const pool=shuffle([...(anoData?.praticar||[]),...(anoData?.desafios||[])]);
   let poolIdx=0;
 
   function nextQ(){
@@ -1320,193 +1157,7 @@ async function startChallenge(col){
 // GRAMÁTICA
 // ═══════════════════════════
 let gramYear=4;
-const GRAM_DATA={
-  1:[
-    {icon:'🔤',title:'Vogais e Consoantes',
-     regra:'O alfabeto português tem 26 letras: 5 vogais (A, E, I, O, U) e 21 consoantes.',
-     ex:'Vogais: A · E · I · O · U\nConsoantes: B, C, D, F, G, H, J, L, M, N, P, Q, R, S, T, V, X, Z...',
-     trick:'Canta: A-E-I-O-U! São as únicas letras que consegues cantar sozinhas.'},
-    {icon:'✂️',title:'Sílabas',
-     regra:'Sílabas são os "pedaços" de som de uma palavra. Cada sílaba tem sempre pelo menos uma vogal.',
-     ex:'PE·I·XE = 3 sílabas\nI·LHA = 2 sílabas\nCÃO = 1 sílaba\nES·CO·LA = 3 sílabas',
-     trick:'Bate palmas enquanto dizes a palavra. Cada palma = 1 sílaba!'},
-    {icon:'🅰️',title:'Letras Maiúsculas',
-     regra:'Usamos maiúscula em 3 situações: (1) início de frase, (2) nomes de pessoas, (3) nomes de lugares.',
-     ex:'A Maria vive em Santiago.\n↑início   ↑pessoa      ↑lugar',
-     trick:'3 regras: começo de frase · nome de pessoa · nome de lugar. Sempre maiúscula!'},
-    {icon:'💬',title:'A Frase',
-     regra:'Uma frase é um grupo de palavras com sentido completo. Tem sujeito (QUEM) e predicado (O QUÊ faz).',
-     ex:'O peixe nada.\n↑sujeito  ↑predicado',
-     trick:'Pergunta QUEM faz? = sujeito. O que faz? = predicado.'},
-    {icon:'🏷️',title:'O Nome',
-     regra:'O nome é uma palavra que designa seres, objetos, lugares, sentimentos ou ideias.',
-     ex:'Pessoas: menino, menina\nAnimais: gato, cão, tartaruga\nLugares: escola, Santiago\nObjetos: livro, lápis, bola',
-     trick:'Se podes colocar o/a ou um/uma antes da palavra, é um nome!'},
-    {icon:'🏃',title:'O Verbo',
-     regra:'O verbo exprime uma ação ou estado. É a palavra mais importante da frase — sem verbo não há frase!',
-     ex:'Ações: correr, comer, saltar, brincar\nEstados: ser, estar, parecer, ficar',
-     trick:'O verbo muda quando mudas o tempo: como (agora) / comi (ontem) / comerei (amanhã)!'},
-    {icon:'✅',title:'Frase Afirmativa e Negativa',
-     regra:'Forma afirmativa: diz que algo acontece. Forma negativa: usa NÃO antes do verbo.',
-     ex:'Afirmativa: O menino come peixe.\nNegativa: O menino NÃO come peixe.\n\nAfirmativa: Ela estuda.\nNegativa: Ela NÃO estuda.',
-     trick:'Para fazer a negativa, coloca NÃO antes do verbo. É sempre assim!'},
-    {icon:'📌',title:'Pontuação Básica',
-     regra:'Os sinais de pontuação organizam as frases e indicam quando parar, questionar ou expressar emoção.',
-     ex:'. Ponto final — fim de frase\n? Interrogação — pergunta\n! Exclamação — surpresa ou emoção\n, Vírgula — pausa curta',
-     trick:'. = STOP · ? = pergunta · ! = emoção · , = pausa curta. São os 4 sinais mais usados!'}
-  ],
-  2:[
-    {icon:'❓',title:'Tipos de Frase',
-     regra:'4 tipos de frase, identificados pela intenção e pelo sinal de pontuação no fim.',
-     ex:'Declarativa: "O sol brilha."  → afirma algo\nInterrogativa: "Que horas são?"  → pergunta\nExclamativa: "Que bonito!"  → exprime emoção\nImperativa: "Vai estudar!"  → dá ordem',
-     trick:'. = declara · ? = pergunta · ! = emoção ou ordem. O sinal no fim diz o tipo!'},
-    {icon:'1️⃣',title:'Número — Singular e Plural',
-     regra:'Singular = um só. Plural = dois ou mais.',
-     ex:'ilha → ilhas  (+ s)\nflor → flores  (terminado em consoante: + es)\ncidadão → cidadãos\navião → aviões',
-     trick:'Maioria: + s. Terminado em consoante: + es. Palavras em -ão: aprende aos pares!'},
-    {icon:'♂️',title:'Género — Masculino e Feminino',
-     regra:'Masculino: acompanhado por o / um. Feminino: acompanhado por a / uma. Geralmente -o → -a.',
-     ex:'o professor → a professora\no rei → a rainha  (irregular)\no galo → a galinha  (irregular)',
-     trick:'Testa com "o" ou "a". Soa bem com "o" = masculino. Com "a" = feminino!'},
-    {icon:'🎨',title:'Adjetivo',
-     regra:'O adjetivo qualifica o nome. Concorda em género (m/f) e número (sg/pl) com o nome que descreve.',
-     ex:'livro bonito · livros bonitos\ncasa bonita · casas bonitas\nilha verde · ilhas verdes',
-     trick:'O adjetivo responde: COMO É? De que cor? De que tamanho?'},
-    {icon:'🏃',title:'Verbo',
-     regra:'O verbo exprime uma ação, estado ou fenómeno. Muda com a pessoa, o número e o tempo.',
-     ex:'eu como · tu comes · ele come\nnós comemos · eles comem\n\nPresente: como · Passado: comi · Futuro: comerei',
-     trick:'O verbo é a palavra que muda quando mudas o tempo (agora / ontem / amanhã)!'},
-    {icon:'📌',title:'Artigo',
-     regra:'Artigos definidos (sabemos qual): o, a, os, as.\nArtigos indefinidos (qualquer): um, uma, uns, umas.',
-     ex:'"o livro" = aquele livro específico\n"um livro" = qualquer livro\n"a ilha" → "uma ilha"',
-     trick:'O/A/OS/AS = conhecemos. UM/UMA = não especificamos. Definido vs Indefinido!'},
-    {icon:'🏷️',title:'Nome Comum e Nome Próprio',
-     regra:'Nome comum: designa qualquer ser da mesma espécie (sem maiúscula). Nome próprio: designa um ser específico e único (com maiúscula).',
-     ex:'menino (comum) → João (próprio)\nilha (comum) → Santiago (próprio)\ncidade (comum) → Praia (próprio)',
-     trick:'Nome próprio = especial, único, com maiúscula! Nome comum = qualquer um da mesma espécie.'},
-    {icon:'🔄',title:'O Advérbio',
-     regra:'O advérbio modifica o verbo, o adjetivo ou outro advérbio. Diz COMO, ONDE, QUANDO ou QUANTO algo acontece.',
-     ex:'Modo: rapidamente, devagar, bem, mal\nLugar: aqui, ali, lá, perto\nTempo: hoje, ontem, amanhã, sempre\nQuantidade: muito, pouco, bastante',
-     trick:'Palavra terminada em -MENTE = quase sempre advérbio de modo! Rapidamente, lentamente, felizmente.'},
-    {icon:'👤',title:'Pronomes Pessoais',
-     regra:'O pronome pessoal substitui o nome para evitar repetições. Muda conforme a pessoa e o número.',
-     ex:'1ª: eu (sg) · nós (pl)\n2ª: tu (sg) · vós (pl)\n3ª: ele/ela (sg) · eles/elas (pl)\n\nEx: A Ana foi à escola. Ela chegou cedo.',
-     trick:'Eu falo de mim. Tu falas de ti. Ele/Ela fala de outra pessoa. Simples!'},
-    {icon:'❌',title:'Frase Afirmativa e Negativa',
-     regra:'A forma da frase indica se algo acontece (afirmativa) ou não acontece (negativa). O NÃO vai antes do verbo.',
-     ex:'Afirmativa: O gato come peixe.\nNegativa: O gato NÃO come peixe.\n\nAfirmativa: Eles jogam.\nNegativa: Eles NÃO jogam.',
-     trick:'NÃO antes do verbo = frase negativa. NUNCA e NADA também tornam a frase negativa!'}
-  ],
-  3:[
-    {icon:'🌳',title:'Família de Palavras',
-     regra:'Palavras da mesma família partilham a mesma raiz (radical) e têm significados relacionados.',
-     ex:'Raiz MAR: mar · marinheiro · marítimo · maresia · submarino\nRaiz PESC: pesca · pescador · pesqueiro · pescaria',
-     trick:'Encontra a parte que se repete em todas as palavras. Essa é a raiz!'},
-    {icon:'↔️',title:'Sinónimos e Antónimos',
-     regra:'Sinónimos = palavras com sentido parecido. Antónimos = palavras com sentido contrário.',
-     ex:'Sinónimos: bonito = belo = lindo\nAntónimos: bonito ≠ feio · frio ≠ quente · dia ≠ noite',
-     trick:'Sinónimos = mesma direção. Antónimos = direções opostas!'},
-    {icon:'⏰',title:'Tempos Verbais',
-     regra:'Os verbos mudam de forma conforme o tempo em que a ação ocorre.',
-     ex:'Presente: eu como  (agora)\nPret. Perfeito: eu comi  (ação acabada)\nPret. Imperfeito: eu comia  (ação contínua no passado)\nFuturo: eu comerei  (amanhã)',
-     trick:'Perfeito = ação que acabou (ontem joguei). Imperfeito = ação que continuava (antes jogava).'},
-    {icon:'✏️',title:'Sinais de Pontuação',
-     regra:'Os sinais de pontuação organizam o texto, indicam pausas e ajudam a perceber a intenção.',
-     ex:'. ponto final — fim de frase\n, vírgula — pausa curta\n? interrogação — pergunta\n! exclamação — emoção\n: dois pontos — apresenta algo\n... reticências — ideia incompleta',
-     trick:'Pontuação = respiração do texto. Cada sinal diz quando parar e como falar!'},
-    {icon:'📚',title:'Classes de Palavras',
-     regra:'As palavras classificam-se em categorias conforme a sua função na frase.',
-     ex:'Nome: ilha, peixe, escola\nVerbo: comer, correr, ser\nAdjetivo: bonito, azul, grande\nAdvérbio: rapidamente, muito, aqui\nPronome: eu, meu, este\nArtigo: o, a, um\nPreposição: de, em, para, com\nConjunção: e, mas, porque, que',
-     trick:'Nome=coisa · Verbo=ação · Adjetivo=característica · Advérbio=modifica verbo!'},
-    {icon:'🏷️',title:'Classificação do Nome',
-     regra:'Os nomes classificam-se em: comum/próprio, colectivo/individual, concreto/abstracto.',
-     ex:'Comum: ilha, criança · Próprio: Santiago, João\nColectivo: cardume (peixes), rebanho (ovelhas)\nConcreto: mesa, cão · Abstracto: amor, alegria, liberdade',
-     trick:'Concreto = podes tocar. Abstracto = não podes tocar, só sentir. Amor, paz, tristeza = abstractos!'},
-    {icon:'👤',title:'Pronome Pessoal e Possessivo',
-     regra:'Pronome pessoal: substitui o nome dizendo QUEM é. Pronome possessivo: indica DE QUEM é algo.',
-     ex:'Pessoais: eu, tu, ele, ela, nós, eles\nPossessivos: meu/minha · teu/tua · seu/sua · nosso/nossa\n\nEx: Este livro é meu.',
-     trick:'Pessoal = QUEM é. Possessivo = DE QUEM é. Meu, teu, seu = possessivos!'},
-    {icon:'📊',title:'Grau do Adjetivo',
-     regra:'O grau indica a intensidade de uma qualidade. Comparativo compara dois seres; superlativo exprime o máximo.',
-     ex:'Normal: alto\nComparativo: mais alto do que · tão alto como · menos alto do que\nSuperlativo absoluto: altíssimo / muito alto\nSuperlativo relativo: o mais alto da turma',
-     trick:'Mais...do que = comparativo! Muito ou -íssimo = superlativo! Sempre ligado a uma qualidade.'},
-    {icon:'🔄',title:'O Advérbio — Tipos',
-     regra:'O advérbio modifica o verbo, o adjetivo ou outro advérbio. Classifica-se pelo que exprime.',
-     ex:'Modo: bem, mal, rapidamente, devagar\nLugar: aqui, ali, lá, perto, longe\nTempo: hoje, ontem, amanhã, já, sempre\nQuantidade: muito, pouco, bastante, nada',
-     trick:'A maioria dos advérbios de modo termina em -MENTE. São os mais fáceis de reconhecer!'},
-    {icon:'🔀',title:'Frase Simples e Complexa',
-     regra:'Frase simples = 1 oração (1 verbo). Frase complexa = 2 ou mais orações ligadas por conjunção.',
-     ex:'Simples: O João estuda. (1 verbo)\nComplexa: O João estuda porque quer aprender. (2 verbos)\n\nLigadores: que, porque, quando, se, mas, e, ou',
-     trick:'Conta os verbos! 1 verbo = simples. 2+ verbos = complexa. A conjunção é a ponte entre elas!'}
-  ],
-  4:[
-    {icon:'📖',title:'Texto Narrativo',
-     regra:'Estrutura: Introdução → Desenvolvimento → Conclusão.\n5 elementos a identificar em qualquer texto narrativo:',
-     ex:'Personagens — QUEM aparece\nEspaço — ONDE se passa\nTempo — QUANDO acontece\nEnredo / Ações — O QUÊ acontece\nNarrador — QUEM conta a história',
-     trick:'5 perguntas: QUEM? ONDE? QUANDO? O QUÊ? QUEM CONTA?'},
-    {icon:'🔬',title:'Prefixos e Sufixos',
-     regra:'Prefixo = antes da raiz (muda o sentido). Sufixo = depois da raiz (muda a categoria da palavra).',
-     ex:'Prefixos comuns:\ndes- (negação): des+organizado = desorganizado\nin- (negação): in+feliz = infeliz\nre- (repetição): re+fazer = refazer\n\nSufixos comuns:\n-eiro (profissão): pesc+eiro = pesceiro\n-ção (ação): organiza+ção = organização\n-dade (qualidade): feliz → felicidade',
-     trick:'Prefixo muda o sentido. Sufixo muda a categoria da palavra. PRE + RAIZ + SUF!'},
-    {icon:'📊',title:'Grau do Adjetivo',
-     regra:'O grau indica a intensidade de uma qualidade.',
-     ex:'Normal: alto\n\nComparativo:\nmais alto do que  (superioridade)\ntão alto como  (igualdade)\nmenos alto do que  (inferioridade)\n\nSuperlativo absoluto: altíssimo / muito alto\nSuperlativo relativo: o mais alto da turma',
-     trick:'Superlativo = MÁXIMO. Absoluto = sem comparação. Relativo = comparado com um grupo!'},
-    {icon:'👥',title:'Pronomes',
-     regra:'O pronome substitui ou acompanha o nome para evitar repetições.',
-     ex:'Pessoais: eu · tu · ele/ela · nós · vós · eles/elas\nPossessivos: meu/minha · teu/tua · seu/sua · nosso/nossa\n\nEx: "A Ana foi. Ela chegou cedo."\n(ela substitui "A Ana")',
-     trick:'Pronome = substituto do nome. Pessoal = QUEM é. Possessivo = DE QUEM é!'},
-    {icon:'🔗',title:'Funções Sintáticas',
-     regra:'Cada palavra ou grupo de palavras tem uma função (papel) na frase.',
-     ex:'"O Pedro comeu o peixe."\n↑Sujeito     ↑Predicado\n                   ↑Compl. Direto\n\nSujeito — quem pratica a ação\nPredicado — verbo + complementos\nCompl. Direto — o quê recebe a ação (sem preposição)',
-     trick:'Sujeito = QUEM. Predicado = O QUÊ aconteceu. Compl. Direto = O QUÊ / A QUEM!'},
-    {icon:'⏱️',title:'Conjugação Verbal',
-     regra:'O verbo tem 4 tempos principais do Indicativo: Presente, Imperfeito, Perfeito e Futuro.',
-     ex:'COMER:\nPresente: eu como · tu comes · ele come\nImperfeito: eu comia · tu comias · ele comia\nPerfeito: eu comi · tu comeste · ele comeu\nFuturo: eu comerei · tu comerás · ele comerá',
-     trick:'Presente=agora · Imperfeito=antes contínuo · Perfeito=ação acabada · Futuro=amanhã!'},
-    {icon:'🔀',title:'Frase Simples e Complexa',
-     regra:'Frase simples = 1 oração (1 verbo). Frase complexa = 2+ orações ligadas por conjunção.',
-     ex:'Simples: "O João estudou."\nComplexa: "O João estudou porque tinha exame."\n\nLigadores: que · porque · quando · se · embora · mas · e · ou',
-     trick:'Conta os verbos! 1 verbo = simples. 2+ verbos = complexa. O ligador é a ponte!'},
-    {icon:'🐟',title:'Nomes Coletivos',
-     regra:'Um nome coletivo no singular refere-se a um grupo de seres ou coisas da mesma espécie.',
-     ex:'cardume — grupo de peixes\nrebanho — grupo de ovelhas ou cabras\nmanada — grupo de elefantes ou vacas\nalcateia — grupo de lobos\nfloresta — conjunto de árvores\nfrota — conjunto de barcos',
-     trick:'Aprende aos pares: animal + coletivo. Peixe→cardume · Ovelha→rebanho · Lobo→alcateia!'},
-    {icon:'🔬',title:'Análise Morfológica',
-     regra:'Analisar morfologicamente é identificar a classe gramatical de cada palavra na frase.',
-     ex:'"O peixe fresco nada rapidamente."\no → artigo definido\npeixe → nome (comum, masc., sing.)\nfresco → adjetivo (masc., sing.)\nnada → verbo (pres., 3ª p. sing.)\nrapidamente → advérbio de modo',
-     trick:'COISA=nome · AÇÃO=verbo · DESCREVE=adjetivo · MODIFICA verbo=advérbio · o/a/um/uma=artigo!'},
-    {icon:'♂️',title:'Flexão do Adjetivo — Género',
-     regra:'O adjetivo concorda sempre em género (m/f) e número (sg/pl) com o nome que qualifica.',
-     ex:'bonito → bonita · alto → alta\ngrande → grande (invariável)\nfeliz → feliz (invariável)\ncabo-verdiano → cabo-verdiana\n\nIrregulares importantes:\nbom → boa · mau → má',
-     trick:'O adjetivo "veste" o género do nome. Nome feminino = adjetivo no feminino. Sem exceção!'},
-    {icon:'❓',title:'Tipos e Formas de Frase',
-     regra:'TIPO = intenção (4 tipos). FORMA = afirmativa ou negativa (2 formas).',
-     ex:'TIPOS:\nDeclarativa: "O João estuda." — afirma\nInterrogativa: "O João estuda?" — pergunta\nExclamativa: "Que dedicado!" — emoção\nImperativa: "Estuda agora!" — ordem\n\nFORMAS:\nAfirmativa: "Ele come peixe."\nNegativa: "Ele não come peixe."',
-     trick:'Tipo = o que quero dizer. Forma = tem "não" (negativa) ou não tem "não" (afirmativa)!'},
-    {icon:'📌',title:'Sinais de Pontuação',
-     regra:'Os sinais organizam o texto e indicam pausas, emoções e intenções da frase.',
-     ex:'. ponto final — fim de frase declarativa\n? interrogação — pergunta\n! exclamação — emoção ou ordem\n, vírgula — pausa curta, listas, aposto\n: dois pontos — introduz lista ou discurso direto\n... reticências — ideia incompleta, suspense\n« » aspas — discurso direto (fala de alguém)',
-     trick:'. termina · ? pergunta · ! emoção · , pausa · : apresenta · « » fala direta!'},
-    {icon:'↔️',title:'Sinónimos e Antónimos',
-     regra:'Sinónimos = palavras de sentido parecido. Antónimos = palavras de sentido contrário.',
-     ex:'Sinónimos frequentes:\nbonito = belo = lindo = formoso\nalegre = feliz = contente\nfalar = dizer = narrar = contar\n\nAntónimos frequentes:\nbonito ≠ feio · alegre ≠ triste\nantigo ≠ moderno · rápido ≠ lento',
-     trick:'Sinónimos caminham juntos no mesmo sentido. Antónimos caminham em sentidos opostos!'},
-    {icon:'💬',title:'Discurso Direto e Indireto',
-     regra:'Discurso direto: reproduz as palavras exactas de alguém (com aspas ou travessão). Discurso indireto: conta o que alguém disse sem citar as palavras exactas.',
-     ex:'Direto: A professora disse: "Estudem para o teste!"\nIndireto: A professora disse que estudassem para o teste.\n\nDireto usa aspas « » ou travessão —',
-     trick:'Direto = copiar as palavras exactas. Indireto = contar por outras palavras. Direto tem aspas ou travessão!'},
-    {icon:'📎',title:'Complemento Direto e Indireto',
-     regra:'Complemento direto (CD): completa o verbo sem preposição. Complemento indireto (CI): completa o verbo com preposição (a, de, para, com).',
-     ex:'O João comeu o peixe. → peixe = CD (sem preposição)\nO professor deu o livro ao aluno. → ao aluno = CI (preposição a)\n\nCD: O QUÊ? · CI: A QUEM? PARA QUEM?',
-     trick:'CD = sem preposição, responde a O QUÊ? CI = com preposição (a, de, para), responde a A QUEM?'},
-    {icon:'🎨',title:'Recursos Expressivos',
-     regra:'Os recursos expressivos enriquecem os textos com imagens e efeitos de linguagem especiais.',
-     ex:'Comparação: Os olhos dela brilham COMO estrelas.\nMetáfora: Os olhos dela SÃO estrelas.\nPersonificação: O vento abraçou as palmeiras.\nRepetição: Cabo Verde, Cabo Verde, terra de luz!',
-     trick:'Comparação usa COMO. Metáfora diz directamente que é. Personificação dá vida a coisas inanimadas!'}
-  ]
-};
-
+const GRAM_DATA={};
 function renderGramatica(area){
   currentGramPage=1;
   gramYear=currentYear;
@@ -1521,7 +1172,7 @@ function renderGramatica(area){
 }
 
 function renderGramCards(){
-  const cards=GRAM_DATA[currentYear]||[];
+  const cards=getJSONAno('por',currentYear)?.gramatica||[];
   const el=document.getElementById('gram-cards');
   if(!el) return;
   const totalPages=Math.ceil(cards.length/GRAM_PAGE_SIZE)||1;
