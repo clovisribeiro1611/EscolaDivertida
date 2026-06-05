@@ -1041,7 +1041,11 @@ async function callAI(){
     4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática básica, conceitos de ciências e história de Cabo Verde.'
   }[yr];
   const histNote=_aiHistory.length?` Exercícios recentes (NÃO repitas): ${_aiHistory.slice(-5).join(' | ')}`:'';
-  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} para a ${yr}ª classe de Cabo Verde sobre "${topic}". Contexto: ${yearCtx} Usa exemplos cabo-verdianos (ilhas, peixe, escudos, escola).${histNote}`;
+  const topicType=
+    /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(topic)
+      ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
+      : 'CONCEITO: pergunta directamente sobre as PROPRIEDADES ou a DEFINIÇÃO do tema (ex: "Quantos lados tem um triângulo?", "Qual é a forma com 4 lados iguais?"). NÃO uses o tema como personagem ou objecto numa história matemática. A pergunta deve testar o que a criança sabe sobre o conceito.';
+  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} para a ${yr}ª classe de Cabo Verde sobre "${topic}". Contexto do aluno: ${yearCtx} Tipo de exercício — ${topicType}${histNote}`;
   out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
   if(btn) btn.disabled=true;
   try{
