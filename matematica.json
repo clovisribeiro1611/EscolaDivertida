@@ -7,6 +7,13 @@
       "aprender": [
         {
           "icon": "🔢",
+          "title": "Números de 1 a 100",
+          "body": "Vamos contar! Os números começam no 1 e vão até ao 100. Cada número tem o seu lugar especial.",
+          "example": "🐚 1, 2, 3... até 10! Depois 11, 12, 13... Conta os teus dedos: tens 10!",
+          "trick": "Conta de 10 em 10: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100!"
+        },
+        {
+          "icon": "🔢",
           "title": "Números de 0 a 20",
           "body": "Aprendemos a contar do 0 ao 20. Cada número tem o seu lugar na reta numérica.",
           "example": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12... até 20!<br>🐟 Conta os peixes: 1, 2, 3, 4, 5 peixes!",
@@ -1605,6 +1612,41 @@
           "body": "Para comparar números grandes, compara algarismo a algarismo, da esquerda para a direita.",
           "example": "345.678 vs 354.678\n3=3 → 4 vs 5 → 5>4\nLogo: 354.678 > 345.678",
           "trick": "Começa sempre pelo algarismo mais à esquerda. O primeiro diferente decide qual é maior!"
+        },
+        {
+          "icon": "📏",
+          "title": "Medidas de Comprimento",
+          "body": "Usamos diferentes unidades para medir comprimentos. Aprende a converter!",
+          "example": "1 km = 1.000 m<br>1 m = 100 cm<br>1 cm = 10 mm",
+          "trick": "km→m: ×1000 · m→cm: ×100 · cm→mm: ×10. Para o contrário, divide!"
+        },
+        {
+          "icon": "1️⃣",
+          "title": "Números Ordinais",
+          "body": "Os ordinais indicam posição ou ordem numa sequência.",
+          "example": "1º primeiro · 2º segundo · 3º terceiro<br>4º quarto · 5º quinto · 10º décimo<br>20º vigésimo · 100º centésimo",
+          "trick": "Terminam em º (masculino) ou ª (feminino): o 1º lugar · a 1ª aluna."
+        },
+        {
+          "icon": "⭕",
+          "title": "Círculo e Circunferência",
+          "body": "Circunferência = linha curva fechada. Círculo = toda a figura (linha + interior).",
+          "example": "📍 Centro — ponto central<br>📏 Raio (r) — do centro à circunferência<br>📐 Diâmetro (d) = 2 × r",
+          "trick": "Diâmetro = 2 × Raio. Circunferência é só a linha; círculo é tudo dentro!"
+        },
+        {
+          "icon": "↔️",
+          "title": "Retas Paralelas e Perpendiculares",
+          "body": "As retas podem ter posições diferentes entre si.",
+          "example": "Paralelas ‖ — nunca se cruzam (como trilhos de comboio)<br>Perpendiculares ⊥ — cruzam-se a 90°<br>Secantes — cruzam-se noutro ângulo",
+          "trick": "Paralelas = nunca se tocam. Perpendiculares = fazem um L perfeito!"
+        },
+        {
+          "icon": "🪞",
+          "title": "Simetria",
+          "body": "Uma figura tem simetria quando um eixo a divide em duas metades espelhadas.",
+          "example": "🦋 Borboleta · ❤️ Coração · ⭐ Estrela<br>O eixo de simetria é a linha divisória.<br>Um quadrado tem 4 eixos de simetria!",
+          "trick": "Dobra o papel: se as metades ficam iguais, tem simetria! O eixo é a dobra."
         }
       ],
       "praticar": [

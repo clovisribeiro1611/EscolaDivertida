@@ -782,25 +782,9 @@ window.goLearnPage=function(p){currentLearnPage=p;renderLearn(document.getElemen
 function getLearnCards(year,subj){
   const all={
     1:{
-      mat:[
-        {icon:'🔢',title:'Números de 1 a 100',body:'Vamos contar! Os números começam no 1 e vão até ao 100. Cada número tem o seu lugar especial.',example:'🐚 1, 2, 3... até 10! Depois 11, 12, 13... Conta os teus dedos: tens 10!'},
-        {icon:'➕',title:'Somar é juntar!',body:'Quando somamos, juntamos dois grupos numa só quantidade maior.',example:'🍎🍎 + 🍎🍎🍎 = 🍎🍎🍎🍎🍎<br>2 + 3 = 5'},
-        {icon:'➖',title:'Subtrair é tirar!',body:'Quando subtraímos, tiramos uma quantidade de outra e ficamos com menos.',example:'🌴🌴🌴🌴🌴 − 🌴🌴 = 🌴🌴🌴<br>5 − 2 = 3'},
-        {icon:'📏',title:'Comparar números',body:'Podemos comparar dois números para saber qual é maior (>) ou menor (<).',example:'5 > 3 (cinco é maior que três)<br>2 < 8 (dois é menor que oito)<br>4 = 4 (quatro é igual a quatro)'},
-        {icon:'🔷',title:'Formas Geométricas',body:'As formas estão em todo o lado! Aprende a reconhecê-las.',list:['⬛ Quadrado — 4 lados iguais','▬ Rectângulo — 4 lados, 2 iguais e 2 iguais','🔺 Triângulo — 3 lados','⚪ Círculo — redondo, sem lados']},
-      ],
-      por:[
-        {icon:'🔤',title:'As Letras do Alfabeto',body:'O alfabeto tem 26 letras! Há vogais (A, E, I, O, U) e consoantes (todas as outras).',example:'Vogais: **A E I O U**<br>🅰️ de Avó · 🌍 E de Escola · 🏝️ I de Ilha'},
-        {icon:'🐟',title:'Palavras e Sílabas',body:'As palavras são feitas de sílabas. Uma sílaba é um "pedaço" de som da palavra.',example:'<strong>PE-I-XE</strong> = 3 sílabas 🐟<br><strong>MA-R</strong> = 2 sílabas 🌊<br>**SOL** = 1 sílaba ☀️'},
-        {icon:'✍️',title:'Letras Maiúsculas',body:'Usamos letras maiúsculas no início de nomes próprios, de frases e de nomes de lugares.',example:'<strong>C</strong>abo <strong>V</strong>erde 🇨🇻<br><strong>S</strong>antiago · <strong>M</strong>aria · <strong>J</strong>oão<br>Início de frase: "**O** peixe é saboroso."'},
-        {icon:'🗣️',title:'Vogais e Consoantes',body:'As vogais (A, E, I, O, U) são os sons "abertos". As consoantes precisam de uma vogal para fazer som.',example:'<strong>Vogais:</strong> A · E · I · O · U<br>**Exemplo:** em "PEIXE", o E e o I são vogais'},
-      ],
-      cie:[
-        {icon:'☀️',title:'O Dia e a Noite',body:'A Terra gira e por isso temos dia (quando o nosso lado está virado para o Sol) e noite (quando está virado para longe).',example:'☀️ De dia: vemos o sol, está claro, brincamos.<br>🌙 De noite: vemos a lua e as estrelas, dormimos.'},
-        {icon:'🌊',title:'A Água',body:'A água é muito importante para a vida. Em Cabo Verde, o mar está em todo o lado!',list:['💧 Bebemos água para viver','🐟 Os peixes vivem na água','🌧️ A chuva traz água do céu','🏝️ As ilhas são rodeadas de água salgada']},
-        {icon:'🌱',title:'As Plantas',body:'As plantas são seres vivos! Elas precisam de água, luz e terra para crescer.',example:'🌱 Semente → 🌿 Planta pequena → 🌳 Árvore grande<br>As plantas dão-nos fruta, sombra e ar limpo!'},
-        {icon:'👨‍👩‍👧‍👦',title:'A Família',body:'A família são as pessoas que vivem connosco e nos amam. Cada família é diferente e especial!',list:['👴👵 Avós','👨👩 Pais','👦👧 Irmãos','🏠 Todos vivem juntos (ou perto)']},
-      ]
+      mat:[],
+      por:[],
+      cie:[]
     },
     2:{
       mat:[],
@@ -813,20 +797,9 @@ function getLearnCards(year,subj){
       cie:[]
     },
     4:{
-      mat:[
-        {icon:'📏',title:'Medidas de Comprimento',body:'Usamos diferentes unidades para medir comprimentos. Aprende a converter!',example:'1 km = 1.000 m<br>1 m = 100 cm<br>1 cm = 10 mm<br><br>**Truque:** km→m: ×1000 · m→cm: ×100 · cm→mm: ×10'},
-        {icon:'1️⃣',title:'Números Ordinais',body:'Os ordinais indicam posição ou ordem numa sequência.',example:'1º primeiro · 2º segundo · 3º terceiro<br>4º quarto · 5º quinto · 6º sexto<br>7º sétimo · 8º oitavo · 9º nono · 10º décimo<br>20º vigésimo · 100º centésimo'},
-        {icon:'⭕',title:'Círculo e Circunferência',body:'Circunferência = linha curva fechada. Círculo = toda a figura (linha + interior).',list:['📍 Centro — ponto central','📏 Raio (r) — do centro à circunferência','📐 Diâmetro (d) — de lado a lado pelo centro: d = 2r']},
-        {icon:'↔️',title:'Retas Paralelas e Perpendiculares',body:'As retas podem ter posições diferentes entre si.',example:'Paralelas ‖ — nunca se cruzam (trilhos de comboio)<br>Perpendiculares ⊥ — cruzam-se a 90° (canto recto)<br>Secantes — cruzam-se noutro ângulo'},
-        {icon:'🪞',title:'Simetria',body:'Uma figura tem simetria quando um eixo a divide em duas metades que são imagens espelhadas uma da outra.',example:'🦋 Borboleta · ❤️ Coração · ⭐ Estrela<br>O eixo de simetria é a linha divisória.<br>Um quadrado tem 4 eixos de simetria!'},
-      ],
+      mat:[],
       por:[],
-      cie:[
-        {icon:'🌿',title:'Cadeia Alimentar',body:'Mostra quem come quem na natureza. As plantas são sempre os produtores.',example:'🌾 Planta → 🐛 Lagarta → 🐸 Rã → 🦅 Águia<br><br>Produtor → Consumidor 1º → Consumidor 2º…'},
-        {icon:'🎭',title:'Cultura de Cabo Verde',body:'Cabo Verde tem uma cultura rica, mistura de África e Europa, expressa na música, dança e gastronomia.',list:['🎵 Música: Morna (UNESCO), Funaná, Coladeira, Batuko','🍽️ Gastronomia: Cachupa, Canja de peixe','💃 Festas: Carnaval, São João, São Pedro','🏝️ Cada ilha tem manifestações culturais próprias']},
-        {icon:'👶',title:'Direitos e Deveres das Crianças',body:'Todas as crianças têm direitos protegidos e deveres a cumprir.',list:['✅ Direitos: educação, saúde, alimentação, família, brincar, ser protegida','📌 Deveres: estudar, respeitar os outros, obedecer pais e professores, cuidar do ambiente']},
-        {icon:'💪',title:'Corpo Humano e Saúde',body:'O corpo tem vários sistemas que trabalham juntos.',list:['🫀 Circulatório — coração bombeia o sangue','🫁 Respiratório — pulmões e traqueia','🦴 Locomotor — ossos e músculos','🧠 Nervoso — cérebro e nervos','🦷 Saúde: comer bem, dormir, exercício, higiene']},
-      ]
+      cie:[]
     }
   };
   return all[year][subj]||[];

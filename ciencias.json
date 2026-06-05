@@ -91,6 +91,13 @@
           "body": "A família e a escola trabalham juntas para nos ajudar a aprender e crescer.",
           "example": "Os pais visitam a escola\nAjudam com os trabalhos de casa\nParticipam nas reuniões\nEncoranjam os filhos a estudar",
           "trick": "Família + Escola = equipa! Quando os pais se envolvem, os filhos aprendem melhor!"
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "title": "A Família",
+          "body": "A família são as pessoas que vivem connosco e nos amam. Cada família é diferente e especial!",
+          "example": "👴👵 Avós · 👨👩 Pais · 👦👧 Irmãos<br>🏠 Todos vivem juntos (ou perto)",
+          "trick": "A família cuida de nós! Em Cabo Verde, a família é muito importante."
         }
       ],
       "praticar": [
@@ -1443,6 +1450,34 @@
           "body": "A diáspora é a comunidade de cabo-verdianos que vive fora do país. Há mais cabo-verdianos fora do que dentro!",
           "example": "Principais destinos: Portugal, EUA, França, Países Baixos\nCausas históricas: seca, fome, desemprego\nHoje: cerca de 500.000 em Cabo Verde e 700.000+ na diáspora",
           "trick": "Diáspora = espalhados pelo mundo mas unidos pela cultura, língua e amor a Cabo Verde!"
+        },
+        {
+          "icon": "🌿",
+          "title": "Cadeia Alimentar",
+          "body": "Mostra quem come quem na natureza. As plantas são sempre os produtores.",
+          "example": "🌾 Planta → 🐛 Lagarta → 🐸 Rã → 🦅 Águia<br>Produtor → Consumidor 1º → Consumidor 2º",
+          "trick": "A cadeia começa SEMPRE numa planta. Se a planta desaparecer, toda a cadeia colapsa!"
+        },
+        {
+          "icon": "🎭",
+          "title": "Cultura de Cabo Verde",
+          "body": "Cabo Verde tem uma cultura rica, mistura de África e Europa, expressa na música, dança e gastronomia.",
+          "example": "🎵 Música: Morna (UNESCO), Funaná, Coladeira, Batuko<br>🍽️ Gastronomia: Cachupa, Canja de peixe<br>💃 Festas: Carnaval, São João, São Pedro",
+          "trick": "MORNA = Património UNESCO! Cesária Évora tornou a morna famosa no mundo."
+        },
+        {
+          "icon": "👶",
+          "title": "Direitos e Deveres das Crianças",
+          "body": "Todas as crianças têm direitos protegidos e deveres a cumprir.",
+          "example": "✅ Direitos: educação, saúde, alimentação, família, brincar, ser protegida<br>📌 Deveres: estudar, respeitar os outros, obedecer pais e professores, cuidar do ambiente",
+          "trick": "A ONU criou a Convenção dos Direitos da Criança em 1989. Cabo Verde assinou!"
+        },
+        {
+          "icon": "💪",
+          "title": "Corpo Humano e Saúde",
+          "body": "O corpo tem vários sistemas que trabalham juntos.",
+          "example": "🫀 Circulatório — coração bombeia o sangue<br>🫁 Respiratório — pulmões e traqueia<br>🦴 Locomotor — ossos e músculos<br>🧠 Nervoso — cérebro e nervos",
+          "trick": "Para ter saúde: come bem, dorme 8h, faz exercício e higiene diária!"
         }
       ],
       "praticar": [

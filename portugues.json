@@ -7,6 +7,20 @@
       "aprender": [
         {
           "icon": "🔤",
+          "title": "As Letras do Alfabeto",
+          "body": "O alfabeto tem 26 letras! Há vogais (A, E, I, O, U) e consoantes (todas as outras).",
+          "example": "Vogais: A E I O U<br>🅰️ de Avó · E de Escola · 🏝️ I de Ilha",
+          "trick": "A E I O U — são as 5 vogais! Tudo o resto são consoantes."
+        },
+        {
+          "icon": "🐟",
+          "title": "Palavras e Sílabas",
+          "body": "As palavras são feitas de sílabas. Uma sílaba é um pedaço de som da palavra.",
+          "example": "PE-I-XE = 3 sílabas 🐟<br>CA-SA = 2 sílabas 🏠<br>SOL = 1 sílaba ☀️",
+          "trick": "Bate palmas: cada palma é uma sílaba! CA-SA = 2 palmas."
+        },
+        {
+          "icon": "🔤",
           "title": "O Alfabeto",
           "body": "O alfabeto tem 26 letras! Há vogais (A, E, I, O, U) e consoantes (todas as outras).",
           "example": "Vogais: A · E · I · O · U<br>🅰️ de Avó · E de Escola · I de Ilha · O de Onda · U de Uva<br>Consoantes: B, C, D, F, G, H, J, L, M, N, P, Q, R, S, T, V, X, Z...",
