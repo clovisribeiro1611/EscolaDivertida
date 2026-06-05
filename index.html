@@ -7,7 +7,6 @@
 <meta name="description" content="Estuda para as Provas Nacionais de Cabo Verde — 1ª a 4ª classe">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Escola CV">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/icon-192.svg">
@@ -15,430 +14,249 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --y1: #FF6B6B; --y1d: #e05555; --y1l: #fff0f0;
-  --y2: #FF9F1C; --y2d: #e08800; --y2l: #fff6e8;
-  --y3: #2EC4B6; --y3d: #20a89c; --y3l: #e8faf9;
-  --y4: #7B2FBE; --y4d: #6020a0; --y4l: #f3eaff;
-  --mat: #FF6B6B; --por: #4ECDC4; --cie: #45B7D1;
-  --gold: #FFD700; --white: #ffffff;
-  --bg: #FFF8F0; --text: #1a1a2e; --muted: #6b7280;
-  --radius: 20px; --shadow: 0 6px 24px rgba(0,0,0,0.12);
-  --active: #FF6B6B;
+  --y1:#FF6B6B; --y1d:#e05555; --y1l:#fff0f0;
+  --y2:#FF9F1C; --y2d:#e08800; --y2l:#fff6e8;
+  --y3:#2EC4B6; --y3d:#20a89c; --y3l:#e8faf9;
+  --y4:#7B2FBE; --y4d:#6020a0; --y4l:#f3eaff;
+  --mat:#FF6B6B; --por:#4ECDC4; --cie:#45B7D1;
+  --gold:#FFD700;
+  --bg:#FFF8F0; --text:#1a1a2e; --muted:#6b7280;
+  --radius:20px; --shadow:0 6px 24px rgba(0,0,0,0.12);
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Nunito', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-  overflow-x: hidden;
-}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
 
-/* ── SPLASH ── */
-#splash {
-  position: fixed; inset: 0;
-  background: linear-gradient(160deg, #FF6B6B, #FF9F1C, #2EC4B6, #7B2FBE);
-  background-size: 300% 300%;
-  animation: gradMove 4s ease infinite;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  z-index: 9999; transition: opacity 0.5s;
-}
-@keyframes gradMove {
-  0%,100%{background-position:0% 50%} 50%{background-position:100% 50%}
-}
-.splash-logo {
-  font-family: 'Fredoka One', cursive;
-  font-size: 3.2rem; color: white;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  margin-bottom: 8px; text-align: center;
-}
-.splash-sub { color: rgba(255,255,255,0.9); font-size: 1rem; font-weight: 700; text-align: center; }
-.splash-stars { font-size: 2rem; margin-top: 20px; animation: bounce 1s infinite; }
-@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-.splash-flag { display: flex; gap: 8px; margin-top: 14px; }
-.flag-stripe { width: 14px; height: 14px; border-radius: 50%; }
+/* SPLASH */
+#splash{position:fixed;inset:0;background:linear-gradient(160deg,#FF6B6B,#FF9F1C,#2EC4B6,#7B2FBE);background-size:300% 300%;animation:gradMove 4s ease infinite;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .5s;}
+@keyframes gradMove{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.splash-logo{font-family:'Fredoka One',cursive;font-size:3.2rem;color:white;text-shadow:0 4px 20px rgba(0,0,0,.3);margin-bottom:8px;text-align:center;}
+.splash-sub{color:rgba(255,255,255,.9);font-size:1rem;font-weight:700;text-align:center;}
+.splash-stars{font-size:2rem;margin-top:20px;animation:bounce 1s infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.splash-flag{display:flex;gap:8px;margin-top:14px;}
+.flag-stripe{width:14px;height:14px;border-radius:50%;}
 
-/* ── HEADER ── */
-.app-bar {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  padding: 14px 16px;
-  display: flex; align-items: center; gap: 10px;
-  position: sticky; top: 0; z-index: 100;
-  box-shadow: 0 3px 16px rgba(0,0,0,0.3);
-}
-.app-bar-logo { font-family: 'Fredoka One', cursive; font-size: 1.3rem; color: white; }
-.app-bar-sub { font-size: 0.7rem; color: #94a3b8; font-weight: 700; }
-.app-bar-stars { margin-left: auto; background: var(--gold); color: #92400e; border-radius: 50px; padding: 5px 12px; font-weight: 800; font-size: 0.82rem; }
+/* APP BAR */
+.app-bar{background:linear-gradient(135deg,#1a1a2e,#16213e);padding:14px 16px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100;box-shadow:0 3px 16px rgba(0,0,0,.3);}
+.app-bar-logo{font-family:'Fredoka One',cursive;font-size:1.3rem;color:white;}
+.app-bar-sub{font-size:.7rem;color:#94a3b8;font-weight:700;}
+.app-bar-pts{margin-left:auto;background:var(--gold);color:#92400e;border-radius:50px;padding:5px 12px;font-weight:800;font-size:.82rem;}
 
-/* ── YEAR SELECTOR (HOME) ── */
-#home-screen { padding: 20px 14px 80px; }
-.welcome-text {
-  text-align: center; margin-bottom: 20px;
-}
-.welcome-text h2 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.7rem; color: var(--text);
-}
-.welcome-text p { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+/* SCREENS */
+.screen{display:none;padding:14px 14px 80px;position:relative;z-index:1;}
+.screen.active{display:block;}
+#home-screen{padding:20px 14px 80px;}
 
-.years-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 14px; margin-bottom: 24px;
-}
-.year-card {
-  border-radius: 24px; padding: 22px 14px;
-  text-align: center; cursor: pointer;
-  border: 3px solid transparent;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s, box-shadow 0.2s;
-  position: relative; overflow: hidden;
-}
-.year-card::before {
-  content: ''; position: absolute; inset: 0;
-  background: white; opacity: 0.15; border-radius: 21px;
-}
-.year-card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 32px rgba(0,0,0,0.18); }
-.year-card:active { transform: scale(0.97); }
-.year-card .yr-emoji { font-size: 2.8rem; margin-bottom: 8px; }
-.year-card .yr-num {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.5rem; color: white;
-}
-.year-card .yr-label { font-size: 0.78rem; color: rgba(255,255,255,0.9); font-weight: 700; }
-.year-card.y1 { background: linear-gradient(135deg, var(--y1), #ff8e8e); }
-.year-card.y2 { background: linear-gradient(135deg, var(--y2), #ffbd6b); }
-.year-card.y3 { background: linear-gradient(135deg, var(--y3), #7ee8e2); }
-.year-card.y4 { background: linear-gradient(135deg, var(--y4), #a855f7); }
-.year-badge {
-  position: absolute; top: 10px; right: 10px;
-  background: white; color: var(--text);
-  border-radius: 50px; font-size: 0.65rem;
-  font-weight: 800; padding: 2px 8px; opacity: 0.9;
-}
+/* BACK BTN */
+.back-btn{display:inline-flex;align-items:center;gap:6px;background:white;border:2.5px solid #e5e7eb;border-radius:50px;padding:7px 16px;font-family:'Nunito',sans-serif;font-weight:800;font-size:.82rem;cursor:pointer;color:var(--text);margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .15s;}
+.back-btn:hover{transform:translateX(-3px);}
 
-/* ── SUBJECT SCREEN ── */
-#subject-screen { display: none; padding: 14px 14px 80px; }
-.back-btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: white; border: 2.5px solid #e5e7eb;
-  border-radius: 50px; padding: 7px 16px;
-  font-family: 'Nunito', sans-serif; font-weight: 800;
-  font-size: 0.82rem; cursor: pointer; color: var(--text);
-  margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: all 0.15s;
-}
-.back-btn:hover { transform: translateX(-3px); }
+/* SCREEN HEADER */
+.screen-hdr{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.screen-hdr h2{font-family:'Fredoka One',cursive;font-size:1.3rem;flex:1;}
+.screen-hdr .pts-badge{background:var(--gold);color:#92400e;border-radius:50px;padding:4px 12px;font-weight:800;font-size:.78rem;white-space:nowrap;}
 
-.year-hero {
-  border-radius: 24px; padding: 20px;
-  margin-bottom: 16px; text-align: center;
-  position: relative; overflow: hidden;
-}
-.year-hero::after {
-  content: ''; position: absolute;
-  top: -30px; right: -30px;
-  width: 120px; height: 120px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-}
-.year-hero .yh-emoji { font-size: 3rem; margin-bottom: 6px; }
-.year-hero h2 { font-family: 'Fredoka One', cursive; font-size: 1.6rem; color: white; }
-.year-hero p { font-size: 0.82rem; color: rgba(255,255,255,0.85); margin-top: 4px; }
+/* HOME */
+.welcome-text{text-align:center;margin-bottom:20px;}
+.welcome-text h2{font-family:'Fredoka One',cursive;font-size:1.7rem;color:var(--text);}
+.welcome-text p{font-size:.9rem;color:var(--muted);margin-top:4px;}
+.years-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px;}
+.year-card{border-radius:24px;padding:22px 14px;text-align:center;cursor:pointer;border:3px solid transparent;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden;}
+.year-card::before{content:'';position:absolute;inset:0;background:white;opacity:.15;border-radius:21px;}
+.year-card:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 12px 32px rgba(0,0,0,.18);}
+.year-card:active{transform:scale(.97);}
+.year-card .yr-emoji{font-size:2.8rem;margin-bottom:8px;}
+.year-card .yr-num{font-family:'Fredoka One',cursive;font-size:1.5rem;color:white;}
+.year-card .yr-label{font-size:.78rem;color:rgba(255,255,255,.9);font-weight:700;}
+.year-card.y1{background:linear-gradient(135deg,var(--y1),#ff8e8e);}
+.year-card.y2{background:linear-gradient(135deg,var(--y2),#ffbd6b);}
+.year-card.y3{background:linear-gradient(135deg,var(--y3),#7ee8e2);}
+.year-card.y4{background:linear-gradient(135deg,var(--y4),#a855f7);}
+.year-badge{position:absolute;top:10px;right:10px;background:white;color:var(--text);border-radius:50px;font-size:.65rem;font-weight:800;padding:2px 8px;opacity:.9;}
 
-.subj-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 18px; }
-.subj-btn {
-  border-radius: 16px; padding: 14px 8px;
-  text-align: center; cursor: pointer;
-  border: 3px solid transparent;
-  font-family: 'Nunito', sans-serif; font-weight: 800;
-  font-size: 0.8rem; transition: all 0.2s;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
-.subj-btn .sb-icon { font-size: 1.8rem; margin-bottom: 4px; }
-.subj-btn.mat-btn { background: var(--y1l); color: var(--y1d); border-color: var(--y1); }
-.subj-btn.por-btn { background: #e8faf9; color: #20a89c; border-color: var(--y3); }
-.subj-btn.cie-btn { background: #e8f6ff; color: #2980b9; border-color: var(--cie); }
-.subj-btn.active-subj { color: white !important; transform: scale(1.04); }
-.subj-btn.mat-btn.active-subj { background: var(--y1); }
-.subj-btn.por-btn.active-subj { background: var(--y3); }
-.subj-btn.cie-btn.active-subj { background: var(--cie); }
+/* SUBJECT SCREEN */
+.year-hero{border-radius:24px;padding:20px;margin-bottom:16px;text-align:center;position:relative;overflow:hidden;}
+.year-hero::after{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,.1);border-radius:50%;}
+.year-hero .yh-emoji{font-size:3rem;margin-bottom:6px;}
+.year-hero h2{font-family:'Fredoka One',cursive;font-size:1.6rem;color:white;}
+.year-hero p{font-size:.82rem;color:rgba(255,255,255,.85);margin-top:4px;}
+.subj-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px;}
+.subj-btn{border-radius:16px;padding:14px 8px;text-align:center;cursor:pointer;border:3px solid transparent;font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;transition:all .2s;box-shadow:0 3px 12px rgba(0,0,0,.08);}
+.subj-btn .sb-icon{font-size:1.8rem;margin-bottom:4px;}
+.subj-btn.mat-btn{background:var(--y1l);color:var(--y1d);border-color:var(--y1);}
+.subj-btn.por-btn{background:#e8faf9;color:#20a89c;border-color:var(--y3);}
+.subj-btn.cie-btn{background:#e8f6ff;color:#2980b9;border-color:var(--cie);}
+.subj-btn:hover{transform:scale(1.04);}
+.gram-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.gram-btn,.settings-btn{border-radius:14px;padding:12px;text-align:center;cursor:pointer;font-family:'Nunito',sans-serif;font-weight:800;font-size:.85rem;border:2.5px solid #e5e7eb;background:white;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.gram-btn:hover,.settings-btn:hover{transform:translateY(-2px);}
 
-/* ── CONTENT AREA ── */
-#content-area { }
-.mode-row {
-  display: flex; gap: 8px; overflow-x: auto;
-  scrollbar-width: none; margin-bottom: 14px;
-  padding-bottom: 4px;
-}
-.mode-row::-webkit-scrollbar { display: none; }
-.mode-pill {
-  flex-shrink: 0; padding: 9px 18px;
-  border-radius: 50px; border: 2.5px solid #e5e7eb;
-  font-family: 'Nunito', sans-serif; font-weight: 800;
-  font-size: 0.82rem; cursor: pointer; background: white;
-  color: var(--muted); transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-.mode-pill.active-mode { color: white; border-color: transparent; }
+/* TRIMESTRE CARDS */
+.trim-list{display:flex;flex-direction:column;gap:12px;margin-bottom:16px;}
+.trim-card{background:white;border-radius:20px;padding:18px;box-shadow:var(--shadow);border:3px solid #f0f0f0;cursor:pointer;transition:all .2s;text-align:left;}
+.trim-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.14);}
+.trim-card:active{transform:scale(.98);}
+.trim-title{font-family:'Fredoka One',cursive;font-size:1.1rem;margin-bottom:6px;}
+.trim-stats{font-size:.82rem;color:var(--muted);font-weight:700;margin-bottom:8px;}
+.trim-bar{height:8px;background:#f0f0f0;border-radius:50px;overflow:hidden;}
+.trim-fill{height:100%;border-radius:50px;transition:width .4s ease;}
 
-/* ── LEARN CARDS ── */
-.learn-section { display: flex; flex-direction: column; gap: 12px; }
-.lcard {
-  background: white; border-radius: 20px;
-  padding: 18px; box-shadow: var(--shadow);
-  border: 2.5px solid #f0f0f0;
-  animation: fadeUp 0.3s ease;
-}
-@keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
-.lcard h3 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.1rem; margin-bottom: 10px;
-  display: flex; align-items: center; gap: 8px;
-}
-.lcard p { font-size: 0.9rem; line-height: 1.7; color: #374151; }
-.lcard ul { padding-left: 20px; }
-.lcard ul li { font-size: 0.88rem; line-height: 1.8; color: #374151; }
-.eg {
-  border-radius: 14px; padding: 13px 15px;
-  margin-top: 10px; font-size: 0.86rem;
-  line-height: 1.65; border-left: 5px solid;
-}
-.eg.mat-eg { background: var(--y1l); border-color: var(--y1); }
-.eg.por-eg { background: #e8faf9; border-color: var(--y3); }
-.eg.cie-eg { background: #e8f6ff; border-color: var(--cie); }
+/* MEGA DESAFIO BTN */
+.mega-btn{width:100%;padding:16px;border-radius:16px;border:none;font-family:'Fredoka One',cursive;font-size:1.1rem;cursor:pointer;color:white;letter-spacing:.3px;margin-top:8px;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:transform .15s;}
+.mega-btn:active{transform:scale(.97);}
+.mega-btn-locked{background:#ccc !important;cursor:default;}
 
-/* ── QUIZ ── */
-.quiz-wrap { }
-.qprogress { height: 10px; background: #f0f0f0; border-radius: 50px; margin-bottom: 16px; overflow: hidden; }
-.qpfill { height: 100%; border-radius: 50px; transition: width 0.4s ease; }
-.qcard {
-  background: white; border-radius: 22px;
-  padding: 22px 18px; box-shadow: var(--shadow);
-  border: 3px solid #f0f0f0; animation: fadeUp 0.3s ease;
-}
-.qnum { font-size: 0.72rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-.qtext { font-size: 1.05rem; font-weight: 800; line-height: 1.5; color: var(--text); margin-bottom: 16px; }
-.opts { display: flex; flex-direction: column; gap: 10px; }
-.opt {
-  background: white; border: 2.5px solid #e5e7eb;
-  border-radius: 14px; padding: 14px 16px;
-  cursor: pointer; font-family: 'Nunito', sans-serif;
-  font-weight: 700; font-size: 0.92rem; color: var(--text);
-  display: flex; align-items: flex-start; gap: 10px;
-  transition: all 0.15s; text-align: left;
-}
-.opt:hover:not(:disabled) { border-color: #9ca3af; background: #f9fafb; transform: translateX(3px); }
-.opt-lbl {
-  min-width: 32px; height: 32px; border-radius: 10px;
-  background: #f3f4f6; display: flex; align-items: center;
-  justify-content: center; font-weight: 900; font-size: 0.82rem;
-  flex-shrink: 0;
-}
-.opt.correct-opt { border-color: #22c55e; background: #f0fdf4; color: #166534; }
-.opt.wrong-opt { border-color: #ef4444; background: #fef2f2; color: #991b1b; }
-.opt.correct-opt .opt-lbl { background: #22c55e; color: white; }
-.opt.wrong-opt .opt-lbl { background: #ef4444; color: white; }
+/* TOPICS SCREEN */
+.topics-list{display:flex;flex-direction:column;gap:10px;}
+.topic-card{background:white;border-radius:18px;padding:14px 16px;box-shadow:0 3px 12px rgba(0,0,0,.08);border:3px solid #f0f0f0;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:12px;text-align:left;width:100%;}
+.topic-card:hover:not(:disabled){transform:translateX(4px);box-shadow:0 6px 20px rgba(0,0,0,.12);}
+.topic-card:disabled{cursor:default;opacity:.7;}
+.topic-icon{font-size:1.6rem;flex-shrink:0;}
+.topic-info{flex:1;}
+.topic-name{font-weight:800;font-size:.9rem;line-height:1.3;color:var(--text);}
+.topic-score{font-size:.75rem;color:var(--muted);margin-top:2px;font-weight:700;}
+.topic-status-icon{font-size:1.4rem;flex-shrink:0;}
+.topic-card.t-done{background:linear-gradient(135deg,#f0fdf4,#dcfce7);}
+.topic-card.t-progress{background:linear-gradient(135deg,#fff7ed,#ffedd5);}
+.topic-card.t-locked{background:#f9fafb;}
+.topic-card.t-empty{background:#f9fafb;cursor:default;}
 
-/* FEEDBACK BOX — styled like a friendly teacher note */
-.feedback {
-  display: none; border-radius: 16px;
-  padding: 16px; margin-top: 12px;
-  font-size: 0.9rem; line-height: 1.6; font-weight: 600;
-  border: 2.5px solid;
-}
-.feedback.show { display: block; animation: fadeUp 0.3s ease; }
-.feedback.fb-ok { background: #f0fdf4; border-color: #86efac; color: #166534; }
-.feedback.fb-no { background: #fff7ed; border-color: #fcd34d; color: #92400e; }
-.feedback .fb-why {
-  margin-top: 8px; padding: 10px 12px;
-  background: rgba(255,255,255,0.7); border-radius: 10px;
-  font-size: 0.84rem; font-weight: 600;
-}
+/* TOPIC DETAIL */
+.topic-detail-hero{border-radius:20px;padding:20px;margin-bottom:16px;color:white;position:relative;overflow:hidden;}
+.topic-detail-hero::after{content:'';position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:rgba(255,255,255,.1);border-radius:50%;}
+.topic-detail-hero .td-icon{font-size:2.6rem;margin-bottom:8px;}
+.topic-detail-hero h2{font-family:'Fredoka One',cursive;font-size:1.3rem;}
+.topic-detail-hero .td-sub{font-size:.8rem;opacity:.85;margin-top:4px;}
+.done-badge{display:inline-flex;align-items:center;gap:6px;border-radius:50px;padding:6px 16px;font-weight:800;font-size:.85rem;color:white;margin-bottom:12px;}
+.prog-wrap{background:white;border-radius:14px;padding:12px 16px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.prog-bar-bg{height:10px;background:#f0f0f0;border-radius:50px;overflow:hidden;margin:8px 0 4px;}
+.prog-bar-fill{height:100%;border-radius:50px;transition:width .4s ease;}
+.prog-label{font-size:.8rem;color:var(--muted);font-weight:700;}
+.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.mode-tile{border-radius:16px;padding:18px 12px;text-align:center;cursor:pointer;border:none;font-family:'Nunito',sans-serif;font-weight:800;font-size:.85rem;transition:all .2s;box-shadow:0 3px 12px rgba(0,0,0,.1);color:white;position:relative;}
+.mode-tile:hover:not(.mode-locked){transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.18);}
+.mode-tile:active:not(.mode-locked){transform:scale(.97);}
+.mode-tile .mt-icon{font-size:1.8rem;margin-bottom:6px;}
+.mode-locked{background:#d1d5db !important;cursor:default;color:#6b7280;}
+.lock-hint{font-size:.7rem;opacity:.8;display:block;margin-top:2px;}
 
-.next-q-btn {
-  width: 100%; padding: 15px; border-radius: 14px;
-  border: none; font-family: 'Fredoka One', cursive;
-  font-size: 1rem; cursor: pointer; margin-top: 12px;
-  display: none; color: white; transition: transform 0.15s;
-  letter-spacing: 0.3px;
-}
-.next-q-btn:active { transform: scale(0.97); }
-.next-q-btn.show { display: block; animation: fadeUp 0.3s ease; }
+/* LEARN CARDS */
+.learn-section{display:flex;flex-direction:column;gap:12px;}
+.lcard{background:white;border-radius:20px;padding:18px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0;animation:fadeUp .3s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.lcard h3{font-family:'Fredoka One',cursive;font-size:1.1rem;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.lcard p{font-size:.9rem;line-height:1.7;color:#374151;}
+.eg{border-radius:14px;padding:13px 15px;margin-top:10px;font-size:.86rem;line-height:1.65;border-left:5px solid;}
 
-/* ── RESULTS ── */
-.results-card {
-  background: white; border-radius: 24px;
-  padding: 30px 20px; text-align: center;
-  box-shadow: var(--shadow); display: none;
-  border: 3px solid #f0f0f0;
-}
-.results-card.show { display: block; animation: pop 0.4s ease; }
-@keyframes pop { 0%{transform:scale(0.8);opacity:0} 70%{transform:scale(1.05)} 100%{transform:scale(1);opacity:1} }
-.res-big { font-size: 4rem; margin-bottom: 6px; }
-.res-score { font-family: 'Fredoka One', cursive; font-size: 3.2rem; }
-.res-of { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
-.res-stars { font-size: 2.2rem; letter-spacing: 6px; margin-bottom: 10px; }
-.res-msg { font-size: 1rem; font-weight: 800; margin-bottom: 20px; }
-.res-breakdown { background: #f9fafb; border-radius: 14px; padding: 12px; margin-bottom: 16px; text-align: left; }
-.res-breakdown h4 { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
-.bd-item { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; padding: 4px 0; }
-.bd-ok { color: #22c55e; } .bd-no { color: #ef4444; }
-.retry-btn {
-  padding: 14px 28px; border-radius: 50px; border: none;
-  font-family: 'Fredoka One', cursive; font-size: 1rem;
-  cursor: pointer; color: white; letter-spacing: 0.3px;
-  transition: transform 0.15s; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-.retry-btn:active { transform: scale(0.96); }
+/* PAGINATION */
+.pagination{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px;}
+.pagination button{background:white;border:2.5px solid #e5e7eb;border-radius:50px;padding:8px 18px;font-family:'Nunito',sans-serif;font-weight:800;cursor:pointer;font-size:.9rem;transition:all .15s;}
+.pagination button:disabled{opacity:.4;cursor:default;}
+.pagination span{font-weight:800;font-size:.9rem;color:var(--muted);}
 
-/* ── CHALLENGE ── */
-.timer-display {
-  text-align: center; font-family: 'Fredoka One', cursive;
-  font-size: 3.5rem; padding: 8px 0 14px;
-  transition: color 0.3s;
-}
-.timer-ring {
-  width: 80px; height: 80px; border-radius: 50%;
-  margin: 0 auto 14px;
-  border: 6px solid #f0f0f0;
-  display: flex; align-items: center; justify-content: center;
-  position: relative; font-family: 'Fredoka One', cursive;
-  font-size: 1.8rem; transition: border-color 0.3s;
-}
+/* QUIZ */
+.qprogress{height:10px;background:#f0f0f0;border-radius:50px;margin-bottom:16px;overflow:hidden;}
+.qpfill{height:100%;border-radius:50px;transition:width .4s ease;}
+.qcard{background:white;border-radius:22px;padding:22px 18px;box-shadow:var(--shadow);border:3px solid #f0f0f0;animation:fadeUp .3s ease;}
+.qnum{font-size:.72rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+.qtext{font-size:1.05rem;font-weight:800;line-height:1.5;color:var(--text);margin-bottom:16px;}
+.opts{display:flex;flex-direction:column;gap:10px;}
+.opt{background:white;border:2.5px solid #e5e7eb;border-radius:14px;padding:14px 16px;cursor:pointer;font-family:'Nunito',sans-serif;font-weight:700;font-size:.92rem;color:var(--text);display:flex;align-items:flex-start;gap:10px;transition:all .15s;text-align:left;}
+.opt:hover:not(:disabled){border-color:#9ca3af;background:#f9fafb;transform:translateX(3px);}
+.opt-lbl{min-width:32px;height:32px;border-radius:10px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.82rem;flex-shrink:0;}
+.opt.correct-opt{border-color:#22c55e;background:#f0fdf4;color:#166534;}
+.opt.wrong-opt{border-color:#ef4444;background:#fef2f2;color:#991b1b;}
+.opt.correct-opt .opt-lbl{background:#22c55e;color:white;}
+.opt.wrong-opt .opt-lbl{background:#ef4444;color:white;}
+.feedback{display:none;border-radius:16px;padding:16px;margin-top:12px;font-size:.9rem;line-height:1.6;font-weight:600;border:2.5px solid;}
+.feedback.show{display:block;animation:fadeUp .3s ease;}
+.feedback.fb-ok{background:#f0fdf4;border-color:#86efac;color:#166534;}
+.feedback.fb-err{background:#fef2f2;border-color:#fca5a5;color:#991b1b;}
+.next-q-btn{width:100%;padding:15px;border-radius:14px;border:none;font-family:'Fredoka One',cursive;font-size:1rem;cursor:pointer;margin-top:12px;display:none;color:white;transition:transform .15s;}
+.next-q-btn.show{display:block;animation:fadeUp .3s ease;}
+.next-q-btn:active{transform:scale(.97);}
 
-/* ── AI SECTION ── */
-.ai-box {
-  background: white; border-radius: 20px;
-  padding: 18px; box-shadow: var(--shadow);
-  border: 2.5px solid #f0f0f0; margin-bottom: 12px;
-}
-.ai-box h3 {
-  font-family: 'Fredoka One', cursive; font-size: 1rem;
-  margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
-}
-.ai-select {
-  width: 100%; padding: 11px 14px; border-radius: 12px;
-  border: 2.5px solid #e5e7eb; font-family: 'Nunito', sans-serif;
-  font-size: 0.88rem; font-weight: 700; background: #f9fafb;
-  margin-bottom: 10px; color: var(--text);
-}
-.level-row { display: flex; gap: 8px; margin-bottom: 10px; }
-.lv-btn {
-  flex: 1; padding: 9px; border-radius: 10px;
-  border: 2.5px solid #e5e7eb; background: white;
-  font-family: 'Nunito', sans-serif; font-weight: 800;
-  font-size: 0.78rem; cursor: pointer; color: var(--muted);
-  transition: all 0.15s;
-}
-.ai-go-btn {
-  width: 100%; padding: 14px; border-radius: 14px;
-  border: none; font-family: 'Fredoka One', cursive;
-  font-size: 1rem; cursor: pointer; color: white;
-  transition: transform 0.15s; letter-spacing: 0.3px;
-}
-.ai-go-btn:active { transform: scale(0.97); }
-.ai-go-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-.ai-out {
-  margin-top: 12px; background: #f9fafb;
-  border-radius: 14px; padding: 15px;
-  font-size: 0.88rem; line-height: 1.75; color: var(--text);
-  display: none; border: 2px solid #e5e7eb;
-}
-.ai-out.show { display: block; animation: fadeUp 0.3s ease; }
-.ai-spinner { text-align: center; font-size: 1.6rem; padding: 16px; }
+/* RESULTS */
+.results-card{background:white;border-radius:24px;padding:30px 20px;text-align:center;box-shadow:var(--shadow);border:3px solid #f0f0f0;animation:pop .4s ease;}
+@keyframes pop{0%{transform:scale(.8);opacity:0}70%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
+.res-big{font-size:4rem;margin-bottom:6px;}
+.res-score{font-family:'Fredoka One',cursive;font-size:3.2rem;}
+.res-of{font-size:.85rem;color:var(--muted);margin-bottom:8px;}
+.res-stars{font-size:2.2rem;letter-spacing:6px;margin-bottom:10px;}
+.res-msg{font-size:1rem;font-weight:800;margin-bottom:20px;}
+.res-btn{padding:14px 28px;border-radius:50px;border:none;font-family:'Fredoka One',cursive;font-size:1rem;cursor:pointer;color:white;transition:transform .15s;box-shadow:0 4px 16px rgba(0,0,0,.15);}
+.res-btn:active{transform:scale(.96);}
 
-/* ── FLOATING NAV ── */
-.float-nav {
-  position: fixed; bottom: 0; left: 0; right: 0;
-  background: white; border-top: 2px solid #f0f0f0;
-  padding: 8px 16px 10px;
-  display: none; gap: 0; z-index: 200;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
-}
-.float-nav.visible { display: flex; }
-.fn-btn {
-  flex: 1; display: flex; flex-direction: column;
-  align-items: center; gap: 1px; cursor: pointer;
-  padding: 5px 2px; border-radius: 10px;
-  font-size: 0.58rem; font-weight: 800; color: var(--muted);
-  transition: all 0.15s; border: none; background: none;
-}
-.fn-btn .fn-icon { font-size: 1.2rem; }
-.fn-btn.fn-active { color: var(--active); }
-.fn-btn.fn-active .fn-icon { transform: scale(1.15); }
+/* CHALLENGE */
+.timer-ring{width:80px;height:80px;border-radius:50%;margin:0 auto 14px;border:6px solid #f0f0f0;display:flex;align-items:center;justify-content:center;font-family:'Fredoka One',cursive;font-size:1.8rem;transition:border-color .3s;}
 
-/* DECORATIVE BG BLOBS */
-.blob {
-  position: fixed; border-radius: 50%;
-  filter: blur(60px); opacity: 0.15; pointer-events: none; z-index: 0;
-}
-.blob1 { width: 250px; height: 250px; background: var(--y1); top: -80px; left: -80px; }
-.blob2 { width: 200px; height: 200px; background: var(--y2); bottom: 100px; right: -60px; }
-.blob3 { width: 160px; height: 160px; background: var(--y3); top: 40%; left: 60%; }
+/* AI */
+.ai-box{background:white;border-radius:20px;padding:18px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0;margin-bottom:12px;}
+.ai-topic-tag{display:inline-block;border-radius:50px;padding:5px 14px;font-size:.8rem;font-weight:800;color:white;margin-bottom:12px;}
+.level-row{display:flex;gap:8px;margin-bottom:10px;}
+.lv-btn{flex:1;padding:9px;border-radius:10px;border:2.5px solid #e5e7eb;background:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:.78rem;cursor:pointer;color:var(--muted);transition:all .15s;}
+.ai-go-btn{width:100%;padding:14px;border-radius:14px;border:none;font-family:'Fredoka One',cursive;font-size:1rem;cursor:pointer;color:white;transition:transform .15s;letter-spacing:.3px;}
+.ai-go-btn:active{transform:scale(.97);}
+.ai-go-btn:disabled{opacity:.5;cursor:not-allowed;}
+.ai-out{margin-top:12px;}
+.ai-spinner{text-align:center;font-size:1.6rem;padding:16px;}
 
-/* CELEBRATE ANIMATION */
-@keyframes celebrate {
-  0%,100%{transform:rotate(-3deg) scale(1)} 50%{transform:rotate(3deg) scale(1.05)}
-}
-.celebrate { animation: celebrate 0.5s ease 3; }
+/* GRAMMAR */
+.gram-card{background:white;border-radius:20px;padding:18px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0;animation:fadeUp .3s ease;}
+.gram-card h3{font-family:'Fredoka One',cursive;font-size:1.1rem;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
 
-/* SHAKE */
-@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
-.shake { animation: shake 0.3s ease; }
+/* SETTINGS */
+.settings-section{background:white;border-radius:20px;padding:18px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0;margin-bottom:12px;}
+.settings-section h3{font-family:'Fredoka One',cursive;font-size:1rem;margin-bottom:14px;color:var(--muted);}
+.setting-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #f0f0f0;}
+.setting-row:last-child{border-bottom:none;}
+.setting-label{font-weight:700;font-size:.9rem;}
+.setting-desc{font-size:.75rem;color:var(--muted);margin-top:2px;}
+.toggle{position:relative;display:inline-block;width:50px;height:26px;}
+.toggle input{opacity:0;width:0;height:0;}
+.slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:#d1d5db;border-radius:26px;transition:.3s;}
+.slider:before{position:absolute;content:"";height:20px;width:20px;left:3px;bottom:3px;background:white;border-radius:50%;transition:.3s;}
+.toggle input:checked+.slider{background:#22c55e;}
+.toggle input:checked+.slider:before{transform:translateX(24px);}
+.danger-btn{width:100%;padding:12px;border-radius:14px;background:#fef2f2;border:2px solid #fca5a5;color:#991b1b;font-family:'Nunito',sans-serif;font-weight:800;cursor:pointer;font-size:.9rem;transition:all .15s;}
+.danger-btn:hover{background:#fee2e2;}
+.api-input{width:100%;padding:10px 12px;border-radius:10px;border:2.5px solid #e5e7eb;font-family:'Nunito',sans-serif;font-size:.85rem;margin-top:6px;}
+
+/* BLOBS */
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.15;pointer-events:none;z-index:0;}
+.blob1{width:250px;height:250px;background:var(--y1);top:-80px;left:-80px;}
+.blob2{width:200px;height:200px;background:var(--y2);bottom:100px;right:-60px;}
+.blob3{width:160px;height:160px;background:var(--y3);top:40%;left:60%;}
+
+/* ANIMATIONS */
+@keyframes celebrate{0%,100%{transform:rotate(-3deg) scale(1)}50%{transform:rotate(3deg) scale(1.05)}}
+.celebrate{animation:celebrate .5s ease 3;}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.shake{animation:shake .3s ease;}
 
 /* RESPONSIVE */
-@media (min-width: 600px) {
-  #home-screen, #subject-screen { max-width: 580px; margin: 0 auto; }
-  .app-bar {
-    padding-left: max(16px, calc(50% - 290px));
-    padding-right: max(16px, calc(50% - 290px));
-  }
+@media(min-width:600px){
+  .screen,.screen.active{max-width:580px;margin-left:auto;margin-right:auto;}
+  .app-bar{padding-left:max(16px,calc(50% - 290px));padding-right:max(16px,calc(50% - 290px));}
 }
-@media (min-width: 900px) {
-  #home-screen { max-width: 880px; margin: 0 auto; padding: 28px 20px 40px; }
-  #subject-screen { max-width: 880px; margin: 0 auto; padding: 16px 20px 40px; }
-  .app-bar {
-    padding-left: max(16px, calc(50% - 440px));
-    padding-right: max(16px, calc(50% - 440px));
-  }
-  .app-bar-logo { font-size: 1.5rem; }
-  .app-bar-sub { font-size: 0.78rem; }
-  .float-nav { display: none !important; }
-  .mode-row { flex-wrap: wrap; overflow-x: visible; padding-bottom: 6px; }
-  .mode-pill { padding: 10px 22px; font-size: 0.85rem; }
-  .years-grid { grid-template-columns: repeat(4, 1fr); }
-  .year-card { padding: 24px 14px; }
-  .year-card .yr-emoji { font-size: 3.2rem; }
-  .year-card .yr-num { font-size: 1.7rem; }
-  .subj-btn { padding: 20px 14px; }
-  .subj-btn .sb-icon { font-size: 2.4rem; }
-  .subj-btn { font-size: 0.88rem; }
-  .learn-section { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .lcard { padding: 22px; }
-  .opts { display: grid; grid-template-columns: 1fr 1fr; }
-  .qtext { font-size: 1.1rem; }
-  .qcard { padding: 28px 24px; }
-  .year-hero { border-radius: 22px; }
+@media(min-width:900px){
+  .screen,.screen.active{max-width:860px;}
+  .app-bar{padding-left:max(16px,calc(50% - 430px));padding-right:max(16px,calc(50% - 430px));}
+  .years-grid{grid-template-columns:repeat(4,1fr);}
+  .learn-section{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .opts{display:grid;grid-template-columns:1fr 1fr;}
+  .mode-grid{grid-template-columns:1fr 1fr 1fr 1fr;}
 }
-@media (min-width: 1280px) {
-  #home-screen, #subject-screen { max-width: 1160px; }
-  .app-bar {
-    padding-left: max(20px, calc(50% - 580px));
-    padding-right: max(20px, calc(50% - 580px));
-  }
-  .learn-section { grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
-  .app-bar-logo { font-size: 1.6rem; }
-  .year-card .yr-emoji { font-size: 3.6rem; }
-  .year-card .yr-num { font-size: 1.9rem; }
-  .mode-pill { font-size: 0.9rem; padding: 11px 24px; }
+@media(min-width:1280px){
+  .screen,.screen.active{max-width:1100px;}
+  .app-bar{padding-left:max(20px,calc(50% - 550px));padding-right:max(20px,calc(50% - 550px));}
+  .learn-section{grid-template-columns:1fr 1fr 1fr;}
 }
 </style>
 </head>
 <body>
 
-<!-- BACKGROUND BLOBS -->
 <div class="blob blob1"></div>
 <div class="blob blob2"></div>
 <div class="blob blob3"></div>
@@ -462,11 +280,11 @@ body {
     <div class="app-bar-logo">🏫 Escola Divertida</div>
     <div class="app-bar-sub">Provas Nacionais 2025/2026 • Cabo Verde</div>
   </div>
-  <div class="app-bar-stars" id="total-stars">⭐ 0 pts</div>
+  <div class="app-bar-pts" id="app-pts">⭐ 0 pts</div>
 </div>
 
 <!-- HOME SCREEN -->
-<div id="home-screen" style="position:relative;z-index:1">
+<div id="home-screen" class="screen active">
   <div class="welcome-text">
     <h2>Olá! Escolhe o teu ano! 🎒</h2>
     <p>Matemática • Português • Ciências</p>
@@ -498,738 +316,954 @@ body {
     </div>
   </div>
   <div style="background:white;border-radius:20px;padding:16px;box-shadow:var(--shadow);border:2.5px solid #f0f0f0">
-    <div style="font-family:'Fredoka One',cursive;font-size:1rem;margin-bottom:10px">🎯 Dicas para estudar bem:</div>
-    <div style="font-size:0.85rem;color:#374151;line-height:1.8">
-      ✅ Estuda <strong>um pouco todos os dias</strong><br>
-      ✅ Começa pelo modo <strong>Aprender</strong>, depois <strong>Praticar</strong><br>
-      ✅ Quando erras, lê sempre a <strong>explicação</strong><br>
-      ✅ O modo <strong>Desafio</strong> é para quando já sabes bem!<br>
+    <div style="font-family:'Fredoka One',cursive;font-size:1rem;margin-bottom:10px">🎯 Como estudar bem:</div>
+    <div style="font-size:.85rem;color:#374151;line-height:1.8">
+      ✅ Escolhe um <strong>tópico</strong> e estuda passo a passo<br>
+      ✅ Começa por <strong>Aprender</strong>, depois <strong>Praticar</strong><br>
+      ✅ Com 8/10 em Praticar desbloqueia o <strong>Desafio</strong><br>
+      🏆 Completa todos os tópicos do ano → <strong>Mega-Desafio</strong>!<br>
       🤖 O <strong>Tutor IA</strong> precisa de internet
     </div>
   </div>
 </div>
 
 <!-- SUBJECT SCREEN -->
-<div id="subject-screen" style="position:relative;z-index:1">
-  <button class="back-btn" onclick="goHome()">← Voltar</button>
+<div id="subject-screen" class="screen">
+  <button class="back-btn" onclick="goBack()">← Voltar</button>
   <div class="year-hero" id="year-hero">
     <div class="yh-emoji" id="yh-emoji">🏆</div>
     <h2 id="yh-title">4ª Classe</h2>
     <p id="yh-sub">Escolhe a disciplina</p>
   </div>
   <div class="subj-grid">
-    <div class="subj-btn mat-btn" id="btn-mat" onclick="selectSubject('mat')">
+    <button class="subj-btn mat-btn" onclick="selectSubject('mat')">
       <div class="sb-icon">➕</div>Matemática
-    </div>
-    <div class="subj-btn por-btn" id="btn-por" onclick="selectSubject('por')">
+    </button>
+    <button class="subj-btn por-btn" onclick="selectSubject('por')">
       <div class="sb-icon">📖</div>Português
-    </div>
-    <div class="subj-btn cie-btn" id="btn-cie" onclick="selectSubject('cie')">
+    </button>
+    <button class="subj-btn cie-btn" onclick="selectSubject('cie')">
       <div class="sb-icon">🔬</div>Ciências
-    </div>
+    </button>
   </div>
-  <div class="mode-row" id="mode-row">
-    <button class="mode-pill active-mode" id="pill-learn" onclick="setMode('learn')">📚 Aprender</button>
-    <button class="mode-pill" id="pill-practice" onclick="setMode('practice')">✏️ Praticar</button>
-    <button class="mode-pill" id="pill-ai" onclick="setMode('ai')">🤖 Tutor IA</button>
-    <button class="mode-pill" id="pill-challenge" onclick="setMode('challenge')">⏱️ Desafio</button>
-    <button class="mode-pill" id="pill-gram" onclick="setMode('gram')">📝 Gram.</button>
+  <div class="gram-row">
+    <button class="gram-btn" onclick="openGrammar()">📝 Gramática<br><small style="font-size:.7rem;font-weight:600;color:var(--muted)">Língua Portuguesa</small></button>
+    <button class="settings-btn" onclick="openSettings()">⚙️ Definições<br><small style="font-size:.7rem;font-weight:600;color:var(--muted)">Progresso e API</small></button>
   </div>
-  <div id="content-area"></div>
 </div>
 
-<!-- FLOAT NAV -->
-<div class="float-nav" id="float-nav">
-  <button class="fn-btn fn-active" id="fn-learn" onclick="setMode('learn')"><span class="fn-icon">📚</span>Aprender</button>
-  <button class="fn-btn" id="fn-practice" onclick="setMode('practice')"><span class="fn-icon">✏️</span>Praticar</button>
-  <button class="fn-btn" id="fn-ai" onclick="setMode('ai')"><span class="fn-icon">🤖</span>Tutor IA</button>
-  <button class="fn-btn" id="fn-challenge" onclick="setMode('challenge')"><span class="fn-icon">⏱️</span>Desafio</button>
-  <button class="fn-btn" id="fn-gram" onclick="setMode('gram')"><span class="fn-icon">📝</span>Gram.</button>
+<!-- TRIMESTERS SCREEN -->
+<div id="trimesters-screen" class="screen">
+  <div class="screen-hdr">
+    <button class="back-btn" onclick="goBack()" style="margin-bottom:0">← Voltar</button>
+    <h2 id="trim-hdr-title">Matemática</h2>
+    <span class="pts-badge" id="trim-pts">0 pts</span>
+  </div>
+  <div class="trim-list" id="trim-list"></div>
+  <div id="mega-wrap"></div>
+</div>
+
+<!-- TOPICS SCREEN -->
+<div id="topics-screen" class="screen">
+  <div class="screen-hdr">
+    <button class="back-btn" onclick="goBack()" style="margin-bottom:0">← Voltar</button>
+    <h2 id="topics-hdr-title">1º Trimestre</h2>
+  </div>
+  <div class="topics-list" id="topics-list"></div>
+</div>
+
+<!-- TOPIC DETAIL SCREEN -->
+<div id="topic-screen" class="screen">
+  <button class="back-btn" onclick="goBack()">← Voltar</button>
+  <div id="topic-detail-content"></div>
+</div>
+
+<!-- LEARN SCREEN -->
+<div id="learn-screen" class="screen">
+  <div class="screen-hdr">
+    <button class="back-btn" onclick="goBack()" style="margin-bottom:0">← Voltar</button>
+    <h2 id="learn-title">Aprender</h2>
+  </div>
+  <div id="learn-pagination-top"></div>
+  <div class="learn-section" id="learn-content"></div>
+  <div id="learn-pagination-bot" style="margin-top:14px"></div>
+</div>
+
+<!-- PRACTICE SCREEN -->
+<div id="practice-screen" class="screen">
+  <div id="practice-content"></div>
+</div>
+
+<!-- AI SCREEN -->
+<div id="ai-screen" class="screen">
+  <div class="screen-hdr">
+    <button class="back-btn" onclick="goBack()" style="margin-bottom:0">← Voltar</button>
+    <h2>🤖 Tutor IA</h2>
+  </div>
+  <div id="ai-content"></div>
+</div>
+
+<!-- CHALLENGE SCREEN -->
+<div id="challenge-screen" class="screen">
+  <div id="challenge-content"></div>
+</div>
+
+<!-- MEGA CHALLENGE SCREEN -->
+<div id="mega-screen" class="screen">
+  <div id="mega-content"></div>
+</div>
+
+<!-- GRAMMAR SCREEN -->
+<div id="grammar-screen" class="screen">
+  <div class="screen-hdr">
+    <button class="back-btn" onclick="goBack()" style="margin-bottom:0">← Voltar</button>
+    <h2 style="color:var(--por)">📝 Gramática</h2>
+  </div>
+  <div id="gram-pagination-top"></div>
+  <div class="learn-section" id="gram-content"></div>
+  <div id="gram-pagination-bot" style="margin-top:14px"></div>
+</div>
+
+<!-- SETTINGS SCREEN -->
+<div id="settings-screen" class="screen">
+  <div class="screen-hdr">
+    <button class="back-btn" onclick="goBack()" style="margin-bottom:0">← Voltar</button>
+    <h2>⚙️ Definições</h2>
+  </div>
+  <div id="settings-content"></div>
 </div>
 
 <script>
-// ═══════════════════════════
+// ═══════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════
+const SUBJ_COLOR = { mat:'#FF6B6B', por:'#4ECDC4', cie:'#45B7D1' };
+const SUBJ_NAME  = { mat:'Matemática', por:'Língua Portuguesa', cie:'Ciências Integradas' };
+const SUBJ_ICON  = { mat:'➕', por:'📖', cie:'🔬' };
+const YR_COLOR   = ['','#FF6B6B','#FF9F1C','#2EC4B6','#7B2FBE'];
+const YR_EMOJI   = ['','🐣','🌱','🌟','🏆'];
+const STORAGE_KEY = 'escola_v2';
+const PAGE_SIZE   = 6;
+
+// ═══════════════════════════════════════
 // STATE
-// ═══════════════════════════
-let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
-let totalPoints = 0, aiLevel = 'base';
-let challengeInterval = null;
-let wrongAnswers = [];
-let currentLearnPage = 1, currentGramPage = 1;
-const LEARN_PAGE_SIZE = 6, GRAM_PAGE_SIZE = 6;
-let jsonDB = {}, _jsonPromise = null;
-function ensureJSON(){
-  if(_jsonPromise) return _jsonPromise;
-  _jsonPromise=Promise.all([
-    fetch('matematica.json').then(r=>r.json()).catch(()=>null),
-    fetch('portugues.json').then(r=>r.json()).catch(()=>null),
-    fetch('ciencias.json').then(r=>r.json()).catch(()=>null)
-  ]).then(([mat,por,cie])=>{if(mat)jsonDB.mat=mat;if(por)jsonDB.por=por;if(cie)jsonDB.cie=cie;});
-  return _jsonPromise;
+// ═══════════════════════════════════════
+let currentYear    = 1;
+let currentSubject = 'mat';
+let currentTrimIdx = 0;
+let currentTema    = null;
+let aiLevel        = 'base';
+let _aiQ           = null;
+let _aiHistory     = [];
+let learnPage      = 1;
+let gramPage       = 1;
+const screenHistory = [];
+
+// ═══════════════════════════════════════
+// JSON LOADING
+// ═══════════════════════════════════════
+const jsonDB = {};
+const JSON_FILES = { mat:'matematica.json', por:'portugues.json', cie:'ciencias.json' };
+
+async function ensureJSON(subj) {
+  if (!jsonDB[subj]) {
+    const r = await fetch(JSON_FILES[subj]);
+    const text = await r.text();
+    jsonDB[subj] = JSON.parse(text.replace(/^﻿/, ''));
+  }
 }
-function getJSONAno(subj,year){return(jsonDB[subj]?.anos||[]).find(a=>a.ano===year)||null;}
 
-const YEAR_META = {
-  1:{emoji:'🐣',title:'1ª Classe',sub:'6-7 anos',color:'var(--y1)',dark:'var(--y1d)',cls:'y1'},
-  2:{emoji:'🌱',title:'2ª Classe',sub:'7-8 anos',color:'var(--y2)',dark:'var(--y2d)',cls:'y2'},
-  3:{emoji:'🌟',title:'3ª Classe',sub:'8-9 anos',color:'var(--y3)',dark:'var(--y3d)',cls:'y3'},
-  4:{emoji:'🏆',title:'4ª Classe',sub:'9-10 anos • Prova Nacional',color:'var(--y4)',dark:'var(--y4d)',cls:'y4'},
-};
-const SUBJ_COLOR = {
-  mat:'var(--y1)', por:'var(--y3)', cie:'var(--cie)'
-};
-const LEVEL_LABEL = {base:'básico',medio:'médio',avancado:'avançado'};
+async function ensureAllJSON() {
+  await Promise.all(['mat','por','cie'].map(ensureJSON));
+}
 
-// Splash
-setTimeout(()=>{
-  document.getElementById('splash').style.opacity='0';
-  setTimeout(()=>document.getElementById('splash').style.display='none',500);
-},1800);
+function getAnoData(subj, year) {
+  return jsonDB[subj]?.anos?.find(a => a.ano === year);
+}
 
-// ═══════════════════════════
+function getAllTemas(subj, year) {
+  return getAnoData(subj, year)?.trimestres?.flatMap(t => t.temas) || [];
+}
+
+// ═══════════════════════════════════════
+// PROGRESS SYSTEM
+// ═══════════════════════════════════════
+function loadProg() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || defaultProg(); }
+  catch { return defaultProg(); }
+}
+function defaultProg() {
+  return { version:1, settings:{ sequential:false }, points:0, progress:{} };
+}
+function saveProg(p) { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); }
+
+function getTopicProg(subj, year, temaId) {
+  const p = loadProg();
+  return p.progress?.[subj]?.[year]?.[temaId] || { done:false, bestScore:0, attempts:0, desafioDone:false };
+}
+function setTopicProg(subj, year, temaId, data) {
+  const p = loadProg();
+  if (!p.progress[subj]) p.progress[subj] = {};
+  if (!p.progress[subj][year]) p.progress[subj][year] = {};
+  const cur = getTopicProg(subj, year, temaId);
+  p.progress[subj][year][temaId] = { ...cur, ...data };
+  saveProg(p);
+}
+function addPoints(pts) {
+  const p = loadProg();
+  p.points = (p.points || 0) + pts;
+  saveProg(p);
+  refreshPtsDisplay(p.points);
+}
+function refreshPtsDisplay(pts) {
+  const v = pts !== undefined ? pts : loadProg().points;
+  document.querySelectorAll('.pts-badge, #app-pts, #trim-pts').forEach(el => {
+    el.textContent = '⭐ ' + v + ' pts';
+  });
+}
+function getSettings() { return loadProg().settings || { sequential:false }; }
+
+function isTopicLocked(subj, year, temaId) {
+  if (!getSettings().sequential) return false;
+  const all = getAllTemas(subj, year);
+  const idx = all.findIndex(t => t.id === temaId);
+  if (idx <= 0) return false;
+  return !getTopicProg(subj, year, all[idx - 1].id).done;
+}
+function isTopicEmpty(tema) {
+  return !(tema.aprender?.length || tema.praticar?.length);
+}
+function isYearComplete(subj, year) {
+  const all = getAllTemas(subj, year).filter(t => !isTopicEmpty(t));
+  if (!all.length) return false;
+  return all.every(t => getTopicProg(subj, year, t.id).done);
+}
+
+// ═══════════════════════════════════════
 // NAVIGATION
-// ═══════════════════════════
-function goHome(){
-  if(challengeInterval) clearInterval(challengeInterval);
-  document.getElementById('home-screen').style.display='block';
-  document.getElementById('subject-screen').style.display='none';
-  document.getElementById('float-nav').classList.remove('visible');
-  window.scrollTo(0,0);
+// ═══════════════════════════════════════
+function showScreen(id, push = true) {
+  if (push) {
+    const cur = document.querySelector('.screen.active')?.id;
+    if (cur && cur !== id) screenHistory.push(cur);
+  }
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function goBack() {
+  const prev = screenHistory.pop() || 'home-screen';
+  showScreen(prev, false);
 }
 
-function selectYear(y){
-  currentYear=y;
-  const m=YEAR_META[y];
-  document.getElementById('yh-emoji').textContent=m.emoji;
-  document.getElementById('yh-title').textContent=m.title;
-  document.getElementById('yh-sub').textContent=m.sub;
-  const hero=document.getElementById('year-hero');
-  hero.style.background=`linear-gradient(135deg, ${m.color}, ${m.dark})`;
-  document.getElementById('home-screen').style.display='none';
-  document.getElementById('subject-screen').style.display='block';
-  document.getElementById('float-nav').classList.add('visible');
-  updateActiveColor();
-  selectSubject('mat');
-  window.scrollTo(0,0);
+// ═══════════════════════════════════════
+// HOME
+// ═══════════════════════════════════════
+function selectYear(y) {
+  currentYear = y;
+  const heroEl = document.getElementById('year-hero');
+  const col = YR_COLOR[y];
+  heroEl.style.background = `linear-gradient(135deg,${col},${col}aa)`;
+  document.getElementById('yh-emoji').textContent = YR_EMOJI[y];
+  document.getElementById('yh-title').textContent = y + 'ª Classe';
+  document.getElementById('yh-sub').textContent = 'Escolhe a disciplina';
+  showScreen('subject-screen');
 }
 
-function selectSubject(s){
-  currentSubject=s;
-  currentLearnPage=1;
-  ['mat','por','cie'].forEach(x=>{
-    document.getElementById('btn-'+x).classList.remove('active-subj');
-  });
-  document.getElementById('btn-'+s).classList.add('active-subj');
-  updateActiveColor();
-  setMode(currentMode);
+// ═══════════════════════════════════════
+// SUBJECT
+// ═══════════════════════════════════════
+async function selectSubject(s) {
+  currentSubject = s;
+  _aiHistory = [];
+  await ensureJSON(s);
+  renderTrimestres();
+  showScreen('trimesters-screen');
 }
 
-function setMode(m){
-  if(challengeInterval) clearInterval(challengeInterval);
-  currentMode=m;
-  ['learn','practice','ai','challenge','gram'].forEach(x=>{
-    document.getElementById('pill-'+x).classList.remove('active-mode');
-    document.getElementById('pill-'+x).style.background='white';
-    document.getElementById('pill-'+x).style.color='var(--muted)';
-    const fn=document.getElementById('fn-'+x);
-    if(fn){fn.classList.remove('fn-active');fn.style.color='';}
-  });
-  const col=m==='gram'?'#7B2FBE':SUBJ_COLOR[currentSubject];
-  document.getElementById('pill-'+m).classList.add('active-mode');
-  document.getElementById('pill-'+m).style.background=col;
-  document.getElementById('pill-'+m).style.borderColor=col;
-  const fn=document.getElementById('fn-'+m);
-  if(fn){fn.classList.add('fn-active');fn.style.color=col;}
-  renderContent();
-  window.scrollTo(0,200);
-}
+// ═══════════════════════════════════════
+// TRIMESTERS
+// ═══════════════════════════════════════
+function renderTrimestres() {
+  const anoData = getAnoData(currentSubject, currentYear);
+  const col = SUBJ_COLOR[currentSubject];
+  document.getElementById('trim-hdr-title').textContent = SUBJ_ICON[currentSubject] + ' ' + SUBJ_NAME[currentSubject];
+  document.getElementById('trim-hdr-title').style.color = col;
+  refreshPtsDisplay();
 
-function updateActiveColor(){
-  const col=SUBJ_COLOR[currentSubject];
-  document.documentElement.style.setProperty('--active',col);
-}
-
-// ═══════════════════════════
-// POINTS
-// ═══════════════════════════
-function addPoints(n){
-  totalPoints+=n;
-  document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
-}
-
-// ═══════════════════════════
-// RENDER CONTENT
-// ═══════════════════════════
-function renderContent(){
-  const area=document.getElementById('content-area');
-  area.innerHTML='';
-  if(currentMode==='learn') renderLearn(area);
-  else if(currentMode==='practice') renderPractice(area);
-  else if(currentMode==='ai') renderAI(area);
-  else if(currentMode==='challenge') renderChallenge(area);
-  else if(currentMode==='gram') renderGramatica(area);
-}
-
-// ═══════════════════════════
-// ──────────────────────────
-// LEARN CONTENT
-// ──────────────────────────
-// ═══════════════════════════
-const LEARN_TRICKS={
-  // Ano 1 — Mat
-  "1_mat_Números de 1 a 100":"Conta nos dedos: 5 de cada mão = 10. Com os dois pés chega ao 20!",
-  "1_mat_Somar é juntar!":"Começa sempre no número MAIOR e conta para cima: 3+5, começa no 5 e conta 3: 6, 7, 8!",
-  "1_mat_Subtrair é tirar!":"Conta para trás! 8-3: começa no 8 e recua 3: 7, 6, 5. Ficaste em 5!",
-  "1_mat_Comparar números":"O crocodilo come o MAIOR! O bico > aponta sempre para o número maior!",
-  "1_mat_Formas Geométricas":"TRIângulo = 3 lados. QUADrado = 4 lados iguais. RetÂNGulo = 4 lados (2 pares). Conta os lados!",
-  // Ano 1 — Por
-  "1_por_As Letras do Alfabeto":"Canta: A-E-I-O-U! São as 5 vogais. As outras 21 letras são consoantes.",
-  "1_por_Palavras e Sílabas":"Bate palmas enquanto dizes a palavra. Cada palma = 1 sílaba. PE-I-XE = 3 palmas!",
-  "1_por_Letras Maiúsculas":"3 regras: início de frase · nome de pessoa · nome de lugar. Sempre maiúscula!",
-  "1_por_Vogais e Consoantes":"Vogal = som aberto, como ao cantar. Consoante = precisa de uma vogal ao lado para ter som!",
-  // Ano 1 — Cie
-  "1_cie_O Dia e a Noite":"A Terra roda! Virada para o Sol = DIA. Virada para longe = NOITE. Roda 1 vez por dia!",
-  "1_cie_A Água":"3 estados: SÓLIDA (gelo) · LÍQUIDA (água) · GASOSA (vapor). O sol transforma líquida em gasosa!",
-  "1_cie_As Plantas":"RAIZ bebe · CAULE transporta · FOLHA faz comida (fotossíntese) · FLOR reproduz!",
-  "1_cie_A Família":"Família nuclear = pais + filhos. Família alargada = + avós, tios, primos. Toda a gente importa!",
-  // Ano 2 — Mat
-  "2_mat_Números até 1.000":"C-D-U: Centenas · Dezenas · Unidades. Em 357: 300+50+7 = 357!",
-  "2_mat_Somar com 'transporte'":"Quando a soma passa de 9, escreve as unidades e transporta 1 para a coluna seguinte!",
-  "2_mat_Começar a Multiplicar":"3×4 = 4+4+4 = 12. Multiplicação é uma soma repetida mais rápida!",
-  "2_mat_Medir com a Régua":"km×1000=m · m×100=cm · cm×10=mm. Para voltar: divide! Grande para pequeno: multiplica!",
-  "2_mat_As Horas":"Ponteiro PEQUENO = horas. Ponteiro GRANDE = minutos. Grande no 6 = e meia (30 min)!",
-  // Ano 2 — Por
-  "2_por_Tipos de Frase":". = declara · ? = pergunta · ! = emoção ou ordem. O sinal no fim diz o tipo!",
-  "2_por_Nomes — Singular e Plural":"A maioria: + s. Terminado em consoante: + es. Palavras em -ão: aprende aos pares!",
-  "2_por_Masculino e Feminino":"Testa com o ou a. Soa bem com 'o' = masculino. Com 'a' = feminino!",
-  "2_por_Adjectivos":"O adjetivo responde: COMO É? De que cor? De que tamanho? Sempre descreve um nome!",
-  // Ano 2 — Cie
-  "2_cie_O Nosso País — Cabo Verde":"BARlavento = norte (6 ilhas) · SOtavento = sul (4 ilhas). Capital PRAIA fica em SANTIAGO!",
-  "2_cie_O Tempo e as Estações":"2 estações: SECA (nov-jul) e das CHUVAS (ago-out). Em Santiago chama-se tempo das águas!",
-  "2_cie_Os Animais":"Doméstico = criado pelo homem (galinha, cabra). Selvagem = vive livre (tartaruga, falcão)!",
-  "2_cie_Higiene e Saúde":"3 momentos chave: ANTES de comer · DEPOIS da casa de banho · DEPOIS de brincar fora!",
-  // Ano 3 — Mat
-  "3_mat_Números até 100.000":"Separa em grupos de 3 da direita: 34.567 = 34 mil + 567. Lê os milhares + as centenas!",
-  "3_mat_Multiplicação — Tabuadas":"Tabuada do 9: o 1º algarismo sobe (1,2,3...) e o 2º desce (9,8,7...). 9, 18, 27, 36, 45...",
-  "3_mat_Divisão":"Divisão é o inverso da multiplicação! 42÷6=? Pergunta: 6×?=42. Usa a tabuada ao contrário!",
-  "3_mat_Frações Simples":"O número de BAIXO = em quantas partes. O de CIMA = quantas tens. 3/4: dividido em 4, tens 3!",
-  "3_mat_Geometria — Ângulos":"Recto = canto de folha (90°). Agudo = mais fechado. Obtuso = mais aberto. Raso = linha recta (180°)!",
-  // Ano 3 — Por
-  "3_por_Família de Palavras":"Encontra a parte que se repete! MAR → marinheiro, marítimo, submarino. Essa é a raiz!",
-  "3_por_Sinónimos e Antónimos":"Sinónimos = mesma direção (bonito = belo). Antónimos = opostos (bonito ≠ feio)!",
-  "3_por_Verbos — Tempos":"Perfeito = ação acabada (ontem joguei). Imperfeito = ação que continuava (antes jogava).",
-  "3_por_Sinais de Pontuação":". = fim · , = pausa · ? = pergunta · ! = emoção · : = apresenta · ... = continua!",
-  // Ano 3 — Cie
-  "3_cie_Os Seres Vivos":"NASCEM · CRESCEM · RESPIRAM · REPRODUZEM-SE · MORREM. 5 funções vitais de todos os seres vivos!",
-  "3_cie_Cadeia Alimentar":"A seta = é comido por! PLANTA → LAGARTA → PÁSSARO. A planta é SEMPRE o produtor!",
-  "3_cie_O Ciclo da Água":"EVA-CON-PRECI: EVAporação → CONdensação → PRECIpitação. Ciclo sem fim!",
-  "3_cie_Organização da Comunidade":"Escola = aprender · Hospital = curar · Câmara = gerir · Igreja = rezar. Cada um tem a sua função!",
-  // Ano 4 — Mat
-  "4_mat_Números até Centena de Milhar":"Lê em grupos: 456.789 = quatrocentos e cinquenta e seis MIL, setecentos e oitenta e nove!",
-  "4_mat_Frações e Números Decimais":"Usa o dinheiro: ½=0,5=50 cêntimos · ¼=0,25=25 cêntimos · ¾=0,75=75 cêntimos!",
-  "4_mat_Geometria — Polígonos":"O prefixo diz o nº de lados: TRI=3 · QUADRI=4 · PENTA=5 · HEXA=6. Círculo não é polígono!",
-  "4_mat_Medidas de Comprimento":"km→m: ×1000 · m→cm: ×100 · cm→mm: ×10. Para voltar: divide!",
-  "4_mat_Problemas com Dinheiro":"Lê 3 vezes: 1ª para entender · 2ª para identificar dados · 3ª para escolher a operação!",
-  "4_mat_Tabelas e Gráficos — Moda":"Moda = o valor mais popular! Conta quantas vezes cada valor aparece. O mais frequente = MODA!",
-  // Ano 4 — Por
-  "4_por_Texto Narrativo":"5 perguntas: QUEM? ONDE? QUANDO? O QUÊ? QUEM CONTA? Respondes a estas = analisas o texto!",
-  "4_por_Adjectivos — Grau":"Superlativo = MÁXIMO. Absoluto = sem comparação (altíssimo). Relativo = comparado com grupo!",
-  "4_por_Pronomes Pessoais e Possessivos":"Pronome = substituto do nome. Pessoal = QUEM é. Possessivo = DE QUEM é!",
-  "4_por_Sinónimos e Antónimos":"Sinónimos = mesma ideia. Antónimos = ideia contrária. Anti = contra!",
-  "4_por_Família de Palavras":"Prefixo muda o sentido (des-, in-, re-). Sufixo muda a categoria (-eiro, -ção, -dade)!",
-  // Ano 4 — Cie
-  "4_cie_Cabo Verde no Mundo":"CV está no ATLÂNTICO, perto de ÁFRICA. Barlavento = 6 ilhas norte · Sotavento = 4 ilhas sul!",
-  "4_cie_A Célula":"Membrana = muro · Citoplasma = interior · Núcleo = chefe. Planta tem a mais: Parede + Cloroplasto!",
-  "4_cie_Cadeia Alimentar":"PLANTA → HERBÍVORO → CARNÍVORO. A seta = é comido por. Planta = produtor, sempre o início!",
-  "4_cie_Sectores Económicos":"1° = da natureza (pesca, agri) · 2° = transforma (indústria) · 3° = serviços (turismo). CV é forte no 3°!",
-  "4_cie_Organização Política":"3 poderes: LEGISLATIVO (faz leis) · EXECUTIVO (aplica) · JUDICIAL (julga)!"
-};
-
-async function renderLearn(area){
-  area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
-  await ensureJSON();
-  const htmlCards=getLearnCards(currentYear,currentSubject);
-  const anoData=getJSONAno(currentSubject,currentYear);
-  const jsonCards=anoData?.aprender||[];
-  const allCards=[...htmlCards,...jsonCards];
-  if(!allCards.length){area.innerHTML='<div style="text-align:center;padding:30px;color:var(--muted)">Sem conteúdo disponível.</div>';return;}
-  const totalPages=Math.ceil(allCards.length/LEARN_PAGE_SIZE);
-  currentLearnPage=Math.min(Math.max(currentLearnPage,1),totalPages);
-  const start=(currentLearnPage-1)*LEARN_PAGE_SIZE;
-  const pageCards=allCards.slice(start,start+LEARN_PAGE_SIZE);
-  const col=SUBJ_COLOR[currentSubject];
-  const mkPageBtn=(i)=>`<button onclick="goLearnPage(${i})" style="min-width:36px;height:36px;padding:0 4px;border-radius:50%;border:2px solid ${i===currentLearnPage?'transparent':'#e5e7eb'};background:${i===currentLearnPage?col:'white'};color:${i===currentLearnPage?'white':'var(--muted)'};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;cursor:pointer;transition:all 0.15s">${i}</button>`;
-  const pagination=totalPages>1?`<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 0 4px;flex-wrap:wrap">
-    ${currentLearnPage>1?`<button onclick="goLearnPage(${currentLearnPage-1})" style="padding:8px 16px;border-radius:50px;border:2px solid ${col};background:white;color:${col};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer">← Anterior</button>`:''}
-    ${Array.from({length:totalPages},(_,i)=>mkPageBtn(i+1)).join('')}
-    ${currentLearnPage<totalPages?`<button onclick="goLearnPage(${currentLearnPage+1})" style="padding:8px 16px;border-radius:50px;border:2px solid ${col};background:white;color:${col};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer">Próxima →</button>`:''}
-  </div>`:'';
-  area.innerHTML=`<div class="learn-section">${pageCards.map(c=>{
-    const trick=LEARN_TRICKS[currentYear+'_'+currentSubject+'_'+c.title]||c.trick||'';
-    return `<div class="lcard">
-      <h3>${c.icon||'📖'} ${c.title}</h3>
-      <p>${c.body||''}</p>
-      ${c.example?`<div class="eg ${currentSubject}-eg">${typeof c.example==='string'?c.example.replace(/\n/g,'<br>'):c.example}</div>`:''}
-      ${c.list?`<ul>${c.list.map(i=>`<li>${i}</li>`).join('')}</ul>`:''}
-      ${trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${trick}</div>`:''}
+  const list = document.getElementById('trim-list');
+  list.innerHTML = anoData.trimestres.map((t, i) => {
+    const total = t.temas.length;
+    const done = t.temas.filter(tema => getTopicProg(currentSubject, currentYear, tema.id).done).length;
+    const pct = total ? Math.round(done / total * 100) : 0;
+    return `<div class="trim-card" style="border-color:${col}" onclick="selectTrimestre(${i})">
+      <div class="trim-title" style="color:${col}">${t.nome}</div>
+      <div class="trim-stats">${done}/${total} temas concluídos ✅</div>
+      <div class="trim-bar"><div class="trim-fill" style="width:${pct}%;background:${col}"></div></div>
     </div>`;
-  }).join('')}</div>
-  <div style="text-align:center;padding:8px 0 2px;font-size:0.78rem;color:var(--muted)">${allCards.length} fichas · Página ${currentLearnPage} de ${totalPages}</div>
-  ${pagination}`;
-}
-window.goLearnPage=function(p){currentLearnPage=p;renderLearn(document.getElementById('content-area'));window.scrollTo(0,200);};
+  }).join('');
 
-function getLearnCards(year,subj){
-  const all={
-    1:{
-      mat:[],
-      por:[],
-      cie:[]
-    },
-    2:{
-      mat:[],
-      por:[],
-      cie:[]
-    },
-    3:{
-      mat:[],
-      por:[],
-      cie:[]
-    },
-    4:{
-      mat:[],
-      por:[],
-      cie:[]
-    }
-  };
-  return all[year][subj]||[];
+  const megaWrap = document.getElementById('mega-wrap');
+  const yearDone = isYearComplete(currentSubject, currentYear);
+  megaWrap.innerHTML = `<button class="mega-btn ${yearDone?'':'mega-btn-locked'}" style="background:${yearDone?col:'#ccc'}"
+    onclick="${yearDone ? 'startMegaDesafio()' : "alert('Completa todos os tópicos do ano para desbloquear o Mega-Desafio!')"}">
+    🏆 Mega-Desafio — Ano Completo ${yearDone ? '' : '🔒'}
+  </button>`;
 }
 
-// ═══════════════════════════
+function selectTrimestre(idx) {
+  currentTrimIdx = idx;
+  renderTopics();
+  showScreen('topics-screen');
+}
+
+// ═══════════════════════════════════════
+// TOPICS
+// ═══════════════════════════════════════
+function renderTopics() {
+  const anoData = getAnoData(currentSubject, currentYear);
+  const trim = anoData.trimestres[currentTrimIdx];
+  const col = SUBJ_COLOR[currentSubject];
+  document.getElementById('topics-hdr-title').textContent = trim.nome;
+  document.getElementById('topics-hdr-title').style.color = col;
+
+  const list = document.getElementById('topics-list');
+  list.innerHTML = trim.temas.map(tema => {
+    const locked = isTopicLocked(currentSubject, currentYear, tema.id);
+    const empty  = isTopicEmpty(tema);
+    const prog   = getTopicProg(currentSubject, currentYear, tema.id);
+
+    let cls = '', icon = '⭕';
+    if (empty)       { cls = 't-empty';    icon = '🚧'; }
+    else if (locked) { cls = 't-locked';   icon = '🔒'; }
+    else if (prog.done) { cls = 't-done';  icon = '✅'; }
+    else if (prog.attempts > 0) { cls = 't-progress'; icon = '📖'; }
+
+    const scoreText = prog.bestScore > 0 ? `Melhor: ${prog.bestScore}/10` : empty ? 'Em breve' : locked ? 'Bloqueado' : 'Por começar';
+    const borderCol = (locked || empty) ? '#e5e7eb' : col;
+    const clickable = !locked && !empty;
+
+    return `<button class="topic-card ${cls}" style="border-color:${borderCol}"
+      ${clickable ? `onclick="selectTema('${tema.id}')"` : 'disabled'}>
+      <span class="topic-icon">${tema.icone}</span>
+      <span class="topic-info">
+        <span class="topic-name">${tema.nome}</span>
+        <span class="topic-score">${scoreText}</span>
+      </span>
+      <span class="topic-status-icon">${icon}</span>
+    </button>`;
+  }).join('');
+}
+
+function selectTema(temaId) {
+  const all = getAllTemas(currentSubject, currentYear);
+  currentTema = all.find(t => t.id === temaId);
+  renderTopicDetail();
+  showScreen('topic-screen');
+}
+
+// ═══════════════════════════════════════
+// TOPIC DETAIL
+// ═══════════════════════════════════════
+function renderTopicDetail() {
+  const col   = SUBJ_COLOR[currentSubject];
+  const prog  = getTopicProg(currentSubject, currentYear, currentTema.id);
+  const hasL  = currentTema.aprender?.length > 0;
+  const hasP  = currentTema.praticar?.length > 0;
+  const desLocked = !prog.done;
+
+  let progHtml = '';
+  if (prog.attempts > 0) {
+    const pct = prog.bestScore / 10 * 100;
+    progHtml = `<div class="prog-wrap">
+      <div class="prog-label">Melhor resultado: <strong>${prog.bestScore}/10</strong> · ${prog.attempts} tentativa(s)</div>
+      <div class="prog-bar-bg"><div class="prog-bar-fill" style="width:${pct}%;background:${col}"></div></div>
+    </div>`;
+  }
+
+  const doneBadge = prog.done
+    ? `<div class="done-badge" style="background:${col}">✅ Tópico Concluído!</div>` : '';
+
+  document.getElementById('topic-detail-content').innerHTML = `
+    <div class="topic-detail-hero" style="background:linear-gradient(135deg,${col},${col}cc)">
+      <div class="td-icon">${currentTema.icone}</div>
+      <h2>${currentTema.nome}</h2>
+      <div class="td-sub">${SUBJ_NAME[currentSubject]} · ${currentYear}ª Classe</div>
+    </div>
+    ${doneBadge}
+    ${progHtml}
+    <div class="mode-grid">
+      <button class="mode-tile ${hasL ? '' : 'mode-locked'}" style="background:${hasL ? col : ''}"
+        onclick="${hasL ? "startLearn()" : ''}">
+        <div class="mt-icon">📚</div>Aprender${!hasL ? '<span class="lock-hint">Em breve</span>' : ''}
+      </button>
+      <button class="mode-tile ${hasP ? '' : 'mode-locked'}" style="background:${hasP ? col : ''}"
+        onclick="${hasP ? "startPractice()" : ''}">
+        <div class="mt-icon">✏️</div>Praticar${!hasP ? '<span class="lock-hint">Em breve</span>' : ''}
+      </button>
+      <button class="mode-tile" style="background:${col}" onclick="openAI()">
+        <div class="mt-icon">🤖</div>Tutor IA
+      </button>
+      <button class="mode-tile ${desLocked ? 'mode-locked' : ''}" style="background:${desLocked ? '' : col}"
+        onclick="${desLocked ? "alert('Completa Praticar com 8/10 para desbloquear!')" : 'startDesafio()'}">
+        <div class="mt-icon">⏱️</div>Desafio${desLocked ? '<span class="lock-hint">8/10 em Praticar</span>' : ''}
+      </button>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════
+// LEARN MODE
+// ═══════════════════════════════════════
+function startLearn() {
+  learnPage = 1;
+  renderLearnPage();
+  showScreen('learn-screen');
+}
+
+function renderLearnPage() {
+  const col   = SUBJ_COLOR[currentSubject];
+  const cards = currentTema.aprender || [];
+  const total = cards.length;
+  const start = (learnPage - 1) * PAGE_SIZE;
+  const page  = cards.slice(start, start + PAGE_SIZE);
+
+  document.getElementById('learn-title').textContent = currentTema.icone + ' ' + currentTema.nome;
+  document.getElementById('learn-title').style.color = col;
+
+  document.getElementById('learn-content').innerHTML = page.map(c => `
+    <div class="lcard" style="border-top:4px solid ${col}">
+      <h3>${c.icon || '📌'} ${c.title}</h3>
+      <p>${c.body || ''}</p>
+      ${c.example ? `<div class="eg" style="background:${col}18;border-color:${col}">${c.example}</div>` : ''}
+      ${c.trick ? `<div class="eg" style="background:#fef9c3;border-color:#fbbf24;margin-top:8px">💡 ${c.trick}</div>` : ''}
+    </div>
+  `).join('');
+
+  const paginHtml = total > PAGE_SIZE ? `
+    <div class="pagination">
+      <button onclick="learnPage--;renderLearnPage()" ${learnPage <= 1 ? 'disabled' : ''}>◀</button>
+      <span>${learnPage} / ${Math.ceil(total / PAGE_SIZE)}</span>
+      <button onclick="learnPage++;renderLearnPage()" ${start + PAGE_SIZE >= total ? 'disabled' : ''}>▶</button>
+    </div>` : '';
+  document.getElementById('learn-pagination-top').innerHTML = '';
+  document.getElementById('learn-pagination-bot').innerHTML = paginHtml;
+}
+
+// ═══════════════════════════════════════
+// PRACTICE MODE
+// ═══════════════════════════════════════
+let quizQ = [], quizIdx = 0, quizScore = 0, quizCol = '';
+let wrongLog = [];
+
+function startPractice() {
+  const questions = shuffle(currentTema.praticar || []).slice(0, 10);
+  quizCol = SUBJ_COLOR[currentSubject];
+  buildQuiz(questions, quizCol, document.getElementById('practice-content'), onPracticeComplete);
+  showScreen('practice-screen');
+}
+
+function onPracticeComplete(score, total) {
+  const threshold = Math.max(8, Math.ceil(total * 0.8));
+  const passed    = score >= threshold;
+  const prog      = getTopicProg(currentSubject, currentYear, currentTema.id);
+  const firstDone = !prog.done && passed;
+  setTopicProg(currentSubject, currentYear, currentTema.id, {
+    done: prog.done || passed,
+    bestScore: Math.max(prog.bestScore, score),
+    attempts: (prog.attempts || 0) + 1
+  });
+  if (firstDone) addPoints(score === total ? 30 : 20);
+}
+
+// ═══════════════════════════════════════
 // QUIZ ENGINE
-// ═══════════════════════════
-function shuffle(a){return [...a].sort(()=>Math.random()-0.5);}
-
-function buildQuiz(questions, color, retryFn){
-  const q=shuffle(questions).slice(0,10);
-  let cur=0, score=0;
-  wrongAnswers=[];
-
-  function render(){
-    const item=q[cur];
-    const pct=(cur/q.length)*100;
-    const opts=shuffle(item.options);
-    return `
-    <div class="quiz-wrap">
-      <div class="qprogress"><div class="qpfill" id="qpfill" style="width:${pct}%;background:${color}"></div></div>
-      <div class="qcard" id="qcard">
-        <div class="qnum">❓ Pergunta ${cur+1} de ${q.length}</div>
-        <div class="qtext">${item.question}</div>
-        <div class="opts" id="opts-wrap">
-          ${opts.map((o,i)=>`
-            <button class="opt" onclick="pickOpt(this,'${escQ(o)}','${escQ(item.answer)}','${escQ(item.why)}')">
-              <span class="opt-lbl">${String.fromCharCode(65+i)}</span>
-              <span>${o}</span>
-            </button>`).join('')}
-        </div>
-        <div class="feedback" id="qfeedback"></div>
-        <button class="next-q-btn" id="next-q-btn" style="background:${color}" onclick="nextQ()">
-          ${cur<q.length-1?'Próxima pergunta →':'Ver resultado 🎉'}
-        </button>
-      </div>
-    </div>`;
-  }
-
-  function showResults(){
-    const pct=score/q.length;
-    const stars=pct>=0.9?'⭐⭐⭐':pct>=0.7?'⭐⭐':'⭐';
-    const emoji=pct>=0.9?'🏆':pct>=0.7?'😊':'💪';
-    const msg=pct>=0.9?'Fantástico! Estás mesmo bem preparado!':pct>=0.7?'Muito bem! Continua a praticar!':'Não desistas! Lê as explicações e tenta outra vez!';
-    const pts=score*10;
-    addPoints(pts);
-    let wrongHTML='';
-    if(wrongAnswers.length){
-      wrongHTML=`<div class="res-breakdown"><h4>📌 O que errei</h4>${wrongAnswers.map(w=>`<div class="bd-item"><span style="color:#ef4444">✗ ${w.q}</span></div><div style="font-size:0.78rem;color:#22c55e;padding-bottom:6px">✓ ${w.a}</div>`).join('')}</div>`;
-    }
-    document.getElementById('content-area').innerHTML=`
-      <div class="results-card show">
-        <div class="res-big celebrate">${emoji}</div>
-        <div class="res-score" style="color:${color}">${score}/${q.length}</div>
-        <div class="res-of">respostas correctas · +${pts} pontos!</div>
-        <div class="res-stars">${stars}</div>
-        <div class="res-msg">${msg}</div>
-        ${wrongHTML}
-        <button class="retry-btn" style="background:${color}" onclick="setMode('practice')">🔄 Tentar de Novo</button>
-      </div>`;
-  }
-
-  window.pickOpt=function(btn,chosen,correct,why){
-    document.querySelectorAll('#opts-wrap .opt').forEach(b=>b.disabled=true);
-    const fb=document.getElementById('qfeedback');
-    const nxt=document.getElementById('next-q-btn');
-    if(chosen===correct){
-      btn.classList.add('correct-opt');
-      score++;
-      fb.className='feedback fb-ok show';
-      fb.innerHTML=`✅ **Correcto! Muito bem!**<div class="fb-why">💡 ${why}</div>`;
-    } else {
-      btn.classList.add('wrong-opt','shake');
-      document.querySelectorAll('#opts-wrap .opt').forEach(b=>{
-        if(b.querySelector('span:last-child').textContent===correct) b.classList.add('correct-opt');
-      });
-      fb.className='feedback fb-no show';
-      fb.innerHTML=`❌ <strong>Não foi dessa!</strong> A resposta certa é: **${correct}**<div class="fb-why">💡 Porquê? ${why}</div>`;
-      wrongAnswers.push({q:q[cur].question.replace(/<[^>]+>/g,''),a:correct});
-    }
-    nxt.classList.add('show');
-  };
-
-  window.nextQ=function(){
-    cur++;
-    if(cur<q.length){
-      document.getElementById('content-area').innerHTML=render();
-      document.getElementById('qpfill').style.width=((cur/q.length)*100)+'%';
-    } else {
-      showResults();
-    }
-  };
-
-  document.getElementById('content-area').innerHTML=render();
+// ═══════════════════════════════════════
+function buildQuiz(questions, col, container, onComplete) {
+  quizQ = questions;
+  quizIdx = 0;
+  quizScore = 0;
+  quizCol = col;
+  wrongLog = [];
+  renderQCard(container, onComplete);
 }
 
-function escQ(s){ return (s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
-
-async function renderPractice(area){
-  area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
-  await ensureJSON();
-  const anoData=getJSONAno(currentSubject,currentYear);
-  const col=SUBJ_COLOR[currentSubject];
-  buildQuiz(anoData?.praticar||[],col);
-}
-
-// ═══════════════════════════
-// QUESTIONS DATABASE
-// ═══════════════════════════
-function getQuestions(year,subj){ return []; }
-
-// ═══════════════════════════
-// AI SECTION
-// ═══════════════════════════
-function getApiKey(){ return localStorage.getItem('cv_api_key')||''; }
-function saveApiKey(k){ localStorage.setItem('cv_api_key',k.trim()); }
-
-function renderAI(area){
-  const col=SUBJ_COLOR[currentSubject];
-  const topics=getAITopics(currentYear,currentSubject);
-  const hasKey=!!getApiKey();
-  area.innerHTML=`
-    <div class="ai-box" style="border-color:#fde68a">
-      <h3>🔑 Chave API Groq</h3>
-      <input type="password" id="api-key-inp" placeholder="gsk_..."
-        style="width:100%;padding:10px 12px;border-radius:10px;border:2px solid #e5e7eb;font-family:'Nunito',sans-serif;font-size:0.85rem;margin-bottom:8px;box-sizing:border-box"
-        value="${getApiKey()}" />
-      <button onclick="const k=document.getElementById('api-key-inp').value.trim();if(k){saveApiKey(k);this.textContent='✅ Guardada!';setTimeout(()=>this.textContent='💾 Guardar',2000);}"
-        style="background:#f59e0b;color:white;border:none;padding:9px 20px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer">💾 Guardar</button>
-      <div style="font-size:0.75rem;color:var(--muted);margin-top:8px;line-height:1.5">Obtém a chave em <strong>console.groq.com</strong> → API Keys. Guardada só neste browser.</div>
-    </div>
-    <div class="ai-box">
-      <h3>🤖 Tutor IA (Groq)</h3>
-      <select class="ai-select" id="ai-topic-sel">${topics.map(t=>`<option value="${t.val}">${t.label}</option>`).join('')}</select>
-      <div class="level-row">
-        <button class="lv-btn" id="lv-base" style="background:${col};border-color:${col};color:white" onclick="setAILevel('base','${col}')">🌱 Base</button>
-        <button class="lv-btn" id="lv-medio" onclick="setAILevel('medio','${col}')">📗 Médio</button>
-        <button class="lv-btn" id="lv-avancado" onclick="setAILevel('avancado','${col}')">🚀 Avançado</button>
-      </div>
-      <button class="ai-go-btn" id="ai-gen-btn" style="background:${col}" onclick="callAI('${col}')">✨ Gerar Exercício!</button>
-      <div class="ai-out" id="ai-output"></div>
-    </div>
-`;
-}
-
-function getAITopics(year,subj){
-  const topicMap={
-    mat:{
-      1:[{val:'soma',label:'Somar números pequenos'},{val:'subtrai',label:'Subtrair números pequenos'},{val:'formas',label:'Formas geométricas'}],
-      2:[{val:'centenas',label:'Números até 1.000'},{val:'multiplicar',label:'Tabuada e multiplicação'},{val:'medidas',label:'Medidas de comprimento'}],
-      3:[{val:'milhar',label:'Números até 100.000'},{val:'frações',label:'Frações simples'},{val:'angulos',label:'Ângulos e geometria'}],
-      4:[{val:'numeros',label:'Números até centena de milhar'},{val:'fracoes',label:'Frações e decimais'},{val:'geometria',label:'Polígonos e ângulos'},{val:'medidas',label:'Medidas de comprimento'},{val:'dinheiro',label:'Problemas com dinheiro em escudos'},{val:'graficos',label:'Tabelas e gráficos — moda'}],
-    },
-    por:{
-      1:[{val:'letras',label:'Letras e sílabas'},{val:'vogais',label:'Vogais e consoantes'},{val:'palavras',label:'Palavras simples'}],
-      2:[{val:'frases',label:'Tipos de frase'},{val:'plural',label:'Singular e plural'},{val:'adjectivos',label:'Adjectivos'}],
-      3:[{val:'familia',label:'Família de palavras'},{val:'sinonimos',label:'Sinónimos e antónimos'},{val:'verbos',label:'Verbos — tempos'}],
-      4:[{val:'narrativo',label:'Texto narrativo'},{val:'adjectivos',label:'Adjectivos — grau'},{val:'pronomes',label:'Pronomes pessoais e possessivos'},{val:'sinonimos',label:'Sinónimos e antónimos'},{val:'familia',label:'Família de palavras'}],
-    },
-    cie:{
-      1:[{val:'diaNoite',label:'Dia e noite'},{val:'agua',label:'A importância da água'},{val:'plantas',label:'As plantas'}],
-      2:[{val:'caboverde',label:'Cabo Verde'},{val:'animais',label:'Animais domésticos e selvagens'},{val:'higiene',label:'Higiene e saúde'}],
-      3:[{val:'seresVivos',label:'Seres vivos'},{val:'cadeia',label:'Cadeia alimentar'},{val:'cicloAgua',label:'Ciclo da água'}],
-      4:[{val:'caboverde',label:'Cabo Verde no mundo'},{val:'celula',label:'A célula'},{val:'cadeia',label:'Cadeia alimentar'},{val:'economia',label:'Actividades económicas'},{val:'politica',label:'Organização política'},{val:'ambiente',label:'Alterações climáticas'}],
-    }
-  };
-  return (topicMap[subj]&&topicMap[subj][year])||[];
-}
-
-function setAILevel(lv,col){
-  aiLevel=lv;
-  ['base','medio','avancado'].forEach(l=>{
-    const b=document.getElementById('lv-'+l);
-    if(b){ if(l===lv){b.style.background=col;b.style.borderColor=col;b.style.color='white';}
-    else{b.style.background='white';b.style.borderColor='#e5e7eb';b.style.color='#6b7280';}}
-  });
-}
-
-let _aiQ=null;
-let _aiHistory=[];
-
-function renderAIQuiz(data,container){
-  _aiQ=data;
-  const col=SUBJ_COLOR[currentSubject];
-  container.style.cssText='background:transparent;border:none;padding:0';
-  container.innerHTML=`
-    <div class="qcard" style="margin-top:4px">
-      <div class="qnum">🤖 Exercício gerado por IA</div>
-      <div class="qtext">${data.question}</div>
-      <div class="opts" id="ai-opts">
-        ${data.options.map((o,i)=>`
-          <button class="opt" onclick="pickAIOpt(this,'${escQ(o)}')">
-            <span class="opt-lbl">${String.fromCharCode(65+i)}</span>
-            <span>${o}</span>
-          </button>`).join('')}
-      </div>
-      <div class="feedback" id="ai-feedback"></div>
-    </div>`;
-  window.pickAIOpt=function(btn,chosen){
-    document.querySelectorAll('#ai-opts .opt').forEach(b=>b.disabled=true);
-    const fb=document.getElementById('ai-feedback');
-    const c=SUBJ_COLOR[currentSubject];
-    const newBtn=`<button onclick="callAI()" style="background:${c};color:white;border:none;padding:10px 22px;border-radius:50px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;margin-top:10px;display:block">🔄 Novo exercício</button>`;
-    if(chosen===_aiQ.answer){
-      btn.classList.add('correct-opt');
-      fb.className='feedback fb-ok show';
-      fb.innerHTML=`✅ <strong>Correcto! Muito bem!</strong><div class="fb-why">💡 ${_aiQ.explanation}</div>${newBtn}`;
-      addPoints(15);
-    } else {
-      btn.classList.add('wrong-opt','shake');
-      document.querySelectorAll('#ai-opts .opt').forEach(b=>{
-        if(b.querySelector('span:last-child').textContent.trim()===_aiQ.answer) b.classList.add('correct-opt');
-      });
-      fb.className='feedback fb-no show';
-      fb.innerHTML=`❌ <strong>Não foi dessa!</strong> A resposta certa é: <strong>${_aiQ.answer}</strong><div class="fb-why">💡 ${_aiQ.explanation}</div>${newBtn}`;
-    }
-  };
-}
-
-async function callAI(){
-  const topic=document.getElementById('ai-topic-sel')?.value||'';
-  const out=document.getElementById('ai-output');
-  const btn=document.getElementById('ai-gen-btn');
-  const key=getApiKey();
-  out.className='ai-out show';
-  out.style.cssText='';
-  if(!key){
-    out.innerHTML='🔑 Introduz a tua Chave API no campo acima e guarda antes de continuar.';
+function renderQCard(container, onComplete) {
+  if (quizIdx >= quizQ.length) {
+    if (onComplete) onComplete(quizScore, quizQ.length);
+    renderQResult(container);
     return;
   }
-  const yr=currentYear, subj=currentSubject;
-  const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
-  const lvLabel={base:'base',medio:'médio',avancado:'avançado'};
-  const yearCtx={
+  const q   = quizQ[quizIdx];
+  const pct = quizIdx / quizQ.length * 100;
+  const lbls = ['A','B','C','D'];
+  const opts = shuffle(q.options);
+  container.innerHTML = `
+    <div class="qprogress"><div class="qpfill" style="width:${pct}%;background:${quizCol}"></div></div>
+    <div class="qcard" style="border-color:${quizCol}33">
+      <div class="qnum">${SUBJ_ICON[currentSubject]} Pergunta ${quizIdx+1} de ${quizQ.length}</div>
+      <div class="qtext">${q.question}</div>
+      <div class="opts">
+        ${opts.map((o,i) => `<button class="opt" onclick="answerQ(this,'${escQ(o)}','${escQ(q.answer)}')">
+          <span class="opt-lbl">${lbls[i]}</span>${o}
+        </button>`).join('')}
+      </div>
+      <div class="feedback" id="quiz-fb"></div>
+      <button class="next-q-btn" id="next-btn" style="background:${quizCol}" onclick="nextQ()">Próxima →</button>
+    </div>`;
+}
+
+function answerQ(btn, chosen, correct) {
+  document.querySelectorAll('.opts .opt').forEach(b => b.disabled = true);
+  const fb = document.getElementById('quiz-fb');
+  if (chosen === correct) {
+    btn.classList.add('correct-opt');
+    quizScore++;
+    fb.className = 'feedback fb-ok show';
+    fb.innerHTML = '✅ Correcto! Muito bem!';
+  } else {
+    btn.classList.add('wrong-opt');
+    document.querySelectorAll('.opts .opt').forEach(b => {
+      if (b.textContent.trim().endsWith(correct)) b.classList.add('correct-opt');
+    });
+    fb.className = 'feedback fb-err show';
+    fb.innerHTML = `❌ A resposta correcta é <strong>${correct}</strong>`;
+    wrongLog.push(quizQ[quizIdx].question);
+  }
+  const nb = document.getElementById('next-btn');
+  if (nb) nb.classList.add('show');
+}
+
+function nextQ() {
+  quizIdx++;
+  const container = document.getElementById('practice-content') || document.getElementById('challenge-content');
+  renderQCard(container, window._quizOnComplete);
+}
+
+function renderQResult(container) {
+  const pct = quizScore / quizQ.length;
+  const emoji = pct >= .8 ? '🎉' : pct >= .5 ? '👍' : '💪';
+  const stars = pct >= .8 ? '⭐⭐⭐' : pct >= .5 ? '⭐⭐' : '⭐';
+  const msg   = pct >= .8 ? 'Excelente! Tópico desbloqueado!' : pct >= .5 ? 'Bom trabalho! Tenta de novo para 8/10.' : 'Continua a praticar!';
+  const col   = quizCol;
+
+  let wrongHtml = '';
+  if (wrongLog.length) {
+    wrongHtml = `<div class="res-breakdown" style="margin-bottom:16px">
+      <h4>Para rever:</h4>
+      ${wrongLog.map(q => `<div class="bd-item"><span>• ${q}</span></div>`).join('')}
+    </div>`;
+  }
+  container.innerHTML = `<div class="results-card">
+    <div class="res-big">${emoji}</div>
+    <div class="res-score" style="color:${col}">${quizScore}</div>
+    <div class="res-of">de ${quizQ.length} perguntas</div>
+    <div class="res-stars">${stars}</div>
+    <div class="res-msg">${msg}</div>
+    ${wrongHtml}
+    <button class="res-btn" style="background:${col}" onclick="goBack()">← Voltar ao Tópico</button>
+  </div>`;
+}
+
+// ═══════════════════════════════════════
+// DESAFIO MODE
+// ═══════════════════════════════════════
+let chalQ = [], chalIdx = 0, chalScore = 0, chalTimer = null, chalTime = 20;
+
+function startDesafio() {
+  chalQ = shuffle([...(currentTema.praticar || []), ...(currentTema.desafios || [])]);
+  chalIdx = 0; chalScore = 0;
+  renderChalCard();
+  showScreen('challenge-screen');
+}
+
+function renderChalCard() {
+  const col = SUBJ_COLOR[currentSubject];
+  const container = document.getElementById('challenge-content');
+  const max = Math.min(chalQ.length, 15);
+  if (chalIdx >= max) {
+    clearInterval(chalTimer);
+    onDesafioComplete(chalScore);
+    renderChalResult(container, col);
+    return;
+  }
+  const q   = chalQ[chalIdx];
+  chalTime  = 20;
+  clearInterval(chalTimer);
+  chalTimer = setInterval(() => {
+    chalTime--;
+    const el = document.getElementById('chal-timer');
+    if (el) { el.textContent = chalTime + 's'; el.style.color = chalTime <= 5 ? '#ef4444' : '#1a1a2e'; }
+    if (chalTime <= 0) { clearInterval(chalTimer); chalIdx++; renderChalCard(); }
+  }, 1000);
+
+  const opts = shuffle(q.options);
+  container.innerHTML = `
+    <div class="screen-hdr">
+      <button class="back-btn" onclick="clearInterval(chalTimer);goBack()" style="margin-bottom:0">← Sair</button>
+      <div class="timer-ring" id="chal-timer" style="border-color:${col}">${chalTime}s</div>
+      <span class="pts-badge">${chalIdx+1}/${max}</span>
+    </div>
+    <div class="qprogress"><div class="qpfill" style="width:${chalIdx/max*100}%;background:${col}"></div></div>
+    <div class="qcard" style="border-color:${col}33">
+      <div class="qnum">⏱️ Desafio</div>
+      <div class="qtext">${q.question}</div>
+      <div class="opts">
+        ${opts.map(o => `<button class="opt" onclick="answerChal(this,'${escQ(o)}','${escQ(q.answer)}','${escQ(col)}')">${o}</button>`).join('')}
+      </div>
+    </div>`;
+}
+
+function answerChal(btn, chosen, correct, col) {
+  clearInterval(chalTimer);
+  document.querySelectorAll('#challenge-content .opt').forEach(b => b.disabled = true);
+  if (chosen === correct) { btn.classList.add('correct-opt'); chalScore++; }
+  else {
+    btn.classList.add('wrong-opt');
+    document.querySelectorAll('#challenge-content .opt').forEach(b => {
+      if (b.textContent === correct) b.classList.add('correct-opt');
+    });
+  }
+  setTimeout(() => { chalIdx++; renderChalCard(); }, 900);
+}
+
+function onDesafioComplete(score) {
+  const prog = getTopicProg(currentSubject, currentYear, currentTema.id);
+  if (!prog.desafioDone) {
+    setTopicProg(currentSubject, currentYear, currentTema.id, { desafioDone: true });
+    addPoints(40);
+  }
+}
+
+function renderChalResult(container, col) {
+  const max = Math.min(chalQ.length, 15);
+  container.innerHTML = `<div class="results-card">
+    <div class="res-big">🏆</div>
+    <div class="res-score" style="color:${col}">${chalScore}</div>
+    <div class="res-of">de ${max} perguntas</div>
+    <div class="res-msg">Desafio concluído! +40 pts 🎉</div>
+    <button class="res-btn" style="background:${col}" onclick="goBack()">← Voltar ao Tópico</button>
+  </div>`;
+}
+
+// ═══════════════════════════════════════
+// MEGA DESAFIO
+// ═══════════════════════════════════════
+function startMegaDesafio() {
+  const all  = getAllTemas(currentSubject, currentYear);
+  chalQ      = shuffle(all.flatMap(t => [...(t.praticar || []), ...(t.desafios || [])]));
+  chalIdx    = 0; chalScore = 0;
+  currentTema = { nome: 'Mega-Desafio', icone: '🏆' };
+  showScreen('mega-screen');
+  renderMegaCard();
+}
+
+function renderMegaCard() {
+  const col = SUBJ_COLOR[currentSubject];
+  const container = document.getElementById('mega-content');
+  const max = Math.min(chalQ.length, 20);
+  if (chalIdx >= max) {
+    clearInterval(chalTimer);
+    addPoints(100);
+    container.innerHTML = `<div class="results-card">
+      <div class="res-big">🏆</div>
+      <div class="res-score" style="color:${col}">${chalScore}</div>
+      <div class="res-of">de ${max} perguntas</div>
+      <div class="res-stars">⭐⭐⭐</div>
+      <div class="res-msg">Mega-Desafio concluído! +100 pts! 🎉🎉</div>
+      <button class="res-btn" style="background:${col}" onclick="goBack()">← Voltar</button>
+    </div>`;
+    return;
+  }
+  const q = chalQ[chalIdx];
+  chalTime = 25;
+  clearInterval(chalTimer);
+  chalTimer = setInterval(() => {
+    chalTime--;
+    const el = document.getElementById('mega-timer');
+    if (el) { el.textContent = chalTime + 's'; el.style.color = chalTime <= 5 ? '#ef4444' : '#1a1a2e'; }
+    if (chalTime <= 0) { clearInterval(chalTimer); chalIdx++; renderMegaCard(); }
+  }, 1000);
+
+  const opts = shuffle(q.options);
+  container.innerHTML = `
+    <div class="screen-hdr">
+      <button class="back-btn" onclick="clearInterval(chalTimer);goBack()" style="margin-bottom:0">← Sair</button>
+      <div class="timer-ring" id="mega-timer" style="border-color:${col}">${chalTime}s</div>
+      <span class="pts-badge">${chalIdx+1}/${max}</span>
+    </div>
+    <div class="qprogress"><div class="qpfill" style="width:${chalIdx/max*100}%;background:${col}"></div></div>
+    <div class="qcard" style="border-color:${col}33">
+      <div class="qnum">🏆 Mega-Desafio · ${SUBJ_NAME[currentSubject]}</div>
+      <div class="qtext">${q.question}</div>
+      <div class="opts">
+        ${opts.map(o => `<button class="opt" onclick="answerMega(this,'${escQ(o)}','${escQ(q.answer)}')">${o}</button>`).join('')}
+      </div>
+    </div>`;
+}
+
+function answerMega(btn, chosen, correct) {
+  clearInterval(chalTimer);
+  document.querySelectorAll('#mega-content .opt').forEach(b => b.disabled = true);
+  if (chosen === correct) { btn.classList.add('correct-opt'); chalScore++; }
+  else {
+    btn.classList.add('wrong-opt');
+    document.querySelectorAll('#mega-content .opt').forEach(b => {
+      if (b.textContent === correct) b.classList.add('correct-opt');
+    });
+  }
+  setTimeout(() => { chalIdx++; renderMegaCard(); }, 900);
+}
+
+// ═══════════════════════════════════════
+// TUTOR IA
+// ═══════════════════════════════════════
+function openAI() {
+  const col = SUBJ_COLOR[currentSubject];
+  document.getElementById('ai-content').innerHTML = `
+    <div class="ai-box">
+      <span class="ai-topic-tag" style="background:${col}">${currentTema.icone} ${currentTema.nome}</span>
+      <div class="level-row">
+        <button class="lv-btn" id="lv-base" onclick="setAILevel('base','${col}')" style="background:${col};color:white;border-color:${col}">📗 Base</button>
+        <button class="lv-btn" id="lv-medio" onclick="setAILevel('medio','${col}')">📙 Médio</button>
+        <button class="lv-btn" id="lv-avancado" onclick="setAILevel('avancado','${col}')">🚀 Avançado</button>
+      </div>
+      <button class="ai-go-btn" id="ai-gen-btn" style="background:${col}" onclick="callAI()">✨ Gerar Exercício!</button>
+      <div class="ai-out" id="ai-output"></div>
+    </div>`;
+  showScreen('ai-screen');
+}
+
+function setAILevel(lv, col) {
+  aiLevel = lv;
+  ['base','medio','avancado'].forEach(l => {
+    const b = document.getElementById('lv-' + l);
+    if (!b) return;
+    if (l === lv) { b.style.background = col; b.style.borderColor = col; b.style.color = 'white'; }
+    else { b.style.background = 'white'; b.style.borderColor = '#e5e7eb'; b.style.color = 'var(--muted)'; }
+  });
+}
+
+async function callAI() {
+  const out = document.getElementById('ai-output');
+  const btn = document.getElementById('ai-gen-btn');
+  const key = localStorage.getItem('cv_api_key');
+  if (!key) { out.innerHTML = '<p style="color:#ef4444;font-weight:700">⚠️ Configura a chave API nas Definições.</p>'; return; }
+
+  const yr   = currentYear;
+  const subj = currentSubject;
+  const topic = currentTema.nome;
+  const lvLabel = { base:'base', medio:'médio', avancado:'avançado' };
+
+  const yearCtx = {
     1:'Aluno de 1ª classe (6-7 anos): usa frases muito curtas, palavras simples de 1-2 sílabas, números até 20, 4 opções com respostas óbvias. Nada de decimais, frações ou conceitos abstratos.',
     2:'Aluno de 2ª classe (7-8 anos): frases curtas, números até 1000, vocabulário do quotidiano, operações básicas de adição/subtração/multiplicação simples.',
     3:'Aluno de 3ª classe (8-9 anos): pode incluir multiplicação e divisão, frações simples, sinónimos/antónimos, conceitos de ciências básicos.',
     4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática básica, conceitos de ciências e história de Cabo Verde.'
   }[yr];
-  const histNote=_aiHistory.length?` Exercícios recentes (NÃO repitas): ${_aiHistory.slice(-5).join(' | ')}`:'';
-  const topicType=
-    /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(topic)
-      ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
-      : 'CONCEITO: pergunta directamente sobre as PROPRIEDADES ou a DEFINIÇÃO do tema (ex: "Quantos lados tem um triângulo?", "Qual é a forma com 4 lados iguais?"). NÃO uses o tema como personagem ou objecto numa história matemática. A pergunta deve testar o que a criança sabe sobre o conceito.';
-  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} para a ${yr}ª classe de Cabo Verde sobre "${topic}". Contexto do aluno: ${yearCtx} Tipo de exercício — ${topicType}${histNote}`;
-  out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
-  if(btn) btn.disabled=true;
-  try{
-    const res=await fetch('https://api.groq.com/openai/v1/chat/completions',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
-      body:JSON.stringify({
-        model:'llama-3.3-70b-versatile',max_tokens:600,
-        response_format:{type:'json_object'},
-        messages:[
-          {role:'system',content:'És um professor para crianças do ensino básico de Cabo Verde. Responde APENAS em JSON com este formato exacto: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation deve ser simples, com emojis, em Português de Portugal. IMPORTANTE: Varia SEMPRE os valores numéricos e a estrutura do exercício — nunca repitas a mesma operação ou os mesmos números em exercícios consecutivos. Para Matemática, usa operandos e resultados diferentes de cada vez.'},
-          {role:'user',content:prompt}
+
+  const topicType = /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(topic)
+    ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
+    : 'CONCEITO: pergunta directamente sobre as PROPRIEDADES ou a DEFINIÇÃO do tema (ex: "Quantos lados tem um triângulo?", "Qual é a forma com 4 lados iguais?"). NÃO uses o tema como personagem ou objecto numa história. A pergunta deve testar o que a criança sabe sobre o conceito.';
+
+  const histNote = _aiHistory.length ? ` Exercícios recentes (NÃO repitas): ${_aiHistory.slice(-5).join(' | ')}` : '';
+  const prompt = `Cria 1 exercício de ${SUBJ_NAME[subj]} de nível ${lvLabel[aiLevel]} para a ${yr}ª classe de Cabo Verde sobre "${topic}". Contexto do aluno: ${yearCtx} Tipo de exercício — ${topicType}${histNote}`;
+
+  out.innerHTML = '<div class="ai-spinner">🤔 A criar exercício...</div>';
+  if (btn) btn.disabled = true;
+
+  try {
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${key}` },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        max_tokens: 600,
+        messages: [
+          { role: 'system', content: 'És um professor para crianças do ensino básico de Cabo Verde. Responde APENAS em JSON com este formato exacto: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation deve ser simples, com emojis, em Português de Portugal. IMPORTANTE: Varia SEMPRE os valores numéricos e a estrutura do exercício — nunca repitas a mesma operação ou os mesmos números em exercícios consecutivos.' },
+          { role: 'user', content: prompt }
         ]
       })
     });
-    if(!res.ok){
-      const err=await res.json().catch(()=>({}));
-      out.innerHTML=`⚠️ Erro ${res.status}: ${err.error?.message||'Chave inválida ou limite atingido.'}`;
+    const data = await res.json();
+    const raw  = data.choices?.[0]?.message?.content || '{}';
+    const q    = JSON.parse(raw);
+    if (q.question && q.options?.length === 4 && q.answer && q.explanation) {
+      _aiHistory.push(q.question);
+      if (_aiHistory.length > 8) _aiHistory.shift();
+      renderAIQuiz(q, out);
     } else {
-      const data=await res.json();
-      const raw=data.choices?.[0]?.message?.content||'{}';
-      const q=JSON.parse(raw);
-      if(q.question&&q.options?.length===4&&q.answer&&q.explanation){
-        _aiHistory.push(q.question);
-        if(_aiHistory.length>8) _aiHistory.shift();
-        renderAIQuiz(q,out);
-      } else {
-        out.innerHTML='⚠️ Resposta em formato inesperado. Tenta outra vez.';
-      }
+      out.innerHTML = '<p style="color:#ef4444;font-weight:700">⚠️ Resposta em formato inesperado. Tenta outra vez.</p>';
     }
-  }catch(e){
-    out.innerHTML='⚠️ Erro de ligação ou resposta inválida. Tenta outra vez.';
+  } catch(e) {
+    out.innerHTML = `<p style="color:#ef4444;font-weight:700">⚠️ Erro: ${e.message}</p>`;
+  } finally {
+    if (btn) btn.disabled = false;
   }
-  if(btn) btn.disabled=false;
 }
 
-
-// ═══════════════════════════
-// CHALLENGE
-// ═══════════════════════════
-function renderChallenge(area){
-  const col=SUBJ_COLOR[currentSubject];
-  area.innerHTML=`
-    <div style="text-align:center;margin-bottom:10px">
-      <div style="font-size:0.9rem;font-weight:800;color:var(--muted)">Responde o mais rápido que conseguires! ⚡</div>
-    </div>
-    <div class="timer-ring" id="ch-ring" style="border-color:${col}">
-      <span id="ch-time" style="color:${col}">30</span>
-    </div>
-    <div id="ch-content"></div>
-    <div class="results-card" id="ch-results">
-      <div class="res-big" id="ch-emoji"></div>
-      <div class="res-score" id="ch-score" style="color:${col}"></div>
-      <div class="res-of">pontos no desafio!</div>
-      <div class="res-msg" id="ch-msg"></div>
-      <button class="retry-btn" style="background:${col}" onclick="setMode('challenge')">🔄 Novo Desafio!</button>
+function renderAIQuiz(data, container) {
+  _aiQ = data;
+  const col = SUBJ_COLOR[currentSubject];
+  container.innerHTML = `
+    <div class="qcard" style="border-color:${col}33;margin-top:12px">
+      <div class="qtext">${data.question}</div>
+      <div class="opts" id="ai-opts">
+        ${data.options.map(o => `<button class="opt" onclick="checkAIAnswer(this,'${escQ(o)}')">${o}</button>`).join('')}
+      </div>
+      <div id="ai-fb" class="feedback"></div>
     </div>`;
-  startChallenge(col);
 }
 
-async function startChallenge(col){
-  if(challengeInterval) clearInterval(challengeInterval);
-  let timeLeft=30, score=0, canAnswer=true;
-  document.getElementById('ch-results').classList.remove('show');
+function checkAIAnswer(btn, chosen) {
+  if (!_aiQ) return;
+  document.querySelectorAll('#ai-opts .opt').forEach(b => b.disabled = true);
+  const fb  = document.getElementById('ai-fb');
+  const col = SUBJ_COLOR[currentSubject];
+  const newBtn = `<button onclick="callAI()" style="background:${col};color:white;border:none;padding:10px 22px;border-radius:50px;font-family:'Fredoka One',cursive;font-size:.9rem;cursor:pointer;margin-top:10px;display:block">🔄 Novo exercício</button>`;
+  if (chosen === _aiQ.answer) {
+    btn.classList.add('correct-opt');
+    fb.className = 'feedback fb-ok show';
+    fb.innerHTML = `✅ Correcto! ${_aiQ.explanation}${newBtn}`;
+    addPoints(5);
+  } else {
+    btn.classList.add('wrong-opt');
+    document.querySelectorAll('#ai-opts .opt').forEach(b => { if (b.textContent === _aiQ.answer) b.classList.add('correct-opt'); });
+    fb.className = 'feedback fb-err show';
+    fb.innerHTML = `❌ A resposta correcta é <strong>${_aiQ.answer}</strong>. ${_aiQ.explanation}${newBtn}`;
+  }
+}
 
-  await ensureJSON();
-  const anoData=getJSONAno(currentSubject,currentYear);
-  const pool=shuffle([...(anoData?.praticar||[]),...(anoData?.desafios||[])]);
-  let poolIdx=0;
+// ═══════════════════════════════════════
+// GRAMMAR
+// ═══════════════════════════════════════
+async function openGrammar() {
+  await ensureJSON('por');
+  gramPage = 1;
+  renderGramPage();
+  showScreen('grammar-screen');
+}
 
-  function nextQ(){
-    canAnswer=true;
-    if(!pool.length) return;
-    const q=pool[poolIdx%pool.length];
-    poolIdx++;
-    const opts=shuffle(q.options);
-    document.getElementById('ch-content').innerHTML=`
-      <div class="qcard" style="animation:fadeUp 0.2s ease">
-        <div class="qtext" style="font-size:0.95rem">${q.question}</div>
-        <div class="opts" id="ch-opts">
-          ${opts.map(o=>`<button class="opt" style="padding:10px 14px" onclick="chPick(this,'${escQ(o)}','${escQ(q.answer)}')">
-            <span class="opt-lbl" style="min-width:26px;height:26px">•</span>${o}
-          </button>`).join('')}
+function renderGramPage() {
+  const anoData = getAnoData('por', currentYear);
+  const cards   = anoData?.gramatica || [];
+  const col     = SUBJ_COLOR['por'];
+  const start   = (gramPage - 1) * PAGE_SIZE;
+  const page    = cards.slice(start, start + PAGE_SIZE);
+
+  document.getElementById('gram-content').innerHTML = page.length
+    ? page.map(c => `
+        <div class="gram-card" style="border-top:4px solid ${col}">
+          <h3>${c.icon || '📌'} ${c.title}</h3>
+          <p>${c.regra || ''}</p>
+          ${c.ex ? `<div class="eg" style="background:${col}18;border-color:${col}">${c.ex}</div>` : ''}
+          ${c.trick ? `<div class="eg" style="background:#fef9c3;border-color:#fbbf24;margin-top:8px">💡 ${c.trick}</div>` : ''}
+        </div>`).join('')
+    : '<p style="text-align:center;color:var(--muted);padding:24px">Gramática para esta classe em breve! 🚧</p>';
+
+  const paginHtml = cards.length > PAGE_SIZE ? `
+    <div class="pagination">
+      <button onclick="gramPage--;renderGramPage()" ${gramPage <= 1 ? 'disabled' : ''}>◀</button>
+      <span>${gramPage} / ${Math.ceil(cards.length / PAGE_SIZE)}</span>
+      <button onclick="gramPage++;renderGramPage()" ${start + PAGE_SIZE >= cards.length ? 'disabled' : ''}>▶</button>
+    </div>` : '';
+  document.getElementById('gram-pagination-top').innerHTML = '';
+  document.getElementById('gram-pagination-bot').innerHTML = paginHtml;
+}
+
+// ═══════════════════════════════════════
+// SETTINGS
+// ═══════════════════════════════════════
+function openSettings() {
+  renderSettings();
+  showScreen('settings-screen');
+}
+
+function renderSettings() {
+  const p = loadProg();
+  document.getElementById('settings-content').innerHTML = `
+    <div class="settings-section">
+      <h3>🎮 Navegação</h3>
+      <div class="setting-row">
+        <div>
+          <div class="setting-label">Modo sequencial</div>
+          <div class="setting-desc">Bloqueia tópicos até completar o anterior</div>
         </div>
-      </div>`;
-    window.chPick=function(btn,chosen,correct){
-      if(!canAnswer) return;
-      canAnswer=false;
-      document.querySelectorAll('#ch-opts .opt').forEach(b=>b.disabled=true);
-      if(chosen===correct){score++;btn.classList.add('correct-opt');}
-      else btn.classList.add('wrong-opt');
-      setTimeout(nextQ,500);
-    };
-  }
-
-  challengeInterval=setInterval(()=>{
-    timeLeft--;
-    const el=document.getElementById('ch-time');
-    const ring=document.getElementById('ch-ring');
-    if(!el) return clearInterval(challengeInterval);
-    el.textContent=timeLeft;
-    if(timeLeft<=10){el.style.color='#ef4444';ring.style.borderColor='#ef4444';}
-    if(timeLeft<=0){
-      clearInterval(challengeInterval);
-      document.getElementById('ch-content').innerHTML='';
-      const emoji=score>=12?'🏆':score>=8?'😊':score>=4?'💪':'🌱';
-      const msg=score>=12?'Incrível! És um campeão!':score>=8?'Muito bem! Boa rapidez!':score>=4?'Bom começo! Pratica mais!':'Continua a tentar, vais melhorar!';
-      document.getElementById('ch-emoji').textContent=emoji;
-      document.getElementById('ch-score').textContent=score+' pontos';
-      document.getElementById('ch-msg').textContent=msg;
-      document.getElementById('ch-results').classList.add('show');
-      addPoints(score*5);
-    }
-  },1000);
-  nextQ();
-}
-
-// ═══════════════════════════
-// GRAMÁTICA
-// ═══════════════════════════
-let gramYear=4;
-const GRAM_DATA={};
-function renderGramatica(area){
-  currentGramPage=1;
-  gramYear=currentYear;
-  const m=YEAR_META[currentYear];
-  area.innerHTML=`
-    <div style="background:linear-gradient(135deg,#7B2FBE,#a855f7);border-radius:22px;padding:18px;margin-bottom:14px;color:white;text-align:center">
-      <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;margin-bottom:4px">📝 Gramática Portuguesa</div>
-      <div style="font-size:0.82rem;opacity:0.9">${m.title} — ${m.sub}</div>
+        <label class="toggle">
+          <input type="checkbox" id="seq-toggle" ${p.settings?.sequential ? 'checked' : ''} onchange="toggleSequential(this.checked)">
+          <span class="slider"></span>
+        </label>
+      </div>
     </div>
-    <div id="gram-cards"></div>`;
-  renderGramCards();
+    <div class="settings-section">
+      <h3>⭐ Progresso</h3>
+      <div class="setting-row">
+        <div class="setting-label">Pontos totais</div>
+        <strong>${p.points || 0} pts</strong>
+      </div>
+    </div>
+    <div class="settings-section">
+      <h3>🤖 Tutor IA (Groq)</h3>
+      <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:8px">
+        <div class="setting-label">Chave API</div>
+        <input type="password" class="api-input" id="api-key-input"
+          value="${localStorage.getItem('cv_api_key') || ''}"
+          placeholder="sk-..."
+          onchange="localStorage.setItem('cv_api_key',this.value)">
+        <div class="setting-desc">Obtém em console.groq.com → API Keys (gratuito)</div>
+      </div>
+    </div>
+    <div class="settings-section">
+      <h3>⚠️ Zona de Perigo</h3>
+      <button class="danger-btn" onclick="if(confirm('Apagar todo o progresso e pontos?')){localStorage.removeItem('${STORAGE_KEY}');location.reload()}">
+        🗑️ Apagar Todo o Progresso
+      </button>
+    </div>`;
 }
 
-function renderGramCards(){
-  const cards=getJSONAno('por',currentYear)?.gramatica||[];
-  const el=document.getElementById('gram-cards');
-  if(!el) return;
-  const totalPages=Math.ceil(cards.length/GRAM_PAGE_SIZE)||1;
-  currentGramPage=Math.min(Math.max(currentGramPage,1),totalPages);
-  const start=(currentGramPage-1)*GRAM_PAGE_SIZE;
-  const pageCards=cards.slice(start,start+GRAM_PAGE_SIZE);
-  const col='#7B2FBE';
-  const mkGBtn=(i)=>`<button onclick="setGramPage(${i})" style="min-width:36px;height:36px;padding:0 4px;border-radius:50%;border:2px solid ${i===currentGramPage?'transparent':'#e5e7eb'};background:${i===currentGramPage?col:'white'};color:${i===currentGramPage?'white':'var(--muted)'};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;cursor:pointer;transition:all 0.15s">${i}</button>`;
-  const pagination=totalPages>1?`<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 0 4px;flex-wrap:wrap">
-    ${currentGramPage>1?`<button onclick="setGramPage(${currentGramPage-1})" style="padding:8px 16px;border-radius:50px;border:2px solid ${col};background:white;color:${col};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer">← Anterior</button>`:''}
-    ${Array.from({length:totalPages},(_,i)=>mkGBtn(i+1)).join('')}
-    ${currentGramPage<totalPages?`<button onclick="setGramPage(${currentGramPage+1})" style="padding:8px 16px;border-radius:50px;border:2px solid ${col};background:white;color:${col};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer">Próxima →</button>`:''}
-  </div>`:'';
-  el.innerHTML=`<div class="learn-section">${pageCards.map(c=>`
-    <div class="lcard" style="border-color:#f3eaff">
-      <h3 style="color:#7B2FBE">${c.icon} ${c.title}</h3>
-      <p>${c.regra.replace(/\n/g,'<br>')}</p>
-      ${c.ex?`<div class="eg por-eg" style="white-space:pre-line;font-size:0.85rem">${c.ex}</div>`:''}
-      ${c.trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${c.trick}</div>`:''}
-    </div>`).join('')}
-    <div style="text-align:center;padding:8px 0 2px;font-size:0.78rem;color:var(--muted)">${cards.length} tópicos · ${gramYear}ª Classe · Página ${currentGramPage} de ${totalPages}</div>
-  </div>
-  ${pagination}`;
+function toggleSequential(val) {
+  const p = loadProg();
+  if (!p.settings) p.settings = {};
+  p.settings.sequential = val;
+  saveProg(p);
 }
-window.setGramPage=function(p){currentGramPage=p;renderGramCards();window.scrollTo(0,200);};
 
+// ═══════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════
+function shuffle(a) {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
+
+function escQ(s) {
+  return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+}
+
+// ═══════════════════════════════════════
 // INIT
-window.onload=function(){
-  ensureJSON();
-  setTimeout(()=>{
-    document.getElementById('splash').style.opacity='0';
-    setTimeout(()=>document.getElementById('splash').style.display='none',500);
-  },1800);
-
-  // Groq key from URL hash: #groq=sk-...
-  const hash = location.hash.slice(1);
-  const groqParam = new URLSearchParams(hash).get('groq');
-  if (groqParam && groqParam.startsWith('sk-')) {
-    localStorage.setItem('cv_api_key', groqParam);
-    history.replaceState(null, '', location.pathname);
+// ═══════════════════════════════════════
+(function() {
+  const h = location.hash;
+  if (h.startsWith('#groq=')) {
+    const key = h.slice(6);
+    if (key) { localStorage.setItem('cv_api_key', key); history.replaceState(null, '', location.pathname); }
   }
+  refreshPtsDisplay();
+  setTimeout(() => {
+    const s = document.getElementById('splash');
+    s.style.opacity = '0';
+    setTimeout(() => s.style.display = 'none', 500);
+  }, 1200);
+})();
 
-  // Service Worker
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').catch(()=>{});
-  }
-};
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
 </script>
 </body>
 </html>
