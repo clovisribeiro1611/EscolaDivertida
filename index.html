@@ -84,6 +84,8 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-
 .subj-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px;}
 .subj-btn{border-radius:16px;padding:14px 8px;text-align:center;cursor:pointer;border:3px solid transparent;font-family:'Nunito',sans-serif;font-weight:800;font-size:.8rem;transition:all .2s;box-shadow:0 3px 12px rgba(0,0,0,.08);}
 .subj-btn .sb-icon{font-size:1.8rem;margin-bottom:4px;}
+.subj-btn .sb-icon.mat-ops{font-size:.82rem;line-height:1.25;font-weight:900;display:flex;flex-direction:column;align-items:center;gap:0;margin-bottom:4px;}
+.mat-ops .mo-row{display:flex;gap:1.1rem;}
 .subj-btn.mat-btn{background:var(--y1l);color:var(--y1d);border-color:var(--y1);}
 .subj-btn.por-btn{background:#e8faf9;color:#20a89c;border-color:var(--y3);}
 .subj-btn.cie-btn{background:#e8f6ff;color:#2980b9;border-color:var(--cie);}
@@ -337,7 +339,7 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-
   </div>
   <div class="subj-grid">
     <button class="subj-btn mat-btn" onclick="selectSubject('mat')">
-      <div class="sb-icon">➕</div>Matemática
+      <div class="sb-icon mat-ops"><span>−</span><div class="mo-row"><span>+</span><span>×</span></div><span>÷</span></div>Matemática
     </button>
     <button class="subj-btn por-btn" onclick="selectSubject('por')">
       <div class="sb-icon">📖</div>Português
@@ -442,7 +444,7 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-
 // ═══════════════════════════════════════
 const SUBJ_COLOR = { mat:'#FF6B6B', por:'#4ECDC4', cie:'#45B7D1' };
 const SUBJ_NAME  = { mat:'Matemática', por:'Língua Portuguesa', cie:'Ciências Integradas' };
-const SUBJ_ICON  = { mat:'➕', por:'📖', cie:'🔬' };
+const SUBJ_ICON  = { mat:'🔢', por:'📖', cie:'🔬' };
 const YR_COLOR   = ['','#FF6B6B','#FF9F1C','#2EC4B6','#7B2FBE'];
 const YR_EMOJI   = ['','🐣','🌱','🌟','🏆'];
 const STORAGE_KEY = 'escola_v2';
