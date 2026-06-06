@@ -490,6 +490,48 @@
           "regra": "Os recursos expressivos enriquecem os textos com imagens e efeitos de linguagem especiais.",
           "ex": "Comparação: Os olhos dela brilham COMO estrelas.\nMetáfora: Os olhos dela SÃO estrelas.\nPersonificação: O vento abraçou as palmeiras.\nRepetição: Cabo Verde, Cabo Verde, terra de luz!",
           "trick": "Comparação usa COMO. Metáfora diz directamente que é. Personificação dá vida a coisas inanimadas!"
+        },
+        {
+          "icon": "🔷",
+          "title": "Grupo Nominal e Grupo Verbal",
+          "body": "A frase é formada por dois grupos:<br><b>Grupo Nominal (GN)</b> = determinante + nome (+ adjetivo). Indica de quem se fala — é o sujeito.<br><b>Grupo Verbal (GV)</b> = verbo (+ complementos). Indica a ação ou o estado — é o predicado.",
+          "example": "\"O gato preto ronrona.\"<br>GN = <u>O gato preto</u> (det. + nome + adj.)<br>GV = <u>ronrona</u> (verbo)<br>\"As crianças brincam no jardim.\"<br>GN = <u>As crianças</u> | GV = <u>brincam no jardim</u>",
+          "trick": "GN → responde a QUEM ou O QUÊ. GV → responde a O QUE FAZ. Juntos formam uma frase completa."
+        },
+        {
+          "icon": "🔢",
+          "title": "Género e Número do Grupo Nominal",
+          "body": "<b>Género:</b> masculino (o, um) ou feminino (a, uma).<br><b>Número:</b> singular (um) ou plural (mais de um).<br>No GN, o determinante, o nome e o adjetivo concordam todos em género e número.",
+          "example": "\"o menino esperto\" → masc. sing.<br>\"a menina esperta\" → fem. sing.<br>\"os livros pequenos\" → masc. pl.<br>\"as flores coloridas\" → fem. pl.",
+          "trick": "Concordância total: tudo muda junto! det. + nome + adjetivo → todos no mesmo género e número."
+        },
+        {
+          "icon": "🔴",
+          "title": "Verbos Ser, Estar e Ter — Presente",
+          "body": "<b>SER:</b> eu sou · tu és · ele é · nós somos · vós sois · eles são<br><b>ESTAR:</b> eu estou · tu estás · ele está · nós estamos · vós estais · eles estão<br><b>TER:</b> eu tenho · tu tens · ele tem · nós temos · vós tendes · eles têm",
+          "example": "Ser = identidade/qualidade: \"O livro <u>é</u> redondo.\"<br>Estar = estado/localização: \"Eu <u>estou</u> contente.\"<br>Ter = posse: \"Nós <u>temos</u> um cão.\"",
+          "trick": "Verbos irregulares — memorizar! SER → somos (não \"semos\"). TER → tenho (1ª sing) e têm (3ª pl, com acento)."
+        },
+        {
+          "icon": "⏪",
+          "title": "Pretérito Imperfeito do Indicativo",
+          "body": "Tempo do passado para ações habituais ou descrições contínuas.<br><b>1ª conj. (-ar):</b> andava · andavas · andava · andávamos · andáveis · andavam<br><b>2ª conj. (-er):</b> corria · corrias · corria · corríamos · correis · corriam<br><b>3ª conj. (-ir):</b> partia · partias · partia · partíamos · partíeis · partiam",
+          "example": "\"A Formiga <u>andava</u> por ali.\" (ação habitual no passado)<br>\"O céu <u>estava</u> estrelado.\" (descrição no passado)<br>\"Antes, eu <u>comia</u> devagar.\" (hábito passado)",
+          "trick": "1ª conj → -ava, -avam. 2ª e 3ª conj → -ia, -iam. Atenção: andava (imperfeito) ≠ andei (perfeito)."
+        },
+        {
+          "icon": "🏠",
+          "title": "Determinantes Possessivos",
+          "body": "Indicam a quem pertence o nome. Concordam com o possuidor E com o nome (género e número):<br>1ª sing: meu · minha · meus · minhas<br>2ª sing: teu · tua · teus · tuas<br>3ª sing: seu · sua · seus · suas<br>1ª pl: nosso · nossa · nossos · nossas<br>2ª pl: vosso · vossa · vossos · vossas",
+          "example": "\"O <u>meu</u> livro\" → livro pertence a eu (masc. sing.)<br>\"A <u>nossa</u> escola\" → escola pertence a nós (fem. sing.)<br>\"As <u>tuas</u> flores\" → flores pertencem a tu (fem. pl.)",
+          "trick": "Dupla concordância: 1) com o possuidor (meu=eu, nosso=nós). 2) com o nome possuído (meu/minha, nosso/nossa)."
+        },
+        {
+          "icon": "🔮",
+          "title": "Futuro do Indicativo",
+          "body": "Expressa ações que ainda vão acontecer.<br><b>Ser:</b> serei · serás · será · seremos · sereis · serão<br><b>Ter:</b> terei · terás · terá · teremos · tereis · terão<br><b>1ª (-ar):</b> andarei · andarás · andará · andaremos · andareis · andarão<br><b>2ª (-er):</b> comerei · comerás · comerá · comeremos · comereis · comerão<br><b>3ª (-ir):</b> partirei · partirás · partirá · partiremos · partireis · partirão",
+          "example": "\"Amanhã eu <u>andarei</u> pela praia.\"<br>\"Nós <u>seremos</u> bons alunos.\"<br>\"Eles <u>partirão</u> de manhã cedo.\"",
+          "trick": "Todas as conjugações têm as mesmas terminações: -ei · -ás · -á · -emos · -eis · -ão. Só ser e ter são irregulares."
         }
       ],
       "trimestres": [
@@ -1573,6 +1615,20 @@
                   "body": "O FUTURO DO INDICATIVO indica ações que ainda vão acontecer. Verbos regulares: infinitivo + -ei/-ás/-á/-emos/-eis/-ão. Exemplos: falarei/falarás/falará/falaremos/falareis/falarão; comerei/comerás/comerá/comeremos/comereis/comerão; partirei/partirás/partirá/partiremos/partireis/partirão. Ser: serei/serás/será... Ter: terei/terás/terá...",
                   "example": "⏭️ 'Amanhã EU FALAREI com o professor.'<br>⏭️ 'Tu SERÁS um bom aluno.'<br>⏭️ 'Nós TEREMOS uma festa amanhã.'<br>🔑 Infinitivo + ei/ás/á/emos/eis/ão",
                   "trick": "Futuro = infinitivo + ei/ás/á/emos/eis/ão. Testa com 'amanhã' — se fizer sentido, é futuro!"
+                },
+                {
+                  "icon": "🔷",
+                  "title": "Grupo Nominal e Grupo Verbal — Prática",
+                  "body": "O <b>Grupo Nominal (GN)</b> é formado pelo nome e os seus determinantes e adjetivos. O <b>Grupo Verbal (GV)</b> é formado pelo verbo e os seus complementos.<br>Para identificar o GN: pergunta \"Quem/O quê pratica a ação?\"<br>Para identificar o GV: pergunta \"O que fez/faz o sujeito?\"",
+                  "example": "\"A menina esperta lê um livro bonito.\"<br>GN = <u>A menina esperta</u> (quem lê?)<br>GV = <u>lê um livro bonito</u> (o que faz?)<br>\"Os pássaros cantam alegremente.\"<br>GN = <u>Os pássaros</u> | GV = <u>cantam alegremente</u>",
+                  "trick": "Na frase, o GN vem primeiro (sujeito) e o GV depois (predicado). Todo o GN concorda em género e número."
+                },
+                {
+                  "icon": "📚",
+                  "title": "Tipos de Texto — Revisão Ano 4",
+                  "body": "• <b>Narrativo</b>: personagens + espaço + tempo + problema + solução.<br>• <b>Poético</b>: versos, estrofes, rima, ritmo.<br>• <b>Dramático/Teatro</b>: réplicas + didascálias, para representar.<br>• <b>Notícia</b>: facto real — título + Quem/Onde/Quando + Como/Porquê.<br>• <b>Carta</b>: 7 partes — local/data, saudação, corpo, despedida, assinatura.<br>• <b>E-mail</b>: Para, Assunto, Corpo — comunicação eletrónica.",
+                  "example": "Narrativo = história com início/meio/fim.<br>Poético = \"Cantiga de Mãe\" (versos e estrofes).<br>Dramático = \"A Carochinha\" (réplicas e didascálias).<br>Notícia = \"Criança com deficiência visual...\" (facto real).",
+                  "trick": "A estrutura define o tipo: versos→poético; réplicas+didascálias→teatro; 7 partes→carta; Quem+Onde+Quando→notícia."
                 }
               ],
               "praticar": [
@@ -1674,6 +1730,105 @@
                   ],
                   "answer": "Amanhã viajará para São Vicente.",
                   "why": "'Viajará' = futuro do indicativo (viajar + -á). 'Amanhã' é um indicador de futuro!"
+                },
+                {
+                  "question": "Na frase \"Os pássaros cantam alegremente\", qual é o Grupo Nominal (GN)?",
+                  "options": [
+                    "cantam alegremente",
+                    "Os pássaros",
+                    "alegremente",
+                    "Os pássaros cantam"
+                  ],
+                  "answer": "Os pássaros",
+                  "why": "GN = determinante + nome: \"Os pássaros\". Responde à pergunta \"Quem canta?\"."
+                },
+                {
+                  "question": "Na frase \"A menina esperta lê um livro\", qual é o Grupo Verbal (GV)?",
+                  "options": [
+                    "A menina esperta",
+                    "um livro",
+                    "lê um livro",
+                    "esperta lê"
+                  ],
+                  "answer": "lê um livro",
+                  "why": "GV = verbo + complementos: \"lê um livro\". Indica o que o sujeito faz."
+                },
+                {
+                  "question": "O GN \"as casas antigas\" está no:",
+                  "options": [
+                    "masculino singular",
+                    "masculino plural",
+                    "feminino singular",
+                    "feminino plural"
+                  ],
+                  "answer": "feminino plural",
+                  "why": "\"as\" (fem. pl.) + \"casas\" (fem. pl.) + \"antigas\" (fem. pl.) → feminino plural."
+                },
+                {
+                  "question": "Qual é o plural correto do GN \"o livro novo\"?",
+                  "options": [
+                    "os livros novas",
+                    "as livros novos",
+                    "os livros novos",
+                    "o livros novos"
+                  ],
+                  "answer": "os livros novos",
+                  "why": "Concordância: \"os\" (masc. pl.) + \"livros\" (masc. pl.) + \"novos\" (masc. pl.)."
+                },
+                {
+                  "question": "Qual destes textos usa réplicas e didascálias?",
+                  "options": [
+                    "Texto narrativo",
+                    "Texto poético",
+                    "Texto dramático / Teatro",
+                    "A Notícia"
+                  ],
+                  "answer": "Texto dramático / Teatro",
+                  "why": "O texto dramático tem réplicas (falas ditas em voz alta) e didascálias (indicações em itálico que não se dizem)."
+                },
+                {
+                  "question": "O 1.º parágrafo de uma notícia responde a:",
+                  "options": [
+                    "Como e Porquê",
+                    "Quem, O quê, Quando e Onde",
+                    "Quando e Como",
+                    "Porquê apenas"
+                  ],
+                  "answer": "Quem, O quê, Quando e Onde",
+                  "why": "O 1.º parágrafo da notícia responde às 4 questões essenciais: Quem? O quê? Quando? Onde?"
+                },
+                {
+                  "question": "Qual é a primeira parte de uma carta?",
+                  "options": [
+                    "Saudação inicial",
+                    "Despedida",
+                    "Local e data",
+                    "Assinatura"
+                  ],
+                  "answer": "Local e data",
+                  "why": "A carta começa sempre com o local e a data (canto superior direito)."
+                },
+                {
+                  "question": "A forma \"cantarão\" pertence a que tempo verbal?",
+                  "options": [
+                    "Presente do indicativo",
+                    "Pretérito imperfeito",
+                    "Pretérito perfeito",
+                    "Futuro do indicativo"
+                  ],
+                  "answer": "Futuro do indicativo",
+                  "why": "\"Cantarão\" = eles cantarão → futuro do indicativo (ação que ainda vai acontecer)."
+                },
+                {
+                  "question": "Qual é a forma correta do futuro do indicativo de \"partir\" para \"nós\"?",
+                  "options": [
+                    "partimos",
+                    "partiremos",
+                    "partiamos",
+                    "partíamos"
+                  ],
+                  "answer": "partiremos",
+                  "why": "Futuro de partir: eu partirei · tu partirás · nós partiremos · eles partirão."
                 }
               ],
               "desafios": [

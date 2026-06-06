@@ -928,6 +928,13 @@
                   "body": "Mediana = o valor do MEIO quando os dados estão em ordem. Frequência = quantas vezes um valor aparece.",
                   "example": "Dados: 3, 5, 7, 9, 11 → Mediana = 7 (está no meio)<br>Em {2, 4, 4, 6, 8}: frequência do 4 = 2 vezes",
                   "trick": "Mediana: ordena os números, conta até ao meio. Se forem pares, a mediana é a média dos dois do centro!"
+                },
+                {
+                  "icon": "🥧",
+                  "title": "Gráfico Circular (Pizza)",
+                  "body": "O gráfico circular representa partes de um todo em forma de círculo. Cada fatia = uma categoria. A soma de todas as fatias = o círculo completo (100%).<br>Usado quando se quer mostrar <b>proporções</b> ou <b>percentagens</b> de um total.<br>Fatia maior → valor mais alto. Fatia menor → valor mais baixo.",
+                  "example": "8 crianças: 4 jogam no jardim · 2 leem livros · 2 jogam berlindes.<br>→ Jardim = 4/8 = metade do círculo<br>→ Livros = 2/8 = um quarto<br>→ Berlindes = 2/8 = um quarto<br>A fatia do jardim é a maior → é a atividade mais popular.",
+                  "trick": "Fatia maior = valor maior. Soma de todas as fatias = círculo completo (100%). Compara partes de UM todo."
                 }
               ],
               "praticar": [
@@ -1062,6 +1069,50 @@
                   ],
                   "answer": "O valor 7 aparece 5 vezes",
                   "why": "Frequência = número de vezes que o valor aparece no conjunto de dados!"
+                },
+                {
+                  "question": "O gráfico circular (pizza) é usado para mostrar:",
+                  "options": [
+                    "A evolução de um valor ao longo do tempo",
+                    "As partes de um todo como fatias de um círculo",
+                    "A comparação de colunas de barras",
+                    "A frequência numa tabela de frequências"
+                  ],
+                  "answer": "As partes de um todo como fatias de um círculo",
+                  "why": "O gráfico circular divide um círculo em fatias que representam as partes do todo."
+                },
+                {
+                  "question": "Num gráfico circular, a fatia maior representa:",
+                  "options": [
+                    "O valor mais pequeno",
+                    "O valor mais frequente/maior",
+                    "A mediana",
+                    "O valor médio"
+                  ],
+                  "answer": "O valor mais frequente/maior",
+                  "why": "As fatias são proporcionais aos valores — a fatia maior representa o valor mais alto."
+                },
+                {
+                  "question": "A soma de todas as fatias de um gráfico circular é igual a:",
+                  "options": [
+                    "Metade do círculo",
+                    "O dobro do círculo",
+                    "O círculo completo (100%)",
+                    "Um quarto do círculo"
+                  ],
+                  "answer": "O círculo completo (100%)",
+                  "why": "Todas as fatias juntas formam o círculo completo, representando 100% dos dados."
+                },
+                {
+                  "question": "12 alunos: 6 preferem manga, 3 goiaba, 3 papaia. No gráfico circular, a fatia da manga ocupa:",
+                  "options": [
+                    "Um quarto do círculo",
+                    "Um terço do círculo",
+                    "Metade do círculo",
+                    "Três quartos do círculo"
+                  ],
+                  "answer": "Metade do círculo",
+                  "why": "6 de 12 = 6/12 = 1/2 → a manga ocupa metade do círculo."
                 }
               ],
               "desafios": [
@@ -1197,6 +1248,13 @@
                   "body": "Planta: vista de cima de um espaço ou edifício. Usa uma escala (ex: 1 cm = 1 m). Mapa: representa uma área geográfica com símbolos convencionais, escala e pontos cardeais (N, S, E, O).",
                   "example": "Numa planta da sala: cada quadrado = 1 m². A sala tem 5×4 quadrados → área = 20 m².<br>Num mapa com escala 1:1000, 3 cm no mapa = 30 m na realidade.",
                   "trick": "Escala: medida no mapa × escala = medida real. N indica Norte — orienta o mapa."
+                },
+                {
+                  "icon": "📐",
+                  "title": "Unidades de Área — Múltiplos e Submúltiplos",
+                  "body": "A unidade principal de área é o <b>metro quadrado (m²)</b>.<br>Múltiplos: km² (1 000 000 m²) · hm² (10 000 m²) · dam² (100 m²)<br>Submúltiplos: dm² (0,01 m²) · cm² (0,0001 m²) · mm² (0,000001 m²)<br>Cada unidade é <b>100 vezes</b> maior que a seguinte (não 10 como no comprimento!).",
+                  "example": "1 m² = 100 dm² = 10 000 cm² = 1 000 000 mm²<br>1 dm² = 100 cm²<br>1 km² = 1 000 000 m²<br>Ex: 4 dm² = 400 cm²<br>Ex: 250 cm² = 2,5 dm²",
+                  "trick": "Área: cada \"salto\" multiplica/divide por 100 (não por 10!). 1 m² = 100 dm² = 10 000 cm²."
                 }
               ],
               "praticar": [
@@ -1364,6 +1422,50 @@
                   ],
                   "answer": "12 m²",
                   "why": "3×4=12 quadrados → 12 m²."
+                },
+                {
+                  "question": "Quantos centímetros quadrados (cm²) tem 1 metro quadrado (m²)?",
+                  "options": [
+                    "100 cm²",
+                    "1 000 cm²",
+                    "10 000 cm²",
+                    "1 000 000 cm²"
+                  ],
+                  "answer": "10 000 cm²",
+                  "why": "1 m² = 100 dm² e 1 dm² = 100 cm². Logo 1 m² = 100 × 100 = 10 000 cm²."
+                },
+                {
+                  "question": "4 dm² equivale a quantos cm²?",
+                  "options": [
+                    "40 cm²",
+                    "400 cm²",
+                    "4 000 cm²",
+                    "40 000 cm²"
+                  ],
+                  "answer": "400 cm²",
+                  "why": "1 dm² = 100 cm², então 4 dm² = 4 × 100 = 400 cm²."
+                },
+                {
+                  "question": "Para medir a área de uma sala de aula, a unidade mais adequada é:",
+                  "options": [
+                    "mm²",
+                    "cm²",
+                    "m²",
+                    "km²"
+                  ],
+                  "answer": "m²",
+                  "why": "Para divisões (sala, quarto), o metro quadrado (m²) é a unidade adequada."
+                },
+                {
+                  "question": "Nas unidades de área, cada \"salto\" multiplica ou divide por:",
+                  "options": [
+                    "10",
+                    "100",
+                    "1 000",
+                    "10 000"
+                  ],
+                  "answer": "100",
+                  "why": "Nas unidades de área, cada \"salto\" é ×100 ou ÷100 (ao contrário do comprimento que é ×10)."
                 }
               ],
               "desafios": [

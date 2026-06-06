@@ -1254,6 +1254,27 @@
                   "body": "<b>Parte ótica:</b> lente ocular (onde se olha), lente objetiva (amplia), condensador e diafragma, fonte de luz.<br><b>Parte mecânica:</b> tubo/canhão, revólver (roda as objetivas), platina (suporta a preparação), pinças (prendem a preparação), braço/coluna, parafuso macrométrico (ajuste grande), parafuso micrométrico (focar), pé/base.",
                   "example": "Como usar: 1) Ligar a luz. 2) Colocar preparação na platina com pinças. 3) Colocar objetiva de menor ampliação. 4) Subir a platina com parafuso macrométrico. 5) Focar com parafuso micrométrico.",
                   "trick": "Macro = grandes movimentos. Micro = pequenos ajustes para focar. A imagem no microscópio é ampliada, virtual e invertida."
+                },
+                {
+                  "icon": "🐢",
+                  "title": "Proteção dos Animais — Espécies Ameaçadas em CV",
+                  "body": "Causas de extinção: destruição do habitat, poluição, caça/captura ilegal, introdução de espécies exóticas.<br>Em Cabo Verde, espécies ameaçadas:<br>• <b>Caretta caretta</b> (tartaruga comum) — em perigo<br>• <b>Chelonia mydas</b> (tartaruga verde) — em perigo<br>• <b>Dermochelys coriacea</b> (tartaruga de couro) — perigo crítico<br>• <b>Garça vermelha</b> — risco crítico<br>• <b>Lagarto endémico de CV</b> — extinto desde 1912<br>Proteção: áreas marinhas protegidas, legislação, sensibilização.",
+                  "example": "CV alberga uma das maiores populações nidificantes de tartarugas marinhas do mundo (especialmente a ilha de Boa Vista e Sal). Por isso, a proteção das praias de nidificação é fundamental.",
+                  "trick": "Extinção = desaparecimento para sempre. CV tem responsabilidade especial: é zona de nidificação global de tartarugas. Relatar maus-tratos = dever de cidadão."
+                },
+                {
+                  "icon": "🧠",
+                  "title": "Excreção, Reprodução e Sistema Nervoso",
+                  "body": "<b>Excreção</b> (sistema urinário): os rins filtram o sangue e eliminam impurezas pela urina. Rins → ureteres → bexiga → uretra.<br><b>Reprodução</b> (sistema reprodutor): formação de novos seres. Fecundação = óvulo + espermatozoide → embrião → feto → nascimento.<br><b>Sistema Nervoso</b>: cérebro + nervos + medula. Controla e coordena TODAS as funções do corpo, incluindo memória e resposta a estímulos.",
+                  "example": "Rins = filtros do sangue → urina leva impurezas para fora.<br>Fecundação: célula feminina (óvulo) + célula masculina (espermatozoide) → novo ser.<br>Sistema nervoso: ao tocar numa chama, os nervos enviam sinal ao cérebro → retirar a mão.",
+                  "trick": "Excreção → rins filtram → urina. Reprodução → fecundação → óvulo + espermatozoide. SN → cérebro comanda tudo."
+                },
+                {
+                  "icon": "🏥",
+                  "title": "Saúde e Segurança — Por Sistema",
+                  "body": "• <b>Digestivo</b>: lavar mãos, alimentação saudável, mastigar devagar, escovar dentes.<br>• <b>Respiratório</b>: respirar pelo nariz, ar puro, não fumar, arejar espaços.<br>• <b>Circulatório</b>: não fumar, evitar álcool, exercício físico regular, controlar peso.<br>• <b>Urinário</b>: beber muita água, evitar excesso de sal.<br>• <b>Nervoso</b>: dormir bem, evitar ruído excessivo, não usar drogas, usar capacete.",
+                  "example": "Digestivo: \"Escova os dentes após as refeições.\"<br>Circulatório: \"Pratica desporto regularmente.\"<br>Nervoso: \"Usa capacete quando andas de bicicleta.\"",
+                  "trick": "Para cada sistema: o que comer/beber, o que evitar, o que fazer. Regra geral: exercício + boa alimentação + sem vícios = saúde!"
                 }
               ],
               "praticar": [
@@ -1432,6 +1453,83 @@
                   ],
                   "answer": "Ampliada, virtual e invertida",
                   "why": "A imagem no microscópio é maior que o objeto, virtual (não é real) e invertida."
+                },
+                {
+                  "question": "Qual espécie de tartaruga marinha nidifica nas praias de Cabo Verde e está em perigo?",
+                  "options": [
+                    "Tartaruga gigante de Galápagos",
+                    "Caretta caretta (tartaruga comum)",
+                    "Tartaruga de água-doce",
+                    "Tartaruga mediterrânica"
+                  ],
+                  "answer": "Caretta caretta (tartaruga comum)",
+                  "why": "A Caretta caretta (tartaruga comum) nidifica nas praias de CV e está em perigo de extinção."
+                },
+                {
+                  "question": "Qual é a principal função dos rins no sistema urinário?",
+                  "options": [
+                    "Produzir sangue",
+                    "Transportar oxigénio",
+                    "Filtrar o sangue e eliminar impurezas pela urina",
+                    "Coordenar os movimentos do corpo"
+                  ],
+                  "answer": "Filtrar o sangue e eliminar impurezas pela urina",
+                  "why": "Os rins filtram continuamente o sangue, eliminando as impurezas sob forma de urina."
+                },
+                {
+                  "question": "O que é a fecundação?",
+                  "options": [
+                    "O crescimento de um embrião",
+                    "A união de um óvulo com um espermatozoide",
+                    "A divisão do óvulo",
+                    "O nascimento de um novo ser"
+                  ],
+                  "answer": "A união de um óvulo com um espermatozoide",
+                  "why": "A fecundação é a união da célula sexual feminina (óvulo) com a masculina (espermatozoide), originando um novo ser."
+                },
+                {
+                  "question": "Qual sistema do corpo humano controla e coordena TODAS as funções do organismo?",
+                  "options": [
+                    "Sistema digestivo",
+                    "Sistema respiratório",
+                    "Sistema circulatório",
+                    "Sistema nervoso"
+                  ],
+                  "answer": "Sistema nervoso",
+                  "why": "O sistema nervoso (cérebro, nervos e medula) controla e coordena todas as funções do corpo."
+                },
+                {
+                  "question": "Para proteger o sistema respiratório, devo:",
+                  "options": [
+                    "Fumar para limpar os pulmões",
+                    "Respirar pelo nariz e evitar locais com ar poluído",
+                    "Beber muita água com sal",
+                    "Não praticar desporto"
+                  ],
+                  "answer": "Respirar pelo nariz e evitar locais com ar poluído",
+                  "why": "O nariz filtra, aquece e humidifica o ar. Ar poluído causa doenças respiratórias."
+                },
+                {
+                  "question": "Qual hábito protege o sistema circulatório?",
+                  "options": [
+                    "Fumar regularmente",
+                    "Beber álcool",
+                    "Praticar exercício físico regular",
+                    "Comer muitos alimentos com gordura"
+                  ],
+                  "answer": "Praticar exercício físico regular",
+                  "why": "O exercício regular fortalece o coração e melhora a circulação sanguínea."
+                },
+                {
+                  "question": "Porque é que CV tem responsabilidade especial na proteção das tartarugas marinhas?",
+                  "options": [
+                    "Porque tem as maiores tartarugas do mundo",
+                    "Porque é uma das principais zonas de nidificação de tartarugas a nível mundial",
+                    "Porque as tartarugas são o símbolo nacional",
+                    "Porque tem muitos biólogos marinhos"
+                  ],
+                  "answer": "Porque é uma das principais zonas de nidificação de tartarugas a nível mundial",
+                  "why": "As praias de CV (Boa Vista, Sal) acolhem uma das maiores populações nidificantes de tartarugas marinhas do mundo."
                 }
               ],
               "desafios": [
