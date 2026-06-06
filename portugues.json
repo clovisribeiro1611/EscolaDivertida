@@ -150,7 +150,52 @@
                   "why": "As vogais são: a, e, i, o, u. O \"u\" é uma vogal. As letras m, n, d são consoantes."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "A palavra \"menina\" tem quantas vogais no total?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "1"
+                  ],
+                  "answer": "3",
+                  "why": "\"me-ni-na\" → e, i, a = 3 vogais. Conta todas as vogais, mesmo que repitam."
+                },
+                {
+                  "question": "Qual destas palavras tem MAIS sílabas?",
+                  "options": [
+                    "uva",
+                    "nome",
+                    "menina",
+                    "mama"
+                  ],
+                  "answer": "menina",
+                  "why": "\"me-ni-na\" tem 3 sílabas. As outras têm 2 sílabas cada."
+                },
+                {
+                  "question": "Que sílabas do quadro m+v formam a palavra \"mimo\"?",
+                  "options": [
+                    "ma+mo",
+                    "mi+mo",
+                    "me+mu",
+                    "mo+mi"
+                  ],
+                  "answer": "mi+mo",
+                  "why": "\"mimo\" = mi (m+i) + mo (m+o). São duas sílabas do quadro m+vogal."
+                },
+                {
+                  "question": "Quantas sílabas tem \"borboleta\"?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "2"
+                  ],
+                  "answer": "4",
+                  "why": "\"bor-bo-le-ta\" = 4 sílabas. Bate palmas: bor(1), bo(2), le(3), ta(4)."
+                }
+              ]
             },
             {
               "id": "por1_t1_ditongos",
@@ -229,7 +274,52 @@
                   "why": "\"vida\" = vi-da. A sílaba \"vi\" está na primeira parte da palavra."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Qual palavra tem o ditongo \"ei\"?",
+                  "options": [
+                    "leite",
+                    "lima",
+                    "lama",
+                    "lote"
+                  ],
+                  "answer": "leite",
+                  "why": "\"leite\" = lei-te. O ditongo \"ei\" está na primeira sílaba (e+i juntos)."
+                },
+                {
+                  "question": "Em \"pai\", o ditongo é:",
+                  "options": [
+                    "pa",
+                    "ai",
+                    "pi",
+                    "ip"
+                  ],
+                  "answer": "ai",
+                  "why": "\"pai\" tem o ditongo ai — as vogais a e i estão na mesma sílaba."
+                },
+                {
+                  "question": "Qual destes NÃO é um ditongo?",
+                  "options": [
+                    "ai",
+                    "ei",
+                    "mu",
+                    "ou"
+                  ],
+                  "answer": "mu",
+                  "why": "\"mu\" é uma sílaba simples (consoante+vogal), não um ditongo. Ditongo = 2 vogais juntas."
+                },
+                {
+                  "question": "Junta as sílabas: \"vi\" + \"da\" =",
+                  "options": [
+                    "vida",
+                    "viad",
+                    "divá",
+                    "avid"
+                  ],
+                  "answer": "vida",
+                  "why": "\"vi\" (v+i) + \"da\" (d+a) = \"vida\". As sílabas juntam-se pela ordem correta."
+                }
+              ]
             }
           ]
         },
@@ -321,7 +411,52 @@
                   "why": "Juntando as sílabas to+ma+te formamos a palavra \"tomate\"."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Que palavra se forma com \"to\" + \"ma\" + \"te\"?",
+                  "options": [
+                    "tomato",
+                    "tomate",
+                    "mato",
+                    "tomaste"
+                  ],
+                  "answer": "tomate",
+                  "why": "\"to\" + \"ma\" + \"te\" = tomate. Um vegetal muito usado em CV!"
+                },
+                {
+                  "question": "Qual palavra NÃO começa com letra maiúscula corretamente?",
+                  "options": [
+                    "A minha escola é boa.",
+                    "o Airton é de Santiago.",
+                    "Cabo Verde é bonito.",
+                    "A Ana foi ao mercado."
+                  ],
+                  "answer": "o Airton é de Santiago.",
+                  "why": "A frase começa com \"o\" em minúscula — errado! Início de frase exige maiúscula: \"O Airton...\"."
+                },
+                {
+                  "question": "\"Ba\" + \"ta\" + \"ta\" forma que palavra?",
+                  "options": [
+                    "batata",
+                    "tabata",
+                    "babata",
+                    "tataba"
+                  ],
+                  "answer": "batata",
+                  "why": "\"ba\"+\"ta\"+\"ta\" = batata. Uma raiz muito consumida em Cabo Verde!"
+                },
+                {
+                  "question": "Que som faz o \"qu\" em \"quilo\"?",
+                  "options": [
+                    "ku",
+                    "su",
+                    "qu+u",
+                    "wu"
+                  ],
+                  "answer": "ku",
+                  "why": "\"qui\" soa como \"ki\" — o U não se pronuncia. \"quilo\" lê-se como \"kilo\"."
+                }
+              ]
             },
             {
               "id": "por1_t2_casa_janela",
@@ -407,7 +542,52 @@
                   "why": "\"ja\" tem o som J, como em \"jardim\", \"janela\", \"jogo\". É diferente do som G (gato)."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Na palavra \"rosa\", o S soa como:",
+                  "options": [
+                    "S de sopa",
+                    "Z de zebra",
+                    "X de caixa",
+                    "CH de chave"
+                  ],
+                  "answer": "Z de zebra",
+                  "why": "\"rosa\" = ro-za. O S entre duas vogais (o_a) lê-se como Z."
+                },
+                {
+                  "question": "Qual dígrafo está em \"velho\"?",
+                  "options": [
+                    "CH",
+                    "NH",
+                    "LH",
+                    "RR"
+                  ],
+                  "answer": "LH",
+                  "why": "\"velho\" = ve-lho. O dígrafo LH forma um som especial, como em filho, mulher, telhado."
+                },
+                {
+                  "question": "Que palavra usa o dígrafo CH?",
+                  "options": [
+                    "janela",
+                    "galinha",
+                    "chocolate",
+                    "filho"
+                  ],
+                  "answer": "chocolate",
+                  "why": "\"chocolate\" = cho-co-la-te. O dígrafo CH está em \"cho\", formando o som como em \"chave\"."
+                },
+                {
+                  "question": "Quantas sílabas tem \"telhado\"?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "1"
+                  ],
+                  "answer": "3",
+                  "why": "\"te-lha-do\" = 3 sílabas. O dígrafo LH fica junto na sílaba \"lha\"."
+                }
+              ]
             }
           ]
         },
@@ -440,6 +620,20 @@
                   "body": "<b>Quadro silábico f+v</b>: fa · fe · fi · fo · fu → Palavra: <b>fu-nil</b><br><b>QU+A e QU+O</b>: nestes casos, o U pronuncia-se → <b>qua</b>-dro, <b>quo</b>-ta<br><b>Grupo FL</b>: fla · fle · fli · flo · flu → <b>flor</b>, <b>flu-tu-ar</b><br><b>Grupo CL</b>: cla · cle · cli · clo · clu → <b>clas-se</b><br><b>Letras estrangeiras</b>: k (kilo), w (web), y (yoga) — usadas sobretudo em palavras de outras línguas.",
                   "example": "fu + nil = funil (f+v)<br>qua + dro = quadro (qu+a, U pronuncia-se)<br>flo + r = flor (grupo fl)<br>clas + se = classe (grupo cl)<br>ki + lo = kilo (letra k)",
                   "trick": "f = fa, fe, fi, fo, fu. qu+a/o = U pronuncia-se (qua-dro). qu+e/i = U mudo (que-lo). FL e CL = grupos consonantais. k/w/y = letras de palavras estrangeiras."
+                },
+                {
+                  "icon": "🎭",
+                  "title": "Vogais Nasais ã/ão/ãu e o H Mudo — palhaço",
+                  "body": "<b>Vogais nasais</b>: quando a vogal soa \"pelo nariz\". As principais terminações nasais são:<br>• <b>ão</b>: palhação, avião, botão, coração<br>• <b>ão</b>: pão, mão, cão, irmão<br>• <b>ãu</b>: mãu (pouco comum), São<br>• <b>ã</b>: manhã, irmã, maçã, amanhã<br><b>H no início das palavras</b>: a letra H no início NÃO se pronuncia — é muda!<br>hipopótamo → i-po-pó-ta-mo (o H não soa)",
+                  "example": "ão: avião ✈️ · botão 🔘 · coração ❤️ · irmão<br>ã: manhã · maçã 🍎 · amanhã · irmã<br>H mudo: hora (ora), haver (aver), hipopótamo (ipopótamo)<br>Palhaço = pa-lhã-ço → som nasal ã dentro da palavra",
+                  "trick": "H no início = NUNCA se pronuncia (hora=ora, hoje=oje). ão/ã = som nasal (sai pelo nariz). Dica: tapa o nariz ao dizer \"irmão\" — sentes a vibração!"
+                },
+                {
+                  "icon": "🦓",
+                  "title": "Letra Z e Grupos com R — zebra, árvore",
+                  "body": "<b>Quadro silábico z+v</b>: za · ze · zi · zo · zu → som igual ao S suave (entre vogais)<br>Palavra-chave: <b>ze-bra</b> (2 sílabas: ze + bra)<br><b>Grupos consonantais com R</b> (C+R+V): bra · bre · bri · bro · bru / pra · pre / fra · fre / cra · cre / gra · gre / dra · dre<br><b>Árvore → ár-vo-re</b>: o R no final de sílaba (ár, er, or, ir) tem som suave.",
+                  "example": "Z: ze + bra = zebra 🦓 · za + pa + to = zapato · zi + per = zíper<br>Grupos: bra-ço · pra-to · fra-co · cra-vo · gra-ma<br>R final de sílaba: ár-vo-re · sor-te · car-ta · per-to<br>Diferença: \"caro\" (r suave entre vogais) ≠ \"carro\" (rr forte)",
+                  "trick": "Z = som de s suave (zebra=sebra). Grupos C+R: bra, pra, fra, cra, gra, dra. R no final de sílaba (ár, er, or) = som médio (nem forte nem suave)."
                 }
               ],
               "praticar": [
@@ -508,9 +702,98 @@
                   ],
                   "answer": "NH",
                   "why": "\"vinho\" = vi-nho. O dígrafo NH aparece em palavras como vinho, banho, ganhar, ninho."
+                },
+                {
+                  "question": "Qual é a terminação nasal na palavra \"coração\"?",
+                  "options": [
+                    "ão",
+                    "ão",
+                    "ão",
+                    "ção"
+                  ],
+                  "answer": "ão",
+                  "why": "\"coração\" termina em -ão, uma das terminações nasais mais comuns em português."
+                },
+                {
+                  "question": "Como se pronuncia o H no início de \"hora\"?",
+                  "options": [
+                    "H forte como em inglês",
+                    "H suave",
+                    "Não se pronuncia — é mudo",
+                    "Como J"
+                  ],
+                  "answer": "Não se pronuncia — é mudo",
+                  "why": "O H no início das palavras portuguesas é sempre mudo — \"hora\" pronuncia-se \"ora\"."
+                },
+                {
+                  "question": "Como se divide \"zebra\" em sílabas?",
+                  "options": [
+                    "z-e-b-r-a",
+                    "ze-bra",
+                    "zeb-ra",
+                    "z-ebra"
+                  ],
+                  "answer": "ze-bra",
+                  "why": "\"zebra\" = ze-bra, 2 sílabas. O grupo \"br\" fica junto na mesma sílaba."
+                },
+                {
+                  "question": "Qual destes é um grupo consonantal com R?",
+                  "options": [
+                    "nh",
+                    "ch",
+                    "lh",
+                    "bra"
+                  ],
+                  "answer": "bra",
+                  "why": "\"bra\" é um grupo consonantal: consoante B + consoante R + vogal A. Outros: pra, fra, gra, cra."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Qual palavra tem o dígrafo NH?",
+                  "options": [
+                    "galinha",
+                    "zebra",
+                    "quadro",
+                    "flor"
+                  ],
+                  "answer": "galinha",
+                  "why": "\"galinha\" = ga-li-nha. O dígrafo NH forma um som nasal especial."
+                },
+                {
+                  "question": "Em \"cenoura\", CE soa como qual letra?",
+                  "options": [
+                    "K",
+                    "S",
+                    "Z",
+                    "G"
+                  ],
+                  "answer": "S",
+                  "why": "CE e CI têm sempre som de S. \"cenoura\" soa como \"senoura\"."
+                },
+                {
+                  "question": "Qual grupo consonantal está em \"braço\"?",
+                  "options": [
+                    "br",
+                    "nh",
+                    "lh",
+                    "ch"
+                  ],
+                  "answer": "br",
+                  "why": "\"braço\" = bra-ço. O grupo \"br\" é um grupo consonantal (B+R+vogal)."
+                },
+                {
+                  "question": "\"Amanhã\" tem terminação nasal. Essa terminação é:",
+                  "options": [
+                    "ão",
+                    "ão",
+                    "ã",
+                    "ãu"
+                  ],
+                  "answer": "ã",
+                  "why": "\"amanhã\" termina em -ã, uma vogal nasal. Diferente de \"avião\" (-ão) ou \"maçã\" (também -ã)."
+                }
+              ]
             }
           ]
         }

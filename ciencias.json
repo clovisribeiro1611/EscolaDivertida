@@ -103,7 +103,52 @@
                   "why": "A família e a escola colaboram juntas na educação — a participação da família ajuda muito."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "A Marta ajuda a mãe a pôr a mesa, o pai trata do jardim e o irmão arruma o quarto. O que está a acontecer?",
+                  "options": [
+                    "A família a discutir",
+                    "A colaboração da família nas tarefas de casa",
+                    "Apenas a Marta trabalha",
+                    "Ninguém faz nada"
+                  ],
+                  "answer": "A colaboração da família nas tarefas de casa",
+                  "why": "Quando cada membro da família faz a sua parte, estão a colaborar — o bem-estar depende de todos."
+                },
+                {
+                  "question": "Na escola, quem é responsável por cuidar da limpeza?",
+                  "options": [
+                    "O professor",
+                    "O diretor",
+                    "O empregado de limpeza",
+                    "Os alunos"
+                  ],
+                  "answer": "O empregado de limpeza",
+                  "why": "Na escola, cada profissional tem a sua função: o empregado de limpeza cuida da higiene dos espaços."
+                },
+                {
+                  "question": "O João discutiu com o amigo na escola. Qual a melhor atitude?",
+                  "options": [
+                    "Bater no amigo",
+                    "Ignorar sempre",
+                    "Conversar e resolver a situação",
+                    "Dizer ao professor para castigar"
+                  ],
+                  "answer": "Conversar e resolver a situação",
+                  "why": "Os bons amigos falam e resolvem os problemas. A amizade implica respeito e diálogo."
+                },
+                {
+                  "question": "A família da Ana participa nas reuniões da escola. Isso é importante porque:",
+                  "options": [
+                    "É obrigatório por lei",
+                    "Ajuda Ana a aprender mais e mostra que a família se preocupa",
+                    "Os professores mandam",
+                    "Todos os pais vão a reuniões"
+                  ],
+                  "answer": "Ajuda Ana a aprender mais e mostra que a família se preocupa",
+                  "why": "Quando a família participa na escola, o aluno sente-se apoiado e aprende melhor."
+                }
+              ]
             },
             {
               "id": "cie1_t1_alimentacao_vestuario",
@@ -200,7 +245,52 @@
                   "why": "Lavar as mãos antes de comer evita que germes e bactérias passem para os alimentos e nos deixem doentes."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "A Maria comeu fruta, peixe, arroz e legumes ao almoço. A sua alimentação é:",
+                  "options": [
+                    "Pouco saudável",
+                    "Muito saudável e variada",
+                    "Demasiada comida",
+                    "Apenas de origem animal"
+                  ],
+                  "answer": "Muito saudável e variada",
+                  "why": "Fruta + peixe (animal) + arroz (vegetal) + legumes (vegetal) = alimentação variada, equilibrada e saudável."
+                },
+                {
+                  "question": "O João foi à praia com fato de banho e sem protetor solar nem chapéu. O que deveria ter feito?",
+                  "options": [
+                    "Ficado em casa",
+                    "Levado chapéu e protetor solar",
+                    "Vestido roupa de inverno",
+                    "Ido de noite"
+                  ],
+                  "answer": "Levado chapéu e protetor solar",
+                  "why": "Na praia, o vestuário adequado inclui chapéu e protetor solar para proteger dos raios do sol."
+                },
+                {
+                  "question": "O pão tem origem vegetal (trigo) e o queijo tem origem animal (leite). Uma sandes de queijo tem:",
+                  "options": [
+                    "Só origem vegetal",
+                    "Só origem animal",
+                    "Ambas as origens",
+                    "Nenhuma origem"
+                  ],
+                  "answer": "Ambas as origens",
+                  "why": "O pão = vegetal (trigo). O queijo = animal (leite de vaca/cabra). A sandes tem ambas as origens."
+                },
+                {
+                  "question": "Quantas vezes por dia devemos escovar os dentes?",
+                  "options": [
+                    "1 vez",
+                    "2 vezes",
+                    "3 vezes",
+                    "5 vezes"
+                  ],
+                  "answer": "3 vezes",
+                  "why": "Escovar ao levantar, após as refeições e antes de dormir = 3 vezes. Para ter dentes saudáveis!"
+                }
+              ]
             }
           ]
         },
@@ -233,6 +323,13 @@
                   "body": "Os <b>meios de comunicação</b> permitem comunicar com outras pessoas.<br><b>Pessoal</b> (entre duas pessoas): telefone, telemóvel, carta, computador<br><b>Social</b> (para muitas pessoas ao mesmo tempo): televisão, rádio, jornal, revista<br><b>Regras de segurança</b>:<br>• Manter distância ao ver televisão<br>• Não colocar o volume muito alto<br>• Falar com a família sobre comunicações com desconhecidos",
                   "example": "Pessoal: \"Ligo ao meu pai pelo telemóvel 📱\"<br>Social: \"Vejo as notícias na televisão 📺\" → informa muitas pessoas ao mesmo tempo<br>Rádio = apenas ouvimos. TV = vemos e ouvimos. Jornal = apenas lemos.",
                   "trick": "Pessoal = comunica com UMA pessoa. Social = comunica com MUITAS pessoas ao mesmo tempo. TV + Rádio + Jornal = meios sociais."
+                },
+                {
+                  "icon": "📚",
+                  "title": "A Educação — Aprendo na Família e na Escola",
+                  "body": "Aprendemos em dois lugares principais:<br><b>Na família</b>: ser carinhoso, cozinhar, fazer compras, cuidar das plantas, atravessar a rua, respeitar os outros.<br><b>Na escola</b>: ler, escrever, contar, desenhar, trabalhar em grupo, descobrir coisas novas com os colegas.<br>A família e a escola <b>colaboram juntas</b> na nossa educação — cada uma tem o seu papel.",
+                  "example": "Com a mãe → aprendo a fazer bolo 🎂<br>Com o avô → aprendo a cuidar das plantas 🌱<br>Com o tio → aprendo a atravessar a rua 🚦<br>Com a professora → aprendo a ler 📖<br>Com os colegas → aprendo a descobrir e a partilhar 👫",
+                  "trick": "Família = educação de casa (valores, tarefas, vida). Escola = educação formal (ler, escrever, contar). Juntas = educação completa!"
                 }
               ],
               "praticar": [
@@ -301,9 +398,87 @@
                   ],
                   "answer": "Pessoal comunica com uma pessoa; social comunica com muitas ao mesmo tempo",
                   "why": "Meios pessoais (telefone, carta) ligam duas pessoas. Meios sociais (TV, rádio, jornal) informam muitas pessoas simultaneamente."
+                },
+                {
+                  "question": "Onde aprendemos a ler e a escrever?",
+                  "options": [
+                    "Na família apenas",
+                    "Na escola",
+                    "No mercado",
+                    "No hospital"
+                  ],
+                  "answer": "Na escola",
+                  "why": "Ler e escrever são aprendizagens formais que acontecem principalmente na escola."
+                },
+                {
+                  "question": "Com quem aprendemos a cuidar das plantas em casa?",
+                  "options": [
+                    "Com o professor",
+                    "Com o médico",
+                    "Com os familiares (avô, mãe, etc.)",
+                    "Com o diretor da escola"
+                  ],
+                  "answer": "Com os familiares (avô, mãe, etc.)",
+                  "why": "Na família aprendemos tarefas da vida como cuidar das plantas, cozinhar, fazer compras."
+                },
+                {
+                  "question": "O que significa dizer que a família e a escola colaboram na educação?",
+                  "options": [
+                    "Só a escola educa",
+                    "Só a família educa",
+                    "Cada uma tem o seu papel e juntas completam a educação",
+                    "A escola substitui a família"
+                  ],
+                  "answer": "Cada uma tem o seu papel e juntas completam a educação",
+                  "why": "A educação completa vem das duas: a família ensina os valores e a vida; a escola ensina os saberes formais."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "O Airton quer ir de Santiago a São Vicente. Qual meio de transporte vai usar?",
+                  "options": [
+                    "Bicicleta",
+                    "Autocarro",
+                    "Barco ou avião",
+                    "Mota"
+                  ],
+                  "answer": "Barco ou avião",
+                  "why": "Para ir de uma ilha de CV a outra, só se pode usar barco (marítimo) ou avião (aéreo)."
+                },
+                {
+                  "question": "A mãe da Ana enviou uma carta à avó. Depois ligou-lhe pelo telefone. Quantos meios de comunicação usou?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "0"
+                  ],
+                  "answer": "2",
+                  "why": "Carta + telefone = 2 meios de comunicação pessoal."
+                },
+                {
+                  "question": "Na cozinha há um produto com o símbolo ☠️ (tóxico). O que devemos fazer?",
+                  "options": [
+                    "Beber para ver o sabor",
+                    "Deixar ao alcance das crianças",
+                    "Guardar em lugar seguro, fora do alcance das crianças",
+                    "Ignorar o símbolo"
+                  ],
+                  "answer": "Guardar em lugar seguro, fora do alcance das crianças",
+                  "why": "Produtos tóxicos são perigosos — devem ficar fora do alcance das crianças e em lugares seguros."
+                },
+                {
+                  "question": "O João usa o telemóvel para falar com o pai. A professora usa a televisão para explicar. Qual é pessoal e qual é social?",
+                  "options": [
+                    "Ambos pessoais",
+                    "Ambos sociais",
+                    "Telemóvel=pessoal; TV=social",
+                    "Telemóvel=social; TV=pessoal"
+                  ],
+                  "answer": "Telemóvel=pessoal; TV=social",
+                  "why": "Telemóvel = entre duas pessoas (pessoal). TV = transmite para muitas pessoas ao mesmo tempo (social)."
+                }
+              ]
             },
             {
               "id": "cie1_t2_seres_vivos",
@@ -400,7 +575,52 @@
                   "why": "Todos os animais têm necessidades: comer, beber, ter espaço limpo. Devemos cuidar deles com carinho."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Uma pedra e uma lagartixa estão no jardim. Qual delas é um ser vivo?",
+                  "options": [
+                    "A pedra",
+                    "A lagartixa",
+                    "As duas",
+                    "Nenhuma"
+                  ],
+                  "answer": "A lagartixa",
+                  "why": "A lagartixa nasce, cresce, reproduz e morre — é um ser vivo. A pedra não passa por essas fases."
+                },
+                {
+                  "question": "A vaca dá leite. A galinha dá ovos. O milho dá espigas. Qual vem de origem vegetal?",
+                  "options": [
+                    "O leite",
+                    "Os ovos",
+                    "As espigas de milho",
+                    "Os três"
+                  ],
+                  "answer": "As espigas de milho",
+                  "why": "O milho é uma planta — origem vegetal. O leite e os ovos vêm de animais — origem animal."
+                },
+                {
+                  "question": "Para crescer saudável, uma planta de jardim precisa de:",
+                  "options": [
+                    "Sal e óleo",
+                    "Água, sol e terra fértil",
+                    "Apenas chuva",
+                    "Só terra, sem sol"
+                  ],
+                  "answer": "Água, sol e terra fértil",
+                  "why": "As plantas são seres vivos e precisam de: água (para hidratar), sol (para fotossíntese) e terra fértil (para nutrientes)."
+                },
+                {
+                  "question": "O cão ladra, a galinha pica no chão e o gato mia. O que têm em comum?",
+                  "options": [
+                    "São todos domésticos",
+                    "São todos selvagens",
+                    "São todos aves",
+                    "São todos plantas"
+                  ],
+                  "answer": "São todos domésticos",
+                  "why": "Cão, galinha e gato são animais domésticos — vivem com as pessoas e são cuidados por elas."
+                }
+              ]
             }
           ]
         },
@@ -503,7 +723,52 @@
                   "why": "O ar ficou preso dentro do copo e não deixou a água entrar — prova que o ar existe, mesmo sendo invisível."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "A Ana deixa a torneira aberta ao escovar os dentes. Isto é:",
+                  "options": [
+                    "Bom — usa água potável",
+                    "Mau — desperdiça água",
+                    "Normal em todos os países",
+                    "Necessário para a higiene"
+                  ],
+                  "answer": "Mau — desperdiça água",
+                  "why": "Em CV, a água potável é escassa. Fechar a torneira ao escovar os dentes poupa muita água."
+                },
+                {
+                  "question": "Colócas um copo de água no congelador. Algumas horas depois, a água fica:",
+                  "options": [
+                    "Líquida",
+                    "Gasosa (vapor)",
+                    "Sólida (gelo)",
+                    "Desaparece"
+                  ],
+                  "answer": "Sólida (gelo)",
+                  "why": "Com o frio do congelador, a água passa do estado líquido para o estado sólido (gelo)."
+                },
+                {
+                  "question": "Observas a paisagem: há areia, mar e ondas. Que tipo de paisagem é?",
+                  "options": [
+                    "Montanha",
+                    "Planície",
+                    "Planalto",
+                    "Praia"
+                  ],
+                  "answer": "Praia",
+                  "why": "Areia + mar + ondas = paisagem de praia. Cabo Verde tem muitas e belas praias!"
+                },
+                {
+                  "question": "O Zé fez a experiência do lenço no copo virado dentro de água. O lenço ficou seco. Porquê?",
+                  "options": [
+                    "O lenço é mágico",
+                    "O copo tinha um buraco",
+                    "O ar preso no copo não deixou a água entrar",
+                    "A água estava fria"
+                  ],
+                  "answer": "O ar preso no copo não deixou a água entrar",
+                  "why": "O ar ocupou o espaço dentro do copo e impediu que a água entrasse — prova que o ar existe e ocupa espaço."
+                }
+              ]
             },
             {
               "id": "cie1_t3_profissoes_cultura",
@@ -600,7 +865,52 @@
                   "why": "Devemos manter os espaços culturais e recreativos limpos e cuidados para que todos possam usufruir deles."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Para construir uma escola, trabalham: arquiteto, pedreiro, carpinteiro, pintor, engenheira. Quantos profissionais diferentes participam?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": "5",
+                  "why": "Arquiteto, pedreiro, carpinteiro, pintor e engenheira = 5 profissionais diferentes."
+                },
+                {
+                  "question": "O Hino de Cabo Verde começa com \"Canta, irmão / Canta, meu irmão\". Como se chama esse hino?",
+                  "options": [
+                    "Hino da Liberdade",
+                    "Cântico da Liberdade",
+                    "Canção das Ilhas",
+                    "Hino do Atlântico"
+                  ],
+                  "answer": "Cântico da Liberdade",
+                  "why": "O Hino Nacional de CV chama-se \"Cântico da Liberdade\" — deve ser respeitado e entoado com orgulho."
+                },
+                {
+                  "question": "Quantas ilhas representam as estrelas da bandeira de Cabo Verde?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                  ],
+                  "answer": "10",
+                  "why": "As 10 estrelas da bandeira representam as 10 ilhas habitadas de Cabo Verde."
+                },
+                {
+                  "question": "O Batuque é uma tradição cultural de Cabo Verde. Para que serve?",
+                  "options": [
+                    "Para treinar desporto",
+                    "Para celebrar cultura, música e dança tradicionais",
+                    "Para aprender matemática",
+                    "Para construir casas"
+                  ],
+                  "answer": "Para celebrar cultura, música e dança tradicionais",
+                  "why": "O Batuque é uma expressão cultural de CV — combina música, dança e voz, transmitida de geração em geração."
+                }
+              ]
             }
           ]
         }

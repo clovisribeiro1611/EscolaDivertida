@@ -92,7 +92,52 @@
                   "why": "\"Dentro de\" significa que está no interior do objeto."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "A Ana está ENTRE a escola e a casa da avó. O que isso quer dizer?",
+                  "options": [
+                    "A Ana está dentro da escola",
+                    "A Ana está do lado de fora",
+                    "A Ana está no meio dos dois lugares",
+                    "A Ana está atrás da escola"
+                  ],
+                  "answer": "A Ana está no meio dos dois lugares",
+                  "why": "\"Entre\" indica que está no meio — com um objeto de cada lado."
+                },
+                {
+                  "question": "O Zé levantou a mão DIREITA. Do teu ponto de vista (ao olhar para ele), a mão que vês é:",
+                  "options": [
+                    "A mão direita dele",
+                    "A mão esquerda dele",
+                    "As duas mãos",
+                    "Impossível saber"
+                  ],
+                  "answer": "A mão esquerda dele",
+                  "why": "Quando olhas para outra pessoa frente a frente, o lado direito dela fica do teu lado esquerdo — os lados invertem."
+                },
+                {
+                  "question": "Qual é o próximo elemento? △□○△□○△□___",
+                  "options": [
+                    "△",
+                    "□",
+                    "○",
+                    "△□"
+                  ],
+                  "answer": "○",
+                  "why": "O padrão é: triângulo, quadrado, círculo, repete. Depois de △□, o próximo é ○."
+                },
+                {
+                  "question": "O livro está EM CIMA da mesa. A mochila está DEBAIXO da cadeira. Onde está a mochila?",
+                  "options": [
+                    "Em cima da mesa",
+                    "Dentro da mochila",
+                    "Debaixo da cadeira",
+                    "À frente do livro"
+                  ],
+                  "answer": "Debaixo da cadeira",
+                  "why": "Debaixo de = no lado inferior, por baixo de algo."
+                }
+              ]
             },
             {
               "id": "mat1_t1_numeros_20",
@@ -189,7 +234,52 @@
                   "why": "Sequência crescente: cada número é +1 do anterior. Depois do 17 vem 18, depois 19."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "O conjunto A tem 7 maçãs. O conjunto B tem 5 laranjas. Qual tem mais frutas?",
+                  "options": [
+                    "B",
+                    "Igual",
+                    "A",
+                    "Impossível saber"
+                  ],
+                  "answer": "A",
+                  "why": "7 > 5. O conjunto A tem mais elementos — o seu cardinal (7) é maior."
+                },
+                {
+                  "question": "Quanto é 9 + 8?",
+                  "options": [
+                    "16",
+                    "17",
+                    "18",
+                    "15"
+                  ],
+                  "answer": "17",
+                  "why": "9 + 8 = 17. Na reta numérica: começa no 9, salta 8 para a frente → chega ao 17."
+                },
+                {
+                  "question": "Na cozinha havia 15 copos. Caíram 6. Quantos ficaram?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "answer": "9",
+                  "why": "15 − 6 = 9 copos ficaram. Subtração: retirar 6 do 15."
+                },
+                {
+                  "question": "Qual número falta? 5, 8, ___, 14, 17",
+                  "options": [
+                    "10",
+                    "11",
+                    "12",
+                    "9"
+                  ],
+                  "answer": "11",
+                  "why": "A sequência aumenta de 3 em 3: 5+3=8, 8+3=11, 11+3=14, 14+3=17."
+                }
+              ]
             }
           ]
         },
@@ -222,6 +312,13 @@
                   "body": "<b>Sequências temporais</b>: ordem dos acontecimentos — <b>antes</b>, <b>durante</b>, <b>depois</b>.<br>Momentos do dia: <b>manhã</b>, <b>tarde</b>, <b>noite</b>.<br><b>Dias da semana</b> (7 dias): segunda-feira · terça-feira · quarta-feira · quinta-feira · sexta-feira · sábado · domingo.<br>De segunda a sexta = dias de escola. Sábado e domingo = fim de semana.<br><b>Ontem</b> = dia anterior · <b>Hoje</b> = dia atual · <b>Amanhã</b> = dia seguinte.",
                   "example": "Zé sobe a escada (1.º) → chega ao topo (2.º) → desce pelo escorrega (3.º).<br>Manhã: ir à escola. Tarde: almoçar. Noite: jantar e dormir.<br>Hoje = quarta-feira → ontem = terça → amanhã = quinta.",
                   "trick": "7 dias da semana: seg, ter, qua, qui, sex, sáb, dom. Sequência: antes → agora → depois. Manhã → tarde → noite = um dia completo."
+                },
+                {
+                  "icon": "📆",
+                  "title": "Os Meses do Ano e o Calendário",
+                  "body": "O ano tem <b>12 meses</b>:<br>janeiro · fevereiro · março · abril · maio · junho · julho · agosto · setembro · outubro · novembro · dezembro<br>Os meses têm 28, 29, 30 ou 31 dias.<br>O calendário organiza os dias em semanas (linhas) e meses (colunas dos dias da semana).<br>Ontem · Hoje · Amanhã referem-se sempre ao dia presente.",
+                  "example": "Janeiro = 1.º mês (começo do ano) 🎉<br>Junho = 6.º mês<br>Dezembro = 12.º mês (fim do ano) 🎄<br>Fevereiro = mês mais curto (28 ou 29 dias)<br>Outubro, novembro = meses do regresso às aulas",
+                  "trick": "Truque dos nós da mão: nó = 31 dias, vão = 28/29/30 dias. Janeiro(nó)=31, Fevereiro(vão)=28/29, Março(nó)=31..."
                 }
               ],
               "praticar": [
@@ -279,9 +376,87 @@
                   ],
                   "answer": "4 lados todos iguais",
                   "why": "O quadrado tem 4 lados todos com a mesma medida — é um polígono especial."
+                },
+                {
+                  "question": "Quantos meses tem um ano?",
+                  "options": [
+                    "10",
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "answer": "12",
+                  "why": "O ano tem 12 meses: de janeiro a dezembro."
+                },
+                {
+                  "question": "Qual é o 1.º mês do ano?",
+                  "options": [
+                    "Dezembro",
+                    "Março",
+                    "Janeiro",
+                    "Junho"
+                  ],
+                  "answer": "Janeiro",
+                  "why": "Janeiro é o primeiro mês do ano. Dezembro é o último (12.º)."
+                },
+                {
+                  "question": "Qual mês tem menos dias?",
+                  "options": [
+                    "Janeiro",
+                    "Março",
+                    "Fevereiro",
+                    "Julho"
+                  ],
+                  "answer": "Fevereiro",
+                  "why": "Fevereiro tem apenas 28 dias (ou 29 no ano bissexto) — é o mês mais curto."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Uma figura tem 4 lados todos iguais. Que figura é?",
+                  "options": [
+                    "Triângulo",
+                    "Retângulo",
+                    "Quadrado",
+                    "Pentágono"
+                  ],
+                  "answer": "Quadrado",
+                  "why": "O quadrado tem 4 lados todos com a mesma medida. O retângulo tem 4 lados mas só os opostos são iguais."
+                },
+                {
+                  "question": "Se hoje é sexta-feira, que dia foi ontem?",
+                  "options": [
+                    "Sábado",
+                    "Quinta-feira",
+                    "Segunda-feira",
+                    "Domingo"
+                  ],
+                  "answer": "Quinta-feira",
+                  "why": "Antes da sexta-feira vem a quinta-feira."
+                },
+                {
+                  "question": "Em que mês de cada ano há menos dias do que nos outros?",
+                  "options": [
+                    "Janeiro",
+                    "Março",
+                    "Outubro",
+                    "Fevereiro"
+                  ],
+                  "answer": "Fevereiro",
+                  "why": "Fevereiro tem 28 dias (ou 29) — é sempre o mês mais curto do ano."
+                },
+                {
+                  "question": "A régua do Airton tem 20 cm. A régua da Ana tem 15 cm. A diferença de comprimento é:",
+                  "options": [
+                    "5 cm",
+                    "35 cm",
+                    "3 cm",
+                    "25 cm"
+                  ],
+                  "answer": "5 cm",
+                  "why": "20 − 15 = 5 cm. A régua do Airton é 5 cm mais comprida."
+                }
+              ]
             },
             {
               "id": "mat1_t2_numeros_50",
@@ -360,7 +535,52 @@
                   "why": "46 = 4 dezenas e 6 unidades = 40 + 6."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "O número 48 tem quantas dezenas e quantas unidades?",
+                  "options": [
+                    "8 dezenas e 4 unidades",
+                    "4 dezenas e 8 unidades",
+                    "4 dezenas e 0 unidades",
+                    "48 dezenas"
+                  ],
+                  "answer": "4 dezenas e 8 unidades",
+                  "why": "48 = 40 + 8 = 4 dezenas e 8 unidades."
+                },
+                {
+                  "question": "Na turma há 23 meninas e 17 meninos. Quantos alunos são ao todo?",
+                  "options": [
+                    "38",
+                    "39",
+                    "40",
+                    "41"
+                  ],
+                  "answer": "40",
+                  "why": "23 + 17 = 40. D: 20+10=30, U: 3+7=10 → 30+10 = 40 alunos."
+                },
+                {
+                  "question": "De 50 mangas, venderam-se 28. Quantas ficaram?",
+                  "options": [
+                    "20",
+                    "21",
+                    "22",
+                    "23"
+                  ],
+                  "answer": "22",
+                  "why": "50 − 28 = 22 mangas ficaram."
+                },
+                {
+                  "question": "Qual é o número que tem 3 dezenas e 9 unidades?",
+                  "options": [
+                    "93",
+                    "39",
+                    "30",
+                    "9"
+                  ],
+                  "answer": "39",
+                  "why": "3 dezenas = 30. 9 unidades = 9. Junta: 30 + 9 = 39."
+                }
+              ]
             },
             {
               "id": "mat1_t2_dados",
@@ -373,6 +593,20 @@
                   "body": "<b>Tabela de registos</b>: organiza dados com traços (contagem). Cada 5 traços = grupo de 5 (4 verticais + 1 diagonal).<br><b>Pictograma</b>: usa imagens para mostrar informação. Cada imagem = 1 objeto (ou mais, se indicado na chave).<br><b>Gráfico de barras</b>: usa barras verticais ou horizontais para comparar quantidades. A altura/comprimento da barra indica o valor.",
                   "example": "Tabela: Leite ||||  Pão |||  Fruta || → Leite=5, Pão=3, Fruta=2<br>Pictograma: 🍎🍎🍎 = 3 maçãs<br>Gráfico de barras: barra mais alta = maior quantidade",
                   "trick": "Tabela = traços. Pictograma = imagens. Gráfico de barras = barras com altura proporcional ao valor. Todos servem para organizar e comparar dados."
+                },
+                {
+                  "icon": "📋",
+                  "title": "Tabela de Registos — Contar com Traços",
+                  "body": "A <b>tabela de registos</b> usa traços para contar dados.<br>Modo de contar: cada objeto = 1 traço vertical.<br>Ao 5.º objeto: faz-se um traço diagonal a cruzar os 4 anteriores → ||||/<br>Assim é fácil contar grupos de 5 sem perder a conta.<br>Depois de recolher os dados, completa a tabela com o total.",
+                  "example": "Alunos que comem fruta ao pequeno-almoço: ||||/ ||| = 5+3 = 8 alunos<br>Pássaros observados: ||||/ ||||/ || = 5+5+2 = 12 pássaros<br>Lê a tabela: qual a categoria com mais registos? = a que tem mais traços.",
+                  "trick": "Conta sempre em grupos de 5 (||||/). Fácil: conta os feixes de 5, depois os traços soltos. Total = feixes×5 + soltos."
+                },
+                {
+                  "icon": "🖼️",
+                  "title": "Pictograma — Informação com Imagens",
+                  "body": "O <b>pictograma</b> usa imagens para representar dados.<br>Cada imagem representa 1 objeto (ou mais — ver a <b>chave</b>).<br>Para ler um pictograma:<br>1. Lê o título (o que está a ser contado)<br>2. Lê a chave (quanto vale cada imagem)<br>3. Conta as imagens de cada categoria<br>4. Multiplica pelo valor da chave",
+                  "example": "Chave: 🍎 = 2 crianças<br>Mara: 🍎🍎🍎 = 3×2 = 6 crianças<br>Luísa: 🍎🍎 = 2×2 = 4 crianças<br>→ Mara comprou para mais crianças.",
+                  "trick": "Pictograma = picture + grama. SEMPRE verifica a chave antes de contar! Se 1 imagem = 2, então 3 imagens = 6, não 3."
                 }
               ],
               "praticar": [
@@ -430,9 +664,76 @@
                   ],
                   "answer": "Manga",
                   "why": "Manga tem 5 registos, Banana tem 4, Papaia tem 2. Manga é a mais popular."
+                },
+                {
+                  "question": "Num registo de traços, ||||/ representa:",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "10"
+                  ],
+                  "answer": "5",
+                  "why": "Quatro traços verticais mais um diagonal = grupo de 5. É assim que se registam os dados em grupos."
+                },
+                {
+                  "question": "No pictograma, a chave diz que 🐟 = 3 peixes. Vês 4 imagens 🐟🐟🐟🐟. Quantos peixes são?",
+                  "options": [
+                    "4",
+                    "7",
+                    "12",
+                    "3"
+                  ],
+                  "answer": "12",
+                  "why": "4 imagens × 3 peixes cada = 12 peixes. A chave multiplica o valor de cada imagem."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Num pictograma: Ana 🍊🍊🍊, João 🍊🍊, Maria 🍊🍊🍊🍊. Quem comprou mais?",
+                  "options": [
+                    "Ana",
+                    "João",
+                    "Maria",
+                    "Todos igual"
+                  ],
+                  "answer": "Maria",
+                  "why": "Maria tem 4 imagens, Ana tem 3, João tem 2. Maria comprou mais."
+                },
+                {
+                  "question": "Num gráfico de barras: Azul=20, Amarelo=15, Laranja=10. Qual é a diferença entre Azul e Laranja?",
+                  "options": [
+                    "5",
+                    "10",
+                    "15",
+                    "20"
+                  ],
+                  "answer": "10",
+                  "why": "20 − 10 = 10. A barra azul é 10 unidades maior que a laranja."
+                },
+                {
+                  "question": "Uma tabela mostra: Gatos ||||/ ||, Cães ||||/ ||||. Quantos animais ao total?",
+                  "options": [
+                    "16",
+                    "17",
+                    "18",
+                    "19"
+                  ],
+                  "answer": "16",
+                  "why": "Gatos: 5+2=7. Cães: 5+4=9. Total: 7+9=16 animais."
+                },
+                {
+                  "question": "No gráfico de barras de insetos: Borboletas=4, Gafanhotos=6, Formigas=7. Qual inseto é menos visto?",
+                  "options": [
+                    "Gafanhotos",
+                    "Formigas",
+                    "Borboletas",
+                    "Todos iguais"
+                  ],
+                  "answer": "Borboletas",
+                  "why": "Borboletas=4 é o menor valor — a barra mais curta no gráfico."
+                }
+              ]
             }
           ]
         },
@@ -517,7 +818,52 @@
                   "why": "Ordem crescente = do menor para o maior: 34 < 50 < 67 < 89."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Qual é o maior número: 72 ou 69?",
+                  "options": [
+                    "69",
+                    "72",
+                    "Iguais",
+                    "Impossível saber"
+                  ],
+                  "answer": "72",
+                  "why": "72 tem 7 dezenas; 69 tem 6 dezenas. 7 > 6, portanto 72 > 69."
+                },
+                {
+                  "question": "A escola tem 45 meninas e 38 meninos. Quantos alunos ao total?",
+                  "options": [
+                    "73",
+                    "82",
+                    "83",
+                    "93"
+                  ],
+                  "answer": "83",
+                  "why": "45 + 38 = 83. U: 5+8=13 (escreve 3, transporta 1). D: 4+3+1=8 → 83."
+                },
+                {
+                  "question": "Havia 100 laranjas. Venderam-se 63. Quantas restam?",
+                  "options": [
+                    "37",
+                    "38",
+                    "47",
+                    "33"
+                  ],
+                  "answer": "37",
+                  "why": "100 − 63 = 37 laranjas restam."
+                },
+                {
+                  "question": "Ordena do maior para o menor: 45, 78, 32, 91",
+                  "options": [
+                    "32, 45, 78, 91",
+                    "91, 78, 45, 32",
+                    "78, 91, 32, 45",
+                    "45, 32, 91, 78"
+                  ],
+                  "answer": "91, 78, 45, 32",
+                  "why": "Ordem decrescente = do maior para o menor: 91 > 78 > 45 > 32."
+                }
+              ]
             },
             {
               "id": "mat1_t3_solidos_medidas",
@@ -607,7 +953,52 @@
                   "why": "A moeda de menor valor em CV é o 1 escudo. Depois vêm: 5, 10, 20, 50 e 100 escudos."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "Uma caixa de sapatos tem a forma de qual sólido geométrico?",
+                  "options": [
+                    "Cubo",
+                    "Paralelepípedo",
+                    "Esfera",
+                    "Cone"
+                  ],
+                  "answer": "Paralelepípedo",
+                  "why": "A caixa de sapatos tem 6 faces retangulares (não todas iguais) — é um paralelepípedo."
+                },
+                {
+                  "question": "Um garrafão tem 20L. Enches 4 garrafas de 5L cada. Ficam iguais?",
+                  "options": [
+                    "Não, sobra água",
+                    "Sim, são iguais",
+                    "Não, falta água",
+                    "Impossível saber"
+                  ],
+                  "answer": "Sim, são iguais",
+                  "why": "4 garrafas × 5L = 20L = o garrafão completo."
+                },
+                {
+                  "question": "Tens 50$00 e 20$00. Queres comprar um gelado de 80$00. Tens dinheiro suficiente?",
+                  "options": [
+                    "Sim, sobra",
+                    "Sim, chega exato",
+                    "Não, falta",
+                    "Sim, sobra muito"
+                  ],
+                  "answer": "Não, falta",
+                  "why": "50$00 + 20$00 = 70$00. O gelado custa 80$00. Faltam 10$00."
+                },
+                {
+                  "question": "Quais sólidos têm APENAS superfícies planas?",
+                  "options": [
+                    "Esfera e cone",
+                    "Cilindro e esfera",
+                    "Cubo e pirâmide",
+                    "Cone e cubo"
+                  ],
+                  "answer": "Cubo e pirâmide",
+                  "why": "Cubo (6 faces quadradas) e pirâmide (base + triângulos) têm apenas faces planas. Esfera, cilindro e cone têm curvas."
+                }
+              ]
             }
           ]
         }
