@@ -1217,7 +1217,9 @@
           "nome": "1º Trimestre",
           "temas": [
             {
-              "nome": "Família e Histórias — Narrativa, Poesia e Banda Desenhada",
+              "id": "por4_t1_narrativa",
+              "nome": "Texto Narrativo — Narrador, Personagens e Estrutura",
+              "icone": "📖",
               "aprender": [
                 {
                   "icon": "📖",
@@ -1231,19 +1233,6 @@
                     "Sequência de ações: início, desenvolvimento, conclusão"
                   ],
                   "trick": "5 perguntas: QUEM? (personagens) ONDE? (espaço) QUANDO? (tempo) O QUÊ? (ações) QUEM CONTA? (narrador)!"
-                },
-                {
-                  "icon": "🎭",
-                  "title": "Texto Poético",
-                  "body": "O texto poético expressa sentimentos e emoções através de versos e estrofes. Usa linguagem especial: rima, ritmo e figuras de estilo.",
-                  "list": [
-                    "Verso — cada linha do poema",
-                    "Estrofe — grupo de versos (quadra = 4 versos; dístico = 2 versos)",
-                    "Rima — sons iguais no final dos versos (ex: mar / amar)",
-                    "Ritmo — musicalidade do poema ao ser lido em voz alta",
-                    "Recursos expressivos: comparação, personificação, metáfora"
-                  ],
-                  "trick": "Poema = VERsos em ESTROfes com RIMA. Lê em voz alta e sentes o ritmo! Em CV: mornas e coladeiras são poesia cantada!"
                 },
                 {
                   "icon": "📝",
@@ -1354,20 +1343,6 @@
                   "body": "O superlativo absoluto exprime uma qualidade no grau máximo, sem comparar com outros.",
                   "example": "Analítico: muito + adjetivo → muito alto\nSintético: adjetivo + -íssimo → altíssimo\nOutros: rico → riquíssimo · feliz → felicíssimo",
                   "trick": "Muito + adjetivo = fácil! Adjetivo + íssimo = mais elegante. Ambos significam o máximo!"
-                },
-                {
-                  "icon": "💬",
-                  "title": "Banda Desenhada — Estrutura",
-                  "body": "A <b>Banda Desenhada (BD)</b> é um texto narrativo que usa imagem e texto. Estrutura:<br>• <b>Prancha</b>: a página da BD.<br>• <b>Vinheta</b>: cada quadrado/imagem da prancha.<br>• <b>Tira</b>: conjunto de vinhetas numa linha horizontal.<br>• <b>Balão</b>: onde está o texto falado ou pensado da personagem.",
-                  "example": "Tipos de balões:<br>💬 Oval = fala normal<br>☁️ Nuvem = pensamento<br>💥 Dentado = grito ou fala em voz alta<br>... = fala em voz baixa<br>□ Retângulo = narrador (conta o episódio)",
-                  "trick": "Prancha = página. Vinheta = quadrado. Tira = linha de vinhetas. Balão = fala. Lê-se da esquerda para a direita e de cima para baixo."
-                },
-                {
-                  "icon": "💥",
-                  "title": "Onomatopeias e Sinais Gráficos da BD",
-                  "body": "<b>Onomatopeias</b>: palavras que imitam sons.<br>• Sons de objetos: trim trim (telefone), tic-tac (relógio)<br>• Sons de movimento: vrumm (carro), vooooo<br>• Sensações: brrr (frio), Ai! Ai! (dor), Hi!Hi! (riso)<br>• Vozes de animais: miau (gato), au au (cão)<br><b>Sinais gráficos:</b> !!! = susto/exclamação · ??? = dúvida · letras GRANDES = gritar",
-                  "example": "BUMM!!! = som de explosão<br>NOOOOO!! = grito de recusa<br>miau... miau... = miado do gato<br>Hi!Hi!Hi! = riso<br>Trim...trim = toque do telefone",
-                  "trick": "Na BD, a FORMA do balão diz COMO se fala. As onomatopeias IMITAM os sons. As letras maiores = VOZ MAIS ALTA."
                 }
               ],
               "praticar": [
@@ -1405,17 +1380,6 @@
                   "why": "Todo o texto narrativo tem 3 partes: começa (Introdução), desenvolve a acção (Desenvolvimento) e termina (Conclusão)!"
                 },
                 {
-                  "question": "Num poema, cada linha chama-se...",
-                  "options": [
-                    "Verso",
-                    "Estrofe",
-                    "Rima",
-                    "Estância"
-                  ],
-                  "answer": "Verso",
-                  "why": "Verso = cada linha de um poema. Estrofe = grupo de versos. Rima = semelhança de sons no fim dos versos!"
-                },
-                {
                   "question": "Num texto narrativo, o ESPAÇO indica...",
                   "options": [
                     "Onde a história se passa",
@@ -1425,28 +1389,6 @@
                   ],
                   "answer": "Onde a história se passa",
                   "why": "Espaço = ONDE. Tempo = QUANDO. Personagens = QUEM. Enredo = O QUÊ. São os 4 elementos do texto narrativo!"
-                },
-                {
-                  "question": "Quando versos têm sons iguais no final, chamamos isso de...",
-                  "options": [
-                    "Rima",
-                    "Metro",
-                    "Verso",
-                    "Estrofe"
-                  ],
-                  "answer": "Rima",
-                  "why": "Rima = repetição de sons iguais no final dos versos. Ex: 'mar' rima com 'andar'!"
-                },
-                {
-                  "question": "Um grupo de versos num poema chama-se...",
-                  "options": [
-                    "Estrofe",
-                    "Verso",
-                    "Rima",
-                    "Parágrafo"
-                  ],
-                  "answer": "Estrofe",
-                  "why": "Estrofe = conjunto de versos. Como um parágrafo num texto narrativo, mas num poema!"
                 },
                 {
                   "question": "O NARRADOR num texto narrativo é...",
@@ -1656,94 +1598,6 @@
                   ],
                   "answer": "antigo",
                   "why": "MODERNO significa novo/actual. O contrário (antónimo) é ANTIGO!"
-                },
-                {
-                  "question": "Como se chama cada quadrado de imagem numa Banda Desenhada?",
-                  "options": [
-                    "Prancha",
-                    "Tira",
-                    "Vinheta",
-                    "Balão"
-                  ],
-                  "answer": "Vinheta",
-                  "why": "Vinheta = cada quadrado ou imagem individual que compõe a BD."
-                },
-                {
-                  "question": "O que é uma prancha na Banda Desenhada?",
-                  "options": [
-                    "Um tipo de balão",
-                    "A página da BD",
-                    "Uma linha de vinhetas",
-                    "Uma onomatopeia"
-                  ],
-                  "answer": "A página da BD",
-                  "why": "Prancha = a página completa da Banda Desenhada."
-                },
-                {
-                  "question": "Qual é o balão que indica que a personagem está a PENSAR?",
-                  "options": [
-                    "Balão oval",
-                    "Balão em forma de nuvem",
-                    "Balão dentado",
-                    "Retângulo narrador"
-                  ],
-                  "answer": "Balão em forma de nuvem",
-                  "why": "O balão em forma de nuvem (bolhas) indica que a personagem está a pensar."
-                },
-                {
-                  "question": "Na BD, o balão DENTADO ou em forma de raio indica:",
-                  "options": [
-                    "Pensamento",
-                    "Fala em voz baixa",
-                    "Grito ou fala em voz alta",
-                    "Narração do episódio"
-                  ],
-                  "answer": "Grito ou fala em voz alta",
-                  "why": "O balão dentado/serrilhado indica que a personagem grita ou fala com muita intensidade."
-                },
-                {
-                  "question": "\"Miau... miau...\" é um exemplo de:",
-                  "options": [
-                    "Sinal gráfico",
-                    "Onomatopeia",
-                    "Balão de pensamento",
-                    "Didascália"
-                  ],
-                  "answer": "Onomatopeia",
-                  "why": "Onomatopeia = palavra que imita um som. \"Miau\" imita a voz do gato."
-                },
-                {
-                  "question": "Na BD, as letras escritas em MAIÚSCULAS e GRANDES indicam:",
-                  "options": [
-                    "Pensamento da personagem",
-                    "Narração do episódio",
-                    "Que a personagem fala em voz alta ou grita",
-                    "Que a personagem sussurra"
-                  ],
-                  "answer": "Que a personagem fala em voz alta ou grita",
-                  "why": "Letras maiores e em maiúscula indicam que a personagem fala mais alto ou grita."
-                },
-                {
-                  "question": "A que ordem se lê uma Banda Desenhada?",
-                  "options": [
-                    "Da direita para a esquerda e de baixo para cima",
-                    "Da esquerda para a direita e de cima para baixo",
-                    "De baixo para cima, da esquerda para a direita",
-                    "Aleatoriamente, conforme a imagem"
-                  ],
-                  "answer": "Da esquerda para a direita e de cima para baixo",
-                  "why": "A BD lê-se como a escrita: da esquerda para a direita e de cima para baixo."
-                },
-                {
-                  "question": "Uma TIRA na Banda Desenhada é:",
-                  "options": [
-                    "A página inteira da BD",
-                    "Um único quadrado de imagem",
-                    "Um conjunto de vinhetas organizadas numa linha horizontal",
-                    "Um tipo de balão de fala"
-                  ],
-                  "answer": "Um conjunto de vinhetas organizadas numa linha horizontal",
-                  "why": "Tira = conjunto de vinhetas dispostas horizontalmente (numa linha)."
                 }
               ],
               "desafios": [
@@ -1757,17 +1611,6 @@
                   ],
                   "answer": "O velho pescador",
                   "why": "A personagem principal é aquela a quem a ação principal pertence. É o velho pescador que sai e volta!"
-                },
-                {
-                  "question": "Num poema sobre o mar, os versos 'As ondas batem na areia / e voltam para o mar com alegria' têm rima?",
-                  "options": [
-                    "Sim, areia rima com alegria",
-                    "Não, nenhum som se repete",
-                    "Só parcialmente",
-                    "Não é possível saber"
-                  ],
-                  "answer": "Sim, areia rima com alegria",
-                  "why": "'areia' e 'alegria' terminam com o mesmo som '-ia'. São palavras que rimam!"
                 },
                 {
                   "question": "Classifica o adjectivo em grau: \"Esta é a mais bela flor do jardim.\"",
@@ -1901,9 +1744,187 @@
                   "answer": "avarento",
                   "why": "Generoso = dá muito. Avarento = não dá nada, guarda tudo para si. São opostos — antónimos!"
                 }
+              ]
+            },
+            {
+              "id": "por4_t1_poesia",
+              "nome": "Texto Poético — Verso, Estrofe e Rima",
+              "icone": "🎭",
+              "aprender": [
+                {
+                  "icon": "🎭",
+                  "title": "Texto Poético",
+                  "body": "O texto poético expressa sentimentos e emoções através de versos e estrofes. Usa linguagem especial: rima, ritmo e figuras de estilo.",
+                  "list": [
+                    "Verso — cada linha do poema",
+                    "Estrofe — grupo de versos (quadra = 4 versos; dístico = 2 versos)",
+                    "Rima — sons iguais no final dos versos (ex: mar / amar)",
+                    "Ritmo — musicalidade do poema ao ser lido em voz alta",
+                    "Recursos expressivos: comparação, personificação, metáfora"
+                  ],
+                  "trick": "Poema = VERsos em ESTROfes com RIMA. Lê em voz alta e sentes o ritmo! Em CV: mornas e coladeiras são poesia cantada!"
+                }
               ],
-              "id": "por4_t1_familia_historias",
-              "icone": "📖"
+              "praticar": [
+                {
+                  "question": "Num poema, cada linha chama-se...",
+                  "options": [
+                    "Verso",
+                    "Estrofe",
+                    "Rima",
+                    "Estância"
+                  ],
+                  "answer": "Verso",
+                  "why": "Verso = cada linha de um poema. Estrofe = grupo de versos. Rima = semelhança de sons no fim dos versos!"
+                },
+                {
+                  "question": "Quando versos têm sons iguais no final, chamamos isso de...",
+                  "options": [
+                    "Rima",
+                    "Metro",
+                    "Verso",
+                    "Estrofe"
+                  ],
+                  "answer": "Rima",
+                  "why": "Rima = repetição de sons iguais no final dos versos. Ex: 'mar' rima com 'andar'!"
+                },
+                {
+                  "question": "Um grupo de versos num poema chama-se...",
+                  "options": [
+                    "Estrofe",
+                    "Verso",
+                    "Rima",
+                    "Parágrafo"
+                  ],
+                  "answer": "Estrofe",
+                  "why": "Estrofe = conjunto de versos. Como um parágrafo num texto narrativo, mas num poema!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Num poema sobre o mar, os versos 'As ondas batem na areia / e voltam para o mar com alegria' têm rima?",
+                  "options": [
+                    "Sim, areia rima com alegria",
+                    "Não, nenhum som se repete",
+                    "Só parcialmente",
+                    "Não é possível saber"
+                  ],
+                  "answer": "Sim, areia rima com alegria",
+                  "why": "'areia' e 'alegria' terminam com o mesmo som '-ia'. São palavras que rimam!"
+                }
+              ]
+            },
+            {
+              "id": "por4_t1_bd",
+              "nome": "Banda Desenhada — Estrutura e Onomatopeias",
+              "icone": "💬",
+              "aprender": [
+                {
+                  "icon": "💬",
+                  "title": "Banda Desenhada — Estrutura",
+                  "body": "A <b>Banda Desenhada (BD)</b> é um texto narrativo que usa imagem e texto. Estrutura:<br>• <b>Prancha</b>: a página da BD.<br>• <b>Vinheta</b>: cada quadrado/imagem da prancha.<br>• <b>Tira</b>: conjunto de vinhetas numa linha horizontal.<br>• <b>Balão</b>: onde está o texto falado ou pensado da personagem.",
+                  "example": "Tipos de balões:<br>💬 Oval = fala normal<br>☁️ Nuvem = pensamento<br>💥 Dentado = grito ou fala em voz alta<br>... = fala em voz baixa<br>□ Retângulo = narrador (conta o episódio)",
+                  "trick": "Prancha = página. Vinheta = quadrado. Tira = linha de vinhetas. Balão = fala. Lê-se da esquerda para a direita e de cima para baixo."
+                },
+                {
+                  "icon": "💥",
+                  "title": "Onomatopeias e Sinais Gráficos da BD",
+                  "body": "<b>Onomatopeias</b>: palavras que imitam sons.<br>• Sons de objetos: trim trim (telefone), tic-tac (relógio)<br>• Sons de movimento: vrumm (carro), vooooo<br>• Sensações: brrr (frio), Ai! Ai! (dor), Hi!Hi! (riso)<br>• Vozes de animais: miau (gato), au au (cão)<br><b>Sinais gráficos:</b> !!! = susto/exclamação · ??? = dúvida · letras GRANDES = gritar",
+                  "example": "BUMM!!! = som de explosão<br>NOOOOO!! = grito de recusa<br>miau... miau... = miado do gato<br>Hi!Hi!Hi! = riso<br>Trim...trim = toque do telefone",
+                  "trick": "Na BD, a FORMA do balão diz COMO se fala. As onomatopeias IMITAM os sons. As letras maiores = VOZ MAIS ALTA."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Como se chama cada quadrado de imagem numa Banda Desenhada?",
+                  "options": [
+                    "Prancha",
+                    "Tira",
+                    "Vinheta",
+                    "Balão"
+                  ],
+                  "answer": "Vinheta",
+                  "why": "Vinheta = cada quadrado ou imagem individual que compõe a BD."
+                },
+                {
+                  "question": "O que é uma prancha na Banda Desenhada?",
+                  "options": [
+                    "Um tipo de balão",
+                    "A página da BD",
+                    "Uma linha de vinhetas",
+                    "Uma onomatopeia"
+                  ],
+                  "answer": "A página da BD",
+                  "why": "Prancha = a página completa da Banda Desenhada."
+                },
+                {
+                  "question": "Qual é o balão que indica que a personagem está a PENSAR?",
+                  "options": [
+                    "Balão oval",
+                    "Balão em forma de nuvem",
+                    "Balão dentado",
+                    "Retângulo narrador"
+                  ],
+                  "answer": "Balão em forma de nuvem",
+                  "why": "O balão em forma de nuvem (bolhas) indica que a personagem está a pensar."
+                },
+                {
+                  "question": "Na BD, o balão DENTADO ou em forma de raio indica:",
+                  "options": [
+                    "Pensamento",
+                    "Fala em voz baixa",
+                    "Grito ou fala em voz alta",
+                    "Narração do episódio"
+                  ],
+                  "answer": "Grito ou fala em voz alta",
+                  "why": "O balão dentado/serrilhado indica que a personagem grita ou fala com muita intensidade."
+                },
+                {
+                  "question": "\"Miau... miau...\" é um exemplo de:",
+                  "options": [
+                    "Sinal gráfico",
+                    "Onomatopeia",
+                    "Balão de pensamento",
+                    "Didascália"
+                  ],
+                  "answer": "Onomatopeia",
+                  "why": "Onomatopeia = palavra que imita um som. \"Miau\" imita a voz do gato."
+                },
+                {
+                  "question": "Na BD, as letras escritas em MAIÚSCULAS e GRANDES indicam:",
+                  "options": [
+                    "Pensamento da personagem",
+                    "Narração do episódio",
+                    "Que a personagem fala em voz alta ou grita",
+                    "Que a personagem sussurra"
+                  ],
+                  "answer": "Que a personagem fala em voz alta ou grita",
+                  "why": "Letras maiores e em maiúscula indicam que a personagem fala mais alto ou grita."
+                },
+                {
+                  "question": "A que ordem se lê uma Banda Desenhada?",
+                  "options": [
+                    "Da direita para a esquerda e de baixo para cima",
+                    "Da esquerda para a direita e de cima para baixo",
+                    "De baixo para cima, da esquerda para a direita",
+                    "Aleatoriamente, conforme a imagem"
+                  ],
+                  "answer": "Da esquerda para a direita e de cima para baixo",
+                  "why": "A BD lê-se como a escrita: da esquerda para a direita e de cima para baixo."
+                },
+                {
+                  "question": "Uma TIRA na Banda Desenhada é:",
+                  "options": [
+                    "A página inteira da BD",
+                    "Um único quadrado de imagem",
+                    "Um conjunto de vinhetas organizadas numa linha horizontal",
+                    "Um tipo de balão de fala"
+                  ],
+                  "answer": "Um conjunto de vinhetas organizadas numa linha horizontal",
+                  "why": "Tira = conjunto de vinhetas dispostas horizontalmente (numa linha)."
+                }
+              ],
+              "desafios": []
             }
           ]
         },
