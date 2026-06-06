@@ -1644,9 +1644,9 @@
                 {
                   "icon": "🌿",
                   "title": "Conservação da Natureza",
-                  "body": "Em Cabo Verde existem espécies em risco de extinção: tartaruga comum (Caretta caretta), garça-vermelha, dragoeiro. Causas de extinção: destruição de habitats, poluição, espécies invasoras, caça e pesca excessiva. Medidas de proteção: áreas protegidas, não destruir florestas, denunciar maus-tratos, limpeza de praias e mares.",
-                  "example": "🐢 Tartaruga = em perigo<br>🌵 Dragoeiro = planta endémica em risco<br>🦅 Garça-vermelha = risco crítico<br>🌊 Conservar o mar",
-                  "trick": "CV abriga uma das maiores populações de tartarugas marinhas do mundo!"
+                  "body": "Em Cabo Verde existem espécies em risco de extinção:<br><b>Animais:</b> tartaruga comum (Caretta caretta), garça-vermelha (risco crítico), lagarto endémico (extinto desde 1912).<br><b>Plantas endémicas:</b> Dragoeiro (Dracaena draco) — já sem exemplares naturais em Santiago; Língua-de-vaca (Echium hypertropicum) — planta em extinção.<br>Causas: destruição de habitats, poluição, espécies invasoras, exploração excessiva.<br>Medidas: áreas protegidas, reflorestação, denunciar maus-tratos.",
+                  "example": "🌵 Dragoeiro = antigamente em S. Antão, S. Nicolau, Santiago e Fogo; hoje quase extinto.<br>🌿 Língua-de-vaca = endémica de CV, em extinção.<br>🐢 Caretta caretta = tartaruga em perigo.<br>🦅 Garça-vermelha = risco crítico.",
+                  "trick": "Lista Vermelha = lista de espécies em risco. CV tem plantas E animais endémicos ameaçados. Proteger = criar áreas protegidas + reflorestação com espécies nativas."
                 }
               ],
               "praticar": [
