@@ -1763,6 +1763,27 @@
                     "Recursos expressivos: comparação, personificação, metáfora"
                   ],
                   "trick": "Poema = VERsos em ESTROfes com RIMA. Lê em voz alta e sentes o ritmo! Em CV: mornas e coladeiras são poesia cantada!"
+                },
+                {
+                  "icon": "🎵",
+                  "title": "Ritmo e Musicalidade no Poema",
+                  "body": "O <b>ritmo</b> é a música do poema — criado pela repetição de sons, pausas e acentos.<br>Elementos do ritmo:<br>• <b>Métrica</b>: número de sílabas em cada verso<br>• <b>Cesura</b>: pausa dentro do verso<br>• <b>Rima</b>: repetição de sons no final dos versos<br>Tipos de rima:<br>• <b>Consoante</b>: vogal + consoante iguais (mar/par)<br>• <b>Toante (assonante)</b>: só as vogais iguais (mar/paz)",
+                  "example": "Exemplo de rima consoante:<br>\"O mar bate na rocha / e a onda se desfaz / o peixe sobe à toca / num instante velaz\"<br>Rocha/toca → rima consoante (cha/ca)<br>Desfaz/velaz → rima consoante (az/az)",
+                  "trick": "Ritmo = música do poema. Conta as sílabas de cada verso — se tiverem todas o mesmo número, o poema tem métrica regular. Rima consoante = sons iguais a partir da vogal tónica."
+                },
+                {
+                  "icon": "🌟",
+                  "title": "Recursos Expressivos — Metáfora, Comparação e Personificação",
+                  "body": "Os <b>recursos expressivos</b> tornam a linguagem mais rica e expressiva:<br>• <b>Comparação (símile)</b>: compara com \"como\" ou \"tal como\" → \"Os olhos como estrelas\"<br>• <b>Metáfora</b>: comparação sem \"como\" → \"Os seus olhos eram estrelas\"<br>• <b>Personificação</b>: dá características humanas a coisas/animais → \"O vento sussurrou segredos\"<br>• <b>Aliteração</b>: repetição de sons consonânticos → \"O rato roeu a rolha\"",
+                  "example": "Comparação: \"Forte como um touro\"<br>Metáfora: \"Ele é um touro\" (sem \"como\")<br>Personificação: \"A lua sorriu para nós\"<br>Aliteração: \"Pedro pedreiro\" (P repetido)<br>No poema de Cabo Verde: \"A ilha é uma flor no oceano\" → metáfora",
+                  "trick": "Com \"como\" = comparação. Sem \"como\" = metáfora. Coisa/animal com ação humana = personificação. Letras repetidas = aliteração. MCPA — Metáfora, Comparação, Personificação, Aliteração."
+                },
+                {
+                  "icon": "📝",
+                  "title": "Como Analisar um Poema",
+                  "body": "Para analisar um poema, segue estes passos:<br>1. <b>Tema</b>: sobre o que fala o poema?<br>2. <b>Forma</b>: quantas estrofes? Quantos versos por estrofe?<br>3. <b>Rima</b>: existe rima? Qual o esquema? (ABAB, AABB…)<br>4. <b>Recursos expressivos</b>: há metáforas, comparações, personificações?<br>5. <b>Sentimentos</b>: que sentimentos o poema transmite?",
+                  "example": "Poema de 2 estrofes com 4 versos cada = 2 quadras<br>Esquema de rima ABAB: 1º verso rima com 3º; 2º rima com 4º<br>Esquema AABB: 1º rima com 2º; 3º rima com 4º<br>Tema do poema: identificar a ideia central (saudade, natureza, pátria…)",
+                  "trick": "Estrofe com 2 versos = dístico. 3 versos = terceto. 4 versos = quadra. Esquema ABAB = rima cruzada. AABB = rima emparelhada. Conta sempre versos e estrofes antes de analisar!"
                 }
               ],
               "praticar": [
@@ -1798,6 +1819,61 @@
                   ],
                   "answer": "Estrofe",
                   "why": "Estrofe = conjunto de versos. Como um parágrafo num texto narrativo, mas num poema!"
+                },
+                {
+                  "question": "Qual é o nome da repetição de sons no final dos versos?",
+                  "options": [
+                    "Estrofe",
+                    "Verso",
+                    "Rima",
+                    "Ritmo"
+                  ],
+                  "answer": "Rima",
+                  "why": "A rima é a repetição de sons iguais (a partir da vogal tónica) no final dos versos."
+                },
+                {
+                  "question": "\"Os seus olhos são estrelas\" é um exemplo de:",
+                  "options": [
+                    "Comparação",
+                    "Metáfora",
+                    "Personificação",
+                    "Aliteração"
+                  ],
+                  "answer": "Metáfora",
+                  "why": "Metáfora = comparação sem \"como\". \"Os olhos como estrelas\" seria uma comparação; sem o \"como\" é metáfora."
+                },
+                {
+                  "question": "\"O vento chorou toda a noite.\" Que recurso expressivo é este?",
+                  "options": [
+                    "Comparação",
+                    "Rima",
+                    "Personificação",
+                    "Aliteração"
+                  ],
+                  "answer": "Personificação",
+                  "why": "Chorar é uma acção humana. Atribuída ao vento (que não é humano) = personificação."
+                },
+                {
+                  "question": "Uma estrofe com 4 versos chama-se:",
+                  "options": [
+                    "Terceto",
+                    "Dístico",
+                    "Quadra",
+                    "Sextilha"
+                  ],
+                  "answer": "Quadra",
+                  "why": "Quadra = estrofe de 4 versos. Dístico = 2. Terceto = 3. Sextilha = 6."
+                },
+                {
+                  "question": "Num poema, o esquema de rima ABAB significa:",
+                  "options": [
+                    "Todos os versos rimam entre si",
+                    "1º rima com 3º e 2º rima com 4º",
+                    "1º rima com 2º e 3º rima com 4º",
+                    "Não há rima"
+                  ],
+                  "answer": "1º rima com 3º e 2º rima com 4º",
+                  "why": "ABAB = rima cruzada: verso 1 (A) rima com verso 3 (A); verso 2 (B) rima com verso 4 (B)."
                 }
               ],
               "desafios": [
@@ -1811,6 +1887,39 @@
                   ],
                   "answer": "Sim, areia rima com alegria",
                   "why": "'areia' e 'alegria' terminam com o mesmo som '-ia'. São palavras que rimam!"
+                },
+                {
+                  "question": "Lê: \"A chuva cai mansinha / tal como um beijo de mãe\". Que recurso expressivo aparece?",
+                  "options": [
+                    "Metáfora",
+                    "Personificação",
+                    "Comparação",
+                    "Aliteração"
+                  ],
+                  "answer": "Comparação",
+                  "why": "\"tal como\" é a palavra que indica comparação. Se fosse \"A chuva é um beijo de mãe\" (sem \"como\"), seria metáfora."
+                },
+                {
+                  "question": "Num poema de 3 estrofes com 4 versos cada, quantos versos tem o poema?",
+                  "options": [
+                    "7",
+                    "9",
+                    "12",
+                    "16"
+                  ],
+                  "answer": "12",
+                  "why": "3 estrofes × 4 versos = 12 versos no total."
+                },
+                {
+                  "question": "\"Pedro pedreiro pensou no pão.\" Que recurso é a repetição do som P?",
+                  "options": [
+                    "Rima",
+                    "Metáfora",
+                    "Aliteração",
+                    "Personificação"
+                  ],
+                  "answer": "Aliteração",
+                  "why": "Aliteração = repetição da mesma consoante no início de palavras seguidas. Aqui o P repete: Pedro, pedreiro, pensou, pão."
                 }
               ]
             },
@@ -1933,7 +2042,9 @@
           "nome": "2º Trimestre",
           "temas": [
             {
-              "nome": "Diferenças e Planeta — Teatro, Notícia, E-mail e Carta",
+              "id": "por4_t2_teatro",
+              "nome": "Texto Dramático — Teatro e Debate",
+              "icone": "🎭",
               "aprender": [
                 {
                   "icon": "🎭",
@@ -1942,6 +2053,165 @@
                   "example": "PEDRO — Amanhã vou ao mercado.\nANA — Eu também! (sorri)\n↑ fala        ↑ rubrica",
                   "trick": "Fala = o que a personagem diz. Rubrica = indicação de como agir (entre parênteses). Fácil!"
                 },
+                {
+                  "icon": "🎭",
+                  "title": "Debate",
+                  "body": "O DEBATE é uma atividade oral em que vários participantes expressam e discutem opiniões sobre um tema. Cada membro tem um papel: ANIMADOR — coloca questões e estimula a discussão; ELEMENTO DE ELOS — relaciona o texto com experiências pessoais; ILUSTRADOR — apresenta desenhos sobre o tema; PESQUISADOR — dá informações e lê passagens importantes do texto.",
+                  "example": "🎤 Animador: 'O que pensam sobre...?'<br>🤝 Elos: 'Já viveram algo parecido?'<br>🎨 Ilustrador: apresenta desenho<br>📚 Pesquisador: lê passagens do texto",
+                  "trick": "No debate: fala na tua vez, respeita as opiniões dos outros e toma notas das ideias principais!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O ANIMADOR num debate tem que função?",
+                  "options": [
+                    "Estimular a discussão com questões abertas",
+                    "Fazer desenhos sobre o tema",
+                    "Ler passagens do texto para o grupo",
+                    "Relacionar o texto com experiências pessoais"
+                  ],
+                  "answer": "Estimular a discussão com questões abertas",
+                  "why": "O animador coloca questões abertas e estimula todos os membros a participar no debate!"
+                },
+                {
+                  "question": "Num debate, qual é a regra mais importante?",
+                  "options": [
+                    "Falar na nossa vez e respeitar as opiniões dos outros",
+                    "Falar sempre sem parar",
+                    "Discutir com os colegas",
+                    "Não deixar outros falar"
+                  ],
+                  "answer": "Falar na nossa vez e respeitar as opiniões dos outros",
+                  "why": "No debate respeitamos as regras de cortesia: escutamos com atenção e falamos na nossa vez!"
+                }
+              ],
+              "desafios": []
+            },
+            {
+              "id": "por4_t2_textos_funcionais",
+              "nome": "Textos Funcionais — Notícia, E-mail e Carta",
+              "icone": "📧",
+              "aprender": [
+                {
+                  "icon": "📧",
+                  "title": "Correio Eletrónico — E-mail",
+                  "body": "O E-MAIL é uma mensagem enviada pela Internet. Estrutura: DE — endereço do remetente; PARA — endereço do destinatário; ASSUNTO — o tema da mensagem (breve); SAUDAÇÃO INICIAL — 'Olá, [nome]!'; CORPO — a mensagem principal; DESPEDIDA — 'Um abraço,' / 'Com amizade,'; ASSINATURA — o teu nome. Usar frases curtas e claras.",
+                  "example": "📤 De: meunome@email.com<br>📬 Para: amigo@email.com<br>📋 Assunto: Regresso às aulas<br>👋 Olá, João!<br>✉️ [mensagem]<br>💙 Um abraço, Maria",
+                  "trick": "E-mail = De + Para + Assunto + Saudação + Corpo + Despedida + Assinatura. O Assunto em poucas palavras!"
+                },
+                {
+                  "icon": "📰",
+                  "title": "A Notícia — Estrutura",
+                  "body": "A NOTÍCIA é um texto informativo que relata acontecimentos reais. Tem 3 partes: 1) TÍTULO — poucas palavras, letra maior; 2) PRIMEIRO PARÁGRAFO — responde a Quem? O quê? Quando? Onde?; 3) CORPO DA NOTÍCIA — responde a Como? e Porquê? com mais detalhes. A notícia usa a 3ª pessoa (ele, ela, eles) e não inclui a opinião do autor.",
+                  "example": "📌 Título: 'Aluno vence concurso nacional'<br>1º§: Quem? O quê? Quando? Onde?<br>Corpo: Como aconteceu? Porquê?<br>🚫 Sem opinião pessoal — só factos!",
+                  "trick": "Notícia = Título + 1º parágrafo (Quem/O quê/Quando/Onde) + Corpo (Como/Porquê)!"
+                },
+                {
+                  "icon": "✉️",
+                  "title": "A Carta — Texto Utilitário",
+                  "body": "A CARTA é um texto utilitário (serve uma função prática). Estrutura: 1) LOCAL E DATA — onde e quando foi escrita; 2) VOCATIVO — saudação ao destinatário: 'Querida Ana,' / 'Caro amigo,'; 3) CORPO — a mensagem principal; 4) DESPEDIDA — 'Com amizade,' / 'Abraços,'; 5) ASSINATURA — o nome de quem escreve. Outros textos utilitários: e-mail, bilhete, lista de compras.",
+                  "example": "📍 Mindelo, 15 de março<br>💌 Querida Ana,<br>📝 [corpo]<br>🤗 Com amizade,<br>✍️ Maria",
+                  "trick": "Carta: Local+Data → Vocativo → Corpo → Despedida → Assinatura. São sempre 5 partes!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é a parte do e-mail que indica o tema da mensagem?",
+                  "options": [
+                    "Assunto",
+                    "De",
+                    "Para",
+                    "Corpo"
+                  ],
+                  "answer": "Assunto",
+                  "why": "O campo 'Assunto' resume o tema da mensagem em poucas palavras para o destinatário saber do que trata!"
+                },
+                {
+                  "question": "Num e-mail, onde se escreve o endereço da pessoa que recebe a mensagem?",
+                  "options": [
+                    "No campo 'Para'",
+                    "No campo 'De'",
+                    "No campo 'Assunto'",
+                    "Na saudação inicial"
+                  ],
+                  "answer": "No campo 'Para'",
+                  "why": "'Para' = destinatário (quem recebe). 'De' = remetente (quem envia). São sempre os dois primeiros campos!"
+                },
+                {
+                  "question": "O primeiro parágrafo de uma notícia responde a que questões?",
+                  "options": [
+                    "Quem? O quê? Quando? Onde?",
+                    "Como? Porquê? Quanto?",
+                    "Qual? Se? Porque?",
+                    "Quem? Como? Porquê?"
+                  ],
+                  "answer": "Quem? O quê? Quando? Onde?",
+                  "why": "O 1º parágrafo apresenta o essencial da notícia: as personagens (Quem), o acontecimento (O quê), o tempo (Quando) e o local (Onde)!"
+                },
+                {
+                  "question": "Numa notícia, o CORPO responde a que questões?",
+                  "options": [
+                    "Como? e Porquê?",
+                    "Quem? e O quê?",
+                    "Quando? e Onde?",
+                    "Qual? e Quanto?"
+                  ],
+                  "answer": "Como? e Porquê?",
+                  "why": "O corpo desenvolve os detalhes: Como aconteceu e Porquê. As questões Quem/O quê/Quando/Onde já ficaram no 1º parágrafo!"
+                },
+                {
+                  "question": "Qual das seguintes NÃO é uma parte da carta?",
+                  "options": [
+                    "Tabela de dados",
+                    "Vocativo",
+                    "Despedida",
+                    "Local e data"
+                  ],
+                  "answer": "Tabela de dados",
+                  "why": "A carta tem: Local+Data, Vocativo, Corpo, Despedida e Assinatura. Uma tabela de dados é de texto informativo, não de carta!"
+                },
+                {
+                  "question": "O VOCATIVO numa carta é...",
+                  "options": [
+                    "A saudação ao destinatário: 'Querida Ana,'",
+                    "A data em que foi escrita",
+                    "A assinatura do remetente",
+                    "O corpo com a mensagem principal"
+                  ],
+                  "answer": "A saudação ao destinatário: 'Querida Ana,'",
+                  "why": "O vocativo chama o destinatário pelo nome: 'Querida Ana,' ou 'Caro amigo,' — aparece logo depois do local e data!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "João escreveu uma mensagem com: 'Para: tiago@escola.cv', 'Assunto: Trabalho de grupo', 'Olá Tiago!', corpo de texto, 'Abraços, João'. Que tipo de texto é?",
+                  "options": [
+                    "E-mail / Correio eletrónico",
+                    "Carta",
+                    "Notícia",
+                    "Debate"
+                  ],
+                  "answer": "E-mail / Correio eletrónico",
+                  "why": "Tem os campos 'Para' e 'Assunto' — elementos específicos do e-mail. Uma carta teria local, data e vocativo em vez disso!"
+                },
+                {
+                  "question": "Lê: 'Jovem Cabo-Verdiana Ganha Prémio Internacional de Matemática'. Esta é que parte da notícia?",
+                  "options": [
+                    "Título",
+                    "Primeiro parágrafo",
+                    "Corpo da notícia",
+                    "Introdução narrativa"
+                  ],
+                  "answer": "Título",
+                  "why": "O título da notícia é escrito em poucas palavras e em letra maior. Resume o assunto principal da notícia!"
+                }
+              ]
+            },
+            {
+              "id": "por4_t2_gramatica",
+              "nome": "Gramática — Morfologia, Sintaxe e Verbos",
+              "icone": "🔍",
+              "aprender": [
                 {
                   "icon": "🔍",
                   "title": "Análise Morfológica",
@@ -1983,34 +2253,6 @@
                   "body": "O superlativo relativo compara um ser com um grupo, mostrando que tem mais ou menos de uma qualidade.",
                   "example": "Superioridade: É o mais alto da turma.\nInferioridade: É o menos alto da turma.",
                   "trick": "O mais... de = superlativo relativo de superioridade. O menos... de = de inferioridade!"
-                },
-                {
-                  "icon": "🎭",
-                  "title": "Debate",
-                  "body": "O DEBATE é uma atividade oral em que vários participantes expressam e discutem opiniões sobre um tema. Cada membro tem um papel: ANIMADOR — coloca questões e estimula a discussão; ELEMENTO DE ELOS — relaciona o texto com experiências pessoais; ILUSTRADOR — apresenta desenhos sobre o tema; PESQUISADOR — dá informações e lê passagens importantes do texto.",
-                  "example": "🎤 Animador: 'O que pensam sobre...?'<br>🤝 Elos: 'Já viveram algo parecido?'<br>🎨 Ilustrador: apresenta desenho<br>📚 Pesquisador: lê passagens do texto",
-                  "trick": "No debate: fala na tua vez, respeita as opiniões dos outros e toma notas das ideias principais!"
-                },
-                {
-                  "icon": "📧",
-                  "title": "Correio Eletrónico — E-mail",
-                  "body": "O E-MAIL é uma mensagem enviada pela Internet. Estrutura: DE — endereço do remetente; PARA — endereço do destinatário; ASSUNTO — o tema da mensagem (breve); SAUDAÇÃO INICIAL — 'Olá, [nome]!'; CORPO — a mensagem principal; DESPEDIDA — 'Um abraço,' / 'Com amizade,'; ASSINATURA — o teu nome. Usar frases curtas e claras.",
-                  "example": "📤 De: meunome@email.com<br>📬 Para: amigo@email.com<br>📋 Assunto: Regresso às aulas<br>👋 Olá, João!<br>✉️ [mensagem]<br>💙 Um abraço, Maria",
-                  "trick": "E-mail = De + Para + Assunto + Saudação + Corpo + Despedida + Assinatura. O Assunto em poucas palavras!"
-                },
-                {
-                  "icon": "📰",
-                  "title": "A Notícia — Estrutura",
-                  "body": "A NOTÍCIA é um texto informativo que relata acontecimentos reais. Tem 3 partes: 1) TÍTULO — poucas palavras, letra maior; 2) PRIMEIRO PARÁGRAFO — responde a Quem? O quê? Quando? Onde?; 3) CORPO DA NOTÍCIA — responde a Como? e Porquê? com mais detalhes. A notícia usa a 3ª pessoa (ele, ela, eles) e não inclui a opinião do autor.",
-                  "example": "📌 Título: 'Aluno vence concurso nacional'<br>1º§: Quem? O quê? Quando? Onde?<br>Corpo: Como aconteceu? Porquê?<br>🚫 Sem opinião pessoal — só factos!",
-                  "trick": "Notícia = Título + 1º parágrafo (Quem/O quê/Quando/Onde) + Corpo (Como/Porquê)!"
-                },
-                {
-                  "icon": "✉️",
-                  "title": "A Carta — Texto Utilitário",
-                  "body": "A CARTA é um texto utilitário (serve uma função prática). Estrutura: 1) LOCAL E DATA — onde e quando foi escrita; 2) VOCATIVO — saudação ao destinatário: 'Querida Ana,' / 'Caro amigo,'; 3) CORPO — a mensagem principal; 4) DESPEDIDA — 'Com amizade,' / 'Abraços,'; 5) ASSINATURA — o nome de quem escreve. Outros textos utilitários: e-mail, bilhete, lista de compras.",
-                  "example": "📍 Mindelo, 15 de março<br>💌 Querida Ana,<br>📝 [corpo]<br>🤗 Com amizade,<br>✍️ Maria",
-                  "trick": "Carta: Local+Data → Vocativo → Corpo → Despedida → Assinatura. São sempre 5 partes!"
                 },
                 {
                   "icon": "🔤",
@@ -2157,94 +2399,6 @@
                   "why": "BONITO e BELO significam a mesma coisa — são sinónimos! Lindo e formoso também são sinónimos."
                 },
                 {
-                  "question": "O ANIMADOR num debate tem que função?",
-                  "options": [
-                    "Estimular a discussão com questões abertas",
-                    "Fazer desenhos sobre o tema",
-                    "Ler passagens do texto para o grupo",
-                    "Relacionar o texto com experiências pessoais"
-                  ],
-                  "answer": "Estimular a discussão com questões abertas",
-                  "why": "O animador coloca questões abertas e estimula todos os membros a participar no debate!"
-                },
-                {
-                  "question": "Num debate, qual é a regra mais importante?",
-                  "options": [
-                    "Falar na nossa vez e respeitar as opiniões dos outros",
-                    "Falar sempre sem parar",
-                    "Discutir com os colegas",
-                    "Não deixar outros falar"
-                  ],
-                  "answer": "Falar na nossa vez e respeitar as opiniões dos outros",
-                  "why": "No debate respeitamos as regras de cortesia: escutamos com atenção e falamos na nossa vez!"
-                },
-                {
-                  "question": "Qual é a parte do e-mail que indica o tema da mensagem?",
-                  "options": [
-                    "Assunto",
-                    "De",
-                    "Para",
-                    "Corpo"
-                  ],
-                  "answer": "Assunto",
-                  "why": "O campo 'Assunto' resume o tema da mensagem em poucas palavras para o destinatário saber do que trata!"
-                },
-                {
-                  "question": "Num e-mail, onde se escreve o endereço da pessoa que recebe a mensagem?",
-                  "options": [
-                    "No campo 'Para'",
-                    "No campo 'De'",
-                    "No campo 'Assunto'",
-                    "Na saudação inicial"
-                  ],
-                  "answer": "No campo 'Para'",
-                  "why": "'Para' = destinatário (quem recebe). 'De' = remetente (quem envia). São sempre os dois primeiros campos!"
-                },
-                {
-                  "question": "O primeiro parágrafo de uma notícia responde a que questões?",
-                  "options": [
-                    "Quem? O quê? Quando? Onde?",
-                    "Como? Porquê? Quanto?",
-                    "Qual? Se? Porque?",
-                    "Quem? Como? Porquê?"
-                  ],
-                  "answer": "Quem? O quê? Quando? Onde?",
-                  "why": "O 1º parágrafo apresenta o essencial da notícia: as personagens (Quem), o acontecimento (O quê), o tempo (Quando) e o local (Onde)!"
-                },
-                {
-                  "question": "Numa notícia, o CORPO responde a que questões?",
-                  "options": [
-                    "Como? e Porquê?",
-                    "Quem? e O quê?",
-                    "Quando? e Onde?",
-                    "Qual? e Quanto?"
-                  ],
-                  "answer": "Como? e Porquê?",
-                  "why": "O corpo desenvolve os detalhes: Como aconteceu e Porquê. As questões Quem/O quê/Quando/Onde já ficaram no 1º parágrafo!"
-                },
-                {
-                  "question": "Qual das seguintes NÃO é uma parte da carta?",
-                  "options": [
-                    "Tabela de dados",
-                    "Vocativo",
-                    "Despedida",
-                    "Local e data"
-                  ],
-                  "answer": "Tabela de dados",
-                  "why": "A carta tem: Local+Data, Vocativo, Corpo, Despedida e Assinatura. Uma tabela de dados é de texto informativo, não de carta!"
-                },
-                {
-                  "question": "O VOCATIVO numa carta é...",
-                  "options": [
-                    "A saudação ao destinatário: 'Querida Ana,'",
-                    "A data em que foi escrita",
-                    "A assinatura do remetente",
-                    "O corpo com a mensagem principal"
-                  ],
-                  "answer": "A saudação ao destinatário: 'Querida Ana,'",
-                  "why": "O vocativo chama o destinatário pelo nome: 'Querida Ana,' ou 'Caro amigo,' — aparece logo depois do local e data!"
-                },
-                {
                   "question": "Qual é a forma correta do verbo SER para 'nós'?",
                   "options": [
                     "somos",
@@ -2357,17 +2511,6 @@
                   "why": "LABORAR é um sinónimo culto de trabalhar. Repousar, brincar e descansar são antónimos!"
                 },
                 {
-                  "question": "João escreveu uma mensagem com: 'Para: tiago@escola.cv', 'Assunto: Trabalho de grupo', 'Olá Tiago!', corpo de texto, 'Abraços, João'. Que tipo de texto é?",
-                  "options": [
-                    "E-mail / Correio eletrónico",
-                    "Carta",
-                    "Notícia",
-                    "Debate"
-                  ],
-                  "answer": "E-mail / Correio eletrónico",
-                  "why": "Tem os campos 'Para' e 'Assunto' — elementos específicos do e-mail. Uma carta teria local, data e vocativo em vez disso!"
-                },
-                {
                   "question": "Qual frase usa o pretérito imperfeito corretamente para indicar um hábito passado?",
                   "options": [
                     "Ela comia sempre fruta ao pequeno-almoço.",
@@ -2377,21 +2520,8 @@
                   ],
                   "answer": "Ela comia sempre fruta ao pequeno-almoço.",
                   "why": "'Comia' (imperfeito) = hábito no passado. 'Comeu' (perfeito) = uma vez, no passado. 'Sempre' é um indicador de hábito!"
-                },
-                {
-                  "question": "Lê: 'Jovem Cabo-Verdiana Ganha Prémio Internacional de Matemática'. Esta é que parte da notícia?",
-                  "options": [
-                    "Título",
-                    "Primeiro parágrafo",
-                    "Corpo da notícia",
-                    "Introdução narrativa"
-                  ],
-                  "answer": "Título",
-                  "why": "O título da notícia é escrito em poucas palavras e em letra maior. Resume o assunto principal da notícia!"
                 }
-              ],
-              "id": "por4_t2_diferencas_planeta",
-              "icone": "🎭"
+              ]
             }
           ]
         },
@@ -2400,7 +2530,9 @@
           "nome": "3º Trimestre",
           "temas": [
             {
-              "nome": "À Descoberta do Mundo — Vocabulário e Gramática",
+              "id": "por4_t3_gramatica",
+              "nome": "Gramática — Família de Palavras e Futuro do Indicativo",
+              "icone": "🔤",
               "aprender": [
                 {
                   "icon": "🔤",
@@ -2415,20 +2547,6 @@
                   "body": "O FUTURO DO INDICATIVO indica ações que ainda vão acontecer. Verbos regulares: infinitivo + -ei/-ás/-á/-emos/-eis/-ão. Exemplos: falarei/falarás/falará/falaremos/falareis/falarão; comerei/comerás/comerá/comeremos/comereis/comerão; partirei/partirás/partirá/partiremos/partireis/partirão. Ser: serei/serás/será... Ter: terei/terás/terá...",
                   "example": "⏭️ 'Amanhã EU FALAREI com o professor.'<br>⏭️ 'Tu SERÁS um bom aluno.'<br>⏭️ 'Nós TEREMOS uma festa amanhã.'<br>🔑 Infinitivo + ei/ás/á/emos/eis/ão",
                   "trick": "Futuro = infinitivo + ei/ás/á/emos/eis/ão. Testa com 'amanhã' — se fizer sentido, é futuro!"
-                },
-                {
-                  "icon": "🔷",
-                  "title": "Grupo Nominal e Grupo Verbal — Prática",
-                  "body": "O <b>Grupo Nominal (GN)</b> é formado pelo nome e os seus determinantes e adjetivos. O <b>Grupo Verbal (GV)</b> é formado pelo verbo e os seus complementos.<br>Para identificar o GN: pergunta \"Quem/O quê pratica a ação?\"<br>Para identificar o GV: pergunta \"O que fez/faz o sujeito?\"",
-                  "example": "\"A menina esperta lê um livro bonito.\"<br>GN = <u>A menina esperta</u> (quem lê?)<br>GV = <u>lê um livro bonito</u> (o que faz?)<br>\"Os pássaros cantam alegremente.\"<br>GN = <u>Os pássaros</u> | GV = <u>cantam alegremente</u>",
-                  "trick": "Na frase, o GN vem primeiro (sujeito) e o GV depois (predicado). Todo o GN concorda em género e número."
-                },
-                {
-                  "icon": "📚",
-                  "title": "Tipos de Texto — Revisão Ano 4",
-                  "body": "• <b>Narrativo</b>: personagens + espaço + tempo + problema + solução.<br>• <b>Poético</b>: versos, estrofes, rima, ritmo.<br>• <b>Dramático/Teatro</b>: réplicas + didascálias, para representar.<br>• <b>Notícia</b>: facto real — título + Quem/Onde/Quando + Como/Porquê.<br>• <b>Carta</b>: 7 partes — local/data, saudação, corpo, despedida, assinatura.<br>• <b>E-mail</b>: Para, Assunto, Corpo — comunicação eletrónica.",
-                  "example": "Narrativo = história com início/meio/fim.<br>Poético = \"Cantiga de Mãe\" (versos e estrofes).<br>Dramático = \"A Carochinha\" (réplicas e didascálias).<br>Notícia = \"Criança com deficiência visual...\" (facto real).",
-                  "trick": "A estrutura define o tipo: versos→poético; réplicas+didascálias→teatro; 7 partes→carta; Quem+Onde+Quando→notícia."
                 }
               ],
               "praticar": [
@@ -2532,6 +2650,75 @@
                   "why": "'Viajará' = futuro do indicativo (viajar + -á). 'Amanhã' é um indicador de futuro!"
                 },
                 {
+                  "question": "A forma \"cantarão\" pertence a que tempo verbal?",
+                  "options": [
+                    "Presente do indicativo",
+                    "Pretérito imperfeito",
+                    "Pretérito perfeito",
+                    "Futuro do indicativo"
+                  ],
+                  "answer": "Futuro do indicativo",
+                  "why": "\"Cantarão\" = eles cantarão → futuro do indicativo (ação que ainda vai acontecer)."
+                },
+                {
+                  "question": "Qual é a forma correta do futuro do indicativo de \"partir\" para \"nós\"?",
+                  "options": [
+                    "partimos",
+                    "partiremos",
+                    "partiamos",
+                    "partíamos"
+                  ],
+                  "answer": "partiremos",
+                  "why": "Futuro de partir: eu partirei · tu partirás · nós partiremos · eles partirão."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Conjuga o verbo COMER no futuro do indicativo para 'nós'.",
+                  "options": [
+                    "comeremos",
+                    "comemos",
+                    "comeríamos",
+                    "comíamos"
+                  ],
+                  "answer": "comeremos",
+                  "why": "Futuro: comer + -emos = COMEREMOS. Não confundir com presente 'comemos' — a diferença está no acento!"
+                },
+                {
+                  "question": "Qual frase está corretamente no futuro do indicativo?",
+                  "options": [
+                    "Em 2030, os cientistas descobrirão novos planetas.",
+                    "Em 2020, os cientistas descobriram novos planetas.",
+                    "Os cientistas descobrem novos planetas agora.",
+                    "Os cientistas estavam a descobrir novos planetas."
+                  ],
+                  "answer": "Em 2030, os cientistas descobrirão novos planetas.",
+                  "why": "'Descobrirão' = futuro (descobrir + -ão). 'Descobriram' = perfeito (passado). 'Em 2030' confirma que é futuro!"
+                }
+              ]
+            },
+            {
+              "id": "por4_t3_analise_revisao",
+              "nome": "Análise Sintática e Revisão de Tipos de Texto",
+              "icone": "🔷",
+              "aprender": [
+                {
+                  "icon": "🔷",
+                  "title": "Grupo Nominal e Grupo Verbal — Prática",
+                  "body": "O <b>Grupo Nominal (GN)</b> é formado pelo nome e os seus determinantes e adjetivos. O <b>Grupo Verbal (GV)</b> é formado pelo verbo e os seus complementos.<br>Para identificar o GN: pergunta \"Quem/O quê pratica a ação?\"<br>Para identificar o GV: pergunta \"O que fez/faz o sujeito?\"",
+                  "example": "\"A menina esperta lê um livro bonito.\"<br>GN = <u>A menina esperta</u> (quem lê?)<br>GV = <u>lê um livro bonito</u> (o que faz?)<br>\"Os pássaros cantam alegremente.\"<br>GN = <u>Os pássaros</u> | GV = <u>cantam alegremente</u>",
+                  "trick": "Na frase, o GN vem primeiro (sujeito) e o GV depois (predicado). Todo o GN concorda em género e número."
+                },
+                {
+                  "icon": "📚",
+                  "title": "Tipos de Texto — Revisão Ano 4",
+                  "body": "• <b>Narrativo</b>: personagens + espaço + tempo + problema + solução.<br>• <b>Poético</b>: versos, estrofes, rima, ritmo.<br>• <b>Dramático/Teatro</b>: réplicas + didascálias, para representar.<br>• <b>Notícia</b>: facto real — título + Quem/Onde/Quando + Como/Porquê.<br>• <b>Carta</b>: 7 partes — local/data, saudação, corpo, despedida, assinatura.<br>• <b>E-mail</b>: Para, Assunto, Corpo — comunicação eletrónica.",
+                  "example": "Narrativo = história com início/meio/fim.<br>Poético = \"Cantiga de Mãe\" (versos e estrofes).<br>Dramático = \"A Carochinha\" (réplicas e didascálias).<br>Notícia = \"Criança com deficiência visual...\" (facto real).",
+                  "trick": "A estrutura define o tipo: versos→poético; réplicas+didascálias→teatro; 7 partes→carta; Quem+Onde+Quando→notícia."
+                }
+              ],
+              "praticar": [
+                {
                   "question": "Na frase \"Os pássaros cantam alegremente\", qual é o Grupo Nominal (GN)?",
                   "options": [
                     "cantam alegremente",
@@ -2607,56 +2794,9 @@
                   ],
                   "answer": "Local e data",
                   "why": "A carta começa sempre com o local e a data (canto superior direito)."
-                },
-                {
-                  "question": "A forma \"cantarão\" pertence a que tempo verbal?",
-                  "options": [
-                    "Presente do indicativo",
-                    "Pretérito imperfeito",
-                    "Pretérito perfeito",
-                    "Futuro do indicativo"
-                  ],
-                  "answer": "Futuro do indicativo",
-                  "why": "\"Cantarão\" = eles cantarão → futuro do indicativo (ação que ainda vai acontecer)."
-                },
-                {
-                  "question": "Qual é a forma correta do futuro do indicativo de \"partir\" para \"nós\"?",
-                  "options": [
-                    "partimos",
-                    "partiremos",
-                    "partiamos",
-                    "partíamos"
-                  ],
-                  "answer": "partiremos",
-                  "why": "Futuro de partir: eu partirei · tu partirás · nós partiremos · eles partirão."
                 }
               ],
-              "desafios": [
-                {
-                  "question": "Conjuga o verbo COMER no futuro do indicativo para 'nós'.",
-                  "options": [
-                    "comeremos",
-                    "comemos",
-                    "comeríamos",
-                    "comíamos"
-                  ],
-                  "answer": "comeremos",
-                  "why": "Futuro: comer + -emos = COMEREMOS. Não confundir com presente 'comemos' — a diferença está no acento!"
-                },
-                {
-                  "question": "Qual frase está corretamente no futuro do indicativo?",
-                  "options": [
-                    "Em 2030, os cientistas descobrirão novos planetas.",
-                    "Em 2020, os cientistas descobriram novos planetas.",
-                    "Os cientistas descobrem novos planetas agora.",
-                    "Os cientistas estavam a descobrir novos planetas."
-                  ],
-                  "answer": "Em 2030, os cientistas descobrirão novos planetas.",
-                  "why": "'Descobrirão' = futuro (descobrir + -ão). 'Descobriram' = perfeito (passado). 'Em 2030' confirma que é futuro!"
-                }
-              ],
-              "id": "por4_t3_descoberta_mundo",
-              "icone": "🔍"
+              "desafios": []
             }
           ]
         }
