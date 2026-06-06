@@ -292,6 +292,42 @@ body {
   transition: transform 0.15s; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 .retry-btn:active { transform: scale(0.96); }
+.retry-row { display:flex; flex-direction:column; gap:8px; align-items:center; }
+
+/* ── TEMA LIST ── */
+.trim-label {
+  font-size:0.72rem; font-weight:800; color:var(--muted);
+  text-transform:uppercase; letter-spacing:0.8px;
+  margin:14px 0 6px; padding-left:2px;
+}
+.tema-list { display:flex; flex-direction:column; gap:8px; margin-bottom:4px; }
+.tema-card {
+  display:flex; align-items:center; gap:12px;
+  background:white; border:2.5px solid #e5e7eb; border-radius:16px;
+  padding:13px 15px; cursor:pointer; width:100%; text-align:left;
+  font-family:'Nunito',sans-serif; transition:all 0.15s;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+.tema-card:hover:not(.t-locked) { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,0.12); }
+.tema-card.t-locked { opacity:0.5; cursor:default; }
+.t-icon { font-size:1.5rem; flex-shrink:0; }
+.t-name { flex:1; font-size:0.88rem; font-weight:700; color:var(--text); line-height:1.3; }
+.t-badge { font-size:0.78rem; font-weight:800; flex-shrink:0; }
+.t-hint { font-size:0.7rem; color:var(--muted); flex-shrink:0; }
+.mega-btn {
+  display:block; width:100%; padding:18px 16px; border-radius:20px;
+  border:none; cursor:pointer; text-align:center; margin-top:14px;
+  font-family:'Fredoka One',cursive; font-size:1.05rem; letter-spacing:0.3px;
+  transition:transform 0.15s; box-shadow:0 4px 16px rgba(0,0,0,0.18);
+}
+.mega-btn:hover:not(.m-locked) { transform:scale(1.02); }
+.mega-btn.m-locked { background:#e5e7eb!important; color:var(--muted)!important; cursor:default; box-shadow:none; }
+.unlock-toast {
+  background:#d1fae5; border:2px solid #22c55e; border-radius:14px;
+  padding:12px 16px; margin-bottom:12px; font-size:0.88rem;
+  font-weight:700; color:#15803d; text-align:center;
+  animation:fadeUp 0.4s ease;
+}
 
 /* ── CHALLENGE ── */
 .timer-display {
@@ -555,6 +591,7 @@ let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
 let totalPoints = 0, aiLevel = 'base';
 let challengeInterval = null;
 let wrongAnswers = [];
+let _currentTemaId = null;
 let currentLearnPage = 1, currentGramPage = 1;
 const LEARN_PAGE_SIZE = 6, GRAM_PAGE_SIZE = 6;
 let jsonDB = {}, _jsonPromise = null;
@@ -568,6 +605,15 @@ function ensureJSON(){
   return _jsonPromise;
 }
 function getJSONAno(subj,year){return(jsonDB[subj]?.anos||[]).find(a=>a.ano===year)||null;}
+function getTema(subj,year,temaId){const a=getJSONAno(subj,year);if(!a)return null;for(const t of a.trimestres){const f=t.temas.find(x=>x.id===temaId);if(f)return f;}return null;}
+
+// ─── PROGRESSO ───────────────────────────────────────────────────
+function _prKey(s,y,id){return`ecv_pr_${s}_${y}_${id}`;}
+function getProgress(temaId){const v=localStorage.getItem(_prKey(currentSubject,currentYear,temaId));return v?JSON.parse(v):null;}
+function saveProgress(temaId,score,total){const k=_prKey(currentSubject,currentYear,temaId);const p=getProgress(temaId);if(!p||score>p.best)localStorage.setItem(k,JSON.stringify({best:score,total}));}
+function isUnlocked(temaId){const p=getProgress(temaId);return!!(p&&p.best/p.total>=0.8);}
+function allUnlocked(subj,year){const a=getJSONAno(subj,year);if(!a)return false;for(const t of a.trimestres)for(const tm of t.temas)if(!isUnlockedFor(subj,year,tm.id))return false;return true;}
+function isUnlockedFor(s,y,id){const v=localStorage.getItem(_prKey(s,y,id));if(!v)return false;const p=JSON.parse(v);return p.best/p.total>=0.8;}
 
 const YEAR_META = {
   1:{emoji:'🐣',title:'1ª Classe',sub:'6-7 anos',color:'var(--y1)',dark:'var(--y1d)',cls:'y1'},
@@ -810,10 +856,11 @@ function getLearnCards(year,subj){
 // ═══════════════════════════
 function shuffle(a){return [...a].sort(()=>Math.random()-0.5);}
 
-function buildQuiz(questions, color, retryFn){
+function buildQuiz(questions, color, temaId){
   const q=shuffle(questions).slice(0,10);
   let cur=0, score=0;
   wrongAnswers=[];
+  _currentTemaId=temaId||null;
 
   function render(){
     const item=q[cur];
@@ -821,6 +868,9 @@ function buildQuiz(questions, color, retryFn){
     const opts=shuffle(item.options);
     return `
     <div class="quiz-wrap">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <button onclick="renderPractice(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Temas</button>
+      </div>
       <div class="qprogress"><div class="qpfill" id="qpfill" style="width:${pct}%;background:${color}"></div></div>
       <div class="qcard" id="qcard">
         <div class="qnum">❓ Pergunta ${cur+1} de ${q.length}</div>
@@ -841,25 +891,38 @@ function buildQuiz(questions, color, retryFn){
   }
 
   function showResults(){
+    const threshold=Math.ceil(q.length*0.8);
+    const passed=score>=threshold;
+    const wasUnlocked=temaId?isUnlocked(temaId):false;
+    if(temaId) saveProgress(temaId,score,q.length);
+    const justUnlocked=temaId&&passed&&!wasUnlocked;
     const pct=score/q.length;
     const stars=pct>=0.9?'⭐⭐⭐':pct>=0.7?'⭐⭐':'⭐';
-    const emoji=pct>=0.9?'🏆':pct>=0.7?'😊':'💪';
-    const msg=pct>=0.9?'Fantástico! Estás mesmo bem preparado!':pct>=0.7?'Muito bem! Continua a praticar!':'Não desistas! Lê as explicações e tenta outra vez!';
+    const emoji=passed?pct>=0.9?'🏆':'😊':'💪';
+    const msg=passed
+      ?'Parabéns! Desafio desbloqueado para este tema!'
+      :`Precisas de ${threshold}/${q.length} (80%) para desbloquear. Tenta de novo!`;
     const pts=score*10;
     addPoints(pts);
     let wrongHTML='';
     if(wrongAnswers.length){
       wrongHTML=`<div class="res-breakdown"><h4>📌 O que errei</h4>${wrongAnswers.map(w=>`<div class="bd-item"><span style="color:#ef4444">✗ ${w.q}</span></div><div style="font-size:0.78rem;color:#22c55e;padding-bottom:6px">✓ ${w.a}</div>`).join('')}</div>`;
     }
+    const toastHTML=justUnlocked?`<div class="unlock-toast">🔓 Desafio desbloqueado para este tema!</div>`:'';
+    const retryCall=temaId?`startTemaQuiz('${temaId}')`:`renderPractice(document.getElementById('content-area'))`;
     document.getElementById('content-area').innerHTML=`
       <div class="results-card show">
+        ${toastHTML}
         <div class="res-big celebrate">${emoji}</div>
         <div class="res-score" style="color:${color}">${score}/${q.length}</div>
         <div class="res-of">respostas correctas · +${pts} pontos!</div>
         <div class="res-stars">${stars}</div>
         <div class="res-msg">${msg}</div>
         ${wrongHTML}
-        <button class="retry-btn" style="background:${color}" onclick="setMode('practice')">🔄 Tentar de Novo</button>
+        <div class="retry-row">
+          <button class="retry-btn" style="background:${color}" onclick="${retryCall}">🔄 Repetir este Tema</button>
+          <button class="retry-btn" style="background:white;color:${color};border:2.5px solid ${color}" onclick="renderPractice(document.getElementById('content-area'))">📋 Escolher outro Tema</button>
+        </div>
       </div>`;
   }
 
@@ -900,11 +963,39 @@ function buildQuiz(questions, color, retryFn){
 function escQ(s){ return (s||'').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
 
 async function renderPractice(area){
+  if(!area) area=document.getElementById('content-area');
   area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
   await ensureJSON();
-  const anoData=getJSONAno(currentSubject,currentYear);
+  const ano=getJSONAno(currentSubject,currentYear);
   const col=SUBJ_COLOR[currentSubject];
-  buildQuiz(anoData?.praticar||[],col);
+  if(!ano?.trimestres?.length){area.innerHTML='<p style="text-align:center;color:var(--muted);padding:30px">Sem conteúdo disponível.</p>';return;}
+  let html=`<div style="background:linear-gradient(135deg,${col},${col}cc);border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
+    <div style="font-family:'Fredoka One',cursive;font-size:1.1rem">✏️ Escolhe um Tema para Praticar</div>
+    <div style="font-size:0.78rem;opacity:0.9;margin-top:3px">Precisas de 80% para desbloquear o Desafio</div>
+  </div>`;
+  for(const [ti,trim] of ano.trimestres.entries()){
+    html+=`<div class="trim-label">📅 ${trim.nome||'Trimestre '+(ti+1)}</div><div class="tema-list">`;
+    for(const tm of trim.temas){
+      const p=getProgress(tm.id);
+      const unlk=p&&p.best/p.total>=0.8;
+      const badgeColor=unlk?'#22c55e':col;
+      const badge=p?`<span class="t-badge" style="color:${badgeColor}">${p.best}/${p.total}${unlk?' 🔓':''}</span>`:`<span class="t-hint">Não tentado</span>`;
+      html+=`<button class="tema-card" style="border-color:${col}" onclick="startTemaQuiz('${tm.id}')">
+        <span class="t-icon">${tm.icone||'📖'}</span>
+        <span class="t-name">${tm.nome}</span>
+        ${badge}
+      </button>`;
+    }
+    html+='</div>';
+  }
+  area.innerHTML=html;
+}
+
+async function startTemaQuiz(temaId){
+  await ensureJSON();
+  const tm=getTema(currentSubject,currentYear,temaId);
+  if(!tm?.praticar?.length){alert('Este tema não tem perguntas ainda.');return;}
+  buildQuiz(tm.praticar,SUBJ_COLOR[currentSubject],temaId);
 }
 
 // ═══════════════════════════
@@ -1086,14 +1177,77 @@ async function callAI(){
 // ═══════════════════════════
 // CHALLENGE
 // ═══════════════════════════
-function renderChallenge(area){
+async function renderChallenge(area){
+  if(!area) area=document.getElementById('content-area');
+  if(challengeInterval) clearInterval(challengeInterval);
+  area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
+  await ensureJSON();
+  const ano=getJSONAno(currentSubject,currentYear);
   const col=SUBJ_COLOR[currentSubject];
+  if(!ano?.trimestres?.length){area.innerHTML='<p style="text-align:center;color:var(--muted);padding:30px">Sem conteúdo.</p>';return;}
+  const mega=allUnlocked(currentSubject,currentYear);
+  let html=`<div style="background:linear-gradient(135deg,${col},${col}cc);border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
+    <div style="font-family:'Fredoka One',cursive;font-size:1.1rem">⏱️ Desafio — Escolhe um Tema</div>
+    <div style="font-size:0.78rem;opacity:0.9;margin-top:3px">Pratica 80% primeiro para desbloquear cada tema</div>
+  </div>`;
+  for(const [ti,trim] of ano.trimestres.entries()){
+    html+=`<div class="trim-label">📅 ${trim.nome||'Trimestre '+(ti+1)}</div><div class="tema-list">`;
+    for(const tm of trim.temas){
+      const unlk=isUnlockedFor(currentSubject,currentYear,tm.id);
+      if(unlk){
+        const p=getProgress(tm.id);
+        html+=`<button class="tema-card" style="border-color:${col}" onclick="startTemaChallenge('${tm.id}')">
+          <span class="t-icon">${tm.icone||'📖'}</span>
+          <span class="t-name">${tm.nome}</span>
+          <span class="t-badge" style="color:${col}">⏱️ Jogar</span>
+        </button>`;
+      } else {
+        html+=`<div class="tema-card t-locked">
+          <span class="t-icon">🔒</span>
+          <span class="t-name" style="color:var(--muted)">${tm.nome}</span>
+          <span class="t-hint">Pratica 80%</span>
+        </div>`;
+      }
+    }
+    html+='</div>';
+  }
+  const megaStyle=mega
+    ?`style="background:linear-gradient(135deg,#FFD700,#FF6B6B,#7B2FBE);color:white" onclick="startMegaDesafio()"`
+    :`class="m-locked" style=""`;
+  html+=`<button class="mega-btn ${mega?'':'m-locked'}" ${mega?`style="background:linear-gradient(135deg,#FFD700,#FF6B6B,#7B2FBE);color:white" onclick="startMegaDesafio()"`:''}>
+    ${mega?'🏆 MEGA DESAFIO — todos os temas!':'🔒 MEGA DESAFIO — completa todos os temas (80%)'}
+  </button>`;
+  area.innerHTML=html;
+}
+
+async function startTemaChallenge(temaId){
+  await ensureJSON();
+  const tm=getTema(currentSubject,currentYear,temaId);
+  if(!tm) return;
+  const pool=shuffle([...(tm.praticar||[]),...(tm.desafios||[])]);
+  _runTimedChallenge(pool,SUBJ_COLOR[currentSubject],tm.nome,`startTemaChallenge('${temaId}')`);
+}
+
+async function startMegaDesafio(){
+  await ensureJSON();
+  const ano=getJSONAno(currentSubject,currentYear);
+  let pool=[];
+  for(const t of ano.trimestres) for(const tm of t.temas) pool=pool.concat(tm.desafios||[]);
+  pool=shuffle(pool);
+  _runTimedChallenge(pool,SUBJ_COLOR[currentSubject],'🏆 MEGA DESAFIO','startMegaDesafio()',60);
+}
+
+function _runTimedChallenge(pool,col,title,retryCall,duration=30){
+  if(challengeInterval) clearInterval(challengeInterval);
+  const area=document.getElementById('content-area');
   area.innerHTML=`
-    <div style="text-align:center;margin-bottom:10px">
-      <div style="font-size:0.9rem;font-weight:800;color:var(--muted)">Responde o mais rápido que conseguires! ⚡</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+      <button onclick="renderChallenge(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Temas</button>
+      <div style="font-size:0.88rem;font-weight:800;color:var(--muted);flex:1;text-align:center">${title}</div>
     </div>
+    <div style="text-align:center;font-size:0.82rem;font-weight:800;color:var(--muted);margin-bottom:6px">Responde o mais rápido que conseguires! ⚡</div>
     <div class="timer-ring" id="ch-ring" style="border-color:${col}">
-      <span id="ch-time" style="color:${col}">30</span>
+      <span id="ch-time" style="color:${col}">${duration}</span>
     </div>
     <div id="ch-content"></div>
     <div class="results-card" id="ch-results">
@@ -1101,26 +1255,16 @@ function renderChallenge(area){
       <div class="res-score" id="ch-score" style="color:${col}"></div>
       <div class="res-of">pontos no desafio!</div>
       <div class="res-msg" id="ch-msg"></div>
-      <button class="retry-btn" style="background:${col}" onclick="setMode('challenge')">🔄 Novo Desafio!</button>
+      <div class="retry-row">
+        <button class="retry-btn" style="background:${col}" onclick="${retryCall}">🔄 Repetir!</button>
+        <button class="retry-btn" style="background:white;color:${col};border:2.5px solid ${col}" onclick="renderChallenge(document.getElementById('content-area'))">📋 Outros Temas</button>
+      </div>
     </div>`;
-  startChallenge(col);
-}
-
-async function startChallenge(col){
-  if(challengeInterval) clearInterval(challengeInterval);
-  let timeLeft=30, score=0, canAnswer=true;
-  document.getElementById('ch-results').classList.remove('show');
-
-  await ensureJSON();
-  const anoData=getJSONAno(currentSubject,currentYear);
-  const pool=shuffle([...(anoData?.praticar||[]),...(anoData?.desafios||[])]);
-  let poolIdx=0;
-
+  let timeLeft=duration, score=0, canAnswer=true, poolIdx=0;
   function nextQ(){
     canAnswer=true;
     if(!pool.length) return;
-    const q=pool[poolIdx%pool.length];
-    poolIdx++;
+    const q=pool[poolIdx%pool.length]; poolIdx++;
     const opts=shuffle(q.options);
     document.getElementById('ch-content').innerHTML=`
       <div class="qcard" style="animation:fadeUp 0.2s ease">
@@ -1140,7 +1284,6 @@ async function startChallenge(col){
       setTimeout(nextQ,500);
     };
   }
-
   challengeInterval=setInterval(()=>{
     timeLeft--;
     const el=document.getElementById('ch-time');
@@ -1151,8 +1294,9 @@ async function startChallenge(col){
     if(timeLeft<=0){
       clearInterval(challengeInterval);
       document.getElementById('ch-content').innerHTML='';
-      const emoji=score>=12?'🏆':score>=8?'😊':score>=4?'💪':'🌱';
-      const msg=score>=12?'Incrível! És um campeão!':score>=8?'Muito bem! Boa rapidez!':score>=4?'Bom começo! Pratica mais!':'Continua a tentar, vais melhorar!';
+      const ref=duration>30?12:8;
+      const emoji=score>=ref?'🏆':score>=(ref/2)?'😊':score>=2?'💪':'🌱';
+      const msg=score>=ref?'Incrível! És um campeão!':score>=(ref/2)?'Muito bem! Boa rapidez!':score>=2?'Bom começo! Pratica mais!':'Continua a tentar!';
       document.getElementById('ch-emoji').textContent=emoji;
       document.getElementById('ch-score').textContent=score+' pontos';
       document.getElementById('ch-msg').textContent=msg;
