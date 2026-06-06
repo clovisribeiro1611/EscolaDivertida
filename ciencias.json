@@ -276,39 +276,6 @@
                   "why": "Cabo Verde tem exatamente 10 ilhas: 6 de Barlavento (norte) e 4 de Sotavento (sul)!"
                 },
                 {
-                  "question": "Qual é uma consequência das alterações climáticas em Cabo Verde?",
-                  "options": [
-                    "Subida do nível do mar",
-                    "Mais chuva em todo o arquipélago",
-                    "Mais animais selvagens",
-                    "Temperaturas iguais ao ano todo"
-                  ],
-                  "answer": "Subida do nível do mar",
-                  "why": "O aquecimento global derrete o gelo dos polos, fazendo subir o nível do mar. Para Cabo Verde, um país de ilhas, isso é muito preocupante!"
-                },
-                {
-                  "question": "Emigração significa...",
-                  "options": [
-                    "Sair do país de origem",
-                    "Entrar num novo país",
-                    "Viajar em férias",
-                    "Mudar de cidade"
-                  ],
-                  "answer": "Sair do país de origem",
-                  "why": "EMIGRAÇÃO = sair do país. Um cabo-verdiano que vai para Portugal é um emigrante em Cabo Verde!"
-                },
-                {
-                  "question": "Qual órgão bombeia o sangue no corpo humano?",
-                  "options": [
-                    "Coração",
-                    "Pulmão",
-                    "Fígado",
-                    "Rim"
-                  ],
-                  "answer": "Coração",
-                  "why": "O **coração** é o órgão central do sistema circulatório. Bate cerca de 70 vezes por minuto e envia sangue para todo o corpo!"
-                },
-                {
                   "question": "O que é a cidadania?",
                   "options": [
                     "O conjunto de direitos e deveres de cada pessoa na sociedade",
@@ -340,6 +307,39 @@
                   ],
                   "answer": "O órgão legislativo (faz as leis)",
                   "why": "A Assembleia Nacional = parlamento = onde os deputados eleitos pelo povo fazem as leis!"
+                },
+                {
+                  "question": "Em que ano foram realizadas as primeiras eleições multipartidárias em Cabo Verde?",
+                  "options": [
+                    "1991",
+                    "1975",
+                    "2000",
+                    "1985"
+                  ],
+                  "answer": "1991",
+                  "why": "A 13 de janeiro de 1991 realizaram-se as primeiras eleições multipartidárias — por isso o 13 de janeiro é o Dia da Liberdade e da Democracia!"
+                },
+                {
+                  "question": "Qual é a função do Governo em Cabo Verde?",
+                  "options": [
+                    "Executar as leis e governar o país",
+                    "Fazer as leis",
+                    "Administrar a justiça",
+                    "Comandar o exército"
+                  ],
+                  "answer": "Executar as leis e governar o país",
+                  "why": "O Governo detém o poder EXECUTIVO — executa as leis feitas pela Assembleia Nacional e conduz a política do país!"
+                },
+                {
+                  "question": "O bem comum numa comunidade significa...",
+                  "options": [
+                    "Um bem partilhado por todos do qual todos beneficiam",
+                    "Os bens materiais de cada pessoa",
+                    "A riqueza do governo",
+                    "Os impostos pagos pelos cidadãos"
+                  ],
+                  "answer": "Um bem partilhado por todos do qual todos beneficiam",
+                  "why": "Bem comum = segurança, paz, liberdade, igualdade — bens essenciais para toda a sociedade. Cada um contribui para que todos tenham acesso!"
                 }
               ],
               "desafios": [
@@ -472,28 +472,6 @@
                   "why": "CPLP = Comunidade Portuguesa de Língua Portuguesa<br>PALOP = Países Africanos de Língua Oficial Portuguesa<br>CEDEAO = Comunidade Económica de Estados da África Ocidental!"
                 },
                 {
-                  "question": "Qual é a CAPITAL de Cabo Verde?",
-                  "options": [
-                    "Praia",
-                    "Mindelo",
-                    "Santa Maria",
-                    "São Filipe"
-                  ],
-                  "answer": "Praia",
-                  "why": "A Praia fica na ilha de Santiago e é a capital e maior cidade de Cabo Verde desde a independência em 1975!"
-                },
-                {
-                  "question": "O que é um 'habitat'?",
-                  "options": [
-                    "O lugar onde um ser vivo vive",
-                    "O alimento do animal",
-                    "A família do animal",
-                    "O ciclo de vida"
-                  ],
-                  "answer": "O lugar onde um ser vivo vive",
-                  "why": "O HABITAT é o ambiente natural onde um ser vivo vive e encontra tudo que precisa: comida, água e abrigo!"
-                },
-                {
                   "question": "Em que ano Cabo Verde se tornou independente?",
                   "options": [
                     "1975",
@@ -503,17 +481,6 @@
                   ],
                   "answer": "1975",
                   "why": "Cabo Verde declarou a sua independência de Portugal a 5 de Julho de 1975. Esta data é feriado nacional!"
-                },
-                {
-                  "question": "Qual parte da célula contém o DNA e controla as suas funções?",
-                  "options": [
-                    "Núcleo",
-                    "Membrana",
-                    "Citoplasma",
-                    "Parede celular"
-                  ],
-                  "answer": "Núcleo",
-                  "why": "O NÚCLEO é o centro de controlo da célula! Contém o DNA com a informação genética do ser vivo."
                 },
                 {
                   "question": "A maioria dos cabo-verdianos emigrou historicamente por causa de...",
@@ -527,15 +494,37 @@
                   "why": "A seca frequente e a falta de emprego foram as principais causas da emigração cabo-verdiana ao longo dos séculos!"
                 },
                 {
-                  "question": "Em que ano foi a independência de Cabo Verde?",
+                  "question": "Quais países fazem parte da CPLP?",
                   "options": [
-                    "1975",
-                    "1960",
-                    "1980",
-                    "1492"
+                    "Portugal, Brasil, Angola, Moçambique, Cabo Verde e outros",
+                    "Só países africanos",
+                    "Só Portugal e Brasil",
+                    "Países da América do Sul"
                   ],
-                  "answer": "1975",
-                  "why": "Cabo Verde tornou-se independente de Portugal no dia **5 de Julho de 1975**. É o nosso Dia da Independência!"
+                  "answer": "Portugal, Brasil, Angola, Moçambique, Cabo Verde e outros",
+                  "why": "A CPLP — Comunidade dos Países de Língua Portuguesa — inclui 10 membros: Portugal, Brasil, Angola, Moçambique, CV, Guiné-Bissau, S.Tomé, Timor-Leste, Guiné Equatorial e Macau!"
+                },
+                {
+                  "question": "O que significa CEDEAO?",
+                  "options": [
+                    "Comunidade Económica dos Estados da África Ocidental",
+                    "Conferência dos Estados Africanos",
+                    "Centro de Estudos de África Ocidental",
+                    "Comunidade Educativa de África"
+                  ],
+                  "answer": "Comunidade Económica dos Estados da África Ocidental",
+                  "why": "CEDEAO foi criada em 1975. Cabo Verde e mais 14 países partilham interesses económicos comuns!"
+                },
+                {
+                  "question": "O que representa o 5 de julho em Cabo Verde?",
+                  "options": [
+                    "Dia da Independência Nacional",
+                    "Dia dos Heróis Nacionais",
+                    "Dia da Liberdade e Democracia",
+                    "Dia Internacional das Crianças"
+                  ],
+                  "answer": "Dia da Independência Nacional",
+                  "why": "A 5 de julho de 1975, Cabo Verde tornou-se independente de Portugal após mais de 500 anos de colonização!"
                 }
               ],
               "desafios": [
@@ -669,28 +658,6 @@
               ],
               "praticar": [
                 {
-                  "question": "Qual ilha pertence ao grupo de BARLAVENTO?",
-                  "options": [
-                    "São Vicente",
-                    "Santiago",
-                    "Fogo",
-                    "Brava"
-                  ],
-                  "answer": "São Vicente",
-                  "why": "São Vicente (onde fica Mindelo) pertence ao grupo de Barlavento! Santiago, Fogo e Brava são de Sotavento."
-                },
-                {
-                  "question": "Qual organização internacional agrupa os países africanos?",
-                  "options": [
-                    "União Africana (UA)",
-                    "União Europeia (UE)",
-                    "ONU",
-                    "OTAN"
-                  ],
-                  "answer": "União Africana (UA)",
-                  "why": "A UNIÃO AFRICANA (UA) é a organização que agrupa os 55 países africanos, incluindo Cabo Verde!"
-                },
-                {
                   "question": "A pesca pertence a qual sector económico?",
                   "options": [
                     "Primário",
@@ -733,6 +700,50 @@
                   ],
                   "answer": "Dá direito de pesca e recursos marinhos",
                   "why": "A ZEE é a área marítima exclusiva de CV. Dentro dela, CV tem direito de pesca e exploração de recursos!"
+                },
+                {
+                  "question": "A agricultura em Cabo Verde pertence a que sector económico?",
+                  "options": [
+                    "Sector Primário",
+                    "Sector Secundário",
+                    "Sector Terciário",
+                    "Sector Quaternário"
+                  ],
+                  "answer": "Sector Primário",
+                  "why": "O Sector Primário inclui actividades que extraem directamente da natureza: agricultura, pesca e pecuária!"
+                },
+                {
+                  "question": "Qual é a principal actividade económica de Cabo Verde?",
+                  "options": [
+                    "Turismo",
+                    "Indústria",
+                    "Mineração",
+                    "Comércio de cereais"
+                  ],
+                  "answer": "Turismo",
+                  "why": "O turismo é a principal fonte de rendimento de Cabo Verde, beneficiando do clima e praias das ilhas!"
+                },
+                {
+                  "question": "A pesca artesanal distingue-se da pesca industrial porque...",
+                  "options": [
+                    "Usa barcos pequenos e técnicas tradicionais",
+                    "Usa grandes barcos com redes mecanizadas",
+                    "É feita só em Santiago",
+                    "Não é permitida em Cabo Verde"
+                  ],
+                  "answer": "Usa barcos pequenos e técnicas tradicionais",
+                  "why": "Pesca artesanal = barcos pequenos, técnicas tradicionais, escala familiar. Pesca industrial = grandes barcos, redes mecanizadas, maior volume!"
+                },
+                {
+                  "question": "O comércio grossista distingue-se do retalhista porque...",
+                  "options": [
+                    "Vende em grandes quantidades a outros comerciantes",
+                    "Vende directamente ao consumidor final",
+                    "Só vende produtos importados",
+                    "É feito online"
+                  ],
+                  "answer": "Vende em grandes quantidades a outros comerciantes",
+                  "why": "Grossista vende em quantidade a retalhistas. O retalhista vende a retalho (pequenas quantidades) ao cliente final!"
                 }
               ],
               "desafios": [
@@ -801,6 +812,13 @@
                   "body": "O corpo tem vários sistemas que trabalham juntos.",
                   "example": "🫀 Circulatório — coração bombeia o sangue<br>🫁 Respiratório — pulmões e traqueia<br>🦴 Locomotor — ossos e músculos<br>🧠 Nervoso — cérebro e nervos",
                   "trick": "Para ter saúde: come bem, dorme 8h, faz exercício e higiene diária!"
+                },
+                {
+                  "icon": "🦴",
+                  "title": "Aparelho Locomotor e Sistemas do Corpo",
+                  "body": "O aparelho locomotor é formado pelos ossos (esqueleto) e músculos. Os ossos dão forma ao corpo. Os músculos permitem o movimento.\nSistemas importantes: circulatório, respiratório, digestivo, nervoso, excretor.",
+                  "example": "Coração → sistema circulatório (bombeia sangue)<br>Pulmões → sistema respiratório (trocam oxigénio)<br>Estômago → sistema digestivo (digere alimentos)",
+                  "trick": "Lembra: NERVO-RESPIRA-CIRCULA-DIGERE-EXCRETA. Cada sistema tem a sua função no corpo!"
                 }
               ],
               "praticar": [
@@ -814,39 +832,6 @@
                   ],
                   "answer": "Produtores",
                   "why": "As plantas são os PRODUTORES porque fazem fotossíntese — produzem o seu próprio alimento usando a luz do sol!"
-                },
-                {
-                  "question": "A pesca pertence a que SETOR económico?",
-                  "options": [
-                    "Primário",
-                    "Secundário",
-                    "Terciário",
-                    "Quaternário"
-                  ],
-                  "answer": "Primário",
-                  "why": "O setor PRIMÁRIO extrai recursos diretamente da natureza: agricultura, pesca, pecuária, mineração!"
-                },
-                {
-                  "question": "Quem é o Chefe de Estado de Cabo Verde?",
-                  "options": [
-                    "O Presidente da República",
-                    "O Primeiro-Ministro",
-                    "O Presidente da Assembleia",
-                    "O Governador"
-                  ],
-                  "answer": "O Presidente da República",
-                  "why": "Em Cabo Verde, o PRESIDENTE DA REPÚBLICA é o Chefe de Estado. O Primeiro-Ministro chefia o Governo!"
-                },
-                {
-                  "question": "O turismo pertence a que setor económico?",
-                  "options": [
-                    "Terciário",
-                    "Primário",
-                    "Secundário",
-                    "Quaternário"
-                  ],
-                  "answer": "Terciário",
-                  "why": "O setor TERCIÁRIO inclui os serviços: turismo, comércio, transportes, saúde, educação. Em Cabo Verde, o turismo é a principal fonte de rendimento!"
                 },
                 {
                   "question": "A fotossíntese ocorre principalmente em qual parte da planta?",
@@ -891,6 +876,39 @@
                   ],
                   "answer": "Um produtor (planta)",
                   "why": "As plantas são produtores — fabricam alimento pela fotossíntese. São sempre a base da cadeia alimentar!"
+                },
+                {
+                  "question": "Qual é a função principal do esqueleto?",
+                  "options": [
+                    "Dar forma ao corpo e proteger órgãos",
+                    "Produzir sangue apenas",
+                    "Realizar a digestão",
+                    "Filtrar o ar"
+                  ],
+                  "answer": "Dar forma ao corpo e proteger órgãos",
+                  "why": "O esqueleto dá suporte e forma ao corpo, e protege órgãos vitais como o cérebro (crânio) e o coração (caixa torácica)!"
+                },
+                {
+                  "question": "Qual sistema é responsável pela respiração?",
+                  "options": [
+                    "Sistema respiratório",
+                    "Sistema circulatório",
+                    "Sistema nervoso",
+                    "Sistema excretor"
+                  ],
+                  "answer": "Sistema respiratório",
+                  "why": "O sistema respiratório (pulmões, traqueia, brônquios) é responsável pela troca de oxigénio (O₂) por dióxido de carbono (CO₂)!"
+                },
+                {
+                  "question": "O habitat de um animal é...",
+                  "options": [
+                    "O local onde vive e encontra o que precisa",
+                    "A dieta do animal",
+                    "A cor do animal",
+                    "O nome científico"
+                  ],
+                  "answer": "O local onde vive e encontra o que precisa",
+                  "why": "Habitat = o ambiente natural onde o animal vive, encontra alimento, abrigo e reproduz-se. Ex: habitat do tubarão = oceano!"
                 }
               ],
               "desafios": [
@@ -983,17 +1001,6 @@
               ],
               "praticar": [
                 {
-                  "question": "A Cachupa é...",
-                  "options": [
-                    "O prato nacional de Cabo Verde",
-                    "Uma dança da ilha do Fogo",
-                    "Um festival de música",
-                    "Um instrumento musical"
-                  ],
-                  "answer": "O prato nacional de Cabo Verde",
-                  "why": "A **Cachupa** é o prato mais tradicional de Cabo Verde, feita com milho, feijão e legumes. É a \"alma\" da cozinha cabo-verdiana!"
-                },
-                {
                   "question": "Qual parte da planta realiza a fotossíntese?",
                   "options": [
                     "Folha",
@@ -1058,6 +1065,28 @@
                   ],
                   "answer": "Rega por gotejamento",
                   "why": "A rega por gotejamento leva a água directamente à raiz, sem desperdício. Ideal em zonas com pouca água como CV!"
+                },
+                {
+                  "question": "Por que é importante proteger as plantas?",
+                  "options": [
+                    "Produzem oxigénio, alimento e são habitat de animais",
+                    "Só porque são bonitas",
+                    "Para fazer sombra",
+                    "Apenas para a decoração"
+                  ],
+                  "answer": "Produzem oxigénio, alimento e são habitat de animais",
+                  "why": "As plantas produzem oxigénio pela fotossíntese, são base da cadeia alimentar e oferecem habitat a muitos animais. São essenciais para a vida!"
+                },
+                {
+                  "question": "O que é o solo fértil?",
+                  "options": [
+                    "Solo rico em minerais e matéria orgânica, ideal para plantas",
+                    "Solo muito seco e arenoso",
+                    "Solo sem minerais",
+                    "Solo coberto de cimento"
+                  ],
+                  "answer": "Solo rico em minerais e matéria orgânica, ideal para plantas",
+                  "why": "Solo fértil tem minerais, húmus (matéria orgânica) e água — tudo o que as raízes precisam para nutrir a planta!"
                 }
               ],
               "desafios": [
@@ -1150,17 +1179,6 @@
               ],
               "praticar": [
                 {
-                  "question": "'Morabeza' é...",
-                  "options": [
-                    "A hospitalidade cabo-verdiana",
-                    "Um prato típico",
-                    "Uma dança",
-                    "Um festival"
-                  ],
-                  "answer": "A hospitalidade cabo-verdiana",
-                  "why": "MORABEZA é uma palavra crioula que descreve a gentileza, carinho e hospitalidade do povo cabo-verdiano!"
-                },
-                {
                   "question": "Qual é a principal causa das alterações climáticas?",
                   "options": [
                     "Queima de combustíveis fósseis",
@@ -1225,6 +1243,28 @@
                   ],
                   "answer": "Evaporação",
                   "why": "Evaporação = passagem do estado líquido para gasoso. Ocorre quando o sol aquece a água!"
+                },
+                {
+                  "question": "Qual é a consequência da poluição do ar para a saúde humana?",
+                  "options": [
+                    "Doenças respiratórias como asma e bronquite",
+                    "Melhora a visão",
+                    "Não tem consequências",
+                    "Fortalece os pulmões"
+                  ],
+                  "answer": "Doenças respiratórias como asma e bronquite",
+                  "why": "A poluição do ar (gases, partículas) danifica os pulmões e causa doenças respiratórias. Por isso devemos reduzir emissões!"
+                },
+                {
+                  "question": "Qual é a primeira etapa do método científico?",
+                  "options": [
+                    "Observar e formular uma pergunta",
+                    "Tirar conclusões",
+                    "Fazer a experiência",
+                    "Publicar resultados"
+                  ],
+                  "answer": "Observar e formular uma pergunta",
+                  "why": "O método científico começa sempre com a OBSERVAÇÃO e uma pergunta. Só depois se formula hipótese, faz a experiência e tira conclusões!"
                 }
               ],
               "desafios": [

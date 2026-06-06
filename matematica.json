@@ -519,11 +519,18 @@
                   "trick": "Terminam em º (masculino) ou ª (feminino): o 1º lugar · a 1ª aluna."
                 },
                 {
-                  "icon": "↔️",
-                  "title": "Retas Paralelas e Perpendiculares",
-                  "body": "As retas podem ter posições diferentes entre si.",
-                  "example": "Paralelas ‖ — nunca se cruzam (como trilhos de comboio)<br>Perpendiculares ⊥ — cruzam-se a 90°<br>Secantes — cruzam-se noutro ângulo",
-                  "trick": "Paralelas = nunca se tocam. Perpendiculares = fazem um L perfeito!"
+                  "icon": "🔁",
+                  "title": "Sequências e Regularidades",
+                  "body": "Uma sequência é uma lista de números ou formas que seguem uma regra. Para continuar uma sequência, descobre a regra: o que muda de termo para termo?",
+                  "example": "Ex: 3, 6, 9, 12, __ (regra: +3 → resposta 15)<br>Ex: 100, 90, 80, __ (regra: −10 → resposta 70)",
+                  "trick": "Pergunta: \"Quanto se soma ou subtrai de um número para o próximo?\" Essa é a regra!"
+                },
+                {
+                  "icon": "🏆",
+                  "title": "MMC e MDC",
+                  "body": "MMC (Mínimo Múltiplo Comum) = o menor número que é múltiplo de dois números. MDC (Máximo Divisor Comum) = o maior número que divide os dois exactamente.",
+                  "example": "MMC(4,6): múltiplos de 4: 4,8,12… múltiplos de 6: 6,12… MMC=12<br>MDC(12,8): divisores comuns: 1,2,4 → MDC=4",
+                  "trick": "MMC = útil para somar fracções! MDC = útil para simplificar fracções!"
                 }
               ],
               "praticar": [
@@ -561,17 +568,6 @@
                   "why": "Divisores de 12: 12÷1=12✓ 12÷2=6✓ 12÷3=4✓ 12÷4=3✓ 12÷6=2✓ 12÷12=1✓"
                 },
                 {
-                  "question": "Retas que nunca se cruzam chamam-se...?",
-                  "options": [
-                    "Paralelas",
-                    "Perpendiculares",
-                    "Secantes",
-                    "Oblíquas"
-                  ],
-                  "answer": "Paralelas",
-                  "why": "Retas PARALELAS nunca se encontram, mantêm sempre a mesma distância. Como os trilhos de um caminho de ferro!"
-                },
-                {
                   "question": "Múltiplo de 7 entre estes números?",
                   "options": [
                     "42",
@@ -592,6 +588,39 @@
                   ],
                   "answer": "Décimo",
                   "why": "10º = **décimo**! Sequência: 7º=sétimo · 8º=oitavo · 9º=nono · 10º=décimo!"
+                },
+                {
+                  "question": "Qual é o próximo número na sequência: 5, 10, 15, 20, __?",
+                  "options": [
+                    "25",
+                    "30",
+                    "22",
+                    "28"
+                  ],
+                  "answer": "25",
+                  "why": "A regra é +5. 20+5=25!"
+                },
+                {
+                  "question": "Qual é o próximo na sequência: 2, 4, 8, 16, __?",
+                  "options": [
+                    "32",
+                    "20",
+                    "24",
+                    "18"
+                  ],
+                  "answer": "32",
+                  "why": "A regra é ×2 (dobrar). 16×2=32!"
+                },
+                {
+                  "question": "Qual é o MMC de 3 e 4?",
+                  "options": [
+                    "12",
+                    "7",
+                    "3",
+                    "4"
+                  ],
+                  "answer": "12",
+                  "why": "Múltiplos de 3: 3,6,9,12… Múltiplos de 4: 4,8,12… O menor comum é 12!"
                 }
               ],
               "desafios": [
@@ -605,6 +634,28 @@
                   ],
                   "answer": "999.999",
                   "why": "O número imediatamente antes de 1.000.000 é 999.999 (novecentos e noventa e nove mil e novecentos e noventa e nove)!"
+                },
+                {
+                  "question": "A sequência é: 1, 1, 2, 3, 5, 8, __. Qual o próximo?",
+                  "options": [
+                    "13",
+                    "10",
+                    "11",
+                    "16"
+                  ],
+                  "answer": "13",
+                  "why": "Cada número é a soma dos dois anteriores! 5+8=13. Chama-se sequência de Fibonacci!"
+                },
+                {
+                  "question": "O MDC de 24 e 36 é...?",
+                  "options": [
+                    "12",
+                    "6",
+                    "4",
+                    "8"
+                  ],
+                  "answer": "12",
+                  "why": "Divisores de 24: 1,2,3,4,6,8,12,24. Divisores de 36: 1,2,3,4,6,9,12,18,36. O maior comum é 12!"
                 }
               ]
             },
@@ -633,6 +684,13 @@
                   "body": "A média é o valor central de um conjunto. Somamos todos os valores e dividimos pelo número de elementos.",
                   "example": "Notas: 6, 8, 10, 8 → Soma=32 ÷ 4 = 8\nMédia = 8",
                   "trick": "Soma tudo e divide pelo número de elementos. Média = SOMA ÷ QUANTIDADE!"
+                },
+                {
+                  "icon": "📉",
+                  "title": "Mediana e Frequência",
+                  "body": "Mediana = o valor do MEIO quando os dados estão em ordem. Frequência = quantas vezes um valor aparece.",
+                  "example": "Dados: 3, 5, 7, 9, 11 → Mediana = 7 (está no meio)<br>Em {2, 4, 4, 6, 8}: frequência do 4 = 2 vezes",
+                  "trick": "Mediana: ordena os números, conta até ao meio. Se forem pares, a mediana é a média dos dois do centro!"
                 }
               ],
               "praticar": [
@@ -747,6 +805,17 @@
                   ],
                   "answer": "30",
                   "why": "Santiago e Boa Vista têm ambos 30. O valor 30 aparece 2 vezes — é a MODA!"
+                },
+                {
+                  "question": "Notas de 5 alunos: 6, 8, 7, 9, 10. Qual é a mediana?",
+                  "options": [
+                    "8",
+                    "7",
+                    "9",
+                    "6"
+                  ],
+                  "answer": "8",
+                  "why": "Ordena: 6,7,8,9,10. O valor do meio (3º) é 8. Essa é a mediana!"
                 }
               ]
             }
@@ -786,6 +855,13 @@
                   "body": "Circunferência = linha curva fechada. Círculo = toda a figura (linha + interior).",
                   "example": "📍 Centro — ponto central<br>📏 Raio (r) — do centro à circunferência<br>📐 Diâmetro (d) = 2 × r",
                   "trick": "Diâmetro = 2 × Raio. Circunferência é só a linha; círculo é tudo dentro!"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Área — Retângulo e Triângulo",
+                  "body": "Área mede a superfície de uma figura. Unidade: cm² ou m².\nRetângulo: Área = base × altura\nTriângulo: Área = (base × altura) ÷ 2",
+                  "example": "Retângulo 6cm × 4cm → Área = 6×4 = 24 cm²<br>Triângulo base=8cm, altura=5cm → Área = (8×5)÷2 = 20 cm²",
+                  "trick": "O triângulo é sempre METADE do retângulo com a mesma base e altura! Área triângulo = área retângulo ÷ 2"
                 }
               ],
               "praticar": [
@@ -889,6 +965,28 @@
                   ],
                   "answer": "6 cm",
                   "why": "Área = comprimento × largura. 48 = 8 × ?. 48 ÷ 8 = 6 cm!"
+                },
+                {
+                  "question": "Um triângulo tem base=10 cm e altura=6 cm. Qual é a sua área?",
+                  "options": [
+                    "30 cm²",
+                    "60 cm²",
+                    "16 cm²",
+                    "20 cm²"
+                  ],
+                  "answer": "30 cm²",
+                  "why": "Área do triângulo = (base × altura) ÷ 2 = (10×6)÷2 = 60÷2 = 30 cm²!"
+                },
+                {
+                  "question": "Uma sala tem 8m de comprimento e 5m de largura. Qual é a área?",
+                  "options": [
+                    "40 m²",
+                    "26 m²",
+                    "13 m²",
+                    "56 m²"
+                  ],
+                  "answer": "40 m²",
+                  "why": "Área do retângulo = base × altura = 8×5 = 40 m²!"
                 }
               ]
             },
@@ -917,6 +1015,13 @@
                   "body": "Uma figura tem simetria quando um eixo a divide em duas metades espelhadas.",
                   "example": "🦋 Borboleta · ❤️ Coração · ⭐ Estrela<br>O eixo de simetria é a linha divisória.<br>Um quadrado tem 4 eixos de simetria!",
                   "trick": "Dobra o papel: se as metades ficam iguais, tem simetria! O eixo é a dobra."
+                },
+                {
+                  "icon": "➕",
+                  "title": "Operações com Decimais",
+                  "body": "Somar e subtrair decimais: alinha a vírgula! Multiplicar: multiplica normalmente, depois coloca a vírgula.\nDividir decimais: transforma em fracção ou move a vírgula.",
+                  "example": "0,3 + 0,45 = 0,75 (alinha: 0,30 + 0,45)<br>0,4 × 3 = 1,2 (4×3=12, uma casa decimal → 1,2)<br>1,5 ÷ 0,5 = 3 (é o mesmo que 15÷5=3)",
+                  "trick": "Soma/subtracção: vira a vírgula. Multiplicação: conta as casas decimais no final!"
                 }
               ],
               "praticar": [

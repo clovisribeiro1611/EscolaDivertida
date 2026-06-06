@@ -660,6 +660,17 @@
                   ],
                   "answer": "Sim, areia rima com alegria",
                   "why": "'areia' e 'alegria' terminam com o mesmo som '-ia'. São palavras que rimam!"
+                },
+                {
+                  "question": "Classifica o adjectivo em grau: \"Esta é a mais bela flor do jardim.\"",
+                  "options": [
+                    "Superlativo relativo de superioridade",
+                    "Comparativo de igualdade",
+                    "Positivo",
+                    "Superlativo absoluto analítico"
+                  ],
+                  "answer": "Superlativo relativo de superioridade",
+                  "why": "\"A mais bela de…\" indica o grau mais alto em comparação com um grupo. É superlativo RELATIVO de superioridade!"
                 }
               ]
             }
