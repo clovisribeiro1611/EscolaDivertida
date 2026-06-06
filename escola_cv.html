@@ -157,6 +157,8 @@ body {
   box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 .subj-btn .sb-icon { font-size: 2rem; margin-bottom: 6px; }
+.subj-btn .sb-icon.mat-ops { font-size:.82rem; line-height:1.25; font-weight:900; display:flex; flex-direction:column; align-items:center; gap:0; margin-bottom:4px; }
+.mat-ops .mo-row { display:flex; gap:1.1rem; }
 .subj-btn.mat-btn { background: var(--y1l); color: var(--y1d); border-color: var(--y1); }
 .subj-btn.por-btn { background: #e8faf9; color: #20a89c; border-color: var(--y3); }
 .subj-btn.cie-btn { background: #e8f6ff; color: #2980b9; border-color: var(--cie); }
@@ -457,6 +459,7 @@ body {
   .qtext { font-size: 1.1rem; }
   .qcard { padding: 28px 24px; }
   .year-hero { border-radius: 22px; }
+  .tema-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 }
 @media (min-width: 1280px) {
   #home-screen, #subject-screen { max-width: 1160px; }
@@ -465,6 +468,7 @@ body {
     padding-right: max(20px, calc(50% - 580px));
   }
   .learn-section { grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+  .tema-list { grid-template-columns: 1fr 1fr 1fr; }
   .app-bar-logo { font-size: 1.6rem; }
   .year-card .yr-emoji { font-size: 3.6rem; }
   .year-card .yr-num { font-size: 1.9rem; }
@@ -555,7 +559,7 @@ body {
   </div>
   <div class="subj-grid">
     <div class="subj-btn mat-btn" id="btn-mat" onclick="selectSubject('mat')">
-      <div class="sb-icon">➕</div>Matemática
+      <div class="sb-icon mat-ops"><span>−</span><div class="mo-row"><span>+</span><span>×</span></div><span>÷</span></div>Matemática
     </div>
     <div class="subj-btn por-btn" id="btn-por" onclick="selectSubject('por')">
       <div class="sb-icon">📖</div>Português
@@ -822,10 +826,8 @@ async function renderLearnTema(area,temaId){
   const tm=getTema(currentSubject,currentYear,temaId);
   const col=SUBJ_COLOR[currentSubject];
   const cards=tm?.aprender||[];
-  let html=`<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
-    <button onclick="renderLearn(document.getElementById('content-area'));window.scrollTo(0,200)" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Voltar</button>
-    <div style="font-size:0.88rem;font-weight:800;color:var(--muted);flex:1;text-align:center">${tm?.icone||''} ${tm?.nome||''}</div>
-  </div>`;
+  let html=`<button class="back-btn" onclick="renderLearn(document.getElementById('content-area'));window.scrollTo(0,200)">← Voltar</button>
+  <div style="text-align:center;font-size:0.88rem;font-weight:800;color:var(--muted);margin-bottom:12px">${tm?.icone||''} ${tm?.nome||''}</div>`;
   if(!cards.length){
     html+=`<div style="text-align:center;padding:30px;color:var(--muted)">Sem fichas disponíveis ainda.</div>`;
   } else {
@@ -889,9 +891,7 @@ function buildQuiz(questions, color, temaId){
     const opts=shuffle(item.options);
     return `
     <div class="quiz-wrap">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <button onclick="renderPractice(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Voltar</button>
-      </div>
+      <button class="back-btn" onclick="renderPractice(document.getElementById('content-area'))">← Voltar</button>
       <div class="qprogress"><div class="qpfill" id="qpfill" style="width:${pct}%;background:${color}"></div></div>
       <div class="qcard" id="qcard">
         <div class="qnum">❓ Pergunta ${cur+1} de ${q.length}</div>
@@ -1262,10 +1262,8 @@ function _runTimedChallenge(pool,col,title,retryCall,duration=30){
   if(challengeInterval) clearInterval(challengeInterval);
   const area=document.getElementById('content-area');
   area.innerHTML=`
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <button onclick="renderChallenge(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Voltar</button>
-      <div style="font-size:0.88rem;font-weight:800;color:var(--muted);flex:1;text-align:center">${title}</div>
-    </div>
+    <button class="back-btn" onclick="renderChallenge(document.getElementById('content-area'))">← Voltar</button>
+    <div style="text-align:center;font-size:0.88rem;font-weight:800;color:var(--muted);margin-bottom:8px">${title}</div>
     <div style="text-align:center;font-size:0.82rem;font-weight:800;color:var(--muted);margin-bottom:6px">Responde o mais rápido que conseguires! ⚡</div>
     <div class="timer-ring" id="ch-ring" style="border-color:${col}">
       <span id="ch-time" style="color:${col}">${duration}</span>
