@@ -792,39 +792,78 @@ const LEARN_TRICKS={
 };
 
 async function renderLearn(area){
+  if(!area) area=document.getElementById('content-area');
   area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
   await ensureJSON();
-  const htmlCards=getLearnCards(currentYear,currentSubject);
   const ano=getJSONAno(currentSubject,currentYear);
-  const jsonCards=[];
-  if(ano?.trimestres) for(const t of ano.trimestres) for(const tm of t.temas) jsonCards.push(...(tm.aprender||[]));
-  const allCards=[...htmlCards,...jsonCards];
-  if(!allCards.length){area.innerHTML='<div style="text-align:center;padding:30px;color:var(--muted)">Sem conteúdo disponível.</div>';return;}
-  const totalPages=Math.ceil(allCards.length/LEARN_PAGE_SIZE);
-  currentLearnPage=Math.min(Math.max(currentLearnPage,1),totalPages);
-  const start=(currentLearnPage-1)*LEARN_PAGE_SIZE;
-  const pageCards=allCards.slice(start,start+LEARN_PAGE_SIZE);
   const col=SUBJ_COLOR[currentSubject];
-  const mkPageBtn=(i)=>`<button onclick="goLearnPage(${i})" style="min-width:36px;height:36px;padding:0 4px;border-radius:50%;border:2px solid ${i===currentLearnPage?'transparent':'#e5e7eb'};background:${i===currentLearnPage?col:'white'};color:${i===currentLearnPage?'white':'var(--muted)'};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;cursor:pointer;transition:all 0.15s">${i}</button>`;
-  const pagination=totalPages>1?`<div style="display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 0 4px;flex-wrap:wrap">
-    ${currentLearnPage>1?`<button onclick="goLearnPage(${currentLearnPage-1})" style="padding:8px 16px;border-radius:50px;border:2px solid ${col};background:white;color:${col};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer">← Anterior</button>`:''}
-    ${Array.from({length:totalPages},(_,i)=>mkPageBtn(i+1)).join('')}
-    ${currentLearnPage<totalPages?`<button onclick="goLearnPage(${currentLearnPage+1})" style="padding:8px 16px;border-radius:50px;border:2px solid ${col};background:white;color:${col};font-family:'Nunito',sans-serif;font-weight:800;font-size:0.82rem;cursor:pointer">Próxima →</button>`:''}
-  </div>`:'';
-  area.innerHTML=`<div class="learn-section">${pageCards.map(c=>{
-    const trick=LEARN_TRICKS[currentYear+'_'+currentSubject+'_'+c.title]||c.trick||'';
-    return `<div class="lcard">
-      <h3>${c.icon||'📖'} ${c.title}</h3>
-      <p>${c.body||''}</p>
-      ${c.example?`<div class="eg ${currentSubject}-eg">${typeof c.example==='string'?c.example.replace(/\n/g,'<br>'):c.example}</div>`:''}
-      ${c.list?`<ul>${c.list.map(i=>`<li>${i}</li>`).join('')}</ul>`:''}
-      ${trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${trick}</div>`:''}
-    </div>`;
-  }).join('')}</div>
-  <div style="text-align:center;padding:8px 0 2px;font-size:0.78rem;color:var(--muted)">${allCards.length} fichas · Página ${currentLearnPage} de ${totalPages}</div>
-  ${pagination}`;
+  const m=YEAR_META[currentYear];
+  if(!ano?.trimestres?.length){area.innerHTML='<div style="text-align:center;padding:30px;color:var(--muted)">Sem conteúdo disponível.</div>';return;}
+  let html=`<div style="background:linear-gradient(135deg,${col},${col}cc);border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
+    <div style="font-family:'Fredoka One',cursive;font-size:1.1rem">📚 ${m.title} — Escolhe um Trimestre</div>
+  </div>`;
+  ano.trimestres.forEach((t,i)=>{
+    const nCards=t.temas.reduce((s,tm)=>s+(tm.aprender||[]).length,0);
+    html+=`<button class="tema-card" style="border-color:${col};margin-bottom:10px" onclick="renderLearnTrimestre(document.getElementById('content-area'),${i})">
+      <span class="t-icon">📅</span>
+      <span class="t-name">${t.nome||'Trimestre '+(i+1)}</span>
+      <span class="t-hint">${t.temas.length} temas · ${nCards} fichas</span>
+    </button>`;
+  });
+  area.innerHTML=html;
 }
-window.goLearnPage=function(p){currentLearnPage=p;renderLearn(document.getElementById('content-area'));window.scrollTo(0,200);};
+
+async function renderLearnTrimestre(area,trimIdx){
+  if(!area) area=document.getElementById('content-area');
+  await ensureJSON();
+  const ano=getJSONAno(currentSubject,currentYear);
+  const col=SUBJ_COLOR[currentSubject];
+  const trim=ano.trimestres[trimIdx];
+  let html=`<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+    <button onclick="renderLearn(document.getElementById('content-area'));window.scrollTo(0,200)" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Trimestres</button>
+    <div style="font-size:0.9rem;font-weight:800;color:var(--muted);flex:1;text-align:center">${trim.nome||'Trimestre '+(trimIdx+1)}</div>
+  </div><div class="tema-list">`;
+  for(const tm of trim.temas){
+    const n=(tm.aprender||[]).length;
+    html+=`<button class="tema-card" style="border-color:${col}" onclick="renderLearnTema(document.getElementById('content-area'),'${tm.id}',${trimIdx})">
+      <span class="t-icon">${tm.icone||'📖'}</span>
+      <span class="t-name">${tm.nome}</span>
+      <span class="t-hint">${n} ficha${n!==1?'s':''}</span>
+    </button>`;
+  }
+  html+=`</div>`;
+  area.innerHTML=html;
+  window.scrollTo(0,200);
+}
+
+async function renderLearnTema(area,temaId,trimIdx){
+  if(!area) area=document.getElementById('content-area');
+  await ensureJSON();
+  const tm=getTema(currentSubject,currentYear,temaId);
+  const col=SUBJ_COLOR[currentSubject];
+  const cards=tm?.aprender||[];
+  let html=`<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+    <button onclick="renderLearnTrimestre(document.getElementById('content-area'),${trimIdx});window.scrollTo(0,200)" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← ${tm?.nome||'Temas'}</button>
+  </div>`;
+  if(!cards.length){
+    html+=`<div style="text-align:center;padding:30px;color:var(--muted)">Sem fichas disponíveis ainda.</div>`;
+  } else {
+    html+=`<div class="learn-section">`;
+    for(const c of cards){
+      const trick=LEARN_TRICKS[currentYear+'_'+currentSubject+'_'+c.title]||c.trick||'';
+      html+=`<div class="lcard">
+        <h3>${c.icon||'📖'} ${c.title}</h3>
+        <p>${c.body||''}</p>
+        ${c.example?`<div class="eg ${currentSubject}-eg">${typeof c.example==='string'?c.example.replace(/\n/g,'<br>'):c.example}</div>`:''}
+        ${c.list?`<ul>${c.list.map(li=>`<li>${li}</li>`).join('')}</ul>`:''}
+        ${trick?`<div style="background:#fffbeb;border-left:5px solid #f59e0b;border-radius:10px;padding:10px 12px;margin-top:8px;font-size:0.84rem;line-height:1.6;font-weight:600">🧠 ${trick}</div>`:''}
+      </div>`;
+    }
+    html+=`</div><div style="text-align:center;padding:8px 0 4px;font-size:0.78rem;color:var(--muted)">${cards.length} ficha${cards.length!==1?'s':''} neste tema</div>`;
+  }
+  area.innerHTML=html;
+  window.scrollTo(0,200);
+}
 
 function getLearnCards(year,subj){
   const all={
