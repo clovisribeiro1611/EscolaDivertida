@@ -278,6 +278,13 @@
                   "body": "No carro: cinto sempre (frente e trás); crianças <12 anos no banco de trás com cinto; nunca abrir porta em andamento; não colocar braços/cabeça fora. No autocarro de pé: segurar bem nas travagens. Nunca subir nem descer em movimento.",
                   "example": "✅ Cinto = obrigatório<br>👶 Crianças <12 anos = banco de trás<br>🚫 Não abrir porta em andamento",
                   "trick": "Cinto SEMPRE — nos bancos da frente E de trás!"
+                },
+                {
+                  "icon": "🤝",
+                  "title": "O Bem Comum",
+                  "body": "Bem comum = bens e condições partilhados por todos de que todos beneficiam: alimentação, água, habitação, segurança, paz, liberdade e igualdade. O Estado gere os recursos para garantir o acesso de todos ao bem comum.",
+                  "example": "Água potável, escola pública, hospital, iluminação das ruas, parques — são bens comuns. Cada cidadão deve contribuir (impostos, respeitar regras) para que todos tenham acesso.",
+                  "trick": "Bem comum ≠ bem privado. O bem comum pertence a todos e o Estado é responsável por o garantir."
                 }
               ],
               "praticar": [
@@ -434,6 +441,39 @@
                   ],
                   "answer": "No banco de trás com cinto",
                   "why": "Segurança! Crianças <12 anos e <1,5m devem viajar no banco de trás, com cinto!"
+                },
+                {
+                  "question": "O que é o bem comum?",
+                  "options": [
+                    "Um bem que pertence apenas ao Estado",
+                    "Bens e condições partilhados por todos de que todos beneficiam",
+                    "Um bem privado de cada cidadão",
+                    "Os bens produzidos pelas empresas"
+                  ],
+                  "answer": "Bens e condições partilhados por todos de que todos beneficiam",
+                  "why": "O bem comum são os bens de que todos necessitam e que beneficiam toda a comunidade."
+                },
+                {
+                  "question": "Qual destes é um exemplo de bem comum?",
+                  "options": [
+                    "Uma casa privada",
+                    "Um carro pessoal",
+                    "Uma escola pública",
+                    "Uma conta bancária"
+                  ],
+                  "answer": "Uma escola pública",
+                  "why": "A escola pública é um bem comum — pertence a todos e todos podem aceder."
+                },
+                {
+                  "question": "Quem é responsável pela gestão dos recursos para garantir o bem comum?",
+                  "options": [
+                    "Cada indivíduo",
+                    "As empresas privadas",
+                    "O Estado",
+                    "As famílias"
+                  ],
+                  "answer": "O Estado",
+                  "why": "O Estado é responsável pela gestão dos recursos comuns para garantir o acesso de todos."
                 }
               ],
               "desafios": [
@@ -889,6 +929,13 @@
                   "body": "CV tem pouca indústria por falta de recursos naturais, mercado pequeno e dificuldades de transporte entre ilhas. Principais indústrias: conservas de peixe, construção civil, medicamentos, calçado, vestuário, tintas, extração de inertes e sal (Ilha do Sal).",
                   "example": "🐟 Conservas de peixe<br>🧱 Construção civil<br>🩴 Calçado e vestuário<br>🧂 Extração de sal",
                   "trick": "CV importa muito porque tem pouca indústria própria!"
+                },
+                {
+                  "icon": "🔗",
+                  "title": "Relações de Interdependência Económica",
+                  "body": "As atividades económicas dependem umas das outras:<br>• Indústria precisa da agricultura, pesca e pecuária (matérias-primas).<br>• Agricultura e pesca precisam da indústria (máquinas, redes, barcos).<br>• Comércio precisa de todos os outros setores para ter produtos para vender.",
+                  "example": "A indústria de conservas de atum depende da pesca (matéria-prima) e dos pescadores. A pesca depende da indústria que fabrica os barcos e redes. O turismo depende da agricultura (alimentos) e da construção civil (hotéis).",
+                  "trick": "Nenhuma atividade existe sozinha — todas se interligam! Primário → Secundário → Terciário são uma cadeia."
                 }
               ],
               "praticar": [
@@ -1045,6 +1092,39 @@
                   ],
                   "answer": "Santiago, Santo Antão e Fogo",
                   "why": "Estas três ilhas têm mais água e melhores solos para a agricultura!"
+                },
+                {
+                  "question": "Por que razão as atividades económicas são interdependentes?",
+                  "options": [
+                    "Porque são todas iguais",
+                    "Porque cada uma depende das outras para existir e funcionar",
+                    "Porque só o Estado as controla",
+                    "Porque só existem no setor primário"
+                  ],
+                  "answer": "Porque cada uma depende das outras para existir e funcionar",
+                  "why": "As atividades económicas estabelecem relações entre si — umas fornecem o que outras precisam."
+                },
+                {
+                  "question": "A indústria de conservas de peixe em Cabo Verde depende principalmente de que atividade?",
+                  "options": [
+                    "Turismo",
+                    "Comércio",
+                    "Pesca",
+                    "Pecuária"
+                  ],
+                  "answer": "Pesca",
+                  "why": "A indústria de conservas precisa do peixe (matéria-prima) que vem da pesca."
+                },
+                {
+                  "question": "Qual das seguintes afirmações descreve uma relação de interdependência?",
+                  "options": [
+                    "A agricultura não precisa de máquinas",
+                    "O turismo não depende da construção civil",
+                    "A pesca industrial precisa de barcos fabricados pela indústria",
+                    "O comércio não precisa de produtos"
+                  ],
+                  "answer": "A pesca industrial precisa de barcos fabricados pela indústria",
+                  "why": "A pesca precisa de barcos (indústria) — é uma relação de interdependência entre setores."
                 }
               ],
               "desafios": [
@@ -1167,6 +1247,13 @@
                   "body": "Funções vitais = processos essenciais à vida do organismo. 1) Digestão: transforma alimentos em nutrientes (boca→intestino). 2) Respiração: troca O₂/CO₂ (nariz→pulmões). 3) Circulação: distribui nutrientes e O₂ (coração→vasos). 4) Excreção: filtra impurezas do sangue (rins→urina). 5) Reprodução: cria novos seres. 6) Sistema Nervoso: controla tudo (cérebro+nervos).",
                   "example": "🍽️ Digestão<br>🌬️ Respiração<br>❤️ Circulação<br>🫘 Excreção (rins)<br>👶 Reprodução<br>🧠 Sistema Nervoso",
                   "trick": "DR.CER = Digestão, Respiração, Circulação, Excreção, Reprodução!"
+                },
+                {
+                  "icon": "🔬",
+                  "title": "O Microscópio — Partes e Funcionamento",
+                  "body": "<b>Parte ótica:</b> lente ocular (onde se olha), lente objetiva (amplia), condensador e diafragma, fonte de luz.<br><b>Parte mecânica:</b> tubo/canhão, revólver (roda as objetivas), platina (suporta a preparação), pinças (prendem a preparação), braço/coluna, parafuso macrométrico (ajuste grande), parafuso micrométrico (focar), pé/base.",
+                  "example": "Como usar: 1) Ligar a luz. 2) Colocar preparação na platina com pinças. 3) Colocar objetiva de menor ampliação. 4) Subir a platina com parafuso macrométrico. 5) Focar com parafuso micrométrico.",
+                  "trick": "Macro = grandes movimentos. Micro = pequenos ajustes para focar. A imagem no microscópio é ampliada, virtual e invertida."
                 }
               ],
               "praticar": [
@@ -1301,6 +1388,50 @@
                   ],
                   "answer": "Coração",
                   "why": "O coração bombeia o sangue para todo o corpo através dos vasos sanguíneos!"
+                },
+                {
+                  "question": "Qual parte do microscópio suporta a preparação a observar?",
+                  "options": [
+                    "Revólver",
+                    "Platina",
+                    "Ocular",
+                    "Braço"
+                  ],
+                  "answer": "Platina",
+                  "why": "A platina é a plataforma horizontal onde se coloca a preparação."
+                },
+                {
+                  "question": "Qual parafuso do microscópio serve para fazer pequenos ajustes e focar com precisão?",
+                  "options": [
+                    "Parafuso macrométrico",
+                    "Parafuso micrométrico",
+                    "Revólver",
+                    "Condensador"
+                  ],
+                  "answer": "Parafuso micrométrico",
+                  "why": "O parafuso micrométrico faz pequenos movimentos para obter imagem nítida."
+                },
+                {
+                  "question": "A parte do microscópio que permite rodar e mudar a objetiva é o:",
+                  "options": [
+                    "Braço",
+                    "Platina",
+                    "Revólver",
+                    "Tubo"
+                  ],
+                  "answer": "Revólver",
+                  "why": "O revólver suporta as objetivas e permite rodá-las para trocar de ampliação."
+                },
+                {
+                  "question": "Como é a imagem observada no microscópio ótico composto?",
+                  "options": [
+                    "Real e direita",
+                    "Ampliada, virtual e invertida",
+                    "Reduzida e direita",
+                    "Real e invertida"
+                  ],
+                  "answer": "Ampliada, virtual e invertida",
+                  "why": "A imagem no microscópio é maior que o objeto, virtual (não é real) e invertida."
                 }
               ],
               "desafios": [
@@ -1662,6 +1793,41 @@
                   "body": "A ciência experimental permite observar fenómenos físicos e químicos de forma directa.",
                   "example": "💧 Ebulição: água ferve a 100°C\n🧊 Solidificação: água congela a 0°C\n💨 Evaporação: água vira vapor\n🎈 Pressão do ar: o ar ocupa espaço e tem peso",
                   "trick": "Sólido→Líquido=Fusão. Líquido→Gás=Evaporação/Ebulição. Gás→Líquido=Condensação. Estados da matéria!"
+                },
+                {
+                  "icon": "💧",
+                  "title": "Qualidade da Água e Conservação do Mar",
+                  "body": "Água pode ser contaminada por: uso excessivo de adubos/pesticidas (infiltra no solo), fábricas que despejam resíduos, esgotos não tratados à beira-mar.<br>Marés negras: derrame de petróleo no mar → mata peixes, aves, moluscos e prejudica pesca e turismo.<br>Devemos: tratar esgotos, não deitar lixo nas praias, não poluir o mar.",
+                  "example": "Cabo Verde: mares ricos em atum, cavala, chicharro. 5 espécies de tartarugas marinhas nas águas de CV (ex: Caretta caretta em perigo). Praias limpas = turismo saudável.",
+                  "trick": "Água poluída → doenças. Mar poluído → morte de seres marinhos + prejuízo da pesca e turismo. Cada um é responsável!"
+                },
+                {
+                  "icon": "🌬️",
+                  "title": "Qualidade do Ar — Efeito de Estufa e Ozono",
+                  "body": "<b>Efeito de estufa:</b> gases poluentes (CO₂) formam camada que retém calor → aquecimento da Terra.<br><b>Camada de ozono:</b> protege dos raios UV perigosos. Aerossóis (CFC) e AC destroem-na → \"buraco de ozono\" → cancro da pele.<br><b>Chuvas ácidas:</b> gases das fábricas + vapor de água → ácidos → corroem edifícios, matam plantas e espécies marinhas.",
+                  "example": "CO₂ das chaminés → efeito de estufa. Sprays aerossóis → buraco de ozono. Gases + nuvens → chuvas ácidas que corroem monumentos.",
+                  "trick": "3 grandes problemas do ar: Estufa (calor ↑), Ozono (raios UV passam), Chuvas ácidas (corroem e matam)."
+                },
+                {
+                  "icon": "🧪",
+                  "title": "Os Laboratórios — Regras de Segurança",
+                  "body": "Laboratório = espaço para experiências práticas. Regras: usar equipamento de proteção (bata, luvas), não comer/beber, seguir as instruções do professor, descartar resíduos corretamente.<br><b>Primeiros socorros:</b> Queimadura → lavar com água fria 5-10 min. Produto nos olhos → lavar com água corrente 5 min e consultar médico. Corte → remover material cortante, desinfetar, colocar penso.",
+                  "example": "Se um ácido tocar na pele: lavar com muita água corrente imediatamente. Se cair nos olhos: lavar 5 minutos e ir ao médico.",
+                  "trick": "Queimadura → água fria. Olhos → água corrente 5 min. Corte → pressionar + desinfetar."
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Medição de Massa e Volume",
+                  "body": "<b>Massa:</b> medida em mg ou g no laboratório (balança analítica ou de precisão). No comércio: balança de pratos.<br><b>Volume de líquido:</b> medido em mL ou cm³. Observar pelo <i>menisco</i> — olhar pela parte inferior da curva do líquido.<br><b>Média:</b> soma das medições ÷ número de medições. Fazer sempre mínimo 3 medições.",
+                  "example": "5 medições de massa: 10, 11, 10, 12, 10 g. Média = (10+11+10+12+10)÷5 = 53÷5 = 10,6 g.",
+                  "trick": "Menisco → olha de baixo para cima para ler certo. Massa = mg/g. Volume = mL/cm³."
+                },
+                {
+                  "icon": "👩‍🔬",
+                  "title": "Cientistas Famosos e Profissões na Ciência",
+                  "body": "Ciência = conhecimento (latim \"scientia\"). Grandes cientistas:<br>• Einstein → Teoria da Relatividade<br>• Darwin → Teoria da Evolução (visitou Santiago em 1832)<br>• Newton → Gravidade e 3 leis do movimento<br>• Marie Curie → Radioatividade (2 prémios Nobel)<br>• Pasteur → Pasteurização e vacina contra a raiva<br>Áreas: Biologia, Química, Física, Astronomia, Informática, Matemática.",
+                  "example": "Darwin visitou a ilha de Santiago a 16 de janeiro de 1832 na expedição \"Beagle\". Pasteur descobriu que aquecer o leite (pasteurização) mata bactérias perigosas.",
+                  "trick": "Ciência experimental = usa experiências práticas para provar hipóteses. Método científico: observar → hipótese → experiência → conclusão."
                 }
               ],
               "praticar": [
@@ -1796,6 +1962,94 @@
                   ],
                   "answer": "Chuvas formadas pela mistura de gases poluidores com a água das nuvens",
                   "why": "Gases dos veículos e fábricas reagem com vapor de água → chuvas ácidas que danificam plantas e edifícios!"
+                },
+                {
+                  "question": "O que são marés negras?",
+                  "options": [
+                    "Marés muito altas",
+                    "Derrames de petróleo no mar que poluem e matam seres marinhos",
+                    "Manchas de algas no mar",
+                    "Tempestades noturnas"
+                  ],
+                  "answer": "Derrames de petróleo no mar que poluem e matam seres marinhos",
+                  "why": "Marés negras = derrame de petróleo que provoca poluição e morte de peixes, aves e outros seres marinhos."
+                },
+                {
+                  "question": "Qual o efeito do \"buraco de ozono\"?",
+                  "options": [
+                    "Chuvas mais frequentes",
+                    "Passagem de raios UV perigosos que podem causar cancro da pele",
+                    "Diminuição das temperaturas",
+                    "Aumento das chuvas ácidas"
+                  ],
+                  "answer": "Passagem de raios UV perigosos que podem causar cancro da pele",
+                  "why": "A camada de ozono protege dos raios UV. Sem ela, os raios UV podem causar cancro da pele e outros problemas."
+                },
+                {
+                  "question": "O que causa o efeito de estufa?",
+                  "options": [
+                    "Falta de água no solo",
+                    "Acumulação de gases poluentes que retêm o calor na atmosfera",
+                    "Destruição das florestas apenas",
+                    "O buraco de ozono"
+                  ],
+                  "answer": "Acumulação de gases poluentes que retêm o calor na atmosfera",
+                  "why": "Os gases (CO₂, etc.) formam uma camada que impede o calor de sair → temperatura da Terra sobe."
+                },
+                {
+                  "question": "O que são chuvas ácidas?",
+                  "options": [
+                    "Chuvas muito fortes",
+                    "Chuvas formadas pela combinação de gases poluentes com vapor de água",
+                    "Chuvas de granizo",
+                    "Chuvas na estação seca"
+                  ],
+                  "answer": "Chuvas formadas pela combinação de gases poluentes com vapor de água",
+                  "why": "Gases das fábricas + vapor de água nas nuvens → ácidos → chuvas ácidas que corroem e danificam."
+                },
+                {
+                  "question": "Qual é a regra de primeiros socorros para uma queimadura no laboratório?",
+                  "options": [
+                    "Aplicar gelo diretamente",
+                    "Lavar com água quente",
+                    "Lavar com água fria corrente 5 a 10 minutos",
+                    "Cobrir com pano seco"
+                  ],
+                  "answer": "Lavar com água fria corrente 5 a 10 minutos",
+                  "why": "Queimadura → água fria corrente 5-10 min. Nunca gelo diretamente pois pode piorar a lesão."
+                },
+                {
+                  "question": "Como se lê corretamente o volume de um líquido numa proveta?",
+                  "options": [
+                    "Olhando de cima",
+                    "Pela parte inferior do menisco (curva do líquido)",
+                    "Pela parte superior do menisco",
+                    "Pela parte lateral do tubo"
+                  ],
+                  "answer": "Pela parte inferior do menisco (curva do líquido)",
+                  "why": "O menisco é a curva do líquido. Lê-se sempre pela parte inferior para obter o valor correto."
+                },
+                {
+                  "question": "Qual cientista é associado à Teoria da Relatividade?",
+                  "options": [
+                    "Darwin",
+                    "Newton",
+                    "Einstein",
+                    "Pasteur"
+                  ],
+                  "answer": "Einstein",
+                  "why": "Albert Einstein (1879-1955) é o autor da Teoria da Relatividade."
+                },
+                {
+                  "question": "Charles Darwin visitou qual ilha de Cabo Verde em 1832?",
+                  "options": [
+                    "Sal",
+                    "São Vicente",
+                    "Fogo",
+                    "Santiago"
+                  ],
+                  "answer": "Santiago",
+                  "why": "Darwin visitou a ilha de Santiago (que ele chamou St. Jogo) a 16 de janeiro de 1832 na expedição Beagle."
                 }
               ],
               "desafios": [

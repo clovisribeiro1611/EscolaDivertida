@@ -297,6 +297,13 @@
                   "body": "Divisão: repartir em partes iguais. Termos: dividendo ÷ divisor = quociente (resto). Divisão exata: resto = 0. Divisão não exata: resto > 0 (e sempre menor que o divisor). Propriedade: dividendo = quociente × divisor + resto.",
                   "example": "786 ÷ 6 = 131 (resto 0) → exata<br>17 ÷ 5 = 3 (resto 2) → não exata<br>Verificar: 3×5+2 = 17 ✅",
                   "trick": "Divisão exata: resto=0. Não exata: resto>0 mas SEMPRE menor que o divisor!"
+                },
+                {
+                  "icon": "➕",
+                  "title": "Adição e Subtração — Algoritmos",
+                  "body": "Adição com composição: quando a soma de uma ordem ≥ 10, passa-se 1 para a ordem seguinte. Subtração com decomposição: quando não chega, pede-se à ordem superior (valor 10 vezes maior).",
+                  "example": "478 + 297: 8+7=15 → escreve 5, passa 1. 1+7+9=17 → escreve 7, passa 1. 1+4+2=7. Resultado: 775.<br>894 − 678: 4−8 não dá → decompõe: 14−8=6; 8−7=1; 8−6=2. Resultado: 216.",
+                  "trick": "Verifica a adição: parcela + parcela = soma. Verifica a subtração: resultado + subtraendo = aditivo."
                 }
               ],
               "praticar": [
@@ -431,6 +438,50 @@
                   ],
                   "answer": "Comutativa",
                   "why": "Propriedade comutativa: a×b = b×a — a ordem dos fatores não muda o produto!"
+                },
+                {
+                  "question": "Calcula 3.654 + 2.478.",
+                  "options": [
+                    "6.032",
+                    "6.132",
+                    "6.232",
+                    "5.132"
+                  ],
+                  "answer": "6.132",
+                  "why": "4+8=12 (escreve 2, passa 1); 1+5+7=13 (escreve 3, passa 1); 1+6+4=11 (escreve 1, passa 1); 1+3+2=6. Total: 6.132."
+                },
+                {
+                  "question": "Calcula 5.203 − 1.867.",
+                  "options": [
+                    "3.336",
+                    "3.436",
+                    "3.346",
+                    "4.336"
+                  ],
+                  "answer": "3.336",
+                  "why": "3−7 não dá → decompõe. Depois de todas as decomposições: 5.203−1.867=3.336."
+                },
+                {
+                  "question": "Uma livraria recebeu 4.325 livros de manhã e 2.786 à tarde. Quantos livros recebeu ao todo?",
+                  "options": [
+                    "6.011",
+                    "7.111",
+                    "7.011",
+                    "7.101"
+                  ],
+                  "answer": "7.111",
+                  "why": "4.325 + 2.786 = 7.111."
+                },
+                {
+                  "question": "Qual é o resultado de 9.000 − 3.456?",
+                  "options": [
+                    "5.544",
+                    "5.454",
+                    "6.544",
+                    "5.644"
+                  ],
+                  "answer": "5.544",
+                  "why": "9.000 − 3.456 = 5.544. Basta decompor sucessivamente desde as unidades."
                 }
               ],
               "desafios": [
@@ -589,6 +640,13 @@
                   "body": "MMC (Mínimo Múltiplo Comum) = o menor número que é múltiplo de dois números. MDC (Máximo Divisor Comum) = o maior número que divide os dois exactamente.",
                   "example": "MMC(4,6): múltiplos de 4: 4,8,12… múltiplos de 6: 6,12… MMC=12<br>MDC(12,8): divisores comuns: 1,2,4 → MDC=4",
                   "trick": "MMC = útil para somar fracções! MDC = útil para simplificar fracções!"
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Numeração Romana",
+                  "body": "Símbolos: I=1, V=5, X=10, L=50, C=100, D=500, M=1000.<br>Regras: 1) Nunca repetir mais de 3 vezes seguidas. 2) Símbolo menor ANTES de maior = subtrai (IV=4, IX=9, XL=40, XC=90, CD=400, CM=900).",
+                  "example": "MMCCCXXVI = 2000+300+20+6 = 2.326<br>MCMXCIX = 1000+900+90+9 = 1.999<br>CDXXXIV = 400+30+4 = 434",
+                  "trick": "I subtrai antes de V e X. X subtrai antes de L e C. C subtrai antes de D e M."
                 }
               ],
               "praticar": [
@@ -723,6 +781,50 @@
                   ],
                   "answer": "6",
                   "why": "Divisores de 12: 1,2,3,4,6,12. Divisores de 18: 1,2,3,6,9,18. MDC = 6!"
+                },
+                {
+                  "question": "O que representa XLVIII em numeração árabe?",
+                  "options": [
+                    "38",
+                    "48",
+                    "58",
+                    "68"
+                  ],
+                  "answer": "48",
+                  "why": "XL=40, V=5, III=3. Total: 40+5+3=48."
+                },
+                {
+                  "question": "Escreve 1.994 em numeração romana.",
+                  "options": [
+                    "MCMXCIV",
+                    "MDCCCXCIV",
+                    "MCMXCIX",
+                    "MXCIV"
+                  ],
+                  "answer": "MCMXCIV",
+                  "why": "M=1000, CM=900, XC=90, IV=4. Total: 1.994."
+                },
+                {
+                  "question": "Qual é o valor de CDLXXII?",
+                  "options": [
+                    "372",
+                    "472",
+                    "572",
+                    "672"
+                  ],
+                  "answer": "472",
+                  "why": "CD=400, L=50, XX=20, II=2. Total: 400+50+20+2=472."
+                },
+                {
+                  "question": "Como se escreve 29 em numeração romana?",
+                  "options": [
+                    "XXIX",
+                    "XXXI",
+                    "XXVIIII",
+                    "IXX"
+                  ],
+                  "answer": "XXIX",
+                  "why": "XX=20, IX=9. Total: XXIX."
                 }
               ],
               "desafios": [
@@ -1088,6 +1190,13 @@
                   "body": "Ângulo = região entre dois raios com a mesma origem (vértice). Tipos: Reto = exatamente 90°. Agudo = menor que 90°. Obtuso = maior que 90° e menor que 180°. Raso = exatamente 180° (meia volta). Nulo = 0°.",
                   "example": "⬜ Reto = 90°<br>🔺 Agudo < 90°<br>🔻 Obtuso: 90° < x < 180°<br>— Raso = 180°",
                   "trick": "Agudo = AFIADO (pequeno). Obtuso = GRANDE (maior que reto)!"
+                },
+                {
+                  "icon": "🗺️",
+                  "title": "Orientação Espacial — Mapas e Plantas",
+                  "body": "Planta: vista de cima de um espaço ou edifício. Usa uma escala (ex: 1 cm = 1 m). Mapa: representa uma área geográfica com símbolos convencionais, escala e pontos cardeais (N, S, E, O).",
+                  "example": "Numa planta da sala: cada quadrado = 1 m². A sala tem 5×4 quadrados → área = 20 m².<br>Num mapa com escala 1:1000, 3 cm no mapa = 30 m na realidade.",
+                  "trick": "Escala: medida no mapa × escala = medida real. N indica Norte — orienta o mapa."
                 }
               ],
               "praticar": [
@@ -1222,6 +1331,39 @@
                   ],
                   "answer": "Obtuso",
                   "why": "120° está entre 90° e 180° → ângulo obtuso!"
+                },
+                {
+                  "question": "Numa planta com escala 1 cm = 2 m, uma parede mede 5 cm. Qual é o comprimento real?",
+                  "options": [
+                    "5 m",
+                    "7 m",
+                    "10 m",
+                    "25 m"
+                  ],
+                  "answer": "10 m",
+                  "why": "5 cm × 2 m/cm = 10 m."
+                },
+                {
+                  "question": "O que é uma planta de um edifício?",
+                  "options": [
+                    "Um desenho de perfil",
+                    "Uma vista de cima",
+                    "Um mapa geográfico",
+                    "Um gráfico de barras"
+                  ],
+                  "answer": "Uma vista de cima",
+                  "why": "Planta = vista de cima (plano) de um espaço."
+                },
+                {
+                  "question": "Numa planta quadriculada, cada quadrado representa 1 m². Um quarto tem 3×4 quadrados. Qual é a sua área?",
+                  "options": [
+                    "7 m²",
+                    "12 m²",
+                    "14 m²",
+                    "10 m²"
+                  ],
+                  "answer": "12 m²",
+                  "why": "3×4=12 quadrados → 12 m²."
                 }
               ],
               "desafios": [
@@ -1579,6 +1721,27 @@
                   "body": "A planificação é o 'desdobramento' de um sólido em plano. Mostra como seria se o sólido fosse cortado e aberto.",
                   "example": "Planificação de um cubo = 6 quadrados ligados\nPlanificação de um cilindro = 2 círculos + 1 rectângulo",
                   "trick": "Imagina o sólido feito de cartão. Se o cortasses e abrires completamente = planificação!"
+                },
+                {
+                  "icon": "🔄",
+                  "title": "Transformações Geométricas — Isometrias",
+                  "body": "Isometria = transformação que mantém a forma e o tamanho. 3 tipos:<br>• Translação: deslizar a figura numa direção sem rodar.<br>• Reflexão: espelhar a figura num eixo de simetria.<br>• Rotação: rodar a figura em torno de um ponto.",
+                  "example": "Uma letra \"b\" refletida → \"d\". Uma figura deslocada 3 cm para a direita → translação. Uma figura rodada 90° → rotação.",
+                  "trick": "Iso=igual, metria=medida. A figura não muda de tamanho nem de forma — só de posição!"
+                },
+                {
+                  "icon": "🪟",
+                  "title": "Frisos, Pavimentações e Rosáceas",
+                  "body": "• Friso: padrão que se repete numa só direção (como uma faixa/banda decorativa).<br>• Pavimentação: figuras que cobrem completamente o plano sem buracos nem sobreposições.<br>• Rosácea: padrão circular com simetria de rotação (gira e parece igual).",
+                  "example": "Ladrilhos no chão = pavimentação. Borda decorativa numa faixa = friso. Janela circular de catedral = rosácea.<br>Triângulos equiláteros e quadrados pavimentam o plano.",
+                  "trick": "Friso → linha (1 direção). Pavimentação → preenche tudo. Rosácea → círculo com rotação."
+                },
+                {
+                  "icon": "🔷",
+                  "title": "Sequências Geométricas",
+                  "body": "Sequência de figuras com um padrão que se repete. Para cada termo conta-se o número de elementos e descobre-se a lei de formação.",
+                  "example": "Termo 1: △ (1 triângulo). Termo 2: △△△ (3). Termo 3: △△△△△ (5). Lei: 2n−1.<br>Quantos triângulos no termo 6? 2×6−1=11.",
+                  "trick": "Faz uma tabela: Termo / N.º de elementos. Encontra o padrão (diferença constante = sequência aritmética)."
                 }
               ],
               "praticar": [
@@ -1713,6 +1876,72 @@
                   ],
                   "answer": "Esfera",
                   "why": "A esfera tem apenas superfície curva contínua — sem vértices, arestas ou faces planas!"
+                },
+                {
+                  "question": "Qual transformação geométrica mantém a forma, o tamanho e apenas muda a posição da figura sem rodar?",
+                  "options": [
+                    "Rotação",
+                    "Reflexão",
+                    "Translação",
+                    "Ampliação"
+                  ],
+                  "answer": "Translação",
+                  "why": "Translação = deslizar a figura numa direção sem rodar."
+                },
+                {
+                  "question": "Uma figura é \"espelhada\" num eixo de simetria. Que transformação é esta?",
+                  "options": [
+                    "Translação",
+                    "Reflexão",
+                    "Rotação",
+                    "Pavimentação"
+                  ],
+                  "answer": "Reflexão",
+                  "why": "Reflexão = espelhar a figura num eixo de simetria."
+                },
+                {
+                  "question": "Que tipo de padrão cobre completamente o plano sem buracos nem sobreposições?",
+                  "options": [
+                    "Friso",
+                    "Rosácea",
+                    "Pavimentação",
+                    "Translação"
+                  ],
+                  "answer": "Pavimentação",
+                  "why": "Pavimentação = figuras que cobrem todo o plano sem buracos."
+                },
+                {
+                  "question": "Numa sequência geométrica: termo 1 tem 2 quadrados, termo 2 tem 4, termo 3 tem 6. Quantos tem o termo 8?",
+                  "options": [
+                    "12",
+                    "14",
+                    "16",
+                    "18"
+                  ],
+                  "answer": "16",
+                  "why": "A lei é 2n. Termo 8: 2×8=16 quadrados."
+                },
+                {
+                  "question": "Um friso é um padrão que se repete em:",
+                  "options": [
+                    "Duas direções",
+                    "Uma direção",
+                    "Forma circular",
+                    "Sem direção"
+                  ],
+                  "answer": "Uma direção",
+                  "why": "Friso = padrão repetido numa só direção (faixa/banda)."
+                },
+                {
+                  "question": "Uma rosácea tem simetria de:",
+                  "options": [
+                    "Translação",
+                    "Reflexão em eixo horizontal",
+                    "Rotação",
+                    "Pavimentação"
+                  ],
+                  "answer": "Rotação",
+                  "why": "Rosácea = padrão circular com simetria de rotação."
                 }
               ],
               "desafios": [
