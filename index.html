@@ -237,23 +237,151 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .shake{animation:shake .3s ease;}
 
-/* RESPONSIVE */
+/* ── RESPONSIVE ────────────────────────────────────────────────────────────── */
+
+/* Tablet estreito */
 @media(min-width:600px){
-  .screen,.screen.active{max-width:580px;margin-left:auto;margin-right:auto;}
-  .app-bar{padding-left:max(16px,calc(50% - 290px));padding-right:max(16px,calc(50% - 290px));}
+  .screen,.screen.active{max-width:600px;margin:0 auto;}
+  .app-bar{padding-left:max(16px,calc(50% - 300px));padding-right:max(16px,calc(50% - 300px));}
 }
+
+/* Desktop / tablet largo — escala completa para crianças */
 @media(min-width:900px){
-  .screen,.screen.active{max-width:860px;}
-  .app-bar{padding-left:max(16px,calc(50% - 430px));padding-right:max(16px,calc(50% - 430px));}
-  .years-grid{grid-template-columns:repeat(4,1fr);}
-  .learn-section{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  .opts{display:grid;grid-template-columns:1fr 1fr;}
-  .mode-grid{grid-template-columns:1fr 1fr 1fr 1fr;}
+  /* Layout */
+  .screen,.screen.active{max-width:980px;padding:24px 28px 100px;}
+  #home-screen{padding:32px 28px 100px;}
+  .app-bar{padding:16px max(28px,calc(50% - 490px));}
+
+  /* App bar */
+  .app-bar-logo{font-size:1.55rem;}
+  .app-bar-sub{font-size:.82rem;}
+  .app-bar-pts{font-size:1rem;padding:7px 18px;}
+
+  /* Boas-vindas */
+  .welcome-text h2{font-size:2.4rem;}
+  .welcome-text p{font-size:1.15rem;}
+
+  /* Cards de ano */
+  .years-grid{grid-template-columns:repeat(4,1fr);gap:22px;}
+  .year-card{padding:34px 18px;}
+  .year-card .yr-emoji{font-size:4rem;}
+  .year-card .yr-num{font-size:2rem;}
+  .year-card .yr-label{font-size:1rem;}
+
+  /* Hero da disciplina */
+  .year-hero{padding:28px 24px;}
+  .year-hero h2{font-size:2rem;}
+  .year-hero p{font-size:1.05rem;}
+
+  /* Botões de disciplina */
+  .subj-grid{gap:18px;}
+  .subj-btn{padding:24px 14px;font-size:1.05rem;border-radius:22px;}
+  .subj-btn .sb-icon{font-size:2.6rem;}
+  .subj-btn .sb-icon.mat-ops{font-size:1.15rem;}
+
+  /* Botões auxiliares */
+  .gram-btn,.settings-btn{font-size:1rem;padding:16px;}
+  .back-btn{font-size:1rem;padding:10px 22px;}
+  .mega-btn{font-size:1.3rem;padding:20px;}
+
+  /* Cabeçalho de ecrã */
+  .screen-hdr h2{font-size:1.7rem;}
+
+  /* Trimestres */
+  .trim-card{padding:22px 24px;}
+  .trim-title{font-size:1.35rem;}
+  .trim-stats{font-size:1rem;}
+
+  /* Tópicos */
+  .topics-list{gap:14px;}
+  .topic-card{padding:20px 24px;}
+  .topic-icon{font-size:2.1rem;}
+  .topic-name{font-size:1.05rem;}
+  .topic-score{font-size:.9rem;}
+  .topic-status-icon{font-size:1.6rem;}
+
+  /* Detalhe de tópico */
+  .topic-detail-hero{padding:26px 24px;}
+  .topic-detail-hero h2{font-size:1.6rem;}
+  .mode-grid{grid-template-columns:repeat(4,1fr);gap:14px;}
+  .mode-tile{padding:26px 14px;font-size:1rem;}
+  .mode-tile .mt-icon{font-size:2.2rem;}
+
+  /* Cards de aprender */
+  .learn-section{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .lcard{padding:24px;}
+  .lcard h3{font-size:1.3rem;}
+  .lcard p{font-size:1.05rem;line-height:1.8;}
+  .eg{font-size:1rem;padding:16px 18px;}
+
+  /* Paginação */
+  .pagination button{font-size:1.05rem;padding:11px 26px;}
+  .pagination span{font-size:1rem;}
+
+  /* Quiz */
+  .qcard{padding:32px 28px;}
+  .qnum{font-size:.85rem;}
+  .qtext{font-size:1.2rem;margin-bottom:20px;}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .opt{padding:18px 20px;font-size:1.05rem;border-radius:16px;}
+  .opt-lbl{min-width:38px;height:38px;font-size:.95rem;border-radius:11px;}
+  .feedback{font-size:1.05rem;padding:18px;}
+  .next-q-btn{font-size:1.15rem;padding:18px;}
+
+  /* Resultados */
+  .results-card{padding:40px 32px;}
+  .res-big{font-size:5rem;}
+  .res-score{font-size:4rem;}
+  .res-msg{font-size:1.2rem;}
+  .res-btn{font-size:1.2rem;padding:18px 36px;}
+
+  /* Timer desafio */
+  .timer-ring{width:100px;height:100px;font-size:2.2rem;}
+
+  /* Gramática */
+  .gram-card{padding:24px;}
+  .gram-card h3{font-size:1.3rem;}
 }
+
+/* Monitor grande */
 @media(min-width:1280px){
-  .screen,.screen.active{max-width:1100px;}
-  .app-bar{padding-left:max(20px,calc(50% - 550px));padding-right:max(20px,calc(50% - 550px));}
-  .learn-section{grid-template-columns:1fr 1fr 1fr;}
+  .screen,.screen.active{max-width:1220px;padding:28px 40px 100px;}
+  #home-screen{padding:36px 40px 100px;}
+  .app-bar{padding:18px max(40px,calc(50% - 610px));}
+  .app-bar-logo{font-size:1.7rem;}
+  .app-bar-pts{font-size:1.05rem;}
+
+  .welcome-text h2{font-size:2.8rem;}
+  .welcome-text p{font-size:1.25rem;}
+  .years-grid{gap:28px;}
+  .year-card{padding:40px 22px;}
+  .year-card .yr-emoji{font-size:4.5rem;}
+  .year-card .yr-num{font-size:2.3rem;}
+  .year-card .yr-label{font-size:1.1rem;}
+
+  .subj-btn{padding:30px 18px;font-size:1.15rem;}
+  .subj-btn .sb-icon{font-size:3rem;}
+  .subj-btn .sb-icon.mat-ops{font-size:1.3rem;}
+
+  .trim-title{font-size:1.5rem;}
+  .trim-stats{font-size:1.05rem;}
+
+  .topic-name{font-size:1.15rem;}
+  .topic-score{font-size:.95rem;}
+  .topic-icon{font-size:2.4rem;}
+
+  .learn-section{grid-template-columns:1fr 1fr 1fr;gap:24px;}
+  .lcard p{font-size:1.1rem;}
+  .lcard h3{font-size:1.4rem;}
+  .eg{font-size:1.05rem;}
+
+  .qtext{font-size:1.3rem;}
+  .opt{font-size:1.1rem;}
+  .mode-tile{padding:30px 18px;font-size:1.1rem;}
+  .mode-tile .mt-icon{font-size:2.5rem;}
+
+  .screen-hdr h2{font-size:1.9rem;}
+  .mega-btn{font-size:1.4rem;padding:22px;}
 }
 </style>
 </head>
