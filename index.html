@@ -391,6 +391,9 @@ body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-
 
 <!-- PRACTICE SCREEN -->
 <div id="practice-screen" class="screen">
+  <div id="practice-hdr" style="margin-bottom:4px">
+    <button class="back-btn" onclick="goBack()">← Voltar</button>
+  </div>
   <div id="practice-content"></div>
 </div>
 
@@ -759,6 +762,8 @@ let wrongLog = [];
 function startPractice() {
   const questions = shuffle(currentTema.praticar || []).slice(0, 10);
   quizCol = SUBJ_COLOR[currentSubject];
+  const hdr = document.getElementById('practice-hdr');
+  if (hdr) hdr.style.display = '';
   buildQuiz(questions, quizCol, document.getElementById('practice-content'), onPracticeComplete);
   showScreen('practice-screen');
 }
@@ -790,10 +795,14 @@ function buildQuiz(questions, col, container, onComplete) {
 
 function renderQCard(container, onComplete) {
   if (quizIdx >= quizQ.length) {
+    const hdr = document.getElementById('practice-hdr');
+    if (hdr) hdr.style.display = 'none';
     if (onComplete) onComplete(quizScore, quizQ.length);
     renderQResult(container);
     return;
   }
+  const hdr = document.getElementById('practice-hdr');
+  if (hdr) hdr.style.display = '';
   const q   = quizQ[quizIdx];
   const pct = quizIdx / quizQ.length * 100;
   const lbls = ['A','B','C','D'];

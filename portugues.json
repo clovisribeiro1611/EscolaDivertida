@@ -1080,7 +1080,9 @@
                   "answer": "avarento",
                   "why": "Generoso = dá muito. Avarento = não dá nada, guarda tudo para si. São opostos — antónimos!"
                 }
-              ]
+              ],
+              "id": "por4_t1_familia_historias",
+              "icone": "📖"
             }
           ]
         },
@@ -1545,7 +1547,9 @@
                   "answer": "Título",
                   "why": "O título da notícia é escrito em poucas palavras e em letra maior. Resume o assunto principal da notícia!"
                 }
-              ]
+              ],
+              "id": "por4_t2_diferencas_planeta",
+              "icone": "🎭"
             }
           ]
         },
@@ -1695,7 +1699,9 @@
                   "answer": "Em 2030, os cientistas descobrirão novos planetas.",
                   "why": "'Descobrirão' = futuro (descobrir + -ão). 'Descobriram' = perfeito (passado). 'Em 2030' confirma que é futuro!"
                 }
-              ]
+              ],
+              "id": "por4_t3_descoberta_mundo",
+              "icone": "🔍"
             }
           ]
         }
