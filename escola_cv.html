@@ -795,8 +795,9 @@ async function renderLearn(area){
   area.innerHTML='<div style="text-align:center;padding:40px;font-size:1.8rem;color:var(--muted)">⏳</div>';
   await ensureJSON();
   const htmlCards=getLearnCards(currentYear,currentSubject);
-  const anoData=getJSONAno(currentSubject,currentYear);
-  const jsonCards=anoData?.aprender||[];
+  const ano=getJSONAno(currentSubject,currentYear);
+  const jsonCards=[];
+  if(ano?.trimestres) for(const t of ano.trimestres) for(const tm of t.temas) jsonCards.push(...(tm.aprender||[]));
   const allCards=[...htmlCards,...jsonCards];
   if(!allCards.length){area.innerHTML='<div style="text-align:center;padding:30px;color:var(--muted)">Sem conteúdo disponível.</div>';return;}
   const totalPages=Math.ceil(allCards.length/LEARN_PAGE_SIZE);
