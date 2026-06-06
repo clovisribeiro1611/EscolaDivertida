@@ -823,7 +823,7 @@ async function renderLearnTema(area,temaId){
   const col=SUBJ_COLOR[currentSubject];
   const cards=tm?.aprender||[];
   let html=`<div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
-    <button onclick="renderLearn(document.getElementById('content-area'));window.scrollTo(0,200)" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Temas</button>
+    <button onclick="renderLearn(document.getElementById('content-area'));window.scrollTo(0,200)" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Voltar</button>
     <div style="font-size:0.88rem;font-weight:800;color:var(--muted);flex:1;text-align:center">${tm?.icone||''} ${tm?.nome||''}</div>
   </div>`;
   if(!cards.length){
@@ -890,7 +890,7 @@ function buildQuiz(questions, color, temaId){
     return `
     <div class="quiz-wrap">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <button onclick="renderPractice(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Temas</button>
+        <button onclick="renderPractice(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Voltar</button>
       </div>
       <div class="qprogress"><div class="qpfill" id="qpfill" style="width:${pct}%;background:${color}"></div></div>
       <div class="qcard" id="qcard">
@@ -1263,7 +1263,7 @@ function _runTimedChallenge(pool,col,title,retryCall,duration=30){
   const area=document.getElementById('content-area');
   area.innerHTML=`
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <button onclick="renderChallenge(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Temas</button>
+      <button onclick="renderChallenge(document.getElementById('content-area'))" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:0.82rem;padding:0">← Voltar</button>
       <div style="font-size:0.88rem;font-weight:800;color:var(--muted);flex:1;text-align:center">${title}</div>
     </div>
     <div style="text-align:center;font-size:0.82rem;font-weight:800;color:var(--muted);margin-bottom:6px">Responde o mais rápido que conseguires! ⚡</div>
