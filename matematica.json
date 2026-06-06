@@ -241,25 +241,514 @@
               "id": "mat4_t1_numeros_milhao",
               "nome": "Números até ao Milhão e Operações",
               "icone": "🔢",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔢",
+                  "title": "Números até à Centena de Milhar",
+                  "body": "Lemos e escrevemos números até 100.000 (cem mil). Cada posição tem valor 10 vezes maior.",
+                  "example": "456.789:<br>4 → 400.000 (centenas de milhar)<br>5 → 50.000 (dezenas de milhar)<br>6 → 6.000 (unidades de milhar)<br>7 → 700 · 8 → 80 · 9 → 9",
+                  "trick": "Lê em grupos: 456.789 = quatrocentos e cinquenta e seis MIL, setecentos e oitenta e nove!"
+                },
+                {
+                  "icon": "💯",
+                  "title": "Centena de Milhar",
+                  "body": "100.000 = cem mil = 1 seguido de 5 zeros. É o maior número com 6 algarismos!",
+                  "example": "100.000 = cem mil\n500.000 = quinhentos mil\n999.999 = novecentos e noventa e nove mil e novecentos e noventa e nove",
+                  "trick": "Conta os zeros: 100.000 tem 5 zeros e 6 algarismos no total. Vem logo antes do Milhão!"
+                },
+                {
+                  "icon": "🔢",
+                  "title": "O Milhão",
+                  "body": "1.000.000 = um milhão = 1 seguido de 6 zeros. Tem 7 algarismos!",
+                  "example": "1.000.000 = um milhão\n2.500.000 = dois milhões e quinhentos mil",
+                  "trick": "Milhão tem 6 zeros! Mil tem 3 zeros, Milhão tem 6 zeros — o dobro!"
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Classes dos Números",
+                  "body": "Os números grandes organizam-se em classes: unidades, milhares e milhões.",
+                  "example": "Número: 2.345.678\nClasse dos milhões: 2\nClasse dos milhares: 345\nClasse das unidades: 678",
+                  "trick": "Separa de 3 em 3 da direita. Cada grupo de 3 algarismos é uma classe!"
+                },
+                {
+                  "icon": "📖",
+                  "title": "Ler Números Grandes",
+                  "body": "Para ler um número grande, separamos em classes e lemos da esquerda para a direita.",
+                  "example": "456.789 = quatrocentos e cinquenta e seis MIL\n+ setecentos e oitenta e nove",
+                  "trick": "Lê o grupo da esquerda + a palavra da classe + o grupo da direita!"
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Comparar Números Grandes",
+                  "body": "Para comparar números grandes, compara algarismo a algarismo, da esquerda para a direita.",
+                  "example": "345.678 vs 354.678\n3=3 → 4 vs 5 → 5>4\nLogo: 354.678 > 345.678",
+                  "trick": "Começa sempre pelo algarismo mais à esquerda. O primeiro diferente decide qual é maior!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o valor do algarismo 5 em 456.789?",
+                  "options": [
+                    "50.000",
+                    "5.000",
+                    "500",
+                    "5"
+                  ],
+                  "answer": "50.000",
+                  "why": "Em 456.789, o 5 está nas DEZENAS DE MILHAR. 5 × 10.000 = 50.000!"
+                },
+                {
+                  "question": "Qual é maior: 345.678 ou 354.678?",
+                  "options": [
+                    "354.678",
+                    "345.678",
+                    "São iguais",
+                    "Impossível saber"
+                  ],
+                  "answer": "354.678",
+                  "why": "Na posição das dezenas de milhar: 5 > 4. Por isso 354.678 > 345.678!"
+                },
+                {
+                  "question": "Como se lê 1.000.000?",
+                  "options": [
+                    "Um milhão",
+                    "Um milhar",
+                    "Cem mil",
+                    "Dez mil"
+                  ],
+                  "answer": "Um milhão",
+                  "why": "1.000.000 = UM MILHÃO. Tem 7 algarismos e 6 zeros após o 1!"
+                },
+                {
+                  "question": "Quantos algarismos tem o número 100.000?",
+                  "options": [
+                    "6",
+                    "5",
+                    "7",
+                    "4"
+                  ],
+                  "answer": "6",
+                  "why": "100.000 = 1-0-0-0-0-0 = 6 algarismos. É a centena de milhar!"
+                },
+                {
+                  "question": "700.000 + 50.000 + 3.000 = ?",
+                  "options": [
+                    "753.000",
+                    "735.000",
+                    "730.500",
+                    "705.300"
+                  ],
+                  "answer": "753.000",
+                  "why": "Sete centenas de milhar + cinco dezenas de milhar + 3 milhares = 753.000!"
+                },
+                {
+                  "question": "Qual o valor do algarismo 2 em 2.345.678?",
+                  "options": [
+                    "2 milhões",
+                    "2 milhares",
+                    "2 centenas",
+                    "200.000"
+                  ],
+                  "answer": "2 milhões",
+                  "why": "Em 2.345.678, o 2 está na classe dos milhões. 2 × 1.000.000 = 2.000.000!"
+                },
+                {
+                  "question": "Como se escreve em algarismos: 'dois milhões e trezentos mil'?",
+                  "options": [
+                    "2.300.000",
+                    "2.030.000",
+                    "230.000",
+                    "2.003.000"
+                  ],
+                  "answer": "2.300.000",
+                  "why": "2 milhões = 2.000.000. Trezentos mil = 300.000. Juntando: 2.300.000!"
+                },
+                {
+                  "question": "Ordena do menor para o maior: 1.050.000 · 1.500.000 · 1.005.000",
+                  "options": [
+                    "1.005.000 · 1.050.000 · 1.500.000",
+                    "1.500.000 · 1.050.000 · 1.005.000",
+                    "1.050.000 · 1.005.000 · 1.500.000",
+                    "São todos iguais"
+                  ],
+                  "answer": "1.005.000 · 1.050.000 · 1.500.000",
+                  "why": "Comparamos: 1.005 < 1.050 < 1.500 (em milhares). Portanto: 1.005.000 < 1.050.000 < 1.500.000!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O João tem 3.500 moedas. O irmão tem 2.800. Quantas moedas a mais o João tem?",
+                  "options": [
+                    "700",
+                    "600",
+                    "800",
+                    "500"
+                  ],
+                  "answer": "700",
+                  "why": "3.500 − 2.800 = 700 moedas a mais para o João!"
+                },
+                {
+                  "question": "Uma escola tem 2.345 alunos em 2024 e 2.567 em 2025. Quantos alunos novos vieram?",
+                  "options": [
+                    "222",
+                    "232",
+                    "212",
+                    "322"
+                  ],
+                  "answer": "222",
+                  "why": "2.567 − 2.345 = 222 alunos novos!"
+                },
+                {
+                  "question": "O pai comprou 3 camisolas por 1.250$ cada uma. Quanto gastou no total?",
+                  "options": [
+                    "3.750$",
+                    "3.250$",
+                    "3.000$",
+                    "3.500$"
+                  ],
+                  "answer": "3.750$",
+                  "why": "3 × 1.250$ = 3.750$"
+                },
+                {
+                  "question": "Ordena do MENOR para o MAIOR: 2.100 | 1.900 | 2.090 | 1.999",
+                  "options": [
+                    "1.900 < 1.999 < 2.090 < 2.100",
+                    "1.900 < 2.090 < 1.999 < 2.100",
+                    "1.999 < 1.900 < 2.100 < 2.090",
+                    "2.100 < 2.090 < 1.999 < 1.900"
+                  ],
+                  "answer": "1.900 < 1.999 < 2.090 < 2.100",
+                  "why": "Compara milhar primeiro: 1.___ < 2.___. Depois centena: 1.9__ < 1.9__. Depois dezena: 2.0__ < 2.1__"
+                },
+                {
+                  "question": "A padaria vendeu 4.567 pães em Março e 3.890 em Abril. No total vendeu quantos?",
+                  "options": [
+                    "8.457",
+                    "8.567",
+                    "8.457",
+                    "7.457"
+                  ],
+                  "answer": "8.457",
+                  "why": "4.567 + 3.890 = 8.457 pães vendidos no total!"
+                },
+                {
+                  "question": "Qual é a leitura correta de 7.234?",
+                  "options": [
+                    "Sete mil duzentos e trinta e quatro",
+                    "Setenta mil duzentos e trinta e quatro",
+                    "Sete milhões",
+                    "Sete centenas"
+                  ],
+                  "answer": "Sete mil duzentos e trinta e quatro",
+                  "why": "7.234 = 7 milhares + 2 centenas + 3 dezenas + 4 unidades"
+                },
+                {
+                  "question": "Quanto é 6.789 + 2.345?",
+                  "options": [
+                    "9.134",
+                    "9.234",
+                    "8.134",
+                    "9.334"
+                  ],
+                  "answer": "9.134",
+                  "why": "6.789 + 2.345 = 9.134. Coluna a coluna: 9+5=14, 8+4=12, 7+3=10, 6+2=8"
+                },
+                {
+                  "question": "Qual número é maior: 9.999 ou 10.000?",
+                  "options": [
+                    "10.000",
+                    "9.999",
+                    "São iguais",
+                    "Não dá saber"
+                  ],
+                  "answer": "10.000",
+                  "why": "10.000 tem uma dezena de milhar (1DM) e 9.999 tem só 9 milhares. 1DM > 9M!"
+                },
+                {
+                  "question": "Como se escreve 35 em algarismos romanos?",
+                  "options": [
+                    "XXXV",
+                    "XXVV",
+                    "VVV",
+                    "XXXVV"
+                  ],
+                  "answer": "XXXV",
+                  "why": "XXX = 30, V = 5. 30 + 5 = 35 = XXXV"
+                },
+                {
+                  "question": "Uma corda de 3,5 m é cortada em pedaços de 0,5 m cada. Quantos pedaços ficam?",
+                  "options": [
+                    "7",
+                    "6",
+                    "8",
+                    "5"
+                  ],
+                  "answer": "7",
+                  "why": "3,5 ÷ 0,5 = 7 pedaços. Ou: 3,5 m = 350 cm, 0,5 m = 50 cm; 350 ÷ 50 = 7!"
+                },
+                {
+                  "question": "O terreno de uma escola tem 45 m de comprimento e 30 m de largura. Qual é o perímetro?",
+                  "options": [
+                    "150 m",
+                    "1.350 m",
+                    "75 m",
+                    "175 m"
+                  ],
+                  "answer": "150 m",
+                  "why": "Perímetro = 2 × (45 + 30) = 2 × 75 = 150 m!"
+                }
+              ]
             },
             {
               "id": "mat4_t1_multiplos",
               "nome": "Múltiplos, Divisores e Regularidades",
               "icone": "➗",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔍",
+                  "title": "Múltiplos e Divisores",
+                  "body": "Múltiplos são os resultados de uma tabuada. Divisores são os números que dividem exatamente outro.",
+                  "example": "Múltiplos de 4: 4, 8, 12, 16, 20, 24...<br>Divisores de 12: 1, 2, 3, 4, 6, 12<br>(todos dividem 12 sem resto)",
+                  "trick": "Múltiplos: conta na tabuada (4, 8, 12...). Divisores: quais cabem sem resto? Testa do 1 até à metade!"
+                },
+                {
+                  "icon": "1️⃣",
+                  "title": "Números Ordinais",
+                  "body": "Os ordinais indicam posição ou ordem numa sequência.",
+                  "example": "1º primeiro · 2º segundo · 3º terceiro<br>4º quarto · 5º quinto · 10º décimo<br>20º vigésimo · 100º centésimo",
+                  "trick": "Terminam em º (masculino) ou ª (feminino): o 1º lugar · a 1ª aluna."
+                },
+                {
+                  "icon": "↔️",
+                  "title": "Retas Paralelas e Perpendiculares",
+                  "body": "As retas podem ter posições diferentes entre si.",
+                  "example": "Paralelas ‖ — nunca se cruzam (como trilhos de comboio)<br>Perpendiculares ⊥ — cruzam-se a 90°<br>Secantes — cruzam-se noutro ângulo",
+                  "trick": "Paralelas = nunca se tocam. Perpendiculares = fazem um L perfeito!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual múltiplo de 7 está entre 40 e 50?",
+                  "options": [
+                    "42",
+                    "44",
+                    "46",
+                    "48"
+                  ],
+                  "answer": "42",
+                  "why": "42 ÷ 7 = 6 exato! Para verificar: 7 × 6 = 42 ✓"
+                },
+                {
+                  "question": "Qual é o número ordinal do 5?",
+                  "options": [
+                    "Quinto",
+                    "Cinco",
+                    "Quinze",
+                    "Quintal"
+                  ],
+                  "answer": "Quinto",
+                  "why": "Ordinais dizem a posição: 1º=primeiro, 2º=segundo, 3º=terceiro, 4º=quarto, 5º=quinto!"
+                },
+                {
+                  "question": "Os divisores de 12 são?",
+                  "options": [
+                    "1, 2, 3, 4, 6, 12",
+                    "2, 3, 4, 6",
+                    "1, 2, 4, 8, 12",
+                    "1, 3, 6, 12"
+                  ],
+                  "answer": "1, 2, 3, 4, 6, 12",
+                  "why": "Divisores de 12: 12÷1=12✓ 12÷2=6✓ 12÷3=4✓ 12÷4=3✓ 12÷6=2✓ 12÷12=1✓"
+                },
+                {
+                  "question": "Retas que nunca se cruzam chamam-se...?",
+                  "options": [
+                    "Paralelas",
+                    "Perpendiculares",
+                    "Secantes",
+                    "Oblíquas"
+                  ],
+                  "answer": "Paralelas",
+                  "why": "Retas PARALELAS nunca se encontram, mantêm sempre a mesma distância. Como os trilhos de um caminho de ferro!"
+                },
+                {
+                  "question": "Múltiplo de 7 entre estes números?",
+                  "options": [
+                    "42",
+                    "44",
+                    "46",
+                    "48"
+                  ],
+                  "answer": "42",
+                  "why": "42 ÷ 7 = 6 exacto, então 42 é múltiplo de 7! Para verificar: 7 × 6 = **42** ✓"
+                },
+                {
+                  "question": "Como se escreve o ordinal de 10?",
+                  "options": [
+                    "Décimo",
+                    "Decimo",
+                    "Dézimo",
+                    "Décemos"
+                  ],
+                  "answer": "Décimo",
+                  "why": "10º = **décimo**! Sequência: 7º=sétimo · 8º=oitavo · 9º=nono · 10º=décimo!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual número vem ANTES de 1.000.000?",
+                  "options": [
+                    "999.999",
+                    "999.000",
+                    "1.000.001",
+                    "998.999"
+                  ],
+                  "answer": "999.999",
+                  "why": "O número imediatamente antes de 1.000.000 é 999.999 (novecentos e noventa e nove mil e novecentos e noventa e nove)!"
+                }
+              ]
             },
             {
               "id": "mat4_t1_dados",
               "nome": "Organização e Tratamento de Dados",
               "icone": "📊",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📊",
+                  "title": "Tabelas e Gráficos — A Moda",
+                  "body": "Organizamos dados em tabelas e gráficos. A MODA é o valor que aparece mais vezes.",
+                  "example": "Notas: 3, 7, 3, 8, 5, 3, 7<br>O 3 aparece 3 vezes (mais vezes!)<br>MODA = 3<br>Lemos gráficos de barras e pictogramas.",
+                  "trick": "Moda = o valor mais popular! Conta quantas vezes cada valor aparece. O que aparecer mais = MODA!"
+                },
+                {
+                  "icon": "📊",
+                  "title": "Pictograma e Gráfico de Barras",
+                  "body": "Pictogramas usam imagens para representar dados. Gráficos de barras usam barras rectangulares para comparar quantidades.",
+                  "example": "🐟🐟🐟 = 3 peixes — Pictograma\n📊 Barras: cada barra representa um valor — fácil de comparar!",
+                  "trick": "No pictograma, conta as imagens. No gráfico de barras, lê o valor no eixo vertical!"
+                },
+                {
+                  "icon": "📈",
+                  "title": "Média Aritmética",
+                  "body": "A média é o valor central de um conjunto. Somamos todos os valores e dividimos pelo número de elementos.",
+                  "example": "Notas: 6, 8, 10, 8 → Soma=32 ÷ 4 = 8\nMédia = 8",
+                  "trick": "Soma tudo e divide pelo número de elementos. Média = SOMA ÷ QUANTIDADE!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é a MODA neste conjunto: 3, 7, 3, 8, 5, 3, 7?",
+                  "options": [
+                    "3",
+                    "7",
+                    "8",
+                    "5"
+                  ],
+                  "answer": "3",
+                  "why": "A moda é o valor que aparece MAIS VEZES. O 3 aparece 3 vezes, o 7 aparece 2 vezes. Moda = 3!"
+                },
+                {
+                  "question": "Numa tabela: João=8, Ana=12, Pedro=8, Sara=15. Qual é a MODA?",
+                  "options": [
+                    "8",
+                    "12",
+                    "15",
+                    "11"
+                  ],
+                  "answer": "8",
+                  "why": "A moda é o valor que aparece mais vezes. O 8 aparece 2 vezes (João e Pedro). Moda = 8!"
+                },
+                {
+                  "question": "Num gráfico: Sal=45, Santiago=80, Fogo=20. Qual ilha tem mais turistas?",
+                  "options": [
+                    "Santiago",
+                    "Sal",
+                    "Fogo",
+                    "Todas iguais"
+                  ],
+                  "answer": "Santiago",
+                  "why": "A barra de Santiago atinge o valor 80, que é o maior de todos!"
+                },
+                {
+                  "question": "Notas: 6, 8, 10, 8. Qual é a MÉDIA?",
+                  "options": [
+                    "8",
+                    "7",
+                    "9",
+                    "6"
+                  ],
+                  "answer": "8",
+                  "why": "Soma: 6+8+10+8=32. Divide por 4: 32÷4=8. A média é 8!"
+                },
+                {
+                  "question": "Qual é a MODA em: 5, 3, 5, 7, 5, 3?",
+                  "options": [
+                    "5",
+                    "3",
+                    "7",
+                    "não há"
+                  ],
+                  "answer": "5",
+                  "why": "O 5 aparece 3 vezes, o 3 aparece 2 vezes. O 5 é o valor mais frequente — é a MODA!"
+                },
+                {
+                  "question": "Num pictograma, 🐟 = 10 peixes. Se há 4 imagens, quantos peixes são?",
+                  "options": [
+                    "40",
+                    "14",
+                    "4",
+                    "100"
+                  ],
+                  "answer": "40",
+                  "why": "4 imagens × 10 peixes cada = 40 peixes no total!"
+                },
+                {
+                  "question": "Numa tabela: Jan=120, Fev=95, Mar=150. Em que mês foi maior?",
+                  "options": [
+                    "Março",
+                    "Janeiro",
+                    "Fevereiro",
+                    "Todos iguais"
+                  ],
+                  "answer": "Março",
+                  "why": "150 > 120 > 95. O maior valor é Março com 150!"
+                },
+                {
+                  "question": "A frequência de um valor numa tabela indica...?",
+                  "options": [
+                    "Quantas vezes aparece",
+                    "O valor médio",
+                    "O maior valor",
+                    "A diferença"
+                  ],
+                  "answer": "Quantas vezes aparece",
+                  "why": "Frequência = número de vezes que um valor ocorre numa amostra de dados!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Num gráfico de barras: Sal=45, Santiago=30, Fogo=20, Boa Vista=30. Qual é a moda?",
+                  "options": [
+                    "30",
+                    "45",
+                    "20",
+                    "35"
+                  ],
+                  "answer": "30",
+                  "why": "O 30 aparece 2 vezes (Santiago e Boa Vista), os outros aparecem só 1 vez. Moda = 30!"
+                },
+                {
+                  "question": "Num gráfico: Sal=45, Santiago=30, Fogo=20, Boa Vista=30. Qual é a MODA?",
+                  "options": [
+                    "30",
+                    "45",
+                    "20",
+                    "25"
+                  ],
+                  "answer": "30",
+                  "why": "Santiago e Boa Vista têm ambos 30. O valor 30 aparece 2 vezes — é a MODA!"
+                }
+              ]
             }
           ]
         },
@@ -271,17 +760,290 @@
               "id": "mat4_t2_geom_angulos",
               "nome": "Geometria — Ângulos, Figuras Planas e Área",
               "icone": "📐",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📐",
+                  "title": "Geometria — Polígonos e Círculo",
+                  "body": "Polígonos são figuras com lados retos. O círculo tem raio, diâmetro e circunferência.",
+                  "list": [
+                    "Triângulo: 3 lados e 3 vértices",
+                    "Quadrilátero: 4 lados (quadrado, retângulo, losango)",
+                    "Pentágono: 5 lados · Hexágono: 6 lados",
+                    "Círculo: raio (r) = metade do diâmetro (d)"
+                  ],
+                  "trick": "O prefixo diz o nº de lados: TRI=3, QUADRI=4, PENTA=5, HEXA=6. Círculo não é polígono (sem lados retos)!"
+                },
+                {
+                  "icon": "📏",
+                  "title": "Perímetro e Medidas",
+                  "body": "Perímetro = soma de todos os lados. Unidades: mm, cm, dm, m, km.",
+                  "example": "Retângulo 8 cm × 5 cm:<br>Perímetro = 8+8+5+5 = 26 cm<br>1 km = 1.000 m · 1 m = 100 cm<br>1 cm = 10 mm",
+                  "trick": "Perímetro = volta completa! Retângulo: P = 2×(comprimento + largura). Quadrado: P = 4×lado!"
+                },
+                {
+                  "icon": "⭕",
+                  "title": "Círculo e Circunferência",
+                  "body": "Circunferência = linha curva fechada. Círculo = toda a figura (linha + interior).",
+                  "example": "📍 Centro — ponto central<br>📏 Raio (r) — do centro à circunferência<br>📐 Diâmetro (d) = 2 × r",
+                  "trick": "Diâmetro = 2 × Raio. Circunferência é só a linha; círculo é tudo dentro!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Um retângulo tem 8 cm e 5 cm. Qual é o seu perímetro?",
+                  "options": [
+                    "26 cm",
+                    "40 cm",
+                    "13 cm",
+                    "20 cm"
+                  ],
+                  "answer": "26 cm",
+                  "why": "Perímetro = 8+8+5+5 = 26 cm! Ou: 2 × (8+5) = 2 × 13 = 26 cm."
+                },
+                {
+                  "question": "Um hexágono tem quantos lados?",
+                  "options": [
+                    "6",
+                    "5",
+                    "7",
+                    "8"
+                  ],
+                  "answer": "6",
+                  "why": "HEXA = 6 em grego. Um hexágono tem 6 lados e 6 vértices. As colmeias das abelhas têm forma hexagonal!"
+                },
+                {
+                  "question": "Que ângulo é MENOR que 90°?",
+                  "options": [
+                    "Agudo",
+                    "Recto",
+                    "Obtuso",
+                    "Raso"
+                  ],
+                  "answer": "Agudo",
+                  "why": "O ângulo AGUDO é mais fechado (pequeno) que o recto. Recto=90°, Agudo menor que 90°, Obtuso maior que 90°, Raso=180°."
+                },
+                {
+                  "question": "O diâmetro de um círculo com raio 4 cm é...?",
+                  "options": [
+                    "8 cm",
+                    "4 cm",
+                    "12 cm",
+                    "2 cm"
+                  ],
+                  "answer": "8 cm",
+                  "why": "Diâmetro = 2 × raio. 2 × 4 = **8 cm**! O diâmetro passa pelo centro de ponta a ponta."
+                },
+                {
+                  "question": "Qual é o ângulo interno de cada canto de um quadrado?",
+                  "options": [
+                    "90°",
+                    "45°",
+                    "180°",
+                    "60°"
+                  ],
+                  "answer": "90°",
+                  "why": "Um quadrado tem 4 ângulos rectos. Cada canto = 90°!"
+                },
+                {
+                  "question": "Um triângulo tem lados de 5 cm, 7 cm e 4 cm. Qual é o seu perímetro?",
+                  "options": [
+                    "16 cm",
+                    "12 cm",
+                    "20 cm",
+                    "11 cm"
+                  ],
+                  "answer": "16 cm",
+                  "why": "Perímetro = soma de todos os lados: 5+7+4=16 cm!"
+                },
+                {
+                  "question": "Qual é a área de um retângulo com 6 cm e 4 cm?",
+                  "options": [
+                    "24 cm²",
+                    "20 cm²",
+                    "10 cm²",
+                    "12 cm²"
+                  ],
+                  "answer": "24 cm²",
+                  "why": "Área do retângulo = comprimento × largura = 6 × 4 = 24 cm²!"
+                },
+                {
+                  "question": "Um polígono regular com 6 lados chama-se...?",
+                  "options": [
+                    "Hexágono",
+                    "Pentágono",
+                    "Octógono",
+                    "Heptágono"
+                  ],
+                  "answer": "Hexágono",
+                  "why": "Hexa = 6 em grego. Hexágono = polígono com 6 lados!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um retângulo tem área de 48 cm². Se um lado mede 8 cm, qual é o outro lado?",
+                  "options": [
+                    "6 cm",
+                    "5 cm",
+                    "7 cm",
+                    "4 cm"
+                  ],
+                  "answer": "6 cm",
+                  "why": "Área = comprimento × largura. 48 = 8 × ?. 48 ÷ 8 = 6 cm!"
+                }
+              ]
             },
             {
               "id": "mat4_t2_fracoes",
               "nome": "Frações e Números Decimais",
               "icone": "½",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔀",
+                  "title": "Números Racionais — Frações e Decimais",
+                  "body": "Os números racionais incluem frações e decimais. São partes de um inteiro.",
+                  "example": "½ = 0,5 · ¼ = 0,25 · ¾ = 0,75<br>Metade de 100 = 50<br>Um terço de 90 = 30<br>Um quinto de 50 = 10",
+                  "trick": "Usa o dinheiro: ½=0,5=50 cêntimos. ¼=0,25=25 cêntimos. ¾=0,75=75 cêntimos!"
+                },
+                {
+                  "icon": "📏",
+                  "title": "Medidas de Comprimento",
+                  "body": "Usamos diferentes unidades para medir comprimentos. Aprende a converter!",
+                  "example": "1 km = 1.000 m<br>1 m = 100 cm<br>1 cm = 10 mm",
+                  "trick": "km→m: ×1000 · m→cm: ×100 · cm→mm: ×10. Para o contrário, divide!"
+                },
+                {
+                  "icon": "🪞",
+                  "title": "Simetria",
+                  "body": "Uma figura tem simetria quando um eixo a divide em duas metades espelhadas.",
+                  "example": "🦋 Borboleta · ❤️ Coração · ⭐ Estrela<br>O eixo de simetria é a linha divisória.<br>Um quadrado tem 4 eixos de simetria!",
+                  "trick": "Dobra o papel: se as metades ficam iguais, tem simetria! O eixo é a dobra."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é a fração equivalente a ½?",
+                  "options": [
+                    "²⁄₄",
+                    "²⁄₃",
+                    "³⁄₄",
+                    "¼"
+                  ],
+                  "answer": "²⁄₄",
+                  "why": "½ = ²⁄₄ porque multiplicamos numerador e denominador por 2: 1×2=2 e 2×2=4. São iguais!"
+                },
+                {
+                  "question": "¼ de 80 = ?",
+                  "options": [
+                    "20",
+                    "40",
+                    "10",
+                    "25"
+                  ],
+                  "answer": "20",
+                  "why": "¼ de 80 = 80 ÷ 4 = 20! Dividir por 4 é calcular um quarto."
+                },
+                {
+                  "question": "0,25 é igual a que fração?",
+                  "options": [
+                    "¼",
+                    "½",
+                    "⅕",
+                    "¾"
+                  ],
+                  "answer": "¼",
+                  "why": "0,25 = 25/100 = ¼. A quarta parte de 1 é 0,25 ou ¼!"
+                },
+                {
+                  "question": "0,75 é igual a que fração?",
+                  "options": [
+                    "¾",
+                    "½",
+                    "¼",
+                    "⅔"
+                  ],
+                  "answer": "¾",
+                  "why": "0,75 = 75/100 = **¾**. Podes verificar: 3 ÷ 4 = 0,75 ✓"
+                },
+                {
+                  "question": "½ + ½ = ?",
+                  "options": [
+                    "1",
+                    "½",
+                    "2",
+                    "¼"
+                  ],
+                  "answer": "1",
+                  "why": "½ + ½ = 2/2 = 1 inteiro. Duas metades formam um todo!"
+                },
+                {
+                  "question": "Qual é maior: ¾ ou ⅔?",
+                  "options": [
+                    "¾",
+                    "⅔",
+                    "São iguais",
+                    "Impossível comparar"
+                  ],
+                  "answer": "¾",
+                  "why": "¾ = 0,75 e ⅔ ≈ 0,67. Como 0,75 > 0,67, então ¾ é maior!"
+                },
+                {
+                  "question": "0,5 é igual a que fração?",
+                  "options": [
+                    "½",
+                    "¼",
+                    "⅕",
+                    "⅓"
+                  ],
+                  "answer": "½",
+                  "why": "0,5 = 5/10 = ½. A metade em decimal é 0,5!"
+                },
+                {
+                  "question": "¼ de 200 = ?",
+                  "options": [
+                    "50",
+                    "25",
+                    "100",
+                    "40"
+                  ],
+                  "answer": "50",
+                  "why": "¼ de 200 = 200 ÷ 4 = 50. Um quarto é a divisão por 4!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma turma tem 32 alunos. ¾ vieram à excursão. Quantos alunos foram?",
+                  "options": [
+                    "24",
+                    "8",
+                    "16",
+                    "28"
+                  ],
+                  "answer": "24",
+                  "why": "¾ de 32: primeiro ¼ de 32 = 8. Depois ¾ = 3 × 8 = 24 alunos foram à excursão!"
+                },
+                {
+                  "question": "Uma pizza está cortada em 8 fatias. João comeu 3, Ana comeu 2. Que fracção sobrou?",
+                  "options": [
+                    "⅜",
+                    "½",
+                    "¼",
+                    "⅝"
+                  ],
+                  "answer": "⅜",
+                  "why": "João + Ana = 3+2 = 5 fatias comidas. Sobram 8-5 = 3 fatias. Fracção = 3/8 = ⅜!"
+                },
+                {
+                  "question": "0,5 + 0,25 = ?",
+                  "options": [
+                    "0,75",
+                    "0,5",
+                    "1",
+                    "0,25"
+                  ],
+                  "answer": "0,75",
+                  "why": "0,5 = ½ e 0,25 = ¼. ½ + ¼ = 2/4 + 1/4 = 3/4 = 0,75!"
+                }
+              ]
             }
           ]
         },
@@ -293,17 +1055,343 @@
               "id": "mat4_t3_solidos_transf",
               "nome": "Sólidos Geométricos e Transformações",
               "icone": "📦",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📦",
+                  "title": "Sólidos Geométricos",
+                  "body": "Os sólidos têm faces, arestas e vértices. Identificamo-los pela sua planificação.",
+                  "list": [
+                    "Cubo: 6 faces quadradas, 12 arestas, 8 vértices",
+                    "Paralelepípedo: 6 faces retangulares",
+                    "Pirâmide: base + faces triangulares",
+                    "Cone: base circular + superfície lateral",
+                    "Cilindro: 2 bases circulares"
+                  ],
+                  "trick": "Euler: Faces + Vértices - Arestas = 2. Cubo: 6+8-12=2. Serve para qualquer sólido convexo!"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Prismas e Pirâmides",
+                  "body": "Prismas têm duas bases iguais e paralelas. Pirâmides têm uma base e faces triangulares que convergem num vértice.",
+                  "list": [
+                    "Prisma triangular: 5 faces, 9 arestas, 6 vértices",
+                    "Prisma quadrangular (cubo): 6 faces, 12 arestas, 8 vértices",
+                    "Pirâmide triangular: 4 faces, 6 arestas, 4 vértices",
+                    "Pirâmide quadrangular: 5 faces, 8 arestas, 5 vértices"
+                  ],
+                  "trick": "Prisma = 2 bases iguais. Pirâmide = 1 base + ponta (vértice único no topo)!"
+                },
+                {
+                  "icon": "🪞",
+                  "title": "Simetria de Reflexão",
+                  "body": "Uma figura tem simetria quando pode ser dividida por um eixo de simetria em duas metades iguais, como num espelho.",
+                  "example": "A letra A tem 1 eixo de simetria (vertical)\nO quadrado tem 4 eixos de simetria\nO círculo tem infinitos eixos!",
+                  "trick": "Dobra a figura ao meio. Se as duas partes coincidem exactamente — tem simetria!"
+                },
+                {
+                  "icon": "📦",
+                  "title": "Planificações de Sólidos",
+                  "body": "A planificação é o 'desdobramento' de um sólido em plano. Mostra como seria se o sólido fosse cortado e aberto.",
+                  "example": "Planificação de um cubo = 6 quadrados ligados\nPlanificação de um cilindro = 2 círculos + 1 rectângulo",
+                  "trick": "Imagina o sólido feito de cartão. Se o cortasses e abrires completamente = planificação!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Um cubo tem quantas faces?",
+                  "options": [
+                    "6",
+                    "4",
+                    "8",
+                    "12"
+                  ],
+                  "answer": "6",
+                  "why": "O cubo tem 6 faces QUADRADAS iguais. Pensa num dado de jogar — tem 6 faces!"
+                },
+                {
+                  "question": "Qual sólido tem apenas superfícies curvas?",
+                  "options": [
+                    "Esfera",
+                    "Cubo",
+                    "Pirâmide",
+                    "Cone"
+                  ],
+                  "answer": "Esfera",
+                  "why": "A ESFERA tem apenas superfície curva, sem faces planas, arestas ou vértices. Como uma bola!"
+                },
+                {
+                  "question": "Um sólido com 6 faces quadradas iguais chama-se...",
+                  "options": [
+                    "Cubo",
+                    "Cone",
+                    "Pirâmide",
+                    "Cilindro"
+                  ],
+                  "answer": "Cubo",
+                  "why": "O CUBO tem 6 faces quadradas IGUAIS, 12 arestas iguais e 8 vértices. Como um dado de jogar!"
+                },
+                {
+                  "question": "Quantas faces tem um cubo?",
+                  "options": [
+                    "6",
+                    "8",
+                    "4",
+                    "12"
+                  ],
+                  "answer": "6",
+                  "why": "O cubo tem 6 faces quadradas iguais. Lembra: os dados têm 6 faces!"
+                },
+                {
+                  "question": "Uma pirâmide quadrangular tem quantos vértices?",
+                  "options": [
+                    "5",
+                    "4",
+                    "8",
+                    "6"
+                  ],
+                  "answer": "5",
+                  "why": "4 vértices na base + 1 vértice no topo = 5 vértices no total!"
+                },
+                {
+                  "question": "Qual figura tem infinitos eixos de simetria?",
+                  "options": [
+                    "Círculo",
+                    "Quadrado",
+                    "Triângulo",
+                    "Rectângulo"
+                  ],
+                  "answer": "Círculo",
+                  "why": "O círculo pode ser dividido em duas metades iguais em qualquer direção — tem infinitos eixos!"
+                },
+                {
+                  "question": "A planificação de um cubo tem quantos quadrados?",
+                  "options": [
+                    "6",
+                    "4",
+                    "8",
+                    "12"
+                  ],
+                  "answer": "6",
+                  "why": "Um cubo tem 6 faces. A sua planificação tem exactamente 6 quadrados!"
+                },
+                {
+                  "question": "Qual é a diferença entre prisma e pirâmide?",
+                  "options": [
+                    "Prisma tem 2 bases; pirâmide tem 1",
+                    "Prisma tem 1 base; pirâmide tem 2",
+                    "São a mesma coisa",
+                    "Nenhuma diferença"
+                  ],
+                  "answer": "Prisma tem 2 bases; pirâmide tem 1",
+                  "why": "Prisma = 2 bases paralelas e iguais. Pirâmide = 1 base + faces triangulares que se encontram num vértice!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um prisma rectangular tem 12 arestas, 8 vértices e ___ faces.",
+                  "options": [
+                    "6",
+                    "4",
+                    "8",
+                    "10"
+                  ],
+                  "answer": "6",
+                  "why": "Todo o prisma rectangular (caixa) tem 6 faces: topo, base, frente, trás, esquerda, direita!"
+                },
+                {
+                  "question": "Quantos eixos de simetria tem um quadrado?",
+                  "options": [
+                    "4",
+                    "2",
+                    "1",
+                    "8"
+                  ],
+                  "answer": "4",
+                  "why": "O quadrado tem 4 eixos: 2 pelos lados e 2 pelas diagonais!"
+                },
+                {
+                  "question": "Uma pirâmide de base quadrada tem 8 arestas. Quantas estão na base?",
+                  "options": [
+                    "4",
+                    "8",
+                    "2",
+                    "6"
+                  ],
+                  "answer": "4",
+                  "why": "Base quadrada = 4 arestas na base + 4 arestas laterais = 8 total. Na base estão 4!"
+                }
+              ]
             },
             {
               "id": "mat4_t3_medidas",
               "nome": "Volume, Capacidade, Tempo e Dinheiro",
               "icone": "⏱️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "💵",
+                  "title": "Dinheiro — Problemas com Escudos",
+                  "body": "Resolvemos problemas com a moeda cabo-verdiana. O Escudo (CVE) é dividido em centavos (1$ = 100 centavos).",
+                  "example": "Compras: 350$ + 185$ = 535$<br>Troco: 1.000$ − 535$ = 465$<br>Desconto de ½: artigo a 800$ fica a 400$",
+                  "trick": "Lê o problema 3 vezes: 1ª entende, 2ª identifica os dados, 3ª escolhe a operação (+ - × ÷)!"
+                },
+                {
+                  "icon": "💧",
+                  "title": "Capacidade — Litro e Mililitro",
+                  "body": "O litro (L) e o mililitro (mL) medem a capacidade (quanto líquido um recipiente comporta).",
+                  "example": "1 litro = 1.000 mililitros\n🥛 Uma garrafa de água = 1,5 L\n💊 Uma colher de sopa ≈ 15 mL\n🛢️ Um bidão = 20 L",
+                  "trick": "1 L = 1.000 mL. Para converter L para mL: multiplica por 1.000. Para mL para L: divide!"
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Massa — Quilograma e Grama",
+                  "body": "O quilograma (kg) e o grama (g) medem a massa dos objetos.",
+                  "example": "1 kg = 1.000 g\n🐟 Um peixe médio ≈ 500 g = 0,5 kg\n🍎 Uma maçã ≈ 200 g\n👦 Uma criança ≈ 30 kg",
+                  "trick": "1 kg = 1.000 g. Kg para g: ×1000. G para kg: ÷1000. O quilo é o mais usado no mercado!"
+                },
+                {
+                  "icon": "⏱️",
+                  "title": "Tempo — Horas, Minutos e Segundos",
+                  "body": "O tempo mede-se em horas (h), minutos (min) e segundos (s).",
+                  "example": "1 hora = 60 minutos\n1 minuto = 60 segundos\n1 dia = 24 horas\n1 semana = 7 dias · 1 ano = 365 dias",
+                  "trick": "60 min = 1 h · 60 s = 1 min. Para converter: multiplica ou divide por 60!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "1,5 km = quantos metros?",
+                  "options": [
+                    "1.500 m",
+                    "150 m",
+                    "15 m",
+                    "1.050 m"
+                  ],
+                  "answer": "1.500 m",
+                  "why": "1 km = 1.000 m. Então 1,5 km = 1,5 × 1.000 = 1.500 m!"
+                },
+                {
+                  "question": "A Maria foi ao mercado com 500$. Gastou 185$. Quanto sobrou?",
+                  "options": [
+                    "315$",
+                    "285$",
+                    "415$",
+                    "195$"
+                  ],
+                  "answer": "315$",
+                  "why": "Troco = 500 − 185 = **315$**. Para verificar: 185 + 315 = 500 ✓"
+                },
+                {
+                  "question": "1 litro = quantos mililitros?",
+                  "options": [
+                    "1.000 mL",
+                    "100 mL",
+                    "500 mL",
+                    "10.000 mL"
+                  ],
+                  "answer": "1.000 mL",
+                  "why": "1 L = 1.000 mL. Uma garrafa de 1,5 L = 1.500 mL!"
+                },
+                {
+                  "question": "1 kg = quantos gramas?",
+                  "options": [
+                    "1.000 g",
+                    "100 g",
+                    "10.000 g",
+                    "500 g"
+                  ],
+                  "answer": "1.000 g",
+                  "why": "1 kg = 1.000 g. Para passar kg para g, multiplica por 1.000!"
+                },
+                {
+                  "question": "1 hora = quantos minutos?",
+                  "options": [
+                    "60 min",
+                    "100 min",
+                    "24 min",
+                    "30 min"
+                  ],
+                  "answer": "60 min",
+                  "why": "1 hora tem 60 minutos. 2 horas = 120 minutos!"
+                },
+                {
+                  "question": "2,5 litros = quantos mL?",
+                  "options": [
+                    "2.500 mL",
+                    "250 mL",
+                    "25.000 mL",
+                    "2.050 mL"
+                  ],
+                  "answer": "2.500 mL",
+                  "why": "2,5 × 1.000 = 2.500 mL. Multiplica o número de litros por 1.000!"
+                },
+                {
+                  "question": "3 kg 500 g = quantos gramas?",
+                  "options": [
+                    "3.500 g",
+                    "350 g",
+                    "35.000 g",
+                    "3.050 g"
+                  ],
+                  "answer": "3.500 g",
+                  "why": "3 kg = 3.000 g. 3.000 + 500 = 3.500 g no total!"
+                },
+                {
+                  "question": "Um filme dura 1h30min. Quantos minutos tem?",
+                  "options": [
+                    "90 min",
+                    "130 min",
+                    "60 min",
+                    "150 min"
+                  ],
+                  "answer": "90 min",
+                  "why": "1 hora = 60 min. 60 + 30 = 90 minutos no total!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "A Maria foi ao mercado com 1.000$. Comprou peixe por 350$ e legumes por 185$. Quanto sobrou?",
+                  "options": [
+                    "465$",
+                    "535$",
+                    "475$",
+                    "565$"
+                  ],
+                  "answer": "465$",
+                  "why": "350$ + 185$ = 535$ gastos. Troco: 1.000$ − 535$ = 465$!"
+                },
+                {
+                  "question": "Quanto é 8.500 − 3.250?",
+                  "options": [
+                    "5.250",
+                    "5.350",
+                    "5.150",
+                    "5.500"
+                  ],
+                  "answer": "5.250",
+                  "why": "8.500 − 3.250 = 5.250"
+                },
+                {
+                  "question": "A mãe foi ao mercado com 2.000$. Comprou peixe por 850$ e legumes por 430$. Quanto sobrou?",
+                  "options": [
+                    "720$",
+                    "780$",
+                    "820$",
+                    "680$"
+                  ],
+                  "answer": "720$",
+                  "why": "850 + 430 = 1.280$. 2.000 − 1.280 = 720$ de troco!"
+                },
+                {
+                  "question": "Um carro percorre 120 km por hora. Em 2 horas e meia, quantos km percorre?",
+                  "options": [
+                    "300 km",
+                    "240 km",
+                    "260 km",
+                    "360 km"
+                  ],
+                  "answer": "300 km",
+                  "why": "2,5 horas × 120 km/h = 300 km. Multiplica a velocidade pelo tempo!"
+                }
+              ]
             }
           ]
         }

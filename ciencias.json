@@ -217,17 +217,406 @@
               "id": "cie4_t1_cidadania",
               "nome": "Relações Sociais e Cidadania",
               "icone": "🏗️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🌍",
+                  "title": "Viver em Sociedade",
+                  "body": "Uma sociedade é um grupo organizado de pessoas com leis, instituições e valores comuns. Todos dependem uns dos outros.",
+                  "example": "🏛️ Parlamento faz leis<br>👮 Polícia garante segurança<br>🏫 Escola ensina<br>💼 Trabalho alimenta<br>👨‍👩‍👧‍👦 Família educa",
+                  "trick": "Sociedade = organização + respeito + responsabilidade mútua!"
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Organização Política: Direitos e Deveres",
+                  "body": "Todos temos direitos (educação, saúde, segurança) e deveres (respeitar leis, trabalhar, ser honesto).",
+                  "example": "Direito a educação = Dever de ir à escola 📚<br>Direito a saúde = Dever de cuidar do corpo 💪<br>Direito a segurança = Dever de respeitar outros 🤝",
+                  "trick": "Direito + dever = equilíbrio! Exiges direitos? Cumpre deveres!"
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Organização Política de Cabo Verde",
+                  "body": "Cabo Verde é uma república democrática. O poder é dividido em 3 órgãos principais.",
+                  "list": [
+                    "Presidente da República — Chefe de Estado (eleito de 5 em 5 anos)",
+                    "Assembleia Nacional — 72 deputados (poder legislativo)",
+                    "Governo — Primeiro-Ministro + Ministros (poder executivo)",
+                    "Câmaras Municipais — governam cada município"
+                  ],
+                  "trick": "3 poderes: LEGISLATIVO (Assembleia faz leis), EXECUTIVO (Governo aplica), JUDICIAL (Tribunais julgam)!"
+                },
+                {
+                  "icon": "👶",
+                  "title": "Direitos e Deveres das Crianças",
+                  "body": "Todas as crianças têm direitos protegidos e deveres a cumprir.",
+                  "example": "✅ Direitos: educação, saúde, alimentação, família, brincar, ser protegida<br>📌 Deveres: estudar, respeitar os outros, obedecer pais e professores, cuidar do ambiente",
+                  "trick": "A ONU criou a Convenção dos Direitos da Criança em 1989. Cabo Verde assinou!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é um dever nosso numa sociedade?",
+                  "options": [
+                    "Respeitar leis e outras pessoas",
+                    "Fazer o que queremos",
+                    "Não trabalhar",
+                    "Ignorar polícia"
+                  ],
+                  "answer": "Respeitar leis e outras pessoas",
+                  "why": "Deveres = responsabilidades! Cada cidadão contribui ao respeitar regras!"
+                },
+                {
+                  "question": "Quantas ilhas tem Cabo Verde?",
+                  "options": [
+                    "10",
+                    "9",
+                    "12",
+                    "8"
+                  ],
+                  "answer": "10",
+                  "why": "Cabo Verde tem exatamente 10 ilhas: 6 de Barlavento (norte) e 4 de Sotavento (sul)!"
+                },
+                {
+                  "question": "Qual é uma consequência das alterações climáticas em Cabo Verde?",
+                  "options": [
+                    "Subida do nível do mar",
+                    "Mais chuva em todo o arquipélago",
+                    "Mais animais selvagens",
+                    "Temperaturas iguais ao ano todo"
+                  ],
+                  "answer": "Subida do nível do mar",
+                  "why": "O aquecimento global derrete o gelo dos polos, fazendo subir o nível do mar. Para Cabo Verde, um país de ilhas, isso é muito preocupante!"
+                },
+                {
+                  "question": "Emigração significa...",
+                  "options": [
+                    "Sair do país de origem",
+                    "Entrar num novo país",
+                    "Viajar em férias",
+                    "Mudar de cidade"
+                  ],
+                  "answer": "Sair do país de origem",
+                  "why": "EMIGRAÇÃO = sair do país. Um cabo-verdiano que vai para Portugal é um emigrante em Cabo Verde!"
+                },
+                {
+                  "question": "Qual órgão bombeia o sangue no corpo humano?",
+                  "options": [
+                    "Coração",
+                    "Pulmão",
+                    "Fígado",
+                    "Rim"
+                  ],
+                  "answer": "Coração",
+                  "why": "O **coração** é o órgão central do sistema circulatório. Bate cerca de 70 vezes por minuto e envia sangue para todo o corpo!"
+                },
+                {
+                  "question": "O que é a cidadania?",
+                  "options": [
+                    "O conjunto de direitos e deveres de cada pessoa na sociedade",
+                    "O nome do presidente",
+                    "O local onde vivemos",
+                    "A bandeira do país"
+                  ],
+                  "answer": "O conjunto de direitos e deveres de cada pessoa na sociedade",
+                  "why": "Cidadania = ser parte activa da sociedade, conhecendo e cumprindo direitos e deveres!"
+                },
+                {
+                  "question": "Qual é um DEVER do cidadão cabo-verdiano?",
+                  "options": [
+                    "Pagar impostos",
+                    "Votar só se quiser",
+                    "Não respeitar as leis",
+                    "Ignorar os outros"
+                  ],
+                  "answer": "Pagar impostos",
+                  "why": "Pagar impostos é um dever cívico. Os impostos financiam escolas, hospitais e estradas para todos!"
+                },
+                {
+                  "question": "A Assembleia Nacional de Cabo Verde é...",
+                  "options": [
+                    "O órgão legislativo (faz as leis)",
+                    "O tribunal supremo",
+                    "O governo regional",
+                    "A polícia nacional"
+                  ],
+                  "answer": "O órgão legislativo (faz as leis)",
+                  "why": "A Assembleia Nacional = parlamento = onde os deputados eleitos pelo povo fazem as leis!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Como se equilibra direitos e deveres numa sociedade justa?",
+                  "options": [
+                    "Todos têm direitos, todos cumprem deveres",
+                    "Só direitos",
+                    "Só deveres",
+                    "Nenhum dos dois"
+                  ],
+                  "answer": "Todos têm direitos, todos cumprem deveres",
+                  "why": "Justiça = equilíbrio! Se pedes direito, deves cumprir teu dever!"
+                },
+                {
+                  "question": "Por que Cabo Verde é membro de organizações internacionais?",
+                  "options": [
+                    "Para cooperar com outros países em economia, segurança e cultura",
+                    "Não tem importância",
+                    "Obrigação só",
+                    "Para ganhar dinheiro fácil"
+                  ],
+                  "answer": "Para cooperar com outros países em economia, segurança e cultura",
+                  "why": "Organizações internacionais = ajuda mútua! Cabo Verde cresce cooperando!"
+                },
+                {
+                  "question": "Se houvesse um conflito entre dois vizinhos, qual instituição resolveria?",
+                  "options": [
+                    "Tribunal (justiça)",
+                    "Polícia",
+                    "Parlamento",
+                    "Câmara municipal"
+                  ],
+                  "answer": "Tribunal (justiça)",
+                  "why": "Tribunais julgam conflitos e asseguram justiça para todos!"
+                },
+                {
+                  "question": "A CEDEAO é a Comunidade Económica dos Estados da África Ocidental. Qual é o objetivo desta organização?",
+                  "options": [
+                    "Promover a cooperação económica entre países da África Ocidental",
+                    "Fazer guerra aos países vizinhos",
+                    "Controlar os mares do Atlântico",
+                    "Gerir os recursos naturais de África"
+                  ],
+                  "answer": "Promover a cooperação económica entre países da África Ocidental",
+                  "why": "A CEDEAO promove a integração económica, o comércio livre e a cooperação entre os 15 países da África Ocidental, incluindo Cabo Verde!"
+                }
+              ]
             },
             {
               "id": "cie4_t1_cultura_cv",
               "nome": "Cultura e Identidade de Cabo Verde",
               "icone": "🇨🇻",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🗺️",
+                  "title": "Cabo Verde no Mundo",
+                  "body": "Cabo Verde é um país no Oceano Atlântico, perto de África. Faz parte de organizações internacionais (CPLP, PALOP, CEDEAO).",
+                  "example": "🇨🇻 Capital: Praia (Santiago)<br>📍 10 ilhas no Atlântico<br>🌍 Membro da CPLP com Portugal, Brasil...<br>🤝 Membro da CEDEAO com outros países africanos",
+                  "trick": "Cabo Verde = ponte entre continentes! Pequeno, mas importante!"
+                },
+                {
+                  "icon": "👤",
+                  "title": "Migrações: Emigração e Imigração",
+                  "body": "Emigrar = sair do país. Imigrar = entrar num país. Muitas pessoas emigram de Cabo Verde por oportunidades.",
+                  "example": "Emigrado: cabo-verdiano que vai para Portugal/EUA 🛫<br>Imigrante: estrangeiro que vem para Cabo Verde 🛬<br>Razão: procurar trabalho, estudar, reunir família",
+                  "trick": "Migrante = pessoa que muda de país. Leva saudade, mas busca futuro melhor!"
+                },
+                {
+                  "icon": "🎉",
+                  "title": "Feriados e Símbolos Nacionais",
+                  "body": "Cabo Verde tem feriados nacionais (Independência em 5 de julho) e símbolos (bandeira, hino) que unem o povo.",
+                  "example": "🇨🇻 Bandeira: azul, branco, vermelho com estrelas<br>🎵 Hino Nacional = Cântico da Liberdade<br>⭐ Brasão: símbolo de soberania<br>🎂 5 de julho = Independência!",
+                  "trick": "Símbolos = identidade nacional! Respeita-os com orgulho!"
+                },
+                {
+                  "icon": "📜",
+                  "title": "História de Cabo Verde",
+                  "body": "Cabo Verde foi descoberto pelos portugueses e habitado a partir de 1462. Tornou-se independente em 1975.",
+                  "example": "1460-62: Descoberta das ilhas pelos portugueses<br>1462: Início do povoamento em Santiago<br>1975: Independência — 5 de Julho<br>O país foi colonizado por Portugal durante ~500 anos<br>O povo cabo-verdiano mistura culturas africanas e europeias",
+                  "trick": "1460-62 = descoberta. 5 Jul 1975 = Independência. 1992 = democracia multipartidária. Datas para saber!"
+                },
+                {
+                  "icon": "🌍",
+                  "title": "A Diáspora Cabo-Verdiana",
+                  "body": "A diáspora é a comunidade de cabo-verdianos que vive fora do país. Há mais cabo-verdianos fora do que dentro!",
+                  "example": "Principais destinos: Portugal, EUA, França, Países Baixos\nCausas históricas: seca, fome, desemprego\nHoje: cerca de 500.000 em Cabo Verde e 700.000+ na diáspora",
+                  "trick": "Diáspora = espalhados pelo mundo mas unidos pela cultura, língua e amor a Cabo Verde!"
+                },
+                {
+                  "icon": "🎭",
+                  "title": "Cultura de Cabo Verde",
+                  "body": "Cabo Verde tem uma cultura rica, mistura de África e Europa, expressa na música, dança e gastronomia.",
+                  "example": "🎵 Música: Morna (UNESCO), Funaná, Coladeira, Batuko<br>🍽️ Gastronomia: Cachupa, Canja de peixe<br>💃 Festas: Carnaval, São João, São Pedro",
+                  "trick": "MORNA = Património UNESCO! Cesária Évora tornou a morna famosa no mundo."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é a capital de Cabo Verde?",
+                  "options": [
+                    "Praia",
+                    "Mindelo",
+                    "Porto Novo",
+                    "Tarrafal"
+                  ],
+                  "answer": "Praia",
+                  "why": "Praia é a capital (está em Santiago), sede do Governo!"
+                },
+                {
+                  "question": "Qual é a data da independência de Cabo Verde?",
+                  "options": [
+                    "5 de julho",
+                    "1 de janeiro",
+                    "25 de dezembro",
+                    "30 de junho"
+                  ],
+                  "answer": "5 de julho",
+                  "why": "5 de julho de 1975 = Independência de Cabo Verde! Feriado nacional!"
+                },
+                {
+                  "question": "A que organizações internacionais Cabo Verde pertence?",
+                  "options": [
+                    "CPLP, PALOP, CEDEAO",
+                    "Só CPLP",
+                    "Só ONU",
+                    "Nenhuma"
+                  ],
+                  "answer": "CPLP, PALOP, CEDEAO",
+                  "why": "CPLP = Comunidade Portuguesa de Língua Portuguesa<br>PALOP = Países Africanos de Língua Oficial Portuguesa<br>CEDEAO = Comunidade Económica de Estados da África Ocidental!"
+                },
+                {
+                  "question": "Qual é a CAPITAL de Cabo Verde?",
+                  "options": [
+                    "Praia",
+                    "Mindelo",
+                    "Santa Maria",
+                    "São Filipe"
+                  ],
+                  "answer": "Praia",
+                  "why": "A Praia fica na ilha de Santiago e é a capital e maior cidade de Cabo Verde desde a independência em 1975!"
+                },
+                {
+                  "question": "O que é um 'habitat'?",
+                  "options": [
+                    "O lugar onde um ser vivo vive",
+                    "O alimento do animal",
+                    "A família do animal",
+                    "O ciclo de vida"
+                  ],
+                  "answer": "O lugar onde um ser vivo vive",
+                  "why": "O HABITAT é o ambiente natural onde um ser vivo vive e encontra tudo que precisa: comida, água e abrigo!"
+                },
+                {
+                  "question": "Em que ano Cabo Verde se tornou independente?",
+                  "options": [
+                    "1975",
+                    "1960",
+                    "1980",
+                    "1962"
+                  ],
+                  "answer": "1975",
+                  "why": "Cabo Verde declarou a sua independência de Portugal a 5 de Julho de 1975. Esta data é feriado nacional!"
+                },
+                {
+                  "question": "Qual parte da célula contém o DNA e controla as suas funções?",
+                  "options": [
+                    "Núcleo",
+                    "Membrana",
+                    "Citoplasma",
+                    "Parede celular"
+                  ],
+                  "answer": "Núcleo",
+                  "why": "O NÚCLEO é o centro de controlo da célula! Contém o DNA com a informação genética do ser vivo."
+                },
+                {
+                  "question": "A maioria dos cabo-verdianos emigrou historicamente por causa de...",
+                  "options": [
+                    "Seca e desemprego",
+                    "Turismo e aventura",
+                    "Guerra",
+                    "Melhores praias"
+                  ],
+                  "answer": "Seca e desemprego",
+                  "why": "A seca frequente e a falta de emprego foram as principais causas da emigração cabo-verdiana ao longo dos séculos!"
+                },
+                {
+                  "question": "Em que ano foi a independência de Cabo Verde?",
+                  "options": [
+                    "1975",
+                    "1960",
+                    "1980",
+                    "1492"
+                  ],
+                  "answer": "1975",
+                  "why": "Cabo Verde tornou-se independente de Portugal no dia **5 de Julho de 1975**. É o nosso Dia da Independência!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Se emigrasses de Cabo Verde, qual seria a razão mais comum?",
+                  "options": [
+                    "Procurar emprego/estudos melhorados",
+                    "Fugir da polícia",
+                    "Não gostar de clima",
+                    "Acaso"
+                  ],
+                  "answer": "Procurar emprego/estudos melhorados",
+                  "why": "Muitos cabo-verdianos emigram para Portugal, EUA, Brasil buscando oportunidades!"
+                },
+                {
+                  "question": "Por que é importante respeitar os símbolos nacionais?",
+                  "options": [
+                    "Porque representam a unidade e soberania do país",
+                    "Não é importante",
+                    "Porque são bonitos",
+                    "Obrigação só"
+                  ],
+                  "answer": "Porque representam a unidade e soberania do país",
+                  "why": "Bandeira, hino, brasão = identidade nacional! Mostra respeito pelo país!"
+                },
+                {
+                  "question": "Qual a diferença entre emigração e imigração?",
+                  "options": [
+                    "Emigração=sair do país, imigração=entrar",
+                    "São a mesma coisa",
+                    "Imigração=sair, emigração=entrar",
+                    "Só acontece em guerras"
+                  ],
+                  "answer": "Emigração=sair do país, imigração=entrar",
+                  "why": "EMIGRAÇÃO = sair (E de Exit). IMIGRAÇÃO = entrar (I de Into). Um cabo-verdiano em Portugal é emigrante de CV e imigrante em Portugal!"
+                },
+                {
+                  "question": "O que representa cada estrela na bandeira de Cabo Verde?",
+                  "options": [
+                    "Cada uma das 10 ilhas",
+                    "Cada um dos municípios",
+                    "Cada ano de independência",
+                    "Os 10 presidentes"
+                  ],
+                  "answer": "Cada uma das 10 ilhas",
+                  "why": "As 10 estrelas da bandeira representam as 10 ilhas de Cabo Verde: 6 de Barlavento e 4 de Sotavento!"
+                },
+                {
+                  "question": "O feriado de 5 de Julho comemora...",
+                  "options": [
+                    "A independência de Cabo Verde em 1975",
+                    "O descobrimento das ilhas",
+                    "O Dia do Trabalhador",
+                    "A liberdade de imprensa"
+                  ],
+                  "answer": "A independência de Cabo Verde em 1975",
+                  "why": "5 de Julho de 1975 é quando Cabo Verde declarou a sua independência de Portugal. É o feriado mais importante!"
+                },
+                {
+                  "question": "Feriado de 20 de Janeiro comemora os...",
+                  "options": [
+                    "Heróis Nacionais",
+                    "Trabalhadores",
+                    "Independência",
+                    "Descobrimento"
+                  ],
+                  "answer": "Heróis Nacionais",
+                  "why": "20 de Janeiro é o Dia dos Heróis Nacionais — homenageia aqueles que lutaram pela independência e pelo bem de Cabo Verde!"
+                },
+                {
+                  "question": "O que é a diáspora cabo-verdiana?",
+                  "options": [
+                    "Comunidade de cabo-verdianos a viver fora de CV",
+                    "Os turistas em Cabo Verde",
+                    "Os habitantes de Santiago",
+                    "O governo de Cabo Verde"
+                  ],
+                  "answer": "Comunidade de cabo-verdianos a viver fora de CV",
+                  "why": "A diáspora são os cabo-verdianos espalhados pelo mundo — em Portugal, EUA, França... São mais do que os que vivem em Cabo Verde!"
+                }
+              ]
             }
           ]
         },
@@ -239,17 +628,306 @@
               "id": "cie4_t2_economia",
               "nome": "Atividades Econômicas",
               "icone": "💼",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "💼",
+                  "title": "Atividades Económicas de Cabo Verde",
+                  "body": "A economia divide-se em 3 setores. Em Cabo Verde, o turismo e a pesca são muito importantes!",
+                  "list": [
+                    "🌱 Setor Primário: pesca, agricultura (milho, feijão), pecuária",
+                    "🏭 Setor Secundário: indústria, construção civil",
+                    "🛍️ Setor Terciário: turismo, comércio, serviços, transportes",
+                    "💻 Economia digital — setor em crescimento"
+                  ],
+                  "trick": "1° = da natureza (pesca, agri). 2° = transforma (indústria). 3° = serviços (turismo). CV é forte no 3°!"
+                },
+                {
+                  "icon": "🏭",
+                  "title": "Os Três Setores da Economia",
+                  "body": "A economia organiza-se em três sectores: primário (explorar recursos naturais), secundário (transformar matérias-primas) e terciário (serviços).",
+                  "list": [
+                    "🌊 Primário: pesca, agricultura, pecuária, extracção mineral",
+                    "🏭 Secundário: indústria, construção, transformação",
+                    "🏪 Terciário: turismo, comércio, transportes, educação, saúde"
+                  ],
+                  "trick": "Primário = tira da natureza. Secundário = transforma. Terciário = serve as pessoas!"
+                },
+                {
+                  "icon": "🐟",
+                  "title": "A Pesca em Cabo Verde",
+                  "body": "A pesca é uma das principais actividades económicas de Cabo Verde. O país tem uma vasta Zona Económica Exclusiva (ZEE) rica em peixe.",
+                  "example": "Espécies mais pescadas: atum, garoupa, lagosta\n🎣 Pesca artesanal: canoas tradicionais\n🚢 Pesca industrial: grandes embarcações\nZEE de Cabo Verde: 734.265 km²",
+                  "trick": "ZEE = Zona Económica Exclusiva — área marítima onde CV tem direito de pesca. É muito grande!"
+                },
+                {
+                  "icon": "🏖️",
+                  "title": "O Turismo em Cabo Verde",
+                  "body": "O turismo é o principal motor da economia cabo-verdiana. As ilhas atraem turistas pelas praias, o sol e a cultura.",
+                  "example": "🌊 Sal e Boa Vista = praias e resorts\n🏔️ Fogo e Santo Antão = turismo de natureza\n🎵 Santiago = turismo cultural e histórico\n💰 Turismo = +20% do PIB de Cabo Verde",
+                  "trick": "Sal e Boa Vista = sol e praia. Fogo e Santo Antão = montanhas. Santiago = cultura. Cada ilha tem o seu turismo!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual ilha pertence ao grupo de BARLAVENTO?",
+                  "options": [
+                    "São Vicente",
+                    "Santiago",
+                    "Fogo",
+                    "Brava"
+                  ],
+                  "answer": "São Vicente",
+                  "why": "São Vicente (onde fica Mindelo) pertence ao grupo de Barlavento! Santiago, Fogo e Brava são de Sotavento."
+                },
+                {
+                  "question": "Qual organização internacional agrupa os países africanos?",
+                  "options": [
+                    "União Africana (UA)",
+                    "União Europeia (UE)",
+                    "ONU",
+                    "OTAN"
+                  ],
+                  "answer": "União Africana (UA)",
+                  "why": "A UNIÃO AFRICANA (UA) é a organização que agrupa os 55 países africanos, incluindo Cabo Verde!"
+                },
+                {
+                  "question": "A pesca pertence a qual sector económico?",
+                  "options": [
+                    "Primário",
+                    "Secundário",
+                    "Terciário",
+                    "Quaternário"
+                  ],
+                  "answer": "Primário",
+                  "why": "A pesca extrai recursos directamente da natureza (do mar) — é o sector PRIMÁRIO!"
+                },
+                {
+                  "question": "O turismo pertence a qual sector económico?",
+                  "options": [
+                    "Terciário",
+                    "Primário",
+                    "Secundário",
+                    "Quaternário"
+                  ],
+                  "answer": "Terciário",
+                  "why": "O turismo é um serviço prestado às pessoas — é o sector TERCIÁRIO!"
+                },
+                {
+                  "question": "Qual é a principal fonte de rendimento de Cabo Verde?",
+                  "options": [
+                    "Turismo",
+                    "Pesca",
+                    "Agricultura",
+                    "Indústria"
+                  ],
+                  "answer": "Turismo",
+                  "why": "O turismo representa mais de 20% do PIB de Cabo Verde e é a principal fonte de receitas!"
+                },
+                {
+                  "question": "A ZEE (Zona Económica Exclusiva) de Cabo Verde é importante porque...?",
+                  "options": [
+                    "Dá direito de pesca e recursos marinhos",
+                    "É onde vivem os turistas",
+                    "É uma zona de agricultura",
+                    "É onde estão as fábricas"
+                  ],
+                  "answer": "Dá direito de pesca e recursos marinhos",
+                  "why": "A ZEE é a área marítima exclusiva de CV. Dentro dela, CV tem direito de pesca e exploração de recursos!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Por que razão o turismo é a principal atividade económica de Cabo Verde?",
+                  "options": [
+                    "Praias bonitas, clima quente, segurança e boa localização no Atlântico",
+                    "Porque tem muita indústria",
+                    "Porque tem grandes florestas",
+                    "Porque está perto do polo norte"
+                  ],
+                  "answer": "Praias bonitas, clima quente, segurança e boa localização no Atlântico",
+                  "why": "Cabo Verde tem praias fantásticas, sol quase todo o ano, é um país seguro e está bem localizado entre Europa, África e América. Perfeito para o turismo!"
+                },
+                {
+                  "question": "Se um pescador vende 50 kg de atum a 300$ o kg, quanto recebe?",
+                  "options": [
+                    "15.000$",
+                    "5.000$",
+                    "3.000$",
+                    "1.500$"
+                  ],
+                  "answer": "15.000$",
+                  "why": "50 kg × 300$ = 15.000$. Multiplicamos a quantidade pelo preço por quilo!"
+                },
+                {
+                  "question": "Qual a diferença entre pesca artesanal e pesca industrial?",
+                  "options": [
+                    "Artesanal usa canoas, industrial usa grandes embarcações",
+                    "Artesanal é mais cara",
+                    "Industrial é menos eficiente",
+                    "Não há diferença"
+                  ],
+                  "answer": "Artesanal usa canoas, industrial usa grandes embarcações",
+                  "why": "Artesanal = pequena escala, canoas tradicionais. Industrial = grande escala, navios modernos com tecnologia!"
+                }
+              ]
             },
             {
               "id": "cie4_t2_celula_animais",
               "nome": "A Célula, os Animais e o Corpo Humano",
               "icone": "🧬",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🧬",
+                  "title": "A Célula — Unidade da Vida",
+                  "body": "A célula é a unidade básica de todos os seres vivos. Cada célula tem partes com funções específicas.",
+                  "list": [
+                    "🔵 Membrana celular — envolve e protege a célula",
+                    "🟡 Citoplasma — substância interior onde ocorrem reações",
+                    "🔴 Núcleo — centro de controlo, contém o DNA",
+                    "🟢 Parede celular — só nas células vegetais (plantas)"
+                  ],
+                  "trick": "Membrana = muro (protege). Citoplasma = interior. Núcleo = chefe (DNA). Planta tem a mais: Parede + Cloroplasto!"
+                },
+                {
+                  "icon": "🌿",
+                  "title": "Cadeia Alimentar",
+                  "body": "Mostra quem come quem na natureza. As plantas são sempre os produtores.",
+                  "example": "🌾 Planta → 🐛 Lagarta → 🐸 Rã → 🦅 Águia<br>Produtor → Consumidor 1º → Consumidor 2º",
+                  "trick": "A cadeia começa SEMPRE numa planta. Se a planta desaparecer, toda a cadeia colapsa!"
+                },
+                {
+                  "icon": "💪",
+                  "title": "Corpo Humano e Saúde",
+                  "body": "O corpo tem vários sistemas que trabalham juntos.",
+                  "example": "🫀 Circulatório — coração bombeia o sangue<br>🫁 Respiratório — pulmões e traqueia<br>🦴 Locomotor — ossos e músculos<br>🧠 Nervoso — cérebro e nervos",
+                  "trick": "Para ter saúde: come bem, dorme 8h, faz exercício e higiene diária!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Na cadeia alimentar, as plantas são...",
+                  "options": [
+                    "Produtores",
+                    "Consumidores",
+                    "Decompositores",
+                    "Predadores"
+                  ],
+                  "answer": "Produtores",
+                  "why": "As plantas são os PRODUTORES porque fazem fotossíntese — produzem o seu próprio alimento usando a luz do sol!"
+                },
+                {
+                  "question": "A pesca pertence a que SETOR económico?",
+                  "options": [
+                    "Primário",
+                    "Secundário",
+                    "Terciário",
+                    "Quaternário"
+                  ],
+                  "answer": "Primário",
+                  "why": "O setor PRIMÁRIO extrai recursos diretamente da natureza: agricultura, pesca, pecuária, mineração!"
+                },
+                {
+                  "question": "Quem é o Chefe de Estado de Cabo Verde?",
+                  "options": [
+                    "O Presidente da República",
+                    "O Primeiro-Ministro",
+                    "O Presidente da Assembleia",
+                    "O Governador"
+                  ],
+                  "answer": "O Presidente da República",
+                  "why": "Em Cabo Verde, o PRESIDENTE DA REPÚBLICA é o Chefe de Estado. O Primeiro-Ministro chefia o Governo!"
+                },
+                {
+                  "question": "O turismo pertence a que setor económico?",
+                  "options": [
+                    "Terciário",
+                    "Primário",
+                    "Secundário",
+                    "Quaternário"
+                  ],
+                  "answer": "Terciário",
+                  "why": "O setor TERCIÁRIO inclui os serviços: turismo, comércio, transportes, saúde, educação. Em Cabo Verde, o turismo é a principal fonte de rendimento!"
+                },
+                {
+                  "question": "A fotossíntese ocorre principalmente em qual parte da planta?",
+                  "options": [
+                    "Folhas",
+                    "Raízes",
+                    "Flores",
+                    "Frutos"
+                  ],
+                  "answer": "Folhas",
+                  "why": "As **folhas** têm clorofila (cor verde) que capta a luz solar. A planta usa essa energia para transformar água e CO₂ em alimento!"
+                },
+                {
+                  "question": "Qual é a unidade básica da vida?",
+                  "options": [
+                    "A célula",
+                    "O átomo",
+                    "O órgão",
+                    "O tecido"
+                  ],
+                  "answer": "A célula",
+                  "why": "A célula é a menor unidade de vida. Todos os seres vivos são feitos de células!"
+                },
+                {
+                  "question": "No corpo humano, qual órgão filtra o sangue?",
+                  "options": [
+                    "Rim",
+                    "Coração",
+                    "Pulmão",
+                    "Estômago"
+                  ],
+                  "answer": "Rim",
+                  "why": "Os rins filtram o sangue e eliminam substâncias desnecessárias pela urina. Temos 2 rins!"
+                },
+                {
+                  "question": "Uma cadeia alimentar começa sempre com...",
+                  "options": [
+                    "Um produtor (planta)",
+                    "Um consumidor",
+                    "Um decompositor",
+                    "Um carnívoro"
+                  ],
+                  "answer": "Um produtor (planta)",
+                  "why": "As plantas são produtores — fabricam alimento pela fotossíntese. São sempre a base da cadeia alimentar!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Se as plantas (produtores) desaparecessem, o que aconteceria à cadeia alimentar?",
+                  "options": [
+                    "Colapsaria completamente",
+                    "Nada mudaria",
+                    "Os animais adaptariam",
+                    "Só os herbívoros seriam afectados"
+                  ],
+                  "answer": "Colapsaria completamente",
+                  "why": "Sem produtores, não há herbívoros. Sem herbívoros, não há carnívoros. Toda a cadeia alimentar colapsaria!"
+                },
+                {
+                  "question": "Qual sistema do corpo humano é responsável pela circulação do sangue?",
+                  "options": [
+                    "Sistema circulatório",
+                    "Sistema digestivo",
+                    "Sistema respiratório",
+                    "Sistema nervoso"
+                  ],
+                  "answer": "Sistema circulatório",
+                  "why": "O sistema circulatório (coração + vasos sanguíneos) bombeia sangue por todo o corpo, levando oxigénio e nutrientes!"
+                },
+                {
+                  "question": "Uma célula animal tem membrana, citoplasma e núcleo. Qual controla as funções da célula?",
+                  "options": [
+                    "O núcleo",
+                    "A membrana",
+                    "O citoplasma",
+                    "Todos igualmente"
+                  ],
+                  "answer": "O núcleo",
+                  "why": "O núcleo contém o DNA — a 'informação' genética que controla todas as funções e características da célula!"
+                }
+              ]
             }
           ]
         },
@@ -261,17 +939,340 @@
               "id": "cie4_t3_plantas_ambiente",
               "nome": "As Plantas e o Ambiente",
               "icone": "🌱",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🌿",
+                  "title": "Plantas — Diversidade e Utilidade",
+                  "body": "As plantas classificam-se em grupos. Em Cabo Verde, adaptaram-se ao clima seco.",
+                  "list": [
+                    "🌲 Árvores: tamareira, dragoeiro, coqueiro, acácia",
+                    "🌵 Plantas xerófitas: adaptadas à seca (acumula água)",
+                    "🌺 Flores: hibisco, buganvília",
+                    "🌾 Culturas: milho, feijão, banana, café (em S. Antão e Fogo)",
+                    "💊 Plantas medicinais: erva-cidreira, losna, pitanga"
+                  ],
+                  "trick": "Fotossíntese: LUZ + ÁGUA + CO₂ → AÇÚCAR (alimento) + OXIGÉNIO (ar que respiramos). As plantas produzem o nosso ar!"
+                },
+                {
+                  "icon": "🌿",
+                  "title": "As Partes da Planta e as suas Funções",
+                  "body": "As plantas têm partes bem definidas, cada uma com uma função essencial para a sua sobrevivência.",
+                  "list": [
+                    "🌱 Raiz — fixa a planta e absorve água e sais minerais",
+                    "🌿 Caule — transporta a seiva e suporta a planta",
+                    "🍃 Folha — realiza fotossíntese e respiração",
+                    "🌸 Flor — reprodução (produz sementes)",
+                    "🍎 Fruto — protege as sementes e ajuda na dispersão"
+                  ],
+                  "trick": "Raiz=absorve · Caule=transporta · Folha=fabrica · Flor=reproduz · Fruto=protege! Cada parte, uma função!"
+                },
+                {
+                  "icon": "☀️",
+                  "title": "A Fotossíntese",
+                  "body": "A fotossíntese é o processo pelo qual as plantas fabricam o seu próprio alimento usando luz solar, água e dióxido de carbono.",
+                  "example": "Luz solar + Água + CO₂ → Açúcar (alimento) + O₂\n☀️ + H₂O + CO₂ → Glicose + Oxigénio\n\nAs folhas verdes são o 'laboratório' da planta!",
+                  "trick": "Fotossíntese = foto (luz) + síntese (fabricar). As plantas FABRICAM alimento com LUZ. Nós comemos — elas produzem!"
+                },
+                {
+                  "icon": "🌍",
+                  "title": "Os Solos e a Agricultura em Cabo Verde",
+                  "body": "O solo é essencial para a agricultura. Em Cabo Verde, o solo é escasso e a água é pouca, mas algumas ilhas têm agricultura importante.",
+                  "example": "🌧️ Ilhas mais férteis: Santiago, São Nicolau, Santo Antão\n🌽 Culturas principais: milho, feijão, cana-de-açúcar\n💧 Rega por gotejamento — economiza água\n🏔️ Cultivo em terraços (socalcos) nas encostas",
+                  "trick": "Santiago, Santo Antão, São Nicolau = mais verde e agricultura. Sal e Boa Vista = mais áridas, menos agricultura!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "A Cachupa é...",
+                  "options": [
+                    "O prato nacional de Cabo Verde",
+                    "Uma dança da ilha do Fogo",
+                    "Um festival de música",
+                    "Um instrumento musical"
+                  ],
+                  "answer": "O prato nacional de Cabo Verde",
+                  "why": "A **Cachupa** é o prato mais tradicional de Cabo Verde, feita com milho, feijão e legumes. É a \"alma\" da cozinha cabo-verdiana!"
+                },
+                {
+                  "question": "Qual parte da planta realiza a fotossíntese?",
+                  "options": [
+                    "Folha",
+                    "Raiz",
+                    "Caule",
+                    "Flor"
+                  ],
+                  "answer": "Folha",
+                  "why": "As folhas têm clorofila (pigmento verde) que capta a luz solar para realizar a fotossíntese!"
+                },
+                {
+                  "question": "O que as raízes absorvem do solo?",
+                  "options": [
+                    "Água e sais minerais",
+                    "Luz solar",
+                    "Oxigénio",
+                    "Açúcar"
+                  ],
+                  "answer": "Água e sais minerais",
+                  "why": "As raízes têm a função de absorver água e sais minerais do solo — são como 'canudos' subterrâneos!"
+                },
+                {
+                  "question": "Na fotossíntese, as plantas libertam...",
+                  "options": [
+                    "Oxigénio",
+                    "Dióxido de carbono",
+                    "Azoto",
+                    "Água"
+                  ],
+                  "answer": "Oxigénio",
+                  "why": "As plantas absorvem CO₂ e libertam O₂ — por isso são fundamentais para o ar que respiramos!"
+                },
+                {
+                  "question": "Qual ilha de Cabo Verde tem mais agricultura?",
+                  "options": [
+                    "Santiago",
+                    "Sal",
+                    "Boa Vista",
+                    "Santa Luzia"
+                  ],
+                  "answer": "Santiago",
+                  "why": "Santiago é a maior ilha e tem mais precipitação. É a mais importante para a agricultura de CV!"
+                },
+                {
+                  "question": "O caule tem como função principal...",
+                  "options": [
+                    "Transportar a seiva",
+                    "Absorver água",
+                    "Fabricar alimento",
+                    "Reprodução"
+                  ],
+                  "answer": "Transportar a seiva",
+                  "why": "O caule é como um 'tubo' que transporta a seiva (água + sais minerais) das raízes para as folhas!"
+                },
+                {
+                  "question": "Qual técnica de rega economiza mais água em Cabo Verde?",
+                  "options": [
+                    "Rega por gotejamento",
+                    "Rega por aspersão",
+                    "Rega por inundação",
+                    "Rega manual"
+                  ],
+                  "answer": "Rega por gotejamento",
+                  "why": "A rega por gotejamento leva a água directamente à raiz, sem desperdício. Ideal em zonas com pouca água como CV!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Sem fotossíntese das plantas, o que aconteceria ao oxigénio na Terra?",
+                  "options": [
+                    "Diminuiria drasticamente",
+                    "Aumentaria",
+                    "Ficaria igual",
+                    "Desapareceria imediatamente"
+                  ],
+                  "answer": "Diminuiria drasticamente",
+                  "why": "As plantas produzem a maior parte do oxigénio da Terra. Sem elas, o O₂ diminuiria e a vida ficaria em risco!"
+                },
+                {
+                  "question": "Por que razão a agricultura em Cabo Verde é difícil?",
+                  "options": [
+                    "Pouca chuva e solo escasso",
+                    "Demasiada chuva",
+                    "Solo muito fértil",
+                    "Excesso de água"
+                  ],
+                  "answer": "Pouca chuva e solo escasso",
+                  "why": "CV é um arquipélago árido com poucas chuvas e solos pobres. A escassez de água é o principal obstáculo!"
+                },
+                {
+                  "question": "Um agricultor planta 200 sementes. Se 75% germinarem, quantas plantas nascem?",
+                  "options": [
+                    "150",
+                    "100",
+                    "200",
+                    "75"
+                  ],
+                  "answer": "150",
+                  "why": "75% de 200 = 200 × 0,75 = 150 plantas. Três quartos das sementes germinam!"
+                }
+              ]
             },
             {
               "id": "cie4_t3_experiencias",
               "nome": "Alterações Climáticas e Ciências Experimentais",
               "icone": "🔬",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🌡️",
+                  "title": "Alterações Climáticas e Ambiente",
+                  "body": "O clima da Terra está a mudar! As alterações climáticas afetam especialmente países insulares como Cabo Verde.",
+                  "list": [
+                    "🌡️ Aumento da temperatura global",
+                    "🌊 Subida do nível do mar — ameaça as costas e ilhas baixas",
+                    "🌧️ Mudança nos padrões de chuva — mais secas em Cabo Verde",
+                    "💨 Ventos mais fortes e mais tempestades",
+                    "♻️ Como ajudar: poupar energia, reciclar, plantar árvores"
+                  ],
+                  "trick": "CO₂ retém calor → Terra aquece → gelo derrete → nível do mar sobe. CV como ilha está em risco!"
+                },
+                {
+                  "icon": "🌡️",
+                  "title": "As Alterações Climáticas — Causas e Efeitos",
+                  "body": "As alterações climáticas são mudanças duradouras nos padrões do clima causadas principalmente pela actividade humana.",
+                  "list": [
+                    "Causa principal: queima de combustíveis fósseis (CO₂)",
+                    "Efeito estufa → aquecimento global",
+                    "Consequências: subida do nível do mar, secas, tempestades",
+                    "Em CV: erosão costeira, escassez de água, desertificação"
+                  ],
+                  "trick": "CO₂ → Estufa → Aquecimento → Consequências. A cadeia das alterações climáticas!"
+                },
+                {
+                  "icon": "🔬",
+                  "title": "O Método Científico",
+                  "body": "O método científico é a forma rigorosa de investigar e descobrir verdades sobre o mundo.",
+                  "list": [
+                    "1. Observar — perceber um fenómeno",
+                    "2. Questionar — formular uma pergunta",
+                    "3. Hipótese — propor uma explicação",
+                    "4. Experimentar — testar a hipótese",
+                    "5. Analisar — estudar os resultados",
+                    "6. Concluir — confirmar ou refutar a hipótese"
+                  ],
+                  "trick": "OQ-HEA-C: Observar, Questionar, Hipótese, Experimentar, Analisar, Concluir!"
+                },
+                {
+                  "icon": "💡",
+                  "title": "Experiências Simples — Pressão e Estados da Matéria",
+                  "body": "A ciência experimental permite observar fenómenos físicos e químicos de forma directa.",
+                  "example": "💧 Ebulição: água ferve a 100°C\n🧊 Solidificação: água congela a 0°C\n💨 Evaporação: água vira vapor\n🎈 Pressão do ar: o ar ocupa espaço e tem peso",
+                  "trick": "Sólido→Líquido=Fusão. Líquido→Gás=Evaporação/Ebulição. Gás→Líquido=Condensação. Estados da matéria!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "'Morabeza' é...",
+                  "options": [
+                    "A hospitalidade cabo-verdiana",
+                    "Um prato típico",
+                    "Uma dança",
+                    "Um festival"
+                  ],
+                  "answer": "A hospitalidade cabo-verdiana",
+                  "why": "MORABEZA é uma palavra crioula que descreve a gentileza, carinho e hospitalidade do povo cabo-verdiano!"
+                },
+                {
+                  "question": "Qual é a principal causa das alterações climáticas?",
+                  "options": [
+                    "Queima de combustíveis fósseis",
+                    "Chuva excessiva",
+                    "Actividade vulcânica",
+                    "Vento forte"
+                  ],
+                  "answer": "Queima de combustíveis fósseis",
+                  "why": "A queima de petróleo, carvão e gás liberta CO₂ que provoca o efeito estufa e o aquecimento global!"
+                },
+                {
+                  "question": "O efeito estufa é causado pelo aumento de...",
+                  "options": [
+                    "CO₂ na atmosfera",
+                    "Oxigénio",
+                    "Azoto",
+                    "Vapor de água"
+                  ],
+                  "answer": "CO₂ na atmosfera",
+                  "why": "O CO₂ e outros gases de efeito estufa retêm o calor do sol, fazendo a Terra aquecer mais!"
+                },
+                {
+                  "question": "Qual consequência das alt. climáticas afecta mais as ilhas costeiras de CV?",
+                  "options": [
+                    "Subida do nível do mar",
+                    "Neve",
+                    "Diminuição do sol",
+                    "Mais chuva"
+                  ],
+                  "answer": "Subida do nível do mar",
+                  "why": "O degelo das calotes polares faz subir o nível do mar. As ilhas baixas de CV (Sal, Boa Vista) são as mais vulneráveis!"
+                },
+                {
+                  "question": "No método científico, o que é uma hipótese?",
+                  "options": [
+                    "Uma explicação possível a testar",
+                    "Uma conclusão definitiva",
+                    "Um resultado confirmado",
+                    "Uma observação"
+                  ],
+                  "answer": "Uma explicação possível a testar",
+                  "why": "A hipótese é uma explicação provisória que propomos ANTES de experimentar. Pode ser confirmada ou refutada!"
+                },
+                {
+                  "question": "A água ferve a que temperatura?",
+                  "options": [
+                    "100°C",
+                    "0°C",
+                    "50°C",
+                    "37°C"
+                  ],
+                  "answer": "100°C",
+                  "why": "A água entra em ebulição (ferve) a 100°C ao nível do mar. A 0°C congela (solidifica)!"
+                },
+                {
+                  "question": "Quando a água líquida se transforma em vapor, este processo chama-se...",
+                  "options": [
+                    "Evaporação",
+                    "Condensação",
+                    "Solidificação",
+                    "Fusão"
+                  ],
+                  "answer": "Evaporação",
+                  "why": "Evaporação = passagem do estado líquido para gasoso. Ocorre quando o sol aquece a água!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Se o nível do mar subir 1 metro, qual ilha de Cabo Verde seria mais afetada?",
+                  "options": [
+                    "Sal (ilha plana e baixa)",
+                    "Fogo (vulcânica e alta)",
+                    "Santo Antão (montanhosa)",
+                    "Brava (íngreme)"
+                  ],
+                  "answer": "Sal (ilha plana e baixa)",
+                  "why": "A ilha do Sal é muito plana e baixa. Uma subida do nível do mar inundaria grande parte da ilha! Fogo, Santo Antão e Brava são muito mais altas."
+                },
+                {
+                  "question": "Por que razão as alterações climáticas são uma ameaça especial para Cabo Verde?",
+                  "options": [
+                    "É um arquipélago com ilhas baixas e pouca água",
+                    "Tem muita neve",
+                    "Está no polo norte",
+                    "Tem muitas fábricas"
+                  ],
+                  "answer": "É um arquipélago com ilhas baixas e pouca água",
+                  "why": "CV é vulnerável por ter ilhas com zonas costeiras baixas (risco de inundação) e já sofre de escassez de água!"
+                },
+                {
+                  "question": "Um cientista observa que as plantas crescem mais perto de janelas. Qual seria a hipótese?",
+                  "options": [
+                    "As plantas precisam de luz para crescer",
+                    "As plantas precisam de frio",
+                    "O vento ajuda as plantas",
+                    "A janela é decorativa"
+                  ],
+                  "answer": "As plantas precisam de luz para crescer",
+                  "why": "A hipótese explica a observação: as plantas crescem mais perto de janelas porque precisam de mais LUZ!"
+                },
+                {
+                  "question": "Se a temperatura global subir 2°C, qual seria o principal impacto em CV?",
+                  "options": [
+                    "Mais secas e subida do mar",
+                    "Mais chuva",
+                    "Mais neve",
+                    "Temperaturas mais agradáveis"
+                  ],
+                  "answer": "Mais secas e subida do mar",
+                  "why": "Com +2°C: mais evaporação (secas), degelo das calotes (subida do mar). Para CV = menos água e risco costeiro!"
+                }
+              ]
             }
           ]
         }

@@ -501,9 +501,167 @@
               "id": "por4_t1_familia",
               "nome": "Minha Querida Família — Texto Poético e Narrativo",
               "icone": "👨‍👩‍👧",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📖",
+                  "title": "Texto Narrativo",
+                  "body": "Um texto narrativo conta uma história. Tem personagens, narrador, tempo, espaço e sequência de ações.",
+                  "list": [
+                    "Personagens: quem aparece na história (principal e secundárias)",
+                    "Narrador: quem conta a história (pode ser personagem ou exterior)",
+                    "Tempo: quando a história se passa",
+                    "Espaço: onde acontece a história",
+                    "Sequência de ações: início, desenvolvimento, conclusão"
+                  ],
+                  "trick": "5 perguntas: QUEM? (personagens) ONDE? (espaço) QUANDO? (tempo) O QUÊ? (ações) QUEM CONTA? (narrador)!"
+                },
+                {
+                  "icon": "🎭",
+                  "title": "Texto Poético",
+                  "body": "O texto poético expressa sentimentos e emoções através de versos e estrofes. Usa linguagem especial: rima, ritmo e figuras de estilo.",
+                  "list": [
+                    "Verso — cada linha do poema",
+                    "Estrofe — grupo de versos (quadra = 4 versos; dístico = 2 versos)",
+                    "Rima — sons iguais no final dos versos (ex: mar / amar)",
+                    "Ritmo — musicalidade do poema ao ser lido em voz alta",
+                    "Recursos expressivos: comparação, personificação, metáfora"
+                  ],
+                  "trick": "Poema = VERsos em ESTROfes com RIMA. Lê em voz alta e sentes o ritmo! Em CV: mornas e coladeiras são poesia cantada!"
+                },
+                {
+                  "icon": "🎭",
+                  "title": "O Texto Dramático — Diálogos e Rubricas",
+                  "body": "O texto dramático é escrito para ser representado. É organizado em diálogos (falas das personagens) e rubricas (indicações para os actores).",
+                  "example": "PEDRO — Amanhã vou ao mercado.\nANA — Eu também! (sorri)\n↑ fala        ↑ rubrica",
+                  "trick": "Fala = o que a personagem diz. Rubrica = indicação de como agir (entre parênteses). Fácil!"
+                },
+                {
+                  "icon": "📝",
+                  "title": "Planificação e Revisão de Textos",
+                  "body": "Antes de escrever um texto, devemos planificar (pensar o que vamos dizer). Depois de escrever, revisamos (corrigimos erros).",
+                  "list": [
+                    "1. Planificar — O quê? Para quem? Como?",
+                    "2. Redigir — Escrever o texto",
+                    "3. Rever — Ler e corrigir erros de ortografia e gramática",
+                    "4. Melhorar — Substituir palavras repetidas"
+                  ],
+                  "trick": "P-R-R-M: Planificar → Redigir → Rever → Melhorar. Nunca saltares o passo 3!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Num texto narrativo, a personagem principal é...",
+                  "options": [
+                    "Quem tem mais importância na história",
+                    "O narrador",
+                    "O espaço da história",
+                    "O título do livro"
+                  ],
+                  "answer": "Quem tem mais importância na história",
+                  "why": "A personagem principal (ou protagonista) é aquela a quem a história acontece principalmente!"
+                },
+                {
+                  "question": "Em 'O narrador conta a história de fora', o narrador é...",
+                  "options": [
+                    "Narrador heterodiegético (exterior)",
+                    "Narrador autodiegético",
+                    "Personagem principal",
+                    "O autor"
+                  ],
+                  "answer": "Narrador heterodiegético (exterior)",
+                  "why": "Quando o narrador conta a história sem ser personagem, é um narrador exterior (heterodiegético)!"
+                },
+                {
+                  "question": "Qual é a estrutura de um texto narrativo?",
+                  "options": [
+                    "Introdução, Desenvolvimento, Conclusão",
+                    "Título, Corpo, Assinatura",
+                    "Verso, Estrofe, Rima",
+                    "Pergunta, Resposta, Conclusão"
+                  ],
+                  "answer": "Introdução, Desenvolvimento, Conclusão",
+                  "why": "Todo o texto narrativo tem 3 partes: começa (Introdução), desenvolve a acção (Desenvolvimento) e termina (Conclusão)!"
+                },
+                {
+                  "question": "Num poema, cada linha chama-se...",
+                  "options": [
+                    "Verso",
+                    "Estrofe",
+                    "Rima",
+                    "Estância"
+                  ],
+                  "answer": "Verso",
+                  "why": "Verso = cada linha de um poema. Estrofe = grupo de versos. Rima = semelhança de sons no fim dos versos!"
+                },
+                {
+                  "question": "Num texto narrativo, o ESPAÇO indica...",
+                  "options": [
+                    "Onde a história se passa",
+                    "Quando acontece",
+                    "Quem são as personagens",
+                    "O que acontece"
+                  ],
+                  "answer": "Onde a história se passa",
+                  "why": "Espaço = ONDE. Tempo = QUANDO. Personagens = QUEM. Enredo = O QUÊ. São os 4 elementos do texto narrativo!"
+                },
+                {
+                  "question": "Quando versos têm sons iguais no final, chamamos isso de...",
+                  "options": [
+                    "Rima",
+                    "Metro",
+                    "Verso",
+                    "Estrofe"
+                  ],
+                  "answer": "Rima",
+                  "why": "Rima = repetição de sons iguais no final dos versos. Ex: 'mar' rima com 'andar'!"
+                },
+                {
+                  "question": "Um grupo de versos num poema chama-se...",
+                  "options": [
+                    "Estrofe",
+                    "Verso",
+                    "Rima",
+                    "Parágrafo"
+                  ],
+                  "answer": "Estrofe",
+                  "why": "Estrofe = conjunto de versos. Como um parágrafo num texto narrativo, mas num poema!"
+                },
+                {
+                  "question": "O NARRADOR num texto narrativo é...",
+                  "options": [
+                    "Quem conta a história",
+                    "A personagem principal",
+                    "O espaço da história",
+                    "O tempo da narrativa"
+                  ],
+                  "answer": "Quem conta a história",
+                  "why": "O narrador é a 'voz' que conta a história. Pode ser personagem (1ª pessoa) ou externo (3ª pessoa)!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Lê: 'O velho pescador saiu ao amanhecer. Voltou ao entardecer com um cardume enorme.' A personagem principal é...",
+                  "options": [
+                    "O velho pescador",
+                    "O mar",
+                    "O peixe",
+                    "O entardecer"
+                  ],
+                  "answer": "O velho pescador",
+                  "why": "A personagem principal é aquela a quem a ação principal pertence. É o velho pescador que sai e volta!"
+                },
+                {
+                  "question": "Num poema sobre o mar, os versos 'As ondas batem na areia / e voltam para o mar com alegria' têm rima?",
+                  "options": [
+                    "Sim, areia rima com alegria",
+                    "Não, nenhum som se repete",
+                    "Só parcialmente",
+                    "Não é possível saber"
+                  ],
+                  "answer": "Sim, areia rima com alegria",
+                  "why": "'areia' e 'alegria' terminam com o mesmo som '-ia'. São palavras que rimam!"
+                }
+              ]
             }
           ]
         },
@@ -515,9 +673,364 @@
               "id": "por4_t2_historias",
               "nome": "Histórias de Espantar — Texto Narrativo e Entrevista",
               "icone": "📖",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔍",
+                  "title": "Análise Morfológica",
+                  "body": "Analisamos as palavras quanto à sua classe, género, número e grau.",
+                  "example": "'As meninas altas correram rapidamente.'<br>As → artigo, feminino plural<br>meninas → nome, feminino plural<br>altas → adjetivo, feminino plural<br>correram → verbo, 3ª pessoa plural, passado",
+                  "trick": "Prefixo + Raiz + Sufixo. Des-organiz-ado: des = negação, organiz = raiz, ado = sufixo de adjetivo!"
+                },
+                {
+                  "icon": "🎭",
+                  "title": "Flexão dos Adjetivos",
+                  "body": "Os adjetivos flexionam em género e número. Têm também graus: normal, comparativo e superlativo.",
+                  "example": "Género: bonito (m.) → bonita (f.)<br>Número: bonito → bonitos<br>Normal: O mar é bonito.<br>Comparativo: Este mar é mais bonito que aquele.<br>Superlativo: Este mar é lindíssimo / o mais bonito!",
+                  "trick": "O adjetivo CONCORDA com o nome! Casa bonita (f.sg), casas bonitas (f.pl), livro bonito (m.sg)!"
+                },
+                {
+                  "icon": "👥",
+                  "title": "Pronomes Pessoais e Possessivos",
+                  "body": "Pronomes pessoais substituem nomes. Possessivos indicam posse.",
+                  "example": "Pessoais: eu, tu, ele, ela, nós, vós, eles, elas<br>Possessivos: meu/minha, teu/tua, seu/sua, nosso/nossa<br>'A Ana foi à escola. Ela chegou cedo.'<br>'Este livro é meu. O teu é onde?'",
+                  "trick": "Pronome substitui o nome para não repetir: A Ana foi. ELA chegou. ELA = pronome de Ana (3ª pessoa f.)!"
+                },
+                {
+                  "icon": "📝",
+                  "title": "Flexão Verbal Completa",
+                  "body": "Os verbos flexionam no presente, pretérito imperfeito, pretérito perfeito e futuro.",
+                  "example": "Verbo COMER:<br>Presente: como, comes, come, comemos...<br>Imperfeito: comia, comias, comia...<br>Perfeito: comi, comeste, comeu...<br>Futuro: comerei, comerás, comerá...",
+                  "trick": "EU como, TU comes, ELE come, NÓS comemos, ELES comem. O verbo muda com a pessoa e com o tempo!"
+                },
+                {
+                  "icon": "🔗",
+                  "title": "Frases Simples e Complexas",
+                  "body": "Uma frase simples tem uma oração. Uma frase complexa tem duas ou mais orações ligadas por conjunções.",
+                  "example": "Simples: 'O peixe nada.'<br>Complexa: 'O peixe nada e o barco avança.'<br>'Quando chove, os pescadores ficam em casa.'<br>Conjunções: e, mas, porque, quando, se...",
+                  "trick": "Simples = 1 verbo principal. Complexa = 2+ verbos ligados por: que, porque, quando, se, embora..."
+                },
+                {
+                  "icon": "🐠",
+                  "title": "Nomes Coletivos",
+                  "body": "Os nomes coletivos referem-se a um grupo de seres ou coisas da mesma espécie.",
+                  "example": "Cardume = grupo de peixes 🐟<br>Rebanho = grupo de ovelhas 🐑<br>Manada = grupo de elefantes 🐘<br>Alcateia = grupo de lobos 🐺<br>Frota = conjunto de barcos ⛵",
+                  "trick": "Cardume = peixes, Rebanho = ovelhas, Manada = elefantes, Alcateia = lobos. Aprende aos pares: animal + coletivo!"
+                },
+                {
+                  "icon": "📌",
+                  "title": "Frase Declarativa",
+                  "body": "A frase declarativa afirma algo. Termina com ponto final (.). Responde a 'O que é isso?'",
+                  "example": "Cabo Verde é um arquipélago. 🏝️<br>A escola fica no bairro. 🏫<br>O peixe é saboroso. 🐟",
+                  "trick": "Declarativa = declara/afirma. Termina com ponto final. É a mais comum!"
+                },
+                {
+                  "icon": "❓",
+                  "title": "Frase Interrogativa",
+                  "body": "A frase interrogativa faz uma pergunta. Termina com ponto de interrogação (?). Pede informação.",
+                  "example": "Como te chamas? 👋<br>Quando é o teu aniversário? 🎂<br>Onde mora o João? 📍",
+                  "trick": "Interrogativa = interroga (pergunta). Termina com ponto de interrogação. Começa com: quem, onde, quando, como, porque..."
+                },
+                {
+                  "icon": "❗",
+                  "title": "Frase Exclamativa",
+                  "body": "A frase exclamativa expressa emoção, admiração ou surpresa. Termina com ponto de exclamação (!).",
+                  "example": "Que belo pôr-do-sol! 🌅<br>Parabéns! 🎉<br>Que medo! 👻",
+                  "trick": "Exclamativa = expressa emoção. Termina com ! Usa muita emoção na voz!"
+                },
+                {
+                  "icon": "👉",
+                  "title": "Frase Imperativa",
+                  "body": "A frase imperativa dá uma ordem, pedido ou conselho. Termina com ponto final (.) ou exclamação (!).",
+                  "example": "Estuda bem! 📚<br>Faz os deveres. 📝<br>Vem aqui! 👋<br>Sê bom rapaz.",
+                  "trick": "Imperativa = imper-a (ordem). Diz ao outro o que fazer. Começa com verbo no imperativo!"
+                },
+                {
+                  "icon": "🔄",
+                  "title": "Formas de Frase: Negativa e Afirmativa",
+                  "body": "Afirmativa = confirma algo. Negativa = nega algo. A forma pode ser afirmativa ou negativa.",
+                  "example": "Afirmativa: 'Eu gosto de peixe.' ✓<br>Negativa: 'Eu NÃO gosto de peixe.' ✗<br>Afirmativa: 'A foca é um animal.' ✓<br>Negativa: 'A foca NÃO é um pássaro.' ✗",
+                  "trick": "Nega-se com 'não' ou outras palavras: não, nunca, jamais, ninguém, nada!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o COLETIVO de 'peixe'?",
+                  "options": [
+                    "Cardume",
+                    "Rebanho",
+                    "Manada",
+                    "Alcateia"
+                  ],
+                  "answer": "Cardume",
+                  "why": "Um grupo de peixes a nadar juntos chama-se CARDUME! Rebanho=ovelhas, Manada=elefantes."
+                },
+                {
+                  "question": "'A Ana foi à escola. ___ chegou cedo.' Que pronome completa?",
+                  "options": [
+                    "Ela",
+                    "Ele",
+                    "Eles",
+                    "Tu"
+                  ],
+                  "answer": "Ela",
+                  "why": "Ana é feminino singular, 3ª pessoa → pronome 'ela'. 'A Ana foi à escola. Ela chegou cedo.'"
+                },
+                {
+                  "question": "'A casa é ___' (bonito) — forma correta?",
+                  "options": [
+                    "bonita",
+                    "bonito",
+                    "bonitos",
+                    "bonitas"
+                  ],
+                  "answer": "bonita",
+                  "why": "O adjetivo CONCORDA com o nome! 'Casa' é feminino singular → bonita (feminino singular)!"
+                },
+                {
+                  "question": "Que sinal de pontuação introduz uma lista ou fala direta?",
+                  "options": [
+                    "Dois pontos (:)",
+                    "Vírgula (,)",
+                    "Ponto final (.)",
+                    "Reticências (...)"
+                  ],
+                  "answer": "Dois pontos (:)",
+                  "why": "Os dois pontos (:) introduzem uma enumeração/lista ou o discurso direto (fala de alguém)!"
+                },
+                {
+                  "question": "Qual frase é COMPLEXA?",
+                  "options": [
+                    "O peixe nada porque está com fome.",
+                    "O peixe nada.",
+                    "A ilha é bonita.",
+                    "Cabo Verde é um arquipélago."
+                  ],
+                  "answer": "O peixe nada porque está com fome.",
+                  "why": "Frase complexa tem 2 orações ligadas por conjunção: 'O peixe nada' + 'porque' + 'está com fome'!"
+                },
+                {
+                  "question": "'Comia' é o pretérito...",
+                  "options": [
+                    "Imperfeito",
+                    "Perfeito",
+                    "Futuro",
+                    "Presente"
+                  ],
+                  "answer": "Imperfeito",
+                  "why": "'Comia' é o pretérito IMPERFEITO. Indica uma ação passada habitual ou contínua: 'Eu comia peixe todos os dias.'"
+                },
+                {
+                  "question": "'Este livro é ___.' (meu — pronome possessivo correto para 'eu')",
+                  "options": [
+                    "meu",
+                    "teu",
+                    "seu",
+                    "nosso"
+                  ],
+                  "answer": "meu",
+                  "why": "O pronome possessivo da 1ª pessoa singular é 'meu' (masculino) / 'minha' (feminino)!"
+                },
+                {
+                  "question": "Qual é o coletivo de 'barcos'?",
+                  "options": [
+                    "Frota",
+                    "Cardume",
+                    "Alcateia",
+                    "Rebanho"
+                  ],
+                  "answer": "Frota",
+                  "why": "Um conjunto de barcos ou navios chama-se FROTA! Cabo Verde tem uma importante frota pesqueira."
+                },
+                {
+                  "question": "Qual é a função sintática de 'peixe' em 'A Ana comeu peixe.'?",
+                  "options": [
+                    "Complemento direto",
+                    "Sujeito",
+                    "Predicado",
+                    "Vocativo"
+                  ],
+                  "answer": "Complemento direto",
+                  "why": "'Peixe' é o que foi comido — o complemento direto do verbo 'comer'. Sujeito = A Ana!"
+                },
+                {
+                  "question": "Qual é uma frase DECLARATIVA?",
+                  "options": [
+                    "Cabo Verde é lindo.",
+                    "Como estás?",
+                    "Que maravilha!",
+                    "Estuda bem!"
+                  ],
+                  "answer": "Cabo Verde é lindo.",
+                  "why": "Afirma algo e termina com ponto final (.) — é uma frase declarativa!"
+                },
+                {
+                  "question": "Qual é a forma NEGATIVA de 'Eu como peixe'?",
+                  "options": [
+                    "Eu não como peixe.",
+                    "Eu como peixe não.",
+                    "Não eu como peixe.",
+                    "Eu como não peixe."
+                  ],
+                  "answer": "Eu não como peixe.",
+                  "why": "A negação usa 'não': 'Eu NÃO como peixe.' (oposto de 'Eu como peixe.')"
+                },
+                {
+                  "question": "Qual frase é IMPERATIVA?",
+                  "options": [
+                    "Estuda os deveres!",
+                    "O João estuda.",
+                    "Estudas bem?",
+                    "Estudei ontem."
+                  ],
+                  "answer": "Estuda os deveres!",
+                  "why": "Dá uma ordem/pedido e começa com verbo no imperativo. Termina com ! ou ponto final."
+                },
+                {
+                  "question": "Qual é a diferença entre 'Que belo dia!' e 'Que belo dia?'?",
+                  "options": [
+                    "Uma é exclamativa, outra é interrogativa",
+                    "São iguais",
+                    "Uma é negativa",
+                    "Uma é imperativa"
+                  ],
+                  "answer": "Uma é exclamativa, outra é interrogativa",
+                  "why": "'!' = exclamação (admira). '?' = interrogação (pergunta). O sinal faz toda a diferença!"
+                },
+                {
+                  "question": "\"Rapidamente\" é um...?",
+                  "options": [
+                    "Advérbio de modo",
+                    "Adjectivo",
+                    "Nome",
+                    "Verbo"
+                  ],
+                  "answer": "Advérbio de modo",
+                  "why": "Termina em \"-mente\" e diz COMO se faz a acção = **advérbio de modo**! Modifica o verbo, não o nome."
+                },
+                {
+                  "question": "Qual é a forma NEGATIVA de \"Ela estudou\"?",
+                  "options": [
+                    "Ela não estudou.",
+                    "Ela estudou?",
+                    "Ela estudou!",
+                    "Ela estudará."
+                  ],
+                  "answer": "Ela não estudou.",
+                  "why": "A forma negativa usa \"**não**\" antes do verbo: \"Ela **não** estudou.\""
+                },
+                {
+                  "question": "\"Estudarei\" é que tempo verbal?",
+                  "options": [
+                    "Futuro",
+                    "Presente",
+                    "Pretérito Perfeito",
+                    "Pretérito Imperfeito"
+                  ],
+                  "answer": "Futuro",
+                  "why": "\"Estudarei\" indica ação que vai acontecer = **Futuro**! \"Amanhã eu **estudarei** para a prova.\""
+                },
+                {
+                  "question": "\"O João estuda porque quer aprender.\" É uma frase...",
+                  "options": [
+                    "Complexa",
+                    "Simples",
+                    "Exclamativa",
+                    "Negativa"
+                  ],
+                  "answer": "Complexa",
+                  "why": "Tem 2 verbos (\"estuda\" + \"quer\") ligados por \"porque\" = frase **complexa**! Frase simples teria só 1 verbo."
+                },
+                {
+                  "question": "Qual é o feminino do adjectivo \"cabo-verdiano\"?",
+                  "options": [
+                    "cabo-verdiana",
+                    "cabo-verdiane",
+                    "cabo-verdião",
+                    "cabo-verdianas"
+                  ],
+                  "answer": "cabo-verdiana",
+                  "why": "Adjectivos em \"-o\" fazem feminino em \"-a\": cabo-verdian**o** → cabo-verdian**a**!"
+                },
+                {
+                  "question": "\"Vai estudar!\" — qual é o tipo e forma desta frase?",
+                  "options": [
+                    "Imperativa afirmativa",
+                    "Interrogativa negativa",
+                    "Declarativa afirmativa",
+                    "Exclamativa negativa"
+                  ],
+                  "answer": "Imperativa afirmativa",
+                  "why": "Dá uma ordem = **imperativa**. Não usa \"não\" = **afirmativa**. Toda frase tem tipo + forma!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Transforma em frase complexa: 'A Ana estudou.' + 'A Ana passou no exame.'",
+                  "options": [
+                    "A Ana estudou e passou no exame.",
+                    "A Ana estudou. A Ana passou no exame.",
+                    "A Ana estuda e passa.",
+                    "A Ana e o exame."
+                  ],
+                  "answer": "A Ana estudou e passou no exame.",
+                  "why": "Unimos as duas frases com a conjunção 'e', evitando repetir 'A Ana': 'A Ana estudou e passou no exame.'"
+                },
+                {
+                  "question": "Transforma em frase interrogativa: 'O professor explica bem.'",
+                  "options": [
+                    "O professor explica bem?",
+                    "O professor não explica bem.",
+                    "O professor explica bem!",
+                    "Explica bem o professor?"
+                  ],
+                  "answer": "O professor explica bem?",
+                  "why": "Para fazer pergunta de uma afirmação, acrescenta-se o ponto de interrogação e muda-se a entonação!"
+                },
+                {
+                  "question": "Qual frase está corretamente escrita em forma NEGATIVA?",
+                  "options": [
+                    "Eu não gosto de matemática.",
+                    "Eu não de gosto matemática.",
+                    "Eu gosto não de matemática.",
+                    "Não eu de gosto matemática."
+                  ],
+                  "answer": "Eu não gosto de matemática.",
+                  "why": "'Não' coloca-se antes do verbo: 'EU NÃO GOSTO de matemática.'"
+                },
+                {
+                  "question": "Qual tipo de frase express emoção ou admiração?",
+                  "options": [
+                    "Exclamativa",
+                    "Interrogativa",
+                    "Declarativa",
+                    "Imperativa"
+                  ],
+                  "answer": "Exclamativa",
+                  "why": "Exclamativa exprime emoção, admiração, surpresa, orden com entusiasmo! Termina com !"
+                },
+                {
+                  "question": "Classifica: 'Já comeste o almoço?' — tipo de frase?",
+                  "options": [
+                    "Interrogativa",
+                    "Declarativa",
+                    "Exclamativa",
+                    "Imperativa"
+                  ],
+                  "answer": "Interrogativa",
+                  "why": "Começa com 'Já', faz uma pergunta e termina com '?' — é interrogativa!"
+                },
+                {
+                  "question": "Qual frase combina imperativo + negação?",
+                  "options": [
+                    "Não faças barulho!",
+                    "Eu não faço barulho.",
+                    "Não faço barulho?",
+                    "Que barulho!"
+                  ],
+                  "answer": "Não faças barulho!",
+                  "why": "'Não faças' = imperativo (ordem) em forma negativa (nega/proíbe fazer barulho)!"
+                }
+              ]
             }
           ]
         },
@@ -529,9 +1042,208 @@
               "id": "por4_t3_cabo_verde",
               "nome": "Cabo Verde — Cultura e Identidade",
               "icone": "🇨🇻",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔤",
+                  "title": "Família de Palavras e Derivadas",
+                  "body": "Palavras derivadas formam-se com prefixos (antes da raiz) ou sufixos (depois da raiz).",
+                  "example": "Prefixos: des+organizado=desorganizado · in+feliz=infeliz<br>Sufixos: pesc+ador=pescador · mar+ítimo=marítimo<br>Família de 'ilha': ilhéu, ilhota, ilharga, arquipélago",
+                  "trick": "Prefixo muda o sentido (des-, in-, re-). Sufixo muda a categoria (-eiro = profissão, -ção = ação)!"
+                },
+                {
+                  "icon": "↔️",
+                  "title": "Sinónimos",
+                  "body": "Sinónimos são palavras com significados parecidos ou iguais. Usamos para enriquecer o texto!",
+                  "example": "bonito = belo = lindo = formoso\nalegre = feliz = contente\nfalar = dizer = narrar = contar",
+                  "trick": "Sinónimos caminham no mesmo sentido. Quando não quiseres repetir uma palavra, usa um sinónimo!"
+                },
+                {
+                  "icon": "⚡",
+                  "title": "Antónimos",
+                  "body": "Antónimos são palavras com significados contrários. Muitas vezes formam-se com prefixos!",
+                  "example": "alegre ↔ triste · bonito ↔ feio\npaciente ↔ impaciente (prefixo im-)\namável ↔ desagradável (prefixo des-)",
+                  "trick": "Anti = contra! ANTónimo = palavra CONTRÁRIA. Prefixos des-, in-, im- criam antónimos!"
+                },
+                {
+                  "icon": "📊",
+                  "title": "Grau Comparativo",
+                  "body": "O comparativo compara uma qualidade entre dois seres.",
+                  "example": "Superioridade: João é MAIS alto DO QUE Pedro.\nIgualdade: João é TÃO alto COMO Pedro.\nInferioridade: João é MENOS alto DO QUE Pedro.",
+                  "trick": "Mais...do que = superioridade. Tão...como = igualdade. Menos...do que = inferioridade!"
+                },
+                {
+                  "icon": "🏆",
+                  "title": "Superlativo Absoluto",
+                  "body": "O superlativo absoluto exprime uma qualidade no grau máximo, sem comparar com outros.",
+                  "example": "Analítico: muito + adjetivo → muito alto\nSintético: adjetivo + -íssimo → altíssimo\nOutros: rico → riquíssimo · feliz → felicíssimo",
+                  "trick": "Muito + adjetivo = fácil! Adjetivo + íssimo = mais elegante. Ambos significam o máximo!"
+                },
+                {
+                  "icon": "🥇",
+                  "title": "Superlativo Relativo",
+                  "body": "O superlativo relativo compara um ser com um grupo, mostrando que tem mais ou menos de uma qualidade.",
+                  "example": "Superioridade: É o mais alto da turma.\nInferioridade: É o menos alto da turma.",
+                  "trick": "O mais... de = superlativo relativo de superioridade. O menos... de = de inferioridade!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "'Lindíssimo' é o superlativo de qual adjetivo?",
+                  "options": [
+                    "Lindo",
+                    "Grande",
+                    "Bonito",
+                    "Belo"
+                  ],
+                  "answer": "Lindo",
+                  "why": "O sufixo '-íssimo' forma o superlativo absoluto: lindo → lindíssimo (muito lindo!)."
+                },
+                {
+                  "question": "Qual é o ANTÓNIMO de 'alegre'?",
+                  "options": [
+                    "Triste",
+                    "Feliz",
+                    "Animado",
+                    "Contente"
+                  ],
+                  "answer": "Triste",
+                  "why": "Alegre ↔ triste são antónimos (sentido contrário)!"
+                },
+                {
+                  "question": "'Desorganizado' — que prefixo foi usado?",
+                  "options": [
+                    "des-",
+                    "in-",
+                    "re-",
+                    "sub-"
+                  ],
+                  "answer": "des-",
+                  "why": "O prefixo des- indica negação ou contrário: des+organizado = não organizado!"
+                },
+                {
+                  "question": "Qual é o comparativo de superioridade de 'bom'?",
+                  "options": [
+                    "Melhor",
+                    "Mais bom",
+                    "Ótimo",
+                    "Bom mais"
+                  ],
+                  "answer": "Melhor",
+                  "why": "'Bom' tem comparativo irregular: bom → melhor (não 'mais bom', que está errado)!"
+                },
+                {
+                  "question": "Sinónimo de bonito:",
+                  "options": [
+                    "belo",
+                    "feio",
+                    "grande",
+                    "pequeno"
+                  ],
+                  "answer": "belo",
+                  "why": "BONITO e BELO significam a mesma coisa — são sinónimos! Lindo e formoso também são sinónimos."
+                },
+                {
+                  "question": "João é mais alto do que Pedro. Qual é o grau?",
+                  "options": [
+                    "Comparativo de superioridade",
+                    "Comparativo de igualdade",
+                    "Superlativo absoluto",
+                    "Comparativo de inferioridade"
+                  ],
+                  "answer": "Comparativo de superioridade",
+                  "why": "Mais... do que = comparativo de SUPERIORIDADE. João tem MAIS altura do que Pedro!"
+                },
+                {
+                  "question": "Superlativo absoluto sintético de rico:",
+                  "options": [
+                    "riquíssimo",
+                    "muito rico",
+                    "o mais rico",
+                    "ricão"
+                  ],
+                  "answer": "riquíssimo",
+                  "why": "Rico → riquíssimo (sufixo -íssimo). Atenção: rico perde o co e ganha qu antes do -íssimo!"
+                },
+                {
+                  "question": "Antónimo de moderno:",
+                  "options": [
+                    "antigo",
+                    "novo",
+                    "actual",
+                    "recente"
+                  ],
+                  "answer": "antigo",
+                  "why": "MODERNO significa novo/actual. O contrário (antónimo) é ANTIGO!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual frase usa o grau superlativo relativo de superioridade?",
+                  "options": [
+                    "Cabo Verde é o país mais bonito da África.",
+                    "Cabo Verde é muito bonito.",
+                    "Cabo Verde é lindíssimo.",
+                    "Cabo Verde é mais bonito que Portugal."
+                  ],
+                  "answer": "Cabo Verde é o país mais bonito da África.",
+                  "why": "'O ... mais ... de ...' é o superlativo relativo de superioridade — compara com todos os outros do grupo!"
+                },
+                {
+                  "question": "A ilha de São Vicente é tão bela como a ilha de Santiago. Qual é o grau?",
+                  "options": [
+                    "Comparativo de igualdade",
+                    "Comparativo de superioridade",
+                    "Superlativo relativo",
+                    "Comparativo de inferioridade"
+                  ],
+                  "answer": "Comparativo de igualdade",
+                  "why": "TÃO... COMO = comparativo de IGUALDADE. As duas ilhas têm a mesma beleza!"
+                },
+                {
+                  "question": "Forma o superlativo absoluto sintético de feliz:",
+                  "options": [
+                    "felicíssimo",
+                    "felizíssimo",
+                    "muito feliz",
+                    "o mais feliz"
+                  ],
+                  "answer": "felicíssimo",
+                  "why": "Feliz → felicíssimo. O Z transforma-se em C antes do -íssimo!"
+                },
+                {
+                  "question": "É o barco mais rápido da frota. Qual é o grau do adjetivo rápido?",
+                  "options": [
+                    "Superlativo relativo de superioridade",
+                    "Comparativo de superioridade",
+                    "Superlativo absoluto",
+                    "Comparativo de igualdade"
+                  ],
+                  "answer": "Superlativo relativo de superioridade",
+                  "why": "O mais... de = superlativo RELATIVO de superioridade. Compara com um grupo (a frota)!"
+                },
+                {
+                  "question": "Qual é o antónimo de generoso?",
+                  "options": [
+                    "avarento",
+                    "bondoso",
+                    "amável",
+                    "simpático"
+                  ],
+                  "answer": "avarento",
+                  "why": "Generoso = dá muito. Avarento = não dá nada, guarda tudo para si. São opostos — antónimos!"
+                },
+                {
+                  "question": "Sinónimo de trabalhar nesta lista:",
+                  "options": [
+                    "laborar",
+                    "repousar",
+                    "brincar",
+                    "descansar"
+                  ],
+                  "answer": "laborar",
+                  "why": "LABORAR é um sinónimo culto de trabalhar. Repousar, brincar e descansar são antónimos!"
+                }
+              ]
             }
           ]
         }
