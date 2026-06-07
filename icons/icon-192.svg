@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF9F1C"/>
-      <stop offset="50%" stop-color="#FF6B6B"/>
-      <stop offset="100%" stop-color="#7B2FBE"/>
+      <stop offset="0%" stop-color="#FF7AC5"/>
+      <stop offset="50%" stop-color="#FFA630"/>
+      <stop offset="100%" stop-color="#3FC5F0"/>
     </linearGradient>
   </defs>
   <rect width="192" height="192" rx="40" fill="url(#bg)"/>
   <!-- Book body -->
   <rect x="40" y="44" width="112" height="86" rx="10" fill="white" opacity="0.96"/>
   <!-- Book spine -->
-  <rect x="40" y="44" width="6" height="86" rx="3" fill="#FF6B6B"/>
+  <rect x="40" y="44" width="6" height="86" rx="3" fill="#FF7AC5"/>
   <!-- Lines -->
   <rect x="60" y="68" width="72" height="4" rx="2" fill="#e0e0e0"/>
   <rect x="60" y="82" width="72" height="4" rx="2" fill="#e0e0e0"/>
