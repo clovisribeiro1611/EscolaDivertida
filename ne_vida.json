@@ -26,34 +26,97 @@
                   "body": "Com as <b>mãos</b> seguro, toco e faço coisas. Com os <b>pés</b> ando e corro. Tenho 5 dedos em cada mão e 5 em cada pé.",
                   "example": "Mão esquerda 🤚 + Mão direita ✋ = 10 dedos nas mãos",
                   "trick": "Cuido das minhas mãos lavando-as com água e sabão."
+                },
+                {
+                  "icon": "💪",
+                  "title": "O corpo por dentro",
+                  "body": "O nosso corpo tem partes por dentro também: o <b>coração</b> bombeia o sangue, os <b>pulmões</b> respiram, o <b>estômago</b> digere a comida.",
+                  "example": "❤️ Coração · 🫁 Pulmões · 🫃 Estômago · 🧠 Cérebro",
+                  "trick": "Deus criou o nosso corpo com órgãos que funcionam sem pensarmos — que maravilha!"
                 }
               ],
               "praticar": [
                 {
                   "question": "Para que serve o nariz?",
-                  "options": ["Para cheirar", "Para ver", "Para ouvir"],
+                  "options": [
+                    "Para cheirar",
+                    "Para ver",
+                    "Para ouvir"
+                  ],
                   "answer": "Para cheirar",
                   "why": "Com o nariz cheiramos flores, comida e tudo à nossa volta."
                 },
                 {
                   "question": "Quantos dedos temos nas duas mãos?",
-                  "options": ["10 dedos", "5 dedos", "20 dedos"],
+                  "options": [
+                    "10 dedos",
+                    "5 dedos",
+                    "20 dedos"
+                  ],
                   "answer": "10 dedos",
                   "why": "Temos 5 dedos em cada mão, e 5+5=10 dedos nas duas mãos."
                 },
                 {
                   "question": "Para que servem os pés?",
-                  "options": ["Para andar e correr", "Para comer", "Para ver"],
+                  "options": [
+                    "Para andar e correr",
+                    "Para comer",
+                    "Para ver"
+                  ],
                   "answer": "Para andar e correr",
                   "why": "Com os pés andamos, corremos e saltamos!"
+                },
+                {
+                  "question": "Qual órgão bombeia o sangue?",
+                  "options": [
+                    "O coração",
+                    "Os pulmões",
+                    "O estômago"
+                  ],
+                  "answer": "O coração",
+                  "why": "O coração é o motor do corpo — bate cerca de 100.000 vezes por dia!"
+                },
+                {
+                  "question": "Para que servem os pulmões?",
+                  "options": [
+                    "Para respirar",
+                    "Para digerir",
+                    "Para pensar"
+                  ],
+                  "answer": "Para respirar",
+                  "why": "Os pulmões permitem-nos respirar — inspiramos oxigénio e expiramos dióxido de carbono!"
                 }
               ],
               "desafios": [
                 {
                   "question": "Como cuidamos das nossas mãos?",
-                  "options": ["Lavando com água e sabão", "Limpando na roupa", "Só quando estão muito sujas"],
+                  "options": [
+                    "Lavando com água e sabão",
+                    "Limpando na roupa",
+                    "Só quando estão muito sujas"
+                  ],
                   "answer": "Lavando com água e sabão",
                   "why": "Lavamos as mãos com água e sabão para matar os germes e ficar saudáveis."
+                },
+                {
+                  "question": "O cérebro controla:",
+                  "options": [
+                    "Todos os órgãos e pensamentos",
+                    "Só o movimento",
+                    "Só os sentimentos"
+                  ],
+                  "answer": "Todos os órgãos e pensamentos",
+                  "why": "O cérebro é o «computador» do corpo — controla tudo: movimentos, pensamentos, sentimentos!"
+                },
+                {
+                  "question": "Por que o coração é vital para a vida?",
+                  "options": [
+                    "Bombeia sangue com oxigénio para todo o corpo",
+                    "É o centro das emoções",
+                    "Controla a temperatura"
+                  ],
+                  "answer": "Bombeia sangue com oxigénio para todo o corpo",
+                  "why": "Sem o coração a bombear sangue, os órgãos não recebem oxigénio e a vida para!"
                 }
               ]
             },
@@ -75,34 +138,97 @@
                   "body": "Devo tomar banho todos os dias para estar limpo e saudável. Uso água, sabão e champô para o cabelo.",
                   "example": "Banho diário → corpo limpo → afastar doenças",
                   "trick": "«O vosso corpo é templo do Espírito Santo.» 1 Coríntios 6:19 — cuida do teu corpo!"
+                },
+                {
+                  "icon": "🧼",
+                  "title": "Lavar as mãos — quando e como",
+                  "body": "Devemos lavar as mãos: <b>antes de comer, depois do WC, depois de brincar fora, depois de tossir</b>.",
+                  "example": "🍽️ Antes de comer · 🚽 Depois do WC · 🌿 Depois de brincar fora",
+                  "trick": "20 segundos a esfregar as mãos = limpeza eficaz contra germes!"
                 }
               ],
               "praticar": [
                 {
                   "question": "Quantas vezes por dia lavamos os dentes?",
-                  "options": ["3 vezes", "1 vez", "5 vezes"],
+                  "options": [
+                    "3 vezes",
+                    "1 vez",
+                    "5 vezes"
+                  ],
                   "answer": "3 vezes",
                   "why": "Lavamos os dentes 3 vezes: manhã, depois do almoço e antes de dormir."
                 },
                 {
                   "question": "Por que tomamos banho todos os dias?",
-                  "options": ["Para estar limpo e saudável", "Porque está calor", "Para cheirar bem"],
+                  "options": [
+                    "Para estar limpo e saudável",
+                    "Porque está calor",
+                    "Para cheirar bem"
+                  ],
                   "answer": "Para estar limpo e saudável",
                   "why": "O banho diário mantém o nosso corpo limpo e afasta as doenças."
                 },
                 {
                   "question": "O que usamos para lavar os dentes?",
-                  "options": ["Escova e pasta", "Só água", "Um pano"],
+                  "options": [
+                    "Escova e pasta",
+                    "Só água",
+                    "Um pano"
+                  ],
                   "answer": "Escova e pasta",
                   "why": "Usamos escova de dentes e pasta dentífrica para limpar bem os dentes."
+                },
+                {
+                  "question": "Quando devemos lavar as mãos?",
+                  "options": [
+                    "Antes de comer e depois do WC",
+                    "Só quando estão sujas",
+                    "Uma vez por dia"
+                  ],
+                  "answer": "Antes de comer e depois do WC",
+                  "why": "Lavamos as mãos antes de comer e depois do WC para evitar que os germes entrem no nosso corpo."
+                },
+                {
+                  "question": "Quanto tempo devemos esfregar as mãos com sabão?",
+                  "options": [
+                    "20 segundos",
+                    "2 segundos",
+                    "5 minutos"
+                  ],
+                  "answer": "20 segundos",
+                  "why": "20 segundos de sabão e esfregar bem mata a maioria dos germes — canta o Parabéns duas vezes!"
                 }
               ],
               "desafios": [
                 {
                   "question": "A Bíblia diz que o nosso corpo é:",
-                  "options": ["Templo do Espírito Santo", "Uma máquina", "Uma casa nossa"],
+                  "options": [
+                    "Templo do Espírito Santo",
+                    "Uma máquina",
+                    "Uma casa nossa"
+                  ],
                   "answer": "Templo do Espírito Santo",
                   "why": "1 Coríntios 6:19: «O vosso corpo é templo do Espírito Santo» — devemos cuidar dele!"
+                },
+                {
+                  "question": "Por que devemos cobrir a boca ao tossir ou espirrar?",
+                  "options": [
+                    "Para não espalhar germes pelos outros",
+                    "Por educação",
+                    "Para não fazer barulho"
+                  ],
+                  "answer": "Para não espalhar germes pelos outros",
+                  "why": "Tosse e espirro espalham gotículas com germes no ar — cobrindo protegemos os outros!"
+                },
+                {
+                  "question": "Como deve ser a escova de dentes?",
+                  "options": [
+                    "Suave e muda a cada 3 meses",
+                    "Dura e usada muitos anos",
+                    "Só para adultos"
+                  ],
+                  "answer": "Suave e muda a cada 3 meses",
+                  "why": "Escova suave protege as gengivas. Depois de 3 meses as cerdas ficam desgastadas e perdem eficácia."
                 }
               ]
             }
@@ -135,19 +261,31 @@
               "praticar": [
                 {
                   "question": "O que fazes primeiro de manhã?",
-                  "options": ["Acordar e orar", "Jogar no telemóvel", "Ver televisão"],
+                  "options": [
+                    "Acordar e orar",
+                    "Jogar no telemóvel",
+                    "Ver televisão"
+                  ],
                   "answer": "Acordar e orar",
                   "why": "A melhor forma de começar o dia é acordar e agradecer a Deus!"
                 },
                 {
                   "question": "Quando fazes os trabalhos de casa?",
-                  "options": ["Ao fim do dia", "Antes da escola", "Nunca"],
+                  "options": [
+                    "Ao fim do dia",
+                    "Antes da escola",
+                    "Nunca"
+                  ],
                   "answer": "Ao fim do dia",
                   "why": "Os TPC fazem parte da rotina da tarde/noite depois da escola."
                 },
                 {
                   "question": "Quantas horas deve dormir uma criança?",
-                  "options": ["8 a 10 horas", "4 horas", "2 horas"],
+                  "options": [
+                    "8 a 10 horas",
+                    "4 horas",
+                    "2 horas"
+                  ],
                   "answer": "8 a 10 horas",
                   "why": "As crianças precisam de 8 a 10 horas de sono para crescer saudáveis."
                 }
@@ -155,9 +293,169 @@
               "desafios": [
                 {
                   "question": "Por que é importante ler a Bíblia antes de dormir?",
-                  "options": ["Para pensar nas palavras de Deus durante a noite", "Porque é obrigatório", "Para ter bons sonhos"],
+                  "options": [
+                    "Para pensar nas palavras de Deus durante a noite",
+                    "Porque é obrigatório",
+                    "Para ter bons sonhos"
+                  ],
                   "answer": "Para pensar nas palavras de Deus durante a noite",
                   "why": "Salmos 1:2 diz que o homem feliz medita na lei de Deus dia e noite."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "trimestre": "3º Trimestre",
+          "temas": [
+            {
+              "id": "vid1_t3_ordem_respeito",
+              "nome": "Ordem e Respeito",
+              "icone": "🤝",
+              "aprender": [
+                {
+                  "icon": "🚦",
+                  "title": "Regras e ordem",
+                  "body": "As <b>regras</b> existem para nos proteger e criar ordem. Em casa, na escola e na rua há regras importantes.",
+                  "example": "🏠 Em casa: arrumar o quarto · 🏫 Na escola: não correr nos corredores · 🚦 Na rua: atravessar na passadeira",
+                  "trick": "Regras = amor + protecção. Deus também nos dá regras porque nos ama!"
+                },
+                {
+                  "icon": "👴",
+                  "title": "Respeitar os mais velhos",
+                  "body": "A Bíblia ensina-nos a <b>respeitar os mais velhos</b>: levantar quando entram, ceder o lugar, ouvir quando falam, ajudar quando precisam.",
+                  "example": "🧓 Dar lugar no autocarro · 🤝 Cumprimentar os idosos · 👂 Ouvir os avós",
+                  "trick": "Levítico 19:32: «Levanta-te diante dos cabelos brancos» — Deus manda respeitar os idosos!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Por que existem regras?",
+                  "options": [
+                    "Para nos proteger e criar ordem",
+                    "Para nos chatear",
+                    "Porque os adultos querem mandar"
+                  ],
+                  "answer": "Para nos proteger e criar ordem",
+                  "why": "As regras existem para que todos vivam em segurança e harmonia — como os mandamentos de Deus!"
+                },
+                {
+                  "question": "O que devemos fazer quando um adulto entra na sala?",
+                  "options": [
+                    "Levantar como sinal de respeito",
+                    "Continuar sentado",
+                    "Sair da sala"
+                  ],
+                  "answer": "Levantar como sinal de respeito",
+                  "why": "Levantar quando um adulto entra é um sinal de respeito — a Bíblia manda isso em Levítico 19:32."
+                },
+                {
+                  "question": "Como mostrar respeito pelos avós?",
+                  "options": [
+                    "Ouvir as suas histórias e ajudá-los",
+                    "Ignorá-los",
+                    "Mandar neles"
+                  ],
+                  "answer": "Ouvir as suas histórias e ajudá-los",
+                  "why": "Os avós têm muita sabedoria e experiência — respeitá-los e ouvi-los é uma bênção!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Levítico 19:32 diz para:",
+                  "options": [
+                    "Levantar diante dos cabelos brancos (idosos)",
+                    "Obedecer só aos pais",
+                    "Respeitar só os professores"
+                  ],
+                  "answer": "Levantar diante dos cabelos brancos (idosos)",
+                  "why": "Levítico 19:32: «Levanta-te diante dos cabelos brancos e honra a face do ancião» — Deus manda respeitar os idosos!"
+                },
+                {
+                  "question": "Qual regra na escola é mais importante?",
+                  "options": [
+                    "Respeitar os colegas e professores",
+                    "Nunca falar",
+                    "Sentar-se sempre à frente"
+                  ],
+                  "answer": "Respeitar os colegas e professores",
+                  "why": "O respeito é a base de qualquer comunidade — sem respeito não há aprendizagem nem paz."
+                }
+              ]
+            },
+            {
+              "id": "vid1_t3_dons_talentos",
+              "nome": "Os Meus Dons e Talentos",
+              "icone": "🌟",
+              "aprender": [
+                {
+                  "icon": "🎁",
+                  "title": "Deus deu-me talentos",
+                  "body": "<b>Talentos</b> são capacidades especiais que Deus deu a cada pessoa. Alguns cantam bem, outros pintam, outros são bons na matemática!",
+                  "example": "🎵 Cantar · 🎨 Pintar · ⚽ Desporto · 📚 Estudar · 🤝 Ajudar os outros · 🌱 Cuidar das plantas",
+                  "trick": "Mateus 25:15: Deus deu talentos a cada um «segundo a sua capacidade» — és especial!"
+                },
+                {
+                  "icon": "💪",
+                  "title": "Usar os talentos",
+                  "body": "A Bíblia conta a parábola dos talentos — quem <b>usou e desenvolveu</b> os seus talentos foi recompensado. Não devemos esconder os nossos dons!",
+                  "example": "O servo que multiplicou os 5 talentos foi elogiado · O que escondeu foi repreendido",
+                  "trick": "Jesus disse: «Quem tem, mais lhe será dado.» — usa os teus talentos!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que são talentos?",
+                  "options": [
+                    "Capacidades que Deus nos deu",
+                    "Moedas de ouro",
+                    "Prémios da escola"
+                  ],
+                  "answer": "Capacidades que Deus nos deu",
+                  "why": "Na Bíblia, talentos são as capacidades e dons que Deus deu a cada pessoa."
+                },
+                {
+                  "question": "O que devemos fazer com os nossos talentos?",
+                  "options": [
+                    "Desenvolver e usar para ajudar outros",
+                    "Guardar e não usar",
+                    "Esconder"
+                  ],
+                  "answer": "Desenvolver e usar para ajudar outros",
+                  "why": "Jesus ensinou na parábola dos talentos que devemos desenvolver e usar o que Deus nos deu!"
+                },
+                {
+                  "question": "Todos as pessoas têm talentos?",
+                  "options": [
+                    "Sim, Deus deu a cada um",
+                    "Não, só os mais inteligentes",
+                    "Só os que estudam muito"
+                  ],
+                  "answer": "Sim, Deus deu a cada um",
+                  "why": "Mateus 25:15: «A cada um deu talentos, segundo a sua capacidade» — todos têm dons!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Na parábola dos talentos, o que aconteceu ao servo que escondeu o talento?",
+                  "options": [
+                    "Foi repreendido",
+                    "Foi recompensado",
+                    "Nada aconteceu"
+                  ],
+                  "answer": "Foi repreendido",
+                  "why": "O senhor disse ao servo que escondeu: «Servo mau e preguiçoso!» — devemos usar os nossos talentos."
+                },
+                {
+                  "question": "Qual é o teu talento? Como podes usá-lo para Deus?",
+                  "options": [
+                    "Qualquer talento pode glorificar a Deus quando usado com amor",
+                    "Só a música glorifica Deus",
+                    "Só os talentos de liderança"
+                  ],
+                  "answer": "Qualquer talento pode glorificar a Deus quando usado com amor",
+                  "why": "1 Coríntios 10:31: «Em tudo o que fazeis, fazei-o para a glória de Deus» — qualquer talento serve!"
                 }
               ]
             }
@@ -190,34 +488,97 @@
                   "body": "Em casa todos ajudam: <b>arrumar o quarto, lavar a louça, varrer, ajudar os mais novos</b>. Ajudar é uma forma de amar.",
                   "example": "🛏️ Arrumar a cama · 🧹 Varrer · 🍽️ Lavar a louça · 🌱 Regar plantas",
                   "trick": "Quando ajudamos em casa estamos a servir como Jesus ensinou."
+                },
+                {
+                  "icon": "🤝",
+                  "title": "Resolver conflitos em família",
+                  "body": "Na família às vezes há <b>conflitos</b>. A solução cristã é: ouvir, pedir desculpa, perdoar e conversar com calma.",
+                  "example": "😠 Conflito → 🤫 Ouvir → 🙏 Pedir desculpa → ❤️ Perdoar → 😊 Paz",
+                  "trick": "Versículo: «Sede bons uns para os outros, perdoando-vos.» Efésios 4:32"
                 }
               ],
               "praticar": [
                 {
                   "question": "Quem criou a família?",
-                  "options": ["Deus", "O governo", "A escola"],
+                  "options": [
+                    "Deus",
+                    "O governo",
+                    "A escola"
+                  ],
                   "answer": "Deus",
                   "why": "A família foi criada por Deus — é o Seu presente mais bonito para nós."
                 },
                 {
                   "question": "O que diz a Bíblia sobre os pais?",
-                  "options": ["«Honra teu pai e tua mãe»", "«Obedece ao professor»", "«Ama os teus amigos»"],
+                  "options": [
+                    "«Honra teu pai e tua mãe»",
+                    "«Obedece ao professor»",
+                    "«Ama os teus amigos»"
+                  ],
                   "answer": "«Honra teu pai e tua mãe»",
                   "why": "Êxodo 20:12 diz «Honra teu pai e tua mãe» — é um dos 10 mandamentos!"
                 },
                 {
                   "question": "Como posso ajudar em casa?",
-                  "options": ["Arrumar o quarto e varrer", "Só brincar", "Só estudar"],
+                  "options": [
+                    "Arrumar o quarto e varrer",
+                    "Só brincar",
+                    "Só estudar"
+                  ],
                   "answer": "Arrumar o quarto e varrer",
                   "why": "Ajudar nas tarefas de casa é uma forma de amar e servir a família."
+                },
+                {
+                  "question": "Como resolver um conflito com um irmão?",
+                  "options": [
+                    "Conversar com calma e pedir desculpa",
+                    "Gritar e bater",
+                    "Ignorar para sempre"
+                  ],
+                  "answer": "Conversar com calma e pedir desculpa",
+                  "why": "A Bíblia ensina-nos a perdoar e resolver conflitos com gentileza e palavras."
+                },
+                {
+                  "question": "O que significa «honrar» os pais?",
+                  "options": [
+                    "Respeitar, obedecer e valorizar",
+                    "Obedecer só quando concordamos",
+                    "Fazer o que eles fazem"
+                  ],
+                  "answer": "Respeitar, obedecer e valorizar",
+                  "why": "Honrar os pais é respeitá-los, obedecê-los e fazer-lhes sentir que são valorizados."
                 }
               ],
               "desafios": [
                 {
                   "question": "Por que devemos ajudar em casa?",
-                  "options": ["Para mostrar amor e seguir o exemplo de Jesus", "Para ganhar dinheiro", "Porque os pais mandam"],
+                  "options": [
+                    "Para mostrar amor e seguir o exemplo de Jesus",
+                    "Para ganhar dinheiro",
+                    "Porque os pais mandam"
+                  ],
                   "answer": "Para mostrar amor e seguir o exemplo de Jesus",
                   "why": "Jesus serviu os outros com amor — nós também servimos a família com amor."
+                },
+                {
+                  "question": "O que a família cristã tem de especial?",
+                  "options": [
+                    "É fundada em Deus e no amor incondicional",
+                    "É perfeita e sem problemas",
+                    "É formada só por pessoas crentes"
+                  ],
+                  "answer": "É fundada em Deus e no amor incondicional",
+                  "why": "A família cristã tem Jesus no centro — o que cria um amor que perdoa, resiste e persiste."
+                },
+                {
+                  "question": "Qual versículo fala de perdoar em família?",
+                  "options": [
+                    "Efésios 4:32",
+                    "João 3:16",
+                    "Génesis 1:1"
+                  ],
+                  "answer": "Efésios 4:32",
+                  "why": "Efésios 4:32: «Sede bons uns para os outros, misericordiosos, perdoando-vos mutuamente.»"
                 }
               ]
             },
@@ -244,19 +605,31 @@
               "praticar": [
                 {
                   "question": "Qual alimento é saudável?",
-                  "options": ["Peixe e legumes", "Batatas fritas", "Doces e refrigerantes"],
+                  "options": [
+                    "Peixe e legumes",
+                    "Batatas fritas",
+                    "Doces e refrigerantes"
+                  ],
                   "answer": "Peixe e legumes",
                   "why": "Peixe e legumes têm os nutrientes que o nosso corpo precisa para crescer saudável."
                 },
                 {
                   "question": "Quantos copos de água devemos beber por dia?",
-                  "options": ["6 a 8 copos", "1 copo", "20 copos"],
+                  "options": [
+                    "6 a 8 copos",
+                    "1 copo",
+                    "20 copos"
+                  ],
                   "answer": "6 a 8 copos",
                   "why": "Devemos beber 6 a 8 copos de água por dia para manter o corpo hidratado."
                 },
                 {
                   "question": "Qual fruta é de Cabo Verde?",
-                  "options": ["Manga e banana", "Maçã e pêra", "Morango e cereja"],
+                  "options": [
+                    "Manga e banana",
+                    "Maçã e pêra",
+                    "Morango e cereja"
+                  ],
                   "answer": "Manga e banana",
                   "why": "Cabo Verde tem frutas tropicais como manga, banana e papaia!"
                 }
@@ -264,7 +637,11 @@
               "desafios": [
                 {
                   "question": "Que percentagem do nosso corpo é água?",
-                  "options": ["70%", "10%", "50%"],
+                  "options": [
+                    "70%",
+                    "10%",
+                    "50%"
+                  ],
                   "answer": "70%",
                   "why": "O nosso corpo é composto por cerca de 70% de água — por isso precisamos beber bastante!"
                 }
@@ -299,29 +676,166 @@
               "praticar": [
                 {
                   "question": "O que fazer quando estás muito zangado?",
-                  "options": ["Respirar fundo e orar", "Gritar e bater", "Sair a correr"],
+                  "options": [
+                    "Respirar fundo e orar",
+                    "Gritar e bater",
+                    "Sair a correr"
+                  ],
                   "answer": "Respirar fundo e orar",
                   "why": "Quando estamos zangados, respirar fundo e orar ajuda-nos a acalmar."
                 },
                 {
                   "question": "Jesus sentiu emoções?",
-                  "options": ["Sim, é normal sentir emoções", "Não, só nós sentimos", "Às vezes"],
+                  "options": [
+                    "Sim, é normal sentir emoções",
+                    "Não, só nós sentimos",
+                    "Às vezes"
+                  ],
                   "answer": "Sim, é normal sentir emoções",
                   "why": "Jesus também ficou triste, alegre e compassivo — as emoções são normais!"
                 },
                 {
                   "question": "Com quem falar quando estás triste?",
-                  "options": ["Um adulto de confiança", "Com ninguém", "Só sozinho"],
+                  "options": [
+                    "Um adulto de confiança",
+                    "Com ninguém",
+                    "Só sozinho"
+                  ],
                   "answer": "Um adulto de confiança",
                   "why": "Quando estamos tristes, falar com um pai, mãe ou professor de confiança ajuda muito."
+                },
+                {
+                  "question": "O que fazer quando estás muito assustado?",
+                  "options": [
+                    "Orar e falar com alguém de confiança",
+                    "Ficar sozinho no escuro",
+                    "Gritar"
+                  ],
+                  "answer": "Orar e falar com alguém de confiança",
+                  "why": "«Não tenhas medo, porque Eu sou o teu Deus.» Isaías 41:10 — Deus está connosco no medo!"
+                },
+                {
+                  "question": "Qual é a melhor forma de expressar alegria?",
+                  "options": [
+                    "Sorrir, cantar ou partilhar com os outros",
+                    "Guardar para ti",
+                    "Saltar e gritar"
+                  ],
+                  "answer": "Sorrir, cantar ou partilhar com os outros",
+                  "why": "A alegria partilhada multiplica-se! Cantar louvores a Deus é a expressão mais bonita de alegria."
                 }
               ],
               "desafios": [
                 {
                   "question": "O que diz Provérbios 14:29 sobre a raiva?",
-                  "options": ["«Não te irrites facilmente»", "«A raiva é boa»", "«Fica sempre calmo»"],
+                  "options": [
+                    "«Não te irrites facilmente»",
+                    "«A raiva é boa»",
+                    "«Fica sempre calmo»"
+                  ],
                   "answer": "«Não te irrites facilmente»",
                   "why": "Provérbios 14:29: «Quem não se irrita facilmente tem grande entendimento.»"
+                },
+                {
+                  "question": "O que a Bíblia diz para fazer quando estamos tristes?",
+                  "options": [
+                    "Orar e depositar as preocupações em Deus",
+                    "Fingir que estamos bem",
+                    "Não falar com ninguém"
+                  ],
+                  "answer": "Orar e depositar as preocupações em Deus",
+                  "why": "1 Pedro 5:7: «Depositai em Deus todas as vossas preocupações, pois Ele tem cuidado de vós.»"
+                },
+                {
+                  "question": "Qual emoção demonstrou Jesus ao ver Lázaro morto?",
+                  "options": [
+                    "Tristeza — Jesus chorou",
+                    "Raiva",
+                    "Alegria"
+                  ],
+                  "answer": "Tristeza — Jesus chorou",
+                  "why": "João 11:35: «Jesus chorou» — o versículo mais curto da Bíblia. Jesus sentiu a nossa dor!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "trimestre": "3º Trimestre",
+          "temas": [
+            {
+              "id": "vid2_t3_dinheiro_tempo",
+              "nome": "Gerir Dinheiro e Tempo",
+              "icone": "⏰",
+              "aprender": [
+                {
+                  "icon": "💰",
+                  "title": "Gerir o dinheiro",
+                  "body": "Quando recebemos dinheiro (mesada, presente), a Bíblia ensina: <b>dar a Deus (dízimo), poupar e gastar sabiamente</b>.",
+                  "example": "10% dízimo · 20% poupar · 70% gastar com necessidades",
+                  "trick": "Provérbios 21:20: «Nos lares dos sábios há riqueza» — poupar é sábio!"
+                },
+                {
+                  "icon": "⏰",
+                  "title": "Gerir o tempo",
+                  "body": "O tempo é precioso — Deus deu-nos <b>24 horas por dia</b>. Devemos usá-las bem: orar, estudar, ajudar, descansar e brincar.",
+                  "example": "⏰ Cada hora conta · 📚 Estudar em vez de adiar · 🙏 Tempo com Deus é investimento",
+                  "trick": "Efésios 5:16: «Aproveitai bem o tempo» — cada hora é um presente de Deus!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o princípio bíblico sobre dinheiro?",
+                  "options": [
+                    "Dar, poupar e gastar sabiamente",
+                    "Gastar tudo de imediato",
+                    "Guardar tudo e não dar"
+                  ],
+                  "answer": "Dar, poupar e gastar sabiamente",
+                  "why": "Provérbios 21:20 diz que os sábios têm provisões — gerir bem o dinheiro é sabedoria!"
+                },
+                {
+                  "question": "O dízimo é:",
+                  "options": [
+                    "10% para Deus/igreja",
+                    "Todo o dinheiro para a igreja",
+                    "Só para quem é rico"
+                  ],
+                  "answer": "10% para Deus/igreja",
+                  "why": "O dízimo (10%) é o princípio bíblico de dar a Deus uma parte do que recebemos — Malaquias 3:10."
+                },
+                {
+                  "question": "Como podemos aproveitar bem o tempo?",
+                  "options": [
+                    "Estudar, ajudar, orar e descansar com equilíbrio",
+                    "Só brincar",
+                    "Só estudar"
+                  ],
+                  "answer": "Estudar, ajudar, orar e descansar com equilíbrio",
+                  "why": "Efésios 5:16: «Aproveitai o tempo» — significa usá-lo para o que realmente importa."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que significa «dízimo»?",
+                  "options": [
+                    "A décima parte (10%)",
+                    "A metade (50%)",
+                    "Um quarto (25%)"
+                  ],
+                  "answer": "A décima parte (10%)",
+                  "why": "Dízimo vem de «décimo» — é 10% do que recebemos, dado a Deus como acto de fé e gratidão."
+                },
+                {
+                  "question": "Por que Efésios 5:16 diz para aproveitar o tempo?",
+                  "options": [
+                    "Porque os dias são maus e o tempo é escasso",
+                    "Porque Deus está com pressa",
+                    "Porque o tempo é dinheiro"
+                  ],
+                  "answer": "Porque os dias são maus e o tempo é escasso",
+                  "why": "Efésios 5:16: «Aproveitai bem o tempo, porque os dias são maus» — devemos ser sábios e diligentes."
                 }
               ]
             }
@@ -359,19 +873,31 @@
               "praticar": [
                 {
                   "question": "Como ser um bom aluno?",
-                  "options": ["Ouvir o professor e participar", "Só copiar", "Brincar na aula"],
+                  "options": [
+                    "Ouvir o professor e participar",
+                    "Só copiar",
+                    "Brincar na aula"
+                  ],
                   "answer": "Ouvir o professor e participar",
                   "why": "Um bom aluno ouve, participa e respeita — aprende mais!"
                 },
                 {
                   "question": "Como resolver conflitos com colegas?",
-                  "options": ["Com palavras e respeito", "Brigando", "Ignorando sempre"],
+                  "options": [
+                    "Com palavras e respeito",
+                    "Brigando",
+                    "Ignorando sempre"
+                  ],
                   "answer": "Com palavras e respeito",
                   "why": "Devemos resolver os conflitos com palavras e respeito — como Jesus ensinou."
                 },
                 {
                   "question": "O que devemos fazer na escola?",
-                  "options": ["Tudo como para o Senhor", "Só o mínimo", "O que os colegas fazem"],
+                  "options": [
+                    "Tudo como para o Senhor",
+                    "Só o mínimo",
+                    "O que os colegas fazem"
+                  ],
                   "answer": "Tudo como para o Senhor",
                   "why": "Colossenses 3:23: «Tudo o que fizeres, faz de coração como para o Senhor.»"
                 }
@@ -379,7 +905,11 @@
               "desafios": [
                 {
                   "question": "O que diz Mateus 7:12 sobre tratar os outros?",
-                  "options": ["«Tratai os outros como quereis que vos tratem»", "«Amai os vossos inimigos»", "«Sede humildes»"],
+                  "options": [
+                    "«Tratai os outros como quereis que vos tratem»",
+                    "«Amai os vossos inimigos»",
+                    "«Sede humildes»"
+                  ],
                   "answer": "«Tratai os outros como quereis que vos tratem»",
                   "why": "Mateus 7:12: «Tratai os outros como quereis que eles vos tratem.»"
                 }
@@ -408,19 +938,31 @@
               "praticar": [
                 {
                   "question": "O que fazes antes de atravessar a rua?",
-                  "options": ["Olhas para os dois lados", "Atravessas a correr", "Fechas os olhos"],
+                  "options": [
+                    "Olhas para os dois lados",
+                    "Atravessas a correr",
+                    "Fechas os olhos"
+                  ],
                   "answer": "Olhas para os dois lados",
                   "why": "Antes de atravessar, para, olha para os dois lados e garante que está seguro."
                 },
                 {
                   "question": "Quando um estranho bater à porta, o que fazes?",
-                  "options": ["Chamas um adulto de casa", "Abres a porta", "Gritas"],
+                  "options": [
+                    "Chamas um adulto de casa",
+                    "Abres a porta",
+                    "Gritas"
+                  ],
                   "answer": "Chamas um adulto de casa",
                   "why": "Nunca devemos abrir a porta a estranhos — chamamos sempre um adulto."
                 },
                 {
                   "question": "Qual é o número de emergência em Cabo Verde?",
-                  "options": ["132", "911", "999"],
+                  "options": [
+                    "132",
+                    "911",
+                    "999"
+                  ],
                   "answer": "132",
                   "why": "Em Cabo Verde, o 132 é o número dos Bombeiros para situações de emergência."
                 }
@@ -428,7 +970,11 @@
               "desafios": [
                 {
                   "question": "Por que Deus quer que sejamos responsáveis com a segurança?",
-                  "options": ["Porque o nosso corpo é templo do Espírito Santo", "Porque os pais mandam", "Porque a escola ensina"],
+                  "options": [
+                    "Porque o nosso corpo é templo do Espírito Santo",
+                    "Porque os pais mandam",
+                    "Porque a escola ensina"
+                  ],
                   "answer": "Porque o nosso corpo é templo do Espírito Santo",
                   "why": "1 Coríntios 6:19: «O vosso corpo é templo do Espírito Santo» — devemos cuidá-lo."
                 }
@@ -463,19 +1009,31 @@
               "praticar": [
                 {
                   "question": "Quantas ilhas tem Cabo Verde?",
-                  "options": ["10 ilhas", "5 ilhas", "15 ilhas"],
+                  "options": [
+                    "10 ilhas",
+                    "5 ilhas",
+                    "15 ilhas"
+                  ],
                   "answer": "10 ilhas",
                   "why": "Cabo Verde é um arquipélago de 10 ilhas no Oceano Atlântico."
                 },
                 {
                   "question": "Qual é a capital de Cabo Verde?",
-                  "options": ["Praia", "Mindelo", "Espargos"],
+                  "options": [
+                    "Praia",
+                    "Mindelo",
+                    "Espargos"
+                  ],
                   "answer": "Praia",
                   "why": "A capital de Cabo Verde é a cidade da Praia, na ilha de Santiago."
                 },
                 {
                   "question": "Como cuidamos do nosso ambiente?",
-                  "options": ["Não deitamos lixo no chão", "Queimamos o lixo", "Deitamos no mar"],
+                  "options": [
+                    "Não deitamos lixo no chão",
+                    "Queimamos o lixo",
+                    "Deitamos no mar"
+                  ],
                   "answer": "Não deitamos lixo no chão",
                   "why": "Cuidar do ambiente é usar o caixote do lixo e não sujar a nossa terra."
                 }
@@ -483,7 +1041,11 @@
               "desafios": [
                 {
                   "question": "O que diz Marcos 12:31 sobre a comunidade?",
-                  "options": ["«Ama o teu próximo como a ti mesmo»", "«Obedece às leis»", "«Trabalha muito»"],
+                  "options": [
+                    "«Ama o teu próximo como a ti mesmo»",
+                    "«Obedece às leis»",
+                    "«Trabalha muito»"
+                  ],
                   "answer": "«Ama o teu próximo como a ti mesmo»",
                   "why": "Marcos 12:31: «Amarás o teu próximo como a ti mesmo.»"
                 }
@@ -523,19 +1085,31 @@
               "praticar": [
                 {
                   "question": "O que é ser responsável?",
-                  "options": ["Cumprir as nossas obrigações", "Fazer o que queremos", "Só obedecer quando convém"],
+                  "options": [
+                    "Cumprir as nossas obrigações",
+                    "Fazer o que queremos",
+                    "Só obedecer quando convém"
+                  ],
                   "answer": "Cumprir as nossas obrigações",
                   "why": "Responsabilidade é cumprir as nossas obrigações — estudar, ajudar, ser pontual."
                 },
                 {
                   "question": "Qual era a profissão de Jesus?",
-                  "options": ["Carpinteiro", "Pescador", "Agricultor"],
+                  "options": [
+                    "Carpinteiro",
+                    "Pescador",
+                    "Agricultor"
+                  ],
                   "answer": "Carpinteiro",
                   "why": "Jesus aprendeu o ofício de carpinteiro com José, o seu pai terreno."
                 },
                 {
                   "question": "O que diz Lucas 16:10 sobre fidelidade?",
-                  "options": ["«Quem é fiel no pouco é fiel no muito»", "«Sê forte»", "«Trabalha muito»"],
+                  "options": [
+                    "«Quem é fiel no pouco é fiel no muito»",
+                    "«Sê forte»",
+                    "«Trabalha muito»"
+                  ],
                   "answer": "«Quem é fiel no pouco é fiel no muito»",
                   "why": "Lucas 16:10: «Quem é fiel no pouco também é fiel no muito.»"
                 }
@@ -543,7 +1117,11 @@
               "desafios": [
                 {
                   "question": "Por que o trabalho honesto honra a Deus?",
-                  "options": ["Porque serve ao próximo e usa os talentos que Deus deu", "Porque dá dinheiro", "Porque o professor diz"],
+                  "options": [
+                    "Porque serve ao próximo e usa os talentos que Deus deu",
+                    "Porque dá dinheiro",
+                    "Porque o professor diz"
+                  ],
                   "answer": "Porque serve ao próximo e usa os talentos que Deus deu",
                   "why": "Deus deu-nos talentos para usarmos a servir os outros — o trabalho honesto faz isso."
                 }
@@ -572,19 +1150,31 @@
               "praticar": [
                 {
                   "question": "Quem criou o mundo?",
-                  "options": ["Deus", "Os cientistas", "Os reis"],
+                  "options": [
+                    "Deus",
+                    "Os cientistas",
+                    "Os reis"
+                  ],
                   "answer": "Deus",
                   "why": "Génesis 1:1: «No princípio, Deus criou o céu e a terra.»"
                 },
                 {
                   "question": "Qual é a nossa responsabilidade com a natureza?",
-                  "options": ["Cuidar e guardar", "Usar tudo sem limite", "Não nos preocuparmos"],
+                  "options": [
+                    "Cuidar e guardar",
+                    "Usar tudo sem limite",
+                    "Não nos preocuparmos"
+                  ],
                   "answer": "Cuidar e guardar",
                   "why": "Génesis 2:15: Deus colocou-nos no jardim para o «cultivar e guardar»."
                 },
                 {
                   "question": "Como poupamos água em Cabo Verde?",
-                  "options": ["Fechando a torneira quando não usamos", "Deixando sempre correr", "Usando muita água"],
+                  "options": [
+                    "Fechando a torneira quando não usamos",
+                    "Deixando sempre correr",
+                    "Usando muita água"
+                  ],
                   "answer": "Fechando a torneira quando não usamos",
                   "why": "Cabo Verde tem poucos recursos de água — devemos poupar cada gota!"
                 }
@@ -592,7 +1182,11 @@
               "desafios": [
                 {
                   "question": "O que significa ser «guardião da criação»?",
-                  "options": ["Cuidar responsavelmente do que Deus criou", "Ter poder sobre a natureza", "Viver na floresta"],
+                  "options": [
+                    "Cuidar responsavelmente do que Deus criou",
+                    "Ter poder sobre a natureza",
+                    "Viver na floresta"
+                  ],
                   "answer": "Cuidar responsavelmente do que Deus criou",
                   "why": "Ser guardião é cuidar com responsabilidade — como Deus nos pediu em Génesis 2:15."
                 }
@@ -627,19 +1221,31 @@
               "praticar": [
                 {
                   "question": "O que é gratidão?",
-                  "options": ["Reconhecer as bênçãos de Deus", "Pedir sempre mais", "Ser simpático"],
+                  "options": [
+                    "Reconhecer as bênçãos de Deus",
+                    "Pedir sempre mais",
+                    "Ser simpático"
+                  ],
                   "answer": "Reconhecer as bênçãos de Deus",
                   "why": "Gratidão é reconhecer e agradecer tudo o que Deus nos dá."
                 },
                 {
                   "question": "O que Jesus disse sobre dar?",
-                  "options": ["«É mais feliz dar do que receber»", "«Guarda tudo para ti»", "«Dá só aos amigos»"],
+                  "options": [
+                    "«É mais feliz dar do que receber»",
+                    "«Guarda tudo para ti»",
+                    "«Dá só aos amigos»"
+                  ],
                   "answer": "«É mais feliz dar do que receber»",
                   "why": "Jesus disse: «Há mais bênção em dar do que em receber.» Actos 20:35"
                 },
                 {
                   "question": "Quando devemos dar graças a Deus?",
-                  "options": ["Em tudo e sempre", "Só quando recebemos presentes", "Só na igreja"],
+                  "options": [
+                    "Em tudo e sempre",
+                    "Só quando recebemos presentes",
+                    "Só na igreja"
+                  ],
                   "answer": "Em tudo e sempre",
                   "why": "1 Tessalonicenses 5:18: «Em tudo dai graças, porque esta é a vontade de Deus.»"
                 }
@@ -647,7 +1253,11 @@
               "desafios": [
                 {
                   "question": "Que versículo fala sobre dar graças em tudo?",
-                  "options": ["1 Tessalonicenses 5:18", "João 3:16", "Génesis 1:1"],
+                  "options": [
+                    "1 Tessalonicenses 5:18",
+                    "João 3:16",
+                    "Génesis 1:1"
+                  ],
                   "answer": "1 Tessalonicenses 5:18",
                   "why": "1 Tessalonicenses 5:18: «Em tudo dai graças, porque esta é a vontade de Deus para convosco.»"
                 }
