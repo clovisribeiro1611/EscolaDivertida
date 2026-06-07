@@ -927,17 +927,336 @@
               "id": "cie2_t1_familia_comunidade",
               "nome": "Família, Escola e Comunidade",
               "icone": "👨‍👩‍👧",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "👨‍👩‍👧‍👦",
+                  "title": "A Família",
+                  "body": "A família é o primeiro grupo social a que pertencemos.\nGerações: avós (1.ª geração) → pais (2.ª geração) → filhos (3.ª geração).\nA família tem funções: proteger, educar, alimentar e dar afeto.",
+                  "example": "Os avós de Ana são da 1.ª geração. Os pais são da 2.ª. A Ana é da 3.ª.",
+                  "trick": "Geração = nível de parentesco na família."
+                },
+                {
+                  "icon": "🏫",
+                  "title": "A Escola e a Comunidade",
+                  "body": "A escola é uma instituição da comunidade onde aprendemos.\nA comunidade tem várias instituições: hospital, câmara municipal, tribunal, biblioteca, mercado.\nCada instituição tem uma função específica.",
+                  "example": "O hospital cuida da saúde. A câmara municipal gere a cidade.",
+                  "trick": "Instituição = organização com função social específica!"
+                },
+                {
+                  "icon": "🤝",
+                  "title": "Funções da Família e Instituições",
+                  "body": "A FAMÍLIA: protege os seus membros, transmite valores e costumes, cuida da saúde e educação.\nAs INSTITUIÇÕES COMUNITÁRIAS: prestam serviços à população — segurança (polícia), saúde (hospital), educação (escola), administração (câmara).",
+                  "example": "A polícia mantém a segurança. O hospital trata os doentes.",
+                  "trick": "Cada instituição tem um papel insubstituível na comunidade!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Os pais de uma criança pertencem a que geração familiar?",
+                  "options": [
+                    "1.ª geração",
+                    "2.ª geração",
+                    "3.ª geração",
+                    "4.ª geração"
+                  ],
+                  "answer": 1,
+                  "why": "Avós=1.ª geração, Pais=2.ª geração, Filhos=3.ª geração."
+                },
+                {
+                  "question": "Qual instituição cuida da saúde da comunidade?",
+                  "options": [
+                    "Escola",
+                    "Câmara Municipal",
+                    "Hospital",
+                    "Tribunal"
+                  ],
+                  "answer": 2,
+                  "why": "O hospital é a instituição que cuida da saúde da população."
+                },
+                {
+                  "question": "Qual é a principal função da família?",
+                  "options": [
+                    "Trabalhar",
+                    "Proteger, educar e dar afeto aos seus membros",
+                    "Gerir a cidade",
+                    "Ensinar nas escolas"
+                  ],
+                  "answer": 1,
+                  "why": "A família protege, educa, alimenta e dá afeto."
+                },
+                {
+                  "question": "Qual instituição administra e gere a cidade?",
+                  "options": [
+                    "Hospital",
+                    "Escola",
+                    "Tribunal",
+                    "Câmara Municipal"
+                  ],
+                  "answer": 3,
+                  "why": "A Câmara Municipal é o órgão de administração local."
+                },
+                {
+                  "question": "O avô de Maria é da:",
+                  "options": [
+                    "1.ª geração",
+                    "2.ª geração",
+                    "3.ª geração",
+                    "Mesma geração que Maria"
+                  ],
+                  "answer": 0,
+                  "why": "Avós são a 1.ª geração (mais antiga da família)."
+                },
+                {
+                  "question": "Qual a função da biblioteca na comunidade?",
+                  "options": [
+                    "Tratar doentes",
+                    "Guardar livros e promover a leitura",
+                    "Julgar crimes",
+                    "Construir casas"
+                  ],
+                  "answer": 1,
+                  "why": "A biblioteca guarda livros e promove a leitura e a cultura."
+                },
+                {
+                  "question": "Quantas gerações tem uma família com avós, pais e filhos?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "answer": 2,
+                  "why": "Avós(1.ª) + Pais(2.ª) + Filhos(3.ª) = 3 gerações."
+                },
+                {
+                  "question": "A escola é um exemplo de:",
+                  "options": [
+                    "Instituição familiar",
+                    "Instituição comunitária",
+                    "Órgão governamental",
+                    "Empresa privada"
+                  ],
+                  "answer": 1,
+                  "why": "A escola é uma instituição comunitária que presta serviços de educação."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "A bisavó de João pertence a que geração?",
+                  "options": [
+                    "1.ª",
+                    "2.ª",
+                    "3.ª",
+                    "4.ª"
+                  ],
+                  "answer": 3,
+                  "why": "Bisavós = 4.ª geração (avós dos avós)."
+                },
+                {
+                  "question": "Uma comunidade sem instituições seria:",
+                  "options": [
+                    "Mais organizada",
+                    "Mais livre",
+                    "Desorganizada e sem serviços essenciais",
+                    "Mais feliz"
+                  ],
+                  "answer": 2,
+                  "why": "As instituições organizam a sociedade e prestam serviços essenciais."
+                },
+                {
+                  "question": "Qual das situações mostra uma função da família?",
+                  "options": [
+                    "A câmara aprova leis",
+                    "O pai ajuda o filho com os trabalhos",
+                    "O médico trata um doente",
+                    "O professor ensina na escola"
+                  ],
+                  "answer": 1,
+                  "why": "Educar e apoiar os filhos é uma função familiar."
+                },
+                {
+                  "question": "Numa família, quem é o descendente mais recente?",
+                  "options": [
+                    "Os avós",
+                    "Os pais",
+                    "Os filhos",
+                    "Os bisavós"
+                  ],
+                  "answer": 2,
+                  "why": "Descendente mais recente = filhos (3.ª geração mais jovem)."
+                }
+              ]
             },
             {
               "id": "cie2_t1_saude_corpo",
               "nome": "Saúde do Corpo — Órgãos dos Sentidos e Higiene",
               "icone": "🏥",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "👁️",
+                  "title": "Os Órgãos dos Sentidos",
+                  "body": "Temos 5 sentidos com órgãos específicos:\n👁️ Visão → olhos\n👂 Audição → ouvidos\n👃 Olfato → nariz\n👅 Paladar → língua\n✋ Tato → pele\nCada sentido capta um tipo diferente de informação do ambiente.",
+                  "example": "Com os olhos vemos as cores. Com os ouvidos ouvimos a música.",
+                  "trick": "Os 5 sentidos: VER, OUVIR, CHEIRAR, PROVAR, TOCAR!"
+                },
+                {
+                  "icon": "🪥",
+                  "title": "Higiene do Corpo",
+                  "body": "A higiene corporal previne doenças:\n▶ Banho diário\n▶ Lavar os dentes após cada refeição\n▶ Lavar as mãos antes de comer e após o WC\n▶ Cortar as unhas\n▶ Lavar o cabelo regularmente",
+                  "example": "Lavar as mãos antes de comer previne doenças como a diarreia.",
+                  "trick": "Higiene = barreira contra bactérias e vírus!"
+                },
+                {
+                  "icon": "🥦",
+                  "title": "Alimentação Saudável e Conservação",
+                  "body": "Devemos comer alimentos de todos os grupos para ter saúde.\nConservar alimentos: refrigerador (4°C), congelador (-18°C), salga, secagem.\nAlimentos estragados causam doenças — observa cor, cheiro e prazo de validade!",
+                  "example": "O peixe fresco pode ser conservado no frigorífico por 2-3 dias.",
+                  "trick": "Alimentação variada + higiene dos alimentos = saúde!"
+                },
+                {
+                  "icon": "👕",
+                  "title": "O Vestuário",
+                  "body": "O vestuário protege-nos do frio, do calor e de ferimentos.\nMateriais: algodão (absorve suor), lã (aquece), sintéticos (impermeáveis).\nHigiene do vestuário: lavar regularmente para remover bactérias e maus cheiros.",
+                  "example": "No inverno usamos roupas de lã. No verão, roupas de algodão.",
+                  "trick": "Roupa certa para cada clima e situação!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual órgão dos sentidos nos permite sentir o cheiro?",
+                  "options": [
+                    "Olhos",
+                    "Língua",
+                    "Nariz",
+                    "Pele"
+                  ],
+                  "answer": 2,
+                  "why": "O olfato usa o nariz para detetar cheiros."
+                },
+                {
+                  "question": "Com que órgão sentimos o sabor dos alimentos?",
+                  "options": [
+                    "Nariz",
+                    "Língua",
+                    "Pele",
+                    "Olhos"
+                  ],
+                  "answer": 1,
+                  "why": "O paladar usa a língua para sentir sabores."
+                },
+                {
+                  "question": "Quantos vezes por dia devemos lavar os dentes?",
+                  "options": [
+                    "1 vez",
+                    "2 vezes",
+                    "3 vezes",
+                    "5 vezes"
+                  ],
+                  "answer": 2,
+                  "why": "Devemos lavar os dentes 3 vezes: após pequeno-almoço, almoço e jantar."
+                },
+                {
+                  "question": "Qual a melhor forma de conservar peixe fresco por mais tempo?",
+                  "options": [
+                    "Deixar ao sol",
+                    "No frigorifico ou congelador",
+                    "Em água quente",
+                    "Embrulhado em papel"
+                  ],
+                  "answer": 1,
+                  "why": "O frio (frigorífico ou congelador) abranda o crescimento de bactérias."
+                },
+                {
+                  "question": "Qual material de vestuário é melhor para o verão?",
+                  "options": [
+                    "Lã",
+                    "Poliéster",
+                    "Algodão",
+                    "Couro"
+                  ],
+                  "answer": 2,
+                  "why": "O algodão absorve o suor e é fresco — ideal para o verão."
+                },
+                {
+                  "question": "O que nos protege no sentido do tato?",
+                  "options": [
+                    "Olhos",
+                    "Ouvidos",
+                    "Pele",
+                    "Língua"
+                  ],
+                  "answer": 2,
+                  "why": "A pele é o órgão do tato e protege o corpo."
+                },
+                {
+                  "question": "Porque devemos lavar as mãos antes de comer?",
+                  "options": [
+                    "Para as mãos ficarem bonitas",
+                    "Para remover bactérias e prevenir doenças",
+                    "Para arrefecer a comida",
+                    "Por educação apenas"
+                  ],
+                  "answer": 1,
+                  "why": "As mãos tocam superfícies com bactérias que podem contaminar a comida."
+                },
+                {
+                  "question": "Qual sinal indica que um alimento pode estar estragado?",
+                  "options": [
+                    "Cheiro agradável",
+                    "Cor normal",
+                    "Prazo de validade válido",
+                    "Cheiro forte e estranho"
+                  ],
+                  "answer": 3,
+                  "why": "Cheiro estranho é sinal de deterioração — não consumir!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma criança tem dores de ouvido. Qual sentido pode estar afetado?",
+                  "options": [
+                    "Visão",
+                    "Audição",
+                    "Olfato",
+                    "Paladar"
+                  ],
+                  "answer": 1,
+                  "why": "Os ouvidos são o órgão da audição."
+                },
+                {
+                  "question": "Qual a temperatura certa para um frigorífico conservar alimentos?",
+                  "options": [
+                    "0°C",
+                    "4°C",
+                    "10°C",
+                    "20°C"
+                  ],
+                  "answer": 1,
+                  "why": "O frigorífico deve estar a cerca de 4°C para conservar alimentos adequadamente."
+                },
+                {
+                  "question": "Por que motivo devemos lavar o vestuário regularmente?",
+                  "options": [
+                    "Para ficar mais colorido",
+                    "Para encolher",
+                    "Para remover bactérias e maus odores",
+                    "Para ficar mais quente"
+                  ],
+                  "answer": 2,
+                  "why": "A roupa suja acumula bactérias e odores — lavar é higiene."
+                },
+                {
+                  "question": "Qual dos sentidos pode alertar-nos para um incêndio próximo (mesmo sem ver as chamas)?",
+                  "options": [
+                    "Visão",
+                    "Paladar",
+                    "Olfato",
+                    "Tato"
+                  ],
+                  "answer": 2,
+                  "why": "O cheiro de fumo ativa o olfato — alerta para perigo mesmo sem ver."
+                }
+              ]
             }
           ]
         },
@@ -949,17 +1268,343 @@
               "id": "cie2_t2_habitacao_transportes",
               "nome": "Habitação, Educação e Transportes",
               "icone": "🏠",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🏠",
+                  "title": "A Habitação",
+                  "body": "A habitação protege-nos e é o nosso lar.\nMateriais de construção: pedra, tijolo, betão, madeira, ferro.\nUma casa habitável tem: ventilação, luz natural, água potável, saneamento.\nRegras de segurança: não brincar com tomadas, cuidado com gás.",
+                  "example": "Em Cabo Verde, muitas casas são construídas com pedra de basalto.",
+                  "trick": "Casa segura = boa construção + higiene + regras de segurança!"
+                },
+                {
+                  "icon": "🎓",
+                  "title": "A Importância da Educação",
+                  "body": "A educação desenvolve os nossos conhecimentos e capacidades.\nEducação familiar: aprendemos valores, tradições e comportamentos em casa.\nEducação escolar: aprendemos matemática, línguas, ciências e muito mais.\nA educação abre portas para o futuro!",
+                  "example": "Na família aprendemos a respeitar os mais velhos. Na escola aprendemos a ler.",
+                  "trick": "Educação = chave para o futuro!"
+                },
+                {
+                  "icon": "🚌",
+                  "title": "Meios de Transporte",
+                  "body": "Os meios de transporte levam-nos de um lugar a outro.\nTipos: terrestre (carro, autocarro, bicicleta), aquático (barco, ferry), aéreo (avião, helicóptero).\nEm Cabo Verde, os barcos e aviões são essenciais para viajar entre ilhas.",
+                  "example": "Para ir de Santiago a São Vicente de avião demora cerca de 30 minutos.",
+                  "trick": "Terrestre=terra, Aquático=água, Aéreo=ar!"
+                },
+                {
+                  "icon": "📡",
+                  "title": "Meios de Comunicação",
+                  "body": "Os meios de comunicação permitem-nos partilhar informação:\n📻 Rádio, 📺 Televisão, 📱 Telemóvel, 💻 Internet, 📰 Jornal, ✉️ Carta.\nA internet e o telemóvel são os mais usados hoje em dia.\nSegurança online: não partilhar dados pessoais com desconhecidos.",
+                  "example": "Para falar com a avó que vive noutras ilhas usamos o telemóvel.",
+                  "trick": "Comunicar = partilhar informação a distância!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual meio de transporte é usado para viajar ENTRE ilhas de Cabo Verde?",
+                  "options": [
+                    "Bicicleta",
+                    "Autocarro",
+                    "Barco ou avião",
+                    "Comboio"
+                  ],
+                  "answer": 2,
+                  "why": "Entre ilhas usam-se barcos (ferry) ou aviões."
+                },
+                {
+                  "question": "Qual material é muito usado na construção em Cabo Verde?",
+                  "options": [
+                    "Madeira tropical",
+                    "Pedra de basalto",
+                    "Vidro",
+                    "Plástico"
+                  ],
+                  "answer": 1,
+                  "why": "Cabo Verde tem muita pedra de basalto usada na construção."
+                },
+                {
+                  "question": "Qual meio de comunicação permite comunicar em tempo real a grande distância?",
+                  "options": [
+                    "Jornal",
+                    "Carta",
+                    "Telemóvel",
+                    "Livro"
+                  ],
+                  "answer": 2,
+                  "why": "O telemóvel permite comunicação instantânea a qualquer distância."
+                },
+                {
+                  "question": "Qual é a diferença entre educação familiar e escolar?",
+                  "options": [
+                    "São iguais",
+                    "Familiar ensina valores em casa; escolar ensina conhecimentos na escola",
+                    "Escolar é mais importante",
+                    "Familiar não existe"
+                  ],
+                  "answer": 1,
+                  "why": "Ambas são importantes: familiar (valores/tradições) e escolar (conhecimentos formais)."
+                },
+                {
+                  "question": "Qual sinal de trânsito indica PARE?",
+                  "options": [
+                    "Círculo azul",
+                    "Triângulo amarelo",
+                    "Octógono vermelho",
+                    "Retângulo verde"
+                  ],
+                  "answer": 2,
+                  "why": "O sinal de STOP é um octógono (8 lados) vermelho com a palavra STOP."
+                },
+                {
+                  "question": "Qual transporte é TERRESTRE?",
+                  "options": [
+                    "Barco",
+                    "Avião",
+                    "Autocarro",
+                    "Helicóptero"
+                  ],
+                  "answer": 2,
+                  "why": "O autocarro circula na estrada — é transporte terrestre."
+                },
+                {
+                  "question": "O que é uma casa \"habitável\"?",
+                  "options": [
+                    "Uma casa com muitos quartos",
+                    "Uma casa com boa ventilação, luz e saneamento",
+                    "Uma casa muito grande",
+                    "Uma casa nova"
+                  ],
+                  "answer": 1,
+                  "why": "Habitável = condições mínimas: ventilação, luz, água potável e saneamento."
+                },
+                {
+                  "question": "Qual regra de segurança doméstica é mais importante?",
+                  "options": [
+                    "Não comer na cama",
+                    "Não brincar com tomadas elétricas",
+                    "Não correr na casa",
+                    "Não fazer ruído"
+                  ],
+                  "answer": 1,
+                  "why": "Brincar com tomadas pode causar eletrocussão — perigo de vida!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Porque são os aviões e barcos especialmente importantes em Cabo Verde?",
+                  "options": [
+                    "Porque são bonitos",
+                    "Porque o país é um arquipélago e as ilhas são separadas pelo mar",
+                    "Porque os carros são caros",
+                    "Por tradição"
+                  ],
+                  "answer": 1,
+                  "why": "Arquipélago = ilhas separadas pelo mar. Sem aviões/barcos não há ligação entre ilhas."
+                },
+                {
+                  "question": "Qual das seguintes práticas NÃO é segura na internet?",
+                  "options": [
+                    "Falar com amigos",
+                    "Pesquisar para estudar",
+                    "Partilhar a morada com desconhecidos",
+                    "Ver filmes de aprendizagem"
+                  ],
+                  "answer": 2,
+                  "why": "Nunca partilhar dados pessoais (morada, escola, rotina) com desconhecidos online."
+                },
+                {
+                  "question": "Um edifício tem boa ventilação quando:",
+                  "options": [
+                    "As janelas estão sempre fechadas",
+                    "Tem janelas e portas que permitem circulação de ar fresco",
+                    "É muito grande",
+                    "Tem ar condicionado"
+                  ],
+                  "answer": 1,
+                  "why": "Ventilação natural = janelas e portas que permitem circular o ar fresco."
+                },
+                {
+                  "question": "Qual comunicação é mais rápida: carta ou internet?",
+                  "options": [
+                    "Carta, porque é mais formal",
+                    "Internet, porque é instantânea",
+                    "São iguais",
+                    "Depende da distância"
+                  ],
+                  "answer": 1,
+                  "why": "A internet é instantânea. A carta pode demorar dias ou semanas."
+                }
+              ]
             },
             {
               "id": "cie2_t2_ambiente_seres",
               "nome": "Ambiente — Seres Vivos e Ecossistemas",
               "icone": "🌿",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🌍",
+                  "title": "O Ambiente",
+                  "body": "O ambiente é tudo o que nos rodeia: ar, água, solo, seres vivos e seres não vivos.\nAspetos físicos: temperatura, humidade, luminosidade, vento.\nDevemos proteger o ambiente: não poluir, reciclar, economizar água.",
+                  "example": "Em Cabo Verde, o ambiente seco e ventoso é típico. As ilhas variam muito!",
+                  "trick": "Ambiente = o que está à nossa volta e nos influencia."
+                },
+                {
+                  "icon": "🐾",
+                  "title": "Animais — Domésticos e Selvagens",
+                  "body": "Animais DOMÉSTICOS: vivem com o ser humano, são criados/domesticados. Ex: cão, gato, vaca, galinha.\nAnimais SELVAGENS: vivem livres na natureza. Ex: leão, tubarão, águia.\nO HABITAT é o lugar natural onde um animal vive.",
+                  "example": "O tubarão tem habitat no mar. O leão tem habitat na savana.",
+                  "trick": "Doméstico = próximo do humano. Selvagem = livre na natureza!"
+                },
+                {
+                  "icon": "🌿",
+                  "title": "As Plantas",
+                  "body": "Plantas ESPONTÂNEAS: crescem naturalmente sem intervenção humana.\nPlantas CULTIVADAS: plantadas e cuidadas pelo ser humano.\nUtilidades das plantas: alimentação, medicina, sombra, oxigénio, madeira.",
+                  "example": "Em Cabo Verde: tamareira (cultivada), acácia (espontânea).",
+                  "trick": "Cultivada = plantada pelo humano. Espontânea = cresce sozinha!"
+                },
+                {
+                  "icon": "♻️",
+                  "title": "Proteção dos Seres Vivos",
+                  "body": "Devemos proteger a natureza:\n▶ Não poluir o mar e as praias\n▶ Não caçar animais em extinção\n▶ Reflorestação: plantar árvores\n▶ Reciclar para reduzir resíduos\nEm Cabo Verde: a tartaruga-caretta-caretta é protegida.",
+                  "example": "A praia de Santa Maria no Sal é área de nidificação de tartarugas marinhas.",
+                  "trick": "Proteger a natureza = proteger o nosso futuro!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual destes animais é DOMÉSTICO?",
+                  "options": [
+                    "Leão",
+                    "Tubarão",
+                    "Cão",
+                    "Águia"
+                  ],
+                  "answer": 2,
+                  "why": "O cão vive com o ser humano — é um animal doméstico."
+                },
+                {
+                  "question": "Qual destes animais é SELVAGEM?",
+                  "options": [
+                    "Gato",
+                    "Vaca",
+                    "Galinha",
+                    "Tubarão"
+                  ],
+                  "answer": 3,
+                  "why": "O tubarão vive livre no oceano — é um animal selvagem."
+                },
+                {
+                  "question": "O que é o HABITAT de um animal?",
+                  "options": [
+                    "A sua alimentação",
+                    "O lugar natural onde vive",
+                    "A sua cor",
+                    "O seu tamanho"
+                  ],
+                  "answer": 1,
+                  "why": "Habitat = ambiente natural onde o animal encontra abrigo e alimento."
+                },
+                {
+                  "question": "Qual planta em Cabo Verde é tipicamente CULTIVADA?",
+                  "options": [
+                    "Acácia selvagem",
+                    "Tamareira",
+                    "Erva espontânea",
+                    "Cacto nativo"
+                  ],
+                  "answer": 1,
+                  "why": "A tamareira é cultivada para produzir tâmaras."
+                },
+                {
+                  "question": "Qual ação protege o ambiente?",
+                  "options": [
+                    "Deitar lixo na praia",
+                    "Queimar resíduos",
+                    "Reciclar o lixo",
+                    "Cortar todas as árvores"
+                  ],
+                  "answer": 2,
+                  "why": "Reciclar reduz a quantidade de resíduos e poupa recursos naturais."
+                },
+                {
+                  "question": "Qual aspeto físico do ambiente descreve a quantidade de água no ar?",
+                  "options": [
+                    "Temperatura",
+                    "Luminosidade",
+                    "Humidade",
+                    "Vento"
+                  ],
+                  "answer": 2,
+                  "why": "Humidade = quantidade de vapor de água no ar."
+                },
+                {
+                  "question": "As plantas cultivadas são:",
+                  "options": [
+                    "Plantas que crescem sozinhas",
+                    "Plantas plantadas e cuidadas pelo ser humano",
+                    "Plantas selvagens do mato",
+                    "Plantas marinhas"
+                  ],
+                  "answer": 1,
+                  "why": "Cultivadas = plantadas e cuidadas pelo ser humano para alguma finalidade."
+                },
+                {
+                  "question": "Qual animal está protegido em Cabo Verde?",
+                  "options": [
+                    "Leão",
+                    "Cão",
+                    "Tartaruga marinha",
+                    "Pombo"
+                  ],
+                  "answer": 2,
+                  "why": "A tartaruga-caretta-caretta nidifica nas praias de Cabo Verde e está protegida."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Por que razão devemos proteger as áreas de nidificação das tartarugas marinhas?",
+                  "options": [
+                    "São bonitas",
+                    "São uma espécie ameaçada e parte do ecossistema marinho",
+                    "Fazem muito ruído",
+                    "Comem muita comida"
+                  ],
+                  "answer": 1,
+                  "why": "As tartarugas marinhas são espécie ameaçada e essenciais para o equilíbrio marinho."
+                },
+                {
+                  "question": "Qual a diferença entre uma planta espontânea e uma cultivada?",
+                  "options": [
+                    "Tamanho",
+                    "Espontânea cresce sem intervenção humana; cultivada é plantada pelo homem",
+                    "Cor",
+                    "Cultivada é mais saudável"
+                  ],
+                  "answer": 1,
+                  "why": "Espontânea=natural, Cultivada=plantada pelo ser humano para uma finalidade."
+                },
+                {
+                  "question": "Um animal que vive no deserto tem habitat caracterizado por:",
+                  "options": [
+                    "Muita água e vegetação densa",
+                    "Pouca chuva, temperatura alta e pouca vegetação",
+                    "Neve e frio extremo",
+                    "Mar e areia"
+                  ],
+                  "answer": 1,
+                  "why": "Habitat do deserto: seco, quente, com pouca chuva e vegetação escassa."
+                },
+                {
+                  "question": "Qual ação NÃO protege o ambiente?",
+                  "options": [
+                    "Reflorestação",
+                    "Reciclagem",
+                    "Usar menos plástico",
+                    "Deitar óleo usado no esgoto"
+                  ],
+                  "answer": 3,
+                  "why": "Óleo no esgoto polui a água e o solo — é muito prejudicial ao ambiente."
+                }
+              ]
             }
           ]
         },
@@ -971,17 +1616,343 @@
               "id": "cie2_t3_experiencias",
               "nome": "As Minhas Experiências Científicas",
               "icone": "🔬",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔬",
+                  "title": "O Que é a Ciência?",
+                  "body": "A Ciência é o conhecimento obtido através da observação e da experimentação.\nMétodo científico: observar → questionar → hipótese → experiência → conclusão.\nO cientista estuda a natureza para compreender como funciona.",
+                  "example": "\"Por que a folha murcha sem água?\" → observação → hipótese → experiência → conclusão",
+                  "trick": "Ciência = observar + experimentar + concluir!"
+                },
+                {
+                  "icon": "💧",
+                  "title": "Experiências com Água",
+                  "body": "A água tem propriedades especiais:\n▶ Flutua: objetos mais leves que a água flutuam. Objetos mais densos afundam.\n▶ Dissolução: alguns materiais dissolvem-se em água (açúcar, sal). Outros não (areia, óleo).\n▶ Estados: sólido (gelo), líquido (água), gasoso (vapor).",
+                  "example": "A cortiça flutua. O ferro afunda. O açúcar dissolve-se.",
+                  "trick": "Flutua = menos denso que a água. Afunda = mais denso!"
+                },
+                {
+                  "icon": "💨",
+                  "title": "Experiências com o Ar",
+                  "body": "O ar está em todo o lado e tem propriedades:\n▶ Ocupa espaço (infla balões)\n▶ Tem peso/massa\n▶ Exerce pressão\n▶ O vento é ar em movimento\nSem ar não há vida.",
+                  "example": "Encher um balão prova que o ar ocupa espaço.",
+                  "trick": "O ar existe mesmo não sendo visível!"
+                },
+                {
+                  "icon": "🌱",
+                  "title": "As Plantas e a Luz Solar",
+                  "body": "As plantas precisam de luz solar para fazer FOTOSSÍNTESE:\nLuz solar + água + CO₂ → alimento (glucose) + oxigénio.\nSem luz, as plantas ficam amarelas e morrem.\nExperiência: planta na luz vs planta no escuro — observa a diferença!",
+                  "example": "Planta na luz: verde e saudável. Planta no escuro: amarela e fraca.",
+                  "trick": "Fotossíntese = luz + água + CO₂ → alimento + O₂!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual a ordem correta do método científico?",
+                  "options": [
+                    "Conclusão→Hipótese→Observação→Experiência",
+                    "Observação→Questão→Hipótese→Experiência→Conclusão",
+                    "Experiência→Observação→Conclusão",
+                    "Hipótese→Experiência→Observação"
+                  ],
+                  "answer": 1,
+                  "why": "Método científico: observar, questionar, hipótese, experiência, conclusão."
+                },
+                {
+                  "question": "O que acontece quando colocamos açúcar em água?",
+                  "options": [
+                    "Flutua",
+                    "Afunda",
+                    "Dissolve-se",
+                    "Fica no fundo sem se dissolver"
+                  ],
+                  "answer": 2,
+                  "why": "O açúcar dissolve-se em água — é solúvel."
+                },
+                {
+                  "question": "O que acontece com uma pedra na água?",
+                  "options": [
+                    "Flutua",
+                    "Dissolve-se",
+                    "Afunda",
+                    "Evapora"
+                  ],
+                  "answer": 2,
+                  "why": "A pedra é mais densa que a água — afunda."
+                },
+                {
+                  "question": "Para fazer fotossíntese, as plantas precisam de:",
+                  "options": [
+                    "Apenas água",
+                    "Luz, água e CO₂",
+                    "Apenas terra",
+                    "Apenas fertilizante"
+                  ],
+                  "answer": 1,
+                  "why": "Fotossíntese: luz + água + CO₂ → glicose + oxigénio."
+                },
+                {
+                  "question": "Qual experiência prova que o ar ocupa espaço?",
+                  "options": [
+                    "Dissolver sal na água",
+                    "Encher um balão com ar",
+                    "Plantar uma semente",
+                    "Medir a temperatura"
+                  ],
+                  "answer": 1,
+                  "why": "Ao encher um balão, o ar empurra as paredes — ocupa espaço."
+                },
+                {
+                  "question": "O que produzem as plantas durante a fotossíntese?",
+                  "options": [
+                    "CO₂ e açúcar",
+                    "Oxigénio e glicose",
+                    "Apenas água",
+                    "Azoto e fósforo"
+                  ],
+                  "answer": 1,
+                  "why": "Fotossíntese produz: glicose (alimento) + oxigénio (O₂)."
+                },
+                {
+                  "question": "Qual estado físico da água é a neve?",
+                  "options": [
+                    "Líquido",
+                    "Gasoso",
+                    "Sólido",
+                    "Plasma"
+                  ],
+                  "answer": 2,
+                  "why": "A neve é água no estado sólido (temperatura abaixo de 0°C)."
+                },
+                {
+                  "question": "Uma planta sem luz solar vai:",
+                  "options": [
+                    "Crescer mais rápido",
+                    "Ficar verde e saudável",
+                    "Ficar amarela e enfraquecer",
+                    "Florescer mais"
+                  ],
+                  "answer": 2,
+                  "why": "Sem luz, a fotossíntese para — a planta perde cor e enfraquece."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Num experimento, uma planta regada com água salgada murcha. Qual a conclusão?",
+                  "options": [
+                    "A planta precisa de mais sol",
+                    "A água salgada não é adequada para regar plantas",
+                    "As plantas não precisam de água",
+                    "A planta precisa de mais terra"
+                  ],
+                  "answer": 1,
+                  "why": "O sal em excesso desidrata as plantas — prejudica a absorção de água."
+                },
+                {
+                  "question": "Porque é que o óleo não se mistura com a água?",
+                  "options": [
+                    "O óleo é muito pesado",
+                    "O óleo e a água têm densidades muito diferentes e não se dissolvem",
+                    "O óleo é muito quente",
+                    "O óleo é sólido"
+                  ],
+                  "answer": 1,
+                  "why": "Óleo e água são imiscíveis — não se dissolvem um no outro."
+                },
+                {
+                  "question": "Qual é o produto da fotossíntese que é vital para os animais respirarem?",
+                  "options": [
+                    "CO₂",
+                    "Glicose",
+                    "Oxigénio",
+                    "Azoto"
+                  ],
+                  "answer": 2,
+                  "why": "As plantas produzem oxigénio (O₂) que os animais respiram."
+                },
+                {
+                  "question": "Numa experiência com flutuação, qual objeto FLUTUA?",
+                  "options": [
+                    "Chave de ferro",
+                    "Moeda",
+                    "Rolha de cortiça",
+                    "Pedaço de rocha"
+                  ],
+                  "answer": 2,
+                  "why": "A cortiça é muito menos densa que a água — flutua."
+                }
+              ]
             },
             {
               "id": "cie2_t3_profissoes_cultura",
               "nome": "Profissões, Economia e Cultura",
               "icone": "🎭",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "👷",
+                  "title": "As Profissões",
+                  "body": "As profissões são os trabalhos que as pessoas fazem na comunidade.\nCada profissão é importante para a sociedade.\nExemplos: médico (saúde), professor (educação), agricultor (alimentação), pescador (pesca), bombeiro (segurança).",
+                  "example": "O pescador captura peixe para alimentar a comunidade de Cabo Verde.",
+                  "trick": "Profissão = contribuição para a comunidade!"
+                },
+                {
+                  "icon": "🛒",
+                  "title": "Atividades Económicas",
+                  "body": "As atividades económicas produzem bens ou serviços.\nSetores:\n▶ Primário: extração direta da natureza (pesca, agricultura, pecuária)\n▶ Secundário: transformação de matérias-primas (indústria)\n▶ Terciário: serviços (comércio, turismo, saúde, educação)",
+                  "example": "Em Cabo Verde, a pesca (primário) e o turismo (terciário) são muito importantes.",
+                  "trick": "1.º=extrair, 2.º=transformar, 3.º=servir!"
+                },
+                {
+                  "icon": "🎭",
+                  "title": "Atividades Culturais e Recreativas",
+                  "body": "A cultura são as tradições, artes e costumes de um povo.\nAtividades culturais em Cabo Verde: Carnaval, Kolá San Jon, Morna, Funaná, Batuque.\nAtividades recreativas: desporto, teatro, dança, visitar museus.",
+                  "example": "O Kolá San Jon é uma festa típica de Santo Antão e São Vicente.",
+                  "trick": "Cultura = identidade de um povo!"
+                },
+                {
+                  "icon": "🇨🇻",
+                  "title": "Símbolos Nacionais de Cabo Verde",
+                  "body": "Os símbolos nacionais representam a identidade do país:\n🚩 Bandeira: fundo azul, faixa vermelha e branca, círculo de 10 estrelas\n🎵 Hino nacional: \"Cântico da Liberdade\"\n📅 Independência: 5 de julho de 1975",
+                  "example": "As 10 estrelas na bandeira representam as 10 ilhas de Cabo Verde.",
+                  "trick": "10 estrelas = 10 ilhas. Independência a 5 de julho!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual setor da economia inclui a pesca?",
+                  "options": [
+                    "Secundário",
+                    "Terciário",
+                    "Primário",
+                    "Quaternário"
+                  ],
+                  "answer": 2,
+                  "why": "Pesca = extração direta da natureza = setor primário."
+                },
+                {
+                  "question": "Qual atividade pertence ao setor TERCIÁRIO?",
+                  "options": [
+                    "Pesca",
+                    "Agricultura",
+                    "Turismo",
+                    "Indústria"
+                  ],
+                  "answer": 2,
+                  "why": "Turismo = prestação de serviços = setor terciário."
+                },
+                {
+                  "question": "Quantas estrelas tem a bandeira de Cabo Verde?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                  ],
+                  "answer": 1,
+                  "why": "10 estrelas — uma para cada ilha de Cabo Verde."
+                },
+                {
+                  "question": "Quando celebra Cabo Verde a sua independência?",
+                  "options": [
+                    "5 de julho de 1975",
+                    "4 de julho de 1975",
+                    "5 de julho de 1985",
+                    "1 de janeiro de 1975"
+                  ],
+                  "answer": 0,
+                  "why": "Cabo Verde tornou-se independente a 5 de julho de 1975."
+                },
+                {
+                  "question": "Qual profissão pertence ao setor da saúde?",
+                  "options": [
+                    "Agricultor",
+                    "Pescador",
+                    "Médico",
+                    "Construtor"
+                  ],
+                  "answer": 2,
+                  "why": "O médico presta serviços de saúde — setor terciário/saúde."
+                },
+                {
+                  "question": "A Morna é uma forma de:",
+                  "options": [
+                    "Desporto",
+                    "Artesanato",
+                    "Música tradicional cabo-verdiana",
+                    "Culinária"
+                  ],
+                  "answer": 2,
+                  "why": "A Morna é um género musical tradicional de Cabo Verde."
+                },
+                {
+                  "question": "O setor SECUNDÁRIO inclui:",
+                  "options": [
+                    "Agricultura",
+                    "Indústria (transformação)",
+                    "Comércio",
+                    "Pesca"
+                  ],
+                  "answer": 1,
+                  "why": "Setor secundário = indústria, que transforma matérias-primas."
+                },
+                {
+                  "question": "Qual é o hino nacional de Cabo Verde?",
+                  "options": [
+                    "Cântico do Mar",
+                    "Cântico da Liberdade",
+                    "Canção das Ilhas",
+                    "Morna Nacional"
+                  ],
+                  "answer": 1,
+                  "why": "O hino nacional de Cabo Verde chama-se \"Cântico da Liberdade\"."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um agricultor de Cabo Verde planta milho, transforma-o em fubá e vende no mercado. Em que setores atua?",
+                  "options": [
+                    "Apenas primário",
+                    "Primário e secundário",
+                    "Primário, secundário e terciário",
+                    "Apenas terciário"
+                  ],
+                  "answer": 2,
+                  "why": "Plantar=primário, Transformar=secundário, Vender=terciário."
+                },
+                {
+                  "question": "Porque é que o turismo é importante para a economia de Cabo Verde?",
+                  "options": [
+                    "Porque as praias são bonitas",
+                    "Porque gera empregos e receitas para o país",
+                    "Porque os turistas trazem roupas",
+                    "Porque é tradição"
+                  ],
+                  "answer": 1,
+                  "why": "Turismo = empregos + receitas em moeda estrangeira = desenvolvimento económico."
+                },
+                {
+                  "question": "O Carnaval do Mindelo é classificado como:",
+                  "options": [
+                    "Atividade económica primária",
+                    "Atividade cultural e recreativa",
+                    "Atividade industrial",
+                    "Atividade agrícola"
+                  ],
+                  "answer": 1,
+                  "why": "Carnaval = festa cultural e recreativa que também tem impacto económico."
+                },
+                {
+                  "question": "Qual a relação entre as 10 estrelas da bandeira e as ilhas de Cabo Verde?",
+                  "options": [
+                    "São decorativas",
+                    "Cada estrela representa uma ilha",
+                    "Representam os municípios",
+                    "Representam os anos de independência"
+                  ],
+                  "answer": 1,
+                  "why": "As 10 estrelas da bandeira representam as 10 ilhas do arquipélago."
+                }
+              ]
             }
           ]
         }
@@ -998,17 +1969,350 @@
               "id": "cie3_t1_cidadania",
               "nome": "Relações Sociais e Cidadania",
               "icone": "🏗️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🤝",
+                  "title": "Relações Sociais",
+                  "body": "A sociedade é formada por pessoas que vivem juntas e partilham regras.\nA família é o grupo social básico. Depois: vizinhança, comunidade, cidade, país.\nInstituições sociais: família, escola, igreja, câmara, tribunal, hospital.",
+                  "example": "A escola é uma instituição social que educa os cidadãos.",
+                  "trick": "Sociedade = conjunto organizado de pessoas com regras comuns."
+                },
+                {
+                  "icon": "🇨🇻",
+                  "title": "Cabo Verde — Descrição",
+                  "body": "Cabo Verde é um arquipélago com 10 ilhas divididas em dois grupos:\n▶ BARLAVENTO (norte): Santo Antão, São Vicente, Santa Luzia, São Nicolau, Sal, Boa Vista\n▶ SOTAVENTO (sul): Maio, Santiago, Fogo, Brava\nCapital: Cidade da Praia (ilha de Santiago).",
+                  "example": "O Sal e Boa Vista estão no Barlavento e são famosas pelas praias.",
+                  "trick": "Barlavento=6 ilhas norte. Sotavento=4 ilhas sul. Capital=Praia."
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Organização Política de Cabo Verde",
+                  "body": "Cabo Verde é uma república democrática.\nÓrgãos soberanos:\n▶ Presidente da República: chefe de Estado\n▶ Assembleia Nacional: parlamento, faz as leis\n▶ Governo: chefiado pelo Primeiro-Ministro, governa o país\nDivisão administrativa: concelhos e freguesias.",
+                  "example": "A Assembleia Nacional aprova as leis. O Governo aplica-as.",
+                  "trick": "Presidente=Estado | Parlamento=Leis | Governo=Gestão diária"
+                },
+                {
+                  "icon": "🏙️",
+                  "title": "Poder Local — Câmara Municipal",
+                  "body": "O poder local governa cada concelho.\nÓrgãos do poder local:\n▶ Câmara Municipal: órgão executivo local (gere obras, transportes, saneamento)\n▶ Assembleia Municipal: órgão deliberativo local (aprova decisões da câmara)\nCabo Verde tem 22 concelhos.",
+                  "example": "A Câmara Municipal de São Vicente gere os serviços municipais do concelho.",
+                  "trick": "Câmara Municipal = \"governo\" da cidade/concelho!"
+                },
+                {
+                  "icon": "📅",
+                  "title": "Décadas e Datas Históricas",
+                  "body": "Uma DÉCADA = 10 anos. Um SÉCULO = 100 anos. Um MILÉNIO = 1000 anos.\nDatas importantes de Cabo Verde:\n▶ 5 de julho de 1975: Independência\n▶ 13 de janeiro de 1991: Primeira eleições multipartidárias",
+                  "example": "De 1975 a 1985 passou 1 década. De 1975 a 2075 passa um século.",
+                  "trick": "Década=10, Século=100, Milénio=1000 anos."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas ilhas tem o grupo do BARLAVENTO?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": 3,
+                  "why": "Barlavento: Santo Antão, São Vicente, Santa Luzia, São Nicolau, Sal, Boa Vista = 6 ilhas."
+                },
+                {
+                  "question": "Qual é a capital de Cabo Verde?",
+                  "options": [
+                    "Mindelo",
+                    "Sal",
+                    "Cidade da Praia",
+                    "São Nicolau"
+                  ],
+                  "answer": 2,
+                  "why": "A capital de Cabo Verde é a Cidade da Praia, na ilha de Santiago."
+                },
+                {
+                  "question": "Qual órgão soberano aprova as leis em Cabo Verde?",
+                  "options": [
+                    "Câmara Municipal",
+                    "Assembleia Nacional",
+                    "Presidente da República",
+                    "Governo"
+                  ],
+                  "answer": 1,
+                  "why": "A Assembleia Nacional (parlamento) é quem aprova as leis."
+                },
+                {
+                  "question": "Quando se tornou Cabo Verde independente?",
+                  "options": [
+                    "5 de julho de 1974",
+                    "5 de julho de 1975",
+                    "4 de julho de 1975",
+                    "1 de janeiro de 1975"
+                  ],
+                  "answer": 1,
+                  "why": "Cabo Verde tornou-se independente a 5 de julho de 1975."
+                },
+                {
+                  "question": "Uma década corresponde a quantos anos?",
+                  "options": [
+                    "5",
+                    "10",
+                    "100",
+                    "1000"
+                  ],
+                  "answer": 1,
+                  "why": "Década = 10 anos."
+                },
+                {
+                  "question": "Qual a função da Câmara Municipal?",
+                  "options": [
+                    "Fazer leis nacionais",
+                    "Gerir os serviços do concelho (obras, saneamento, etc.)",
+                    "Julgar crimes",
+                    "Presidir o país"
+                  ],
+                  "answer": 1,
+                  "why": "Câmara Municipal = órgão executivo local que gere o concelho."
+                },
+                {
+                  "question": "Quantos concelhos tem Cabo Verde?",
+                  "options": [
+                    "10",
+                    "15",
+                    "22",
+                    "30"
+                  ],
+                  "answer": 2,
+                  "why": "Cabo Verde tem 22 concelhos distribuídos pelas 10 ilhas."
+                },
+                {
+                  "question": "O Presidente da República é o:",
+                  "options": [
+                    "Chefe do Governo",
+                    "Chefe do Parlamento",
+                    "Chefe de Estado",
+                    "Presidente da Câmara"
+                  ],
+                  "answer": 2,
+                  "why": "O Presidente da República é o Chefe de Estado de Cabo Verde."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "De 1975 (independência) até 2025, quantas décadas passaram?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "answer": 1,
+                  "why": "2025−1975=50 anos ÷ 10 = 5 décadas."
+                },
+                {
+                  "question": "A ilha do FOGO pertence ao:",
+                  "options": [
+                    "Barlavento",
+                    "Sotavento",
+                    "Nenhum dos grupos",
+                    "Barlavento e Sotavento"
+                  ],
+                  "answer": 1,
+                  "why": "Fogo está no Sotavento (grupo sul com Maio, Santiago, Fogo, Brava)."
+                },
+                {
+                  "question": "Qual a diferença entre Assembleia Nacional e Assembleia Municipal?",
+                  "options": [
+                    "São a mesma coisa",
+                    "Nacional=leis do país; Municipal=decisões do concelho",
+                    "Nacional=governo; Municipal=leis",
+                    "Não há diferença"
+                  ],
+                  "answer": 1,
+                  "why": "Assembleia Nacional (nacional) faz leis para o país. Assembleia Municipal (local) aprova decisões do concelho."
+                },
+                {
+                  "question": "Quem chefia o Governo de Cabo Verde?",
+                  "options": [
+                    "Presidente da República",
+                    "Ministro da Educação",
+                    "Primeiro-Ministro",
+                    "Presidente da Câmara"
+                  ],
+                  "answer": 2,
+                  "why": "O Primeiro-Ministro chefia o Governo e gere o país no dia-a-dia."
+                }
+              ]
             },
             {
               "id": "cie3_t1_corpo_humano",
               "nome": "A Ciência do Meu Corpo",
               "icone": "🧬",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🦴",
+                  "title": "Estrutura do Corpo Humano",
+                  "body": "O corpo humano tem vários sistemas:\n▶ Pele: protege o corpo, regula a temperatura, sentido do tato\n▶ Músculos: permitem o movimento, trabalham em pares (contração e relaxamento)\n▶ Ossos: suportam o corpo, protegem órgãos, formam o esqueleto\nCrianças têm cerca de 270 ossos; adultos têm 206 (alguns fundem-se).",
+                  "example": "O crânio protege o cérebro. As costelas protegem o coração e pulmões.",
+                  "trick": "Pele=proteção, Músculos=movimento, Ossos=suporte!"
+                },
+                {
+                  "icon": "🫀",
+                  "title": "Funções Vitais — Circulação",
+                  "body": "O sistema circulatório transporta sangue por todo o corpo.\nCoração: bomba o sangue (bate ~70 vezes/minuto).\nArtérias: levam sangue do coração. Veias: trazem sangue para o coração.\nSangue transporta: oxigénio, nutrientes, defesas.",
+                  "example": "Quando pulsas no pulso, sentes o sangue a circular nas artérias.",
+                  "trick": "Coração = bomba do corpo. Pulsa ~70×/min em repouso!"
+                },
+                {
+                  "icon": "🫁",
+                  "title": "Funções Vitais — Respiração e Digestão",
+                  "body": "RESPIRAÇÃO: pulmões captam oxigénio do ar e libertam CO₂.\nInspiração → absorve O₂ | Expiração → liberta CO₂.\nDIGESTÃO: transforma alimentos em nutrientes.\nPercurso: boca → esófago → estômago → intestino delgado → intestino grosso.",
+                  "example": "Cada vez que inspiras, o oxigénio vai para o sangue e depois para todo o corpo.",
+                  "trick": "Respiração=O₂ entra/CO₂ sai. Digestão=alimento→nutrientes!"
+                },
+                {
+                  "icon": "😊",
+                  "title": "Sensações Físicas e Emocionais",
+                  "body": "SENSAÇÕES FÍSICAS: sinais do corpo.\n▶ Fome: o corpo precisa de energia\n▶ Sede: o corpo precisa de água\n▶ Calor/Frio: regulação da temperatura\nESTADOS EMOCIONAIS: sentimentos.\n▶ Alegria, Tristeza, Medo, Raiva, Surpresa, Nojo",
+                  "example": "Tremores de frio = o corpo tenta aquecer-se. Suor de calor = arrefecimento.",
+                  "trick": "Sensações físicas = sinais de sobrevivência. Emoções = vida interior!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual órgão do sistema circulatório bombeia o sangue?",
+                  "options": [
+                    "Pulmão",
+                    "Fígado",
+                    "Coração",
+                    "Rim"
+                  ],
+                  "answer": 2,
+                  "why": "O coração é a bomba do sistema circulatório."
+                },
+                {
+                  "question": "Qual a função dos pulmões?",
+                  "options": [
+                    "Bombear sangue",
+                    "Digerir alimentos",
+                    "Captar oxigénio e libertar CO₂",
+                    "Filtrar o sangue"
+                  ],
+                  "answer": 2,
+                  "why": "Os pulmões fazem trocas gasosas: captam O₂ e libertam CO₂."
+                },
+                {
+                  "question": "Como se chama a estrutura óssea do corpo humano?",
+                  "options": [
+                    "Musculatura",
+                    "Esqueleto",
+                    "Pele",
+                    "Circulação"
+                  ],
+                  "answer": 1,
+                  "why": "O conjunto de todos os ossos do corpo chama-se esqueleto."
+                },
+                {
+                  "question": "O percurso da digestão começa em:",
+                  "options": [
+                    "Estômago",
+                    "Intestino",
+                    "Boca",
+                    "Esófago"
+                  ],
+                  "answer": 2,
+                  "why": "A digestão começa na boca, com a mastigação."
+                },
+                {
+                  "question": "O que transporta o sangue pelo corpo?",
+                  "options": [
+                    "Apenas oxigénio",
+                    "Apenas nutrientes",
+                    "Oxigénio, nutrientes e defesas",
+                    "Apenas CO₂"
+                  ],
+                  "answer": 2,
+                  "why": "O sangue transporta oxigénio, nutrientes, defesas (glóbulos brancos) e remove resíduos."
+                },
+                {
+                  "question": "O que é a sensação de FOME?",
+                  "options": [
+                    "O corpo tem demasiada energia",
+                    "O corpo precisa de mais energia (alimento)",
+                    "O corpo tem demasiada água",
+                    "O corpo está com frio"
+                  ],
+                  "answer": 1,
+                  "why": "Fome = sinal do corpo a indicar que precisa de mais energia/nutrientes."
+                },
+                {
+                  "question": "O que é a EXPIRAÇÃO?",
+                  "options": [
+                    "Absorver oxigénio",
+                    "Libertar CO₂ para o exterior",
+                    "Bater o coração",
+                    "Digerir alimentos"
+                  ],
+                  "answer": 1,
+                  "why": "Expiração = libertar CO₂ para o exterior. Inspiração = absorver O₂."
+                },
+                {
+                  "question": "Qual função protege o corpo e regula a temperatura?",
+                  "options": [
+                    "Ossos",
+                    "Músculos",
+                    "Pele",
+                    "Coração"
+                  ],
+                  "answer": 2,
+                  "why": "A pele protege contra invasores externos e regula a temperatura corporal."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Se o coração bate 70 vezes por minuto, quantas vezes bate numa hora?",
+                  "options": [
+                    "700",
+                    "4200",
+                    "70000",
+                    "420"
+                  ],
+                  "answer": 1,
+                  "why": "70 × 60 minutos = 4200 batimentos por hora."
+                },
+                {
+                  "question": "Porque é que crianças têm mais ossos do que adultos?",
+                  "options": [
+                    "As crianças são maiores",
+                    "Alguns ossos das crianças ainda não fundiram",
+                    "Os adultos perdem ossos",
+                    "Não é verdade"
+                  ],
+                  "answer": 1,
+                  "why": "Crianças têm ~270 ossos; com o crescimento, alguns fundem-se, resultando em 206 no adulto."
+                },
+                {
+                  "question": "Após uma corrida, o coração bate mais rápido. Porquê?",
+                  "options": [
+                    "Por medo",
+                    "Para bombear mais sangue e oxigénio para os músculos em esforço",
+                    "Porque a corrida é divertida",
+                    "Sem razão específica"
+                  ],
+                  "answer": 1,
+                  "why": "Exercício = músculos precisam de mais O₂ → coração acelera para fornecer mais."
+                },
+                {
+                  "question": "No percurso da digestão, qual órgão vem depois do estômago?",
+                  "options": [
+                    "Boca",
+                    "Esófago",
+                    "Intestino delgado",
+                    "Intestino grosso"
+                  ],
+                  "answer": 2,
+                  "why": "Boca→esófago→estômago→intestino delgado→intestino grosso."
+                }
+              ]
             }
           ]
         },
@@ -1020,17 +2324,336 @@
               "id": "cie3_t2_saude_seres",
               "nome": "Saúde, Seres Vivos e Cadeias Alimentares",
               "icone": "🌿",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "☀️",
+                  "title": "Saúde e Segurança do Corpo",
+                  "body": "Para ter saúde devemos:\n▶ Ter higiene corporal diária\n▶ Fazer vida ao ar livre e exercício\n▶ Proteger do sol: usar protetor solar, chapéu, não estar ao sol das 12h às 15h\n▶ Cuidado com picadas de insetos: mosquitos (podem transmitir malária), abelhas\n▶ Evitar mordeduras de animais desconhecidos",
+                  "example": "Usar protetor solar fator 50 protege a pele dos raios UV.",
+                  "trick": "Saúde = prevenção! É mais fácil prevenir do que curar."
+                },
+                {
+                  "icon": "🌿",
+                  "title": "Seres Vivos — Plantas e Animais",
+                  "body": "Os seres vivos são seres que nascem, crescem, reproduzem-se e morrem.\nPlantas: produtores (fazem o próprio alimento via fotossíntese).\nAnimais: consumidores (comem plantas ou outros animais).\nClassificação dos animais: vertebrados (têm coluna vertebral) e invertebrados (sem coluna).",
+                  "example": "O tubarão é vertebrado. A minhoca é invertebrada.",
+                  "trick": "Vertebrado = tem coluna vertebral. Invertebrado = sem coluna!"
+                },
+                {
+                  "icon": "🔗",
+                  "title": "Cadeias Alimentares",
+                  "body": "A cadeia alimentar mostra quem come quem.\nEstrutura: Produtor → Consumidor 1.º → Consumidor 2.º → Decompositor.\nEx: Erva → Gafanhoto → Rã → Cobra → Águia → Decompositores.\nO Sol é a fonte de energia inicial de todas as cadeias.",
+                  "example": "Alga → Peixe pequeno → Peixe grande → Tubarão",
+                  "trick": "Seta = \"é comido por\". Começa sempre num produtor (planta)!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual a hora do dia mais perigosa para estar exposto ao sol?",
+                  "options": [
+                    "7h-9h",
+                    "10h-12h",
+                    "12h-15h",
+                    "17h-20h"
+                  ],
+                  "answer": 2,
+                  "why": "O sol está mais forte e os raios UV são mais intensos entre as 12h e as 15h."
+                },
+                {
+                  "question": "Qual animal transmite a malária?",
+                  "options": [
+                    "Abelha",
+                    "Mosquito",
+                    "Cobra",
+                    "Aranha"
+                  ],
+                  "answer": 1,
+                  "why": "O mosquito Anopheles transmite o parasita da malária."
+                },
+                {
+                  "question": "Na cadeia alimentar, qual organismo está na base (início)?",
+                  "options": [
+                    "Predador",
+                    "Decompositor",
+                    "Produtor (planta)",
+                    "Consumidor"
+                  ],
+                  "answer": 2,
+                  "why": "A cadeia começa sempre num produtor (planta) que converte energia solar em alimento."
+                },
+                {
+                  "question": "Qual destes animais é VERTEBRADO?",
+                  "options": [
+                    "Minhoca",
+                    "Borboleta",
+                    "Tubarão",
+                    "Caracol"
+                  ],
+                  "answer": 2,
+                  "why": "O tubarão tem coluna vertebral — é vertebrado."
+                },
+                {
+                  "question": "Qual destes animais é INVERTEBRADO?",
+                  "options": [
+                    "Cão",
+                    "Tubarão",
+                    "Minhoca",
+                    "Cobra"
+                  ],
+                  "answer": 2,
+                  "why": "A minhoca não tem coluna vertebral — é invertebrada."
+                },
+                {
+                  "question": "Na cadeia: Erva → Coelho → Raposa. O coelho é:",
+                  "options": [
+                    "Produtor",
+                    "Consumidor 1.º",
+                    "Consumidor 2.º",
+                    "Decompositor"
+                  ],
+                  "answer": 1,
+                  "why": "O coelho come a erva (produtor) — é o consumidor de 1.ª ordem."
+                },
+                {
+                  "question": "Qual é a fonte de energia de todas as cadeias alimentares?",
+                  "options": [
+                    "Água",
+                    "Solo",
+                    "Sol",
+                    "Vento"
+                  ],
+                  "answer": 2,
+                  "why": "O Sol fornece energia que as plantas captam via fotossíntese — base de toda a cadeia."
+                },
+                {
+                  "question": "Porque é importante não atirar lixo no mar?",
+                  "options": [
+                    "Por ser feio",
+                    "Porque polui o habitat dos seres marinhos e destrói as cadeias alimentares",
+                    "Porque o lixo é pesado",
+                    "Porque a água fica fria"
+                  ],
+                  "answer": 1,
+                  "why": "Poluição marinha destrói habitats e afeta todas as cadeias alimentares do oceano."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Na cadeia: Alga → Peixe pequeno → Atum → Tubarão. Se todos os peixes pequenos desaparecerem, o que acontece ao atum?",
+                  "options": [
+                    "Aumenta",
+                    "Diminui por falta de alimento",
+                    "Fica igual",
+                    "Torna-se produtor"
+                  ],
+                  "answer": 1,
+                  "why": "Sem peixe pequeno, o atum fica sem alimento — a população diminui."
+                },
+                {
+                  "question": "Um animal que come tanto plantas como animais chama-se:",
+                  "options": [
+                    "Herbívoro",
+                    "Carnívoro",
+                    "Omnívoro",
+                    "Decompositor"
+                  ],
+                  "answer": 2,
+                  "why": "Omnívoro = come tanto plantas (herbi) como animais (carni)."
+                },
+                {
+                  "question": "Qual a ordem correta desta cadeia: Cobra, Erva, Rato, Águia?",
+                  "options": [
+                    "Cobra→Erva→Rato→Águia",
+                    "Erva→Rato→Cobra→Águia",
+                    "Erva→Cobra→Rato→Águia",
+                    "Águia→Cobra→Rato→Erva"
+                  ],
+                  "answer": 1,
+                  "why": "Erva(produtor)→Rato(1.º consumidor)→Cobra(2.º consumidor)→Águia(3.º consumidor)."
+                },
+                {
+                  "question": "Os decompositores (fungos e bactérias) têm que função na cadeia alimentar?",
+                  "options": [
+                    "Produzir alimento",
+                    "Decompor matéria orgânica morta e devolvê-la ao solo",
+                    "Predar os produtores",
+                    "Concorrer com os produtores"
+                  ],
+                  "answer": 1,
+                  "why": "Decompositores quebram matéria orgânica morta, reciclando nutrientes para o solo."
+                }
+              ]
             },
             {
               "id": "cie3_t2_ambiente_astros",
               "nome": "Ambiente — Solo, Clima e Astros",
               "icone": "🌍",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🌍",
+                  "title": "O Solo e o Relevo",
+                  "body": "O SOLO é a camada superficial da Terra onde crescem as plantas.\nTipos de relevo:\n▶ Montanhas: elevações altas e íngremes\n▶ Planaltos: zonas altas e planas\n▶ Planícies: zonas baixas e planas\n▶ Vales: entre montanhas\n▶ Praias: costa onde o mar encontra a terra",
+                  "example": "Em Cabo Verde: Pico do Fogo (vulcão) é a montanha mais alta (2829m).",
+                  "trick": "Montanha=alto+íngreme. Planície=baixo+plano. Vale=entre montanhas."
+                },
+                {
+                  "icon": "🌡️",
+                  "title": "O Clima",
+                  "body": "O CLIMA é o conjunto das condições atmosféricas de uma região ao longo do tempo.\nElementos do clima: temperatura, humidade, precipitação (chuva), vento, insolação.\nEm Cabo Verde: clima árido a semiárido, pouca chuva, muito sol e vento.",
+                  "example": "As ilhas do Barlavento recebem mais chuva do que as do Sotavento.",
+                  "trick": "Clima ≠ Tempo! Clima = padrão ao longo de anos. Tempo = hoje."
+                },
+                {
+                  "icon": "🌞",
+                  "title": "Os Astros",
+                  "body": "ASTROS: corpos celestes visíveis no espaço.\n▶ Estrelas: produzem luz própria (o Sol é uma estrela!)\n▶ Planetas: rodeiam uma estrela, não produzem luz própria\n▶ Satélites: rodeiam planetas (a Lua é o satélite da Terra)\n▶ O Sol: fonte de luz e calor para a Terra",
+                  "example": "O Sol está a cerca de 150 milhões de km da Terra.",
+                  "trick": "Estrela=produz luz. Planeta=reflete luz. Satélite=orbita planeta."
+                },
+                {
+                  "icon": "🧭",
+                  "title": "Pontos Cardeais e o Sol",
+                  "body": "Os pontos cardeais são: Norte (N), Sul (S), Este (E), Oeste (O).\nO Sol nasce a ESTE e põe-se a OESTE.\nAo meio-dia solar, o Sol está a SUL (no hemisfério norte).\nBússola: aponta para o Norte magnético.",
+                  "example": "Se estás de frente para o Norte: à tua direita está o Este, à tua esquerda está o Oeste.",
+                  "trick": "Nascente=Este. Poente=Oeste. NESO = Norte Este Sul Oeste (como uma rosa)."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é a montanha mais alta de Cabo Verde?",
+                  "options": [
+                    "Serra Malagueta",
+                    "Pico do Fogo",
+                    "Monte Verde",
+                    "Serra das Vacas"
+                  ],
+                  "answer": 1,
+                  "why": "O Pico do Fogo (vulcão) é a montanha mais alta de Cabo Verde com 2829m."
+                },
+                {
+                  "question": "O que é o clima?",
+                  "options": [
+                    "O tempo de hoje",
+                    "O padrão de condições atmosféricas ao longo dos anos",
+                    "A temperatura de amanhã",
+                    "O vento de hoje"
+                  ],
+                  "answer": 1,
+                  "why": "Clima = padrão a longo prazo. Tempo = condição meteorológica atual."
+                },
+                {
+                  "question": "O Sol é:",
+                  "options": [
+                    "Um planeta",
+                    "Uma estrela",
+                    "A lua da Terra",
+                    "Um satélite"
+                  ],
+                  "answer": 1,
+                  "why": "O Sol é uma estrela — produz a sua própria luz e calor por fusão nuclear."
+                },
+                {
+                  "question": "Em que direção nasce o Sol?",
+                  "options": [
+                    "Norte",
+                    "Sul",
+                    "Este (Nascente)",
+                    "Oeste (Poente)"
+                  ],
+                  "answer": 2,
+                  "why": "O Sol nasce a Este (nascente) e põe-se a Oeste (poente)."
+                },
+                {
+                  "question": "A Lua é um:",
+                  "options": [
+                    "Planeta",
+                    "Estrela",
+                    "Satélite natural da Terra",
+                    "Asteroide"
+                  ],
+                  "answer": 2,
+                  "why": "A Lua é o satélite natural da Terra — orbita à volta da Terra."
+                },
+                {
+                  "question": "Qual elemento NÃO faz parte do clima?",
+                  "options": [
+                    "Temperatura",
+                    "Chuva",
+                    "Vento",
+                    "Cor do solo"
+                  ],
+                  "answer": 3,
+                  "why": "A cor do solo não é um elemento climatológico."
+                },
+                {
+                  "question": "Num mapa, se o Norte está em cima, onde está o Este?",
+                  "options": [
+                    "Em baixo",
+                    "À esquerda",
+                    "À direita",
+                    "Em cima"
+                  ],
+                  "answer": 2,
+                  "why": "Convenção de mapas: Norte=cima, Sul=baixo, Este=direita, Oeste=esquerda."
+                },
+                {
+                  "question": "O clima de Cabo Verde é principalmente:",
+                  "options": [
+                    "Tropical húmido",
+                    "Polar",
+                    "Árido a semiárido",
+                    "Temperado oceânico"
+                  ],
+                  "answer": 2,
+                  "why": "Cabo Verde tem clima árido a semiárido — pouca chuva, muito sol."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Numa região montanhosa com 2000m de altitude, esperas que a temperatura seja:",
+                  "options": [
+                    "Mais alta que no vale",
+                    "Igual ao vale",
+                    "Mais baixa que no vale",
+                    "Depende da hora"
+                  ],
+                  "answer": 2,
+                  "why": "Com a altitude, a temperatura diminui (cerca de 6°C por cada 1000m)."
+                },
+                {
+                  "question": "Porque recebem as ilhas do Barlavento mais chuva do que as do Sotavento?",
+                  "options": [
+                    "São mais perto de África",
+                    "Estão expostas aos ventos alísios do norte que trazem humidade",
+                    "São maiores",
+                    "Têm mais montanhas"
+                  ],
+                  "answer": 1,
+                  "why": "Os ventos alísios vêm do norte — o Barlavento fica exposto e recebe mais humidade."
+                },
+                {
+                  "question": "Quantos planetas principais tem o Sistema Solar?",
+                  "options": [
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                  ],
+                  "answer": 1,
+                  "why": "O Sistema Solar tem 8 planetas: Mercúrio, Vénus, Terra, Marte, Júpiter, Saturno, Úrano, Neptuno."
+                },
+                {
+                  "question": "Se o Sol está a Oeste, que horas serão aproximadamente?",
+                  "options": [
+                    "Manhã cedo",
+                    "Meio-dia",
+                    "Final da tarde / pôr do sol",
+                    "Meia-noite"
+                  ],
+                  "answer": 2,
+                  "why": "Sol a Oeste = poente = final da tarde, por volta das 17h-19h."
+                }
+              ]
             }
           ]
         },
@@ -1042,9 +2665,172 @@
               "id": "cie3_t3_economia_cv",
               "nome": "Atividades Econômicas em Cabo Verde",
               "icone": "⚓",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "💼",
+                  "title": "Setores de Atividade Económica",
+                  "body": "As atividades económicas estão divididas em 3 setores:\n▶ Setor Primário: extração da natureza (agricultura, pesca, pecuária, mineração)\n▶ Setor Secundário: transformação (indústria, construção)\n▶ Setor Terciário: serviços (comércio, turismo, saúde, educação, finanças)",
+                  "example": "Pesca = primário. Fábrica de conservas = secundário. Hotel = terciário.",
+                  "trick": "1.º=extrair, 2.º=transformar, 3.º=servir. CVE depende muito do 3.º!"
+                },
+                {
+                  "icon": "🛒",
+                  "title": "Comércio e Circuitos Comerciais",
+                  "body": "COMÉRCIO: compra e venda de bens e serviços.\nCircuito: Produtor → Distribuidor → Retalhista → Consumidor.\nLocalização: mercados, lojas, supermercados, feiras.\nFatura e recibo: documentos de venda — prova que pagamos.",
+                  "example": "O agricultor vende a um grossista que vende ao supermercado que vende a ti.",
+                  "trick": "Produtor→Distribuidor→Retalhista→Consumidor. Fatura=obrigatória!"
+                },
+                {
+                  "icon": "🌾",
+                  "title": "Atividades Económicas em Cabo Verde",
+                  "body": "As principais atividades económicas em Cabo Verde:\n▶ Pesca: peixe, atum, lagosta (fonte de proteína e exportação)\n▶ Agricultura: milho, feijão, cana-de-açúcar (em ilhas com água)\n▶ Pecuária: cabras, vacas, porcos\n▶ Turismo: principal setor — praias, natureza, cultura\n▶ Indústria: conservas, construção, artesanato",
+                  "example": "O atum capturado em Cabo Verde é exportado para a Europa.",
+                  "trick": "Turismo=motor da economia cabo-verdiana!"
+                },
+                {
+                  "icon": "🔬",
+                  "title": "Experiências Científicas — Método",
+                  "body": "O método científico em prática:\n▶ Chave dicotómica: ferramenta que identifica seres vivos por características (sim/não)\n▶ Ímanes: atraem materiais ferrosos (ferro, níquel). Têm polo N e polo S\n▶ Luz: fontes luminosas naturais (sol, fogo) e artificiais (lâmpada, vela)\n▶ Balanças: medem massa por comparação",
+                  "example": "Ímane + ferro = atração. Ímane + plástico = sem reação.",
+                  "trick": "Pólos opostos atraem! N+S=atrai. N+N ou S+S=repele."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual atividade pertence ao setor PRIMÁRIO em Cabo Verde?",
+                  "options": [
+                    "Turismo",
+                    "Pesca",
+                    "Construção de hotéis",
+                    "Comércio"
+                  ],
+                  "answer": 1,
+                  "why": "Pesca = extração direta da natureza = setor primário."
+                },
+                {
+                  "question": "Qual é o setor mais importante para a economia de Cabo Verde?",
+                  "options": [
+                    "Setor primário",
+                    "Setor secundário",
+                    "Setor terciário (turismo)",
+                    "Todos iguais"
+                  ],
+                  "answer": 2,
+                  "why": "O turismo (setor terciário) é o principal motor da economia cabo-verdiana."
+                },
+                {
+                  "question": "No circuito comercial, quem vende diretamente ao consumidor final?",
+                  "options": [
+                    "Produtor",
+                    "Distribuidor/grossista",
+                    "Retalhista",
+                    "Todos iguais"
+                  ],
+                  "answer": 2,
+                  "why": "O retalhista (loja, supermercado) vende diretamente ao consumidor final."
+                },
+                {
+                  "question": "Qual material é atraído por um ímane?",
+                  "options": [
+                    "Plástico",
+                    "Madeira",
+                    "Ferro",
+                    "Papel"
+                  ],
+                  "answer": 2,
+                  "why": "O ferro (e outros materiais ferrosos) são atraídos por ímanes."
+                },
+                {
+                  "question": "Qual a cultura agrícola mais importante de Cabo Verde?",
+                  "options": [
+                    "Arroz",
+                    "Milho e feijão",
+                    "Trigo",
+                    "Soja"
+                  ],
+                  "answer": 1,
+                  "why": "Milho e feijão são as culturas alimentares principais de Cabo Verde."
+                },
+                {
+                  "question": "O que é uma fatura?",
+                  "options": [
+                    "Uma lista de compras",
+                    "Documento que prova a compra e venda de bens/serviços",
+                    "Um tipo de desconto",
+                    "Uma receita médica"
+                  ],
+                  "answer": 1,
+                  "why": "A fatura é o documento oficial que comprova uma transação comercial."
+                },
+                {
+                  "question": "Quais pólos de dois ímanes se ATRAEM?",
+                  "options": [
+                    "N+N",
+                    "S+S",
+                    "N+S",
+                    "Nenhum"
+                  ],
+                  "answer": 2,
+                  "why": "Pólos opostos atraem: N+S. Pólos iguais repelem: N+N ou S+S."
+                },
+                {
+                  "question": "A pecuária em Cabo Verde inclui principalmente a criação de:",
+                  "options": [
+                    "Touros de combate",
+                    "Cabras, vacas e porcos",
+                    "Elefantes e girafas",
+                    "Cavalos de corrida"
+                  ],
+                  "answer": 1,
+                  "why": "Em Cabo Verde cria-se principalmente cabras, vacas, porcos e galinhas."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma empresa pesca atum, fabrica conservas e vende nos supermercados. Em que setores opera?",
+                  "options": [
+                    "Apenas primário",
+                    "Primário e secundário",
+                    "Primário, secundário e terciário",
+                    "Apenas terciário"
+                  ],
+                  "answer": 2,
+                  "why": "Pesca=primário, fabrica conservas=secundário, vende=terciário."
+                },
+                {
+                  "question": "Porque é o turismo tão importante para Cabo Verde?",
+                  "options": [
+                    "Porque há muita neve",
+                    "Porque é um arquipélago com praias, cultura e clima excelente que atrai turistas",
+                    "Porque tem muita indústria",
+                    "Porque exporta muito petróleo"
+                  ],
+                  "answer": 1,
+                  "why": "Clima, praias, cultura e segurança fazem de Cabo Verde um destino turístico atrativo que gera divisas."
+                },
+                {
+                  "question": "Com uma chave dicotómica, quero identificar um animal. Primeiro pergunto: \"Tem asas? Sim/Não.\" Isto é um exemplo de:",
+                  "options": [
+                    "Experiência de química",
+                    "Método de classificação por características dicotómicas",
+                    "Cadeia alimentar",
+                    "Mapa climático"
+                  ],
+                  "answer": 1,
+                  "why": "Chave dicotómica = classificação por perguntas binárias (sim/não) sobre características."
+                },
+                {
+                  "question": "Qual o impacto de uma má colheita de milho para uma família agricultora cabo-verdiana?",
+                  "options": [
+                    "Sem impacto",
+                    "Mais lucro",
+                    "Menos alimento e rendimento",
+                    "Melhor qualidade"
+                  ],
+                  "answer": 2,
+                  "why": "Má colheita = menos alimento para comer e menos para vender = menos rendimento."
+                }
+              ]
             }
           ]
         }

@@ -1117,25 +1117,609 @@
               "id": "mat2_t1_numeros_500",
               "nome": "Números até 500 — Pares, Ímpares e Ordinais",
               "icone": "🔢",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔢",
+                  "title": "Números até 500",
+                  "body": "Contamos até 500. Cada número tem centenas, dezenas e unidades.\n347 = 3 centenas + 4 dezenas + 7 unidades = 300 + 40 + 7.",
+                  "example": "253 = 2 centenas + 5 dezenas + 3 unidades",
+                  "trick": "Escreve cada algarismo no seu lugar: C | D | U"
+                },
+                {
+                  "icon": "🟰",
+                  "title": "Números Pares e Ímpares",
+                  "body": "Números PARES terminam em 0, 2, 4, 6 ou 8 — podem ser divididos em dois grupos iguais.\nNúmeros ÍMPARES terminam em 1, 3, 5, 7 ou 9 — sobra sempre 1.",
+                  "example": "24 é par (24÷2=12). 37 é ímpar (37÷2=18 sobra 1).",
+                  "trick": "Par partilha-se ao meio sem sobrar!"
+                },
+                {
+                  "icon": "🏅",
+                  "title": "Numerais Ordinais",
+                  "body": "Indicam a posição ou ordem: 1.º primeiro, 2.º segundo, 3.º terceiro, 4.º quarto, 5.º quinto, 6.º sexto, 7.º sétimo, 8.º oitavo, 9.º nono, 10.º décimo.",
+                  "example": "O João chegou em 3.º lugar na corrida.",
+                  "trick": "A abreviatura é: número + ponto (1.º, 2.º, 3.º...)"
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Comparar Números",
+                  "body": "Usamos < (menor que), > (maior que) ou = (igual a).\nPara comparar: olha primeiro as centenas, depois as dezenas, depois as unidades.",
+                  "example": "247 < 352 porque 2 centenas < 3 centenas.",
+                  "trick": "O bico do crocodilo aponta para o número MAIOR!"
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Composição e Decomposição",
+                  "body": "COMPOR: juntar partes para formar um número. 200+50+3 = 253.\nDECOMPOR: separar um número nas suas partes. 348 = 300+40+8.",
+                  "example": "437 = 400 + 30 + 7",
+                  "trick": "Decomposição ajuda muito na adição e subtração!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 200 + 40 + 5?",
+                  "options": [
+                    "245",
+                    "254",
+                    "425",
+                    "205"
+                  ],
+                  "answer": 0,
+                  "why": "200+40+5 = 245 (2 centenas, 4 dezenas, 5 unidades)."
+                },
+                {
+                  "question": "Quantas centenas tem o número 387?",
+                  "options": [
+                    "8",
+                    "7",
+                    "3",
+                    "38"
+                  ],
+                  "answer": 2,
+                  "why": "387 = 3 centenas + 8 dezenas + 7 unidades."
+                },
+                {
+                  "question": "Qual destes números é PAR?",
+                  "options": [
+                    "13",
+                    "27",
+                    "40",
+                    "55"
+                  ],
+                  "answer": 2,
+                  "why": "40 termina em 0, portanto é par."
+                },
+                {
+                  "question": "Qual destes números é ÍMPAR?",
+                  "options": [
+                    "22",
+                    "34",
+                    "46",
+                    "51"
+                  ],
+                  "answer": 3,
+                  "why": "51 termina em 1, portanto é ímpar."
+                },
+                {
+                  "question": "Como se escreve \"segundo\" em numeral ordinal?",
+                  "options": [
+                    "1.º",
+                    "2.º",
+                    "3.º",
+                    "4.º"
+                  ],
+                  "answer": 1,
+                  "why": "Segundo = 2.º (segundo lugar)."
+                },
+                {
+                  "question": "Qual número é maior: 275 ou 257?",
+                  "options": [
+                    "257",
+                    "275",
+                    "São iguais",
+                    "Não é possível"
+                  ],
+                  "answer": 1,
+                  "why": "275 > 257 porque nas dezenas 7 > 5."
+                },
+                {
+                  "question": "Qual é a dezena do número 364?",
+                  "options": [
+                    "3",
+                    "4",
+                    "6",
+                    "36"
+                  ],
+                  "answer": 2,
+                  "why": "364 = 3 centenas + 6 dezenas + 4 unidades. A dezena é 6."
+                },
+                {
+                  "question": "O número 500 é par ou ímpar?",
+                  "options": [
+                    "Ímpar",
+                    "Par",
+                    "Nenhum dos dois",
+                    "Depende"
+                  ],
+                  "answer": 1,
+                  "why": "500 termina em 0, portanto é par."
+                },
+                {
+                  "question": "Qual vem a seguir: 1.º, 2.º, 3.º, ___?",
+                  "options": [
+                    "4.º",
+                    "5.º",
+                    "6.º",
+                    "7.º"
+                  ],
+                  "answer": 0,
+                  "why": "Depois do 3.º (terceiro) vem o 4.º (quarto)."
+                },
+                {
+                  "question": "Qual número tem 4 centenas, 2 dezenas e 1 unidade?",
+                  "options": [
+                    "124",
+                    "214",
+                    "412",
+                    "421"
+                  ],
+                  "answer": 3,
+                  "why": "4 centenas=400, 2 dezenas=20, 1 unidade=1 → 421."
+                },
+                {
+                  "question": "350 decomposto é:",
+                  "options": [
+                    "3+5+0",
+                    "35+0",
+                    "300+50+0",
+                    "300+5"
+                  ],
+                  "answer": 2,
+                  "why": "350 = 300 + 50 + 0 (3 centenas, 5 dezenas, 0 unidades)."
+                },
+                {
+                  "question": "Quantas dezenas tem o número 280?",
+                  "options": [
+                    "2",
+                    "0",
+                    "8",
+                    "28"
+                  ],
+                  "answer": 2,
+                  "why": "280 = 2 centenas + 8 dezenas + 0 unidades. Dezenas = 8."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Ana tem 235 figurinhas e Pedro tem 352. Quantas figurinhas tem Pedro a mais do que Ana?",
+                  "options": [
+                    "107",
+                    "117",
+                    "127",
+                    "217"
+                  ],
+                  "answer": 1,
+                  "why": "352 - 235 = 117 figurinhas."
+                },
+                {
+                  "question": "Qual sequência está em ordem CRESCENTE?",
+                  "options": [
+                    "500,375,250,125",
+                    "125,250,375,500",
+                    "250,500,125,375",
+                    "375,125,500,250"
+                  ],
+                  "answer": 1,
+                  "why": "Crescente = do menor para o maior: 125 < 250 < 375 < 500."
+                },
+                {
+                  "question": "Numa corrida, 5 alunos participaram. Maria chegou em 4.º lugar. Quantos chegaram ANTES dela?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "answer": 2,
+                  "why": "4.º lugar significa que 3 chegaram antes (1.º, 2.º, 3.º)."
+                },
+                {
+                  "question": "Qual destes números é ÍMPAR e maior que 400?",
+                  "options": [
+                    "400",
+                    "402",
+                    "401",
+                    "404"
+                  ],
+                  "answer": 2,
+                  "why": "401 termina em 1 (ímpar) e é maior que 400."
+                }
+              ]
             },
             {
               "id": "mat2_t1_operacoes",
               "nome": "Adição, Subtração, Multiplicação e Divisão",
               "icone": "✖️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "➕",
+                  "title": "Adição com Transporte",
+                  "body": "Quando a soma das unidades é 10 ou mais, transportamos 1 dezena.\nEx: 47+35: 7+5=12, escreve 2 e transporta 1 para as dezenas.\n4+3+1(transporte)=8 dezenas. Resultado: 82.",
+                  "example": "58 + 24 = 82",
+                  "trick": "Soma da direita para a esquerda! Transporta o \"1\" quando passa de 9."
+                },
+                {
+                  "icon": "➖",
+                  "title": "Subtração com Empréstimo",
+                  "body": "Quando não podemos subtrair as unidades, pedimos empréstimo à dezena.\nEx: 52−27: não podemos fazer 2−7, pedimos 1 dezena emprestada: 12−7=5. Dezenas: 4−2=2. Resultado: 25.",
+                  "example": "63 − 38 = 25",
+                  "trick": "Pede empréstimo à dezena ao lado!"
+                },
+                {
+                  "icon": "✖️",
+                  "title": "Multiplicação",
+                  "body": "Multiplicar é somar um número várias vezes.\n3×4 = 4+4+4 = 12\nAs tabuadas de multiplicação são essenciais — pratica todos os dias!",
+                  "example": "5×6 = 30 (cinco grupos de seis)",
+                  "trick": "Aprende as tabuadas! 2,3,4,5 primeiro."
+                },
+                {
+                  "icon": "🔁",
+                  "title": "Dobro, Triplo, Quádruplo e Quíntuplo",
+                  "body": "Dobro = ×2 | Triplo = ×3 | Quádruplo = ×4 | Quíntuplo = ×5\nO dobro de 6 = 6×2 = 12\nO triplo de 4 = 4×3 = 12",
+                  "example": "O quádruplo de 5 = 5×4 = 20",
+                  "trick": "Dobro = dois grupos | Triplo = três grupos..."
+                },
+                {
+                  "icon": "➗",
+                  "title": "Divisão",
+                  "body": "Dividir é repartir igualmente. 12÷3 = 4 (12 repartido em 3 grupos dá 4 em cada).\nÉ a operação inversa da multiplicação: se 3×4=12, então 12÷3=4 e 12÷4=3.",
+                  "example": "20 ÷ 4 = 5 (20 repartido em 4 grupos = 5 em cada)",
+                  "trick": "Pensa na tabuada ao contrário!"
+                },
+                {
+                  "icon": "✖️",
+                  "title": "Multiplicação com Transporte",
+                  "body": "Quando multiplicamos e o resultado parcial passa de 9, transportamos.\nEx: 34×3: 4×3=12, escreve 2, transporta 1. 3×3=9+1=10. Resultado: 102.",
+                  "example": "47 × 2: 7×2=14 (escreve 4, transporta 1); 4×2=8+1=9. Total: 94",
+                  "trick": "Multiplica unidades primeiro, depois dezenas!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 47 + 35?",
+                  "options": [
+                    "72",
+                    "82",
+                    "92",
+                    "73"
+                  ],
+                  "answer": 1,
+                  "why": "7+5=12 (escreve 2, transporta 1); 4+3+1=8. Resultado: 82."
+                },
+                {
+                  "question": "Quanto é 63 − 38?",
+                  "options": [
+                    "15",
+                    "25",
+                    "35",
+                    "45"
+                  ],
+                  "answer": 1,
+                  "why": "Unidades: pede empréstimo, 13−8=5. Dezenas: 5−3=2. Resultado: 25."
+                },
+                {
+                  "question": "Qual é o dobro de 7?",
+                  "options": [
+                    "9",
+                    "12",
+                    "14",
+                    "21"
+                  ],
+                  "answer": 2,
+                  "why": "Dobro = ×2. 7×2=14."
+                },
+                {
+                  "question": "Qual é o triplo de 5?",
+                  "options": [
+                    "10",
+                    "15",
+                    "20",
+                    "25"
+                  ],
+                  "answer": 1,
+                  "why": "Triplo = ×3. 5×3=15."
+                },
+                {
+                  "question": "Quanto é 6 × 4?",
+                  "options": [
+                    "10",
+                    "18",
+                    "24",
+                    "28"
+                  ],
+                  "answer": 2,
+                  "why": "6×4 = 4+4+4+4+4+4 = 24."
+                },
+                {
+                  "question": "Quanto é 24 ÷ 6?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": 1,
+                  "why": "24÷6=4 porque 6×4=24."
+                },
+                {
+                  "question": "Quanto é 48 + 27?",
+                  "options": [
+                    "65",
+                    "75",
+                    "76",
+                    "85"
+                  ],
+                  "answer": 1,
+                  "why": "8+7=15 (escreve 5, transporta 1); 4+2+1=7. Resultado: 75."
+                },
+                {
+                  "question": "Quanto é 52 − 27?",
+                  "options": [
+                    "15",
+                    "25",
+                    "35",
+                    "45"
+                  ],
+                  "answer": 1,
+                  "why": "Empréstimo: 12−7=5; 4−2=2. Resultado: 25."
+                },
+                {
+                  "question": "Qual é o quádruplo de 6?",
+                  "options": [
+                    "18",
+                    "24",
+                    "30",
+                    "36"
+                  ],
+                  "answer": 1,
+                  "why": "Quádruplo = ×4. 6×4=24."
+                },
+                {
+                  "question": "Quanto é 36 ÷ 4?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "answer": 3,
+                  "why": "36÷4=9 porque 4×9=36."
+                },
+                {
+                  "question": "Quanto é 23 × 3?",
+                  "options": [
+                    "63",
+                    "69",
+                    "66",
+                    "59"
+                  ],
+                  "answer": 1,
+                  "why": "3×3=9; 2×3=6. Resultado: 69."
+                },
+                {
+                  "question": "Qual é o quíntuplo de 4?",
+                  "options": [
+                    "16",
+                    "20",
+                    "24",
+                    "25"
+                  ],
+                  "answer": 1,
+                  "why": "Quíntuplo = ×5. 4×5=20."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Há 48 laranjas para repartir em grupos de 6. Quantos grupos se formam?",
+                  "options": [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "answer": 2,
+                  "why": "48÷6=8 grupos."
+                },
+                {
+                  "question": "Uma caixa tem 35 ovos. Chegaram mais 3 caixas iguais. Quantos ovos há ao todo?",
+                  "options": [
+                    "105",
+                    "120",
+                    "140",
+                    "145"
+                  ],
+                  "answer": 2,
+                  "why": "35×4 = 140 ovos (a caixa original + 3 novas = 4 caixas)."
+                },
+                {
+                  "question": "Maria tinha 93 pastilhas e comeu 48. Com quantas ficou?",
+                  "options": [
+                    "35",
+                    "45",
+                    "55",
+                    "65"
+                  ],
+                  "answer": 1,
+                  "why": "93−48=45 pastilhas."
+                },
+                {
+                  "question": "O Pedro poupou 65 escudos em março e o triplo em abril. Quanto poupou em abril?",
+                  "options": [
+                    "130",
+                    "165",
+                    "195",
+                    "210"
+                  ],
+                  "answer": 2,
+                  "why": "Triplo de 65 = 65×3 = 195 escudos."
+                }
+              ]
             },
             {
               "id": "mat2_t1_regularidades",
               "nome": "Regularidades e Sequências",
               "icone": "🔄",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔄",
+                  "title": "Regularidades e Sequências",
+                  "body": "Uma sequência segue uma regra. Encontrar a regra permite descobrir o próximo número.\nSequência crescente: 5, 10, 15, 20... (regra: +5)\nSequência decrescente: 100, 90, 80... (regra: −10)",
+                  "example": "2, 4, 6, 8, ___ → regra: +2 → resposta: 10",
+                  "trick": "Subtrai dois termos seguidos para descobrir a regra!"
+                },
+                {
+                  "icon": "🔷",
+                  "title": "Sequências Geométricas",
+                  "body": "Sequências com figuras ou padrões que se repetem.\nEx: ●▲●▲●▲ — a regra é: círculo, triângulo, repete.\nEstudamos a posição e como o padrão continua.",
+                  "example": "🔴🔵🔴🔵🔴___ → resposta: 🔵",
+                  "trick": "Identifica o bloco que se repete!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o próximo número: 10, 20, 30, 40, ___?",
+                  "options": [
+                    "45",
+                    "50",
+                    "55",
+                    "60"
+                  ],
+                  "answer": 1,
+                  "why": "A regra é +10. 40+10=50."
+                },
+                {
+                  "question": "Qual é o número que falta: 3, 6, 9, ___, 15?",
+                  "options": [
+                    "10",
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "answer": 2,
+                  "why": "A regra é +3. 9+3=12."
+                },
+                {
+                  "question": "Qual é o próximo: 100, 90, 80, 70, ___?",
+                  "options": [
+                    "55",
+                    "60",
+                    "65",
+                    "75"
+                  ],
+                  "answer": 1,
+                  "why": "A regra é −10. 70−10=60."
+                },
+                {
+                  "question": "Qual a regra da sequência: 5, 10, 15, 20?",
+                  "options": [
+                    "+3",
+                    "+4",
+                    "+5",
+                    "+10"
+                  ],
+                  "answer": 2,
+                  "why": "De 5 para 10 somamos 5. A regra é +5."
+                },
+                {
+                  "question": "Qual o número que falta: 2, ___, 8, 11, 14?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "answer": 1,
+                  "why": "A regra é +3. 2+3=5."
+                },
+                {
+                  "question": "Qual é o próximo: 1, 3, 5, 7, ___?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "answer": 1,
+                  "why": "A regra é +2. 7+2=9 (números ímpares)."
+                },
+                {
+                  "question": "Quantos pontos terá o 4.º elemento: ●, ●●, ●●●, ___?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": 1,
+                  "why": "A sequência aumenta 1 ponto. O 4.º tem 4 pontos."
+                },
+                {
+                  "question": "Qual a sequência em ordem DECRESCENTE?",
+                  "options": [
+                    "5,10,15,20",
+                    "20,15,10,5",
+                    "10,5,20,15",
+                    "5,20,10,15"
+                  ],
+                  "answer": 1,
+                  "why": "Decrescente = do maior para o menor: 20, 15, 10, 5."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual é o 6.º número da sequência: 4, 8, 12, 16, ___?",
+                  "options": [
+                    "18",
+                    "20",
+                    "24",
+                    "28"
+                  ],
+                  "answer": 2,
+                  "why": "Regra +4: 4,8,12,16,20,24. O 6.º é 24."
+                },
+                {
+                  "question": "Uma sequência começa em 500 e a regra é −50. Qual é o 4.º número?",
+                  "options": [
+                    "300",
+                    "350",
+                    "400",
+                    "450"
+                  ],
+                  "answer": 1,
+                  "why": "500,450,400,350. O 4.º é 350."
+                },
+                {
+                  "question": "Numa sequência geométrica, cada figura tem mais 2 triângulos. Se a 1.ª tem 3, quantos tem a 5.ª?",
+                  "options": [
+                    "9",
+                    "10",
+                    "11",
+                    "13"
+                  ],
+                  "answer": 2,
+                  "why": "3,5,7,9,11. A 5.ª tem 11."
+                },
+                {
+                  "question": "Qual a regra: 1, 4, 9, 16, 25?",
+                  "options": [
+                    "×2",
+                    "+3",
+                    "quadrados perfeitos",
+                    "+5,+7..."
+                  ],
+                  "answer": 3,
+                  "why": "1²=1, 2²=4, 3²=9, 4²=16, 5²=25. Ou: somamos 3,5,7,9 (ímpares crescentes)."
+                }
+              ]
             }
           ]
         },
@@ -1147,17 +1731,365 @@
               "id": "mat2_t2_dados",
               "nome": "Organização e Tratamento de Dados",
               "icone": "📊",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📊",
+                  "title": "Organização de Dados",
+                  "body": "Recolhemos dados (informações) e organizamos em tabelas ou gráficos para perceber melhor.\nTabela: organiza dados em linhas e colunas.\nPictograma: usa imagens para representar quantidades.",
+                  "example": "Tabela de frutas preferidas: Manga=8, Papaia=5, Banana=10",
+                  "trick": "Conta todas as marcas antes de fazer a tabela!"
+                },
+                {
+                  "icon": "📉",
+                  "title": "Gráfico de Barras",
+                  "body": "As barras representam as quantidades. Quanto mais alta a barra, maior o valor.\nEixo horizontal (→): categorias. Eixo vertical (↑): quantidade.\nPermite comparar rapidamente vários valores.",
+                  "example": "Barra de \"Banana\" altura 10 > Barra de \"Papaia\" altura 5",
+                  "trick": "Lê sempre os números no eixo vertical!"
+                },
+                {
+                  "icon": "🔵",
+                  "title": "Moda (Valor Mais Frequente)",
+                  "body": "A moda é o valor que aparece MAIS VEZES num conjunto de dados.\nEx: nas notas 5, 7, 7, 8, 7, 9 — a moda é 7 (aparece 3 vezes).",
+                  "example": "Cores preferidas: Azul=6, Verde=3, Vermelho=6. A moda é Azul e Vermelho.",
+                  "trick": "Conta quantas vezes cada valor aparece!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Numa tabela: Manga=8, Papaia=5, Banana=10. Qual a fruta MAIS popular?",
+                  "options": [
+                    "Manga",
+                    "Papaia",
+                    "Banana",
+                    "Todas iguais"
+                  ],
+                  "answer": 2,
+                  "why": "Banana tem 10 votos, o valor mais alto."
+                },
+                {
+                  "question": "Numa tabela: Manga=8, Papaia=5, Banana=10. Quantas frutas foram contadas ao total?",
+                  "options": [
+                    "13",
+                    "18",
+                    "23",
+                    "25"
+                  ],
+                  "answer": 2,
+                  "why": "8+5+10=23 frutas no total."
+                },
+                {
+                  "question": "Qual a fruta MENOS popular na tabela: Manga=8, Papaia=5, Banana=10?",
+                  "options": [
+                    "Manga",
+                    "Papaia",
+                    "Banana",
+                    "Não sei"
+                  ],
+                  "answer": 1,
+                  "why": "Papaia tem 5 votos, o valor mais baixo."
+                },
+                {
+                  "question": "Num gráfico de barras, a barra mais ALTA representa:",
+                  "options": [
+                    "O valor mais pequeno",
+                    "O valor mais grande",
+                    "O valor do meio",
+                    "A moda"
+                  ],
+                  "answer": 1,
+                  "why": "No gráfico de barras, barras mais altas = valores maiores."
+                },
+                {
+                  "question": "Nas notas: 6, 8, 6, 9, 6, 7. Qual é a moda?",
+                  "options": [
+                    "7",
+                    "8",
+                    "6",
+                    "9"
+                  ],
+                  "answer": 2,
+                  "why": "6 aparece 3 vezes — é o valor mais frequente."
+                },
+                {
+                  "question": "Numa turma: 12 alunos gostam de futebol, 8 de natação, 5 de atletismo. Quantos alunos há no total?",
+                  "options": [
+                    "20",
+                    "25",
+                    "30",
+                    "35"
+                  ],
+                  "answer": 1,
+                  "why": "12+8+5=25 alunos."
+                },
+                {
+                  "question": "Num pictograma cada 🍎 representa 2 alunos. Se há 4🍎, quantos alunos escolheram maçã?",
+                  "options": [
+                    "4",
+                    "6",
+                    "8",
+                    "10"
+                  ],
+                  "answer": 2,
+                  "why": "4 imagens × 2 = 8 alunos."
+                },
+                {
+                  "question": "Num gráfico: Azul=7, Verde=4, Amarelo=7. Qual é a moda?",
+                  "options": [
+                    "Verde",
+                    "Azul",
+                    "Amarelo",
+                    "Azul e Amarelo"
+                  ],
+                  "answer": 3,
+                  "why": "Azul e Amarelo empatam com 7 — ambos são a moda."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma tabela mostra: Segunda=3 faltas, Terça=1, Quarta=5, Quinta=2, Sexta=4. Qual o dia com mais faltas?",
+                  "options": [
+                    "Segunda",
+                    "Terça",
+                    "Quarta",
+                    "Sexta"
+                  ],
+                  "answer": 2,
+                  "why": "Quarta tem 5 faltas — o valor mais alto."
+                },
+                {
+                  "question": "No mesmo gráfico, quantas faltas houve no total na semana?",
+                  "options": [
+                    "12",
+                    "13",
+                    "14",
+                    "15"
+                  ],
+                  "answer": 3,
+                  "why": "3+1+5+2+4=15 faltas."
+                },
+                {
+                  "question": "Numa turma de 25 alunos, 10 preferem matemática, 8 português e os restantes ciências. Quantos preferem ciências?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "answer": 2,
+                  "why": "25−10−8=7 alunos preferem ciências."
+                },
+                {
+                  "question": "Num pictograma, cada imagem representa 5 alunos. Se há 6 imagens para \"futebol\", quantos alunos escolheram futebol?",
+                  "options": [
+                    "11",
+                    "25",
+                    "30",
+                    "35"
+                  ],
+                  "answer": 2,
+                  "why": "6 imagens × 5 = 30 alunos."
+                }
+              ]
             },
             {
               "id": "mat2_t2_geom_figuras",
               "nome": "Geometria — Figuras Planas e Comprimento",
               "icone": "📐",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📍",
+                  "title": "Orientação Espacial",
+                  "body": "Descrevemos posições usando: à esquerda, à direita, em cima, em baixo, à frente, atrás.\nUma PLANTA é um desenho visto de cima (como um pássaro veria).",
+                  "example": "O livro está À DIREITA da mochila e EM CIMA da mesa.",
+                  "trick": "Usa pontos de referência para te orientares!"
+                },
+                {
+                  "icon": "🔷",
+                  "title": "Figuras Planas",
+                  "body": "Figuras planas são planas (2D). As principais:\n▶ Quadrado: 4 lados iguais, 4 ângulos retos\n▶ Retângulo: 2 pares de lados iguais, 4 ângulos retos\n▶ Triângulo: 3 lados, 3 ângulos\n▶ Círculo: sem lados nem ângulos",
+                  "example": "Uma janela é um retângulo. Uma pizza é um círculo.",
+                  "trick": "Conta os lados: 3=triângulo, 4=quadrilátero, 0=círculo."
+                },
+                {
+                  "icon": "📏",
+                  "title": "Comprimento",
+                  "body": "O comprimento é medido com uma régua.\nUnidades: centímetro (cm) e metro (m).\n1 metro = 100 centímetros.",
+                  "example": "Uma régua mede 30 cm. Uma porta mede cerca de 2 m.",
+                  "trick": "Metro para grandes distâncias, centímetro para objetos pequenos!"
+                },
+                {
+                  "icon": "🪞",
+                  "title": "Simetria",
+                  "body": "Uma figura tem simetria quando pode ser dobrada ao meio e as duas metades coincidem.\nA linha onde se dobra chama-se eixo de simetria.",
+                  "example": "A letra A tem eixo de simetria vertical. Um coração também.",
+                  "trick": "Dobra mentalmente o papel — as metades batem certo?"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Área e Perímetro",
+                  "body": "PERÍMETRO: soma de todos os lados de uma figura.\nÁREA: superfície interior de uma figura (quantos quadradinhos cabem dentro).",
+                  "example": "Retângulo 4cm×3cm: Perímetro=4+3+4+3=14cm. Área=4×3=12cm².",
+                  "trick": "Perímetro=volta à figura! Área=preenche o interior!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantos lados tem um triângulo?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "answer": 1,
+                  "why": "O triângulo tem 3 lados e 3 ângulos."
+                },
+                {
+                  "question": "Quantos lados iguais tem um quadrado?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4 pares de 2",
+                    "4 todos iguais"
+                  ],
+                  "answer": 3,
+                  "why": "O quadrado tem 4 lados todos com o mesmo comprimento."
+                },
+                {
+                  "question": "1 metro é igual a quantos centímetros?",
+                  "options": [
+                    "10 cm",
+                    "100 cm",
+                    "1000 cm",
+                    "10000 cm"
+                  ],
+                  "answer": 1,
+                  "why": "1 m = 100 cm."
+                },
+                {
+                  "question": "Qual destas figuras NÃO tem lados retos?",
+                  "options": [
+                    "Quadrado",
+                    "Retângulo",
+                    "Triângulo",
+                    "Círculo"
+                  ],
+                  "answer": 3,
+                  "why": "O círculo é redondo e não tem lados retos."
+                },
+                {
+                  "question": "Qual é o perímetro de um quadrado com lados de 5 cm?",
+                  "options": [
+                    "5 cm",
+                    "10 cm",
+                    "20 cm",
+                    "25 cm"
+                  ],
+                  "answer": 2,
+                  "why": "Perímetro = 4×5 = 20 cm (4 lados iguais de 5 cm)."
+                },
+                {
+                  "question": "Uma figura tem eixo de simetria quando:",
+                  "options": [
+                    "Tem 4 lados",
+                    "Pode ser dobrada em 2 metades iguais",
+                    "É um quadrado",
+                    "Tem ângulos retos"
+                  ],
+                  "answer": 1,
+                  "why": "Simetria: ao dobrar, as duas metades coincidem."
+                },
+                {
+                  "question": "O que é uma planta de uma sala?",
+                  "options": [
+                    "Uma flor na sala",
+                    "O desenho da sala visto de cima",
+                    "O comprimento da sala",
+                    "A área da sala"
+                  ],
+                  "answer": 1,
+                  "why": "Planta = desenho visto de cima, como um pássaro veria."
+                },
+                {
+                  "question": "Um retângulo tem lados de 6cm e 3cm. Qual é o seu perímetro?",
+                  "options": [
+                    "9 cm",
+                    "18 cm",
+                    "9 cm²",
+                    "18 cm²"
+                  ],
+                  "answer": 1,
+                  "why": "6+3+6+3=18 cm."
+                },
+                {
+                  "question": "Qual a área de um retângulo 5cm×4cm?",
+                  "options": [
+                    "9 cm²",
+                    "18 cm²",
+                    "20 cm²",
+                    "25 cm²"
+                  ],
+                  "answer": 2,
+                  "why": "Área=comprimento×largura=5×4=20 cm²."
+                },
+                {
+                  "question": "Onde fica algo \"à esquerda\"?",
+                  "options": [
+                    "No lado do coração",
+                    "No lado da mão direita",
+                    "Em cima",
+                    "Em baixo"
+                  ],
+                  "answer": 0,
+                  "why": "À esquerda = o lado onde está o coração (mão esquerda)."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um quadrado tem perímetro de 28 cm. Quanto mede cada lado?",
+                  "options": [
+                    "4 cm",
+                    "6 cm",
+                    "7 cm",
+                    "14 cm"
+                  ],
+                  "answer": 2,
+                  "why": "28÷4=7 cm por lado."
+                },
+                {
+                  "question": "Qual figura tem MAIS lados: triângulo, quadrado, pentágono ou hexágono?",
+                  "options": [
+                    "Triângulo",
+                    "Quadrado",
+                    "Pentágono",
+                    "Hexágono"
+                  ],
+                  "answer": 3,
+                  "why": "Hexágono tem 6 lados (o mais)."
+                },
+                {
+                  "question": "Um jardim retangular tem 8m de comprimento e 5m de largura. Qual a sua área?",
+                  "options": [
+                    "13 m²",
+                    "26 m²",
+                    "40 m²",
+                    "80 m²"
+                  ],
+                  "answer": 2,
+                  "why": "Área=8×5=40 m²."
+                },
+                {
+                  "question": "Uma figura tem 4 eixos de simetria. Qual pode ser?",
+                  "options": [
+                    "Triângulo equilátero",
+                    "Retângulo",
+                    "Quadrado",
+                    "Círculo"
+                  ],
+                  "answer": 2,
+                  "why": "O quadrado tem 4 eixos de simetria (horizontal, vertical e 2 diagonais)."
+                }
+              ]
             }
           ]
         },
@@ -1169,17 +2101,409 @@
               "id": "mat2_t3_numeros_1000",
               "nome": "Números até 1000 e Frações",
               "icone": "½",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔢",
+                  "title": "Números até 1000",
+                  "body": "Mil = 1000. Depois de 500 continuamos: 501, 502... 999, 1000.\nDecomposição: 847 = 8 centenas + 4 dezenas + 7 unidades = 800+40+7.",
+                  "example": "1000 = 10 centenas = 100 dezenas = 1000 unidades",
+                  "trick": "Para números de 3 algarismos: centenas | dezenas | unidades"
+                },
+                {
+                  "icon": "🍕",
+                  "title": "Frações — Metade e Terça Parte",
+                  "body": "Uma fração divide o todo em partes iguais.\nMETADE = 1/2 (dividir em 2 partes iguais, tomar 1)\nTERÇA PARTE = 1/3 (dividir em 3 partes iguais, tomar 1)",
+                  "example": "Metade de 8 = 4. Terça parte de 9 = 3.",
+                  "trick": "O denominador diz em quantas partes se divide!"
+                },
+                {
+                  "icon": "🍫",
+                  "title": "Quarta Parte e Quinta Parte",
+                  "body": "QUARTA PARTE = 1/4 (dividir em 4 partes iguais, tomar 1)\nQUINTA PARTE = 1/5 (dividir em 5 partes iguais, tomar 1)\nA quarta parte de 20 = 20÷4 = 5",
+                  "example": "Quinta parte de 25 = 25÷5 = 5",
+                  "trick": "Fração = divisão! 1/4 de 12 = 12÷4 = 3"
+                },
+                {
+                  "icon": "📊",
+                  "title": "Numerais Ordinais até 20.º",
+                  "body": "Continuamos os ordinais: 11.º décimo primeiro, 12.º décimo segundo... 20.º vigésimo.\nUsam-se em classificações, listas, endereços.",
+                  "example": "O João mora no 5.º andar. A Maria ficou em 12.º lugar.",
+                  "trick": "Ordinal indica POSIÇÃO, cardinal indica QUANTIDADE."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 700 + 80 + 6?",
+                  "options": [
+                    "786",
+                    "768",
+                    "876",
+                    "867"
+                  ],
+                  "answer": 0,
+                  "why": "700+80+6=786 (7 centenas, 8 dezenas, 6 unidades)."
+                },
+                {
+                  "question": "Qual é a metade de 16?",
+                  "options": [
+                    "4",
+                    "6",
+                    "8",
+                    "10"
+                  ],
+                  "answer": 2,
+                  "why": "Metade = ÷2. 16÷2=8."
+                },
+                {
+                  "question": "Qual é a terça parte de 18?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "9"
+                  ],
+                  "answer": 2,
+                  "why": "Terça parte = ÷3. 18÷3=6."
+                },
+                {
+                  "question": "Qual é a quarta parte de 20?",
+                  "options": [
+                    "4",
+                    "5",
+                    "8",
+                    "10"
+                  ],
+                  "answer": 1,
+                  "why": "Quarta parte = ÷4. 20÷4=5."
+                },
+                {
+                  "question": "Qual é a quinta parte de 30?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "answer": 1,
+                  "why": "Quinta parte = ÷5. 30÷5=6."
+                },
+                {
+                  "question": "Quantas centenas tem 956?",
+                  "options": [
+                    "5",
+                    "6",
+                    "9",
+                    "95"
+                  ],
+                  "answer": 2,
+                  "why": "956 = 9 centenas + 5 dezenas + 6 unidades."
+                },
+                {
+                  "question": "Como se escreve 900 + 40 + 3 em número?",
+                  "options": [
+                    "943",
+                    "934",
+                    "493",
+                    "349"
+                  ],
+                  "answer": 0,
+                  "why": "900+40+3=943."
+                },
+                {
+                  "question": "A metade de 24 é:",
+                  "options": [
+                    "6",
+                    "8",
+                    "12",
+                    "16"
+                  ],
+                  "answer": 2,
+                  "why": "24÷2=12."
+                },
+                {
+                  "question": "A quarta parte de 36 é:",
+                  "options": [
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "answer": 3,
+                  "why": "36÷4=9."
+                },
+                {
+                  "question": "Em numeral ordinal, \"décimo segundo\" escreve-se:",
+                  "options": [
+                    "10.º",
+                    "11.º",
+                    "12.º",
+                    "20.º"
+                  ],
+                  "answer": 2,
+                  "why": "Décimo segundo = 12.º."
+                },
+                {
+                  "question": "1000 tem quantas dezenas?",
+                  "options": [
+                    "10",
+                    "100",
+                    "1000",
+                    "10000"
+                  ],
+                  "answer": 1,
+                  "why": "1000 = 100 dezenas (pois 10 dezenas = 100, e 1000÷10=100)."
+                },
+                {
+                  "question": "Um bolo foi dividido em 4 partes iguais. Comi 1 parte. Que fração comi?",
+                  "options": [
+                    "1/2",
+                    "1/3",
+                    "1/4",
+                    "1/5"
+                  ],
+                  "answer": 2,
+                  "why": "Dividi em 4 e comi 1: comi 1/4 (uma quarta parte)."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma turma tem 30 alunos. Dois quintos foram à excursão (2/5). Quantos foram?",
+                  "options": [
+                    "6",
+                    "10",
+                    "12",
+                    "15"
+                  ],
+                  "answer": 2,
+                  "why": "1/5 de 30 = 6. 2/5 = 6×2 = 12 alunos."
+                },
+                {
+                  "question": "Qual o maior número: 879, 897, 789 ou 798?",
+                  "options": [
+                    "879",
+                    "897",
+                    "789",
+                    "798"
+                  ],
+                  "answer": 1,
+                  "why": "897 — comparando centenas todas 8, dezenas 9 > 7, logo 897 é o maior."
+                },
+                {
+                  "question": "Um número tem 9 centenas, 0 dezenas e 5 unidades. Qual é?",
+                  "options": [
+                    "905",
+                    "950",
+                    "509",
+                    "590"
+                  ],
+                  "answer": 0,
+                  "why": "9 centenas=900, 0 dezenas=0, 5 unidades=5 → 905."
+                },
+                {
+                  "question": "Numa prateleira há 1000 livros. Venderam-se 3/4 dos livros. Quantos ficaram?",
+                  "options": [
+                    "250",
+                    "500",
+                    "750",
+                    "1000"
+                  ],
+                  "answer": 0,
+                  "why": "3/4 de 1000 = 750 vendidos. Ficaram 1000−750=250."
+                }
+              ]
             },
             {
               "id": "mat2_t3_solidos_medidas",
               "nome": "Sólidos Geométricos, Massa, Tempo e Dinheiro",
               "icone": "⏱️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📦",
+                  "title": "Sólidos Geométricos",
+                  "body": "Sólidos geométricos têm 3 dimensões (comprimento, largura, altura).\n▶ Cubo: 6 faces quadradas iguais\n▶ Paralelepípedo (caixa): 6 faces retangulares\n▶ Esfera: completamente redonda (bola)\n▶ Cilindro: 2 faces circulares + 1 face curva (lata)\n▶ Cone: 1 face circular + 1 vértice (chapéu)",
+                  "example": "Uma caixa de sapatos é um paralelepípedo. Uma bola é uma esfera.",
+                  "trick": "Conta as faces: cubo=6, paralelepípedo=6, cilindro=3, cone=2."
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Massa e Peso",
+                  "body": "A MASSA de um objeto mede a quantidade de matéria que tem.\nUnidade principal: quilograma (kg). 1 kg = 1000 gramas (g).\nMedimos com uma balança.",
+                  "example": "1 saco de arroz = 1 kg. Uma maçã = cerca de 200 g.",
+                  "trick": "kg para objetos pesados, g para objetos leves!"
+                },
+                {
+                  "icon": "🗓️",
+                  "title": "O Calendário e o Tempo",
+                  "body": "1 ano = 12 meses = 365 dias (366 no ano bissexto).\n1 semana = 7 dias. 1 dia = 24 horas.\n1 hora = 60 minutos. 1 minuto = 60 segundos.\nMeses: Jan(31), Fev(28/29), Mar(31), Abr(30), Mai(31), Jun(30), Jul(31), Ago(31), Set(30), Out(31), Nov(30), Dez(31).",
+                  "example": "Se hoje é dia 28 de fevereiro, amanhã é 1 de março.",
+                  "trick": "Regra dos nós da mão para lembrar os meses de 31 dias!"
+                },
+                {
+                  "icon": "💰",
+                  "title": "Dinheiro — Escudos e Centavos",
+                  "body": "Em Cabo Verde usamos o Escudo cabo-verdiano (CVE).\n1 escudo = 100 centavos.\nSabemos fazer troco: Pago com 500$, compra custa 347$, troco = 500−347=153$.",
+                  "example": "500$ − 347$ = 153$ de troco",
+                  "trick": "Para o troco, subtrai o preço ao valor pago!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas faces tem um cubo?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "8"
+                  ],
+                  "answer": 2,
+                  "why": "O cubo tem 6 faces quadradas iguais."
+                },
+                {
+                  "question": "Qual sólido tem a forma de uma bola?",
+                  "options": [
+                    "Cubo",
+                    "Cilindro",
+                    "Esfera",
+                    "Cone"
+                  ],
+                  "answer": 2,
+                  "why": "A esfera é completamente redonda, como uma bola."
+                },
+                {
+                  "question": "1 quilograma é igual a quantos gramas?",
+                  "options": [
+                    "10 g",
+                    "100 g",
+                    "1000 g",
+                    "10000 g"
+                  ],
+                  "answer": 2,
+                  "why": "1 kg = 1000 g."
+                },
+                {
+                  "question": "Quantos dias tem uma semana?",
+                  "options": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "answer": 2,
+                  "why": "Uma semana tem 7 dias: segunda, terça, quarta, quinta, sexta, sábado, domingo."
+                },
+                {
+                  "question": "Quantos meses tem um ano?",
+                  "options": [
+                    "10",
+                    "11",
+                    "12",
+                    "13"
+                  ],
+                  "answer": 2,
+                  "why": "Um ano tem 12 meses."
+                },
+                {
+                  "question": "Comprei pão por 120$ e paguei com 200$. Qual é o troco?",
+                  "options": [
+                    "60$",
+                    "70$",
+                    "80$",
+                    "90$"
+                  ],
+                  "answer": 2,
+                  "why": "200−120=80 escudos de troco."
+                },
+                {
+                  "question": "Qual sólido tem a forma de uma lata de refrigerante?",
+                  "options": [
+                    "Cubo",
+                    "Cilindro",
+                    "Esfera",
+                    "Cone"
+                  ],
+                  "answer": 1,
+                  "why": "Uma lata tem a forma de cilindro (2 bases circulares + lateral curva)."
+                },
+                {
+                  "question": "Quantas horas tem um dia?",
+                  "options": [
+                    "12",
+                    "20",
+                    "24",
+                    "30"
+                  ],
+                  "answer": 2,
+                  "why": "1 dia = 24 horas."
+                },
+                {
+                  "question": "Uma balança mostra 2 kg e 500 g. Quantos gramas é isso no total?",
+                  "options": [
+                    "2500 g",
+                    "2050 g",
+                    "250 g",
+                    "20500 g"
+                  ],
+                  "answer": 0,
+                  "why": "2 kg = 2000 g + 500 g = 2500 g."
+                },
+                {
+                  "question": "Que instrumento usamos para medir a massa de um objeto?",
+                  "options": [
+                    "Régua",
+                    "Termómetro",
+                    "Balança",
+                    "Relógio"
+                  ],
+                  "answer": 2,
+                  "why": "A balança mede a massa dos objetos."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma caixa cúbica tem cada aresta com 3 cm. Qual é o volume? (Volume = aresta³)",
+                  "options": [
+                    "9 cm³",
+                    "18 cm³",
+                    "27 cm³",
+                    "36 cm³"
+                  ],
+                  "answer": 2,
+                  "why": "3×3×3=27 cm³."
+                },
+                {
+                  "question": "Maria nasce a 29 de fevereiro de um ano bissexto. Quantas vezes celebra o aniversário no dia exato nos primeiros 8 anos de vida?",
+                  "options": [
+                    "1",
+                    "2",
+                    "4",
+                    "8"
+                  ],
+                  "answer": 1,
+                  "why": "29 de fevereiro só existe em anos bissextos (cada 4 anos). Em 8 anos: 2 vezes."
+                },
+                {
+                  "question": "Comprei 3 produtos por 150$, 275$ e 320$. Paguei com 2 notas de 500$. Qual é o troco?",
+                  "options": [
+                    "255$",
+                    "265$",
+                    "755$",
+                    "1000$"
+                  ],
+                  "answer": 0,
+                  "why": "Total=150+275+320=745$. Paguei 1000$. Troco=1000−745=255$."
+                },
+                {
+                  "question": "Um paralelepípedo tem comprimento 5cm, largura 3cm e altura 2cm. Quantas faces tem?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "8"
+                  ],
+                  "answer": 2,
+                  "why": "Todo paralelepípedo tem 6 faces (3 pares de faces opostas)."
+                }
+              ]
             }
           ]
         }
@@ -1196,17 +2520,423 @@
               "id": "mat3_t1_numeros_5000",
               "nome": "Números até 5000 e Operações",
               "icone": "🔢",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔢",
+                  "title": "Números até 5000",
+                  "body": "Agora contamos até 5000! Um número de 4 algarismos tem: milhares, centenas, dezenas e unidades.\n2345 = 2 milhares + 3 centenas + 4 dezenas + 5 unidades = 2000+300+40+5.",
+                  "example": "3782 = 3000+700+80+2",
+                  "trick": "4 algarismos: M|C|D|U — Milhares, Centenas, Dezenas, Unidades!"
+                },
+                {
+                  "icon": "🏅",
+                  "title": "Numerais Ordinais até 100.º",
+                  "body": "Continuamos os ordinais além do 10.º:\n20.º vigésimo | 30.º trigésimo | 40.º quadragésimo | 50.º quinquagésimo | 100.º centésimo.\nPara os intermédios: 21.º vigésimo primeiro, 22.º vigésimo segundo...",
+                  "example": "O Pedro mora no 15.º andar (décimo quinto).",
+                  "trick": "Para ordinais compostos: une o dezena + unidade (15.º = décimo quinto)"
+                },
+                {
+                  "icon": "↔️",
+                  "title": "Relações Numéricas: Dobro e Metade",
+                  "body": "DOBRO: multiplica por 2. METADE: divide por 2.\nTRIPLO: ×3. TERÇA PARTE: ÷3.\nQUÁDRUPLO: ×4. QUARTA PARTE: ÷4.\nQUÍNTUPLO: ×5. QUINTA PARTE: ÷5.",
+                  "example": "Dobro de 350=700. Metade de 1200=600.",
+                  "trick": "Dobro e metade são operações inversas!"
+                },
+                {
+                  "icon": "➕",
+                  "title": "Adição e Subtração até 5000",
+                  "body": "Mesmo princípio, mas com mais algarismos. Alinha sempre pela direita (U, D, C, M).\nSoma ou subtrai coluna por coluna, da direita para a esquerda.\nNão esqueces o transporte na adição e o empréstimo na subtração!",
+                  "example": "2847+1365=4212 | 4000−1756=2244",
+                  "trick": "Alinha UDC M antes de calcular!"
+                },
+                {
+                  "icon": "✖️",
+                  "title": "Multiplicação até 5000",
+                  "body": "Multiplicar um número de 2 dígitos por 1 dígito com transporte.\nEx: 234×3: 4×3=12 (escreve 2, transporta 1), 3×3+1=10 (escreve 0, transporta 1), 2×3+1=7. Resultado: 702.",
+                  "example": "456×4=1824",
+                  "trick": "Trabalha da direita para a esquerda, registo o transporte!"
+                },
+                {
+                  "icon": "➗",
+                  "title": "Divisão com Resto",
+                  "body": "Às vezes a divisão não é exata — sobra um resto.\n17÷5: 5×3=15, 17−15=2. Então: 17÷5=3 com resto 2.\nO resto é sempre MENOR que o divisor.",
+                  "example": "25÷4=6 com resto 1 (4×6=24, 25−24=1)",
+                  "trick": "Resto < divisor! Se resto ≥ divisor, o quociente está errado."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 2000+700+80+4?",
+                  "options": [
+                    "2748",
+                    "2784",
+                    "2874",
+                    "2478"
+                  ],
+                  "answer": 1,
+                  "why": "2000+700+80+4=2784 (2 milhares, 7 centenas, 8 dezenas, 4 unidades)."
+                },
+                {
+                  "question": "Quantos milhares tem 3456?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": 0,
+                  "why": "3456=3 milhares+4 centenas+5 dezenas+6 unidades. Milhares=3."
+                },
+                {
+                  "question": "Qual é o dobro de 450?",
+                  "options": [
+                    "225",
+                    "900",
+                    "1800",
+                    "4500"
+                  ],
+                  "answer": 1,
+                  "why": "Dobro=×2. 450×2=900."
+                },
+                {
+                  "question": "Qual é a metade de 3200?",
+                  "options": [
+                    "160",
+                    "640",
+                    "1600",
+                    "6400"
+                  ],
+                  "answer": 2,
+                  "why": "Metade=÷2. 3200÷2=1600."
+                },
+                {
+                  "question": "Quanto é 1248+2356?",
+                  "options": [
+                    "3504",
+                    "3604",
+                    "3694",
+                    "3604"
+                  ],
+                  "answer": 1,
+                  "why": "8+6=14(escreve 4,transporta 1); 4+5+1=10(escreve 0,transporta 1); 2+3+1=6; 1+2=3. Total: 3604."
+                },
+                {
+                  "question": "Quanto é 4000−1758?",
+                  "options": [
+                    "2142",
+                    "2242",
+                    "2342",
+                    "2442"
+                  ],
+                  "answer": 1,
+                  "why": "4000−1758=2242."
+                },
+                {
+                  "question": "Quanto é 324×3?",
+                  "options": [
+                    "862",
+                    "972",
+                    "982",
+                    "1072"
+                  ],
+                  "answer": 1,
+                  "why": "4×3=12(escreve 2,transporta 1); 2×3+1=7; 3×3=9. Total: 972."
+                },
+                {
+                  "question": "Quanto é 27÷4?",
+                  "options": [
+                    "6 R3",
+                    "6 R1",
+                    "7 R1",
+                    "5 R7"
+                  ],
+                  "answer": 0,
+                  "why": "4×6=24, 27−24=3. Resultado: 6 com resto 3."
+                },
+                {
+                  "question": "Como se lê 35.º?",
+                  "options": [
+                    "Trigésimo",
+                    "Trigésimo quinto",
+                    "Vigésimo quinto",
+                    "Quinquagésimo"
+                  ],
+                  "answer": 1,
+                  "why": "35.º = trigésimo quinto (30.º + 5.º)."
+                },
+                {
+                  "question": "Qual é o triplo de 400?",
+                  "options": [
+                    "800",
+                    "1200",
+                    "1600",
+                    "2000"
+                  ],
+                  "answer": 1,
+                  "why": "Triplo=×3. 400×3=1200."
+                },
+                {
+                  "question": "Qual é a quarta parte de 2000?",
+                  "options": [
+                    "200",
+                    "400",
+                    "500",
+                    "800"
+                  ],
+                  "answer": 2,
+                  "why": "Quarta parte=÷4. 2000÷4=500."
+                },
+                {
+                  "question": "Quanto é 17÷5?",
+                  "options": [
+                    "2 R7",
+                    "3 R2",
+                    "4 R1",
+                    "3 R3"
+                  ],
+                  "answer": 1,
+                  "why": "5×3=15, 17−15=2. Resultado: 3 com resto 2."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma escola tem 4 turmas. Cada turma tem 32 alunos. Quantos alunos há na escola?",
+                  "options": [
+                    "96",
+                    "112",
+                    "128",
+                    "136"
+                  ],
+                  "answer": 2,
+                  "why": "4×32=128 alunos."
+                },
+                {
+                  "question": "Há 175 laranjas para repartir em cestos de 8. Quantos cestos cheios ficam? Quantas laranjas sobram?",
+                  "options": [
+                    "21 cestos, R7",
+                    "22 cestos, R0",
+                    "21 cestos, R0",
+                    "22 cestos, R7"
+                  ],
+                  "answer": 0,
+                  "why": "175÷8=21 com resto 7. (8×21=168, 175−168=7)"
+                },
+                {
+                  "question": "Um número tem 4 milhares, 0 centenas, 5 dezenas e 2 unidades. Qual é?",
+                  "options": [
+                    "4052",
+                    "4502",
+                    "4520",
+                    "4025"
+                  ],
+                  "answer": 0,
+                  "why": "4 milhares=4000+0 centenas+5 dezenas=50+2 unidades → 4052."
+                },
+                {
+                  "question": "A quinta parte de 3500 é:",
+                  "options": [
+                    "500",
+                    "600",
+                    "700",
+                    "1000"
+                  ],
+                  "answer": 2,
+                  "why": "Quinta parte=÷5. 3500÷5=700."
+                }
+              ]
             },
             {
               "id": "mat3_t1_decimais",
               "nome": "Números Decimais — Décima e Centésima",
               "icone": "🔟",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔟",
+                  "title": "Décima — 1/10",
+                  "body": "Uma décima é uma das 10 partes iguais de uma unidade.\n1/10 = 0,1 (lê-se \"zero vírgula um\").\n3 décimas = 3/10 = 0,3.\nA casa depois da vírgula são as DÉCIMAS.",
+                  "example": "0,5 = 5 décimas = 5/10",
+                  "trick": "Décima = 1 parte de 10 iguais. Está na 1.ª casa depois da vírgula."
+                },
+                {
+                  "icon": "💯",
+                  "title": "Centésima — 1/100",
+                  "body": "Uma centésima é uma das 100 partes iguais de uma unidade.\n1/100 = 0,01 (lê-se \"zero vírgula zero um\").\n35 centésimas = 35/100 = 0,35.\nA 2.ª casa depois da vírgula são as CENTÉSIMAS.",
+                  "example": "0,07 = 7 centésimas = 7/100",
+                  "trick": "Centésima está na 2.ª casa depois da vírgula."
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Comparar Números Decimais",
+                  "body": "Para comparar decimais: primeiro compara a parte inteira. Se for igual, compara a 1.ª casa decimal. Se ainda for igual, compara a 2.ª.\n0,8 > 0,35 (porque 8 décimas > 3 décimas)",
+                  "example": "1,5 > 1,35 (mesma parte inteira, mas 5 décimas > 3 décimas)",
+                  "trick": "Alinha a vírgula e compara coluna por coluna!"
+                },
+                {
+                  "icon": "🔄",
+                  "title": "Converter Frações em Decimais",
+                  "body": "1/2 = 0,5 | 1/4 = 0,25 | 3/4 = 0,75\n1/5 = 0,2 | 2/5 = 0,4\n1/10 = 0,1 | 1/100 = 0,01\nFração ÷ denominador = decimal",
+                  "example": "3/4 = 3÷4 = 0,75",
+                  "trick": "Divide o numerador pelo denominador!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Como se escreve 3 décimas em número decimal?",
+                  "options": [
+                    "3,0",
+                    "0,3",
+                    "0,03",
+                    "30"
+                  ],
+                  "answer": 1,
+                  "why": "3 décimas = 3/10 = 0,3."
+                },
+                {
+                  "question": "Como se escreve 7 centésimas em número decimal?",
+                  "options": [
+                    "7,0",
+                    "0,7",
+                    "0,07",
+                    "0,007"
+                  ],
+                  "answer": 2,
+                  "why": "7 centésimas = 7/100 = 0,07."
+                },
+                {
+                  "question": "Qual é maior: 0,8 ou 0,35?",
+                  "options": [
+                    "0,35",
+                    "0,8",
+                    "São iguais",
+                    "Não é possível comparar"
+                  ],
+                  "answer": 1,
+                  "why": "0,8 = 8 décimas > 0,35 = 3 décimas e 5 centésimas."
+                },
+                {
+                  "question": "Como se lê 0,5?",
+                  "options": [
+                    "Cinco",
+                    "Cinquenta",
+                    "Cinco décimas",
+                    "Cinco centésimas"
+                  ],
+                  "answer": 2,
+                  "why": "0,5 = 5/10 = cinco décimas."
+                },
+                {
+                  "question": "Quanto é 1/4 em decimal?",
+                  "options": [
+                    "0,4",
+                    "0,25",
+                    "0,5",
+                    "2,5"
+                  ],
+                  "answer": 1,
+                  "why": "1÷4 = 0,25."
+                },
+                {
+                  "question": "Qual a parte decimal de 3,47?",
+                  "options": [
+                    "3",
+                    "0,47",
+                    "47",
+                    "4"
+                  ],
+                  "answer": 1,
+                  "why": "Em 3,47 a parte decimal é 0,47 (4 décimas e 7 centésimas)."
+                },
+                {
+                  "question": "Ordena do menor ao maior: 0,5; 0,05; 0,55",
+                  "options": [
+                    "0,55;0,5;0,05",
+                    "0,05;0,5;0,55",
+                    "0,5;0,05;0,55",
+                    "0,05;0,55;0,5"
+                  ],
+                  "answer": 1,
+                  "why": "0,05 < 0,5 < 0,55."
+                },
+                {
+                  "question": "Qual é maior: 1,9 ou 2,1?",
+                  "options": [
+                    "1,9",
+                    "2,1",
+                    "São iguais",
+                    "Depende"
+                  ],
+                  "answer": 1,
+                  "why": "2,1 > 1,9 porque a parte inteira 2 > 1."
+                },
+                {
+                  "question": "Quanto é 1/2 em decimal?",
+                  "options": [
+                    "0,2",
+                    "0,5",
+                    "0,12",
+                    "2,0"
+                  ],
+                  "answer": 1,
+                  "why": "1÷2 = 0,5."
+                },
+                {
+                  "question": "Quanto é 0,3 + 0,4?",
+                  "options": [
+                    "0,07",
+                    "0,7",
+                    "7",
+                    "0,34"
+                  ],
+                  "answer": 1,
+                  "why": "0,3+0,4=0,7 (3 décimas + 4 décimas = 7 décimas)."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um corredor percorreu 2,75 km na manhã e 1,8 km à tarde. Quantos km percorreu ao total?",
+                  "options": [
+                    "3,55 km",
+                    "4,55 km",
+                    "4,45 km",
+                    "3,45 km"
+                  ],
+                  "answer": 1,
+                  "why": "2,75+1,80=4,55 km."
+                },
+                {
+                  "question": "Qual é o maior: 0,9; 0,09; 0,99; 0,909?",
+                  "options": [
+                    "0,9",
+                    "0,09",
+                    "0,99",
+                    "0,909"
+                  ],
+                  "answer": 2,
+                  "why": "0,99 = 99 centésimas — o maior de todos."
+                },
+                {
+                  "question": "Uma fita mede 1,5 m. Cortei 0,75 m. Quanto sobrou?",
+                  "options": [
+                    "0,25 m",
+                    "0,75 m",
+                    "0,85 m",
+                    "1,25 m"
+                  ],
+                  "answer": 1,
+                  "why": "1,50−0,75=0,75 m."
+                },
+                {
+                  "question": "3/4 de um bolo em decimal é:",
+                  "options": [
+                    "0,34",
+                    "0,25",
+                    "0,75",
+                    "3,4"
+                  ],
+                  "answer": 2,
+                  "why": "3÷4=0,75."
+                }
+              ]
             }
           ]
         },
@@ -1218,17 +2948,365 @@
               "id": "mat3_t2_geom_figuras",
               "nome": "Geometria — Figuras Planas, Área e Perímetro",
               "icone": "📐",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🗺️",
+                  "title": "Mapas e Plantas",
+                  "body": "Um MAPA representa uma região vista de cima (país, ilha, cidade).\nUma PLANTA representa um edifício ou sala vista de cima.\nAmbos usam uma ESCALA: ex. 1cm no mapa = 100m na realidade.",
+                  "example": "Num mapa com escala 1:1000, 3 cm = 3000 cm = 30 m na realidade.",
+                  "trick": "Escala = miniatura da realidade!"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Polígonos",
+                  "body": "Polígono = figura plana com lados retos e fechada.\nNomes pelo número de lados:\nTriângulo(3), Quadrilátero(4), Pentágono(5), Hexágono(6), Heptágono(7), Octógono(8).\nPolígono REGULAR: todos os lados e ângulos iguais.",
+                  "example": "Um hexágono regular tem 6 lados iguais. Ex: favo de mel.",
+                  "trick": "Tri=3, Quad=4, Pent=5, Hex=6, Hept=7, Oct=8!"
+                },
+                {
+                  "icon": "⭕",
+                  "title": "Circunferência e Círculo",
+                  "body": "CIRCUNFERÊNCIA: linha curva fechada com todos os pontos à mesma distância do centro.\nCÍRCULO: região interior delimitada pela circunferência.\nRAIO: do centro até à circunferência.\nDIÂMETRO: atravessa o centro = 2 × raio.",
+                  "example": "Diâmetro de 10 cm → raio = 5 cm",
+                  "trick": "Diâmetro = 2 × raio. Raio = diâmetro ÷ 2."
+                },
+                {
+                  "icon": "🪞",
+                  "title": "Simetria",
+                  "body": "Eixo de simetria: linha que divide uma figura em 2 metades iguais.\nAlgumas figuras têm vários eixos:\nQuadrado=4, Retângulo=2, Círculo=infinitos, Triângulo equilátero=3.",
+                  "example": "A letra H tem 2 eixos de simetria (horizontal e vertical).",
+                  "trick": "Dobra mentalmente a figura e vê se as metades coincidem!"
+                },
+                {
+                  "icon": "📏",
+                  "title": "Área e Perímetro de Polígonos",
+                  "body": "PERÍMETRO = soma de todos os lados.\nÁREA do retângulo = comprimento × largura.\nÁREA do quadrado = lado × lado = lado².\nÁREA do triângulo = (base × altura) ÷ 2.",
+                  "example": "Triângulo com base 6cm e altura 4cm: Área=(6×4)÷2=12cm².",
+                  "trick": "Perímetro=volta! Área=preenche o interior!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantos lados tem um hexágono?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "answer": 2,
+                  "why": "Hexágono tem 6 lados (hex=6)."
+                },
+                {
+                  "question": "Qual a relação entre diâmetro e raio?",
+                  "options": [
+                    "Diâmetro = raio÷2",
+                    "Diâmetro = raio×2",
+                    "Diâmetro = raio+2",
+                    "São iguais"
+                  ],
+                  "answer": 1,
+                  "why": "O diâmetro atravessa o centro = 2 × raio."
+                },
+                {
+                  "question": "Quantos eixos de simetria tem um quadrado?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "answer": 3,
+                  "why": "O quadrado tem 4 eixos de simetria."
+                },
+                {
+                  "question": "Qual é o perímetro de um triângulo com lados 5cm, 7cm e 6cm?",
+                  "options": [
+                    "15 cm",
+                    "18 cm",
+                    "17 cm",
+                    "21 cm"
+                  ],
+                  "answer": 1,
+                  "why": "5+7+6=18 cm."
+                },
+                {
+                  "question": "Qual é a área de um quadrado com lado 8cm?",
+                  "options": [
+                    "16 cm²",
+                    "32 cm²",
+                    "64 cm²",
+                    "256 cm²"
+                  ],
+                  "answer": 2,
+                  "why": "Área=8×8=64 cm²."
+                },
+                {
+                  "question": "Um triângulo tem base 10cm e altura 6cm. Qual é a área?",
+                  "options": [
+                    "16 cm²",
+                    "30 cm²",
+                    "60 cm²",
+                    "16 cm"
+                  ],
+                  "answer": 1,
+                  "why": "Área=(10×6)÷2=30 cm²."
+                },
+                {
+                  "question": "Um polígono regular tem todos os lados e ângulos:",
+                  "options": [
+                    "Diferentes",
+                    "Iguais",
+                    "Alternados",
+                    "Paralelos"
+                  ],
+                  "answer": 1,
+                  "why": "Regular = todos os lados iguais E todos os ângulos iguais."
+                },
+                {
+                  "question": "Uma circunferência tem raio 7cm. Qual é o diâmetro?",
+                  "options": [
+                    "3,5 cm",
+                    "7 cm",
+                    "14 cm",
+                    "21 cm"
+                  ],
+                  "answer": 2,
+                  "why": "Diâmetro=2×raio=2×7=14 cm."
+                },
+                {
+                  "question": "Qual a diferença entre circunferência e círculo?",
+                  "options": [
+                    "São a mesma coisa",
+                    "Circunferência é a linha, círculo é a região interior",
+                    "Círculo é a linha, circunferência é a região",
+                    "Circunferência é maior"
+                  ],
+                  "answer": 1,
+                  "why": "Circunferência = linha curva. Círculo = região preenchida."
+                },
+                {
+                  "question": "Um retângulo tem comprimento 12cm e largura 5cm. Qual é o perímetro?",
+                  "options": [
+                    "17 cm",
+                    "34 cm",
+                    "60 cm",
+                    "17 cm²"
+                  ],
+                  "answer": 1,
+                  "why": "12+5+12+5=34 cm."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um hexágono regular tem perímetro de 42 cm. Quanto mede cada lado?",
+                  "options": [
+                    "5 cm",
+                    "6 cm",
+                    "7 cm",
+                    "8 cm"
+                  ],
+                  "answer": 2,
+                  "why": "42÷6=7 cm (hexágono tem 6 lados)."
+                },
+                {
+                  "question": "Uma piscina retangular tem 15m de comprimento e 8m de largura. Qual a sua área?",
+                  "options": [
+                    "23 m²",
+                    "46 m²",
+                    "120 m²",
+                    "184 m²"
+                  ],
+                  "answer": 2,
+                  "why": "15×8=120 m²."
+                },
+                {
+                  "question": "Uma circunferência tem diâmetro 20cm. Qual é o raio?",
+                  "options": [
+                    "5 cm",
+                    "10 cm",
+                    "20 cm",
+                    "40 cm"
+                  ],
+                  "answer": 1,
+                  "why": "Raio=diâmetro÷2=20÷2=10 cm."
+                },
+                {
+                  "question": "Qual figura tem o maior número de eixos de simetria entre estas: triângulo equilátero, quadrado, hexágono regular?",
+                  "options": [
+                    "Triângulo equilátero (3)",
+                    "Quadrado (4)",
+                    "Hexágono regular (6)",
+                    "São iguais"
+                  ],
+                  "answer": 2,
+                  "why": "Hexágono regular tem 6 eixos de simetria."
+                }
+              ]
             },
             {
               "id": "mat3_t2_dados",
               "nome": "Organização e Tratamento de Dados",
               "icone": "📊",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📊",
+                  "title": "Tabelas de Frequência",
+                  "body": "Uma tabela de frequência organiza dados mostrando quantas vezes cada valor aparece.\nFrequência absoluta = número de vezes que um valor ocorre.\nFrequência relativa = frequência÷total (pode ser expressa em fração ou %)",
+                  "example": "Notas: 5,6,7,7,8,7,9. Frequência do 7 = 3/7 ≈ 43%",
+                  "trick": "Conta todas as ocorrências antes de calcular a frequência!"
+                },
+                {
+                  "icon": "📈",
+                  "title": "Gráfico de Linhas",
+                  "body": "Usado para mostrar evolução ao longo do tempo.\nOs pontos representam valores e são ligados por linhas.\nBom para mostrar tendências (subida, descida, estabilidade).",
+                  "example": "Temperatura ao longo da semana: 25°,27°,24°,26°,28°",
+                  "trick": "Gráfico de linhas = evolução no tempo!"
+                },
+                {
+                  "icon": "🥧",
+                  "title": "Gráfico Circular (Pizza)",
+                  "body": "Divide um círculo em fatias que representam proporções.\nSe uma fatia ocupa metade do círculo = 50% do total.\nÚtil para mostrar partes de um todo.",
+                  "example": "Desportos preferidos: Futebol 50%, Natação 30%, Atletismo 20%",
+                  "trick": "Todas as fatias juntas = 100%!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Numa tabela de frequência, o que indica a frequência absoluta?",
+                  "options": [
+                    "A percentagem",
+                    "O número de vezes que um valor ocorre",
+                    "A média",
+                    "O total"
+                  ],
+                  "answer": 1,
+                  "why": "Frequência absoluta = quantas vezes o valor aparece nos dados."
+                },
+                {
+                  "question": "Dados: 3,5,5,7,5,8,5. Qual a frequência absoluta do 5?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "answer": 2,
+                  "why": "O 5 aparece 4 vezes: 3,5,5,7,5,8,5."
+                },
+                {
+                  "question": "Qual gráfico é melhor para mostrar evolução da temperatura ao longo de uma semana?",
+                  "options": [
+                    "Gráfico de barras",
+                    "Gráfico de linhas",
+                    "Gráfico circular",
+                    "Tabela"
+                  ],
+                  "answer": 1,
+                  "why": "Gráfico de linhas mostra bem a evolução/tendência ao longo do tempo."
+                },
+                {
+                  "question": "Num gráfico circular, uma fatia ocupa 1/4 do círculo. Que percentagem representa?",
+                  "options": [
+                    "10%",
+                    "20%",
+                    "25%",
+                    "50%"
+                  ],
+                  "answer": 2,
+                  "why": "1/4 = 25%."
+                },
+                {
+                  "question": "Num gráfico circular, futebol=50%, natação=30%. Que percentagem sobra para outros desportos?",
+                  "options": [
+                    "10%",
+                    "20%",
+                    "30%",
+                    "80%"
+                  ],
+                  "answer": 1,
+                  "why": "50+30=80%. Sobra 100−80=20%."
+                },
+                {
+                  "question": "Qual gráfico representa melhor as partes de um todo (ex: distribuição do orçamento)?",
+                  "options": [
+                    "Gráfico de linhas",
+                    "Gráfico de barras",
+                    "Gráfico circular",
+                    "Pictograma"
+                  ],
+                  "answer": 2,
+                  "why": "O gráfico circular (pizza) mostra a proporção de cada parte no total."
+                },
+                {
+                  "question": "Numa turma de 30 alunos, 15 preferem matemática. Qual a frequência relativa?",
+                  "options": [
+                    "1/4",
+                    "1/3",
+                    "1/2",
+                    "2/3"
+                  ],
+                  "answer": 2,
+                  "why": "15/30 = 1/2."
+                },
+                {
+                  "question": "Num conjunto de dados, a MODA é:",
+                  "options": [
+                    "O valor do meio",
+                    "O valor mais frequente",
+                    "A média de todos",
+                    "O maior valor"
+                  ],
+                  "answer": 1,
+                  "why": "Moda = valor que aparece mais vezes."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Numa turma: A=8, B=12, C=6, D=4. Qual a frequência relativa (%) da nota B? (total=30)",
+                  "options": [
+                    "30%",
+                    "40%",
+                    "35%",
+                    "50%"
+                  ],
+                  "answer": 1,
+                  "why": "12/30=0,4=40%."
+                },
+                {
+                  "question": "Num gráfico circular: Futebol=40%, Basquete=25%, Natação=20%, Outros=?%",
+                  "options": [
+                    "5%",
+                    "10%",
+                    "15%",
+                    "20%"
+                  ],
+                  "answer": 2,
+                  "why": "40+25+20=85%. Outros=100−85=15%."
+                },
+                {
+                  "question": "Dados: 2,4,4,6,4,8,6,4. Qual é a moda e quantas vezes aparece?",
+                  "options": [
+                    "6, aparece 2 vezes",
+                    "4, aparece 4 vezes",
+                    "4, aparece 3 vezes",
+                    "2, aparece 1 vez"
+                  ],
+                  "answer": 1,
+                  "why": "O 4 aparece 4 vezes — é a moda."
+                },
+                {
+                  "question": "Uma tabela mostra: Jan=120, Fev=95, Mar=140, Abr=110. Qual mês tem mais vendas?",
+                  "options": [
+                    "Janeiro",
+                    "Fevereiro",
+                    "Março",
+                    "Abril"
+                  ],
+                  "answer": 2,
+                  "why": "Março tem 140 — o valor mais alto."
+                }
+              ]
             }
           ]
         },
@@ -1240,17 +3318,416 @@
               "id": "mat3_t3_numeros_10000",
               "nome": "Números até 10000 e Numeração Romana",
               "icone": "🏛️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🔢",
+                  "title": "Números até 10000",
+                  "body": "Dez mil = 10000. Usamos agora 5 algarismos.\n9999 + 1 = 10000.\nDecomposição: 7842 = 7 milhares + 8 centenas + 4 dezenas + 2 unidades.",
+                  "example": "10000 = 10 milhares = 100 centenas",
+                  "trick": "Para 5 algarismos: DM | M | C | D | U (dezenas de milhar, milhar...)"
+                },
+                {
+                  "icon": "🏛️",
+                  "title": "Numeração Romana",
+                  "body": "Os romanos usavam letras para representar números:\nI=1, V=5, X=10, L=50, C=100, D=500, M=1000.\nRegra: uma letra menor ANTES de maior = subtrai. Uma letra menor DEPOIS de maior = soma.",
+                  "example": "IV=4 (5−1), IX=9 (10−1), XL=40 (50−10), CM=900 (1000−100)",
+                  "trick": "IV=4, IX=9, XL=40, XC=90, CD=400, CM=900 — decora estes!"
+                },
+                {
+                  "icon": "🔄",
+                  "title": "Regularidades com Números Grandes",
+                  "body": "O mesmo princípio das sequências aplica-se a números grandes.\nEx: 1000, 2000, 3000... (regra: +1000)\nEx: 10000, 9000, 8000... (regra: −1000)",
+                  "example": "500, 1000, 1500, 2000, ___ → regra: +500 → resposta: 2500",
+                  "trick": "Subtrai 2 termos consecutivos para descobrir a regra."
+                },
+                {
+                  "icon": "🔢",
+                  "title": "Números Decimais — Milésima",
+                  "body": "Milésima = 1/1000 = 0,001 (3.ª casa decimal).\n0,125 = 1 décima + 2 centésimas + 5 milésimas.\nOrdem das casas decimais: décimas | centésimas | milésimas.",
+                  "example": "0,007 = 7 milésimas",
+                  "trick": "3.ª casa = milésimas. 0,001 é muito pequenino!"
+                },
+                {
+                  "icon": "➕",
+                  "title": "Operações com Números Decimais",
+                  "body": "Soma e subtrai alinhando a vírgula.\n0,5+0,35=0,85 (alinha vírgulas!)\nMultiplica normalmente e depois coloca a vírgula (conta as casas decimais).\n0,4×0,3=0,12 (1+1=2 casas decimais)",
+                  "example": "1,25+0,8=2,05 | 2,5×3=7,5",
+                  "trick": "Na soma/subtração: alinha a vírgula. Na multiplicação: conta as casas decimais!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Como se lê em romano: XIV?",
+                  "options": [
+                    "14",
+                    "16",
+                    "11",
+                    "4"
+                  ],
+                  "answer": 0,
+                  "why": "XIV=X(10)+IV(4)=14."
+                },
+                {
+                  "question": "Como se escreve 9 em romano?",
+                  "options": [
+                    "VIIII",
+                    "IX",
+                    "XI",
+                    "IIX"
+                  ],
+                  "answer": 1,
+                  "why": "9 em romano é IX (10−1)."
+                },
+                {
+                  "question": "Como se escreve 40 em romano?",
+                  "options": [
+                    "XXXX",
+                    "XL",
+                    "LX",
+                    "XXXX"
+                  ],
+                  "answer": 1,
+                  "why": "40 em romano é XL (50−10)."
+                },
+                {
+                  "question": "Qual é o número que falta: 2500, 5000, 7500, ___?",
+                  "options": [
+                    "9000",
+                    "9500",
+                    "10000",
+                    "11500"
+                  ],
+                  "answer": 2,
+                  "why": "Regra +2500. 7500+2500=10000."
+                },
+                {
+                  "question": "Quanto é 0,75+0,5?",
+                  "options": [
+                    "0,80",
+                    "1,00",
+                    "1,25",
+                    "0,125"
+                  ],
+                  "answer": 2,
+                  "why": "0,75+0,50=1,25."
+                },
+                {
+                  "question": "Como se escreve 0,007 por extenso?",
+                  "options": [
+                    "Sete décimas",
+                    "Sete centésimas",
+                    "Sete milésimas",
+                    "Setenta"
+                  ],
+                  "answer": 2,
+                  "why": "0,007 = 7/1000 = sete milésimas."
+                },
+                {
+                  "question": "Quanto é 1,5×4?",
+                  "options": [
+                    "4,5",
+                    "5,5",
+                    "6,0",
+                    "6,5"
+                  ],
+                  "answer": 2,
+                  "why": "1,5×4=6,0."
+                },
+                {
+                  "question": "Como se lê em romano: XLII?",
+                  "options": [
+                    "32",
+                    "42",
+                    "52",
+                    "62"
+                  ],
+                  "answer": 1,
+                  "why": "XL=40, II=2. XLII=42."
+                },
+                {
+                  "question": "Qual é o maior número: 9876, 9987, 9879, 9798?",
+                  "options": [
+                    "9876",
+                    "9987",
+                    "9879",
+                    "9798"
+                  ],
+                  "answer": 1,
+                  "why": "9987 — comparando milhar=9 em todos, centena 9>8>7. 9987 maior."
+                },
+                {
+                  "question": "Quanto é 3,2−1,75?",
+                  "options": [
+                    "1,25",
+                    "1,45",
+                    "1,55",
+                    "2,55"
+                  ],
+                  "answer": 1,
+                  "why": "3,20−1,75=1,45."
+                },
+                {
+                  "question": "Como se escreve 100 em romano?",
+                  "options": [
+                    "L",
+                    "C",
+                    "D",
+                    "M"
+                  ],
+                  "answer": 1,
+                  "why": "C=100 (cem em romano)."
+                },
+                {
+                  "question": "Qual é o próximo número: 1000, 3000, 5000, 7000, ___?",
+                  "options": [
+                    "8000",
+                    "9000",
+                    "10000",
+                    "11000"
+                  ],
+                  "answer": 1,
+                  "why": "Regra +2000. 7000+2000=9000."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Escreve em algarismos: Mil novecentos e noventa e nove",
+                  "options": [
+                    "1099",
+                    "1909",
+                    "1990",
+                    "1999"
+                  ],
+                  "answer": 3,
+                  "why": "Mil(1000)+novecentos(900)+noventa(90)+nove(9)=1999."
+                },
+                {
+                  "question": "Qual é o ano de nascimento de uma pessoa nascida em MCMLXXXV?",
+                  "options": [
+                    "1875",
+                    "1985",
+                    "1985",
+                    "2085"
+                  ],
+                  "answer": 1,
+                  "why": "M=1000, CM=900, LXXX=80, V=5. Total=1985."
+                },
+                {
+                  "question": "Uma fazenda tem 8650 metros de cerca. O dono quer dividir em 5 partes iguais. Quantos metros tem cada parte?",
+                  "options": [
+                    "1700 m",
+                    "1730 m",
+                    "1750 m",
+                    "1800 m"
+                  ],
+                  "answer": 1,
+                  "why": "8650÷5=1730 m."
+                },
+                {
+                  "question": "Uma caixa tem 0,750 kg de cereais. Após comer 0,125 kg, quantos kg restam?",
+                  "options": [
+                    "0,500 kg",
+                    "0,625 kg",
+                    "0,875 kg",
+                    "0,750 kg"
+                  ],
+                  "answer": 1,
+                  "why": "0,750−0,125=0,625 kg."
+                }
+              ]
             },
             {
               "id": "mat3_t3_solidos_medidas",
               "nome": "Sólidos Geométricos e Medidas",
               "icone": "📦",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📦",
+                  "title": "Poliedros e Não Poliedros",
+                  "body": "POLIEDRO: sólido com todas as faces planas (polígonos).\n▶ Pirâmide: base poligonal + faces triangulares + vértice no topo\n▶ Prisma: 2 bases iguais paralelas + faces laterais retangulares\nNÃO POLIEDRO: tem face(s) curva(s).\n▶ Esfera, cilindro, cone.",
+                  "example": "Cubo e pirâmide são poliedros. Bola e lata são não poliedros.",
+                  "trick": "Poliedro = POLY (muitas) + HEDRO (faces). Todas as faces planas!"
+                },
+                {
+                  "icon": "📄",
+                  "title": "Planificação de Sólidos",
+                  "body": "A planificação é o \"desenho aberto\" de um sólido — como ficaria se o cortássemos e abrissemos.\nCubo → 6 quadrados. Cilindro → 2 círculos + 1 retângulo.",
+                  "example": "Planificação de uma caixa de cereais = 6 retângulos",
+                  "trick": "Imagina desmontar a caixa! Isso é a planificação."
+                },
+                {
+                  "icon": "⚖️",
+                  "title": "Massa e Capacidade",
+                  "body": "MASSA: quantidade de matéria. Unidade: kg. 1 kg = 1000 g.\nCAPACIDADE: quantidade de líquido que um recipiente contém. Unidade: litro (L). 1 L = 1000 mL.\nVOLUME: espaço ocupado por um objeto sólido. Unidade: cm³.",
+                  "example": "1 garrafa grande = 2 L. 1 copo = 250 mL = 0,25 L.",
+                  "trick": "Capacidade é para líquidos, massa é para sólidos!"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Conversões de Medidas",
+                  "body": "Comprimento: 1 km = 1000 m | 1 m = 100 cm | 1 cm = 10 mm\nMassa: 1 t = 1000 kg | 1 kg = 1000 g\nCapacidade: 1 kL = 1000 L | 1 L = 1000 mL",
+                  "example": "2,5 km = 2500 m | 3,5 kg = 3500 g | 1,5 L = 1500 mL",
+                  "trick": "Para converter para unidades menores, multiplica por 1000 (ou 100)!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual destes sólidos é um POLIEDRO?",
+                  "options": [
+                    "Esfera",
+                    "Cilindro",
+                    "Cone",
+                    "Cubo"
+                  ],
+                  "answer": 3,
+                  "why": "O cubo tem todas as faces planas (6 faces quadradas) — é um poliedro."
+                },
+                {
+                  "question": "Quantas faces tem uma pirâmide quadrangular (base quadrada + 4 faces laterais)?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "8"
+                  ],
+                  "answer": 1,
+                  "why": "Base quadrada (1) + 4 faces triangulares = 5 faces."
+                },
+                {
+                  "question": "1 litro equivale a quantos mililitros?",
+                  "options": [
+                    "10 mL",
+                    "100 mL",
+                    "1000 mL",
+                    "10000 mL"
+                  ],
+                  "answer": 2,
+                  "why": "1 L = 1000 mL."
+                },
+                {
+                  "question": "Qual é a planificação de um cubo?",
+                  "options": [
+                    "4 triângulos",
+                    "6 quadrados",
+                    "2 círculos e 1 retângulo",
+                    "4 retângulos e 2 quadrados"
+                  ],
+                  "answer": 1,
+                  "why": "O cubo abre em 6 quadrados iguais."
+                },
+                {
+                  "question": "2,5 kg equivale a quantos gramas?",
+                  "options": [
+                    "25 g",
+                    "250 g",
+                    "2500 g",
+                    "25000 g"
+                  ],
+                  "answer": 2,
+                  "why": "2,5 kg = 2,5 × 1000 = 2500 g."
+                },
+                {
+                  "question": "Um recipiente tem 3,5 L. Quantos mL tem?",
+                  "options": [
+                    "35 mL",
+                    "350 mL",
+                    "3500 mL",
+                    "35000 mL"
+                  ],
+                  "answer": 2,
+                  "why": "3,5 L = 3,5 × 1000 = 3500 mL."
+                },
+                {
+                  "question": "Qual sólido NÃO é poliedro?",
+                  "options": [
+                    "Prisma triangular",
+                    "Pirâmide",
+                    "Cilindro",
+                    "Cubo"
+                  ],
+                  "answer": 2,
+                  "why": "O cilindro tem face lateral curva — não é poliedro."
+                },
+                {
+                  "question": "1,5 km equivale a quantos metros?",
+                  "options": [
+                    "150 m",
+                    "1050 m",
+                    "1500 m",
+                    "15000 m"
+                  ],
+                  "answer": 2,
+                  "why": "1,5 km = 1,5 × 1000 = 1500 m."
+                },
+                {
+                  "question": "Quantas faces tem um prisma triangular?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": 2,
+                  "why": "2 bases triangulares + 3 faces retangulares = 5 faces."
+                },
+                {
+                  "question": "Para medir a capacidade de uma garrafa usamos:",
+                  "options": [
+                    "kg",
+                    "cm",
+                    "L ou mL",
+                    "m²"
+                  ],
+                  "answer": 2,
+                  "why": "Capacidade de líquidos mede-se em litros (L) ou mililitros (mL)."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma piscina tem 10m × 5m de base e 2m de profundidade. Qual é o seu volume?",
+                  "options": [
+                    "17 m³",
+                    "50 m³",
+                    "100 m³",
+                    "200 m³"
+                  ],
+                  "answer": 2,
+                  "why": "Volume = comprimento × largura × altura = 10×5×2 = 100 m³."
+                },
+                {
+                  "question": "Uma pirâmide com base quadrangular tem quantos vértices?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "8"
+                  ],
+                  "answer": 1,
+                  "why": "4 vértices da base + 1 vértice do topo = 5 vértices."
+                },
+                {
+                  "question": "Uma caixa tem capacidade 2,5 L. Já tem 750 mL. Quantos mL ainda cabem?",
+                  "options": [
+                    "1750 mL",
+                    "2250 mL",
+                    "1250 mL",
+                    "750 mL"
+                  ],
+                  "answer": 0,
+                  "why": "2,5 L = 2500 mL. 2500 − 750 = 1750 mL."
+                },
+                {
+                  "question": "Converte 3,75 km para metros:",
+                  "options": [
+                    "375 m",
+                    "3075 m",
+                    "3750 m",
+                    "37500 m"
+                  ],
+                  "answer": 2,
+                  "why": "3,75 × 1000 = 3750 m."
+                }
+              ]
             }
           ]
         }

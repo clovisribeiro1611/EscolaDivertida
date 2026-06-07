@@ -882,9 +882,201 @@
               "id": "por2_t1_corpo_higiene",
               "nome": "Eu e os Outros — Corpo e Higiene",
               "icone": "🧍",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🧍",
+                  "title": "O Meu Corpo",
+                  "body": "O corpo humano tem várias partes: cabeça, pescoço, tronco, braços e pernas.\nNo rosto temos: olhos, nariz, boca, orelhas.\nO corpo cresce e muda ao longo da vida.",
+                  "example": "A Lena tem olhos castanhos, cabelo encaracolado e é alta para a sua idade.",
+                  "trick": "Descreve sempre da cabeça para os pés!"
+                },
+                {
+                  "icon": "🪥",
+                  "title": "A Minha Higiene",
+                  "body": "A higiene mantém o nosso corpo limpo e saudável.\nDevo: lavar os dentes 3× ao dia, banho diário, lavar as mãos antes de comer e depois do WC, cortar as unhas.",
+                  "example": "Lavar os dentes após cada refeição previne as cáries.",
+                  "trick": "Higiene = saúde! Corpo limpo, mente sã."
+                },
+                {
+                  "icon": "📖",
+                  "title": "O Nome — Comum e Próprio",
+                  "body": "O NOME é a palavra que dá nome às coisas, pessoas, lugares e animais.\nNome PRÓPRIO: nome de uma pessoa, lugar ou animal específico — começa com MAIÚSCULA. Ex: Ana, Cabo Verde, Rex.\nNome COMUM: nome geral de qualquer ser ou coisa. Ex: menina, país, cão.",
+                  "example": "Pedro (próprio) é um menino (comum) de Praia (próprio).",
+                  "trick": "Próprio = específico = MAIÚSCULA. Comum = geral = minúscula."
+                },
+                {
+                  "icon": "🔤",
+                  "title": "A Frase",
+                  "body": "A FRASE é um conjunto de palavras com sentido completo.\nComeça com letra MAIÚSCULA e termina com ponto final (.), ponto de interrogação (?) ou ponto de exclamação (!).\nUma frase tem sempre um SUJEITO (quem?) e um PREDICADO (o quê?).",
+                  "example": "A Maria lava os dentes. (sujeito: A Maria | predicado: lava os dentes)",
+                  "trick": "Frase = sentido completo + maiúscula no início + pontuação no fim!"
+                },
+                {
+                  "icon": "🔵",
+                  "title": "Vogais e Consoantes",
+                  "body": "As letras do alfabeto são vogais ou consoantes.\nVOGAIS: A, E, I, O, U (5 vogais).\nCONSONANTES: as restantes 18 letras (B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, X, Z).",
+                  "example": "A palavra \"bolo\" tem as consoantes B e L, e as vogais O e O.",
+                  "trick": "AEIOU são as 5 vogais. Todas as outras são consoantes!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual destas palavras é um nome PRÓPRIO?",
+                  "options": [
+                    "escola",
+                    "livro",
+                    "Mindelo",
+                    "cidade"
+                  ],
+                  "answer": 2,
+                  "why": "Mindelo é o nome de uma cidade específica — começa com maiúscula."
+                },
+                {
+                  "question": "Qual destas palavras é um nome COMUM?",
+                  "options": [
+                    "Ana",
+                    "São Vicente",
+                    "Boa Vista",
+                    "peixe"
+                  ],
+                  "answer": 3,
+                  "why": "Peixe é um nome geral — não é específico."
+                },
+                {
+                  "question": "Quantas VOGAIS tem a palavra \"cabelo\"?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "answer": 1,
+                  "why": "C-A-b-E-l-O: as vogais são A, E, O = 3 vogais."
+                },
+                {
+                  "question": "Uma frase começa sempre com:",
+                  "options": [
+                    "Letra minúscula",
+                    "Letra maiúscula",
+                    "Ponto final",
+                    "Vírgula"
+                  ],
+                  "answer": 1,
+                  "why": "Toda a frase começa com letra maiúscula."
+                },
+                {
+                  "question": "Quantas vezes por dia devemos lavar os dentes?",
+                  "options": [
+                    "1 vez",
+                    "2 vezes",
+                    "3 vezes",
+                    "4 vezes"
+                  ],
+                  "answer": 2,
+                  "why": "Devemos lavar os dentes 3 vezes por dia (após cada refeição)."
+                },
+                {
+                  "question": "Qual é o sujeito da frase: \"O Pedro lava as mãos\"?",
+                  "options": [
+                    "lava",
+                    "as mãos",
+                    "O Pedro",
+                    "lava as mãos"
+                  ],
+                  "answer": 2,
+                  "why": "O sujeito é quem pratica a ação: O Pedro."
+                },
+                {
+                  "question": "Quantas vogais existem no alfabeto português?",
+                  "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "answer": 2,
+                  "why": "As 5 vogais são: A, E, I, O, U."
+                },
+                {
+                  "question": "Qual destes hábitos de higiene é INCORRETO?",
+                  "options": [
+                    "Lavar as mãos antes de comer",
+                    "Tomar banho diariamente",
+                    "Partilhar a escova de dentes",
+                    "Cortar as unhas regularmente"
+                  ],
+                  "answer": 2,
+                  "why": "Nunca devemos partilhar a escova de dentes — transmite bactérias."
+                },
+                {
+                  "question": "A frase \"A Marta tem olhos verdes.\" é:",
+                  "options": [
+                    "Interrogativa",
+                    "Exclamativa",
+                    "Declarativa/Afirmativa",
+                    "Imperativa"
+                  ],
+                  "answer": 2,
+                  "why": "Termina com ponto final — é uma frase declarativa/afirmativa."
+                },
+                {
+                  "question": "Qual parte do corpo inclui o tronco?",
+                  "options": [
+                    "Cabeça e pescoço",
+                    "Braços e pernas",
+                    "Peito, barriga e costas",
+                    "Apenas as costas"
+                  ],
+                  "answer": 2,
+                  "why": "O tronco inclui o peito (tórax), a barriga (abdómen) e as costas."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "A frase \"Que bola gira!\" tem que tipo de pontuação?",
+                  "options": [
+                    "Ponto final",
+                    "Ponto de interrogação",
+                    "Ponto de exclamação",
+                    "Vírgula"
+                  ],
+                  "answer": 2,
+                  "why": "O ponto de exclamação (!) indica surpresa, admiração ou entusiasmo."
+                },
+                {
+                  "question": "Na frase \"Os alunos da turma do Pedro estudam muito.\", qual é o sujeito?",
+                  "options": [
+                    "Pedro",
+                    "Os alunos",
+                    "Os alunos da turma do Pedro",
+                    "estudam muito"
+                  ],
+                  "answer": 2,
+                  "why": "O sujeito completo é \"Os alunos da turma do Pedro\" — quem estuda."
+                },
+                {
+                  "question": "Qual das palavras tem MAIS vogais: \"escola\", \"praia\" ou \"livro\"?",
+                  "options": [
+                    "escola (3)",
+                    "praia (3)",
+                    "livro (2)",
+                    "escola e praia empatam"
+                  ],
+                  "answer": 3,
+                  "why": "escola: e,o,a=3 vogais. praia: a,i,a=3 vogais. Empatam."
+                },
+                {
+                  "question": "Quantas consoantes tem a palavra \"higiene\"?",
+                  "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  "answer": 1,
+                  "why": "h-i-g-i-e-n-e: consoantes são H, G, N = 3 consoantes."
+                }
+              ]
             }
           ]
         },
@@ -896,17 +1088,343 @@
               "id": "por2_t2_rotina",
               "nome": "A Minha Rotina — Quotidiano e Férias",
               "icone": "⏰",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "⏰",
+                  "title": "As Atividades do Quotidiano",
+                  "body": "A rotina diária são as atividades que fazemos todos os dias:\nDe manhã: acordar, higiene, pequeno-almoço, ir à escola.\nDe tarde: almoço, descanso, estudar, brincar.\nÀ noite: jantar, preparar para o dia seguinte, dormir.",
+                  "example": "Texto de rotina: \"De manhã acordo às 7h, lavo o rosto e tomo o pequeno-almoço.\"",
+                  "trick": "Rotina = atividades na ordem em que acontecem!"
+                },
+                {
+                  "icon": "🏖️",
+                  "title": "As Férias e os Tempos Livres",
+                  "body": "Nas férias e nos tempos livres fazemos atividades que gostamos:\nBrincar, ler, praticar desporto, visitar familiares, ir à praia.\nCabo Verde tem praias lindas para visitar nas férias!",
+                  "example": "Texto narrativo: \"Nas férias fui à praia de Santa Maria com a minha família.\"",
+                  "trick": "Escreve o quê, onde, com quem e o que sentiste!"
+                },
+                {
+                  "icon": "🔵",
+                  "title": "O Verbo",
+                  "body": "O VERBO é a palavra que indica uma ação, um estado ou um fenómeno.\nExemplos de ação: correr, comer, estudar, brincar.\nO verbo concorda com o sujeito: EU acordo, ELE acorda, NÓS acordamos.",
+                  "example": "Na frase \"A Lena estuda muito\", o verbo é ESTUDA.",
+                  "trick": "Pergunta \"o que faz?\" para encontrar o verbo!"
+                },
+                {
+                  "icon": "❓",
+                  "title": "Frase Interrogativa e Negativa",
+                  "body": "Frase INTERROGATIVA: faz uma pergunta. Termina com ? Ex: \"Foste às férias?\"\nFrase NEGATIVA: nega algo. Usa a palavra NÃO. Ex: \"Não fui às férias.\"\nFrase AFIRMATIVA: afirma algo positivamente. Ex: \"Fui às férias.\"",
+                  "example": "Afirmativa: \"Gosto de praia.\" → Negativa: \"Não gosto de praia.\"",
+                  "trick": "NÃO transforma afirmativa em negativa!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual destas frases é NEGATIVA?",
+                  "options": [
+                    "O João foi à escola.",
+                    "A Maria gosta de ler.",
+                    "O Pedro não comeu o almoço.",
+                    "As crianças brincaram."
+                  ],
+                  "answer": 2,
+                  "why": "\"O Pedro não comeu o almoço\" usa NÃO — é uma frase negativa."
+                },
+                {
+                  "question": "Qual destas frases é INTERROGATIVA?",
+                  "options": [
+                    "Que dia bonito!",
+                    "Foste às férias?",
+                    "Não fui à praia.",
+                    "A Lena estudou."
+                  ],
+                  "answer": 1,
+                  "why": "\"Foste às férias?\" faz uma pergunta — é interrogativa."
+                },
+                {
+                  "question": "Qual é o VERBO na frase \"O Pedro brinca no recreio\"?",
+                  "options": [
+                    "Pedro",
+                    "brinca",
+                    "recreio",
+                    "no"
+                  ],
+                  "answer": 1,
+                  "why": "Brinca é a ação realizada — é o verbo."
+                },
+                {
+                  "question": "Transforma em negativa: \"Gosto de estudar.\"",
+                  "options": [
+                    "Gosto muito de estudar.",
+                    "Não gosto de estudar.",
+                    "Gostavas de estudar?",
+                    "Adorei estudar!"
+                  ],
+                  "answer": 1,
+                  "why": "Para negar, acrescenta NÃO antes do verbo."
+                },
+                {
+                  "question": "Qual atividade faz parte da rotina MATINAL (de manhã)?",
+                  "options": [
+                    "Jantar",
+                    "Dormir",
+                    "Tomar o pequeno-almoço",
+                    "Ver televisão à noite"
+                  ],
+                  "answer": 2,
+                  "why": "Tomar o pequeno-almoço é uma atividade da manhã."
+                },
+                {
+                  "question": "Qual a pontuação correta para uma pergunta?",
+                  "options": [
+                    ".",
+                    "!",
+                    "?",
+                    ","
+                  ],
+                  "answer": 2,
+                  "why": "Perguntas terminam com ponto de interrogação (?)."
+                },
+                {
+                  "question": "Na frase \"Nas férias visitei a minha avó\", qual é o verbo?",
+                  "options": [
+                    "férias",
+                    "visitei",
+                    "avó",
+                    "minha"
+                  ],
+                  "answer": 1,
+                  "why": "Visitei indica a ação realizada — é o verbo."
+                },
+                {
+                  "question": "Qual frase está corretamente pontuada?",
+                  "options": [
+                    "fui à praia.",
+                    "Fui à praia",
+                    "Fui à praia.",
+                    "fui à praia!"
+                  ],
+                  "answer": 2,
+                  "why": "Começa com maiúscula e termina com ponto final."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Transforma em interrogativa: \"Ela foi ao mercado.\"",
+                  "options": [
+                    "Ela não foi ao mercado.",
+                    "Ela foi ao mercado!",
+                    "Ela foi ao mercado?",
+                    "Foi ela ao mercado?"
+                  ],
+                  "answer": 3,
+                  "why": "Para interrogar, invertemos sujeito e verbo ou acrescentamos ?."
+                },
+                {
+                  "question": "Identifica o verbo: \"Os pássaros cantam alegremente de manhã.\"",
+                  "options": [
+                    "pássaros",
+                    "alegremente",
+                    "manhã",
+                    "cantam"
+                  ],
+                  "answer": 3,
+                  "why": "\"Cantam\" é a ação dos pássaros — é o verbo."
+                },
+                {
+                  "question": "Qual das frases tem o verbo no plural?",
+                  "options": [
+                    "A criança dorme.",
+                    "O gato mia.",
+                    "As crianças dormem.",
+                    "O cão late."
+                  ],
+                  "answer": 2,
+                  "why": "\"As crianças dormem\" — o sujeito é plural, o verbo também."
+                },
+                {
+                  "question": "Escreve uma frase afirmativa, depois torna-a negativa. Qual opção está correta?",
+                  "options": [
+                    "\"Gosto de peixe.\" → \"Gosto não de peixe.\"",
+                    "\"Gosto de peixe.\" → \"Não gosto de peixe.\"",
+                    "\"Gosto de peixe.\" → \"Gosto de peixe não.\"",
+                    "\"Gosto de peixe.\" → \"Não de peixe gosto.\""
+                  ],
+                  "answer": 1,
+                  "why": "O NÃO vai antes do verbo: \"Não gosto de peixe.\""
+                }
+              ]
             },
             {
               "id": "por2_t2_familia",
               "nome": "A Minha Família — Membros e Alimentação",
               "icone": "👨‍👩‍👧",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "👨‍👩‍👧‍👦",
+                  "title": "Os Membros da Minha Família",
+                  "body": "A família nuclear: pai, mãe, filhos.\nFamília alargada: avós, tios, primos, sobrinhos.\nEm Cabo Verde, a família tem um papel muito importante na cultura e na vida social.",
+                  "example": "\"A minha família tem 5 membros: o meu pai, a minha mãe, dois irmãos e eu.\"",
+                  "trick": "Família nuclear = pais + filhos. Alargada = toda a família!"
+                },
+                {
+                  "icon": "🥗",
+                  "title": "Alimentação Saudável",
+                  "body": "Devemos comer alimentos saudáveis de todos os grupos:\n🥦 Legumes e frutas (vitaminas)\n🍚 Cereais e leguminosas (energia)\n🥩 Proteínas (carnes, peixe, ovos, legumes)\n🥛 Laticínios (cálcio para os ossos)\nEvitar: muito açúcar, sal e gordura.",
+                  "example": "Um almoço saudável: arroz de peixe, legumes e uma fruta.",
+                  "trick": "Prato colorido = alimentação saudável!"
+                },
+                {
+                  "icon": "🔤",
+                  "title": "O Adjetivo",
+                  "body": "O ADJETIVO é a palavra que caracteriza o nome — diz como ele é.\nO adjetivo concorda com o nome: menino ALTO / menina ALTA / meninos ALTOS.\nExemplos: bonito, grande, pequeno, alegre, simpático.",
+                  "example": "A Mariana é uma menina SIMPÁTICA e INTELIGENTE.",
+                  "trick": "Pergunta \"como é?\" ao nome para encontrar o adjetivo!"
+                },
+                {
+                  "icon": "📝",
+                  "title": "Pontuação Básica",
+                  "body": "Os sinais de pontuação dão ritmo e sentido ao texto:\n. (ponto final): termina uma frase\n, (vírgula): pausa curta, separa elementos\n: (dois-pontos): introduz lista ou citação\n\" \" (aspas): indicam fala ou citação\n— (travessão): início de diálogo",
+                  "example": "\"O que queres?\" — perguntou a mãe.",
+                  "trick": "Pontuação = a respiração do texto!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o adjetivo na frase \"A minha avó é muito carinhosa\"?",
+                  "options": [
+                    "avó",
+                    "minha",
+                    "é",
+                    "carinhosa"
+                  ],
+                  "answer": 3,
+                  "why": "\"Carinhosa\" descreve como é a avó — é um adjetivo."
+                },
+                {
+                  "question": "Qual sinal usamos para separar elementos numa lista?",
+                  "options": [
+                    "Ponto final",
+                    "Vírgula",
+                    "Dois-pontos",
+                    "Travessão"
+                  ],
+                  "answer": 1,
+                  "why": "A vírgula separa elementos de uma lista."
+                },
+                {
+                  "question": "Qual destas palavras é um ADJETIVO?",
+                  "options": [
+                    "correr",
+                    "mesa",
+                    "bonito",
+                    "escola"
+                  ],
+                  "answer": 2,
+                  "why": "\"Bonito\" descreve uma qualidade — é um adjetivo."
+                },
+                {
+                  "question": "A família \"nuclear\" é composta por:",
+                  "options": [
+                    "Avós e netos",
+                    "Pais e filhos",
+                    "Tios e sobrinhos",
+                    "Primos"
+                  ],
+                  "answer": 1,
+                  "why": "Família nuclear = pai + mãe + filhos que vivem juntos."
+                },
+                {
+                  "question": "Qual alimento pertence ao grupo das proteínas?",
+                  "options": [
+                    "Arroz",
+                    "Maçã",
+                    "Peixe",
+                    "Leite"
+                  ],
+                  "answer": 2,
+                  "why": "O peixe é rico em proteínas, essenciais para o crescimento."
+                },
+                {
+                  "question": "Qual sinal indica o início de uma fala no diálogo?",
+                  "options": [
+                    "Vírgula",
+                    "Dois-pontos",
+                    "Travessão",
+                    "Ponto de exclamação"
+                  ],
+                  "answer": 2,
+                  "why": "O travessão (—) indica o início da fala de uma personagem no diálogo."
+                },
+                {
+                  "question": "O adjetivo concorda com:",
+                  "options": [
+                    "O verbo",
+                    "O sujeito",
+                    "O nome que caracteriza",
+                    "A frase toda"
+                  ],
+                  "answer": 2,
+                  "why": "O adjetivo concorda em género e número com o nome que caracteriza."
+                },
+                {
+                  "question": "Qual destes alimentos devemos comer em MENOS quantidade?",
+                  "options": [
+                    "Frutas",
+                    "Legumes",
+                    "Açúcar e doces",
+                    "Cereais"
+                  ],
+                  "answer": 2,
+                  "why": "Açúcar e doces devem ser consumidos com moderação."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Coloca o adjetivo correto: \"As flores são muito ___\" (bonito).",
+                  "options": [
+                    "bonito",
+                    "bonita",
+                    "bonitas",
+                    "bonitos"
+                  ],
+                  "answer": 2,
+                  "why": "\"Flores\" é feminino plural → adjetivo: \"bonitas\"."
+                },
+                {
+                  "question": "Qual pontuação falta: \"A mãe perguntou___Já fizeste os trabalhos de casa___\"",
+                  "options": [
+                    ": / .",
+                    "— / ?",
+                    ", / .",
+                    "? / !"
+                  ],
+                  "answer": 1,
+                  "why": "Diálogo começa com travessão e pergunta termina com ?."
+                },
+                {
+                  "question": "Quantos adjetivos há em: \"O gato preto e grande dormia na cadeira velha\"?",
+                  "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                  ],
+                  "answer": 2,
+                  "why": "Preto, grande e velha — 3 adjetivos."
+                },
+                {
+                  "question": "Qual destes grupos alimentares dá mais energia para brincar e estudar?",
+                  "options": [
+                    "Laticínios",
+                    "Frutas",
+                    "Cereais e massas",
+                    "Gorduras"
+                  ],
+                  "answer": 2,
+                  "why": "Cereais (arroz, pão, massa) são a principal fonte de energia."
+                }
+              ]
             }
           ]
         },
@@ -918,9 +1436,172 @@
               "id": "por2_t3_comunidade",
               "nome": "A Minha Comunidade — Festas e Costumes",
               "icone": "🎉",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🏘️",
+                  "title": "A Minha Comunidade",
+                  "body": "A comunidade é o lugar onde vivemos: a rua, o bairro, a cidade ou a aldeia.\nNa comunidade há: escolas, mercados, hospitais, igrejas, câmaras municipais.\nCada membro da comunidade tem direitos e deveres.",
+                  "example": "\"Vivo no bairro de Achada Santo António. Perto da minha casa há uma escola e um mercado.\"",
+                  "trick": "Comunidade = as pessoas e lugares à nossa volta!"
+                },
+                {
+                  "icon": "🎉",
+                  "title": "Festas e Costumes de Cabo Verde",
+                  "body": "Cabo Verde tem festas e tradições únicas:\n🎭 Carnaval: festa colorida com música e dança\n🎵 Festivais de música: Batuque, Funaná, Morna\n⛪ Festas religiosas: festas de padroeiros das ilhas\n🌊 Festas da pesca: tradição nas comunidades costeiras",
+                  "example": "O Carnaval do Mindelo é famoso em todo o mundo!",
+                  "trick": "Costumes = o que nos torna especiais como povo!"
+                },
+                {
+                  "icon": "📝",
+                  "title": "Texto Descritivo",
+                  "body": "O texto descritivo descreve como é uma pessoa, um lugar ou um objeto.\nUsa muitos adjetivos e comparações.\nOrganização: introdução (o que vou descrever), desenvolvimento (características), conclusão.",
+                  "example": "\"A minha escola é grande e tem paredes brancas. O recreio tem muitas árvores verdes...\"",
+                  "trick": "Para descrever: forma, cor, tamanho, cheiro, som, textura!"
+                },
+                {
+                  "icon": "📖",
+                  "title": "O Texto Narrativo",
+                  "body": "O texto narrativo conta uma história — tem personagens, espaço, tempo e ação.\nEstrutura: início (apresentação), desenvolvimento (acontecimentos), conclusão (desfecho).\nUsa verbos no passado (foi, comeu, brincou).",
+                  "example": "\"Era uma vez uma menina que vivia perto do mar. Um dia...\"",
+                  "trick": "Narrativa = quem? onde? quando? o quê? como? porquê?"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que encontramos numa comunidade?",
+                  "options": [
+                    "Apenas casas",
+                    "Apenas escolas",
+                    "Casas, escolas, mercados, hospitais",
+                    "Apenas praias"
+                  ],
+                  "answer": 2,
+                  "why": "A comunidade tem todos os serviços e edifícios que as pessoas precisam."
+                },
+                {
+                  "question": "Qual é uma festa típica de Cabo Verde?",
+                  "options": [
+                    "Carnaval de Veneza",
+                    "Carnaval do Mindelo",
+                    "Natal da Noruega",
+                    "Semana Santa de Espanha"
+                  ],
+                  "answer": 1,
+                  "why": "O Carnaval do Mindelo (São Vicente) é mundialmente famoso."
+                },
+                {
+                  "question": "Qual tipo de texto descreve como é uma pessoa ou lugar?",
+                  "options": [
+                    "Texto narrativo",
+                    "Texto descritivo",
+                    "Texto informativo",
+                    "Texto instrucional"
+                  ],
+                  "answer": 1,
+                  "why": "O texto descritivo descreve características, usando adjetivos."
+                },
+                {
+                  "question": "Qual é a estrutura do texto NARRATIVO?",
+                  "options": [
+                    "Título, corpo, conclusão",
+                    "Início, desenvolvimento, conclusão",
+                    "Problema, causa, solução",
+                    "Tema, subtema, exemplos"
+                  ],
+                  "answer": 1,
+                  "why": "Narrativa: início (apresentação), desenvolvimento (ação), conclusão (desfecho)."
+                },
+                {
+                  "question": "Qual dos gêneros musicais é típico de Cabo Verde?",
+                  "options": [
+                    "Samba",
+                    "Reggae",
+                    "Morna",
+                    "Rock"
+                  ],
+                  "answer": 2,
+                  "why": "A Morna é um género musical tradicional de Cabo Verde."
+                },
+                {
+                  "question": "Que verbos usa principalmente o texto narrativo?",
+                  "options": [
+                    "Verbos no presente",
+                    "Verbos no passado",
+                    "Verbos no futuro",
+                    "Verbos no imperativo"
+                  ],
+                  "answer": 1,
+                  "why": "O texto narrativo conta acontecimentos passados."
+                },
+                {
+                  "question": "Um texto descritivo usa principalmente:",
+                  "options": [
+                    "Verbos de ação",
+                    "Números e datas",
+                    "Adjetivos e comparações",
+                    "Listas e instruções"
+                  ],
+                  "answer": 2,
+                  "why": "Para descrever usamos adjetivos (grande, bonito) e comparações (como um jardim)."
+                },
+                {
+                  "question": "O que é um \"direito\" numa comunidade?",
+                  "options": [
+                    "Algo que sou obrigado a fazer",
+                    "Algo a que tenho direito (ex: ir à escola)",
+                    "Uma regra que devo seguir",
+                    "Uma obrigação minha"
+                  ],
+                  "answer": 1,
+                  "why": "Direito = o que me é garantido. Dever = o que sou obrigado a fazer."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Lê: \"A praça da minha cidade é grande e cheia de árvores. Há um chafariz azul no centro e bancos de madeira à volta.\" Que tipo de texto é?",
+                  "options": [
+                    "Narrativo",
+                    "Instrucional",
+                    "Descritivo",
+                    "Informativo"
+                  ],
+                  "answer": 2,
+                  "why": "Descreve um lugar usando adjetivos (grande, azul) — é descritivo."
+                },
+                {
+                  "question": "Qual a diferença entre \"direito\" e \"dever\" numa comunidade?",
+                  "options": [
+                    "São a mesma coisa",
+                    "Direito = o que tenho garantido; Dever = o que sou obrigado a fazer",
+                    "Direito = obrigação; Dever = liberdade",
+                    "Não há diferença"
+                  ],
+                  "answer": 1,
+                  "why": "Exemplos: Direito à educação / Dever de respeitar os outros."
+                },
+                {
+                  "question": "Numa narrativa, a frase \"De repente, bateu uma tempestade.\" faz parte:",
+                  "options": [
+                    "Do início",
+                    "Do desenvolvimento",
+                    "Da conclusão",
+                    "Do título"
+                  ],
+                  "answer": 1,
+                  "why": "Acontecimento inesperado no meio da história = desenvolvimento."
+                },
+                {
+                  "question": "Qual destas frases pertence a um texto DESCRITIVO?",
+                  "options": [
+                    "\"Era uma vez uma fada.\"",
+                    "\"Mistura 2 colheres de açúcar.\"",
+                    "\"O barco é azul e tem velas brancas.\"",
+                    "\"Em 1975 Cabo Verde tornou-se independente.\""
+                  ],
+                  "answer": 2,
+                  "why": "\"O barco é azul e tem velas brancas\" descreve características — é descritivo."
+                }
+              ]
             }
           ]
         }
@@ -1009,17 +1690,365 @@
               "id": "por3_t1_revisao",
               "nome": "Revisão — O Que Já Sei",
               "icone": "📚",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "✍️",
+                  "title": "Ortografia: [ge] e [gi]",
+                  "body": "GE e GI têm som suave (como em \"gente\" e \"girassol\").\nGUE e GUI têm som forte (como em \"guerra\" e \"guia\").\nO U em GUE/GUI não se pronuncia — serve para endurecer o G.",
+                  "example": "\"gelo\" → som suave. \"guerra\" → som forte (u mudo).",
+                  "trick": "GE/GI = suave. GUE/GUI = forte (u mudo)."
+                },
+                {
+                  "icon": "✍️",
+                  "title": "Ortografia: [s], [ss], [c] e [ç]",
+                  "body": "Som /s/ pode escrever-se com:\n▶ S (início de palavra: sapo, sol)\n▶ SS (entre vogais: massa, passo — nunca no início!)\n▶ C antes de E e I: cego, cima\n▶ Ç antes de A, O, U: maçã, poço, açúcar",
+                  "example": "\"passo\" (ss), \"cedo\" (c), \"açúcar\" (ç)",
+                  "trick": "SS nunca no início de palavra! Ç nunca antes de E e I!"
+                },
+                {
+                  "icon": "✍️",
+                  "title": "Ortografia: [s] e [z]",
+                  "body": "Som /z/ entre vogais escreve-se com Z: azar, azeite, fazer.\nMas /s/ entre vogais escreve-se com SS: massa, russo.\nZ no início de palavra: zebra, zero.",
+                  "example": "\"casa\" → s entre vogais com som de Z. \"passo\" → ss com som de S.",
+                  "trick": "\"Casa\" e \"asa\" têm Z-som mas escrevem-se com S simples!"
+                },
+                {
+                  "icon": "📝",
+                  "title": "Texto Narrativo — Revisão",
+                  "body": "O texto narrativo conta uma história:\n▶ Narrador: quem conta (1.ª pessoa \"eu\" ou 3.ª pessoa \"ele\")\n▶ Personagens: quem participa\n▶ Espaço: onde se passa\n▶ Tempo: quando se passa\n▶ Ação: o que acontece",
+                  "example": "Texto na 1.ª pessoa: \"Ontem eu fui ao mercado com a minha mãe...\"",
+                  "trick": "Quem? Onde? Quando? O quê? = os 4 elementos essenciais!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Como se escreve o som /j/ em \"girassol\"?",
+                  "options": [
+                    "ji",
+                    "ge",
+                    "gi",
+                    "gu"
+                  ],
+                  "answer": 2,
+                  "why": "\"Girassol\" escreve-se com GI (som suave do G)."
+                },
+                {
+                  "question": "Qual palavra tem SS corretamente?",
+                  "options": [
+                    "ssapo",
+                    "massa",
+                    "pssa",
+                    "ossso"
+                  ],
+                  "answer": 1,
+                  "why": "\"Massa\" tem SS entre vogais — correto. SS nunca no início de palavra."
+                },
+                {
+                  "question": "Como se escreve \"açucar\" corretamente?",
+                  "options": [
+                    "acucar",
+                    "assucar",
+                    "açúcar",
+                    "azzucar"
+                  ],
+                  "answer": 2,
+                  "why": "\"Açúcar\" escreve-se com Ç (antes do U)."
+                },
+                {
+                  "question": "Qual palavra usa C com som de S?",
+                  "options": [
+                    "casa",
+                    "carro",
+                    "cedo",
+                    "cubo"
+                  ],
+                  "answer": 2,
+                  "why": "\"Cedo\" — o C antes de E tem som de S."
+                },
+                {
+                  "question": "O narrador em 1.ª pessoa usa:",
+                  "options": [
+                    "\"ele\" e \"ela\"",
+                    "verbos no passado",
+                    "\"eu\" e \"nós\"",
+                    "apenas o presente"
+                  ],
+                  "answer": 2,
+                  "why": "1.ª pessoa = narrador usa \"eu\", \"nós\", \"meu\", \"nosso\"."
+                },
+                {
+                  "question": "Qual a palavra correta: \"pesado\" ou \"pezado\"?",
+                  "options": [
+                    "pezado",
+                    "pesado",
+                    "pêsado",
+                    "pezádo"
+                  ],
+                  "answer": 1,
+                  "why": "\"Pesado\" — o S entre vogais tem som de Z mas escreve-se com S."
+                },
+                {
+                  "question": "Como se escreve o som /g/ forte em \"guerra\"?",
+                  "options": [
+                    "ge",
+                    "ji",
+                    "gue",
+                    "ge"
+                  ],
+                  "answer": 2,
+                  "why": "\"Guerra\" escreve-se com GUE (u mudo, som forte)."
+                },
+                {
+                  "question": "Na narrativa, o \"espaço\" é:",
+                  "options": [
+                    "O tempo da história",
+                    "O narrador",
+                    "O lugar onde a história se passa",
+                    "As personagens"
+                  ],
+                  "answer": 2,
+                  "why": "Espaço = cenário, o lugar onde os acontecimentos ocorrem."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual das palavras está INCORRETAMENTE escrita?",
+                  "options": [
+                    "girassol",
+                    "guerrilha",
+                    "gelo",
+                    "guirigato"
+                  ],
+                  "answer": 3,
+                  "why": "\"Guirigato\" não existe. A palavra correta é \"garigato\" (arranhão) ou \"gato\"."
+                },
+                {
+                  "question": "Escolhe a forma correta: \"No ___o havia muita gente.\" (mercado/mersado/mersaddo)",
+                  "options": [
+                    "mersado",
+                    "mersaddo",
+                    "mercado",
+                    "mercaddo"
+                  ],
+                  "answer": 2,
+                  "why": "\"Mercado\" — escreve-se com C (antes de A, O, U o C tem som de K)."
+                },
+                {
+                  "question": "Qual frase tem narrador em 1.ª pessoa?",
+                  "options": [
+                    "\"O Pedro foi ao mercado.\"",
+                    "\"Eu fui ao mercado.\"",
+                    "\"Eles foram ao mercado.\"",
+                    "\"A menina foi ao mercado.\""
+                  ],
+                  "answer": 1,
+                  "why": "\"Eu fui ao mercado\" — usa \"eu\" = 1.ª pessoa."
+                },
+                {
+                  "question": "Encontra o erro ortográfico: \"A criaça comeu uma maçan no jardim.\"",
+                  "options": [
+                    "\"criaça\" devia ser \"criança\"",
+                    "\"maçan\" devia ser \"maçã\"",
+                    "Ambos estão errados",
+                    "Não há erros"
+                  ],
+                  "answer": 2,
+                  "why": "\"criaça\" deve ser \"criança\" (com NH e Ç). \"maçan\" deve ser \"maçã\" (com til)."
+                }
+              ]
             },
             {
               "id": "por3_t1_regresso",
               "nome": "Estamos de Regresso — Texto Narrativo e Gramática",
               "icone": "✏️",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "📖",
+                  "title": "O Texto de Opinião",
+                  "body": "O texto de opinião exprime o ponto de vista do autor sobre um tema.\nEstrutura:\n1. Tese: o que defendo\n2. Argumentos: razões que apoiam a minha ideia\n3. Conclusão: reforço da minha opinião\nUsa expressões como: \"Penso que...\", \"Na minha opinião...\", \"Porque...\"",
+                  "example": "\"Penso que devemos ler mais livros porque nos torna mais inteligentes e nos dá vocabulário.\"",
+                  "trick": "Opinião = tese + argumentos + conclusão!"
+                },
+                {
+                  "icon": "📚",
+                  "title": "Classe do Nome",
+                  "body": "Os nomes podem ser:\n▶ Próprio: nome específico, com maiúscula (Ana, Lisboa)\n▶ Comum: nome geral (menina, cidade)\n▶ Coletivo: nome para um conjunto (rebanho=ovelhas, cardume=peixes, alcateia=lobos)\n▶ Simples vs Composto: \"sol\" vs \"girassol\"",
+                  "example": "\"Cardume\" é o coletivo de peixe. \"Rebanho\" é o coletivo de ovelha.",
+                  "trick": "Coletivo = um nome para muitos! Aprende os mais comuns."
+                },
+                {
+                  "icon": "✉️",
+                  "title": "A Carta",
+                  "body": "A carta é um texto para comunicar com alguém.\nEstrutura:\n1. Local e data\n2. Saudação inicial: \"Caro amigo,\" / \"Querida avó,\"\n3. Corpo da carta\n4. Despedida: \"Com amor,\" / \"Um abraço,\"\n5. Assinatura",
+                  "example": "Mindelo, 15 de março de 2026\nQuerida avó,\nEstou com saudades...\nUm abraço,\nPedro",
+                  "trick": "Carta = quem escreve + para quem + o quê + saudação + despedida!"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Tipos de Frase",
+                  "body": "Classificamos as frases por:\n▶ Forma: Afirmativa (\"Gosto.\") / Negativa (\"Não gosto.\")\n▶ Modalidade: Declarativa (afirma/nega), Interrogativa (?), Exclamativa (!), Imperativa (ordem)",
+                  "example": "\"Fecha a janela!\" é exclamativa e imperativa (dá uma ordem com exclamação).",
+                  "trick": "Forma = afirma ou nega. Modalidade = que tipo de comunicação!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o nome coletivo de peixes?",
+                  "options": [
+                    "Rebanho",
+                    "Manada",
+                    "Cardume",
+                    "Alcateia"
+                  ],
+                  "answer": 2,
+                  "why": "Cardume = conjunto de peixes."
+                },
+                {
+                  "question": "Qual é o nome coletivo de ovelhas?",
+                  "options": [
+                    "Cardume",
+                    "Rebanho",
+                    "Enxame",
+                    "Alcateia"
+                  ],
+                  "answer": 1,
+                  "why": "Rebanho = conjunto de ovelhas (ou outros animais de criação)."
+                },
+                {
+                  "question": "Qual é a estrutura correta de uma carta?",
+                  "options": [
+                    "Título, desenvolvimento, conclusão",
+                    "Local/data, saudação, corpo, despedida, assinatura",
+                    "Introdução, argumentos, conclusão",
+                    "Tema, exemplos, moral"
+                  ],
+                  "answer": 1,
+                  "why": "A carta tem: local e data, saudação, corpo, despedida e assinatura."
+                },
+                {
+                  "question": "Qual frase é IMPERATIVA?",
+                  "options": [
+                    "Gosto de ler.",
+                    "Gostas de ler?",
+                    "Que história bonita!",
+                    "Lê o livro!"
+                  ],
+                  "answer": 3,
+                  "why": "\"Lê o livro!\" dá uma ordem — é uma frase imperativa."
+                },
+                {
+                  "question": "Num texto de opinião, os \"argumentos\" servem para:",
+                  "options": [
+                    "Contar uma história",
+                    "Apoiar a tese com razões",
+                    "Descrever um lugar",
+                    "Dar instruções"
+                  ],
+                  "answer": 1,
+                  "why": "Argumentos = razões que justificam e apoiam a opinião (tese)."
+                },
+                {
+                  "question": "Qual é um nome COLETIVO?",
+                  "options": [
+                    "Livro",
+                    "Escola",
+                    "Cardume",
+                    "Leitura"
+                  ],
+                  "answer": 2,
+                  "why": "\"Cardume\" é o nome de um conjunto de peixes — é coletivo."
+                },
+                {
+                  "question": "Qual expressão é típica de um texto de opinião?",
+                  "options": [
+                    "\"Era uma vez...\"",
+                    "\"Penso que...\"",
+                    "\"Primeiro, segundo...\"",
+                    "\"Querido amigo,\""
+                  ],
+                  "answer": 1,
+                  "why": "\"Penso que...\" é uma expressão de opinião."
+                },
+                {
+                  "question": "A frase \"Que dia maravilhoso!\" é:",
+                  "options": [
+                    "Declarativa afirmativa",
+                    "Interrogativa",
+                    "Exclamativa",
+                    "Imperativa"
+                  ],
+                  "answer": 2,
+                  "why": "Termina com ! e exprime admiração — é exclamativa."
+                },
+                {
+                  "question": "Numa carta, depois do corpo vem:",
+                  "options": [
+                    "A saudação",
+                    "A data",
+                    "A despedida",
+                    "O título"
+                  ],
+                  "answer": 2,
+                  "why": "A estrutura da carta: saudação → corpo → despedida → assinatura."
+                },
+                {
+                  "question": "Qual é o nome coletivo de abelhas?",
+                  "options": [
+                    "Alcateia",
+                    "Rebanho",
+                    "Cardume",
+                    "Enxame"
+                  ],
+                  "answer": 3,
+                  "why": "Enxame = conjunto de abelhas."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Identifica o tipo de nome: \"Portugal\"",
+                  "options": [
+                    "Comum",
+                    "Próprio",
+                    "Coletivo",
+                    "Composto"
+                  ],
+                  "answer": 1,
+                  "why": "\"Portugal\" é o nome de um país específico — nome próprio."
+                },
+                {
+                  "question": "Classifica: \"Não trouxeste o livro?\" quanto à forma e modalidade:",
+                  "options": [
+                    "Afirmativa e declarativa",
+                    "Negativa e interrogativa",
+                    "Negativa e exclamativa",
+                    "Afirmativa e interrogativa"
+                  ],
+                  "answer": 1,
+                  "why": "Tem NÃO (negativa) e ? (interrogativa)."
+                },
+                {
+                  "question": "Escreve a tese para este tema: \"Devemos proteger o ambiente.\" Qual dos argumentos é mais forte?",
+                  "options": [
+                    "Porque eu gosto de árvores",
+                    "Porque sem ambiente saudável não há vida na Terra",
+                    "Porque é bonito",
+                    "Porque o professor disse"
+                  ],
+                  "answer": 1,
+                  "why": "Argumento forte = razão sólida e universal, não apenas pessoal."
+                },
+                {
+                  "question": "Qual nome coletivo está correto?",
+                  "options": [
+                    "Alcateia de peixes",
+                    "Cardume de lobos",
+                    "Enxame de abelhas",
+                    "Rebanho de pombas"
+                  ],
+                  "answer": 2,
+                  "why": "Enxame de abelhas é correto. Alcateia=lobos, Cardume=peixes, Rebanho=ovelhas."
+                }
+              ]
             }
           ]
         },
@@ -1031,9 +2060,172 @@
               "id": "por3_t2_planeta",
               "nome": "O Planeta é a Nossa Casa — Ambiente e Texto Informativo",
               "icone": "🌍",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🌍",
+                  "title": "Texto Informativo",
+                  "body": "O texto informativo transmite conhecimento sobre um tema.\nCaracterísticas: linguagem clara e objetiva, factos verificáveis, organização em parágrafos temáticos.\nEstrutura: título, introdução, desenvolvimento, conclusão.",
+                  "example": "\"O aquecimento global é causado pelas emissões de CO₂. Os principais responsáveis são...\"",
+                  "trick": "Informativo = factos, não opiniões. Objetivo, não emocional."
+                },
+                {
+                  "icon": "🔤",
+                  "title": "Sinónimos e Antónimos",
+                  "body": "SINÓNIMOS: palavras com significado igual ou parecido.\nEx: bonito/belo/formoso | casa/habitação/lar\nANTÓNIMOS: palavras com significado oposto.\nEx: quente/frio | grande/pequeno | dia/noite",
+                  "example": "\"Alegre\" tem sinónimo \"feliz\" e antónimo \"triste\".",
+                  "trick": "Sinónimos = mesma ideia. Antónimos = ideia oposta!"
+                },
+                {
+                  "icon": "🌳",
+                  "title": "Família de Palavras",
+                  "body": "A família de palavras é um grupo de palavras derivadas da mesma raiz.\nEx: família de \"mar\": marinha, marítimo, marinheiro, maré, maresia.\nConhecer famílias de palavras ajuda a perceber e memorizar vocabulário.",
+                  "example": "Família de \"sol\": solar, soalheiro, insolação, girassol",
+                  "trick": "Encontra a raiz comum — é o \"coração\" da família!"
+                },
+                {
+                  "icon": "📋",
+                  "title": "Texto Instrucional (Como Fazer)",
+                  "body": "O texto instrucional explica como fazer algo, passo a passo.\nCaracterísticas: verbos no imperativo, numeração dos passos, linguagem clara.\nExemplos: receitas, instruções de montagem, regras de jogo.",
+                  "example": "\"Como reciclar papel:\n1. Separa o papel do lixo.\n2. Coloca no ecoponto azul.\n3. ...\"",
+                  "trick": "Instrucional = verbos no imperativo (separa, coloca, mistura)!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o sinónimo de \"bonito\"?",
+                  "options": [
+                    "feio",
+                    "pequeno",
+                    "belo",
+                    "triste"
+                  ],
+                  "answer": 2,
+                  "why": "\"Belo\" tem o mesmo significado que \"bonito\" — são sinónimos."
+                },
+                {
+                  "question": "Qual é o antónimo de \"quente\"?",
+                  "options": [
+                    "morno",
+                    "muito quente",
+                    "frio",
+                    "calor"
+                  ],
+                  "answer": 2,
+                  "why": "\"Frio\" é o oposto de \"quente\" — são antónimos."
+                },
+                {
+                  "question": "Qual palavra pertence à família de \"mar\"?",
+                  "options": [
+                    "maçã",
+                    "marinheiro",
+                    "marco",
+                    "maçaneta"
+                  ],
+                  "answer": 1,
+                  "why": "\"Marinheiro\" tem a raiz \"mar\" — pertence à família."
+                },
+                {
+                  "question": "Qual tipo de texto usa verbos no IMPERATIVO e passos numerados?",
+                  "options": [
+                    "Narrativo",
+                    "Descritivo",
+                    "Instrucional",
+                    "Informativo"
+                  ],
+                  "answer": 2,
+                  "why": "Texto instrucional: verbos no imperativo + passos numerados."
+                },
+                {
+                  "question": "Qual é o antónimo de \"alegre\"?",
+                  "options": [
+                    "feliz",
+                    "animado",
+                    "triste",
+                    "contente"
+                  ],
+                  "answer": 2,
+                  "why": "\"Triste\" é o oposto de \"alegre\"."
+                },
+                {
+                  "question": "Qual palavra NÃO pertence à família de \"sol\"?",
+                  "options": [
+                    "solar",
+                    "girassol",
+                    "soalheiro",
+                    "soldado"
+                  ],
+                  "answer": 3,
+                  "why": "\"Soldado\" não tem relação com \"sol\" — vem de \"solid\" (sólido/firme)."
+                },
+                {
+                  "question": "Um texto informativo deve ser:",
+                  "options": [
+                    "Subjetivo e emocional",
+                    "Objetivo e baseado em factos",
+                    "Imaginativo e inventado",
+                    "Imperativo e com passos"
+                  ],
+                  "answer": 1,
+                  "why": "Informativo = objetivo, factos reais, linguagem clara."
+                },
+                {
+                  "question": "Qual é o sinónimo de \"casa\"?",
+                  "options": [
+                    "rua",
+                    "habitação",
+                    "jardim",
+                    "escola"
+                  ],
+                  "answer": 1,
+                  "why": "\"Habitação\" tem o mesmo significado que \"casa\" — sinónimos."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual das frases pertence a um texto INSTRUCIONAL?",
+                  "options": [
+                    "\"Era uma vez um rio limpo...\"",
+                    "\"O rio está poluído.\"",
+                    "\"Lava as mãos antes de comer.\"",
+                    "\"O rio tem muita água.\""
+                  ],
+                  "answer": 2,
+                  "why": "\"Lava as mãos\" usa imperativo e dá instrução — é instrucional."
+                },
+                {
+                  "question": "Encontra 2 antónimos de \"pequeno\": grande e ___?",
+                  "options": [
+                    "minúsculo",
+                    "enorme",
+                    "diminuto",
+                    "micro"
+                  ],
+                  "answer": 1,
+                  "why": "\"Enorme\" é claramente oposto a \"pequeno\", tal como \"grande\"."
+                },
+                {
+                  "question": "Qual é a família de palavras de \"flor\"?",
+                  "options": [
+                    "florida, florescer, florista",
+                    "flo, florindo, florzinha",
+                    "flor, flora, floresta, floreira, florescer",
+                    "florina, flori, florete"
+                  ],
+                  "answer": 2,
+                  "why": "\"Flora, floresta, floreira, florescer\" — todos derivam de \"flor\"."
+                },
+                {
+                  "question": "Num texto informativo sobre reciclagem, qual frase é mais adequada?",
+                  "options": [
+                    "\"Era uma vez um papel...\"",
+                    "\"Amo o ambiente!\"",
+                    "\"O papel deve ser depositado no ecoponto azul.\"",
+                    "\"Que bonito é reciclar!\""
+                  ],
+                  "answer": 2,
+                  "why": "Factual, clara e objetiva — adequada para texto informativo."
+                }
+              ]
             }
           ]
         },
@@ -1045,9 +2237,194 @@
               "id": "por3_t3_pais",
               "nome": "À Descoberta do Meu País — Cabo Verde",
               "icone": "🇨🇻",
-              "aprender": [],
-              "praticar": [],
-              "desafios": []
+              "aprender": [
+                {
+                  "icon": "🇨🇻",
+                  "title": "Cabo Verde no Texto Descritivo",
+                  "body": "Cabo Verde é um arquipélago com 10 ilhas: Santo Antão, São Vicente, Santa Luzia, São Nicolau, Sal, Boa Vista, Maio, Santiago, Fogo e Brava.\nBarlavento: ilhas do norte. Sotavento: ilhas do sul.\nO vento \"barla\" = sopra. \"Sota\" = protegido do vento.",
+                  "example": "São Vicente pertence ao Barlavento. Santiago ao Sotavento.",
+                  "trick": "Bar-la-vento = exposto ao vento (norte). Sota-vento = protegido (sul)."
+                },
+                {
+                  "icon": "📖",
+                  "title": "Determinantes",
+                  "body": "Os determinantes acompanham e determinam os nomes.\nDeterminantes ARTIGOS: definidos (o, a, os, as) e indefinidos (um, uma, uns, umas).\nDeterminantes POSSESSIVOS: meu, minha, teu, tua, seu, sua, nosso, nossa.\nDeterminantes DEMONSTRATIVOS: este, esse, aquele e variantes.",
+                  "example": "\"O meu livro\" → O=artigo definido, meu=possessivo",
+                  "trick": "Determinante vem ANTES do nome e concorda com ele!"
+                },
+                {
+                  "icon": "🔵",
+                  "title": "O Verbo — Conjugação",
+                  "body": "O verbo conjuga-se em pessoa (1.ª, 2.ª, 3.ª), número (singular, plural) e tempo (presente, passado, futuro).\nVerbo CANTAR no presente: eu canto, tu cantas, ele canta, nós cantamos, vós cantais, eles cantam.\nInfinitivo: forma base do verbo (cantar, comer, partir).",
+                  "example": "\"Eu canto\" (presente) / \"Eu cantei\" (passado) / \"Eu cantarei\" (futuro)",
+                  "trick": "Conjugar = adaptar o verbo ao sujeito e ao tempo!"
+                },
+                {
+                  "icon": "🎭",
+                  "title": "Pronomes Pessoais",
+                  "body": "Os pronomes pessoais substituem os nomes para evitar repetição.\nSujeito: eu, tu, ele/ela, nós, vós, eles/elas.\nComplemento: me, te, o/a, nos, vos, os/as.\nEx: \"A Maria comprou o livro. → Ela comprou-o.\"",
+                  "example": "\"Pedro foi ao mercado. Ele comprou peixe.\"",
+                  "trick": "Pronome substitui o nome — evita repetição!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas ilhas tem Cabo Verde?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "answer": 2,
+                  "why": "Cabo Verde tem 10 ilhas: 4 no sul (Sotavento) e 6 no norte (Barlavento)."
+                },
+                {
+                  "question": "A ilha de Santiago pertence ao:",
+                  "options": [
+                    "Barlavento",
+                    "Sotavento",
+                    "Nem a um nem a outro",
+                    "Barlavento e Sotavento"
+                  ],
+                  "answer": 1,
+                  "why": "Santiago fica no grupo do Sotavento (sul)."
+                },
+                {
+                  "question": "Qual o determinante artigo DEFINIDO masculino singular?",
+                  "options": [
+                    "um",
+                    "uma",
+                    "o",
+                    "os"
+                  ],
+                  "answer": 2,
+                  "why": "\"O\" é o artigo definido masculino singular (ex: o livro)."
+                },
+                {
+                  "question": "Qual o determinante POSSESSIVO que corresponde a \"de mim\"?",
+                  "options": [
+                    "seu",
+                    "teu",
+                    "meu",
+                    "nosso"
+                  ],
+                  "answer": 2,
+                  "why": "\"Meu\" indica posse da 1.ª pessoa do singular."
+                },
+                {
+                  "question": "Substitui por pronome: \"A Ana foi ao mercado.\"",
+                  "options": [
+                    "Ela foi ao mercado.",
+                    "Elas foi ao mercado.",
+                    "Ele foi ao mercado.",
+                    "Tu foste ao mercado."
+                  ],
+                  "answer": 0,
+                  "why": "\"Ana\" é feminino singular → pronome: \"ela\"."
+                },
+                {
+                  "question": "Qual é o infinitivo do verbo \"cantei\"?",
+                  "options": [
+                    "cantado",
+                    "cantando",
+                    "cantar",
+                    "canto"
+                  ],
+                  "answer": 2,
+                  "why": "O infinitivo é a forma base: cantar."
+                },
+                {
+                  "question": "Conjuga \"comer\" na 3.ª pessoa do plural do presente:",
+                  "options": [
+                    "come",
+                    "comes",
+                    "comemos",
+                    "comem"
+                  ],
+                  "answer": 3,
+                  "why": "Eles comem — 3.ª pessoa do plural do presente."
+                },
+                {
+                  "question": "Qual determinante demonstrativo indica algo próximo do falante?",
+                  "options": [
+                    "Aquele",
+                    "Esse",
+                    "Este",
+                    "Nenhum"
+                  ],
+                  "answer": 2,
+                  "why": "\"Este\" indica proximidade do falante (este livro aqui)."
+                },
+                {
+                  "question": "Qual ilha pertence ao Barlavento?",
+                  "options": [
+                    "Santiago",
+                    "Fogo",
+                    "Brava",
+                    "São Vicente"
+                  ],
+                  "answer": 3,
+                  "why": "São Vicente pertence ao grupo do Barlavento (norte)."
+                },
+                {
+                  "question": "Na frase \"Ela comprou-o\", o pronome \"o\" substitui:",
+                  "options": [
+                    "A Ela",
+                    "Um objeto masculino",
+                    "Um objeto feminino",
+                    "O sujeito"
+                  ],
+                  "answer": 1,
+                  "why": "\"O\" é pronome de complemento que substitui um nome masculino."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Na frase \"Aquela menina trouxe os seus livros.\", identifica os determinantes:",
+                  "options": [
+                    "Aquela e os",
+                    "Aquela, os e seus",
+                    "Trouxe e livros",
+                    "Menina e livros"
+                  ],
+                  "answer": 1,
+                  "why": "\"Aquela\" (demonstrativo), \"os\" (artigo definido), \"seus\" (possessivo) — 3 determinantes."
+                },
+                {
+                  "question": "Conjuga \"partir\" no presente para \"nós\":",
+                  "options": [
+                    "partimos",
+                    "partimos",
+                    "partemos",
+                    "partemos"
+                  ],
+                  "answer": 0,
+                  "why": "Nós partimos — verbo \"partir\" na 1.ª pessoa do plural do presente."
+                },
+                {
+                  "question": "Substitui os nomes por pronomes: \"O Pedro e a Ana comeram o bolo.\"",
+                  "options": [
+                    "Eles comeram-no.",
+                    "Eles comeram-a.",
+                    "Ele comeram-no.",
+                    "Elas comeram-no."
+                  ],
+                  "answer": 0,
+                  "why": "\"O Pedro e a Ana\" → eles (plural misto). \"o bolo\" → masculino → o (pronome). Eles comeram-no."
+                },
+                {
+                  "question": "Quantas ilhas habitadas tem Cabo Verde?",
+                  "options": [
+                    "8",
+                    "9",
+                    "10",
+                    "11"
+                  ],
+                  "answer": 1,
+                  "why": "Das 10 ilhas, 9 são habitadas. Santa Luzia é desabitada."
+                }
+              ]
             }
           ]
         }
