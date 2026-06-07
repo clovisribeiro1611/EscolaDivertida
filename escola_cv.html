@@ -43,7 +43,7 @@ body {
   position: fixed; inset: 0;
   background: linear-gradient(160deg, #FF6B6B, #FF9F1C, #2EC4B6, #7B2FBE);
   background-size: 300% 300%;
-  animation: gradMove 4s ease infinite;
+  animation: gradMove 4s ease infinite, splashFade 0.6s ease 2.5s forwards;
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   z-index: 9999; transition: opacity 0.5s;
@@ -51,6 +51,7 @@ body {
 @keyframes gradMove {
   0%,100%{background-position:0% 50%} 50%{background-position:100% 50%}
 }
+@keyframes splashFade { to { opacity: 0; } }
 .splash-logo {
   font-family: 'Fredoka One', cursive;
   font-size: 3.2rem; color: white;
@@ -667,8 +668,9 @@ body {
 // STATE
 // ═══════════════════════════
 let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
-let totalPoints = parseInt(localStorage.getItem('cv_total_points')||'0',10), aiLevel = 'base';
-let freeMode = localStorage.getItem('cv_free_mode') === '1';
+let _ls; try{_ls=localStorage;}catch(e){_ls={getItem:()=>null,setItem:()=>{}};}
+let totalPoints = parseInt(_ls.getItem('cv_total_points')||'0',10), aiLevel = 'base';
+let freeMode = _ls.getItem('cv_free_mode') === '1';
 let challengeInterval = null;
 let wrongAnswers = [];
 let _currentTemaId = null;
@@ -689,11 +691,11 @@ function getTema(subj,year,temaId){const a=getJSONAno(subj,year);if(!a)return nu
 
 // ─── PROGRESSO ───────────────────────────────────────────────────
 function _prKey(s,y,id){return`ecv_pr_${s}_${y}_${id}`;}
-function getProgress(temaId){const v=localStorage.getItem(_prKey(currentSubject,currentYear,temaId));return v?JSON.parse(v):null;}
-function saveProgress(temaId,score,total){const k=_prKey(currentSubject,currentYear,temaId);const p=getProgress(temaId);if(!p||score>p.best)localStorage.setItem(k,JSON.stringify({best:score,total}));}
+function getProgress(temaId){const v=_ls.getItem(_prKey(currentSubject,currentYear,temaId));return v?JSON.parse(v):null;}
+function saveProgress(temaId,score,total){const k=_prKey(currentSubject,currentYear,temaId);const p=getProgress(temaId);if(!p||score>p.best)_ls.setItem(k,JSON.stringify({best:score,total}));}
 function isUnlocked(temaId){if(freeMode)return true;const p=getProgress(temaId);return!!(p&&p.best/p.total>=0.8);}
 function allUnlocked(subj,year){if(freeMode)return true;const a=getJSONAno(subj,year);if(!a)return false;for(const t of a.trimestres)for(const tm of t.temas)if(!isUnlockedFor(subj,year,tm.id))return false;return true;}
-function isUnlockedFor(s,y,id){if(freeMode)return true;const v=localStorage.getItem(_prKey(s,y,id));if(!v)return false;const p=JSON.parse(v);return p.best/p.total>=0.8;}
+function isUnlockedFor(s,y,id){if(freeMode)return true;const v=_ls.getItem(_prKey(s,y,id));if(!v)return false;const p=JSON.parse(v);return p.best/p.total>=0.8;}
 
 const YEAR_META = {
   1:{emoji:'🐣',title:'1ª Classe',sub:'6-7 anos',color:'var(--y1)',dark:'var(--y1d)',cls:'y1'},
@@ -709,12 +711,14 @@ const LEVEL_LABEL = {base:'básico',medio:'médio',avancado:'avançado'};
 // Splash
 function hideSplash(){
   const s=document.getElementById('splash');
-  if(!s||s.style.display==='none') return;
+  if(!s||s.style.pointerEvents==='none') return;
+  s.style.pointerEvents='none';
   s.style.opacity='0';
-  setTimeout(()=>s.style.display='none',500);
+  setTimeout(()=>{if(s)s.style.display='none';},600);
 }
 setTimeout(hideSplash,1800);
-setTimeout(hideSplash,5000); // failsafe mobile
+setTimeout(hideSplash,4000);
+document.addEventListener('touchstart',hideSplash,{once:true,passive:true});
 
 // ═══════════════════════════
 // NAVIGATION
@@ -793,7 +797,7 @@ function closeSettings(){
 }
 function toggleFreeMode(val){
   freeMode = val;
-  localStorage.setItem('cv_free_mode', val ? '1' : '0');
+  _ls.setItem('cv_free_mode', val ? '1' : '0');
 }
 function saveSettingsKey(e){
   const k = document.getElementById('settings-api-key').value.trim();
@@ -807,7 +811,7 @@ function saveSettingsKey(e){
 // ═══════════════════════════
 function addPoints(n){
   totalPoints+=n;
-  localStorage.setItem('cv_total_points', totalPoints);
+  _ls.setItem('cv_total_points', totalPoints);
   document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
 }
 
@@ -1132,8 +1136,8 @@ function getQuestions(year,subj){ return []; }
 // ═══════════════════════════
 // AI SECTION
 // ═══════════════════════════
-function getApiKey(){ return localStorage.getItem('cv_api_key')||''; }
-function saveApiKey(k){ localStorage.setItem('cv_api_key',k.trim()); }
+function getApiKey(){ return _ls.getItem('cv_api_key')||''; }
+function saveApiKey(k){ _ls.setItem('cv_api_key',k.trim()); }
 
 function renderAI(area){
   const col=SUBJ_COLOR[currentSubject];
@@ -1480,7 +1484,7 @@ window.onload=function(){
   const hash = location.hash.slice(1);
   const groqParam = new URLSearchParams(hash).get('groq');
   if (groqParam && groqParam.startsWith('sk-')) {
-    localStorage.setItem('cv_api_key', groqParam);
+    _ls.setItem('cv_api_key', groqParam);
     history.replaceState(null, '', location.pathname);
   }
 
