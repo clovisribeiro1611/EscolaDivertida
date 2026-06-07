@@ -585,6 +585,13 @@ body {
         <button onclick="saveSettingsKey(event)" style="background:var(--mat);color:white;border:none;padding:9px 16px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.85rem;cursor:pointer;white-space:nowrap">💾 Guardar</button>
       </div>
     </div>
+    <div class="settings-row">
+      <div class="settings-label">
+        <strong>🗑️ Resetar Pontuação</strong>
+        <span>Apaga todos os pontos acumulados</span>
+      </div>
+      <button onclick="resetScore()" style="background:#fee2e2;color:#dc2626;border:1.5px solid #fca5a5;padding:7px 14px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.85rem;cursor:pointer;white-space:nowrap">Resetar</button>
+    </div>
     <div style="padding-top:14px;text-align:right">
       <button onclick="speak('Olá! O áudio está a funcionar correctamente.')" style="background:var(--cie);color:white;border:none;padding:9px 18px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;margin-right:8px">🔊 Testar voz</button>
       <button onclick="closeSettings()" style="background:#f1f5f9;border:none;padding:9px 22px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;color:var(--text)">Fechar</button>
@@ -810,6 +817,15 @@ function closeSettings(){
 function toggleFreeMode(val){
   freeMode = val;
   _ls.setItem('cv_free_mode', val ? '1' : '0');
+}
+function resetScore(){
+  if(!confirm('Tens a certeza que queres apagar todos os pontos?')) return;
+  totalPoints=0;
+  _ls.setItem('cv_total_points','0');
+  document.getElementById('total-stars').textContent='⭐ 0 pts';
+  const btn=event.target;
+  btn.textContent='✅ Resetado!';
+  setTimeout(()=>btn.textContent='Resetar',2000);
 }
 function saveSettingsKey(e){
   const k = document.getElementById('settings-api-key').value.trim();
@@ -1188,15 +1204,24 @@ function getQuestions(year,subj){ return []; }
 function getApiKey(){ return _ls.getItem('cv_api_key')||''; }
 function saveApiKey(k){ _ls.setItem('cv_api_key',k.trim()); }
 
-function renderAI(area){
+async function renderAI(area){
+  await ensureJSON();
   const col=SUBJ_COLOR[currentSubject];
-  const topics=getAITopics(currentYear,currentSubject);
-  const hasKey=!!getApiKey();
+  const ano=getJSONAno(currentSubject,currentYear);
+  const topics=[];
+  if(ano){
+    for(const trim of ano.trimestres){
+      for(const tm of trim.temas){
+        topics.push({val:tm.id, label:tm.nome||tm.id, trim:trim.trimestre||''});
+      }
+    }
+  }
+  if(!topics.length) topics.push(...getAITopics(currentYear,currentSubject).map(t=>({val:t.val,label:t.label,trim:''})));
   const keyHint = getApiKey() ? '' : `<div style="background:#fef9c3;border:1px solid #fde68a;border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:0.8rem;color:#92400e">🔑 Sem chave Groq configurada. Vai a <strong>⚙️ Definições</strong> para adicionar.</div>`;
   area.innerHTML=`${keyHint}
     <div class="ai-box">
       <h3>🤖 Tutor IA (Groq)</h3>
-      <select class="ai-select" id="ai-topic-sel">${topics.map(t=>`<option value="${t.val}">${t.label}</option>`).join('')}</select>
+      <select class="ai-select" id="ai-topic-sel">${topics.map(t=>`<option value="${t.val}" data-label="${t.label.replace(/"/g,'&quot;')}" data-trim="${t.trim}">${t.label}</option>`).join('')}</select>
       <div class="level-row">
         <button class="lv-btn" id="lv-base" style="background:${col};border-color:${col};color:white" onclick="setAILevel('base','${col}')">🌱 Base</button>
         <button class="lv-btn" id="lv-medio" onclick="setAILevel('medio','${col}')">📗 Médio</button>
@@ -1283,31 +1308,36 @@ function renderAIQuiz(data,container){
 }
 
 async function callAI(){
-  const topic=document.getElementById('ai-topic-sel')?.value||'';
+  const sel=document.getElementById('ai-topic-sel');
+  const temaId=sel?.value||'';
+  const temaLabel=sel?.options[sel.selectedIndex]?.dataset?.label||sel?.options[sel.selectedIndex]?.text||temaId;
+  const trimLabel=sel?.options[sel.selectedIndex]?.dataset?.trim||'';
   const out=document.getElementById('ai-output');
   const btn=document.getElementById('ai-gen-btn');
   const key=getApiKey();
   out.className='ai-out show';
   out.style.cssText='';
   if(!key){
-    out.innerHTML='🔑 Introduz a tua Chave API no campo acima e guarda antes de continuar.';
+    out.innerHTML='🔑 Introduz a tua Chave API nas ⚙️ Definições antes de continuar.';
     return;
   }
   const yr=currentYear, subj=currentSubject;
   const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
+  const classeName=`${yr}ª classe`;
   const lvLabel={base:'base',medio:'médio',avancado:'avançado'};
   const yearCtx={
-    1:'Aluno de 1ª classe (6-7 anos): usa frases muito curtas, palavras simples de 1-2 sílabas, números até 20, 4 opções com respostas óbvias. Nada de decimais, frações ou conceitos abstratos.',
-    2:'Aluno de 2ª classe (7-8 anos): frases curtas, números até 1000, vocabulário do quotidiano, operações básicas de adição/subtração/multiplicação simples.',
-    3:'Aluno de 3ª classe (8-9 anos): pode incluir multiplicação e divisão, frações simples, sinónimos/antónimos, conceitos de ciências básicos.',
-    4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática básica, conceitos de ciências e história de Cabo Verde.'
+    1:'Aluno de 1ª classe (6-7 anos): usa frases muito curtas, palavras simples, números até 20, 4 opções simples. Sem decimais, frações ou abstracções.',
+    2:'Aluno de 2ª classe (7-8 anos): frases curtas, números até 1000, vocabulário do quotidiano, operações básicas.',
+    3:'Aluno de 3ª classe (8-9 anos): pode incluir multiplicação/divisão, frações simples, sinónimos/antónimos, ciências básicas.',
+    4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática, ciências e história de Cabo Verde.'
   }[yr];
-  const histNote=_aiHistory.length?` Exercícios recentes (NÃO repitas): ${_aiHistory.slice(-5).join(' | ')}`:'';
+  const trimCtx=trimLabel?` (${trimLabel})`:'';
+  const histNote=_aiHistory.length?` Exercícios anteriores a NÃO repetir: ${_aiHistory.slice(-5).join(' | ')}`:'';
   const topicType=
-    /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(topic)
+    /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(temaLabel)
       ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
-      : 'CONCEITO: pergunta directamente sobre as PROPRIEDADES ou a DEFINIÇÃO do tema (ex: "Quantos lados tem um triângulo?", "Qual é a forma com 4 lados iguais?"). NÃO uses o tema como personagem ou objecto numa história matemática. A pergunta deve testar o que a criança sabe sobre o conceito.';
-  const prompt=`Cria 1 exercício de ${subjName} de nível ${lvLabel[aiLevel]} para a ${yr}ª classe de Cabo Verde sobre "${topic}". Contexto do aluno: ${yearCtx} Tipo de exercício — ${topicType}${histNote}`;
+      : 'CONCEITO: pergunta sobre as PROPRIEDADES ou DEFINIÇÃO do tema. A pergunta deve testar o que a criança sabe sobre o conceito específico.';
+  const prompt=`Contexto: disciplina=${subjName}, ano=${classeName}, trimestre${trimCtx}, tema="${temaLabel}", nível=${lvLabel[aiLevel]}. Perfil do aluno: ${yearCtx} Tipo de exercício: ${topicType}${histNote}. Cria 1 exercício de escolha múltipla (4 opções) adequado exactamente a este contexto.`;
   out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
   if(btn) btn.disabled=true;
   try{
