@@ -707,10 +707,14 @@ const SUBJ_COLOR = {
 const LEVEL_LABEL = {base:'básico',medio:'médio',avancado:'avançado'};
 
 // Splash
-setTimeout(()=>{
-  document.getElementById('splash').style.opacity='0';
-  setTimeout(()=>document.getElementById('splash').style.display='none',500);
-},1800);
+function hideSplash(){
+  const s=document.getElementById('splash');
+  if(!s||s.style.display==='none') return;
+  s.style.opacity='0';
+  setTimeout(()=>s.style.display='none',500);
+}
+setTimeout(hideSplash,1800);
+setTimeout(hideSplash,5000); // failsafe mobile
 
 // ═══════════════════════════
 // NAVIGATION
@@ -1470,10 +1474,7 @@ window.setGramPage=function(p){currentGramPage=p;renderGramCards();window.scroll
 window.onload=function(){
   ensureJSON();
   document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
-  setTimeout(()=>{
-    document.getElementById('splash').style.opacity='0';
-    setTimeout(()=>document.getElementById('splash').style.display='none',500);
-  },1800);
+  setTimeout(hideSplash,1800);
 
   // Groq key from URL hash: #groq=sk-...
   const hash = location.hash.slice(1);
@@ -1483,12 +1484,14 @@ window.onload=function(){
     history.replaceState(null, '', location.pathname);
   }
 
-  // Service Worker — auto-reload quando nova versão ativa
+  // Service Worker — auto-reload uma vez por sessão quando nova versão ativa
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(()=>{});
-    let swRefreshing = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (!swRefreshing) { swRefreshing = true; window.location.reload(); }
+      if (!sessionStorage.getItem('sw_reloaded')) {
+        sessionStorage.setItem('sw_reloaded', '1');
+        window.location.reload();
+      }
     });
   }
 };
