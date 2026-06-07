@@ -335,6 +335,45 @@ body {
   animation:fadeUp 0.4s ease;
 }
 
+/* ── SETTINGS ── */
+.settings-btn {
+  background: rgba(255,255,255,0.15); border: none; cursor: pointer;
+  color: white; border-radius: 50%; width: 36px; height: 36px;
+  font-size: 1.1rem; display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s; flex-shrink: 0;
+}
+.settings-btn:hover { background: rgba(255,255,255,0.28); }
+.settings-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+  z-index: 200; align-items: flex-start; justify-content: flex-end;
+  padding: 64px 16px 0;
+}
+.settings-overlay.open { display: flex; }
+.settings-panel {
+  background: white; border-radius: 20px; padding: 20px;
+  width: 100%; max-width: 360px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  animation: fadeUp 0.2s ease;
+}
+.settings-panel h2 { font-family:'Fredoka One',cursive; font-size:1.15rem; color:var(--text); margin:0 0 14px; }
+.settings-row { display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid #f1f5f9; }
+.settings-row:last-child { border-bottom:none; padding-bottom:0; }
+.settings-label { flex:1; }
+.settings-label strong { display:block; font-size:0.88rem; color:var(--text); }
+.settings-label span { font-size:0.73rem; color:var(--muted); line-height:1.4; }
+.toggle-switch { position:relative; width:48px; height:26px; flex-shrink:0; }
+.toggle-switch input { opacity:0; width:0; height:0; position:absolute; }
+.toggle-slider {
+  position:absolute; inset:0; background:#cbd5e1; border-radius:50px; cursor:pointer;
+  transition:background 0.2s;
+}
+.toggle-slider:before {
+  content:''; position:absolute; width:20px; height:20px; border-radius:50%;
+  background:white; left:3px; top:3px; transition:transform 0.2s;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}
+.toggle-switch input:checked + .toggle-slider { background:var(--cie); }
+.toggle-switch input:checked + .toggle-slider:before { transform:translateX(22px); }
+
 /* ── CHALLENGE ── */
 .timer-display {
   text-align: center; font-family: 'Fredoka One', cursive;
@@ -507,6 +546,38 @@ body {
     <div class="app-bar-sub">Provas Nacionais 2025/2026 • Cabo Verde</div>
   </div>
   <div class="app-bar-stars" id="total-stars">⭐ 0 pts</div>
+  <button class="settings-btn" onclick="openSettings()" title="Definições">⚙️</button>
+</div>
+
+<!-- SETTINGS OVERLAY -->
+<div class="settings-overlay" id="settings-overlay" onclick="if(event.target===this)closeSettings()">
+  <div class="settings-panel">
+    <h2>⚙️ Definições</h2>
+    <div class="settings-row">
+      <div class="settings-label">
+        <strong>🔓 Modo Livre</strong>
+        <span>Desbloqueia todos os temas sem precisar completar por ordem</span>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="free-mode-toggle" onchange="toggleFreeMode(this.checked)">
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+    <div class="settings-row" style="flex-direction:column;align-items:flex-start;gap:8px">
+      <div class="settings-label">
+        <strong>🔑 Chave API Groq</strong>
+        <span>Para o Tutor IA funcionar. Obtém em console.groq.com → API Keys. Guardada só neste browser.</span>
+      </div>
+      <div style="display:flex;gap:8px;width:100%">
+        <input type="password" id="settings-api-key" placeholder="gsk_..."
+          style="flex:1;padding:9px 12px;border-radius:10px;border:2px solid #e5e7eb;font-family:'Nunito',sans-serif;font-size:0.85rem;box-sizing:border-box">
+        <button onclick="saveSettingsKey(event)" style="background:var(--mat);color:white;border:none;padding:9px 16px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.85rem;cursor:pointer;white-space:nowrap">💾 Guardar</button>
+      </div>
+    </div>
+    <div style="padding-top:14px;text-align:right">
+      <button onclick="closeSettings()" style="background:#f1f5f9;border:none;padding:9px 22px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;color:var(--text)">Fechar</button>
+    </div>
+  </div>
 </div>
 
 <!-- HOME SCREEN -->
@@ -597,6 +668,7 @@ body {
 // ═══════════════════════════
 let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
 let totalPoints = parseInt(localStorage.getItem('cv_total_points')||'0',10), aiLevel = 'base';
+let freeMode = localStorage.getItem('cv_free_mode') === '1';
 let challengeInterval = null;
 let wrongAnswers = [];
 let _currentTemaId = null;
@@ -619,9 +691,9 @@ function getTema(subj,year,temaId){const a=getJSONAno(subj,year);if(!a)return nu
 function _prKey(s,y,id){return`ecv_pr_${s}_${y}_${id}`;}
 function getProgress(temaId){const v=localStorage.getItem(_prKey(currentSubject,currentYear,temaId));return v?JSON.parse(v):null;}
 function saveProgress(temaId,score,total){const k=_prKey(currentSubject,currentYear,temaId);const p=getProgress(temaId);if(!p||score>p.best)localStorage.setItem(k,JSON.stringify({best:score,total}));}
-function isUnlocked(temaId){const p=getProgress(temaId);return!!(p&&p.best/p.total>=0.8);}
-function allUnlocked(subj,year){const a=getJSONAno(subj,year);if(!a)return false;for(const t of a.trimestres)for(const tm of t.temas)if(!isUnlockedFor(subj,year,tm.id))return false;return true;}
-function isUnlockedFor(s,y,id){const v=localStorage.getItem(_prKey(s,y,id));if(!v)return false;const p=JSON.parse(v);return p.best/p.total>=0.8;}
+function isUnlocked(temaId){if(freeMode)return true;const p=getProgress(temaId);return!!(p&&p.best/p.total>=0.8);}
+function allUnlocked(subj,year){if(freeMode)return true;const a=getJSONAno(subj,year);if(!a)return false;for(const t of a.trimestres)for(const tm of t.temas)if(!isUnlockedFor(subj,year,tm.id))return false;return true;}
+function isUnlockedFor(s,y,id){if(freeMode)return true;const v=localStorage.getItem(_prKey(s,y,id));if(!v)return false;const p=JSON.parse(v);return p.best/p.total>=0.8;}
 
 const YEAR_META = {
   1:{emoji:'🐣',title:'1ª Classe',sub:'6-7 anos',color:'var(--y1)',dark:'var(--y1d)',cls:'y1'},
@@ -705,6 +777,28 @@ function updateActiveColor(){
 }
 
 // ═══════════════════════════
+// SETTINGS
+// ═══════════════════════════
+function openSettings(){
+  document.getElementById('free-mode-toggle').checked = freeMode;
+  document.getElementById('settings-api-key').value = getApiKey();
+  document.getElementById('settings-overlay').classList.add('open');
+}
+function closeSettings(){
+  document.getElementById('settings-overlay').classList.remove('open');
+}
+function toggleFreeMode(val){
+  freeMode = val;
+  localStorage.setItem('cv_free_mode', val ? '1' : '0');
+}
+function saveSettingsKey(e){
+  const k = document.getElementById('settings-api-key').value.trim();
+  if(k) saveApiKey(k);
+  const btn = e.target;
+  btn.textContent = '✅ Guardada!';
+  setTimeout(() => btn.textContent = '💾 Guardar', 2000);
+}
+
 // POINTS
 // ═══════════════════════════
 function addPoints(n){
@@ -1041,16 +1135,8 @@ function renderAI(area){
   const col=SUBJ_COLOR[currentSubject];
   const topics=getAITopics(currentYear,currentSubject);
   const hasKey=!!getApiKey();
-  area.innerHTML=`
-    <div class="ai-box" style="border-color:#fde68a">
-      <h3>🔑 Chave API Groq</h3>
-      <input type="password" id="api-key-inp" placeholder="gsk_..."
-        style="width:100%;padding:10px 12px;border-radius:10px;border:2px solid #e5e7eb;font-family:'Nunito',sans-serif;font-size:0.85rem;margin-bottom:8px;box-sizing:border-box"
-        value="${getApiKey()}" />
-      <button onclick="const k=document.getElementById('api-key-inp').value.trim();if(k){saveApiKey(k);this.textContent='✅ Guardada!';setTimeout(()=>this.textContent='💾 Guardar',2000);}"
-        style="background:#f59e0b;color:white;border:none;padding:9px 20px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer">💾 Guardar</button>
-      <div style="font-size:0.75rem;color:var(--muted);margin-top:8px;line-height:1.5">Obtém a chave em <strong>console.groq.com</strong> → API Keys. Guardada só neste browser.</div>
-    </div>
+  const keyHint = getApiKey() ? '' : `<div style="background:#fef9c3;border:1px solid #fde68a;border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:0.8rem;color:#92400e">🔑 Sem chave Groq configurada. Vai a <strong>⚙️ Definições</strong> para adicionar.</div>`;
+  area.innerHTML=`${keyHint}
     <div class="ai-box">
       <h3>🤖 Tutor IA (Groq)</h3>
       <select class="ai-select" id="ai-topic-sel">${topics.map(t=>`<option value="${t.val}">${t.label}</option>`).join('')}</select>
