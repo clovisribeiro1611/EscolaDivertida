@@ -1275,7 +1275,10 @@ function renderAIQuiz(data,container){
   container.style.cssText='background:transparent;border:none;padding:0';
   container.innerHTML=`
     <div class="qcard" style="margin-top:4px">
-      <div class="qnum">🤖 Exercício gerado por IA</div>
+      <div class="qnum-row">
+        <div class="qnum">🤖 Exercício gerado por IA</div>
+        <button class="speak-btn" onclick="speak(this.dataset.q)" data-q="${data.question.replace(/"/g,'&quot;')}" title="Ouvir pergunta">🔊</button>
+      </div>
       <div class="qtext">${data.question}</div>
       <div class="opts" id="ai-opts">
         ${data.options.map((o,i)=>`
@@ -1286,6 +1289,7 @@ function renderAIQuiz(data,container){
       </div>
       <div class="feedback" id="ai-feedback"></div>
     </div>`;
+  speak(data.question);
   window.pickAIOpt=function(btn,chosen){
     document.querySelectorAll('#ai-opts .opt').forEach(b=>b.disabled=true);
     const fb=document.getElementById('ai-feedback');
