@@ -1483,9 +1483,13 @@ window.onload=function(){
     history.replaceState(null, '', location.pathname);
   }
 
-  // Service Worker
+  // Service Worker — auto-reload quando nova versão ativa
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(()=>{});
+    let swRefreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!swRefreshing) { swRefreshing = true; window.location.reload(); }
+    });
   }
 };
 </script>
