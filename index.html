@@ -596,7 +596,7 @@ body {
 // STATE
 // ═══════════════════════════
 let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
-let totalPoints = 0, aiLevel = 'base';
+let totalPoints = parseInt(localStorage.getItem('cv_total_points')||'0',10), aiLevel = 'base';
 let challengeInterval = null;
 let wrongAnswers = [];
 let _currentTemaId = null;
@@ -709,6 +709,7 @@ function updateActiveColor(){
 // ═══════════════════════════
 function addPoints(n){
   totalPoints+=n;
+  localStorage.setItem('cv_total_points', totalPoints);
   document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
 }
 
@@ -1382,6 +1383,7 @@ window.setGramPage=function(p){currentGramPage=p;renderGramCards();window.scroll
 // INIT
 window.onload=function(){
   ensureJSON();
+  document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
   setTimeout(()=>{
     document.getElementById('splash').style.opacity='0';
     setTimeout(()=>document.getElementById('splash').style.display='none',500);
