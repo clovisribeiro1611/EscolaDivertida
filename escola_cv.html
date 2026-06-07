@@ -615,6 +615,13 @@ body {
       </div>
       <button onclick="resetScore()" style="background:#fee2e2;color:#dc2626;border:1.5px solid #fca5a5;padding:7px 14px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.85rem;cursor:pointer;white-space:nowrap">Resetar</button>
     </div>
+    <div class="settings-row">
+      <div class="settings-label">
+        <strong>🔄 Atualizar App</strong>
+        <span>Verifica e instala a versão mais recente</span>
+      </div>
+      <button id="btn-update-app" onclick="checkAppUpdate(this)" style="background:#e0f2fe;color:#0369a1;border:1.5px solid #7dd3fc;padding:7px 14px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.85rem;cursor:pointer;white-space:nowrap">Verificar</button>
+    </div>
     <div style="padding-top:14px;text-align:right">
       <button onclick="speak('Olá! O áudio está a funcionar correctamente.')" style="background:var(--cie);color:white;border:none;padding:9px 18px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;margin-right:8px">🔊 Testar voz</button>
       <button onclick="closeSettings()" style="background:#f1f5f9;border:none;padding:9px 22px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;color:var(--text)">Fechar</button>
@@ -893,6 +900,35 @@ function resetScore(){
   const btn=event.target;
   btn.textContent='✅ Resetado!';
   setTimeout(()=>btn.textContent='Resetar',2000);
+}
+async function checkAppUpdate(btn){
+  if(!('serviceWorker' in navigator)){ btn.textContent='❌ Não suportado'; return; }
+  btn.textContent='⏳ A verificar...';
+  btn.disabled=true;
+  try {
+    const reg = await navigator.serviceWorker.getRegistration();
+    if(!reg){ btn.textContent='❌ Sem SW'; btn.disabled=false; return; }
+    await reg.update();
+    if(reg.waiting){
+      btn.textContent='🔄 A instalar...';
+      reg.waiting.postMessage({type:'SKIP_WAITING'});
+    } else if(reg.installing){
+      btn.textContent='⬇️ A transferir...';
+      reg.installing.addEventListener('statechange', e => {
+        if(e.target.state==='installed' && reg.waiting){
+          reg.waiting.postMessage({type:'SKIP_WAITING'});
+        }
+      });
+    } else {
+      btn.textContent='✅ Já actualizado!';
+      btn.disabled=false;
+      setTimeout(()=>{ btn.textContent='Verificar'; },2500);
+    }
+  } catch(e){
+    btn.textContent='❌ Erro. Tenta outra vez.';
+    btn.disabled=false;
+    setTimeout(()=>{ btn.textContent='Verificar'; },3000);
+  }
 }
 function saveSettingsKey(e){
   const k = document.getElementById('settings-api-key').value.trim();
