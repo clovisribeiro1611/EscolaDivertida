@@ -1,0 +1,1629 @@
+{
+  "disciplina": "matematica",
+  "anos": [
+    {
+      "ano": 1,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nem1_t1_numeros_10",
+              "nome": "Números de 1 a 10",
+              "icone": "🔢",
+              "aprender": [
+                {
+                  "icon": "🖐️",
+                  "title": "Contar até 5",
+                  "body": "Conta com os dedos: <b>1, 2, 3, 4, 5</b>. Levanta um dedo para cada número.",
+                  "example": "1️⃣ Um · 2️⃣ Dois · 3️⃣ Três · 4️⃣ Quatro · 5️⃣ Cinco",
+                  "trick": "Uma mão = 5 dedos = 5!"
+                },
+                {
+                  "icon": "👐",
+                  "title": "Contar até 10",
+                  "body": "Com as duas mãos contamos até <b>10</b>. Depois do 5 vem: 6, 7, 8, 9, 10.",
+                  "example": "6️⃣ Seis · 7️⃣ Sete · 8️⃣ Oito · 9️⃣ Nove · 🔟 Dez",
+                  "trick": "Duas mãos = 10 dedos = 10!"
+                },
+                {
+                  "icon": "🍎",
+                  "title": "Contar objectos",
+                  "body": "Conta os objectos um a um. Aponta para cada um e diz o número em voz alta.",
+                  "example": "🍎🍎🍎 = 3 maçãs · 🐟🐟🐟🐟 = 4 peixes",
+                  "trick": "Deus criou os números para nos ajudar a contar as Suas bênçãos!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas maçãs há? 🍎🍎🍎",
+                  "options": [
+                    "3",
+                    "2",
+                    "5"
+                  ],
+                  "answer": "3",
+                  "why": "Contamos 3 maçãs: 🍎 um, 🍎 dois, 🍎 três = 3!"
+                },
+                {
+                  "question": "Qual número vem depois do 4?",
+                  "options": [
+                    "5",
+                    "3",
+                    "6"
+                  ],
+                  "answer": "5",
+                  "why": "Depois do 4 vem o 5. 1, 2, 3, 4, 5..."
+                },
+                {
+                  "question": "Quantos dedos temos numa mão?",
+                  "options": [
+                    "5 dedos",
+                    "10 dedos",
+                    "3 dedos"
+                  ],
+                  "answer": "5 dedos",
+                  "why": "Numa mão temos 5 dedos. Nas duas mãos temos 10!"
+                },
+                {
+                  "question": "Qual é o maior número? 2, 7, 4",
+                  "options": [
+                    "7",
+                    "2",
+                    "4"
+                  ],
+                  "answer": "7",
+                  "why": "O 7 é maior que o 2 e o 4. 7 > 4 > 2."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Conta os peixes: 🐟🐟🐟🐟🐟🐟",
+                  "options": [
+                    "6 peixes",
+                    "5 peixes",
+                    "7 peixes"
+                  ],
+                  "answer": "6 peixes",
+                  "why": "Contamos: 1, 2, 3, 4, 5, 6 = 6 peixes!"
+                },
+                {
+                  "question": "Qual número vem antes do 8?",
+                  "options": [
+                    "7",
+                    "9",
+                    "6"
+                  ],
+                  "answer": "7",
+                  "why": "Antes do 8 vem o 7. ...6, 7, 8..."
+                }
+              ]
+            },
+            {
+              "id": "nem1_t1_formas",
+              "nome": "Formas e Cores",
+              "icone": "🔵",
+              "aprender": [
+                {
+                  "icon": "⭕",
+                  "title": "O círculo",
+                  "body": "O <b>círculo</b> é redondo. Não tem lados nem cantos. Como uma bola ou a lua cheia!",
+                  "example": "⭕ Círculo · 🌕 Lua · 🍕 Pizza · ⚽ Bola",
+                  "trick": "Círculo = redondo sem cantos!"
+                },
+                {
+                  "icon": "🔷",
+                  "title": "O quadrado e o triângulo",
+                  "body": "O <b>quadrado</b> tem 4 lados iguais. O <b>triângulo</b> tem 3 lados e 3 bicos.",
+                  "example": "🔲 Quadrado (4 lados) · 🔺 Triângulo (3 lados)",
+                  "trick": "Tri = 3! TRIângulo tem 3 lados."
+                },
+                {
+                  "icon": "🎨",
+                  "title": "As cores",
+                  "body": "As cores primárias são: <b>vermelho, azul e amarelo</b>. Com estas 3 cores fazemos todas as outras!",
+                  "example": "🔴 Vermelho · 🔵 Azul · 🟡 Amarelo",
+                  "trick": "O arco-íris de Deus tem 7 cores bonitas!"
+                },
+                {
+                  "icon": "🔶",
+                  "title": "O rectângulo",
+                  "body": "O <b>rectângulo</b> tem 4 lados mas os lados opostos são iguais. 2 lados compridos e 2 lados curtos.",
+                  "example": "📄 Folha de papel · 🚪 Porta · 📺 Televisão · 📦 Caixa",
+                  "trick": "Rectângulo: 4 lados, mas não todos iguais. Quadrado: 4 lados todos iguais!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantos lados tem um triângulo?",
+                  "options": [
+                    "3 lados",
+                    "4 lados",
+                    "2 lados"
+                  ],
+                  "answer": "3 lados",
+                  "why": "TRI-ângulo — «tri» significa 3. O triângulo tem 3 lados e 3 bicos!"
+                },
+                {
+                  "question": "Qual forma é redonda?",
+                  "options": [
+                    "O círculo",
+                    "O quadrado",
+                    "O triângulo"
+                  ],
+                  "answer": "O círculo",
+                  "why": "O círculo é redondo, sem lados nem cantos — como uma bola!"
+                },
+                {
+                  "question": "Quais são as 3 cores primárias?",
+                  "options": [
+                    "Vermelho, azul e amarelo",
+                    "Verde, roxo e laranja",
+                    "Branco, preto e cinzento"
+                  ],
+                  "answer": "Vermelho, azul e amarelo",
+                  "why": "As 3 cores primárias são vermelho, azul e amarelo — com elas fazemos todas as outras!"
+                },
+                {
+                  "question": "Qual forma tem 4 lados iguais?",
+                  "options": [
+                    "Quadrado",
+                    "Rectângulo",
+                    "Triângulo"
+                  ],
+                  "answer": "Quadrado",
+                  "why": "O quadrado tem exactamente 4 lados iguais. O rectângulo tem 4 lados mas não todos iguais!"
+                },
+                {
+                  "question": "Uma folha de papel tem forma de:",
+                  "options": [
+                    "Rectângulo",
+                    "Círculo",
+                    "Triângulo"
+                  ],
+                  "answer": "Rectângulo",
+                  "why": "A folha de papel tem 4 lados — 2 mais compridos e 2 mais curtos — é um rectângulo!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma porta tem forma de:",
+                  "options": [
+                    "Rectângulo",
+                    "Círculo",
+                    "Triângulo"
+                  ],
+                  "answer": "Rectângulo",
+                  "why": "Uma porta tem 4 lados mas dois são mais compridos — isso é um rectângulo!"
+                },
+                {
+                  "question": "Uma pizza inteira tem forma de:",
+                  "options": [
+                    "Círculo",
+                    "Triângulo",
+                    "Quadrado"
+                  ],
+                  "answer": "Círculo",
+                  "why": "A pizza inteira é redonda — tem forma de círculo! Quando cortada em fatias, cada fatia é um triângulo."
+                },
+                {
+                  "question": "Quantos lados tem um pentágono?",
+                  "options": [
+                    "5 lados",
+                    "4 lados",
+                    "6 lados"
+                  ],
+                  "answer": "5 lados",
+                  "why": "Penta = 5 em grego. Pentágono tem 5 lados. Ex: o símbolo do futebol americano!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nem1_t2_soma_simples",
+              "nome": "Somar até 10",
+              "icone": "➕",
+              "aprender": [
+                {
+                  "icon": "🍎",
+                  "title": "O que é somar?",
+                  "body": "Somar é <b>juntar</b> coisas. Quando juntamos 2 maçãs com 1 maçã ficamos com 3 maçãs!",
+                  "example": "🍎🍎 + 🍎 = 🍎🍎🍎 → 2 + 1 = 3",
+                  "trick": "O sinal de somar é + (mais). Dois mais um igual a três!"
+                },
+                {
+                  "icon": "🖐️",
+                  "title": "Somar com os dedos",
+                  "body": "Para somar 3 + 2: levanta 3 dedos, depois mais 2 dedos. Conta todos: 1, 2, 3, 4, 5!",
+                  "example": "3 + 2 = 5 · 4 + 1 = 5 · 2 + 3 = 5",
+                  "trick": "Os dedos são a melhor calculadora para aprender a somar!"
+                },
+                {
+                  "icon": "➖",
+                  "title": "Subtrair — tirar",
+                  "body": "<b>Subtrair</b> é tirar. Se tenho 5 mangas e como 2, fico com 3. 5 − 2 = 3.",
+                  "example": "🥭🥭🥭🥭🥭 − 🥭🥭 = 🥭🥭🥭 → 5 − 2 = 3",
+                  "trick": "O sinal − diz «tirar». O resultado é sempre menor!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 2 + 2?",
+                  "options": [
+                    "4",
+                    "3",
+                    "5"
+                  ],
+                  "answer": "4",
+                  "why": "2 + 2 = 4. Como 2 maçãs mais 2 maçãs = 4 maçãs!"
+                },
+                {
+                  "question": "Quanto é 1 + 3?",
+                  "options": [
+                    "4",
+                    "2",
+                    "5"
+                  ],
+                  "answer": "4",
+                  "why": "1 + 3 = 4. Levanta 1 dedo, depois mais 3, conta: 1, 2, 3, 4!"
+                },
+                {
+                  "question": "Quanto é 5 + 2?",
+                  "options": [
+                    "7",
+                    "6",
+                    "8"
+                  ],
+                  "answer": "7",
+                  "why": "5 + 2 = 7. Começamos no 5 e contamos mais 2: 6, 7!"
+                },
+                {
+                  "question": "Pedro tem 3 peixinhos e ganhou mais 4. Quantos tem agora?",
+                  "options": [
+                    "7 peixinhos",
+                    "5 peixinhos",
+                    "6 peixinhos"
+                  ],
+                  "answer": "7 peixinhos",
+                  "why": "3 + 4 = 7 peixinhos. Deus abençoou Pedro com muitos peixinhos!"
+                },
+                {
+                  "question": "Quanto é 7 − 3?",
+                  "options": [
+                    "4",
+                    "5",
+                    "3"
+                  ],
+                  "answer": "4",
+                  "why": "7 − 3 = 4. Sete menos três igual a quatro!"
+                },
+                {
+                  "question": "Maria tinha 6 bananas e comeu 4. Quantas ficaram?",
+                  "options": [
+                    "2",
+                    "3",
+                    "10"
+                  ],
+                  "answer": "2",
+                  "why": "6 − 4 = 2. Maria ficou com 2 bananas!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é 4 + 4?",
+                  "options": [
+                    "8",
+                    "6",
+                    "10"
+                  ],
+                  "answer": "8",
+                  "why": "4 + 4 = 8. Quatro mais quatro igual a oito!"
+                },
+                {
+                  "question": "Quanto é 10 − 4?",
+                  "options": [
+                    "6",
+                    "5",
+                    "7"
+                  ],
+                  "answer": "6",
+                  "why": "10 − 4 = 6. Dez menos quatro igual a seis!"
+                },
+                {
+                  "question": "Quanto é 3 + 4 − 2?",
+                  "options": [
+                    "5",
+                    "7",
+                    "3"
+                  ],
+                  "answer": "5",
+                  "why": "Passo 1: 3 + 4 = 7. Passo 2: 7 − 2 = 5. Resultado: 5!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "trimestre": "3º Trimestre",
+          "temas": [
+            {
+              "id": "nem1_t3_padroes",
+              "nome": "Padrões e Sequências",
+              "icone": "🔁",
+              "aprender": [
+                {
+                  "icon": "🔁",
+                  "title": "O que é um padrão?",
+                  "body": "Um <b>padrão</b> é uma sequência que se repete. Podemos descobrir o que vem a seguir!",
+                  "example": "🔴🔵🔴🔵🔴 → o próximo é 🔵 · 1,2,3,1,2,3 → o próximo é 1",
+                  "trick": "Olha bem para a sequência — descobre o que se repete!"
+                },
+                {
+                  "icon": "⭐",
+                  "title": "Padrões com formas",
+                  "body": "Podemos criar padrões com formas, cores e números. A natureza está cheia de padrões: a concha, a flor, as escamas do peixe!",
+                  "example": "⭐🔷⭐🔷 → ⭐ · △○△○ → △",
+                  "trick": "Deus criou a natureza com padrões maravilhosos — o universo é ordenado!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual vem a seguir? 🔴🔵🟡🔴🔵___",
+                  "options": [
+                    "🟡",
+                    "🔴",
+                    "🔵"
+                  ],
+                  "answer": "🟡",
+                  "why": "O padrão é: vermelho, azul, amarelo, repetir. Depois de azul vem amarelo!"
+                },
+                {
+                  "question": "Qual vem a seguir? 1, 3, 5, 7, ___",
+                  "options": [
+                    "9",
+                    "8",
+                    "10"
+                  ],
+                  "answer": "9",
+                  "why": "O padrão é contar de 2 em 2 (números ímpares): 1, 3, 5, 7, 9!"
+                },
+                {
+                  "question": "Qual vem a seguir? ⭐⭐🌙⭐⭐🌙⭐⭐___",
+                  "options": [
+                    "🌙",
+                    "⭐",
+                    "🔴"
+                  ],
+                  "answer": "🌙",
+                  "why": "O padrão é: 2 estrelas + 1 lua, repetir. Depois de 2 estrelas vem a lua!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual o número que falta? 2, 4, ___, 8, 10",
+                  "options": [
+                    "6",
+                    "5",
+                    "7"
+                  ],
+                  "answer": "6",
+                  "why": "A sequência vai de 2 em 2: 2, 4, 6, 8, 10. Falta o 6!"
+                },
+                {
+                  "question": "Quantas vezes a unidade se repete? 🔵🔵🔴🔵🔵🔴🔵🔵🔴",
+                  "options": [
+                    "3 vezes",
+                    "2 vezes",
+                    "4 vezes"
+                  ],
+                  "answer": "3 vezes",
+                  "why": "O padrão 🔵🔵🔴 repete-se 3 vezes no total!"
+                }
+              ]
+            },
+            {
+              "id": "nem1_t3_comparar",
+              "nome": "Comparar — Maior, Menor e Igual",
+              "icone": "⚖️",
+              "aprender": [
+                {
+                  "icon": "🐘",
+                  "title": "Maior que (>)",
+                  "body": "Usamos o sinal <b>></b> quando o primeiro número é maior. A «boca» abre para o maior!",
+                  "example": "7 > 4 (sete é maior que quatro) · 10 > 3 · 🐘 > 🐁",
+                  "trick": "O sinal > parece uma boca aberta para o maior. 8 > 5 — a boca come o 8!"
+                },
+                {
+                  "icon": "🐭",
+                  "title": "Menor que (<) e Igual (=)",
+                  "body": "Usamos <b><</b> quando o primeiro é menor. Usamos <b>=</b> quando são iguais.",
+                  "example": "3 < 7 (três é menor que sete) · 5 = 5 (cinco é igual a cinco)",
+                  "trick": "< parece uma boca fechada · = são duas linhas iguais!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "7 ___ 4 (qual sinal?)",
+                  "options": [
+                    ">",
+                    "<",
+                    "="
+                  ],
+                  "answer": ">",
+                  "why": "7 > 4. Sete é maior que quatro — a boca abre para o 7!"
+                },
+                {
+                  "question": "2 ___ 9 (qual sinal?)",
+                  "options": [
+                    "<",
+                    ">",
+                    "="
+                  ],
+                  "answer": "<",
+                  "why": "2 < 9. Dois é menor que nove — a boca abre para o 9!"
+                },
+                {
+                  "question": "5 ___ 5 (qual sinal?)",
+                  "options": [
+                    "=",
+                    ">",
+                    "<"
+                  ],
+                  "answer": "=",
+                  "why": "5 = 5. Cinco é igual a cinco — são exactamente iguais!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual afirmação é correcta?",
+                  "options": [
+                    "8 > 6",
+                    "8 < 6",
+                    "8 = 6"
+                  ],
+                  "answer": "8 > 6",
+                  "why": "8 é maior que 6. Portanto 8 > 6 é a afirmação correcta!"
+                },
+                {
+                  "question": "Ordena do menor para o maior: 5, 2, 8, 1",
+                  "options": [
+                    "1, 2, 5, 8",
+                    "8, 5, 2, 1",
+                    "1, 5, 2, 8"
+                  ],
+                  "answer": "1, 2, 5, 8",
+                  "why": "Do menor para o maior: 1 < 2 < 5 < 8. Sempre começamos pelo menor!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nem2_t1_numeros_100",
+              "nome": "Números até 100",
+              "icone": "💯",
+              "aprender": [
+                {
+                  "icon": "🔟",
+                  "title": "Dezenas",
+                  "body": "10 unidades formam 1 dezena. <b>20 = 2 dezenas, 30 = 3 dezenas</b>...",
+                  "example": "🔟🔟 = 20 · 🔟🔟🔟 = 30 · 🔟🔟🔟🔟🔟 = 50",
+                  "trick": "Dezena = 10. Duas dezenas = 20. Dez dezenas = 100!"
+                },
+                {
+                  "icon": "📊",
+                  "title": "Dezenas e unidades",
+                  "body": "O número 34 tem <b>3 dezenas e 4 unidades</b>. O número 57 tem 5 dezenas e 7 unidades.",
+                  "example": "34 = 30 + 4 · 57 = 50 + 7 · 89 = 80 + 9",
+                  "trick": "O primeiro dígito são as dezenas, o segundo são as unidades!"
+                },
+                {
+                  "icon": "🔢",
+                  "title": "Par e ímpar",
+                  "body": "Números <b>pares</b> dividem-se igualmente em 2 (0,2,4,6,8...). Números <b>ímpares</b> sobra sempre 1 (1,3,5,7,9...).",
+                  "example": "2🍎=par · 3🍎=ímpar (sobra 1) · 4🍎=par · 5🍎=ímpar",
+                  "trick": "Pares terminam em 0,2,4,6,8. Ímpares terminam em 1,3,5,7,9!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas dezenas tem o número 40?",
+                  "options": [
+                    "4 dezenas",
+                    "2 dezenas",
+                    "6 dezenas"
+                  ],
+                  "answer": "4 dezenas",
+                  "why": "40 = 4 dezenas. 10+10+10+10 = 40."
+                },
+                {
+                  "question": "O número 63 tem quantas unidades?",
+                  "options": [
+                    "3 unidades",
+                    "6 unidades",
+                    "9 unidades"
+                  ],
+                  "answer": "3 unidades",
+                  "why": "63 = 6 dezenas + 3 unidades. O segundo dígito (3) são as unidades."
+                },
+                {
+                  "question": "Qual número é maior: 45 ou 54?",
+                  "options": [
+                    "54",
+                    "45",
+                    "São iguais"
+                  ],
+                  "answer": "54",
+                  "why": "54 tem 5 dezenas e 45 tem só 4 dezenas. 5 dezenas > 4 dezenas, então 54 > 45."
+                },
+                {
+                  "question": "O número 24 é:",
+                  "options": [
+                    "Par",
+                    "Ímpar",
+                    "Nenhum"
+                  ],
+                  "answer": "Par",
+                  "why": "24 termina em 4 — é par! Podemos dividi-lo em 2 grupos iguais de 12."
+                },
+                {
+                  "question": "O número 37 é:",
+                  "options": [
+                    "Ímpar",
+                    "Par",
+                    "Zero"
+                  ],
+                  "answer": "Ímpar",
+                  "why": "37 termina em 7 — é ímpar! Não conseguimos dividir em 2 grupos iguais."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é 30 + 7?",
+                  "options": [
+                    "37",
+                    "73",
+                    "307"
+                  ],
+                  "answer": "37",
+                  "why": "3 dezenas + 7 unidades = 37. Trinta e sete!"
+                },
+                {
+                  "question": "Qual destes números é par: 15, 22, 33?",
+                  "options": [
+                    "22",
+                    "15",
+                    "33"
+                  ],
+                  "answer": "22",
+                  "why": "22 termina em 2 — é par! 15 termina em 5 (ímpar) e 33 em 3 (ímpar)."
+                },
+                {
+                  "question": "Conta de 2 em 2: 2, 4, 6, 8, ___",
+                  "options": [
+                    "10",
+                    "9",
+                    "11"
+                  ],
+                  "answer": "10",
+                  "why": "A sequência dos números pares: 2, 4, 6, 8, 10. Contamos de 2 em 2!"
+                }
+              ]
+            },
+            {
+              "id": "nem2_t1_soma_subtracao",
+              "nome": "Somar e Subtrair até 100",
+              "icone": "➕➖",
+              "aprender": [
+                {
+                  "icon": "➕",
+                  "title": "Somar dezenas",
+                  "body": "Para somar dezenas junta as dezenas e as unidades separadamente.<br>20 + 30 = 50 (2 dezenas + 3 dezenas = 5 dezenas)",
+                  "example": "20 + 30 = 50 · 40 + 20 = 60 · 30 + 50 = 80",
+                  "trick": "Soma as dezenas primeiro, depois as unidades!"
+                },
+                {
+                  "icon": "➖",
+                  "title": "O que é subtrair?",
+                  "body": "<b>Subtrair</b> é tirar. Se tenho 8 peixes e dou 3, fico com 5. O sinal de subtrair é − (menos).",
+                  "example": "🐟🐟🐟🐟🐟🐟🐟🐟 − 🐟🐟🐟 = 🐟🐟🐟🐟🐟 → 8 − 3 = 5",
+                  "trick": "Subtrair = tirar, remover, dar. O resultado é sempre menor!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 20 + 30?",
+                  "options": [
+                    "50",
+                    "23",
+                    "203"
+                  ],
+                  "answer": "50",
+                  "why": "20 + 30 = 50. Duas dezenas mais três dezenas são cinco dezenas!"
+                },
+                {
+                  "question": "Quanto é 8 − 3?",
+                  "options": [
+                    "5",
+                    "4",
+                    "11"
+                  ],
+                  "answer": "5",
+                  "why": "8 − 3 = 5. Se tiro 3 de 8, fico com 5!"
+                },
+                {
+                  "question": "Ana tem 15 mangas e come 5. Quantas ficam?",
+                  "options": [
+                    "10 mangas",
+                    "20 mangas",
+                    "5 mangas"
+                  ],
+                  "answer": "10 mangas",
+                  "why": "15 − 5 = 10. Ana ficou com 10 mangas!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é 45 + 20?",
+                  "options": [
+                    "65",
+                    "25",
+                    "450"
+                  ],
+                  "answer": "65",
+                  "why": "45 + 20: dezenas 4+2=6, unidades 5+0=5 → 65!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nem2_t2_dinheiro",
+              "nome": "Dinheiro — Escudos de Cabo Verde",
+              "icone": "💰",
+              "aprender": [
+                {
+                  "icon": "💵",
+                  "title": "As notas e moedas",
+                  "body": "Em Cabo Verde usamos <b>escudos (CVE)</b>. Temos moedas de 1$, 5$, 10$, 20$, 50$ e notas de 200$, 500$, 1000$.",
+                  "example": "🪙 1$ · 🪙 5$ · 🪙 10$ · 💵 200$ · 💵 500$",
+                  "trick": "$ é o sinal de escudo em Cabo Verde."
+                },
+                {
+                  "icon": "🛒",
+                  "title": "Comprar e vender",
+                  "body": "Para comprar: dou dinheiro e recebo o artigo. Se o artigo custa 10$ e dou 20$, recebo <b>10$ de troco</b>.",
+                  "example": "Preço: 10$ · Pago: 20$ · Troco: 20$ − 10$ = 10$",
+                  "trick": "Troco = dinheiro que paguei − preço do artigo"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Compro um pão por 15$. Pago com 20$. Quanto recebo de troco?",
+                  "options": [
+                    "5$",
+                    "15$",
+                    "35$"
+                  ],
+                  "answer": "5$",
+                  "why": "Troco = 20$ − 15$ = 5$. Recebo 5 escudos de troco!"
+                },
+                {
+                  "question": "Qual moeda tem mais valor: 10$ ou 5$?",
+                  "options": [
+                    "10$",
+                    "5$",
+                    "São iguais"
+                  ],
+                  "answer": "10$",
+                  "why": "10 escudos é mais que 5 escudos. 10 > 5."
+                },
+                {
+                  "question": "Tenho 3 moedas de 10$. Quanto dinheiro tenho?",
+                  "options": [
+                    "30$",
+                    "13$",
+                    "3$"
+                  ],
+                  "answer": "30$",
+                  "why": "3 × 10$ = 30$. Três moedas de dez escudos = trinta escudos!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Compro um suco por 25$ e uma banana por 5$. Quanto gastei no total?",
+                  "options": [
+                    "30$",
+                    "20$",
+                    "50$"
+                  ],
+                  "answer": "30$",
+                  "why": "25$ + 5$ = 30$. Total gasto = trinta escudos!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "trimestre": "3º Trimestre",
+          "temas": [
+            {
+              "id": "nem2_t3_geometria",
+              "nome": "Figuras no Mundo Real",
+              "icone": "🏠",
+              "aprender": [
+                {
+                  "icon": "🏠",
+                  "title": "Formas em Cabo Verde",
+                  "body": "Vemos formas geométricas em todo o lado! As casas têm <b>rectângulos</b> (janelas), <b>triângulos</b> (telhados) e <b>círculos</b> (rodas).",
+                  "example": "🏠 Telhado = triângulo · 🪟 Janela = rectângulo · ☀️ Sol = círculo · 🌴 Tronco = cilindro",
+                  "trick": "Olha ao redor — quantas formas consegues encontrar?"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Perímetro simples",
+                  "body": "O <b>perímetro</b> é o contorno de uma figura. Para calcular, somamos todos os lados.",
+                  "example": "Um quadrado de 4cm: 4+4+4+4 = 16cm de contorno",
+                  "trick": "Perímetro = somar todos os lados do contorno!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual forma tem o telhado de uma casa?",
+                  "options": [
+                    "Triângulo",
+                    "Círculo",
+                    "Quadrado"
+                  ],
+                  "answer": "Triângulo",
+                  "why": "O telhado tradicional tem forma de triângulo — dois lados inclinados que se encontram no topo!"
+                },
+                {
+                  "question": "Um quadrado tem lado 3cm. Qual o perímetro?",
+                  "options": [
+                    "12cm",
+                    "9cm",
+                    "6cm"
+                  ],
+                  "answer": "12cm",
+                  "why": "Perímetro = 4 × lado = 4 × 3 = 12cm. Todos os 4 lados somados!"
+                },
+                {
+                  "question": "O sol tem forma de:",
+                  "options": [
+                    "Círculo",
+                    "Triângulo",
+                    "Quadrado"
+                  ],
+                  "answer": "Círculo",
+                  "why": "O sol tem forma redonda — é um círculo! (Tal como a lua cheia 🌕)"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Um rectângulo tem 5cm de comprimento e 3cm de largura. Qual o perímetro?",
+                  "options": [
+                    "16cm",
+                    "8cm",
+                    "15cm"
+                  ],
+                  "answer": "16cm",
+                  "why": "P = 5+3+5+3 = 16cm. Somamos todos os 4 lados!"
+                },
+                {
+                  "question": "Quantos vértices (cantos) tem um triângulo?",
+                  "options": [
+                    "3 vértices",
+                    "4 vértices",
+                    "2 vértices"
+                  ],
+                  "answer": "3 vértices",
+                  "why": "O triângulo tem 3 lados e 3 vértices (cantos). Tri = 3!"
+                }
+              ]
+            },
+            {
+              "id": "nem2_t3_multiplicacao_intro",
+              "nome": "Introdução à Multiplicação",
+              "icone": "✖️",
+              "aprender": [
+                {
+                  "icon": "✖️",
+                  "title": "Multiplicação como adição repetida",
+                  "body": "<b>Multiplicar</b> é somar o mesmo número várias vezes. 3 × 4 significa «3 grupos de 4».",
+                  "example": "3 × 4 = 4 + 4 + 4 = 12 · Como 3 sacos com 4 laranjas cada",
+                  "trick": "Multiplicação = forma rápida de somar!"
+                },
+                {
+                  "icon": "📊",
+                  "title": "Tabuada do 2 e do 3",
+                  "body": "Aprender a tabuada é muito útil! Tabuada do 2: sempre números pares. Tabuada do 3: vai de 3 em 3.",
+                  "example": "2×1=2 · 2×2=4 · 2×3=6 · 3×1=3 · 3×2=6 · 3×3=9 · 3×4=12",
+                  "trick": "Tabuada do 2 = números pares · Tabuada do 3 = vai de 3 em 3!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 3 × 3?",
+                  "options": [
+                    "9",
+                    "6",
+                    "12"
+                  ],
+                  "answer": "9",
+                  "why": "3 × 3 = 3+3+3 = 9. Três vezes três = nove!"
+                },
+                {
+                  "question": "Tenho 4 grupos de 2 peixinhos. Quantos peixinhos tenho?",
+                  "options": [
+                    "8",
+                    "6",
+                    "10"
+                  ],
+                  "answer": "8",
+                  "why": "4 × 2 = 8. Quatro grupos de dois = oito peixinhos!"
+                },
+                {
+                  "question": "Quanto é 2 × 8?",
+                  "options": [
+                    "16",
+                    "10",
+                    "14"
+                  ],
+                  "answer": "16",
+                  "why": "2 × 8 = 16. Dois vezes oito = dezasseis!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é 3 × 7?",
+                  "options": [
+                    "21",
+                    "18",
+                    "24"
+                  ],
+                  "answer": "21",
+                  "why": "3 × 7 = 21. Três vezes sete = vinte e um!"
+                },
+                {
+                  "question": "Há 3 turmas com 20 alunos cada. Quantos alunos no total?",
+                  "options": [
+                    "60 alunos",
+                    "23 alunos",
+                    "50 alunos"
+                  ],
+                  "answer": "60 alunos",
+                  "why": "3 × 20 = 60. Três turmas de vinte alunos = sessenta alunos!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nem3_t1_tabuada",
+              "nome": "Tabuada do 2 e do 5",
+              "icone": "✖️",
+              "aprender": [
+                {
+                  "icon": "✖️",
+                  "title": "Multiplicar = somar várias vezes",
+                  "body": "<b>Multiplicar</b> é somar o mesmo número várias vezes. 3 × 2 = 2 + 2 + 2 = 6.",
+                  "example": "2 × 1 = 2 · 2 × 2 = 4 · 2 × 3 = 6 · 2 × 4 = 8 · 2 × 5 = 10",
+                  "trick": "O sinal de multiplicar é × (vezes). 3 × 2 = 3 «vezes» o 2!"
+                },
+                {
+                  "icon": "🖐️",
+                  "title": "Tabuada do 5",
+                  "body": "A tabuada do 5 é fácil — os resultados terminam sempre em 0 ou 5!",
+                  "example": "5×1=5 · 5×2=10 · 5×3=15 · 5×4=20 · 5×5=25 · 5×6=30",
+                  "trick": "Tabuada do 5: conta de 5 em 5 nos dedos!"
+                },
+                {
+                  "icon": "🔟",
+                  "title": "Tabuada do 10",
+                  "body": "A tabuada do 10 é a mais fácil! Os resultados terminam sempre em 0. Basta adicionar um zero ao número.",
+                  "example": "10×1=10 · 10×2=20 · 10×3=30 · 10×4=40 · 10×5=50",
+                  "trick": "10 × qualquer número = esse número com um zero no final!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 2 × 4?",
+                  "options": [
+                    "8",
+                    "6",
+                    "10"
+                  ],
+                  "answer": "8",
+                  "why": "2 × 4 = 2 + 2 + 2 + 2 = 8. Dois mais dois mais dois mais dois = oito!"
+                },
+                {
+                  "question": "Quanto é 5 × 3?",
+                  "options": [
+                    "15",
+                    "10",
+                    "20"
+                  ],
+                  "answer": "15",
+                  "why": "5 × 3 = 5 + 5 + 5 = 15. Cinco vezes três = quinze!"
+                },
+                {
+                  "question": "Tenho 4 sacos com 5 laranjas cada. Quantas laranjas tenho?",
+                  "options": [
+                    "20 laranjas",
+                    "9 laranjas",
+                    "15 laranjas"
+                  ],
+                  "answer": "20 laranjas",
+                  "why": "4 × 5 = 20. Quatro sacos com cinco laranjas = vinte laranjas!"
+                },
+                {
+                  "question": "Quanto é 2 × 7?",
+                  "options": [
+                    "14",
+                    "12",
+                    "16"
+                  ],
+                  "answer": "14",
+                  "why": "2 × 7 = 2+2+2+2+2+2+2 = 14. Dois vezes sete = catorze!"
+                },
+                {
+                  "question": "Quanto é 5 × 6?",
+                  "options": [
+                    "30",
+                    "25",
+                    "35"
+                  ],
+                  "answer": "30",
+                  "why": "5 × 6 = 5+5+5+5+5+5 = 30. Cinco vezes seis = trinta!"
+                },
+                {
+                  "question": "Quanto é 10 × 4?",
+                  "options": [
+                    "40",
+                    "14",
+                    "400"
+                  ],
+                  "answer": "40",
+                  "why": "10 × 4 = 40. Basta adicionar um zero ao 4!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é 2 × 6?",
+                  "options": [
+                    "12",
+                    "8",
+                    "10"
+                  ],
+                  "answer": "12",
+                  "why": "2 × 6 = 2+2+2+2+2+2 = 12. Dois vezes seis = doze!"
+                },
+                {
+                  "question": "Quanto é 2 × 9?",
+                  "options": [
+                    "18",
+                    "16",
+                    "20"
+                  ],
+                  "answer": "18",
+                  "why": "2 × 9 = 18. Dois vezes nove = dezoito!"
+                },
+                {
+                  "question": "Uma caixa tem 5 bananas. Tenho 7 caixas. Quantas bananas?",
+                  "options": [
+                    "35 bananas",
+                    "12 bananas",
+                    "45 bananas"
+                  ],
+                  "answer": "35 bananas",
+                  "why": "5 × 7 = 35. Sete caixas com cinco bananas = trinta e cinco bananas!"
+                }
+              ]
+            },
+            {
+              "id": "nem3_t1_medidas",
+              "nome": "Medidas do Dia a Dia",
+              "icone": "📏",
+              "aprender": [
+                {
+                  "icon": "📏",
+                  "title": "Comprimento",
+                  "body": "Medimos comprimento em <b>centímetros (cm)</b> e <b>metros (m)</b>. 100 cm = 1 m.",
+                  "example": "Régua = 30 cm · Porta = 2 m · Mesa = 1 m",
+                  "trick": "cm = centímetros (pequeno) · m = metros (grande)"
+                },
+                {
+                  "icon": "⏱️",
+                  "title": "O tempo",
+                  "body": "O dia tem <b>24 horas</b>. A hora tem <b>60 minutos</b>. A semana tem <b>7 dias</b>. O ano tem <b>12 meses</b>.",
+                  "example": "⏰ 1 hora = 60 minutos · 📅 1 semana = 7 dias · 📆 1 ano = 12 meses",
+                  "trick": "Deus criou o tempo — cada dia é um presente Dele!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantos centímetros tem 1 metro?",
+                  "options": [
+                    "100 cm",
+                    "10 cm",
+                    "1000 cm"
+                  ],
+                  "answer": "100 cm",
+                  "why": "1 metro = 100 centímetros. Cem centímetros formam um metro!"
+                },
+                {
+                  "question": "Quantos minutos tem 1 hora?",
+                  "options": [
+                    "60 minutos",
+                    "24 minutos",
+                    "100 minutos"
+                  ],
+                  "answer": "60 minutos",
+                  "why": "1 hora = 60 minutos. O ponteiro grande dá uma volta em 60 minutos!"
+                },
+                {
+                  "question": "Quantos dias tem uma semana?",
+                  "options": [
+                    "7 dias",
+                    "5 dias",
+                    "10 dias"
+                  ],
+                  "answer": "7 dias",
+                  "why": "A semana tem 7 dias. Deus criou o mundo em 6 dias e descansou no 7º!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma régua tem 30 cm. Duas réguas juntas têm:",
+                  "options": [
+                    "60 cm",
+                    "15 cm",
+                    "300 cm"
+                  ],
+                  "answer": "60 cm",
+                  "why": "30 + 30 = 60 cm. Duas réguas de 30 cm = sessenta centímetros!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nem3_t2_fracoes_simples",
+              "nome": "Frações Simples",
+              "icone": "🍕",
+              "aprender": [
+                {
+                  "icon": "🍕",
+                  "title": "Metade — ½",
+                  "body": "Quando cortamos algo em 2 partes iguais, cada parte é uma <b>metade (½)</b>.",
+                  "example": "🍕 cortada ao meio: cada pedaço = ½ pizza",
+                  "trick": "½ diz-se «um meio» ou «metade». 1 de 2 partes iguais!"
+                },
+                {
+                  "icon": "🍊",
+                  "title": "Um quarto — ¼",
+                  "body": "Quando cortamos algo em 4 partes iguais, cada parte é um <b>quarto (¼)</b>.",
+                  "example": "🍊 cortada em 4: cada pedaço = ¼ laranja",
+                  "trick": "¼ = 1 de 4 partes iguais. Quatro quartos formam o todo!"
+                },
+                {
+                  "icon": "⅓",
+                  "title": "Um terço — ⅓",
+                  "body": "Quando cortamos algo em <b>3 partes iguais</b>, cada parte é um <b>terço (⅓)</b>.",
+                  "example": "Uma barra de chocolate em 3 partes: cada parte = ⅓",
+                  "trick": "⅓ = 1 de 3 partes iguais. Três terços formam o todo!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Uma pizza é cortada em 2 partes iguais. Cada parte é:",
+                  "options": [
+                    "Metade (½)",
+                    "Um quarto (¼)",
+                    "Um terço (⅓)"
+                  ],
+                  "answer": "Metade (½)",
+                  "why": "Dividida em 2 partes iguais → cada parte é ½ (metade)!"
+                },
+                {
+                  "question": "Uma laranja é cortada em 4 partes iguais. Cada parte é:",
+                  "options": [
+                    "Um quarto (¼)",
+                    "Metade (½)",
+                    "Um terço (⅓)"
+                  ],
+                  "answer": "Um quarto (¼)",
+                  "why": "Dividida em 4 partes iguais → cada parte é ¼ (um quarto)!"
+                },
+                {
+                  "question": "Quanto é ½ de 10?",
+                  "options": [
+                    "5",
+                    "2",
+                    "8"
+                  ],
+                  "answer": "5",
+                  "why": "½ de 10 = 10 ÷ 2 = 5. Metade de dez é cinco!"
+                },
+                {
+                  "question": "Quanto é ½ de 20?",
+                  "options": [
+                    "10",
+                    "5",
+                    "15"
+                  ],
+                  "answer": "10",
+                  "why": "½ de 20 = 20 ÷ 2 = 10. Metade de vinte é dez!"
+                },
+                {
+                  "question": "Uma laranja em 3 partes iguais: cada parte é:",
+                  "options": [
+                    "⅓ (um terço)",
+                    "½ (metade)",
+                    "¼ (um quarto)"
+                  ],
+                  "answer": "⅓ (um terço)",
+                  "why": "Dividida em 3 partes iguais → cada parte é ⅓ (um terço)!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é ¼ de 8?",
+                  "options": [
+                    "2",
+                    "4",
+                    "6"
+                  ],
+                  "answer": "2",
+                  "why": "¼ de 8 = 8 ÷ 4 = 2. Um quarto de oito é dois!"
+                },
+                {
+                  "question": "Quanto é ⅓ de 9?",
+                  "options": [
+                    "3",
+                    "2",
+                    "4"
+                  ],
+                  "answer": "3",
+                  "why": "⅓ de 9 = 9 ÷ 3 = 3. Um terço de nove é três!"
+                },
+                {
+                  "question": "Uma pizza tem 8 fatias. Comi ½. Quantas comi?",
+                  "options": [
+                    "4 fatias",
+                    "2 fatias",
+                    "6 fatias"
+                  ],
+                  "answer": "4 fatias",
+                  "why": "½ de 8 = 8 ÷ 2 = 4. Comi metade das 8 fatias = 4 fatias!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "trimestre": "3º Trimestre",
+          "temas": [
+            {
+              "id": "nem3_t3_divisao",
+              "nome": "Divisão — Repartir Igualmente",
+              "icone": "➗",
+              "aprender": [
+                {
+                  "icon": "➗",
+                  "title": "O que é dividir?",
+                  "body": "<b>Dividir</b> é repartir em partes iguais. 12 ÷ 3 = 4 significa «12 repartidos por 3 = 4 em cada grupo».",
+                  "example": "12 peixes ÷ 3 pescadores = 4 peixes cada · 20 ÷ 4 = 5",
+                  "trick": "O sinal ÷ significa «repartir igualmente»."
+                },
+                {
+                  "icon": "🔄",
+                  "title": "Divisão e multiplicação",
+                  "body": "Divisão e multiplicação são operações inversas. Se 4 × 5 = 20, então 20 ÷ 5 = 4.",
+                  "example": "4 × 5 = 20 ↔ 20 ÷ 5 = 4 · 3 × 6 = 18 ↔ 18 ÷ 6 = 3",
+                  "trick": "Conhecer a tabuada ajuda a dividir — é o caminho inverso!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 15 ÷ 3?",
+                  "options": [
+                    "5",
+                    "4",
+                    "6"
+                  ],
+                  "answer": "5",
+                  "why": "15 ÷ 3 = 5. Quinze repartidos por três grupos = cinco em cada grupo!"
+                },
+                {
+                  "question": "Tenho 24 laranjas para repartir por 6 crianças. Quantas laranjas por criança?",
+                  "options": [
+                    "4 laranjas",
+                    "6 laranjas",
+                    "3 laranjas"
+                  ],
+                  "answer": "4 laranjas",
+                  "why": "24 ÷ 6 = 4. Cada criança recebe 4 laranjas!"
+                },
+                {
+                  "question": "Quanto é 30 ÷ 5?",
+                  "options": [
+                    "6",
+                    "5",
+                    "7"
+                  ],
+                  "answer": "6",
+                  "why": "30 ÷ 5 = 6. Trinta dividido por cinco = seis!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quanto é 36 ÷ 4?",
+                  "options": [
+                    "9",
+                    "8",
+                    "10"
+                  ],
+                  "answer": "9",
+                  "why": "36 ÷ 4 = 9. Trinta e seis repartidos por quatro = nove cada!"
+                },
+                {
+                  "question": "Se 7 × 8 = 56, então 56 ÷ 8 = ?",
+                  "options": [
+                    "7",
+                    "8",
+                    "6"
+                  ],
+                  "answer": "7",
+                  "why": "Divisão é o inverso da multiplicação. 7 × 8 = 56, logo 56 ÷ 8 = 7!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nem4_t1_operacoes",
+              "nome": "As 4 Operações",
+              "icone": "🔢",
+              "aprender": [
+                {
+                  "icon": "➕",
+                  "title": "Adição e Subtracção",
+                  "body": "<b>Adição (+)</b>: juntar. <b>Subtracção (−)</b>: tirar. São operações inversas — uma desfaz a outra.",
+                  "example": "25 + 15 = 40 · 40 − 15 = 25 (voltámos ao início!)",
+                  "trick": "Se 3 + 5 = 8, então 8 − 5 = 3. Inversas!"
+                },
+                {
+                  "icon": "✖️",
+                  "title": "Multiplicação e Divisão",
+                  "body": "<b>Multiplicação (×)</b>: somar igual vezes. <b>Divisão (÷)</b>: repartir em partes iguais. Também são inversas!",
+                  "example": "4 × 5 = 20 · 20 ÷ 5 = 4 (voltámos ao início!)",
+                  "trick": "Se 3 × 4 = 12, então 12 ÷ 4 = 3. Inversas!"
+                },
+                {
+                  "icon": "🧮",
+                  "title": "Ordem das operações",
+                  "body": "Quando temos + e × na mesma expressão, fazemos <b>× e ÷ primeiro</b>, depois + e −. É a ordem que todos seguem!",
+                  "example": "2 + 3 × 4 = 2 + 12 = 14 (não 5 × 4 = 20!)",
+                  "trick": "× e ÷ são «chefes» — sempre antes de + e −!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quanto é 36 + 24?",
+                  "options": [
+                    "60",
+                    "50",
+                    "70"
+                  ],
+                  "answer": "60",
+                  "why": "36 + 24: unidades 6+4=10 (escrevo 0, vai 1), dezenas 3+2+1=6 → 60!"
+                },
+                {
+                  "question": "Quanto é 50 − 18?",
+                  "options": [
+                    "32",
+                    "38",
+                    "42"
+                  ],
+                  "answer": "32",
+                  "why": "50 − 18 = 32. Cinquenta menos dezoito = trinta e dois!"
+                },
+                {
+                  "question": "Quanto é 6 × 4?",
+                  "options": [
+                    "24",
+                    "18",
+                    "30"
+                  ],
+                  "answer": "24",
+                  "why": "6 × 4 = 24. Seis vezes quatro = vinte e quatro!"
+                },
+                {
+                  "question": "Quanto é 20 ÷ 4?",
+                  "options": [
+                    "5",
+                    "4",
+                    "6"
+                  ],
+                  "answer": "5",
+                  "why": "20 ÷ 4 = 5. Vinte dividido por quatro = cinco!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma caixinha tem 6 bananas. Tenho 5 caixinhas. Quantas bananas no total?",
+                  "options": [
+                    "30 bananas",
+                    "11 bananas",
+                    "25 bananas"
+                  ],
+                  "answer": "30 bananas",
+                  "why": "5 × 6 = 30. Cinco caixas com seis bananas = trinta bananas!"
+                },
+                {
+                  "question": "Quanto é 5 × 5 − 5?",
+                  "options": [
+                    "20",
+                    "0",
+                    "30"
+                  ],
+                  "answer": "20",
+                  "why": "Primeiro: 5 × 5 = 25. Depois: 25 − 5 = 20. Multiplicação antes!"
+                },
+                {
+                  "question": "Quanto é 48 ÷ 6?",
+                  "options": [
+                    "8",
+                    "6",
+                    "10"
+                  ],
+                  "answer": "8",
+                  "why": "48 ÷ 6 = 8. Quarenta e oito dividido por seis = oito!"
+                },
+                {
+                  "question": "Quanto é 7 × 8?",
+                  "options": [
+                    "56",
+                    "48",
+                    "64"
+                  ],
+                  "answer": "56",
+                  "why": "7 × 8 = 56. Sete vezes oito = cinquenta e seis!"
+                }
+              ]
+            },
+            {
+              "id": "nem4_t1_tempo",
+              "nome": "Horas e Calendário",
+              "icone": "🕐",
+              "aprender": [
+                {
+                  "icon": "🕐",
+                  "title": "Ler as horas",
+                  "body": "O relógio tem ponteiro das horas (curto) e dos minutos (longo). Quando o ponteiro longo está no 12, é hora certa.",
+                  "example": "🕐 1:00 = uma hora · 🕒 3:00 = três horas · 🕕 5:30 = cinco e meia",
+                  "trick": "Ponteiro curto = horas · Ponteiro longo = minutos"
+                },
+                {
+                  "icon": "📅",
+                  "title": "Os meses do ano",
+                  "body": "O ano tem <b>12 meses</b>. Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro.",
+                  "example": "Janeiro = 1º mês · Dezembro = 12º mês · Agosto = mês das férias grandes",
+                  "trick": "Cada mês tem 28 a 31 dias. O ano tem 365 dias!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Que ponteiro do relógio indica as horas?",
+                  "options": [
+                    "O ponteiro curto",
+                    "O ponteiro longo",
+                    "Os dois"
+                  ],
+                  "answer": "O ponteiro curto",
+                  "why": "O ponteiro curto indica as horas; o longo indica os minutos."
+                },
+                {
+                  "question": "Qual é o 1º mês do ano?",
+                  "options": [
+                    "Janeiro",
+                    "Março",
+                    "Dezembro"
+                  ],
+                  "answer": "Janeiro",
+                  "why": "Janeiro é o primeiro mês do ano — começa a 1 de Janeiro!"
+                },
+                {
+                  "question": "Quantos meses tem o ano?",
+                  "options": [
+                    "12 meses",
+                    "10 meses",
+                    "7 meses"
+                  ],
+                  "answer": "12 meses",
+                  "why": "O ano tem 12 meses, de Janeiro a Dezembro."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "A escola começa às 8h e termina às 12h. Quantas horas dura?",
+                  "options": [
+                    "4 horas",
+                    "8 horas",
+                    "2 horas"
+                  ],
+                  "answer": "4 horas",
+                  "why": "12 − 8 = 4. A escola dura 4 horas!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nem4_t2_problemas",
+              "nome": "Problemas do Dia a Dia",
+              "icone": "💡",
+              "aprender": [
+                {
+                  "icon": "📖",
+                  "title": "Como resolver um problema",
+                  "body": "Para resolver um problema: 1) <b>Lê com atenção</b>. 2) <b>Identifica o que é pedido</b>. 3) <b>Escolhe a operação certa</b>. 4) <b>Calcula e verifica</b>.",
+                  "example": "«Maria tem 12 mangas e deu 5 à vizinha. Quantas ficaram?» → 12 − 5 = 7 mangas",
+                  "trick": "Palavras-chave: «juntou/mais» → + · «deu/tirou» → − · «cada/vezes» → × · «repartiu» → ÷"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Perímetro — medir o contorno",
+                  "body": "O <b>perímetro</b> é a soma de todos os lados de uma figura. Para calcular: somo todos os lados.",
+                  "example": "Quadrado de 5cm: P = 5+5+5+5 = 20cm · Rectângulo 6×4: P = 6+4+6+4 = 20cm",
+                  "trick": "Perímetro = somar todos os lados!"
+                },
+                {
+                  "icon": "📦",
+                  "title": "Área — medir o interior",
+                  "body": "A <b>área</b> é o espaço dentro de uma figura. Para o rectângulo: Área = comprimento × largura.",
+                  "example": "Rectângulo 6×4: Área = 6 × 4 = 24cm²",
+                  "trick": "Área = multiplicar os 2 lados (para rectângulo e quadrado)!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "João tem 24 escudos e ganhou mais 16 no domingo. Quantos tem agora?",
+                  "options": [
+                    "40$",
+                    "8$",
+                    "216$"
+                  ],
+                  "answer": "40$",
+                  "why": "24 + 16 = 40. João tem agora 40 escudos!"
+                },
+                {
+                  "question": "Uma família tem 30 litros de água. Usou 12 litros. Quantos ficaram?",
+                  "options": [
+                    "18 litros",
+                    "42 litros",
+                    "20 litros"
+                  ],
+                  "answer": "18 litros",
+                  "why": "30 − 12 = 18. Ficaram 18 litros de água."
+                },
+                {
+                  "question": "Uma pescadora apanhou 7 peixes por dia durante 4 dias. Quantos peixes no total?",
+                  "options": [
+                    "28 peixes",
+                    "11 peixes",
+                    "21 peixes"
+                  ],
+                  "answer": "28 peixes",
+                  "why": "7 × 4 = 28. Sete peixes por dia, quatro dias = vinte e oito peixes!"
+                },
+                {
+                  "question": "Um quadrado tem lado 5cm. Qual é o perímetro?",
+                  "options": [
+                    "20cm",
+                    "25cm",
+                    "10cm"
+                  ],
+                  "answer": "20cm",
+                  "why": "Perímetro do quadrado = 4 × lado = 4 × 5 = 20cm!"
+                },
+                {
+                  "question": "Um rectângulo tem 8m de comprimento e 3m de largura. Qual é a área?",
+                  "options": [
+                    "24m²",
+                    "22m²",
+                    "11m²"
+                  ],
+                  "answer": "24m²",
+                  "why": "Área = comprimento × largura = 8 × 3 = 24m². Vinte e quatro metros quadrados!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Tenho 36 laranjas para repartir por 4 crianças igualmente. Quantas laranjas recebe cada uma?",
+                  "options": [
+                    "9 laranjas",
+                    "6 laranjas",
+                    "12 laranjas"
+                  ],
+                  "answer": "9 laranjas",
+                  "why": "36 ÷ 4 = 9. Cada criança recebe 9 laranjas — partilha igualitária como Jesus ensinou!"
+                },
+                {
+                  "question": "Uma sala tem 10m de comprimento e 5m de largura. Qual é a área?",
+                  "options": [
+                    "50m²",
+                    "30m²",
+                    "15m²"
+                  ],
+                  "answer": "50m²",
+                  "why": "Área = 10 × 5 = 50m². A sala tem cinquenta metros quadrados!"
+                },
+                {
+                  "question": "Um campo quadrado tem 12m de lado. Qual é o perímetro?",
+                  "options": [
+                    "48m",
+                    "24m",
+                    "144m"
+                  ],
+                  "answer": "48m",
+                  "why": "Perímetro = 4 × 12 = 48m. O contorno do campo é de quarenta e oito metros!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

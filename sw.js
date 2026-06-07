@@ -1,10 +1,14 @@
-const CACHE = 'escola-cv-v5';
+const CACHE = 'escola-cv-v6';
 const ASSETS = [
   './',
   './index.html',
   './matematica.json',
   './portugues.json',
   './ciencias.json',
+  './ne_biblia.json',
+  './ne_matematica.json',
+  './ne_portugues.json',
+  './ne_vida.json',
   './manifest.json',
   './icons/icon-192.svg',
   './icons/icon-512.svg',
@@ -24,6 +28,10 @@ self.addEventListener('activate', e => {
       .then(() => self.clients.matchAll({ type: 'window' }))
       .then(clients => Promise.all(clients.map(c => c.navigate(c.url))))
   );
+});
+
+self.addEventListener('message', e => {
+  if (e.data?.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('fetch', e => {
