@@ -883,6 +883,20 @@
                   "body": "<b>Área</b>: espaço ocupado por uma superfície plana. Compara-se contando quadrados.<br><b>Volume</b>: espaço ocupado por um sólido. <b>Capacidade</b>: o que cabe dentro de um recipiente (litros — L).<br><b>Massa e peso</b>: medidos com balança. Objetos com menos massa flutuam na água; com mais massa, afundam.<br><b>Dinheiro de Cabo Verde</b>: moedas — 1 escudo, 5 escudos, 10 escudos, 20 escudos, 50 escudos, 100 escudos.",
                   "example": "Área: figura formada por 5 quadrados → área = 5 quadrados<br>Capacidade: 1 garrafão de 20L = 4 garrafões de 5L<br>Massa: pluma flutua (pouca massa); pedra afunda (muita massa)<br>Dinheiro: 50$00 + 20$00 + 10$00 = 80$00",
                   "trick": "Área = conta quadrados. Capacidade em litros (L). Massa = balança. Flutua = menos massa que a água. Dinheiro CV: escudos e centavos."
+                },
+                {
+                  "icon": "🗺️",
+                  "title": "Itinerários — Percursos e Mapas",
+                  "body": "Um <b>itinerário</b> é o caminho que seguimos de um lugar para outro.<br>Num mapa quadriculado usamos <b>direções</b>:<br>• <b>Esquerda</b> (←) · <b>Direita</b> (→)<br>• <b>Frente/Cima</b> (↑) · <b>Trás/Baixo</b> (↓)<br>Contamos os <b>quadrados</b> para saber a distância percorrida.<br>O caminho <b>mais curto</b> tem menos quadrados; o <b>mais comprido</b>, mais quadrados.",
+                  "example": "🏫 Escola → 🌳 Jardim: anda 3 quadrados para a direita e 2 para cima.<br>Se 1 quadrado = 1 km → percorreste 3 + 2 = 5 km.<br>Existem vários caminhos possíveis entre dois pontos — alguns mais curtos, outros mais compridos.",
+                  "trick": "Lê as instruções passo a passo e vai marcando no mapa. Conta sempre os quadrados que percorres!"
+                },
+                {
+                  "icon": "📐",
+                  "title": "Áreas — Contar Quadrados",
+                  "body": "A <b>área</b> de uma figura é o espaço que ela ocupa numa superfície plana.<br>Para medir a área contamos o número de <b>quadrados unitários</b> que cabem dentro da figura.<br>Figuras com <b>formas diferentes</b> podem ter a <b>mesma área</b> se tiverem o mesmo número de quadrados.<br><b>Pentaminós</b>: figuras formadas por 5 quadrados — todas têm área = 5 quadrados.",
+                  "example": "Figura A: cabe 4 quadrados → área = 4 quadrados.<br>Figura B: cabe 6 quadrados → área = 6 quadrados.<br>Figura A < Figura B (A tem área menor).<br>Pentaminó: qualquer figura com 5 quadrados ligados tem sempre área = 5 quadrados.",
+                  "trick": "Conta os quadrados completos dentro da figura. Figuras diferentes podem ter a mesma área!"
                 }
               ],
               "praticar": [
@@ -951,6 +965,72 @@
                   ],
                   "answer": "1 escudo",
                   "why": "A moeda de menor valor em CV é o 1 escudo. Depois vêm: 5, 10, 20, 50 e 100 escudos."
+                },
+                {
+                  "question": "Um aluno segue: 2 quadrados para a direita e 3 quadrados para cima. Quantos quadrados percorreu no total?",
+                  "options": [
+                    "2",
+                    "3",
+                    "5",
+                    "6"
+                  ],
+                  "answer": "5",
+                  "why": "2 quadrados (direita) + 3 quadrados (cima) = 5 quadrados percorridos no total."
+                },
+                {
+                  "question": "Num mapa, qual é o caminho mais curto entre dois pontos?",
+                  "options": [
+                    "O que tem mais curvas",
+                    "O que passa por mais casas",
+                    "O que tem menos quadrados",
+                    "O que vai sempre para a direita"
+                  ],
+                  "answer": "O que tem menos quadrados",
+                  "why": "O caminho mais curto é sempre o que percorre menos quadrados (menos distância)."
+                },
+                {
+                  "question": "Se 1 quadrado no mapa = 1 km, e percorreste 4 quadrados para a frente e 2 para a direita, que distância percorreste?",
+                  "options": [
+                    "4 km",
+                    "2 km",
+                    "6 km",
+                    "8 km"
+                  ],
+                  "answer": "6 km",
+                  "why": "4 quadrados + 2 quadrados = 6 quadrados = 6 km."
+                },
+                {
+                  "question": "Uma figura é formada por 5 quadrados ligados. Qual é a sua área?",
+                  "options": [
+                    "4 quadrados",
+                    "5 quadrados",
+                    "6 quadrados",
+                    "Depende da forma"
+                  ],
+                  "answer": "5 quadrados",
+                  "why": "A área conta o número de quadrados que cabem na figura. Se tem 5 quadrados, a área é sempre 5 — independentemente da forma."
+                },
+                {
+                  "question": "Figura A tem 6 quadrados e figura B tem 4 quadrados. Qual tem maior área?",
+                  "options": [
+                    "Figura A",
+                    "Figura B",
+                    "São iguais",
+                    "Impossível saber"
+                  ],
+                  "answer": "Figura A",
+                  "why": "Área = número de quadrados. 6 > 4, portanto a Figura A tem maior área."
+                },
+                {
+                  "question": "Dois pentaminós têm formas diferentes. As suas áreas são:",
+                  "options": [
+                    "Sempre diferentes",
+                    "Sempre iguais (5 quadrados cada)",
+                    "Impossível comparar",
+                    "Depende da cor"
+                  ],
+                  "answer": "Sempre iguais (5 quadrados cada)",
+                  "why": "Pentaminó = figura de 5 quadrados. Qualquer pentaminó tem sempre área = 5 quadrados, mesmo que a forma seja diferente."
                 }
               ],
               "desafios": [
@@ -997,6 +1077,28 @@
                   ],
                   "answer": "Cubo e pirâmide",
                   "why": "Cubo (6 faces quadradas) e pirâmide (base + triângulos) têm apenas faces planas. Esfera, cilindro e cone têm curvas."
+                },
+                {
+                  "question": "Marcos sai de casa, anda 3 quadrados para a direita, 2 para cima e 1 para a esquerda. Quantos quadrados percorreu?",
+                  "options": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "answer": "6",
+                  "why": "3 + 2 + 1 = 6 quadrados percorridos no total (conta todos os passos dados)."
+                },
+                {
+                  "question": "Desenhas duas figuras: uma com 3 quadrados e outra com 3 quadrados mas forma diferente. As áreas são iguais?",
+                  "options": [
+                    "Sim, ambas têm área = 3",
+                    "Não, a forma muda a área",
+                    "Só se forem pentaminós",
+                    "Depende do tamanho dos quadrados"
+                  ],
+                  "answer": "Sim, ambas têm área = 3",
+                  "why": "A área conta quadrados, não depende da forma. Se ambas têm 3 quadrados, a área é igual = 3."
                 }
               ]
             }

@@ -2715,6 +2715,13 @@
                   "body": "• <b>Narrativo</b>: personagens + espaço + tempo + problema + solução.<br>• <b>Poético</b>: versos, estrofes, rima, ritmo.<br>• <b>Dramático/Teatro</b>: réplicas + didascálias, para representar.<br>• <b>Notícia</b>: facto real — título + Quem/Onde/Quando + Como/Porquê.<br>• <b>Carta</b>: 7 partes — local/data, saudação, corpo, despedida, assinatura.<br>• <b>E-mail</b>: Para, Assunto, Corpo — comunicação eletrónica.",
                   "example": "Narrativo = história com início/meio/fim.<br>Poético = \"Cantiga de Mãe\" (versos e estrofes).<br>Dramático = \"A Carochinha\" (réplicas e didascálias).<br>Notícia = \"Criança com deficiência visual...\" (facto real).",
                   "trick": "A estrutura define o tipo: versos→poético; réplicas+didascálias→teatro; 7 partes→carta; Quem+Onde+Quando→notícia."
+                },
+                {
+                  "icon": "🏠",
+                  "title": "Determinantes Possessivos",
+                  "body": "Os <b>determinantes possessivos</b> indicam a quem pertence algo. Concordam em <b>género e número</b> com a coisa possuída (não com o possuidor).<br><br><table style='font-size:0.95em'><tr><th>Pessoa</th><th>Masculino</th><th>Feminino</th></tr><tr><td>eu</td><td>meu / meus</td><td>minha / minhas</td></tr><tr><td>tu</td><td>teu / teus</td><td>tua / tuas</td></tr><tr><td>ele/ela/você</td><td>seu / seus</td><td>sua / suas</td></tr><tr><td>nós</td><td>nosso / nossos</td><td>nossa / nossas</td></tr><tr><td>vós</td><td>vosso / vossos</td><td>vossa / vossas</td></tr></table>",
+                  "example": "🎒 O <b>meu</b> livro (livro = masc. sing. · possuidor = eu)<br>🏠 A <b>nossa</b> casa (casa = fem. sing. · possuidor = nós)<br>✏️ Os <b>teus</b> lápis (lápis = masc. pl. · possuidor = tu)<br>📚 As <b>suas</b> aulas (aulas = fem. pl. · possuidor = ele/ela)",
+                  "trick": "O determinante concorda com a COISA possuída, não com quem possui. 'A minha mão' — mão é feminino, logo MINHA (não meu)."
                 }
               ],
               "praticar": [
@@ -2794,9 +2801,98 @@
                   ],
                   "answer": "Local e data",
                   "why": "A carta começa sempre com o local e a data (canto superior direito)."
+                },
+                {
+                  "question": "Completa: \"___ caderno é novo.\" (possuidor = eu, caderno = masculino singular)",
+                  "options": [
+                    "Meu",
+                    "Minha",
+                    "Teu",
+                    "Nosso"
+                  ],
+                  "answer": "Meu",
+                  "why": "'Caderno' é masculino singular + possuidor 'eu' → determinante possessivo: MEU."
+                },
+                {
+                  "question": "Completa: \"___ escola fica longe.\" (possuidor = nós, escola = feminino singular)",
+                  "options": [
+                    "Nosso",
+                    "Nossa",
+                    "Vossa",
+                    "Sua"
+                  ],
+                  "answer": "Nossa",
+                  "why": "'Escola' é feminino singular + possuidor 'nós' → determinante possessivo: NOSSA."
+                },
+                {
+                  "question": "Qual é o determinante possessivo correto? \"Os ___ livros estão na mochila.\" (possuidor = tu)",
+                  "options": [
+                    "meus",
+                    "teus",
+                    "seus",
+                    "nossos"
+                  ],
+                  "answer": "teus",
+                  "why": "'Livros' é masculino plural + possuidor 'tu' → determinante possessivo: TEUS."
+                },
+                {
+                  "question": "\"A ___ professora é simpática.\" (possuidor = ele/ela)",
+                  "options": [
+                    "sua",
+                    "seu",
+                    "tua",
+                    "minha"
+                  ],
+                  "answer": "sua",
+                  "why": "'Professora' é feminino singular + possuidor 'ele/ela' → determinante possessivo: SUA."
+                },
+                {
+                  "question": "Com que concorda o determinante possessivo?",
+                  "options": [
+                    "Com o possuidor (quem possui)",
+                    "Com a coisa possuída (o que se possui)",
+                    "Com o verbo da frase",
+                    "Com o adjetivo seguinte"
+                  ],
+                  "answer": "Com a coisa possuída (o que se possui)",
+                  "why": "O determinante possessivo concorda em género e número com a COISA possuída. Ex: 'a minha mão' — mão é feminino → minha (não 'meu')."
+                },
+                {
+                  "question": "\"As ___ ilhas são bonitas.\" (possuidor = vós)",
+                  "options": [
+                    "vosso",
+                    "vossa",
+                    "vossas",
+                    "vossos"
+                  ],
+                  "answer": "vossas",
+                  "why": "'Ilhas' é feminino plural + possuidor 'vós' → determinante possessivo: VOSSAS."
                 }
               ],
-              "desafios": []
+              "desafios": [
+                {
+                  "question": "\"Os ___ amigos vieram à festa.\" Qual o determinante correto se o possuidor for 'nós'?",
+                  "options": [
+                    "nossa",
+                    "nossos",
+                    "nossas",
+                    "nosso"
+                  ],
+                  "answer": "nossos",
+                  "why": "'Amigos' é masculino plural + possuidor 'nós' → NOSSOS. Atenção: 'nossa' é feminino, não serve aqui."
+                },
+                {
+                  "question": "Qual frase usa o determinante possessivo corretamente?",
+                  "options": [
+                    "A meu irmão chegou cedo.",
+                    "Os minha primos vieram visitar.",
+                    "As suas amigas trouxeram prendas.",
+                    "O nossa pai trabalha longe."
+                  ],
+                  "answer": "As suas amigas trouxeram prendas.",
+                  "why": "'Amigas' = feminino plural → 'suas' (fem. pl.) está correto. As outras opções têm erro de concordância."
+                }
+              ]
             }
           ]
         }
