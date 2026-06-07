@@ -1328,9 +1328,13 @@ async function callAI(){
   const yr=currentYear, subj=currentSubject;
   const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
   const classeName=`${yr}ª classe`;
-  const lvLabel={base:'base',medio:'médio',avancado:'avançado'};
+  const lvDesc={
+    base:    'NÍVEL BASE — pergunta directa com resposta óbvia, 1 passo, números/palavras simples, 3 distratores claramente errados. A criança que estudou o tema básico consegue responder.',
+    medio:   'NÍVEL MÉDIO — exige compreensão real do conceito, pode ter 2 passos, distratores plausíveis (erros comuns de alunos). A criança tem de pensar mas não é ambíguo.',
+    avancado:'NÍVEL AVANÇADO — aplica o conceito numa situação nova ou combina 2 conceitos do tema, distratores muito plausíveis (erros de raciocínio típicos). Só a criança que domina o tema responde correctamente.'
+  }[aiLevel];
   const yearCtx={
-    1:'Aluno de 1ª classe (6-7 anos): usa frases muito curtas, palavras simples, números até 20, 4 opções simples. Sem decimais, frações ou abstracções.',
+    1:'Aluno de 1ª classe (6-7 anos): frases muito curtas, palavras simples, números até 20. Sem decimais, frações ou abstracções.',
     2:'Aluno de 2ª classe (7-8 anos): frases curtas, números até 1000, vocabulário do quotidiano, operações básicas.',
     3:'Aluno de 3ª classe (8-9 anos): pode incluir multiplicação/divisão, frações simples, sinónimos/antónimos, ciências básicas.',
     4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática, ciências e história de Cabo Verde.'
@@ -1341,7 +1345,7 @@ async function callAI(){
     /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(temaLabel)
       ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
       : 'CONCEITO: pergunta sobre as PROPRIEDADES ou DEFINIÇÃO do tema. A pergunta deve testar o que a criança sabe sobre o conceito específico.';
-  const prompt=`Contexto: disciplina=${subjName}, ano=${classeName}, trimestre${trimCtx}, tema="${temaLabel}", nível=${lvLabel[aiLevel]}. Perfil do aluno: ${yearCtx} Tipo de exercício: ${topicType}${histNote}. Cria 1 exercício de escolha múltipla (4 opções) adequado exactamente a este contexto.`;
+  const prompt=`Contexto: disciplina=${subjName}, ano=${classeName}, trimestre${trimCtx}, tema="${temaLabel}". Perfil: ${yearCtx} Tipo: ${topicType} Dificuldade: ${lvDesc}${histNote}. Cria 1 exercício de escolha múltipla (4 opções).`;
   out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
   if(btn) btn.disabled=true;
   try{
@@ -1352,7 +1356,7 @@ async function callAI(){
         model:'llama-3.3-70b-versatile',max_tokens:600,
         response_format:{type:'json_object'},
         messages:[
-          {role:'system',content:'És um professor para crianças do ensino básico de Cabo Verde. Responde APENAS em JSON com este formato exacto: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation deve ser simples, com emojis, em Português de Portugal. IMPORTANTE: Varia SEMPRE os valores numéricos e a estrutura do exercício — nunca repitas a mesma operação ou os mesmos números em exercícios consecutivos. Para Matemática, usa operandos e resultados diferentes de cada vez.'},
+          {role:'system',content:'És um professor do ensino básico de Cabo Verde. Responde APENAS em JSON: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation é curta, simples, com emojis, em Português. Respeita RIGOROSAMENTE o nível de dificuldade pedido: BASE=pergunta directa/simples; MÉDIO=exige compreensão/2 passos; AVANÇADO=aplica conceito em contexto novo ou combina conceitos. Varia SEMPRE os valores e estrutura — nunca repitas exercícios consecutivos.'},
           {role:'user',content:prompt}
         ]
       })
