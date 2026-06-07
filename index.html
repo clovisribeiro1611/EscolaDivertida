@@ -1591,6 +1591,18 @@ window.onload=function(){
         window.addEventListener('focus', checkUpdate);
       })
       .catch(() => {});
+    // Mostra toast se esta página foi carregada por um update
+    if (sessionStorage.getItem('sw_reloaded')) {
+      sessionStorage.removeItem('sw_reloaded');
+      setTimeout(() => {
+        const t = document.createElement('div');
+        t.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:#1a1a2e;color:white;padding:10px 20px;border-radius:50px;font-family:"Fredoka One",cursive;font-size:0.85rem;z-index:10000;box-shadow:0 4px 20px rgba(0,0,0,0.3);opacity:0;transition:all 0.35s ease;white-space:nowrap';
+        t.textContent = '✅ App actualizada!';
+        document.body.appendChild(t);
+        requestAnimationFrame(() => { t.style.opacity='1'; t.style.transform='translateX(-50%) translateY(0)'; });
+        setTimeout(() => { t.style.opacity='0'; t.style.transform='translateX(-50%) translateY(20px)'; setTimeout(()=>t.remove(),350); }, 3000);
+      }, 600);
+    }
     // Recarrega quando novo SW toma controlo (fallback à client.navigate do SW)
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       if (sessionStorage.getItem('sw_reloaded')) return;
