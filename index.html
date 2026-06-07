@@ -893,6 +893,7 @@ function buildQuiz(questions, color, temaId){
   function render(){
     const item=q[cur];
     const pct=(cur/q.length)*100;
+    const correctText = typeof item.answer === 'number' ? item.options[item.answer] : item.answer;
     const opts=shuffle(item.options);
     return `
     <div class="quiz-wrap">
@@ -903,7 +904,7 @@ function buildQuiz(questions, color, temaId){
         <div class="qtext">${item.question}</div>
         <div class="opts" id="opts-wrap">
           ${opts.map((o,i)=>`
-            <button class="opt" onclick="pickOpt(this,'${escQ(o)}','${escQ(item.answer)}','${escQ(item.why)}')">
+            <button class="opt" onclick="pickOpt(this,'${escQ(o)}','${escQ(correctText)}','${escQ(item.why)}')">
               <span class="opt-lbl">${String.fromCharCode(65+i)}</span>
               <span>${o}</span>
             </button>`).join('')}
@@ -1289,12 +1290,13 @@ function _runTimedChallenge(pool,col,title,retryCall,duration=30){
     canAnswer=true;
     if(!pool.length) return;
     const q=pool[poolIdx%pool.length]; poolIdx++;
+    const chCorrectText = typeof q.answer === 'number' ? q.options[q.answer] : q.answer;
     const opts=shuffle(q.options);
     document.getElementById('ch-content').innerHTML=`
       <div class="qcard" style="animation:fadeUp 0.2s ease">
         <div class="qtext" style="font-size:0.95rem">${q.question}</div>
         <div class="opts" id="ch-opts">
-          ${opts.map(o=>`<button class="opt" style="padding:10px 14px" onclick="chPick(this,'${escQ(o)}','${escQ(q.answer)}')">
+          ${opts.map(o=>`<button class="opt" style="padding:10px 14px" onclick="chPick(this,'${escQ(o)}','${escQ(chCorrectText)}')">
             <span class="opt-lbl" style="min-width:26px;height:26px">•</span>${o}
           </button>`).join('')}
         </div>
