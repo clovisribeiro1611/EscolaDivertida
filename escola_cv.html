@@ -586,6 +586,7 @@ body {
       </div>
     </div>
     <div style="padding-top:14px;text-align:right">
+      <button onclick="speak('Olá! O áudio está a funcionar correctamente.')" style="background:var(--cie);color:white;border:none;padding:9px 18px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;margin-right:8px">🔊 Testar voz</button>
       <button onclick="closeSettings()" style="background:#f1f5f9;border:none;padding:9px 22px;border-radius:10px;font-family:'Fredoka One',cursive;font-size:0.9rem;cursor:pointer;color:var(--text)">Fechar</button>
     </div>
   </div>
@@ -837,18 +838,15 @@ function _initVoice(){
 }
 function speak(text){
   if(!window.speechSynthesis) return;
+  const processed = text.replace(/\?/g,'. ');
+  const u = new SpeechSynthesisUtterance(processed);
+  if(_voice) u.voice = _voice;
+  u.lang   = _voice ? _voice.lang : 'pt-PT';
+  u.rate   = 0.88;
+  u.pitch  = 1.05;
+  u.volume = 1;
   speechSynthesis.cancel();
-  // Chrome Android requer pequeno delay após cancel()
-  setTimeout(()=>{
-    const processed = text.replace(/\?/g,'. ');  // pausa natural antes da interrogação
-    const u = new SpeechSynthesisUtterance(processed);
-    if(_voice) u.voice = _voice;
-    u.lang   = _voice ? _voice.lang : 'pt-PT';
-    u.rate   = 0.88;
-    u.pitch  = 1.05;
-    u.volume = 1;
-    speechSynthesis.speak(u);
-  }, 50);
+  speechSynthesis.speak(u);
 }
 function speakStop(){ if(window.speechSynthesis) speechSynthesis.cancel(); }
 

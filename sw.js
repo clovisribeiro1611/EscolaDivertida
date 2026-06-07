@@ -1,4 +1,4 @@
-const CACHE = 'escola-cv-v4';
+const CACHE = 'escola-cv-v5';
 const ASSETS = [
   './',
   './index.html',
@@ -21,11 +21,12 @@ self.addEventListener('activate', e => {
     caches.keys()
       .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
+      .then(() => self.clients.matchAll({ type: 'window' }))
+      .then(clients => Promise.all(clients.map(c => c.navigate(c.url))))
   );
 });
 
 self.addEventListener('fetch', e => {
-  // Pass through Groq API calls — always network
   if (e.request.url.includes('api.groq.com')) return;
 
   e.respondWith(
