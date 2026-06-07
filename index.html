@@ -1328,16 +1328,22 @@ async function callAI(){
   const yr=currentYear, subj=currentSubject;
   const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
   const classeName=`${yr}ª classe`;
+  const ageLimit={
+    1:'números máx. 20, frases máx. 8 palavras, sem frações/decimais/abstrações',
+    2:'números máx. 1000, sem frações/decimais, vocabulário do quotidiano',
+    3:'números máx. 100.000, frações simples (½ ¼), multiplicação/divisão básica',
+    4:'números máx. 1.000.000, frações e decimais simples, vocabulário gramatical básico'
+  }[yr];
   const lvDesc={
-    base:    'NÍVEL BASE: Pergunta com resposta factual directa, 1 único passo, sem cálculo intermédio. Exemplo de estrutura: "Como se chama X?" ou "Quanto é A+B?" com valores triviais. Distratores são claramente errados (nenhum pode confundir). A criança responde sem raciocinar.',
-    medio:   'NÍVEL MÉDIO: Obrigatório incluir 1 passo intermédio ou uma comparação. Para matemática: o aluno faz um cálculo e depois usa o resultado ("Pedro tinha X, deu Y, ficou com quantos? E se tivesse dado o dobro?"). Para língua/ciências: exige aplicar o conceito num exemplo concreto, não apenas recitar a definição. Distratores são erros comuns de alunos.',
-    avancado:'NÍVEL AVANÇADO: Obrigatório combinar 2 conceitos do tema OU apresentar um contexto com informação a filtrar. Para matemática: problema com dados irrelevantes ou duas operações em cadeia. Para língua: frase ambígua onde é preciso distinguir regras semelhantes. Distratores são respostas plausíveis que resultam de raciocínio errado, não de ignorância.'
+    base:    `NÍVEL BASE — 1 passo directo, resposta factual imediata. LIMITES (${classeName}): ${ageLimit}. Distratores claramente errados, nenhum pode confundir.`,
+    medio:   `NÍVEL MÉDIO — obrigatório 1 passo intermédio: para MAT faz um cálculo e usa o resultado; para língua/ciências aplica o conceito num exemplo concreto (não recita definição). LIMITES (${classeName}): ${ageLimit}. Distratores = erros comuns de alunos de ${yr}º ano.`,
+    avancado:`NÍVEL AVANÇADO — obrigatório 2 passos ou combinar 2 conceitos do tema. LIMITES (${classeName}): ${ageLimit}. Distratores = erros de raciocínio típicos de alunos de ${yr}º ano (não de ignorância).`
   }[aiLevel];
   const yearCtx={
-    1:'Aluno de 1ª classe (6-7 anos): frases muito curtas, palavras simples, números até 20. Sem decimais, frações ou abstracções.',
-    2:'Aluno de 2ª classe (7-8 anos): frases curtas, números até 1000, vocabulário do quotidiano, operações básicas.',
-    3:'Aluno de 3ª classe (8-9 anos): pode incluir multiplicação/divisão, frações simples, sinónimos/antónimos, ciências básicas.',
-    4:'Aluno de 4ª classe (9-10 anos): operações completas, frações e decimais simples, gramática, ciências e história de Cabo Verde.'
+    1:'Aluno de 1ª classe (6-7 anos).',
+    2:'Aluno de 2ª classe (7-8 anos).',
+    3:'Aluno de 3ª classe (8-9 anos).',
+    4:'Aluno de 4ª classe (9-10 anos).'
   }[yr];
   const trimCtx=trimLabel?` (${trimLabel})`:'';
   const histNote=_aiHistory.length?` Exercícios anteriores a NÃO repetir: ${_aiHistory.slice(-5).join(' | ')}`:'';
@@ -1345,7 +1351,7 @@ async function callAI(){
     /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(temaLabel)
       ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
       : 'CONCEITO: pergunta sobre as PROPRIEDADES ou DEFINIÇÃO do tema. A pergunta deve testar o que a criança sabe sobre o conceito específico.';
-  const prompt=`Contexto: disciplina=${subjName}, ano=${classeName}, trimestre${trimCtx}, tema="${temaLabel}". Perfil: ${yearCtx} Tipo: ${topicType} Dificuldade: ${lvDesc}${histNote}. Cria 1 exercício de escolha múltipla (4 opções).`;
+  const prompt=`Aluno: ${yearCtx} Disciplina: ${subjName}, ${classeName}, trimestre${trimCtx}, tema "${temaLabel}". Tipo: ${topicType} Dificuldade: ${lvDesc}${histNote}. Cria 1 exercício de escolha múltipla (4 opções).`;
   out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
   if(btn) btn.disabled=true;
   try{
