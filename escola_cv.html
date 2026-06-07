@@ -538,7 +538,10 @@ body {
   border: 2.5px solid #e5e7eb; background: white; cursor: pointer;
   font-family: 'Fredoka One', cursive; font-size: 0.95rem; color: var(--muted);
   transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  outline: none; -webkit-tap-highlight-color: transparent;
 }
+.curr-btn:focus { outline: none; }
+.curr-btn:active { opacity: 0.9; }
 .curr-btn.curr-active {
   border-color: transparent; color: white; box-shadow: 0 4px 14px rgba(0,0,0,.18);
 }
