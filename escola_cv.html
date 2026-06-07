@@ -1329,9 +1329,9 @@ async function callAI(){
   const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
   const classeName=`${yr}ª classe`;
   const lvDesc={
-    base:    'NÍVEL BASE — pergunta directa com resposta óbvia, 1 passo, números/palavras simples, 3 distratores claramente errados. A criança que estudou o tema básico consegue responder.',
-    medio:   'NÍVEL MÉDIO — exige compreensão real do conceito, pode ter 2 passos, distratores plausíveis (erros comuns de alunos). A criança tem de pensar mas não é ambíguo.',
-    avancado:'NÍVEL AVANÇADO — aplica o conceito numa situação nova ou combina 2 conceitos do tema, distratores muito plausíveis (erros de raciocínio típicos). Só a criança que domina o tema responde correctamente.'
+    base:    'NÍVEL BASE: Pergunta com resposta factual directa, 1 único passo, sem cálculo intermédio. Exemplo de estrutura: "Como se chama X?" ou "Quanto é A+B?" com valores triviais. Distratores são claramente errados (nenhum pode confundir). A criança responde sem raciocinar.',
+    medio:   'NÍVEL MÉDIO: Obrigatório incluir 1 passo intermédio ou uma comparação. Para matemática: o aluno faz um cálculo e depois usa o resultado ("Pedro tinha X, deu Y, ficou com quantos? E se tivesse dado o dobro?"). Para língua/ciências: exige aplicar o conceito num exemplo concreto, não apenas recitar a definição. Distratores são erros comuns de alunos.',
+    avancado:'NÍVEL AVANÇADO: Obrigatório combinar 2 conceitos do tema OU apresentar um contexto com informação a filtrar. Para matemática: problema com dados irrelevantes ou duas operações em cadeia. Para língua: frase ambígua onde é preciso distinguir regras semelhantes. Distratores são respostas plausíveis que resultam de raciocínio errado, não de ignorância.'
   }[aiLevel];
   const yearCtx={
     1:'Aluno de 1ª classe (6-7 anos): frases muito curtas, palavras simples, números até 20. Sem decimais, frações ou abstracções.',
@@ -1356,7 +1356,7 @@ async function callAI(){
         model:'llama-3.3-70b-versatile',max_tokens:600,
         response_format:{type:'json_object'},
         messages:[
-          {role:'system',content:'És um professor do ensino básico de Cabo Verde. Responde APENAS em JSON: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation é curta, simples, com emojis, em Português. Respeita RIGOROSAMENTE o nível de dificuldade pedido: BASE=pergunta directa/simples; MÉDIO=exige compreensão/2 passos; AVANÇADO=aplica conceito em contexto novo ou combina conceitos. Varia SEMPRE os valores e estrutura — nunca repitas exercícios consecutivos.'},
+          {role:'system',content:'És um professor do ensino básico de Cabo Verde. Responde APENAS em JSON: {"question":"...","options":["...","...","...","..."],"answer":"...","explanation":"..."}. O answer deve ser exactamente igual a uma das options. A explanation é curta (1 frase), simples, com emojis, em Português. REGRA OBRIGATÓRIA: segue o nível de dificuldade indicado pelo utilizador À LETRA — a estrutura da pergunta deve ser visivelmente diferente entre BASE, MÉDIO e AVANÇADO (ver descrição no pedido). Se o pedido diz MÉDIO, a pergunta NÃO pode ter estrutura de BASE. Varia SEMPRE os valores e contexto — nunca repitas estruturas consecutivas.'},
           {role:'user',content:prompt}
         ]
       })
