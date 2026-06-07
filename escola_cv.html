@@ -1484,14 +1484,17 @@ window.onload=function(){
     history.replaceState(null, '', location.pathname);
   }
 
-  // Service Worker — auto-reload uma vez por sessão quando nova versão ativa
+  // Service Worker — banner de atualização quando nova versão disponível
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(()=>{});
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (!sessionStorage.getItem('sw_reloaded')) {
-        sessionStorage.setItem('sw_reloaded', '1');
-        window.location.reload();
-      }
+      if (document.getElementById('sw-update-banner')) return;
+      const b = document.createElement('div');
+      b.id = 'sw-update-banner';
+      b.style.cssText = 'position:fixed;bottom:76px;left:50%;transform:translateX(-50%);background:#1a1a2e;color:white;padding:11px 20px;border-radius:50px;font-family:"Fredoka One",cursive;font-size:0.88rem;z-index:10000;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,0.35);white-space:nowrap';
+      b.textContent = '🔄 Nova versão — toca para atualizar';
+      b.onclick = () => window.location.reload();
+      document.body.appendChild(b);
     });
   }
 };
