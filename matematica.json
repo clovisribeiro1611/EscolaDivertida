@@ -1904,6 +1904,13 @@
                   "trick": "Usa pontos de referência para te orientares!"
                 },
                 {
+                  "icon": "📏",
+                  "title": "Reta, Semirreta e Segmento de Reta",
+                  "body": "RETA: linha direita que não tem fim — continua para sempre nos dois lados (→←).\nSEMIRRETA: começa num ponto e continua para sempre num só sentido (•→).\nSEGMENTO DE RETA: tem dois extremos (dois pontos) — tem comprimento definido (•——•).",
+                  "example": "A estrada que continua até ao horizonte parece uma reta. O raio de sol é uma semirreta (parte do sol). A régua é um segmento de reta.",
+                  "trick": "Reta=infinita em 2 sentidos | Semirreta=infinita em 1 | Segmento=limitado nos 2 extremos!"
+                },
+                {
                   "icon": "🔷",
                   "title": "Figuras Planas",
                   "body": "Figuras planas são planas (2D). As principais:\n▶ Quadrado: 4 lados iguais, 4 ângulos retos\n▶ Retângulo: 2 pares de lados iguais, 4 ângulos retos\n▶ Triângulo: 3 lados, 3 ângulos\n▶ Círculo: sem lados nem ângulos",
@@ -2042,6 +2049,50 @@
                   ],
                   "answer": 0,
                   "why": "À esquerda = o lado onde está o coração (mão esquerda)."
+                },
+                {
+                  "question": "Qual figura geométrica tem DOIS extremos e comprimento definido?",
+                  "options": [
+                    "Reta",
+                    "Semirreta",
+                    "Segmento de reta",
+                    "Curva"
+                  ],
+                  "answer": 2,
+                  "why": "O segmento de reta tem dois pontos extremos e, por isso, tem comprimento mensurável."
+                },
+                {
+                  "question": "Uma reta tem quantos extremos?",
+                  "options": [
+                    "0 (não tem extremos)",
+                    "1 extremo",
+                    "2 extremos",
+                    "3 extremos"
+                  ],
+                  "answer": 0,
+                  "why": "A reta não tem extremos — é infinita nos dois sentidos."
+                },
+                {
+                  "question": "A semirreta começa num ponto e:",
+                  "options": [
+                    "Termina noutro ponto",
+                    "Continua para sempre num sentido",
+                    "Dá a volta",
+                    "Tem dois extremos"
+                  ],
+                  "answer": 1,
+                  "why": "A semirreta tem um ponto de origem e prolonga-se infinitamente numa direção."
+                },
+                {
+                  "question": "Para medir o comprimento de um segmento de reta, usamos:",
+                  "options": [
+                    "Compasso",
+                    "Régua",
+                    "Transferidor",
+                    "Esquadro"
+                  ],
+                  "answer": 1,
+                  "why": "A régua mede o comprimento de segmentos de reta (distância entre os dois extremos)."
                 }
               ],
               "desafios": [

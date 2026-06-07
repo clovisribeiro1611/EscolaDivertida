@@ -178,6 +178,7 @@ body {
   padding-bottom: 4px;
 }
 .mode-row::-webkit-scrollbar { display: none; }
+@media (max-width: 899px) { .mode-row { display: none !important; } }
 .mode-pill {
   flex-shrink: 0; padding: 11px 22px;
   border-radius: 50px; border: 2.5px solid #e5e7eb;
@@ -447,7 +448,7 @@ body {
   .app-bar-logo { font-size: 1.5rem; }
   .app-bar-sub { font-size: 0.78rem; }
   .float-nav { display: none !important; }
-  .mode-row { flex-wrap: wrap; overflow-x: visible; padding-bottom: 6px; }
+  .mode-row { flex-wrap: wrap; overflow-x: visible; padding-bottom: 6px; display: flex !important; }
   .mode-pill { padding: 10px 22px; font-size: 0.85rem; }
   .years-grid { grid-template-columns: repeat(4, 1fr); }
   .year-card { padding: 24px 14px; }
@@ -806,7 +807,7 @@ async function renderLearn(area){
   const ano=getJSONAno(currentSubject,currentYear);
   const col=SUBJ_COLOR[currentSubject];
   if(!ano?.trimestres?.length){area.innerHTML='<p style="text-align:center;color:var(--muted);padding:30px">Sem conteúdo disponível.</p>';return;}
-  let html=`<div style="background:linear-gradient(135deg,${col},${col}cc);border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
+  let html=`<div style="background:${col};border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
     <div style="font-family:'Fredoka One',cursive;font-size:1.1rem">📚 Escolhe um Tema para Aprender</div>
   </div>`;
   for(const [ti,trim] of ano.trimestres.entries()){
@@ -994,7 +995,7 @@ async function renderPractice(area){
   const ano=getJSONAno(currentSubject,currentYear);
   const col=SUBJ_COLOR[currentSubject];
   if(!ano?.trimestres?.length){area.innerHTML='<p style="text-align:center;color:var(--muted);padding:30px">Sem conteúdo disponível.</p>';return;}
-  let html=`<div style="background:linear-gradient(135deg,${col},${col}cc);border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
+  let html=`<div style="background:${col};border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
     <div style="font-family:'Fredoka One',cursive;font-size:1.1rem">✏️ Escolhe um Tema para Praticar</div>
     <div style="font-size:0.78rem;opacity:0.9;margin-top:3px">Precisas de 80% para desbloquear o Desafio</div>
   </div>`;
@@ -1211,7 +1212,7 @@ async function renderChallenge(area){
   const col=SUBJ_COLOR[currentSubject];
   if(!ano?.trimestres?.length){area.innerHTML='<p style="text-align:center;color:var(--muted);padding:30px">Sem conteúdo.</p>';return;}
   const mega=allUnlocked(currentSubject,currentYear);
-  let html=`<div style="background:linear-gradient(135deg,${col},${col}cc);border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
+  let html=`<div style="background:${col};border-radius:20px;padding:16px 18px;margin-bottom:16px;color:white;text-align:center">
     <div style="font-family:'Fredoka One',cursive;font-size:1.1rem">⏱️ Desafio — Escolhe um Tema</div>
     <div style="font-size:0.78rem;opacity:0.9;margin-top:3px">Pratica 80% primeiro para desbloquear cada tema</div>
   </div>`;
