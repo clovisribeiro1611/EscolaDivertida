@@ -1,0 +1,913 @@
+{
+  "disciplina": "biblia",
+  "anos": [
+    {
+      "ano": 1,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "bib1_t1_deus_criou",
+              "nome": "Deus Criou o Mundo",
+              "icone": "🌍",
+              "aprender": [
+                {
+                  "icon": "☀️",
+                  "title": "Deus fez a luz",
+                  "body": "No princípio, Deus criou o céu e a terra. Deus disse: <b>«Haja luz!»</b> E houve luz.",
+                  "example": "Deus criou: ☀️ o Sol · 🌙 a Lua · ⭐ as estrelas",
+                  "trick": "Deus criou tudo em 6 dias e descansou no 7º dia."
+                },
+                {
+                  "icon": "🌊",
+                  "title": "Deus fez a água e a terra",
+                  "body": "Deus separou a água da terra seca. Fez os mares e os rios. Fez as montanhas e as ilhas.",
+                  "example": "🌊 Mar · 🏝️ Ilha · 🏔️ Montanha · 🌊 Rio",
+                  "trick": "Cabo Verde são ilhas que Deus criou no oceano Atlântico."
+                },
+                {
+                  "icon": "🌿",
+                  "title": "Deus fez as plantas e os animais",
+                  "body": "Deus criou as plantas, as flores e as árvores. Depois criou os animais do mar, do céu e da terra.",
+                  "example": "🌴 Árvore · 🌸 Flor · 🐠 Peixe · 🐦 Pássaro · 🐄 Vaca",
+                  "trick": "Versículo: «Deus viu tudo o que tinha feito e era muito bom.» Génesis 1:31"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quem criou o mundo?",
+                  "options": ["Deus", "O Sol", "Um homem"],
+                  "answer": "Deus",
+                  "why": "A Bíblia diz: «No princípio, Deus criou o céu e a terra.» (Génesis 1:1)"
+                },
+                {
+                  "question": "O que criou Deus no 1º dia?",
+                  "options": ["A luz", "Os animais", "As plantas"],
+                  "answer": "A luz",
+                  "why": "No 1º dia Deus disse «Haja luz!» e houve luz."
+                },
+                {
+                  "question": "Em quantos dias Deus criou o mundo?",
+                  "options": ["6 dias", "2 dias", "10 dias"],
+                  "answer": "6 dias",
+                  "why": "Deus trabalhou 6 dias e no 7º dia descansou."
+                },
+                {
+                  "question": "O que disse Deus quando viu a criação?",
+                  "options": ["Era muito bom", "Era pequeno", "Era difícil"],
+                  "answer": "Era muito bom",
+                  "why": "«Deus viu tudo o que tinha feito e era muito bom.» Génesis 1:31"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que Deus criou no 2º dia?",
+                  "options": ["O céu (firmamento)", "Os peixes", "O homem"],
+                  "answer": "O céu (firmamento)",
+                  "why": "No 2º dia Deus fez o firmamento separando as águas."
+                },
+                {
+                  "question": "Onde estão escritas as histórias da criação?",
+                  "options": ["Na Bíblia", "Num jornal", "Numa carta"],
+                  "answer": "Na Bíblia",
+                  "why": "A história da criação está em Génesis, o primeiro livro da Bíblia."
+                }
+              ]
+            },
+            {
+              "id": "bib1_t1_jesus_amigo",
+              "nome": "Jesus é Meu Amigo",
+              "icone": "❤️",
+              "aprender": [
+                {
+                  "icon": "👶",
+                  "title": "Jesus nasceu",
+                  "body": "Jesus nasceu numa manjedoura em Belém. A sua mãe chamava-se Maria. O seu pai terreno era José.",
+                  "example": "⭐ Estrela guiou os reis · 🐑 Pastores vieram ver Jesus · 🎁 Reis trouxeram presentes",
+                  "trick": "Celebramos o nascimento de Jesus no Natal — 25 de Dezembro."
+                },
+                {
+                  "icon": "💕",
+                  "title": "Jesus ama as crianças",
+                  "body": "Jesus disse: <b>«Deixai as crianças virem a mim.»</b> Jesus abençoou as crianças. Ele gosta de ti!",
+                  "example": "Jesus abraçou as crianças · orou por elas · disse que eram especiais",
+                  "trick": "Versículo: «Jesus os abraçou e os abençoou.» Marcos 10:16"
+                },
+                {
+                  "icon": "🙏",
+                  "title": "Falar com Jesus",
+                  "body": "Podemos falar com Jesus em <b>oração</b>. Podemos orar em qualquer lugar e a qualquer hora. Jesus ouve sempre!",
+                  "example": "🌅 De manhã · 🍽️ Antes das refeições · 🌙 À noite antes de dormir",
+                  "trick": "Oração simples: «Jesus, obrigado por me amares. Ajuda-me hoje. Amém.»"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Onde nasceu Jesus?",
+                  "options": ["Em Belém", "Em Nazaré", "Em Cabo Verde"],
+                  "answer": "Em Belém",
+                  "why": "Jesus nasceu na cidade de Belém, numa manjedoura."
+                },
+                {
+                  "question": "Como se chama a mãe de Jesus?",
+                  "options": ["Maria", "Sara", "Ana"],
+                  "answer": "Maria",
+                  "why": "A mãe de Jesus chama-se Maria. José era o seu pai terreno."
+                },
+                {
+                  "question": "O que é oração?",
+                  "options": ["Falar com Jesus", "Cantar uma música", "Ler um livro"],
+                  "answer": "Falar com Jesus",
+                  "why": "Oração é falar com Deus. Podemos orar em qualquer lugar!"
+                },
+                {
+                  "question": "O que disse Jesus sobre as crianças?",
+                  "options": ["«Deixai vir a mim»", "«Fiquem em casa»", "«Vão brincar»"],
+                  "answer": "«Deixai vir a mim»",
+                  "why": "Jesus disse «Deixai as crianças virem a mim» — Ele ama as crianças!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quem guiou os reis magos até Jesus?",
+                  "options": ["Uma estrela", "Um anjo", "Um pastor"],
+                  "answer": "Uma estrela",
+                  "why": "Uma grande estrela brilhou no céu e guiou os reis magos até Belém."
+                },
+                {
+                  "question": "Quando celebramos o nascimento de Jesus?",
+                  "options": ["No Natal", "Na Páscoa", "No Carnaval"],
+                  "answer": "No Natal",
+                  "why": "O Natal celebra o nascimento de Jesus, no dia 25 de Dezembro."
+                }
+              ]
+            },
+            {
+              "id": "bib1_t1_biblia",
+              "nome": "A Bíblia — Livro de Deus",
+              "icone": "📖",
+              "aprender": [
+                {
+                  "icon": "📚",
+                  "title": "O que é a Bíblia?",
+                  "body": "A Bíblia é o livro mais importante do mundo. É a <b>Palavra de Deus</b>. Deus falou e pessoas especiais escreveram.",
+                  "example": "A Bíblia tem 2 partes: 📜 Antigo Testamento · ✝️ Novo Testamento",
+                  "trick": "A Bíblia tem 66 livros. Começa em Génesis e termina em Apocalipse."
+                },
+                {
+                  "icon": "💡",
+                  "title": "A Bíblia nos ensina",
+                  "body": "A Bíblia ensina-nos como viver, como tratar os outros e como amar a Deus.",
+                  "example": "A Bíblia diz: ❤️ Ama a Deus · 🤝 Ama o próximo · 😊 Sê bondoso",
+                  "trick": "Versículo: «A tua palavra é lâmpada para os meus pés.» Salmos 119:105"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que é a Bíblia?",
+                  "options": ["A Palavra de Deus", "Um livro de histórias", "Um livro de escola"],
+                  "answer": "A Palavra de Deus",
+                  "why": "A Bíblia é a Palavra de Deus — Ele falou e pessoas escolhidas escreveram."
+                },
+                {
+                  "question": "Quantas partes tem a Bíblia?",
+                  "options": ["2 partes", "5 partes", "1 parte"],
+                  "answer": "2 partes",
+                  "why": "A Bíblia tem o Antigo Testamento e o Novo Testamento."
+                },
+                {
+                  "question": "Qual é o primeiro livro da Bíblia?",
+                  "options": ["Génesis", "Salmos", "Apocalipse"],
+                  "answer": "Génesis",
+                  "why": "Génesis é o primeiro livro da Bíblia — começa com a criação do mundo."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantos livros tem a Bíblia?",
+                  "options": ["66 livros", "10 livros", "100 livros"],
+                  "answer": "66 livros",
+                  "why": "A Bíblia tem 66 livros no total — 39 no AT e 27 no NT."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "bib1_t2_adao_eva",
+              "nome": "Adão e Eva",
+              "icone": "🌳",
+              "aprender": [
+                {
+                  "icon": "🧑",
+                  "title": "O primeiro homem",
+                  "body": "Deus criou o primeiro homem chamado <b>Adão</b>. Deus fez Adão do pó da terra e soprou vida nele.",
+                  "example": "Deus disse: «Não é bom que o homem esteja só.» Génesis 2:18",
+                  "trick": "Adão foi o primeiro ser humano criado por Deus."
+                },
+                {
+                  "icon": "👩",
+                  "title": "A primeira mulher",
+                  "body": "Deus criou <b>Eva</b> para ser companheira de Adão. Deus tirou uma costela de Adão e fez Eva.",
+                  "example": "Adão disse: «Esta é osso dos meus ossos!» — ficou muito feliz.",
+                  "trick": "Eva foi a primeira mulher. Adão e Eva viviam no Jardim do Éden."
+                },
+                {
+                  "icon": "🍎",
+                  "title": "A desobediência",
+                  "body": "Deus disse para não comer de uma árvore especial. A serpente enganou Eva. Adão e Eva desobedeceram a Deus.",
+                  "example": "Consequência: tiveram de sair do jardim 😢",
+                  "trick": "Obedecer a Deus é sempre a melhor escolha!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Como se chama o primeiro homem?",
+                  "options": ["Adão", "Noé", "Abraão"],
+                  "answer": "Adão",
+                  "why": "Deus criou o primeiro homem e chamou-lhe Adão."
+                },
+                {
+                  "question": "Como se chama a primeira mulher?",
+                  "options": ["Eva", "Maria", "Sara"],
+                  "answer": "Eva",
+                  "why": "Eva foi a primeira mulher, criada por Deus para ser companheira de Adão."
+                },
+                {
+                  "question": "O que fez Deus para criar Adão?",
+                  "options": ["Soprou vida nele", "Plantou uma semente", "Fez chuva"],
+                  "answer": "Soprou vida nele",
+                  "why": "Deus fez Adão do pó da terra e soprou vida nele."
+                },
+                {
+                  "question": "Onde viviam Adão e Eva?",
+                  "options": ["Jardim do Éden", "Numa casa", "Numa ilha"],
+                  "answer": "Jardim do Éden",
+                  "why": "Deus colocou Adão e Eva no belo Jardim do Éden."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que aconteceu quando Adão e Eva desobedeceram?",
+                  "options": ["Saíram do jardim", "Ficaram no jardim", "Ficaram contentes"],
+                  "answer": "Saíram do jardim",
+                  "why": "Porque desobedeceram a Deus, Adão e Eva tiveram de sair do Jardim do Éden."
+                }
+              ]
+            },
+            {
+              "id": "bib1_t2_noe",
+              "nome": "Noé e a Arca",
+              "icone": "🚢",
+              "aprender": [
+                {
+                  "icon": "🧓",
+                  "title": "Noé era um homem bom",
+                  "body": "<b>Noé</b> amava a Deus e obedecia-lhe. As outras pessoas faziam o mal. Mas Noé era diferente — era justo.",
+                  "example": "Noé andava com Deus todos os dias.",
+                  "trick": "Deus escolhe pessoas que lhe obedecem para fazer coisas especiais."
+                },
+                {
+                  "icon": "🪵",
+                  "title": "A construção da arca",
+                  "body": "Deus disse a Noé: «Constrói uma grande arca de madeira.» Noé obedeceu e construiu a arca com os seus filhos.",
+                  "example": "A arca era enorme: 🐘 Elefantes · 🦒 Girafas · 🦁 Leões — todos couberam!",
+                  "trick": "Noé levou 2 de cada animal para dentro da arca."
+                },
+                {
+                  "icon": "🌈",
+                  "title": "O arco-íris — promessa de Deus",
+                  "body": "Depois da chuva, Deus pôs um <b>arco-íris</b> no céu. É a promessa de Deus de que nunca mais destruiria a terra com água.",
+                  "example": "🌈 O arco-íris tem 7 cores",
+                  "trick": "Versículo: «Ponho o meu arco nas nuvens como sinal da minha aliança.» Génesis 9:13"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Por que Deus escolheu Noé?",
+                  "options": ["Era justo e obedecia a Deus", "Era o mais forte", "Era o mais rico"],
+                  "answer": "Era justo e obedecia a Deus",
+                  "why": "Noé amava a Deus e andava com Ele — por isso Deus o escolheu."
+                },
+                {
+                  "question": "Quantos animais de cada espécie entrou na arca?",
+                  "options": ["2 de cada", "1 de cada", "5 de cada"],
+                  "answer": "2 de cada",
+                  "why": "Noé levou 2 animais de cada espécie — um macho e uma fêmea."
+                },
+                {
+                  "question": "O que Deus pôs no céu como promessa?",
+                  "options": ["Um arco-íris", "Uma estrela", "Uma nuvem"],
+                  "answer": "Um arco-íris",
+                  "why": "O arco-íris é o sinal da promessa de Deus a Noé."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que o arco-íris representa?",
+                  "options": ["A promessa de Deus", "O fim da chuva", "Um presente de Noé"],
+                  "answer": "A promessa de Deus",
+                  "why": "Deus disse: «O meu arco-íris é o sinal da minha aliança com a terra.»"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "bib2_t1_abraao",
+              "nome": "Abraão — O Amigo de Deus",
+              "icone": "⭐",
+              "aprender": [
+                {
+                  "icon": "🧓",
+                  "title": "Deus chama Abraão",
+                  "body": "Deus chamou <b>Abraão</b> e disse: «Sai da tua terra e vai para o lugar que eu te mostrar.» Abraão obedeceu sem saber para onde ia.",
+                  "example": "Abraão deixou a sua casa, os seus amigos, e seguiu a Deus com fé.",
+                  "trick": "Fé é confiar em Deus mesmo quando não vemos tudo."
+                },
+                {
+                  "icon": "🌟",
+                  "title": "A promessa de Deus",
+                  "body": "Deus prometeu a Abraão: «Farei de ti uma grande nação e te abençoarei. Em ti serão abençoadas todas as nações.»",
+                  "example": "Deus prometeu: família numerosa · terra · bênção para o mundo",
+                  "trick": "Deus sempre cumpre as Suas promessas!"
+                },
+                {
+                  "icon": "👶",
+                  "title": "Nasceu Isaque",
+                  "body": "Abraão e Sara eram velhos e não tinham filhos. Mas Deus prometeu um filho. Nasceu <b>Isaque</b> — o filho da promessa!",
+                  "example": "Sara riu de felicidade quando nasceu Isaque.",
+                  "trick": "Versículo: «Para Deus nada é impossível.» Lucas 1:37"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que Deus pediu a Abraão?",
+                  "options": ["Que saísse da sua terra", "Que ficasse em casa", "Que fosse ao mar"],
+                  "answer": "Que saísse da sua terra",
+                  "why": "Deus disse a Abraão: «Sai da tua terra e vai para o lugar que te mostrarei.»"
+                },
+                {
+                  "question": "Como se chama o filho prometido de Abraão?",
+                  "options": ["Isaque", "Jacó", "Moisés"],
+                  "answer": "Isaque",
+                  "why": "Deus prometeu um filho a Abraão e Sara — nasceu Isaque."
+                },
+                {
+                  "question": "O que é ter fé?",
+                  "options": ["Confiar em Deus", "Ter muito dinheiro", "Ser muito forte"],
+                  "answer": "Confiar em Deus",
+                  "why": "Abraão confiou em Deus mesmo sem ver onde ia — isso é fé!"
+                },
+                {
+                  "question": "Para Deus o que é impossível?",
+                  "options": ["Nada é impossível", "Muitas coisas", "Tudo é difícil"],
+                  "answer": "Nada é impossível",
+                  "why": "«Para Deus nada é impossível.» Lucas 1:37"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Como Deus chamou Abraão?",
+                  "options": ["O amigo de Deus", "O rei da terra", "O profeta forte"],
+                  "answer": "O amigo de Deus",
+                  "why": "Abraão era tão obediente que a Bíblia o chama «amigo de Deus»."
+                }
+              ]
+            },
+            {
+              "id": "bib2_t1_moises",
+              "nome": "Moisés — Guiado por Deus",
+              "icone": "🌿",
+              "aprender": [
+                {
+                  "icon": "🛶",
+                  "title": "O bebé no rio",
+                  "body": "A mãe de <b>Moisés</b> colocou-o num cesto no rio Nilo para o proteger. A filha do Faraó encontrou-o e adoptou-o.",
+                  "example": "Deus protegeu Moisés desde bebé! 🐣",
+                  "trick": "Deus cuida de nós desde que nascemos."
+                },
+                {
+                  "icon": "🔥",
+                  "title": "A sarça ardente",
+                  "body": "Moisés viu uma sarça (arbusto) que ardia mas não se consumia. Deus falou a Moisés de dentro do fogo e disse: «Eu sou o que sou.»",
+                  "example": "Deus disse: «Vai e liberta o meu povo do Egipto!»",
+                  "trick": "Deus pode falar connosco de formas surpreendentes."
+                },
+                {
+                  "icon": "🌊",
+                  "title": "Travessia do Mar Vermelho",
+                  "body": "Moisés estendeu a mão e o Mar Vermelho abriu-se ao meio! O povo passou a pé. O exército do Faraó ficou para trás.",
+                  "example": "Deus fez um milagre enorme para salvar o Seu povo!",
+                  "trick": "Versículo: «O Senhor é o meu auxílio e o meu escudo.» Salmos 28:7"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Onde a mãe de Moisés o colocou?",
+                  "options": ["Num cesto no rio", "Numa caverna", "Numa tenda"],
+                  "answer": "Num cesto no rio",
+                  "why": "A mãe colocou Moisés num cesto no rio Nilo para o proteger."
+                },
+                {
+                  "question": "O que Deus fez no Mar Vermelho?",
+                  "options": ["Abriu o mar ao meio", "Fez chover", "Fez vento"],
+                  "answer": "Abriu o mar ao meio",
+                  "why": "Deus abriu o Mar Vermelho para o povo de Israel passar a salvo."
+                },
+                {
+                  "question": "De onde Deus falou com Moisés?",
+                  "options": ["Da sarça ardente", "De uma nuvem", "De uma pedra"],
+                  "answer": "Da sarça ardente",
+                  "why": "Deus falou a Moisés de dentro de uma sarça (arbusto) que ardia mas não se consumia."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que Deus pediu a Moisés para fazer?",
+                  "options": ["Libertar o povo do Egipto", "Construir uma arca", "Ir para uma nova terra"],
+                  "answer": "Libertar o povo do Egipto",
+                  "why": "Deus disse a Moisés: «Vai ao Faraó e liberta o meu povo.»"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "bib2_t2_davi",
+              "nome": "Davi e Golias",
+              "icone": "🪨",
+              "aprender": [
+                {
+                  "icon": "🐑",
+                  "title": "Davi, o pastor",
+                  "body": "<b>Davi</b> era um jovem pastor que cuidava das ovelhas do seu pai. Ele tocava harpa e cantava para Deus.",
+                  "example": "Davi escreveu muitos Salmos — poemas e canções para Deus.",
+                  "trick": "Deus vê o coração, não o tamanho ou a aparência."
+                },
+                {
+                  "icon": "⚔️",
+                  "title": "O gigante Golias",
+                  "body": "<b>Golias</b> era um gigante guerreiro que desafiava o exército de Israel. Todos tinham medo. Mas Davi não teve medo!",
+                  "example": "Davi disse: «Venho a ti em nome do Senhor!»",
+                  "trick": "Com Deus somos mais fortes do que qualquer gigante!"
+                },
+                {
+                  "icon": "🪨",
+                  "title": "A vitória de Davi",
+                  "body": "Davi pegou numa pedra e atirou com a sua funda. A pedra acertou em Golias na testa. O gigante caiu! Davi venceu com a ajuda de Deus.",
+                  "example": "Uma pequena pedra + a força de Deus = grande vitória! 🏆",
+                  "trick": "Versículo: «O Senhor é a minha luz e salvação.» Salmos 27:1"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que Davi fazia antes de lutar?",
+                  "options": ["Cuidava de ovelhas", "Era soldado", "Era rei"],
+                  "answer": "Cuidava de ovelhas",
+                  "why": "Davi era um jovem pastor que cuidava das ovelhas do pai."
+                },
+                {
+                  "question": "Como Davi venceu Golias?",
+                  "options": ["Com uma pedra e funda", "Com uma espada", "Com um arco"],
+                  "answer": "Com uma pedra e funda",
+                  "why": "Davi atirou uma pedra com a funda e acertou na testa de Golias."
+                },
+                {
+                  "question": "Por que Davi não teve medo de Golias?",
+                  "options": ["Confiava em Deus", "Era muito forte", "Tinha armadura"],
+                  "answer": "Confiava em Deus",
+                  "why": "Davi disse: «Venho em nome do Senhor!» Ele confiava em Deus."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que Davi escreveu para Deus?",
+                  "options": ["Salmos (poemas e canções)", "Cartas", "Leis"],
+                  "answer": "Salmos (poemas e canções)",
+                  "why": "Davi escreveu muitos Salmos — poemas e canções de louvor a Deus."
+                }
+              ]
+            },
+            {
+              "id": "bib2_t2_oracao",
+              "nome": "O Poder da Oração",
+              "icone": "🙏",
+              "aprender": [
+                {
+                  "icon": "💬",
+                  "title": "O que é oração?",
+                  "body": "<b>Oração</b> é uma conversa com Deus. Podemos agradecer, pedir ajuda, confessar erros e louvar a Deus.",
+                  "example": "Tipos de oração: 🙏 Agradecimento · 🆘 Pedido de ajuda · ❤️ Louvor",
+                  "trick": "Podemos orar em qualquer lugar e a qualquer hora!"
+                },
+                {
+                  "icon": "📜",
+                  "title": "O Pai Nosso",
+                  "body": "Jesus ensinou os discípulos a orar com o <b>Pai Nosso</b>: «Pai nosso que estás nos céus, santificado seja o teu nome...»",
+                  "example": "O Pai Nosso está em Mateus 6:9-13",
+                  "trick": "O Pai Nosso é a oração modelo que Jesus nos ensinou."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que é oração?",
+                  "options": ["Uma conversa com Deus", "Uma música", "Uma história"],
+                  "answer": "Uma conversa com Deus",
+                  "why": "Orar é falar com Deus — agradecer, pedir, louvar."
+                },
+                {
+                  "question": "Quem ensinou o Pai Nosso?",
+                  "options": ["Jesus", "Moisés", "Davi"],
+                  "answer": "Jesus",
+                  "why": "Jesus ensinou os Seus discípulos a orar com o Pai Nosso."
+                },
+                {
+                  "question": "Quando podemos orar?",
+                  "options": ["Sempre e em qualquer lugar", "Só na igreja", "Só de manhã"],
+                  "answer": "Sempre e em qualquer lugar",
+                  "why": "Podemos orar em qualquer lugar e a qualquer hora — Deus ouve sempre!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Onde está escrito o Pai Nosso na Bíblia?",
+                  "options": ["Mateus 6:9-13", "Génesis 1:1", "Salmos 23"],
+                  "answer": "Mateus 6:9-13",
+                  "why": "Jesus ensinou o Pai Nosso em Mateus 6:9-13."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "bib3_t1_nascimento_jesus",
+              "nome": "O Nascimento de Jesus",
+              "icone": "⭐",
+              "aprender": [
+                {
+                  "icon": "👼",
+                  "title": "O anúncio do anjo",
+                  "body": "O anjo <b>Gabriel</b> apareceu a Maria e disse: «Vais ter um filho. Darás o nome de Jesus. Ele será chamado Filho do Altíssimo.»",
+                  "example": "Maria respondeu: «Faça-se em mim segundo a tua palavra.» — humildade e fé!",
+                  "trick": "Gabriel significa «Deus é poderoso» — um dos anjos mais importantes da Bíblia."
+                },
+                {
+                  "icon": "🌟",
+                  "title": "A noite santa em Belém",
+                  "body": "Jesus nasceu numa <b>manjedoura</b> porque não havia lugar na estalagem. Os pastores vieram adorá-Lo guiados pelos anjos.",
+                  "example": "Os anjos cantaram: «Glória a Deus nas alturas e paz na terra!»",
+                  "trick": "Jesus, o Filho de Deus, nasceu num lugar humilde — a manjedoura."
+                },
+                {
+                  "icon": "👑",
+                  "title": "Os reis magos",
+                  "body": "Reis magos do Oriente viram uma grande estrela e vieram adorar Jesus. Trouxeram presentes: <b>ouro, incenso e mirra</b>.",
+                  "example": "Ouro = realeza · Incenso = divindade · Mirra = sacrifício",
+                  "trick": "Os presentes dos reis magos simbolizavam quem Jesus era!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Que anjo anunciou o nascimento de Jesus?",
+                  "options": ["Gabriel", "Miguel", "Rafael"],
+                  "answer": "Gabriel",
+                  "why": "O anjo Gabriel apareceu a Maria e anunciou o nascimento de Jesus."
+                },
+                {
+                  "question": "Onde nasceu Jesus?",
+                  "options": ["Numa manjedoura em Belém", "Num palácio", "Numa tenda"],
+                  "answer": "Numa manjedoura em Belém",
+                  "why": "Jesus nasceu numa manjedoura porque não havia lugar na estalagem."
+                },
+                {
+                  "question": "Quais foram os presentes dos reis magos?",
+                  "options": ["Ouro, incenso e mirra", "Comida e roupa", "Ovelhas e cabras"],
+                  "answer": "Ouro, incenso e mirra",
+                  "why": "Os reis magos trouxeram ouro, incenso e mirra como presentes ao menino Jesus."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que os anjos cantaram no nascimento de Jesus?",
+                  "options": ["«Glória a Deus nas alturas e paz na terra!»", "«Rei nasceu, viva o rei!»", "«Bom Natal a todos!»"],
+                  "answer": "«Glória a Deus nas alturas e paz na terra!»",
+                  "why": "Os anjos cantaram: «Glória a Deus nas alturas e paz na terra aos homens.»"
+                }
+              ]
+            },
+            {
+              "id": "bib3_t1_milagres_jesus",
+              "nome": "Os Milagres de Jesus",
+              "icone": "✨",
+              "aprender": [
+                {
+                  "icon": "🍞",
+                  "title": "Jesus alimentou 5.000 pessoas",
+                  "body": "Uma grande multidão tinha fome. Um rapaz partilhou o seu almoço: <b>5 pães e 2 peixes</b>. Jesus abençoou a comida e todos comeram — sobrou ainda!",
+                  "example": "5 pães + 2 peixes → 5.000 pessoas comeram + 12 cestos sobraram! 🤯",
+                  "trick": "Com Jesus, o pouco que temos pode tornar-se muito."
+                },
+                {
+                  "icon": "🌊",
+                  "title": "Jesus acalmou a tempestade",
+                  "body": "Os discípulos estavam num barco. Veio uma tempestade enorme. Tiveram medo! Jesus <b>ordenou ao vento e ao mar</b>: «Aquieta-te!» E ficou calmo.",
+                  "example": "Os discípulos perguntaram: «Quem é este que até o vento e o mar lhe obedecem?»",
+                  "trick": "Jesus tem poder sobre a natureza — é o Senhor da criação."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas pessoas Jesus alimentou com 5 pães e 2 peixes?",
+                  "options": ["5.000 pessoas", "100 pessoas", "50 pessoas"],
+                  "answer": "5.000 pessoas",
+                  "why": "Jesus multiplicou 5 pães e 2 peixes e alimentou cerca de 5.000 pessoas."
+                },
+                {
+                  "question": "O que Jesus disse à tempestade?",
+                  "options": ["«Aquieta-te!»", "«Para de chover!»", "«Vento, pára!»"],
+                  "answer": "«Aquieta-te!»",
+                  "why": "Jesus ordenou: «Aquieta-te!» e o vento e o mar ficaram calmos."
+                },
+                {
+                  "question": "Quem partilhou a comida com Jesus?",
+                  "options": ["Um rapaz", "Um pescador", "Um soldado"],
+                  "answer": "Um rapaz",
+                  "why": "Um rapaz partilhou generosamente o seu almoço de 5 pães e 2 peixes."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantos cestos sobraram depois de Jesus alimentar 5.000?",
+                  "options": ["12 cestos", "5 cestos", "2 cestos"],
+                  "answer": "12 cestos",
+                  "why": "Depois de todos comerem, sobraram ainda 12 cestos cheios de comida!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "bib3_t2_ressurreicao",
+              "nome": "A Ressurreição de Jesus",
+              "icone": "✝️",
+              "aprender": [
+                {
+                  "icon": "🌿",
+                  "title": "A Semana Santa",
+                  "body": "Jesus entrou em Jerusalém num domingo — o povo gritava «Hosana!» Na quinta-feira, Jesus comeu a <b>última ceia</b> com os discípulos.",
+                  "example": "Jesus partiu o pão e disse: «Isto é o meu corpo, dado por vocês.»",
+                  "trick": "A última ceia deu origem à Santa Ceia que celebramos na igreja."
+                },
+                {
+                  "icon": "✝️",
+                  "title": "Jesus morreu na cruz",
+                  "body": "Jesus morreu na cruz na <b>Sexta-feira Santa</b>. Ele morreu pelos pecados de todos nós, por amor.",
+                  "example": "Jesus disse na cruz: «Pai, perdoa-lhes, pois não sabem o que fazem.»",
+                  "trick": "Versículo: «Deus amou tanto o mundo que deu o seu Filho único.» João 3:16"
+                },
+                {
+                  "icon": "🌅",
+                  "title": "Jesus ressuscitou!",
+                  "body": "No <b>terceiro dia</b>, Jesus ressuscitou! A pedra estava rolada. O túmulo estava vazio. Os anjos disseram: «Ele não está aqui — ressuscitou!»",
+                  "example": "Celebramos a ressurreição de Jesus na Páscoa! 🐣",
+                  "trick": "A ressurreição prova que Jesus é o Filho de Deus e que tem vitória sobre a morte."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Em que dia Jesus ressuscitou?",
+                  "options": ["No terceiro dia", "No quinto dia", "No sétimo dia"],
+                  "answer": "No terceiro dia",
+                  "why": "Jesus ressuscitou ao terceiro dia — conforme estava escrito nas Escrituras."
+                },
+                {
+                  "question": "Quando celebramos a ressurreição de Jesus?",
+                  "options": ["Na Páscoa", "No Natal", "No Pentecostes"],
+                  "answer": "Na Páscoa",
+                  "why": "A Páscoa celebra a ressurreição de Jesus Cristo."
+                },
+                {
+                  "question": "Por que Jesus morreu na cruz?",
+                  "options": ["Pelos pecados de todos nós", "Por castigo", "Por acidente"],
+                  "answer": "Pelos pecados de todos nós",
+                  "why": "João 3:16: «Deus amou tanto o mundo que deu o Seu Filho» — Jesus morreu por nós."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que os anjos disseram no túmulo vazio?",
+                  "options": ["«Ele ressuscitou!»", "«Ele foi-se embora»", "«Está a dormir»"],
+                  "answer": "«Ele ressuscitou!»",
+                  "why": "Os anjos disseram: «Ele não está aqui — ressuscitou, como tinha dito!»"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "bib4_t1_frutos_espirito",
+              "nome": "Os Frutos do Espírito",
+              "icone": "🍇",
+              "aprender": [
+                {
+                  "icon": "🌿",
+                  "title": "O Espírito Santo em nós",
+                  "body": "O <b>Espírito Santo</b> vive dentro de cada cristão. Quando seguimos o Espírito Santo, o nosso carácter muda e ficamos parecidos com Jesus.",
+                  "example": "Uma árvore boa dá fruto bom. Nós, com o Espírito Santo, damos frutos de bondade.",
+                  "trick": "Os frutos do Espírito mostram que Deus está a trabalhar em nós."
+                },
+                {
+                  "icon": "🍇",
+                  "title": "Os 9 frutos do Espírito",
+                  "body": "«O fruto do Espírito é: <b>amor, alegria, paz, paciência, amabilidade, bondade, fidelidade, mansidão e domínio próprio.</b>» Gálatas 5:22-23",
+                  "example": "❤️ Amor · 😊 Alegria · ☮️ Paz · ⏳ Paciência · 🤗 Amabilidade",
+                  "trick": "Lembra: AAPPAFDM — Amor, Alegria, Paz, Paciência, Amabilidade, Fidelidade, Domínio!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Onde estão escritos os frutos do Espírito na Bíblia?",
+                  "options": ["Gálatas 5:22-23", "João 3:16", "Génesis 1:1"],
+                  "answer": "Gálatas 5:22-23",
+                  "why": "Paulo lista os frutos do Espírito em Gálatas 5:22-23."
+                },
+                {
+                  "question": "Qual é o primeiro fruto do Espírito?",
+                  "options": ["Amor", "Paz", "Paciência"],
+                  "answer": "Amor",
+                  "why": "O primeiro fruto do Espírito é o amor — o fundamento de todos os outros."
+                },
+                {
+                  "question": "Quantos frutos do Espírito existem?",
+                  "options": ["9 frutos", "7 frutos", "12 frutos"],
+                  "answer": "9 frutos",
+                  "why": "Paulo lista 9 frutos do Espírito em Gálatas 5:22-23."
+                },
+                {
+                  "question": "Quem produz os frutos do Espírito em nós?",
+                  "options": ["O Espírito Santo", "Nós mesmos", "Os pastores"],
+                  "answer": "O Espírito Santo",
+                  "why": "Os frutos crescem em nós quando o Espírito Santo trabalha no nosso coração."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que significa o fruto «domínio próprio»?",
+                  "options": ["Controlar as nossas acções e emoções", "Mandar nos outros", "Ser calado"],
+                  "answer": "Controlar as nossas acções e emoções",
+                  "why": "Domínio próprio é a capacidade de controlar o que fazemos e sentimos com a ajuda do Espírito Santo."
+                }
+              ]
+            },
+            {
+              "id": "bib4_t1_carater_cristao",
+              "nome": "Carácter Cristão",
+              "icone": "💝",
+              "aprender": [
+                {
+                  "icon": "🎯",
+                  "title": "O que é carácter?",
+                  "body": "<b>Carácter</b> é quem somos por dentro — como pensamos, sentimos e agimos. O carácter cristão é ser como Jesus.",
+                  "example": "Carácter não é o que fazemos quando alguém nos vê — é o que fazemos quando ninguém vê!",
+                  "trick": "Deus vê sempre o nosso coração."
+                },
+                {
+                  "icon": "🌟",
+                  "title": "Virtudes cristãs",
+                  "body": "A Bíblia ensina: <b>honestidade, diligência, obediência, respeito, gratidão e bondade</b>. Estas virtudes agradeam a Deus.",
+                  "example": "🤝 Honestidade: dizer sempre a verdade · 💪 Diligência: fazer o melhor · 🙏 Gratidão: agradecer",
+                  "trick": "«Sede bons uns para os outros, misericordiosos, perdoando-vos.» Efésios 4:32"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que é carácter?",
+                  "options": ["Quem somos por dentro", "A nossa aparência", "As nossas notas"],
+                  "answer": "Quem somos por dentro",
+                  "why": "Carácter é quem somos por dentro — como pensamos, sentimos e agimos."
+                },
+                {
+                  "question": "O que é honestidade?",
+                  "options": ["Dizer sempre a verdade", "Ser muito inteligente", "Ter boas notas"],
+                  "answer": "Dizer sempre a verdade",
+                  "why": "Honestidade é ser verdadeiro em palavras e acções — como Deus quer."
+                },
+                {
+                  "question": "Como ser diligente?",
+                  "options": ["Fazer o melhor em tudo", "Fazer o mínimo", "Copiar pelos outros"],
+                  "answer": "Fazer o melhor em tudo",
+                  "why": "Diligência é esforçar-se ao máximo em tudo que fazemos, como para o Senhor."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que diz Efésios 4:32?",
+                  "options": ["«Sede bons uns para os outros, misericordiosos»", "«Amai os vossos inimigos»", "«Orai sem cessar»"],
+                  "answer": "«Sede bons uns para os outros, misericordiosos»",
+                  "why": "Efésios 4:32 diz: «Sede bons uns para os outros, misericordiosos, perdoando-vos.»"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "bib4_t2_servir",
+              "nome": "Servir os Outros",
+              "icone": "🤝",
+              "aprender": [
+                {
+                  "icon": "👑",
+                  "title": "Jesus serviu",
+                  "body": "Jesus lavou os pés dos discípulos para ensinar que servir é grandeza. Ele disse: «Quem quiser ser grande, seja servo.»",
+                  "example": "Jesus lavou os pés de 12 discípulos — incluindo Judas que o ia trair.",
+                  "trick": "Versículo: «O maior entre vós será vosso servo.» Mateus 23:11"
+                },
+                {
+                  "icon": "🌍",
+                  "title": "Servir em Cabo Verde",
+                  "body": "Podemos servir os outros em Cabo Verde: ajudar os idosos, cuidar dos doentes, partilhar com os pobres, cuidar do ambiente.",
+                  "example": "🧓 Ajudar os avós · 🌱 Plantar árvores · 🤝 Partilhar comida",
+                  "trick": "«Amem-se uns aos outros como eu vos amei.» João 13:34"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que Jesus fez para ensinar sobre servir?",
+                  "options": ["Lavou os pés dos discípulos", "Fez um milagre", "Pregou num templo"],
+                  "answer": "Lavou os pés dos discípulos",
+                  "why": "Jesus lavou os pés dos discípulos para mostrar que servir os outros é grandeza."
+                },
+                {
+                  "question": "O que Jesus disse sobre ser grande?",
+                  "options": ["«Seja servo»", "«Seja rico»", "«Seja forte»"],
+                  "answer": "«Seja servo»",
+                  "why": "Jesus disse: «Quem quiser ser grande entre vós, seja vosso servo.»"
+                },
+                {
+                  "question": "Como podemos servir em Cabo Verde?",
+                  "options": ["Ajudando os idosos e partilhando", "Sendo o melhor da turma", "Tendo muitos amigos"],
+                  "answer": "Ajudando os idosos e partilhando",
+                  "why": "Servir é ajudar os outros — os idosos, os doentes, os pobres — com amor."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "O que diz João 13:34?",
+                  "options": ["«Amem-se uns aos outros como eu vos amei»", "«Orai e não desanimeis»", "«Eu sou o caminho»"],
+                  "answer": "«Amem-se uns aos outros como eu vos amei»",
+                  "why": "João 13:34: «Um novo mandamento vos dou: amem-se uns aos outros como eu vos amei.»"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

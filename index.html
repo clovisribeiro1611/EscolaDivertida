@@ -528,6 +528,29 @@ body {
   .year-card .yr-num { font-size: 1.9rem; }
   .mode-pill { font-size: 0.9rem; padding: 11px 24px; }
 }
+
+/* ─── CURRICULUM TOGGLE ─── */
+.curriculum-toggle {
+  display: flex; gap: 10px; margin-bottom: 18px; justify-content: center;
+}
+.curr-btn {
+  flex: 1; max-width: 220px; padding: 12px 16px; border-radius: 50px;
+  border: 2.5px solid #e5e7eb; background: white; cursor: pointer;
+  font-family: 'Fredoka One', cursive; font-size: 0.95rem; color: var(--muted);
+  transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.curr-btn.curr-active {
+  border-color: transparent; color: white; box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+#curr-std.curr-active { background: linear-gradient(135deg, var(--por), #ff6b9d); }
+#curr-ne.curr-active  { background: linear-gradient(135deg, #F59E0B, #10B981); }
+
+/* ─── NE MODE ADAPTATIONS ─── */
+.ne-mode .lcard { font-size: 1.12em; border-width: 2.5px; }
+.ne-mode .qtext { font-size: 1.12em; line-height: 1.65; }
+.ne-mode .opt   { font-size: 1.08em; padding: 14px 16px; }
+.ne-mode .lcard .card-title { font-size: 1.1em; }
+.ne-mode .lcard .card-body  { font-size: 1.05em; line-height: 1.7; }
 </style>
 </head>
 <body>
@@ -601,7 +624,11 @@ body {
 
 <!-- HOME SCREEN -->
 <div id="home-screen" style="position:relative;z-index:1">
-  <div class="welcome-text">
+  <div class="curriculum-toggle">
+    <button class="curr-btn curr-active" id="curr-std" onclick="setCurriculum('standard')">📚 Ensino Básico CV</button>
+    <button class="curr-btn" id="curr-ne" onclick="setCurriculum('ne')">🌈 Necessidades Especiais</button>
+  </div>
+  <div class="welcome-text" id="welcome-text">
     <h2>Olá! Escolhe o teu ano! 🎒</h2>
     <p>Matemática • Português • Ciências</p>
   </div>
@@ -651,17 +678,7 @@ body {
     <h2 id="yh-title">4ª Classe</h2>
     <p id="yh-sub">Escolhe a disciplina</p>
   </div>
-  <div class="subj-grid">
-    <div class="subj-btn mat-btn" id="btn-mat" onclick="selectSubject('mat')">
-      <div class="sb-icon mat-ops"><span>−</span><div class="mo-row"><span>+</span><span>×</span></div><span>÷</span></div>Matemática
-    </div>
-    <div class="subj-btn por-btn" id="btn-por" onclick="selectSubject('por')">
-      <div class="sb-icon">📖</div>Português
-    </div>
-    <div class="subj-btn cie-btn" id="btn-cie" onclick="selectSubject('cie')">
-      <div class="sb-icon">🔬</div>Ciências
-    </div>
-  </div>
+  <div class="subj-grid" id="subj-grid"></div>
   <div class="mode-row" id="mode-row">
     <button class="mode-pill active-mode" id="pill-learn" onclick="setMode('learn')">📚 Aprender</button>
     <button class="mode-pill" id="pill-practice" onclick="setMode('practice')">✏️ Praticar</button>
@@ -689,19 +706,33 @@ let currentYear = 4, currentSubject = 'mat', currentMode = 'learn';
 let _ls; try{_ls=localStorage;}catch(e){_ls={getItem:()=>null,setItem:()=>{}};}
 let totalPoints = parseInt(_ls.getItem('cv_total_points')||'0',10), aiLevel = 'base';
 let freeMode = _ls.getItem('cv_free_mode') === '1';
+let currentCurriculum = _ls.getItem('cv_curriculum') || 'standard';
 let challengeInterval = null;
 let wrongAnswers = [];
 let _currentTemaId = null;
 let currentLearnPage = 1, currentGramPage = 1;
 const LEARN_PAGE_SIZE = 6, GRAM_PAGE_SIZE = 6;
-let jsonDB = {}, _jsonPromise = null;
+let jsonDB = {}, _jsonPromise = null, _jsonCurriculum = null;
 function ensureJSON(){
-  if(_jsonPromise) return _jsonPromise;
-  _jsonPromise=Promise.all([
-    fetch('matematica.json').then(r=>r.json()).catch(()=>null),
-    fetch('portugues.json').then(r=>r.json()).catch(()=>null),
-    fetch('ciencias.json').then(r=>r.json()).catch(()=>null)
-  ]).then(([mat,por,cie])=>{if(mat)jsonDB.mat=mat;if(por)jsonDB.por=por;if(cie)jsonDB.cie=cie;});
+  if(_jsonPromise && _jsonCurriculum === currentCurriculum) return _jsonPromise;
+  _jsonPromise = null; jsonDB = {}; _jsonCurriculum = currentCurriculum;
+  if(currentCurriculum === 'ne'){
+    _jsonPromise = Promise.all([
+      fetch('ne_matematica.json').then(r=>r.json()).catch(()=>null),
+      fetch('ne_portugues.json').then(r=>r.json()).catch(()=>null),
+      fetch('ne_biblia.json').then(r=>r.json()).catch(()=>null),
+      fetch('ne_vida.json').then(r=>r.json()).catch(()=>null)
+    ]).then(([mat,por,bib,vid])=>{
+      if(mat)jsonDB.mat=mat; if(por)jsonDB.por=por;
+      if(bib)jsonDB.bib=bib; if(vid)jsonDB.vid=vid;
+    });
+  } else {
+    _jsonPromise = Promise.all([
+      fetch('matematica.json').then(r=>r.json()).catch(()=>null),
+      fetch('portugues.json').then(r=>r.json()).catch(()=>null),
+      fetch('ciencias.json').then(r=>r.json()).catch(()=>null)
+    ]).then(([mat,por,cie])=>{if(mat)jsonDB.mat=mat;if(por)jsonDB.por=por;if(cie)jsonDB.cie=cie;});
+  }
   return _jsonPromise;
 }
 function getJSONAno(subj,year){return(jsonDB[subj]?.anos||[]).find(a=>a.ano===year)||null;}
@@ -722,9 +753,44 @@ const YEAR_META = {
   4:{emoji:'🏆',title:'4ª Classe',sub:'9-10 anos • Prova Nacional',color:'var(--y4)',dark:'var(--y4d)',cls:'y4'},
 };
 const SUBJ_COLOR = {
-  mat:'var(--mat)', por:'var(--por)', cie:'var(--cie)'
+  mat:'var(--mat)', por:'var(--por)', cie:'var(--cie)',
+  bib:'#F59E0B', vid:'#10B981'
 };
 const LEVEL_LABEL = {base:'básico',medio:'médio',avancado:'avançado'};
+
+function setCurriculum(c){
+  if(currentCurriculum === c) return;
+  currentCurriculum = c;
+  _ls.setItem('cv_curriculum', c);
+  _jsonPromise = null; jsonDB = {};
+  document.getElementById('curr-std').classList.toggle('curr-active', c==='standard');
+  document.getElementById('curr-ne').classList.toggle('curr-active', c==='ne');
+  document.body.classList.toggle('ne-mode', c==='ne');
+  const wt = document.getElementById('welcome-text');
+  if(wt){
+    wt.querySelector('h2').textContent = c==='ne' ? 'Olá! Escolhe o teu ano! 🌈' : 'Olá! Escolhe o teu ano! 🎒';
+    wt.querySelector('p').textContent  = c==='ne' ? 'Bíblia • Matemática • Português • Vida Prática' : 'Matemática • Português • Ciências';
+  }
+}
+
+function renderSubjectGrid(){
+  const grid = document.getElementById('subj-grid');
+  if(!grid) return;
+  if(currentCurriculum === 'ne'){
+    grid.innerHTML = `
+      <div class="subj-btn" id="btn-bib" style="background:linear-gradient(135deg,#F59E0B,#D97706);border-color:#F59E0B" onclick="selectSubject('bib')"><div class="sb-icon">📖</div>Bíblia</div>
+      <div class="subj-btn mat-btn" id="btn-mat" onclick="selectSubject('mat')"><div class="sb-icon mat-ops"><span>−</span><div class="mo-row"><span>+</span><span>×</span></div><span>÷</span></div>Matemática</div>
+      <div class="subj-btn por-btn" id="btn-por" onclick="selectSubject('por')"><div class="sb-icon">📝</div>Português</div>
+      <div class="subj-btn" id="btn-vid" style="background:linear-gradient(135deg,#10B981,#059669);border-color:#10B981" onclick="selectSubject('vid')"><div class="sb-icon">🌟</div>Vida Prática</div>
+    `;
+  } else {
+    grid.innerHTML = `
+      <div class="subj-btn mat-btn" id="btn-mat" onclick="selectSubject('mat')"><div class="sb-icon mat-ops"><span>−</span><div class="mo-row"><span>+</span><span>×</span></div><span>÷</span></div>Matemática</div>
+      <div class="subj-btn por-btn" id="btn-por" onclick="selectSubject('por')"><div class="sb-icon">📖</div>Português</div>
+      <div class="subj-btn cie-btn" id="btn-cie" onclick="selectSubject('cie')"><div class="sb-icon">🔬</div>Ciências</div>
+    `;
+  }
+}
 
 // Splash
 function hideSplash(){
@@ -761,18 +827,19 @@ function selectYear(y){
   document.getElementById('home-screen').style.display='none';
   document.getElementById('subject-screen').style.display='block';
   document.getElementById('float-nav').classList.add('visible');
+  renderSubjectGrid();
+  const defSubj = currentCurriculum === 'ne' ? 'bib' : 'mat';
   updateActiveColor();
-  selectSubject('mat');
+  selectSubject(defSubj);
   window.scrollTo(0,0);
 }
 
 function selectSubject(s){
   currentSubject=s;
   currentLearnPage=1;
-  ['mat','por','cie'].forEach(x=>{
-    document.getElementById('btn-'+x).classList.remove('active-subj');
-  });
-  document.getElementById('btn-'+s).classList.add('active-subj');
+  document.querySelectorAll('[id^="btn-"]').forEach(b=>b.classList.remove('active-subj'));
+  const btn=document.getElementById('btn-'+s);
+  if(btn) btn.classList.add('active-subj');
   updateActiveColor();
   setMode(currentMode);
 }
@@ -799,7 +866,7 @@ function setMode(m){
 }
 
 function updateActiveColor(){
-  const col=SUBJ_COLOR[currentSubject];
+  const col=SUBJ_COLOR[currentSubject]||'var(--mat)';
   document.documentElement.style.setProperty('--active',col);
 }
 
@@ -858,7 +925,7 @@ function speak(text){
   const u = new SpeechSynthesisUtterance(processed);
   if(_voice) u.voice = _voice;
   u.lang   = _voice ? _voice.lang : 'pt-PT';
-  u.rate   = 0.88;
+  u.rate   = currentCurriculum === 'ne' ? 0.65 : 0.88;
   u.pitch  = 1.05;
   u.volume = 1;
   speechSynthesis.cancel();
@@ -1326,7 +1393,8 @@ async function callAI(){
     return;
   }
   const yr=currentYear, subj=currentSubject;
-  const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':'Ciências Integradas';
+  const subjName=subj==='mat'?'Matemática':subj==='por'?'Língua Portuguesa':subj==='bib'?'Bíblia':subj==='vid'?'Vida Prática':'Ciências Integradas';
+  const neNote = currentCurriculum==='ne' ? ' Perfil especial: criança com síndrome de Down. Usa frases muito curtas e concretas, vocabulário simples, contextos visuais (emojis), máximo 3 opções.' : '';
   const classeName=`${yr}ª classe`;
   const ageLimit={
     1:'números máx. 20, frases máx. 8 palavras, sem frações/decimais/abstrações',
@@ -1351,7 +1419,8 @@ async function callAI(){
     /adição|subtração|multiplicação|divisão|calcul|conta|operaç/i.test(temaLabel)
       ? 'OPERAÇÃO: cria um problema de contexto (história curta) onde a criança faz o cálculo. Usa contexto cabo-verdiano (ilhas, peixe, escudos, escola).'
       : 'CONCEITO: pergunta sobre as PROPRIEDADES ou DEFINIÇÃO do tema. A pergunta deve testar o que a criança sabe sobre o conceito específico.';
-  const prompt=`Aluno: ${yearCtx} Disciplina: ${subjName}, ${classeName}, trimestre${trimCtx}, tema "${temaLabel}". Tipo: ${topicType} Dificuldade: ${lvDesc}${histNote}. Cria 1 exercício de escolha múltipla (4 opções).`;
+  const nOpts = currentCurriculum === 'ne' ? 3 : 4;
+  const prompt=`Aluno: ${yearCtx}${neNote} Disciplina: ${subjName}, ${classeName}, trimestre${trimCtx}, tema "${temaLabel}". Tipo: ${topicType} Dificuldade: ${lvDesc}${histNote}. Cria 1 exercício de escolha múltipla (${nOpts} opções).`;
   out.innerHTML='<div class="ai-spinner">🤔 A criar exercício...</div>';
   if(btn) btn.disabled=true;
   try{
@@ -1440,7 +1509,8 @@ async function startTemaChallenge(temaId){
   const tm=getTema(currentSubject,currentYear,temaId);
   if(!tm) return;
   const pool=shuffle([...(tm.praticar||[]),...(tm.desafios||[])]);
-  _runTimedChallenge(pool,SUBJ_COLOR[currentSubject],tm.nome,`startTemaChallenge('${temaId}')`);
+  const dur = currentCurriculum === 'ne' ? 60 : 30;
+  _runTimedChallenge(pool,SUBJ_COLOR[currentSubject]||'var(--mat)',tm.nome,`startTemaChallenge('${temaId}')`,dur);
 }
 
 async function startMegaDesafio(){
@@ -1575,6 +1645,14 @@ window.onload=function(){
   ensureJSON();
   _initVoice();
   document.getElementById('total-stars').textContent=`⭐ ${totalPoints} pts`;
+  // Restore curriculum state
+  if(currentCurriculum === 'ne'){
+    document.getElementById('curr-std').classList.remove('curr-active');
+    document.getElementById('curr-ne').classList.add('curr-active');
+    document.body.classList.add('ne-mode');
+    const wt=document.getElementById('welcome-text');
+    if(wt){wt.querySelector('h2').textContent='Olá! Escolhe o teu ano! 🌈';wt.querySelector('p').textContent='Bíblia • Matemática • Português • Vida Prática';}
+  }
   setTimeout(hideSplash,1800);
 
   // Groq key from URL hash: #groq=sk-...

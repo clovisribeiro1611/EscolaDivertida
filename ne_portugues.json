@@ -1,0 +1,667 @@
+{
+  "disciplina": "portugues",
+  "anos": [
+    {
+      "ano": 1,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nep1_t1_vogais",
+              "nome": "As Vogais",
+              "icone": "🅰️",
+              "aprender": [
+                {
+                  "icon": "🔤",
+                  "title": "As 5 vogais",
+                  "body": "As vogais são: <b>A, E, I, O, U</b>. São letras especiais — todas as palavras têm vogais!",
+                  "example": "🅰️ A · E · I · O · 🇺 U",
+                  "trick": "AEIOU — são 5 vogais. Conta nos dedos: A-E-I-O-U!"
+                },
+                {
+                  "icon": "👄",
+                  "title": "Sons das vogais",
+                  "body": "Cada vogal tem um som: <b>A</b> (aaaa) · <b>E</b> (êê) · <b>I</b> (iii) · <b>O</b> (ôô) · <b>U</b> (uuu)",
+                  "example": "A de Abelha 🐝 · E de Elefante 🐘 · I de Ilha 🏝️ · O de Ovo 🥚 · U de Uva 🍇",
+                  "trick": "Cada vogal tem uma palavra de Cabo Verde que começa com ela!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas vogais existem?",
+                  "options": ["5 vogais", "3 vogais", "10 vogais"],
+                  "answer": "5 vogais",
+                  "why": "As vogais são A, E, I, O, U — cinco ao todo!"
+                },
+                {
+                  "question": "Qual destas é uma vogal?",
+                  "options": ["A", "B", "C"],
+                  "answer": "A",
+                  "why": "O «A» é uma vogal. B e C são consoantes."
+                },
+                {
+                  "question": "A palavra «ilha» começa com que vogal?",
+                  "options": ["I", "A", "O"],
+                  "answer": "I",
+                  "why": "«Ilha» começa com I — «I» de Ilha! 🏝️"
+                },
+                {
+                  "question": "Qual vogal está em «ovo»?",
+                  "options": ["O", "E", "U"],
+                  "answer": "O",
+                  "why": "«Ovo» tem a vogal O no início. O de Ovo! 🥚"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantas vogais tem a palavra «AEIOU»?",
+                  "options": ["5 vogais", "3 vogais", "4 vogais"],
+                  "answer": "5 vogais",
+                  "why": "A-E-I-O-U tem as 5 vogais todas!"
+                }
+              ]
+            },
+            {
+              "id": "nep1_t1_silabas",
+              "nome": "Sílabas — Partes das Palavras",
+              "icone": "✂️",
+              "aprender": [
+                {
+                  "icon": "✂️",
+                  "title": "O que é uma sílaba?",
+                  "body": "Uma <b>sílaba</b> é uma parte da palavra que dizemos de uma vez. Bate palmas para contar as sílabas!",
+                  "example": "MA-ÇÃ = 2 palmas = 2 sílabas · CA-SA = 2 palmas · PE-I-XE = 3 palmas",
+                  "trick": "Bate palmas enquanto dizes a palavra — cada palma é uma sílaba!"
+                },
+                {
+                  "icon": "👏",
+                  "title": "Contar sílabas",
+                  "body": "Bate palmas para contar: <b>ca-sa (2), pe-i-xe (3), a-ve (2), a-ni-mal (3)</b>",
+                  "example": "🏠 CA-SA = 2 · 🐟 PEI-XE = 2 · 🐾 A-NI-MAL = 3",
+                  "trick": "Palavras com mais sílabas são mais compridas!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quantas sílabas tem «BOLA»?",
+                  "options": ["2 sílabas", "3 sílabas", "1 sílaba"],
+                  "answer": "2 sílabas",
+                  "why": "BO-LA = 2 sílabas! Bate palmas: BO (palma) LA (palma) = 2!"
+                },
+                {
+                  "question": "Quantas sílabas tem «PEIXE»?",
+                  "options": ["2 sílabas", "3 sílabas", "4 sílabas"],
+                  "answer": "2 sílabas",
+                  "why": "PEI-XE = 2 sílabas! 🐟"
+                },
+                {
+                  "question": "Quantas sílabas tem «BANANA»?",
+                  "options": ["3 sílabas", "2 sílabas", "4 sílabas"],
+                  "answer": "3 sílabas",
+                  "why": "BA-NA-NA = 3 sílabas! Uma fruta com 3 palmas! 🍌"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual palavra tem mais sílabas: CASA ou MARIPOSA?",
+                  "options": ["MARIPOSA (4)", "CASA (2)", "São iguais"],
+                  "answer": "MARIPOSA (4)",
+                  "why": "MA-RI-PO-SA tem 4 sílabas. CA-SA tem só 2. MARIPOSA é mais longa!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nep1_t2_palavras_simples",
+              "nome": "Palavras do Dia a Dia",
+              "icone": "📝",
+              "aprender": [
+                {
+                  "icon": "🏠",
+                  "title": "Palavras de casa",
+                  "body": "Palavras que usamos em casa: <b>porta, mesa, cama, cozinha, janela, cadeira</b>.",
+                  "example": "🚪 Porta · 🛏️ Cama · 🪑 Cadeira · 🪟 Janela · 🍳 Cozinha",
+                  "trick": "Olha à volta em casa e diz o nome de tudo que vês!"
+                },
+                {
+                  "icon": "🌴",
+                  "title": "Palavras de Cabo Verde",
+                  "body": "Palavras especiais de Cabo Verde: <b>ilha, peixe, manga, baía, pescador, criança</b>.",
+                  "example": "🏝️ Ilha · 🐟 Peixe · 🥭 Manga · 🌊 Baía · 🎣 Pescador",
+                  "trick": "Cabo Verde tem palavras bonitas ligadas ao mar e às ilhas!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que é uma «ilha»?",
+                  "options": ["Terra rodeada de água", "Uma montanha", "Uma cidade"],
+                  "answer": "Terra rodeada de água",
+                  "why": "Uma ilha é terra rodeada de água por todos os lados — como as ilhas de Cabo Verde!"
+                },
+                {
+                  "question": "Como se chama a pessoa que pesca peixes?",
+                  "options": ["Pescador", "Professor", "Médico"],
+                  "answer": "Pescador",
+                  "why": "O pescador é quem pesca peixes no mar."
+                },
+                {
+                  "question": "Qual é a palavra para o lugar onde dormimos?",
+                  "options": ["Cama", "Mesa", "Cadeira"],
+                  "answer": "Cama",
+                  "why": "Dormimos na cama! 🛏️"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Uma «baía» é:",
+                  "options": ["Parte do mar dentro da costa", "Uma árvore", "Uma fruta"],
+                  "answer": "Parte do mar dentro da costa",
+                  "why": "A baía é uma entrada do mar na costa — Cabo Verde tem muitas baías bonitas!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nep2_t1_frases",
+              "nome": "Frases Simples",
+              "icone": "✍️",
+              "aprender": [
+                {
+                  "icon": "📜",
+                  "title": "O que é uma frase?",
+                  "body": "Uma <b>frase</b> é um conjunto de palavras com sentido. Começa com letra maiúscula e termina com ponto (.).",
+                  "example": "«O peixe nada no mar.» · «A menina come manga.» · «Deus é bom.»",
+                  "trick": "Frase = começa com MAIÚSCULA e termina com PONTO!"
+                },
+                {
+                  "icon": "❓",
+                  "title": "Tipos de frase",
+                  "body": "Frase <b>afirmativa</b>: diz que algo é. Frase <b>interrogativa</b>: faz uma pergunta (?). Frase <b>exclamativa</b>: expressa emoção (!)",
+                  "example": "«Gosto de manga.» (afirmativa) · «Gostas de manga?» (interrogativa) · «Que manga deliciosa!» (exclamativa)",
+                  "trick": "? = pergunta · ! = emoção forte · . = frase normal"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que tem no fim de uma frase afirmativa?",
+                  "options": ["Um ponto (.)", "Um ponto de interrogação (?)", "Um ponto de exclamação (!)"],
+                  "answer": "Um ponto (.)",
+                  "why": "A frase afirmativa termina com ponto final (.) «O gato é bonito.»"
+                },
+                {
+                  "question": "«Onde moras?» — que tipo de frase é?",
+                  "options": ["Interrogativa", "Afirmativa", "Exclamativa"],
+                  "answer": "Interrogativa",
+                  "why": "«Onde moras?» é uma pergunta — frase interrogativa, termina com ?"
+                },
+                {
+                  "question": "A frase começa com letra:",
+                  "options": ["Maiúscula", "Minúscula", "Qualquer uma"],
+                  "answer": "Maiúscula",
+                  "why": "Toda frase começa com letra maiúscula!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "«Que dia bonito!» — que tipo de frase é?",
+                  "options": ["Exclamativa", "Interrogativa", "Afirmativa"],
+                  "answer": "Exclamativa",
+                  "why": "«Que dia bonito!» expressa emoção forte e termina com ! — é exclamativa."
+                }
+              ]
+            },
+            {
+              "id": "nep2_t1_singular_plural",
+              "nome": "Singular e Plural",
+              "icone": "1️⃣🔢",
+              "aprender": [
+                {
+                  "icon": "1️⃣",
+                  "title": "Singular — uma coisa",
+                  "body": "<b>Singular</b> é quando falamos de uma só coisa ou pessoa.",
+                  "example": "🐟 peixe (1) · 🌴 árvore (1) · 🏝️ ilha (1) · 👦 menino (1)",
+                  "trick": "Singular = UMA coisa. Uma ilha, um peixe, uma manga."
+                },
+                {
+                  "icon": "🔢",
+                  "title": "Plural — mais de uma",
+                  "body": "<b>Plural</b> é quando falamos de mais de uma coisa. Normalmente adicionamos <b>-s</b> ou <b>-es</b>.",
+                  "example": "peixes 🐟🐟 · árvores 🌴🌴 · ilhas 🏝️🏝️ · meninos 👦👦",
+                  "trick": "Plural = mais de uma coisa. Normalmente adiciona -S no final!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o plural de «peixe»?",
+                  "options": ["Peixes", "Peixe", "Peixão"],
+                  "answer": "Peixes",
+                  "why": "Peixe (singular) → Peixes (plural). Adicionamos -s!"
+                },
+                {
+                  "question": "«Ilhas» é singular ou plural?",
+                  "options": ["Plural", "Singular", "Os dois"],
+                  "answer": "Plural",
+                  "why": "«Ilhas» fala de mais de uma ilha — é plural!"
+                },
+                {
+                  "question": "Qual é o singular de «mangas»?",
+                  "options": ["Manga", "Mangas", "Mangão"],
+                  "answer": "Manga",
+                  "why": "«Mangas» (plural) → «Manga» (singular). Tiramos o -s!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Qual é o plural de «animal»?",
+                  "options": ["Animais", "Animals", "Animales"],
+                  "answer": "Animais",
+                  "why": "Animal → Animais. Palavras que terminam em -l, mudam para -is no plural!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nep2_t2_familia_palavras",
+              "nome": "Família de Palavras",
+              "icone": "👨‍👩‍👧",
+              "aprender": [
+                {
+                  "icon": "🌳",
+                  "title": "O que é família de palavras?",
+                  "body": "Uma <b>família de palavras</b> são várias palavras que partilham a mesma raiz (origem).",
+                  "example": "Família do MAR: mar · marinho · marinheiro · maré · marítimo",
+                  "trick": "Todas as palavras da mesma família têm a mesma «raiz»!"
+                },
+                {
+                  "icon": "🐟",
+                  "title": "Família do PEIXE",
+                  "body": "Peixe → <b>peixeiro, peixaria, peixinho, pescar, pescador, pescaria</b>.",
+                  "example": "🐟 peixe · 🧑‍🍳 peixeiro · 🏪 peixaria · 🐠 peixinho · 🎣 pescador",
+                  "trick": "O pescador vende peixe na peixaria — todos da mesma família!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual palavra NÃO pertence à família de «mar»?",
+                  "options": ["Floresta", "Marinheiro", "Maré"],
+                  "answer": "Floresta",
+                  "why": "«Floresta» não tem relação com «mar». Marinheiro e Maré são da família do mar!"
+                },
+                {
+                  "question": "«Peixeiro» é da família de:",
+                  "options": ["Peixe", "Barco", "Ilha"],
+                  "answer": "Peixe",
+                  "why": "Peixeiro vende peixe — faz parte da família da palavra «peixe»."
+                },
+                {
+                  "question": "Qual é da família de «mar»?",
+                  "options": ["Marinheiro", "Montanheiro", "Florestal"],
+                  "answer": "Marinheiro",
+                  "why": "Marinheiro navega no mar — é da família da palavra «mar»!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantas palavras da família de «peixe» consegues identificar: peixeiro, barco, peixaria, onda?",
+                  "options": ["2 (peixeiro e peixaria)", "4 palavras", "1 (só peixeiro)"],
+                  "answer": "2 (peixeiro e peixaria)",
+                  "why": "Peixeiro e peixaria têm a raiz «peixe». Barco e onda não são da família."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nep3_t1_texto_narrativo",
+              "nome": "Compreender um Texto",
+              "icone": "📖",
+              "aprender": [
+                {
+                  "icon": "📖",
+                  "title": "Partes de um texto",
+                  "body": "Um texto tem: <b>início</b> (apresenta os personagens e o lugar), <b>meio</b> (o que acontece) e <b>fim</b> (como termina).",
+                  "example": "Início: «Era uma vez uma pescadora em Santiago...» Meio: o que ela fez. Fim: o resultado.",
+                  "trick": "Todo texto tem começo, meio e fim!"
+                },
+                {
+                  "icon": "👤",
+                  "title": "Personagens e lugar",
+                  "body": "Os <b>personagens</b> são as pessoas ou animais da história. O <b>lugar</b> é onde a história acontece.",
+                  "example": "Personagens: a pescadora e o seu filho. Lugar: a baía de Santiago.",
+                  "trick": "Quem? = personagem · Onde? = lugar"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "O que apresenta o início de um texto?",
+                  "options": ["Os personagens e o lugar", "O fim da história", "A moral"],
+                  "answer": "Os personagens e o lugar",
+                  "why": "O início apresenta quem está na história (personagens) e onde (lugar)."
+                },
+                {
+                  "question": "Num texto, «personagem» é:",
+                  "options": ["A pessoa ou animal da história", "O lugar onde passa", "O título"],
+                  "answer": "A pessoa ou animal da história",
+                  "why": "Os personagens são as pessoas ou animais que participam na história."
+                },
+                {
+                  "question": "Quantas partes tem um texto?",
+                  "options": ["3 partes", "2 partes", "5 partes"],
+                  "answer": "3 partes",
+                  "why": "Todo texto tem início, meio e fim — 3 partes!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "A parte do texto onde o problema é resolvido chama-se:",
+                  "options": ["Fim", "Início", "Título"],
+                  "answer": "Fim",
+                  "why": "O fim é onde a história termina e o problema fica resolvido."
+                }
+              ]
+            },
+            {
+              "id": "nep3_t1_sinonimos",
+              "nome": "Sinónimos e Antónimos",
+              "icone": "🔄",
+              "aprender": [
+                {
+                  "icon": "🔄",
+                  "title": "Sinónimos — palavras parecidas",
+                  "body": "<b>Sinónimos</b> são palavras com significado semelhante. Podemos usar uma em vez da outra.",
+                  "example": "Bonito = lindo · Feliz = alegre · Grande = enorme · Rápido = veloz",
+                  "trick": "Sinónimos = mesmo significado. Bom = bondoso!"
+                },
+                {
+                  "icon": "↔️",
+                  "title": "Antónimos — palavras opostas",
+                  "body": "<b>Antónimos</b> são palavras com significado contrário, oposto.",
+                  "example": "Grande ↔ Pequeno · Feliz ↔ Triste · Quente ↔ Frio · Dia ↔ Noite",
+                  "trick": "Antónimos = significado contrário. Grande ↔ Pequeno!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o sinónimo de «bonito»?",
+                  "options": ["Lindo", "Feio", "Grande"],
+                  "answer": "Lindo",
+                  "why": "Bonito e Lindo têm o mesmo significado — são sinónimos!"
+                },
+                {
+                  "question": "Qual é o antónimo de «feliz»?",
+                  "options": ["Triste", "Alegre", "Contente"],
+                  "answer": "Triste",
+                  "why": "Feliz ↔ Triste. São opostos — antónimos!"
+                },
+                {
+                  "question": "Qual é o sinónimo de «rápido»?",
+                  "options": ["Veloz", "Lento", "Pesado"],
+                  "answer": "Veloz",
+                  "why": "Rápido e Veloz têm o mesmo significado — são sinónimos!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "«Grande» e «enorme» são:",
+                  "options": ["Sinónimos", "Antónimos", "Palavras diferentes"],
+                  "answer": "Sinónimos",
+                  "why": "Grande e enorme significam a mesma coisa (algo com muito tamanho) — sinónimos!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nep3_t2_verbos",
+              "nome": "Os Verbos — Acções",
+              "icone": "🏃",
+              "aprender": [
+                {
+                  "icon": "🏃",
+                  "title": "O que é um verbo?",
+                  "body": "Um <b>verbo</b> é uma palavra que indica uma acção ou estado. Comer, correr, brincar, ser, estar são verbos.",
+                  "example": "🏃 correr · 🍽️ comer · 😴 dormir · 🙏 orar · ❤️ amar",
+                  "trick": "Verbo = acção! O que a pessoa FAZ ou SENTE."
+                },
+                {
+                  "icon": "⏰",
+                  "title": "Tempo dos verbos",
+                  "body": "Os verbos mudam conforme o tempo: <b>passado</b> (já aconteceu), <b>presente</b> (agora) e <b>futuro</b> (vai acontecer).",
+                  "example": "Passei (passado) · Passo (presente) · Passarei (futuro)",
+                  "trick": "Ontem = passado · Hoje = presente · Amanhã = futuro"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual destas palavras é um verbo?",
+                  "options": ["Correr", "Mesa", "Bonito"],
+                  "answer": "Correr",
+                  "why": "Correr é uma acção — é um verbo! Mesa é um nome, bonito é um adjectivo."
+                },
+                {
+                  "question": "«Eu comi manga ontem.» O verbo está no:",
+                  "options": ["Passado", "Presente", "Futuro"],
+                  "answer": "Passado",
+                  "why": "«Comi» indica que a acção já aconteceu — está no passado."
+                },
+                {
+                  "question": "«Amanhã vou orar.» O verbo está no:",
+                  "options": ["Futuro", "Passado", "Presente"],
+                  "answer": "Futuro",
+                  "why": "«Vou orar» indica uma acção que vai acontecer — está no futuro."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantos verbos há nesta frase: «Pedro corre e canta.»",
+                  "options": ["2 verbos", "1 verbo", "3 verbos"],
+                  "answer": "2 verbos",
+                  "why": "«Corre» e «canta» são os 2 verbos — as 2 acções de Pedro!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "trimestres": [
+        {
+          "id": "t1",
+          "trimestre": "1º Trimestre",
+          "temas": [
+            {
+              "id": "nep4_t1_texto_narrativo",
+              "nome": "Texto Narrativo",
+              "icone": "📚",
+              "aprender": [
+                {
+                  "icon": "📚",
+                  "title": "Elementos da narrativa",
+                  "body": "Uma narrativa tem: <b>narrador</b> (quem conta), <b>personagens</b> (quem participa), <b>espaço</b> (onde), <b>tempo</b> (quando) e <b>acção</b> (o que acontece).",
+                  "example": "Narrador → «Era uma vez...» · Personagem → a pescadora · Espaço → Santiago · Tempo → de manhã",
+                  "trick": "5 elementos: Narrador · Personagens · Espaço · Tempo · Acção"
+                },
+                {
+                  "icon": "💬",
+                  "title": "Diálogo nas histórias",
+                  "body": "O <b>diálogo</b> é quando os personagens falam. Usa travessão (—) para indicar fala.",
+                  "example": "— Bom dia! — disse a menina.<br>— Bom dia! — respondeu o pescador.",
+                  "trick": "Travessão (—) = alguém está a falar!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Quem é o narrador numa história?",
+                  "options": ["Quem conta a história", "O personagem principal", "O lugar da história"],
+                  "answer": "Quem conta a história",
+                  "why": "O narrador é a voz que conta a história — pode ser um personagem ou alguém de fora."
+                },
+                {
+                  "question": "O que indica o travessão (—) num texto?",
+                  "options": ["Alguém está a falar", "Fim da frase", "Nova linha"],
+                  "answer": "Alguém está a falar",
+                  "why": "O travessão (—) indica diálogo — que um personagem está a falar."
+                },
+                {
+                  "question": "O «espaço» numa narrativa é:",
+                  "options": ["Onde a história acontece", "Quando acontece", "Quem participa"],
+                  "answer": "Onde a história acontece",
+                  "why": "O espaço indica o lugar onde a história se passa — «onde?»"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantos elementos principais tem uma narrativa?",
+                  "options": ["5 elementos", "3 elementos", "7 elementos"],
+                  "answer": "5 elementos",
+                  "why": "Narrador, personagens, espaço, tempo e acção — 5 elementos da narrativa!"
+                }
+              ]
+            },
+            {
+              "id": "nep4_t1_adjetivos",
+              "nome": "Adjectivos",
+              "icone": "🌈",
+              "aprender": [
+                {
+                  "icon": "🌈",
+                  "title": "O que é um adjectivo?",
+                  "body": "Um <b>adjectivo</b> é uma palavra que descreve como algo ou alguém é. Diz as qualidades.",
+                  "example": "🌊 mar azul · 🥭 manga doce · 🏝️ ilha bonita · 👦 menino alegre",
+                  "trick": "Adjectivo = qualidade! O adjectivo descreve o nome."
+                },
+                {
+                  "icon": "📊",
+                  "title": "Graus dos adjectivos",
+                  "body": "Os adjectivos têm graus: <b>normal</b> (bonito), <b>comparativo</b> (mais bonito que), <b>superlativo</b> (o mais bonito / boníssimo).",
+                  "example": "Bom → melhor → o melhor / ótimo",
+                  "trick": "Super = superlatIVO = MUITO, MUITÍSSIMO!"
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Qual é o adjectivo nesta frase: «O peixe é grande»?",
+                  "options": ["Grande", "Peixe", "É"],
+                  "answer": "Grande",
+                  "why": "«Grande» descreve o peixe — é um adjectivo!"
+                },
+                {
+                  "question": "Como chamamos ao grau «o mais bonito»?",
+                  "options": ["Superlativo", "Comparativo", "Normal"],
+                  "answer": "Superlativo",
+                  "why": "«O mais bonito» é o grau superlativo — indica o máximo da qualidade."
+                },
+                {
+                  "question": "Qual adjectivo descreve a manga: «A manga é ___»?",
+                  "options": ["Doce", "Alta", "Rápida"],
+                  "answer": "Doce",
+                  "why": "A manga tem sabor doce — «doce» é um adjectivo que descreve o sabor!"
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "«Boníssimo» é qual grau do adjectivo «bom»?",
+                  "options": ["Superlativo absoluto", "Comparativo", "Normal"],
+                  "answer": "Superlativo absoluto",
+                  "why": "«Boníssimo» indica o máximo de «bom» sem comparar com nada — superlativo absoluto!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "trimestre": "2º Trimestre",
+          "temas": [
+            {
+              "id": "nep4_t2_pontuacao",
+              "nome": "Pontuação",
+              "icone": "❗",
+              "aprender": [
+                {
+                  "icon": "📌",
+                  "title": "Os sinais de pontuação",
+                  "body": "Os sinais de pontuação ajudam a ler e entender o texto. Cada sinal tem uma função.",
+                  "example": ". (ponto) · , (vírgula) · ? (interrogação) · ! (exclamação) · : (dois pontos)",
+                  "trick": "A pontuação é a «música» do texto — diz quando parar e quando respirar!"
+                },
+                {
+                  "icon": "⏸️",
+                  "title": "Ponto e vírgula",
+                  "body": "O <b>ponto (.)</b> termina uma frase. A <b>vírgula (,)</b> faz uma pausa pequena dentro da frase.",
+                  "example": "«O sol brilha, o mar está calmo e as ilhas são belas.»",
+                  "trick": "Ponto = STOP! Vírgula = pausa pequena (respira)."
+                }
+              ],
+              "praticar": [
+                {
+                  "question": "Que sinal usamos no fim de uma pergunta?",
+                  "options": ["? (ponto de interrogação)", ". (ponto final)", "! (ponto de exclamação)"],
+                  "answer": "? (ponto de interrogação)",
+                  "why": "As perguntas terminam com ponto de interrogação (?). «Como te chamas?»"
+                },
+                {
+                  "question": "Para que serve a vírgula?",
+                  "options": ["Fazer uma pausa na frase", "Terminar a frase", "Indicar diálogo"],
+                  "answer": "Fazer uma pausa na frase",
+                  "why": "A vírgula (,) indica uma pequena pausa dentro da frase."
+                },
+                {
+                  "question": "«Que lindo pôr do sol!» — que sinal há no fim?",
+                  "options": ["! (exclamação)", ". (ponto)", "? (interrogação)"],
+                  "answer": "! (exclamação)",
+                  "why": "O ponto de exclamação (!) indica emoção forte ou admiração."
+                }
+              ],
+              "desafios": [
+                {
+                  "question": "Quantos sinais de pontuação há na frase: «Olá, como estás?»",
+                  "options": ["2 sinais", "1 sinal", "3 sinais"],
+                  "answer": "2 sinais",
+                  "why": "Há uma vírgula (,) após «Olá» e um ponto de interrogação (?) no fim — 2 sinais!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
