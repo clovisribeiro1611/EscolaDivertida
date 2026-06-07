@@ -1575,9 +1575,19 @@ window.onload=function(){
     history.replaceState(null, '', location.pathname);
   }
 
-  // Service Worker — auto-reload ao detectar nova versão (1x por sessão)
+  // Service Worker — auto-reload fiável em todos os dispositivos
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').catch(()=>{});
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
+      .then(reg => {
+        // Verifica update cada vez que o utilizador volta ao app (PWA ou browser)
+        const checkUpdate = () => {
+          if (document.visibilityState === 'visible') reg.update();
+        };
+        document.addEventListener('visibilitychange', checkUpdate);
+        window.addEventListener('focus', checkUpdate);
+      })
+      .catch(() => {});
+    // Recarrega quando novo SW toma controlo (fallback à client.navigate do SW)
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       if (sessionStorage.getItem('sw_reloaded')) return;
       sessionStorage.setItem('sw_reloaded', '1');
