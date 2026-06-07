@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<meta name="theme-color" content="#FF6B6B">
+<meta name="theme-color" content="#FF7AC5">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="description" content="Estuda para as Provas Nacionais de Cabo Verde — 1ª a 4ª classe">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,17 +16,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --y1: #FF6B6B; --y1d: #e05555; --y1l: #fff0f0;
-  --y2: #FF9F1C; --y2d: #e08800; --y2l: #fff6e8;
-  --y3: #2EC4B6; --y3d: #20a89c; --y3l: #e8faf9;
-  --y4: #7B2FBE; --y4d: #6020a0; --y4l: #f3eaff;
-  --mat: #2563EB; --matl: #EFF6FF; --matd: #1D4ED8;
-  --por: #DB2777; --porl: #FDF2F8; --pord: #9D174D;
-  --cie: #16A34A; --ciel: #ECFDF5; --cied: #166534;
+  --y1: #FF7AC5; --y1d: #FC4E72; --y1l: #FFF1F9;
+  --y2: #FFA630; --y2d: #ED761E; --y2l: #FFF2DC;
+  --y3: #ABF12F; --y3d: #4AC920; --y3l: #F4FFF0;
+  --y4: #3FC5F0; --y4d: #2070D1; --y4l: #ECF9FF;
+  --mat: #AC6EF1; --matl: #F9F0FF; --matd: #7E45C5;
+  --por: #FF4B6F; --porl: #FFF0F3; --pord: #C52044;
+  --cie: #00D2D3; --ciel: #EFFEFF; --cied: #008B8B;
   --gold: #FFD700; --white: #ffffff;
-  --bg: #FFF8F0; --text: #1a1a2e; --muted: #6b7280;
+  --bg: #FFFDF5; --text: #2D3E50; --muted: #7A8A99;
   --radius: 20px; --shadow: 0 6px 24px rgba(0,0,0,0.12);
-  --active: #2563EB;
+  --active: #AC6EF1;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -161,9 +162,9 @@ body {
 .subj-btn .sb-icon { font-size: 2rem; margin-bottom: 6px; }
 .subj-btn .sb-icon.mat-ops { font-size:.82rem; line-height:1.25; font-weight:900; display:flex; flex-direction:column; align-items:center; gap:0; margin-bottom:4px; }
 .mat-ops .mo-row { display:flex; gap:1.1rem; }
-.subj-btn.mat-btn { background: var(--matl); color: var(--matd); border-color: #93C5FD; }
-.subj-btn.por-btn { background: var(--porl); color: var(--pord); border-color: #F9A8D4; }
-.subj-btn.cie-btn { background: var(--ciel); color: var(--cied); border-color: #86EFAC; }
+.subj-btn.mat-btn { background: var(--matl); color: var(--matd); border-color: #D8B4FE; }
+.subj-btn.por-btn { background: var(--porl); color: var(--pord); border-color: #FCA5A5; }
+.subj-btn.cie-btn { background: var(--ciel); color: var(--cied); border-color: #67E8F9; }
 .subj-btn.active-subj { color: white !important; transform: scale(1.05); box-shadow: 0 6px 20px rgba(0,0,0,0.22), 0 0 0 2px white, 0 0 0 4px var(--active); }
 .subj-btn.mat-btn.active-subj { background: var(--mat); border-color: var(--mat); }
 .subj-btn.por-btn.active-subj { background: var(--por); border-color: var(--por); }
